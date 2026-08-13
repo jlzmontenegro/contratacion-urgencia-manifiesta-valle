@@ -90,12 +90,26 @@ datos/
   procesos.csv               idem para procesos
   cambios.csv                log acumulado de modificaciones (adiciones, prórrogas, estado…)
   estado.json                resumen de la última ejecución
-  historial_tablero.js       datos que el tablero usa si no hay conexión
   historial/                 snapshot comprimido de cada día
 reportes/
   reporte_AAAA-MM-DD.md      reporte diario
 REPORTE_ULTIMO.md            copia del reporte más reciente
+tablero.html                 el colector le incrusta el historial en cada ejecución
+publicar/                    copia del repositorio publicado en GitHub Pages
 ```
+
+## El tablero es un archivo autónomo
+
+`tablero.html` no depende de ningún otro archivo ni de librerías externas: el historial va
+incrustado dentro del propio HTML y los datos se consultan directamente contra datos.gov.co
+desde el navegador. Se puede enviar por correo, copiar a una USB o publicar en cualquier
+servidor, y quien lo reciba ve todo y puede pulsar **Actualizar datos**.
+
+Está publicado en
+**https://jlzmontenegro.github.io/contratacion-urgencia-manifiesta-valle/**
+
+Para actualizar los datos y republicar en un solo paso: `publicar.bat`.
+Para republicar sin volver a consultar la API: `publicar.bat solo`.
 
 ## Alertas que levanta
 
