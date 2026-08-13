@@ -1,0 +1,104 @@
+{
+  "_comentario": "Configuracion del monitor de contratacion por urgencia manifiesta - sismo 10 de agosto de 2026. Editable sin tocar el codigo.",
+
+  "_nota_fechas": "Se traen contratos firmados y procesos publicados desde las 00:00 del 10 de agosto de 2026, dia del sismo y de los decretos.",
+  "fecha_inicio": "2026-08-10",
+  "fecha_evento": "2026-08-10",
+  "meses_monitoreo": 6,
+
+  "nits_prioritarios": [
+    "890399029",
+    "8903990291",
+    "8903990295",
+    "890399011",
+    "8903990113"
+  ],
+
+  "_nota_grupos": "Los NIT de la Alcaldia comparten raiz 890399011 y los de la Gobernacion 890399029. Sirven para separar los indicadores por nivel de gobierno.",
+  "nits_alcaldia_cali": [
+    "890399011",
+    "8903990113"
+  ],
+  "nits_gobernacion_valle": [
+    "890399029",
+    "8903990291",
+    "8903990295"
+  ],
+
+  "departamentos_vigilados": [
+    "Valle del Cauca"
+  ],
+
+  "palabras_clave_fuertes": [
+    "SISMO",
+    "TERREMOTO",
+    "URGENCIA MANIFIESTA",
+    "CALAMIDAD",
+    "DAMNIFICAD",
+    "MOVIMIENTO TELURICO"
+  ],
+
+  "palabras_clave_secundarias": [
+    "ALBERGUE",
+    "ESCOMBRO",
+    "DEMOLICION",
+    "APUNTALAMIENTO",
+    "EVALUACION DE DANOS",
+    "EDAN",
+    "AYUDA HUMANITARIA",
+    "KIT DE ASEO",
+    "KIT DE MERCADO",
+    "AYUDAS HUMANITARIAS",
+    "COLCHONETA",
+    "CARPA",
+    "DANO ESTRUCTURAL",
+    "VULNERABILIDAD SISMICA",
+    "REFORZAMIENTO ESTRUCTURAL",
+    "GESTION DEL RIESGO",
+    "ATENCION DE EMERGENCIA",
+    "REMOCION EN MASA",
+    "TALUD",
+    "PUENTE",
+    "ALOJAMIENTO TEMPORAL",
+    "BUSQUEDA Y RESCATE",
+    "AGUA POTABLE",
+    "SACO DE POLIPROPILENO"
+  ],
+
+  "_nota_exclusiones": "Frases tecnicas rutinarias que contienen 'sismo' pero no aluden al evento. Neutralizan la coincidencia salvo que el texto traiga tambien una palabra de emergencia.",
+  "frases_excluidas": [
+    "SISMO RESISTENTE",
+    "SISMORRESISTENTE",
+    "SISMO-RESISTENTE",
+    "NSR-10",
+    "NSR 10",
+    "MICROZONIFICACION SISMICA",
+    "NORMA SISMICA",
+    "ESTUDIO DE SUELOS"
+  ],
+
+  "palabras_emergencia": [
+    "CALAMIDAD",
+    "URGENCIA MANIFIESTA",
+    "DAMNIFICAD",
+    "EMERGENCIA",
+    "DESASTRE",
+    "AFECTAD",
+    "ATENCION HUMANITARIA"
+  ],
+
+  "decretos": [
+    "4112.010.20.0964",
+    "4112.010.20.0963",
+    "1.03.01-1070",
+    "0964 DE 2026",
+    "0963 DE 2026"
+  ],
+
+  "_nota_token": "Opcional. Un app token de datos.gov.co evita el limite de peticiones anonimas. Se puede poner aqui o en la variable de entorno SOCRATA_APP_TOKEN.",
+  "app_token": "",
+
+  "_nota_alertas": "Umbrales para las alertas del reporte y del tablero.",
+  "alerta_valor_contrato": 500000000,
+  "alerta_contratos_mismo_proveedor": 3
+}
