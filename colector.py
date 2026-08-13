@@ -536,6 +536,79 @@ def guardar_estado(df, nombre_fuente, hoy):
     return ruta
 
 
+def registrar_novedades(nuevos, nombre_fuente, sello):
+    """Bitacora acumulativa de cuando aparecio cada registro en SECOP.
+
+    Es append-only: a diferencia del reporte diario, que se reescribe si el
+    colector corre dos veces el mismo dia, esto nunca se pierde. Sirve para
+    responder 'cuando aparecio publicado este contrato'.
+    """
+    if nuevos.empty:
+        return
+    f = FUENTES[nombre_fuente]
+    filas = pd.DataFrame({
+        "fecha_deteccion": sello,
+        "fuente": nombre_fuente,
+        "identificador": nuevos[f["id"]],
+        "fecha_registro": nuevos[f["fecha"]].astype(str).str[:10],
+        "entidad": nuevos.get(f["entidad"], ""),
+        "grupo": nuevos.get("grupo", ""),
+        "nivel_relacion": nuevos.get("nivel_relacion", ""),
+        "valor": nuevos.get(f["valor"], ""),
+    })
+    ruta = os.path.join(DIR_DATOS, "novedades.csv")
+    filas.to_csv(ruta, mode="a", header=not os.path.exists(ruta),
+                 index=False, encoding="utf-8-sig")
+
+
+def sembrar_novedades():
+    """Crea la bitacora a partir de la columna primera_vez_visto ya guardada.
+
+    Se usa una sola vez, cuando la bitacora todavia no existe: sin esto se
+    perderia el registro de los que ya se habian visto en corridas anteriores.
+    """
+    ruta = os.path.join(DIR_DATOS, "novedades.csv")
+    if os.path.exists(ruta):
+        return
+
+    partes = []
+    for nombre in ("contratos", "procesos"):
+        d = leer_estado(nombre)
+        if d.empty or "primera_vez_visto" not in d.columns:
+            continue
+        f = FUENTES[nombre]
+        partes.append(pd.DataFrame({
+            "fecha_deteccion": d["primera_vez_visto"],
+            "fuente": nombre,
+            "identificador": d[f["id"]],
+            "fecha_registro": d[f["fecha"]].astype(str).str[:10],
+            "entidad": d.get(f["entidad"], ""),
+            "grupo": d.get("grupo", ""),
+            "nivel_relacion": d.get("nivel_relacion", ""),
+            "valor": d.get(f["valor"], ""),
+        }))
+
+    if partes:
+        todo = pd.concat(partes, ignore_index=True).sort_values("fecha_deteccion")
+        todo.to_csv(ruta, index=False, encoding="utf-8-sig")
+        print(f"  bitacora de novedades sembrada con {len(todo)} registros ya conocidos")
+
+
+def leer_novedades(dias=30):
+    """Mapa identificador -> fecha en que se vio por primera vez, ultimos N dias."""
+    ruta = os.path.join(DIR_DATOS, "novedades.csv")
+    if not os.path.exists(ruta):
+        return {}
+    d = pd.read_csv(ruta, dtype=str, keep_default_na=False)
+    if d.empty:
+        return {}
+    corte = (datetime.now() - timedelta(days=dias)).strftime("%Y-%m-%d")
+    d = d[d["fecha_deteccion"].str[:10] >= corte]
+    # Si un identificador aparece varias veces se conserva la primera deteccion
+    d = d.sort_values("fecha_deteccion").drop_duplicates("identificador", keep="first")
+    return dict(zip(d["identificador"], d["fecha_deteccion"].str[:10]))
+
+
 def registrar_cambios(cambios):
     if not cambios:
         return
@@ -770,7 +843,7 @@ def escribir_reporte(hoy, contratos, procesos, nuevos_c, nuevos_p, cambios, aler
 # Datos para el tablero HTML
 # --------------------------------------------------------------------------
 
-def exportar_tablero(hoy, contratos, procesos, cambios_totales, alertas, cfg):
+def exportar_tablero(hoy, contratos, procesos, cambios_totales, alertas, cfg, resumen_corrida=None):
     """Genera datos/historial_tablero.js, que el tablero carga con <script src>
     (funciona incluso abriendo el HTML con doble clic, sin servidor web)."""
     fc, fp = FUENTES["contratos"], FUENTES["procesos"]
@@ -823,6 +896,10 @@ def exportar_tablero(hoy, contratos, procesos, cambios_totales, alertas, cfg):
 
     payload = {
         "generado": hoy.strftime("%Y-%m-%d %H:%M:%S"),
+        # Cuando aparecio publicado cada registro. Permite marcar novedades en el
+        # tablero, que por si solo no tiene memoria de lo que vio antes.
+        "novedades": leer_novedades(30),
+        "corrida_anterior": resumen_corrida or {},
         "fecha_inicio": cfg["fecha_inicio"],
         "nits": cfg["nits_prioritarios"],
         "departamentos": cfg["departamentos_vigilados"],
@@ -892,6 +969,8 @@ def main():
     print(f"Monitor urgencia manifiesta - {sello}")
     print(f"Ventana: desde {cfg['fecha_inicio']} ({cfg['meses_monitoreo']} meses de seguimiento)")
 
+    sembrar_novedades()
+
     resultados = {}
     cambios_totales = []
     nuevos = {}
@@ -923,6 +1002,7 @@ def main():
         df["ultima_revision"] = sello
 
         guardar_estado(df, nombre, hoy)
+        registrar_novedades(df_nuevos, nombre, sello)
         cambios_totales.extend(cambios)
         resultados[nombre] = df
         nuevos[nombre] = df_nuevos
@@ -942,8 +1022,6 @@ def main():
         nuevos.get("contratos", pd.DataFrame()), nuevos.get("procesos", pd.DataFrame()),
         cambios_totales, alertas, cfg,
     )
-    ruta_tablero = exportar_tablero(hoy, contratos, procesos, cambios_totales, alertas, cfg)
-
     estado = {
         "ultima_ejecucion": sello,
         "contratos": int(len(contratos)),
@@ -955,6 +1033,9 @@ def main():
     }
     with open(os.path.join(DIR_DATOS, "estado.json"), "w", encoding="utf-8") as fh:
         json.dump(estado, fh, ensure_ascii=False, indent=2)
+
+    ruta_tablero = exportar_tablero(hoy, contratos, procesos, cambios_totales,
+                                    alertas, cfg, resumen_corrida=estado)
 
     print("\nListo.")
     print(f"  reporte : {ruta_reporte}")
