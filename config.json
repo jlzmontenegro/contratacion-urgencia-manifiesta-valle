@@ -58,12 +58,12 @@
     "ATENCION DE EMERGENCIA",
     "REMOCION EN MASA",
     "TALUD",
-    "PUENTE",
     "ALOJAMIENTO TEMPORAL",
     "BUSQUEDA Y RESCATE",
-    "AGUA POTABLE",
     "SACO DE POLIPROPILENO"
   ],
+
+  "_nota_secundarias": "Se quitaron AGUA POTABLE y PUENTE: aparecen en contratacion rutinaria de cualquier municipio y generaban mas ruido que hallazgos. Las palabras se buscan como inicio de palabra, no como fragmento, para que EDAN no coincida dentro de 'puedan'.",
 
   "_nota_exclusiones": "Frases tecnicas rutinarias que contienen 'sismo' pero no aluden al evento. Neutralizan la coincidencia salvo que el texto traiga tambien una palabra de emergencia.",
   "frases_excluidas": [
@@ -85,6 +85,25 @@
     "DESASTRE",
     "AFECTAD",
     "ATENCION HUMANITARIA"
+  ],
+
+  "_nota_emergencia_fuerte": "Subconjunto inequivoco. Se exige para dar por relacionado un contrato de una entidad de otra region cuyo objeto menciona a Cali o el Valle; 'emergencia' a secas aparece en cualquier servicio medico y no basta.",
+  "palabras_emergencia_fuerte": [
+    "CALAMIDAD",
+    "URGENCIA MANIFIESTA",
+    "DAMNIFICAD",
+    "DESASTRE",
+    "ATENCION HUMANITARIA"
+  ],
+
+  "_nota_territorio": "Nombres del territorio afectado. Sirven para detectar contratos de entidades de otras regiones (UNGRD, ministerios) cuyo objeto esta destinado a Cali o al Valle.",
+  "nombres_territorio": [
+    "VALLE DEL CAUCA",
+    "SANTIAGO DE CALI",
+    "CALI",
+    "BUENAVENTURA",
+    "GUADALAJARA DE BUGA",
+    "SEVILLA"
   ],
 
   "decretos": [

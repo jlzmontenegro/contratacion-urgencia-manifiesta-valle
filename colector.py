@@ -24,6 +24,7 @@ import argparse
 import gzip
 import json
 import os
+import re
 import sys
 import time
 import unicodedata
@@ -111,6 +112,23 @@ def cargar_config():
 # --------------------------------------------------------------------------
 # Utilidades de texto
 # --------------------------------------------------------------------------
+
+_PATRONES = {}
+
+
+def contiene(texto, palabra):
+    """Busca la palabra como inicio de palabra, no como fragmento.
+
+    Sin esto 'EDAN' coincide dentro de 'puEDAN' y 'TALUD' dentro de otras
+    palabras. Se ancla solo el inicio para que 'DAMNIFICAD' siga sirviendo
+    para damnificado, damnificadas, etc.
+    """
+    patron = _PATRONES.get(palabra)
+    if patron is None:
+        patron = re.compile(r"\b" + re.escape(palabra))
+        _PATRONES[palabra] = patron
+    return bool(patron.search(texto))
+
 
 def normalizar(texto):
     """Mayusculas sin tildes, para comparar palabras clave de forma robusta."""
@@ -325,6 +343,9 @@ def clasificar(df, nombre_fuente, cfg):
     decretos = [normalizar(d) for d in cfg["decretos"]]
     excluidas = [normalizar(p) for p in cfg.get("frases_excluidas", [])]
     emergencia = [normalizar(p) for p in cfg.get("palabras_emergencia", [])]
+    emergencia_fuerte = [normalizar(p) for p in cfg.get("palabras_emergencia_fuerte", [])]
+    territorio = [normalizar(p) for p in cfg.get("nombres_territorio", [])]
+    anio_evento = str(cfg["fecha_evento"])[:4]
 
     # Grupo por nivel de gobierno y ambito territorial.
     deps_vig = {normalizar(d) for d in cfg["departamentos_vigilados"]}
@@ -361,17 +382,26 @@ def clasificar(df, nombre_fuente, cfg):
         golpes_decreto = [d for d in decretos if d and d in t]
         if golpes_decreto:
             razones.append("cita el decreto " + golpes_decreto[0])
-        golpes_fuertes = [p for p in fuertes if p in t]
+        golpes_fuertes = [p for p in fuertes if contiene(t, p)]
         if golpes_fuertes:
             razones.append("menciona " + ", ".join(golpes_fuertes[:3]).lower())
-        golpes_sec = [p for p in secundarias if p in t]
+        golpes_sec = [p for p in secundarias if contiene(t, p)]
         if golpes_sec:
             razones.append("objeto de emergencia: " + ", ".join(golpes_sec[:3]).lower())
 
         # Palabras que apuntan al evento mismo, no a cualquier emergencia
         del_evento = [p for p in golpes_fuertes
                       if p in ("SISMO", "TERREMOTO", "MOVIMIENTO TELURICO")]
-        hay_emergencia = any(p in t for p in emergencia)
+        hay_emergencia = any(contiene(t, p) for p in emergencia)
+        hay_emergencia_fuerte = any(contiene(t, p) for p in emergencia_fuerte)
+        menciona_territorio = any(contiene(t, p) for p in territorio)
+        # Fuera del territorio hay que distinguir este sismo de otros eventos
+        # anteriores del pais. Exigir el ano 2026 resulto demasiado estricto: hay
+        # objetos que escriben "10 de agosto" sin ano. Se descarta solo cuando el
+        # texto alude a un ano distinto, como "sismo del 14 de septiembre de 2025".
+        anios = set(re.findall(r"\b(20\d{2})\b", t))
+        otro_anio = bool(anios) and anio_evento not in anios
+        es_este_evento = bool(golpes_decreto) or not otro_anio
         # "norma sismo resistente", "microzonificacion sismica" y similares son
         # contratacion tecnica rutinaria, no atencion del evento.
         if del_evento and any(fr in t for fr in excluidas) and not hay_emergencia:
@@ -385,19 +415,30 @@ def clasificar(df, nombre_fuente, cfg):
             razones.insert(0, "anterior al 9 de agosto de 2026")
         elif golpes_decreto:
             nivel = "Alta"
-        elif del_evento and (territorial or hay_emergencia):
-            # Fuera del territorio vigilado se exige que el objeto sea de atencion
-            # de la emergencia, no cualquier mencion del sismo.
+        elif territorial and (del_evento or "URGENCIA MANIFIESTA" in just or golpes_fuertes):
+            # Dentro de Cali y el Valle se es generoso: es el territorio del seguimiento
             nivel = "Alta"
-        elif "URGENCIA MANIFIESTA" in just and territorial:
-            nivel = "Alta"
-        elif "URGENCIA MANIFIESTA" in just:
+        elif territorial and golpes_sec:
             nivel = "Media"
-            razones.append("urgencia manifiesta fuera del territorio vigilado")
-        elif golpes_fuertes and territorial:
+        elif not territorial and menciona_territorio and (del_evento or hay_emergencia_fuerte):
+            # Entidad de otra region (UNGRD, ministerios) contratando para Cali o el Valle
             nivel = "Alta"
-        elif golpes_sec and territorial:
-            nivel = "Media"
+            razones.append("entidad de otra region con objeto destinado al territorio afectado")
+        elif del_evento and hay_emergencia and es_este_evento:
+            # Fuera del territorio solo cuenta si se trata de ESTE sismo: hay contratos
+            # que atienden terremotos de anos anteriores y no son parte del seguimiento.
+            nivel = "Alta"
+        elif del_evento or "URGENCIA MANIFIESTA" in just:
+            # Urgencia manifiesta u otro sismo del pais: no es lo que se busca, pero se
+            # conserva como referencia de cuanta urgencia se declara por otras causas.
+            nivel = "Otra urgencia"
+            if otro_anio:
+                razones.append(f"alude a un evento de {', '.join(sorted(anios))}, "
+                               f"no al sismo de {anio_evento}")
+            elif "URGENCIA MANIFIESTA" in just:
+                razones.append("urgencia manifiesta de otra region, por otra emergencia")
+            else:
+                razones.append("menciona el termino pero su objeto no atiende el evento")
         elif golpes_fuertes or golpes_sec:
             nivel = "Contexto"
             razones.append("coincidencia de palabras fuera del territorio vigilado")
@@ -421,6 +462,21 @@ def clasificar(df, nombre_fuente, cfg):
 # --------------------------------------------------------------------------
 # Estado, deteccion de cambios e historial
 # --------------------------------------------------------------------------
+
+def texto_campo(valor):
+    """Normaliza un valor para poder compararlo entre ejecuciones.
+
+    Un campo ausente llega como NaN, que en Python evalua como verdadero; sin
+    esta normalizacion 'sin dato' se compara contra el texto 'nan' y cada
+    ejecucion reporta cambios que nunca ocurrieron.
+    """
+    if valor is None:
+        return ""
+    if isinstance(valor, float) and pd.isna(valor):
+        return ""
+    s = str(valor).strip()
+    return "" if s.lower() in ("nan", "none", "nat", "<na>") else s
+
 
 def leer_estado(nombre_fuente):
     ruta = os.path.join(DIR_DATOS, f"{nombre_fuente}.csv")
@@ -455,8 +511,8 @@ def detectar_cambios(previo, actual, nombre_fuente, sello):
         for campo in f["vigilar"]:
             if campo not in actual.columns:
                 continue
-            v_nuevo = str(fila.get(campo, "") or "")
-            v_viejo = str(antes.get(campo, "") or "")
+            v_nuevo = texto_campo(fila.get(campo))
+            v_viejo = texto_campo(antes.get(campo))
             if v_nuevo != v_viejo:
                 cambios.append({
                     "fecha_deteccion": sello,
@@ -611,13 +667,24 @@ def escribir_reporte(hoy, contratos, procesos, nuevos_c, nuevos_p, cambios, aler
             a(f"| {grupo} | {len(gc)} | {pesos(valor)} | {len(gp)} |")
         a("")
 
-    if len(nac_c) or len(nac_p):
-        vn = a_numero(nac_c[fc["valor"]]).sum() if not nac_c.empty else 0
+    otras_c = contratos[contratos["nivel_relacion"] == "Otra urgencia"] if not contratos.empty else pd.DataFrame()
+    otras_p = procesos[procesos["nivel_relacion"] == "Otra urgencia"] if not procesos.empty else pd.DataFrame()
+
+    if len(nac_c) or len(nac_p) or len(otras_c) or len(otras_p):
         a("### Referencia: fuera del Valle del Cauca")
         a("")
-        a(f"Se registran {len(nac_c)} contratos ({pesos(vn)}) y {len(nac_p)} procesos de otras "
-          f"regiones del país relacionados con el sismo o con urgencia manifiesta. "
-          f"No cuentan en los indicadores de arriba; sirven como punto de comparación.")
+        if len(nac_c) or len(nac_p):
+            vn = a_numero(nac_c[fc["valor"]]).sum() if not nac_c.empty else 0
+            a(f"- **Relacionados con el sismo:** {len(nac_c)} contratos ({pesos(vn)}) y "
+              f"{len(nac_p)} procesos de otras regiones del país.")
+        if len(otras_c) or len(otras_p):
+            vo = a_numero(otras_c[fc["valor"]]).sum() if not otras_c.empty else 0
+            a(f"- **Urgencia manifiesta por otras causas:** {len(otras_c)} contratos "
+              f"({pesos(vo)}) y {len(otras_p)} procesos. No tienen relación con el sismo; "
+              f"sirven para dimensionar cuánta urgencia manifiesta se declara en el país "
+              f"por motivos distintos.")
+        a("")
+        a("Nada de lo anterior cuenta en los indicadores de Cali y el Valle.")
         a("")
 
     if not rel_c.empty:
@@ -711,7 +778,7 @@ def exportar_tablero(hoy, contratos, procesos, cambios_totales, alertas, cfg):
     def compactar(df, f, tipo):
         if df.empty:
             return []
-        d = df[df["nivel_relacion"].isin(["Alta", "Media", "Linea base"])].copy()
+        d = df[df["nivel_relacion"].isin(["Alta", "Media", "Otra urgencia", "Linea base"])].copy()
         if d.empty:
             return []
         d["_v"] = a_numero(d[f["valor"]])

@@ -72,12 +72,25 @@ Los tres primeros forman el ámbito `Territorial`; el último, el ámbito `Nacio
 |---|---|
 | `Alta` | Cita uno de los decretos; o menciona sismo/terremoto siendo territorial o tratándose de atención de la emergencia; o tiene justificación "Urgencia manifiesta" y es territorial |
 | `Media` | Justificación "Urgencia manifiesta" fuera del territorio vigilado; u objeto propio de emergencia (albergue, escombros, ayuda humanitaria, demolición…) en entidad territorial |
+| `Otra urgencia` | Urgencia manifiesta de otra región por **otra** emergencia, u otro sismo. No cuenta como relacionado; se conserva como referencia |
 | `Contexto` | Contratación ordinaria de entidades vigiladas. Se conserva para tener el universo completo y poder comparar |
 | `Linea base` | Anterior al 10 de agosto de 2026 |
 
-Se excluyen coincidencias técnicas rutinarias: un contrato que menciona "norma sismo
-resistente" o "microzonificación sísmica" sin ninguna palabra de emergencia **no** se
-clasifica como relacionado con el evento.
+Dentro de Cali y el Valle el criterio es generoso, porque es el territorio del seguimiento.
+**Fuera del territorio se exige una señal inequívoca**: que el objeto mencione a Cali o al
+Valle junto con una palabra fuerte de emergencia, o que aluda al sismo sin referirse a otro
+año. Un contrato de Bogotá declarado bajo urgencia manifiesta por una emergencia distinta
+cae en `Otra urgencia`, no en los indicadores.
+
+Tres filtros evitan falsos positivos que se detectaron con datos reales:
+
+- **Coincidencia técnica rutinaria.** "Norma sismo resistente" o "microzonificación sísmica"
+  sin palabra de emergencia no cuentan como atención del evento.
+- **Otro evento.** Si el texto alude a un año distinto ("sismo del 14 de septiembre de 2025")
+  se descarta. No basta con exigir "2026": hay objetos que escriben "10 de agosto" sin año.
+- **Coincidencia parcial.** Las palabras se buscan como inicio de palabra, no como fragmento;
+  de lo contrario "EDAN" coincide dentro de "pu**edan**". Se ancla solo el inicio, para que
+  "DAMNIFICAD" siga sirviendo para damnificado y damnificadas.
 
 Todo esto se ajusta en `config.json` sin tocar el código: NIT, departamentos, palabras clave,
 frases excluidas, umbrales de alerta.
