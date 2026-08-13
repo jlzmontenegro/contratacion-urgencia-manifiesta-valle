@@ -25,6 +25,16 @@
     "8903990295"
   ],
 
+  "_nota_ungrd": "Unidad Nacional para la Gestion del Riesgo de Desastres. Es entidad nacional (Bogota), asi que no entra en los indicadores de Cali y el Valle: tiene su propio grupo y su propia seccion en el tablero. Se busca en SECOP II y en SECOP I. El NIT se escribe de formas distintas segun la plataforma y la entidad que carga el registro (900478966, 9004789666, 900478966-6, 900.478.966-6); el colector genera todas esas formas a partir de la raiz, por eso basta con listar la raiz de nueve digitos.",
+  "_nota_fngrd": "900978341 es el Fondo Nacional de Gestion del Riesgo de Desastres (FNGRD), entidad distinta de la UNGRD pero que es el vehiculo financiero por el que la UNGRD ejecuta buena parte del gasto de emergencia: su ordenador del gasto es el director de la UNGRD. Contrata bajo su propio NIT, asi que vigilar solo 900478966 dejaria por fuera esa contratacion. Al 13-ago-2026 tenia 14 contratos historicos por 8.711 millones y ninguno en la ventana. Para dejar de seguirlo, basta con borrar esta linea de la lista.",
+  "nits_ungrd": [
+    "900478966",
+    "900978341"
+  ],
+
+  "_nota_secop1": "SECOP I sigue recibiendo cargues (169.224 registros cargados en 2026). Es un dataset distinto, con una fila por proceso que ya trae el contrato adentro, no dos datasets separados como SECOP II. Se apaga poniendo secop1_activo en false.",
+  "secop1_activo": true,
+
   "departamentos_vigilados": [
     "Valle del Cauca"
   ],

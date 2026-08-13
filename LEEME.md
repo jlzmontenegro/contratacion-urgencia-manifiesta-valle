@@ -31,16 +31,23 @@ Windows que ejecuta la actualización todos los días a las 8:30 a.m. Para otra 
 `registrar_tarea_diaria.bat 19:00`. Para eliminarla:
 `schtasks /delete /tn "UrgenciaManifiesta_Sismo2026" /f`.
 
+**Comprobar que no se esté escapando nada:** `py -3 verificar_cobertura.py`. Para cada entidad
+vigilada y cada fuente compara tres caminos independientes —la API con el NIT simple, la API
+con cualquier forma del NIT, y lo que quedó guardado en los CSV— y avisa si no coinciden. No
+usa el código del colector, para que un error en el colector no pase desapercibido por
+repetirse en la verificación.
+
 ---
 
 ## Qué consulta
 
-Datos abiertos de SECOP II en datos.gov.co:
+Datos abiertos en datos.gov.co, las dos plataformas de contratación:
 
-| Fuente | Dataset | Campo de fecha | Identificador |
-|---|---|---|---|
-| Contratos electrónicos | `jbjy-vk9h` | `fecha_de_firma` | `id_contrato` |
-| Procesos de contratación | `p6dx-8zbt` | `fecha_de_publicacion_del` | `id_del_proceso` |
+| Plataforma | Fuente | Dataset | Campo de fecha | Identificador |
+|---|---|---|---|---|
+| SECOP II | Contratos electrónicos | `jbjy-vk9h` | `fecha_de_firma` | `id_contrato` |
+| SECOP II | Procesos de contratación | `p6dx-8zbt` | `fecha_de_publicacion_del` | `id_del_proceso` |
+| SECOP I | Procesos de compra pública | `f789-7hwg` | `fecha_de_firma_del_contrato`, con respaldo en `fecha_de_cargue_en_el_secop` | `uid` |
 
 Sobre cada fuente se corren cuatro barridos que luego se deduplican por identificador:
 
@@ -48,7 +55,52 @@ Sobre cada fuente se corren cuatro barridos que luego se deduplican por identifi
 |---|---|---|
 | `nit` | Los 5 NIT de Cali central y Gobernación del Valle | Entidades directamente cobijadas por los decretos |
 | `departamento` | Toda entidad con departamento *Valle del Cauca* | Descentralizadas (EMCALI, Metro Cali, ESE) y municipios afectados. El Parágrafo Cuarto del Decreto 0964 obliga a las descentralizadas a declarar **su propia** urgencia manifiesta, con NIT distinto |
-| `nacional_clave` | Todo el país por palabras clave o justificación "Urgencia manifiesta" | Entidades nacionales (UNGRD, ministerios) que contraten para la emergencia |
+| `nacional_clave` | Todo el país por palabras clave o justificación "Urgencia manifiesta" | Entidades nacionales (ministerios) que contraten para la emergencia |
+| `ungrd` | Toda la contratación de la UNGRD y del FNGRD | Coordinan la respuesta nacional al desastre. Se traen completas, mencionen o no el sismo |
+
+## SECOP I y UNGRD
+
+Ambos tienen **sección propia en el tablero** y en el reporte diario.
+
+**SECOP I** es la plataforma anterior y sigue viva: en 2026 se le cargaron 169.224 registros.
+Se barre con las mismas cuatro estrategias que SECOP II, pero tiene tres diferencias que
+obligaron a tratarla aparte:
+
+- **No separa proceso y contrato.** Cada fila es un proceso que, si llegó a celebrarse, trae
+  el contrato en las mismas columnas. El tipo se decide por `estado_del_proceso`: *Celebrado*,
+  *Liquidado* y *Terminado sin Liquidar* son contratos; *Convocado*, *Adjudicado* y
+  *Terminado Anormalmente después de Convocado* siguen siendo procesos. No sirve mirar
+  `numero_de_contrato`: viene diligenciado incluso en procesos apenas convocados.
+- **Las fechas no son confiables por sí solas.** Hay filas firmadas antes del sismo que se
+  cargaron después, y procesos convocados sin fecha de firma. La ventana acepta cualquiera de
+  las dos fechas y el descarte de lo anterior al evento se hace al clasificar.
+- **La urgencia manifiesta no es una modalidad sino una causal**, que llega escrita como
+  `Urgencia Manifiesta (Literal A)`.
+
+**La UNGRD** (NIT 900.478.966-6) se vigila entera dentro de la ventana, en las dos
+plataformas, mencione o no el sismo. Junto con ella se vigila el **Fondo Nacional de Gestión
+del Riesgo de Desastres (FNGRD, NIT 900.978.341)**: es una entidad distinta, pero su ordenador
+del gasto es el director de la UNGRD y es el vehículo por el que se ejecuta buena parte del
+gasto de emergencia, contratando bajo su propio NIT. Vigilar solo 900478966 dejaría esa
+contratación por fuera. Por ser entidades nacionales con sede en Bogotá **no suman en los
+indicadores de Cali y el Valle**: tienen grupo propio y ámbito nacional.
+
+### El NIT se escribe distinto en cada plataforma
+
+Esto no es un detalle menor, es la parte que más fácil hace perder registros:
+
+| Fuente | Columna | Tipo | Cómo se consulta |
+|---|---|---|---|
+| SECOP II · contratos | `nit_entidad` | **numérica** | Lista de dígitos, con y sin dígito de verificación |
+| SECOP II · procesos | `nit_entidad` | texto | Prefijo de la raíz de 9 dígitos |
+| SECOP I | `nit_de_la_entidad` | texto | Prefijo de la raíz de 9 dígitos, y también con puntos |
+
+En SECOP I conviven en el mismo dataset `891900764` (sin dígito de verificación) y
+`890983664-7` (con él). Y en contratos electrónicos de SECOP II la columna es numérica:
+compararla contra `'900478966-6'` **no devuelve cero filas, aborta la consulta entera** con un
+error de tipo y se pierde el barrido completo. Por eso el colector genera las formas que
+corresponden a cada fuente a partir de la raíz de nueve dígitos, calculando el dígito de
+verificación cuando hace falta. En `config.json` basta con listar la raíz.
 
 ## Cómo se clasifica cada registro
 
@@ -61,9 +113,10 @@ Dos ejes independientes, para no perder nada y a la vez poder filtrar el ruido.
 | `Alcaldía de Cali` | NIT 890399011 y 8903990113 |
 | `Gobernación del Valle` | NIT 890399029, 8903990291 y 8903990295 |
 | `Otras entidades del Valle` | Municipios del departamento y descentralizadas (EMCALI, Metro Cali, ESE…) |
+| `UNGRD` | NIT 900478966 y 900978341 (FNGRD), en cualquiera de sus formas. No cuenta en los indicadores |
 | `Fuera del Valle` | Resto del país. No cuenta en los indicadores |
 
-Los tres primeros forman el ámbito `Territorial`; el último, el ámbito `Nacional`.
+Los tres primeros forman el ámbito `Territorial`; los dos últimos, el ámbito `Nacional`.
 
 **Nivel de relación**
 
@@ -72,7 +125,7 @@ Los tres primeros forman el ámbito `Territorial`; el último, el ámbito `Nacio
 | `Alta` | Cita uno de los decretos; o menciona sismo/terremoto siendo territorial o tratándose de atención de la emergencia; o tiene justificación "Urgencia manifiesta" y es territorial |
 | `Media` | Justificación "Urgencia manifiesta" fuera del territorio vigilado; u objeto propio de emergencia (albergue, escombros, ayuda humanitaria, demolición…) en entidad territorial |
 | `Otra urgencia` | Urgencia manifiesta de otra región por **otra** emergencia, u otro sismo. No cuenta como relacionado; se conserva como referencia |
-| `Contexto` | Contratación ordinaria de las entidades vigiladas. **No se muestra** en el tablero ni en el reporte |
+| `Contexto` | Contratación ordinaria de las entidades vigiladas. **No se muestra** en el tablero ni en el reporte, con una excepción: la de la UNGRD sí, en su sección |
 
 La contratación ordinaria se sigue descargando y guardando en los CSV, aunque no se muestre.
 Es lo que permite reclasificar sin volver a pedirle nada a la API si más adelante se ajusta
@@ -84,7 +137,17 @@ Valle junto con una palabra fuerte de emergencia, o que aluda al sismo sin refer
 año. Un contrato de Bogotá declarado bajo urgencia manifiesta por una emergencia distinta
 cae en `Otra urgencia`, no en los indicadores.
 
-Tres filtros evitan falsos positivos que se detectaron con datos reales:
+Cuatro filtros evitan falsos positivos que se detectaron con datos reales:
+
+- **Acto administrativo anterior al sismo.** Una calamidad o una urgencia declarada antes del
+  10 de agosto de 2026 es otro evento, aunque caiga en el mismo año y en el mismo territorio.
+  Caso real: un municipio del Valle contratando *"en el marco de la calamidad pública decretada
+  mediante Decreto Municipal No. 006 del 13 de febrero de 2026"*. Se leen las fechas completas
+  citadas en el objeto —en letras (*13 de febrero de 2026*) o en números (*13/02/2026*,
+  *2026-02-13*)— y si todas son anteriores al sismo, el registro baja a `Otra urgencia`. Un año
+  suelto (*"vigencia fiscal 2026"*) no es una fecha y no cuenta. El filtro **solo degrada**:
+  nunca convierte en relacionado algo que no lo era. Y no se aplica si el texto cita uno de los
+  decretos vigilados o menciona el sismo, que mandan sobre cualquier fecha.
 
 - **Coincidencia técnica rutinaria.** "Norma sismo resistente" o "microzonificación sísmica"
   sin palabra de emergencia no cuentan como atención del evento.
@@ -103,6 +166,7 @@ frases excluidas, umbrales de alerta.
 datos/
   contratos.csv              estado actual, todas las columnas de la API + clasificación
   procesos.csv               idem para procesos
+  secop1.csv                 idem para SECOP I
   cambios.csv                log acumulado de modificaciones (adiciones, prórrogas, estado…)
   estado.json                resumen de la última ejecución
   historial/                 snapshot comprimido de cada día
@@ -138,6 +202,8 @@ Para republicar sin volver a consultar la API: `publicar.bat solo`.
 
 - **SECOP II publica con aproximadamente un día de rezago.** Un contrato firmado hoy suele
   aparecer mañana. Por eso la ventana se reconsulta completa en cada ejecución.
+- **En SECOP I el rezago es mayor e irregular**, y la fecha de cargue a veces es anterior a la
+  de firma. No sirve para ordenar cronológicamente; sirve para no perder registros.
 - **Los registros se corrigen después de publicados.** Valor, plazo, estado y liquidación
   cambian. `cambios.csv` conserva la traza de cada modificación: es el insumo para el
   control fiscal previsto en el artículo 43 de la Ley 80 de 1993 y el 66 de la Ley 1523 de 2012.

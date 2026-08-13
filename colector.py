@@ -3,13 +3,15 @@
 Monitor de contratacion publica asociada a la urgencia manifiesta y al sismo
 del 10 de agosto de 2026 (Cali / Valle del Cauca).
 
-Fuentes (datos abiertos - SECOP II, API SODA de datos.gov.co):
-  - Procesos de contratacion : p6dx-8zbt  (campo de fecha: fecha_de_publicacion_del)
-  - Contratos electronicos   : jbjy-vk9h  (campo de fecha: fecha_de_firma)
+Fuentes (datos abiertos, API SODA de datos.gov.co):
+  - SECOP II · Procesos de contratacion : p6dx-8zbt  (fecha: fecha_de_publicacion_del)
+  - SECOP II · Contratos electronicos   : jbjy-vk9h  (fecha: fecha_de_firma)
+  - SECOP I  · Procesos de compra publica: f789-7hwg (fecha: fecha_de_firma_del_contrato,
+    con respaldo en fecha_de_cargue_en_el_secop)
 
 Cada ejecucion:
-  1. Barre las dos fuentes con tres estrategias (NIT, departamento, palabras clave nacional)
-     mas una linea base historica de urgencia manifiesta en el Valle.
+  1. Barre las tres fuentes con cuatro estrategias (NIT de las entidades de los decretos,
+     departamento, palabras clave a nivel nacional y NIT de la UNGRD).
   2. Une y deduplica por identificador de contrato / proceso.
   3. Clasifica el nivel de relacion con el sismo (Alta / Media / Contexto).
   4. Compara contra el estado anterior y registra altas y modificaciones en cambios.csv.
@@ -49,6 +51,14 @@ DOMINIO = "https://www.datos.gov.co/resource"
 
 FUENTES = {
     "contratos": {
+        "plataforma": "SECOP II",
+        "tipo": "Contrato",
+        # En contratos electronicos nit_entidad es una columna NUMERICA: compararla
+        # contra '900478966-6' no devuelve cero filas, aborta la consulta entera con
+        # un error de tipo. Por eso el NIT se trata distinto en cada fuente.
+        "nit": "nit_entidad",
+        "nit_texto": False,
+        "url": "urlproceso",
         "dataset": "jbjy-vk9h",
         "id": "id_contrato",
         "fecha": "fecha_de_firma",
@@ -75,6 +85,11 @@ FUENTES = {
         ],
     },
     "procesos": {
+        "plataforma": "SECOP II",
+        "tipo": "Proceso",
+        "nit": "nit_entidad",
+        "nit_texto": True,      # aqui si es texto, a diferencia de contratos
+        "url": "urlproceso",
         "dataset": "p6dx-8zbt",
         "id": "id_del_proceso",
         "fecha": "fecha_de_publicacion_del",
@@ -99,7 +114,59 @@ FUENTES = {
             "estado_resumen",
         ],
     },
+    # SECOP I es la plataforma anterior y sigue activa: en 2026 se le cargaron
+    # 169.224 registros. A diferencia de SECOP II no separa proceso y contrato en
+    # dos datasets: cada fila es un proceso que, si llego a celebrarse, trae los
+    # datos del contrato en las mismas columnas.
+    "secop1": {
+        "plataforma": "SECOP I",
+        "tipo": None,           # se decide por fila: celebrado -> Contrato, si no -> Proceso
+        "nit": "nit_de_la_entidad",
+        "nit_texto": True,
+        "url": "ruta_proceso_en_secop_i",
+        "dataset": "f789-7hwg",
+        "id": "uid",
+        "fecha": "fecha_de_firma_del_contrato",
+        # Muchas filas se cargan dias despues de firmadas, y las que solo estan
+        # convocadas no tienen fecha de firma. Sin esta fecha de respaldo se
+        # perderian los procesos abiertos, que son justo los que hay que vigilar.
+        "fecha_alt": "fecha_de_cargue_en_el_secop",
+        "entidad": "nombre_entidad",
+        "departamento": "departamento_entidad",
+        "ciudad": "municipio_entidad",
+        "descripcion": ["detalle_del_objeto_a_contratar", "objeto_del_contrato_a_la",
+                        "objeto_a_contratar"],
+        # En SECOP I la urgencia manifiesta no es una modalidad sino una causal
+        # de contratacion directa: 'Urgencia Manifiesta (Literal A)'.
+        "justificacion": "causal_de_otras_formas_de",
+        "modalidad": "modalidad_de_contratacion",
+        "valor": "cuantia_contrato",
+        "valor_alt": "cuantia_proceso",
+        "proveedor": "nom_razon_social_contratista",
+        "doc_proveedor": "identificacion_del_contratista",
+        "estado": "estado_del_proceso",
+        "etiqueta_fecha": "Firma del contrato (SECOP I)",
+        "etiqueta_fecha_alt": "Cargue en SECOP I",
+        "fecha_ini": "fecha_ini_ejec_contrato",
+        "fecha_fin": "fecha_fin_ejec_contrato",
+        "duracion": "plazo_de_ejec_del_contrato",
+        "unidad_duracion": "rango_de_ejec_del_contrato",
+        "vigilar": [
+            "cuantia_contrato", "cuantia_proceso", "valor_total_de_adiciones",
+            "valor_contrato_con_adiciones", "estado_del_proceso", "fecha_fin_ejec_contrato",
+            "tiempo_adiciones_en_dias", "tiempo_adiciones_en_meses",
+            "nom_razon_social_contratista", "fecha_liquidacion", "numero_de_contrato",
+        ],
+    },
 }
+
+
+def fuentes_activas(cfg):
+    """Nombres de fuente a recolectar. SECOP I se puede apagar desde config.json."""
+    activas = ["contratos", "procesos"]
+    if cfg.get("secop1_activo", True):
+        activas.append("secop1")
+    return activas
 
 
 def cargar_config():
@@ -203,6 +270,99 @@ def pesos(valor):
         return "$ 0"
 
 
+_MESES = {
+    "ENERO": 1, "FEBRERO": 2, "MARZO": 3, "ABRIL": 4, "MAYO": 5, "JUNIO": 6,
+    "JULIO": 7, "AGOSTO": 8, "SEPTIEMBRE": 9, "SETIEMBRE": 9, "OCTUBRE": 10,
+    "NOVIEMBRE": 11, "DICIEMBRE": 12,
+}
+_RE_FECHA_LETRAS = re.compile(r"\b(\d{1,2})\s+DE\s+([A-Z]+)\s+(?:DEL?\s+)?(20\d{2})\b")
+_RE_FECHA_DMA = re.compile(r"\b(\d{1,2})[/-](\d{1,2})[/-](20\d{2})\b")
+_RE_FECHA_AMD = re.compile(r"\b(20\d{2})[/-](\d{1,2})[/-](\d{1,2})\b")
+
+
+def fechas_en_texto(texto):
+    """Fechas completas citadas en el objeto contractual, ya normalizado.
+
+    Sirven para saber a que acto administrativo alude un contrato: 'calamidad
+    publica decretada mediante Decreto Municipal 006 del 13 de febrero de 2026'
+    no habla de este sismo, aunque diga 'calamidad' y aunque el ano coincida.
+    Solo se reconocen fechas completas: un ano suelto ('vigencia fiscal 2026')
+    no es una fecha y se ignora aqui.
+    """
+    encontradas = []
+    for dia, mes, anio in _RE_FECHA_LETRAS.findall(texto):
+        numero_mes = _MESES.get(mes)
+        if numero_mes:
+            try:
+                encontradas.append(date(int(anio), numero_mes, int(dia)))
+            except ValueError:
+                pass
+    for dia, mes, anio in _RE_FECHA_DMA.findall(texto):
+        try:
+            encontradas.append(date(int(anio), int(mes), int(dia)))
+        except ValueError:
+            pass
+    for anio, mes, dia in _RE_FECHA_AMD.findall(texto):
+        try:
+            encontradas.append(date(int(anio), int(mes), int(dia)))
+        except ValueError:
+            pass
+    return encontradas
+
+
+def raiz_nit(nit):
+    """Los nueve digitos del NIT, sin puntos, guiones ni digito de verificacion."""
+    digitos = re.sub(r"\D", "", str(nit or ""))
+    return digitos[:9] if len(digitos) >= 9 else digitos
+
+
+def digito_verificacion(raiz):
+    """Digito de verificacion de un NIT colombiano (el '6' de 900478966-6)."""
+    pesos_dv = [3, 7, 13, 17, 19, 23, 29, 37, 41, 43]
+    suma = sum(int(d) * pesos_dv[i] for i, d in enumerate(reversed(raiz)))
+    resto = suma % 11
+    return str(resto if resto < 2 else 11 - resto)
+
+
+def clausula_nit(campo, nits, texto):
+    """Condicion SoQL que reconoce un NIT escrito de cualquiera de sus formas.
+
+    El mismo NIT viaja escrito de maneras distintas segun la plataforma y segun
+    la entidad que carga el registro. En SECOP I conviven '891900764' y
+    '890983664-7' en el mismo dataset, y la UNGRD puede aparecer como 900478966,
+    9004789666, 900478966-6 o 900.478.966-6. Sobre una columna de texto se
+    compara por prefijo de la raiz de nueve digitos, que cubre todas esas formas
+    de una sola vez.
+
+    En contratos electronicos de SECOP II la columna es numerica y no admite
+    prefijos: alli se enumeran las formas de digitos, con y sin el digito de
+    verificacion. Comparar una columna numerica contra '900478966-6' no
+    devuelve cero filas: aborta la consulta con un error de tipo.
+    """
+    raices = [r for r in (raiz_nit(n) for n in nits) if r]
+    if not raices:
+        return "1 = 0"
+
+    if not texto:
+        valores = set()
+        for n in nits:
+            digitos = re.sub(r"\D", "", str(n or ""))
+            if digitos:
+                valores.add(digitos)          # la forma tal como quedo en config.json
+        for r in raices:
+            valores.add(r)                    # sin digito de verificacion
+            if len(r) == 9:
+                valores.add(r + digito_verificacion(r))   # con el
+        return f"{campo} in (" + ", ".join(f"'{v}'" for v in sorted(valores)) + ")"
+
+    patrones = []
+    for r in raices:
+        patrones.append(f"{campo} like '{r}%'")
+        if len(r) == 9:
+            patrones.append(f"{campo} like '{r[:3]}.{r[3:6]}.{r[6:]}%'")
+    return "(" + " OR ".join(patrones) + ")"
+
+
 # --------------------------------------------------------------------------
 # Acceso a la API
 # --------------------------------------------------------------------------
@@ -252,12 +412,20 @@ def condiciones(nombre_fuente, cfg, hoy):
     campo_fecha = f["fecha"]
     campo_dep = f["departamento"]
     campo_just = f["justificacion"]
+    campo_nit = f["nit"]
+    nit_texto = f["nit_texto"]
 
     inicio = f"{cfg['fecha_inicio']}T00:00:00"
     fin = (hoy + timedelta(days=2)).strftime("%Y-%m-%dT00:00:00")
     ventana = f"{campo_fecha} >= '{inicio}' AND {campo_fecha} < '{fin}'"
+    if f.get("fecha_alt"):
+        # SECOP I: hay filas firmadas antes del sismo que se cargaron despues, y
+        # procesos convocados que todavia no tienen fecha de firma. Se acepta
+        # cualquiera de las dos fechas dentro de la ventana y se descarta despues,
+        # al clasificar, lo que resulte anterior al evento.
+        alt = f["fecha_alt"]
+        ventana = (f"(({ventana}) OR ({alt} >= '{inicio}' AND {alt} < '{fin}'))")
 
-    nits = ", ".join(f"'{n}'" for n in cfg["nits_prioritarios"])
     deps = " OR ".join(f"{campo_dep} = '{d}'" for d in cfg["departamentos_vigilados"])
 
     # Se busca en todos los campos de texto: SECOP recorta
@@ -269,16 +437,27 @@ def condiciones(nombre_fuente, cfg, hoy):
         for campo in f["descripcion"]
     )
 
+    # En SECOP II la urgencia manifiesta es el valor de la justificacion de
+    # modalidad; en SECOP I es una causal que llega como 'Urgencia Manifiesta
+    # (Literal A)'. La comparacion por texto en mayusculas sirve para ambas.
+    urgencia = f"upper({campo_just}) like '%URGENCIA MANIFIESTA%'"
+
     barridos = {
         # A. Entidades senaladas en los decretos (Cali central y Gobernacion del Valle)
-        "nit": f"{ventana} AND nit_entidad in ({nits})",
+        "nit": f"{ventana} AND {clausula_nit(campo_nit, cfg['nits_prioritarios'], nit_texto)}",
         # B. Todo el departamento: descentralizadas de Cali y municipios afectados
         "departamento": f"{ventana} AND ({deps})",
         # C. Barrido nacional por palabras clave y por justificacion de urgencia manifiesta
-        "nacional_clave": (
-            f"{ventana} AND (({claves}) OR {campo_just} = 'Urgencia manifiesta')"
-        ),
+        "nacional_clave": f"{ventana} AND (({claves}) OR {urgencia})",
     }
+
+    # D. UNGRD completa: es la entidad nacional que coordina la respuesta al
+    #    desastre, asi que se trae toda su contratacion de la ventana y no solo
+    #    la que menciona el sismo. Su relacion con el evento se evalua despues.
+    nits_ungrd = cfg.get("nits_ungrd") or []
+    if nits_ungrd:
+        barridos["ungrd"] = f"{ventana} AND {clausula_nit(campo_nit, nits_ungrd, nit_texto)}"
+
     return barridos
 
 
@@ -307,8 +486,9 @@ def descargar_fuente(nombre_fuente, cfg, hoy, verbose=True):
 
     df = pd.DataFrame(list(acumulado.values()))
     df["origen_barrido"] = df[f["id"]].map(lambda k: "+".join(sorted(origenes.get(k, []))))
-    if "urlproceso" in df.columns:
-        df["urlproceso"] = df["urlproceso"].map(desempacar_url)
+    campo_url = f["url"]
+    if campo_url in df.columns:
+        df[campo_url] = df[campo_url].map(desempacar_url)
     return df
 
 
@@ -330,6 +510,10 @@ def clasificar(df, nombre_fuente, cfg):
     justificacion = df.get(f["justificacion"], pd.Series([""] * len(df))).map(normalizar)
     modalidad = df.get(f["modalidad"], pd.Series([""] * len(df))).map(normalizar)
     fecha = pd.to_datetime(df[f["fecha"]], errors="coerce")
+    if f.get("fecha_alt") and f["fecha_alt"] in df.columns:
+        # Un proceso de SECOP I solo convocado no tiene fecha de firma; sin este
+        # respaldo quedaria sin fecha y se descartaria por 'anterior a la ventana'.
+        fecha = fecha.fillna(pd.to_datetime(df[f["fecha_alt"]], errors="coerce"))
     corte_sismo = pd.Timestamp(cfg["fecha_inicio"])
 
     fuertes = [normalizar(p) for p in cfg["palabras_clave_fuertes"]]
@@ -340,18 +524,24 @@ def clasificar(df, nombre_fuente, cfg):
     emergencia_fuerte = [normalizar(p) for p in cfg.get("palabras_emergencia_fuerte", [])]
     territorio = [normalizar(p) for p in cfg.get("nombres_territorio", [])]
     anio_evento = str(cfg["fecha_evento"])[:4]
+    fecha_evento = date.fromisoformat(str(cfg["fecha_evento"])[:10])
 
     # Grupo por nivel de gobierno y ambito territorial.
     deps_vig = {normalizar(d) for d in cfg["departamentos_vigilados"]}
-    nits_alcaldia = set(cfg.get("nits_alcaldia_cali", []))
-    nits_gob = set(cfg.get("nits_gobernacion_valle", []))
+    # Se compara por la raiz de nueve digitos porque el mismo NIT llega escrito
+    # con y sin digito de verificacion, y en SECOP I ademas con guion o puntos.
+    nits_alcaldia = {raiz_nit(n) for n in cfg.get("nits_alcaldia_cali", [])}
+    nits_gob = {raiz_nit(n) for n in cfg.get("nits_gobernacion_valle", [])}
+    nits_ungrd = {raiz_nit(n) for n in cfg.get("nits_ungrd", [])}
     dep_serie = df.get(f["departamento"], pd.Series([""] * len(df))).map(normalizar)
-    nit_serie = df.get("nit_entidad", pd.Series([""] * len(df))).astype(str)
+    nit_serie = df.get(f["nit"], pd.Series([""] * len(df))).astype(str).map(raiz_nit)
 
     grupos = []
     for i in range(len(df)):
         nit = nit_serie.iloc[i]
-        if nit in nits_alcaldia:
+        if nit and nit in nits_ungrd:
+            grupos.append("UNGRD")
+        elif nit in nits_alcaldia:
             grupos.append("Alcaldía de Cali")
         elif nit in nits_gob:
             grupos.append("Gobernación del Valle")
@@ -360,7 +550,10 @@ def clasificar(df, nombre_fuente, cfg):
         else:
             grupos.append("Fuera del Valle")
 
-    ambitos = ["Nacional" if g == "Fuera del Valle" else "Territorial" for g in grupos]
+    # La UNGRD es entidad nacional con sede en Bogota: se vigila entera y tiene
+    # seccion propia, pero no entra en los indicadores de Cali y el Valle.
+    ambitos = ["Nacional" if g in ("Fuera del Valle", "UNGRD") else "Territorial"
+               for g in grupos]
 
     niveles, motivos = [], []
     for i in range(len(df)):
@@ -396,6 +589,18 @@ def clasificar(df, nombre_fuente, cfg):
         anios = set(re.findall(r"\b(20\d{2})\b", t))
         otro_anio = bool(anios) and anio_evento not in anios
         es_este_evento = bool(golpes_decreto) or not otro_anio
+
+        # Una calamidad o una urgencia declarada ANTES del sismo es otro evento,
+        # aunque caiga en el mismo ano y en el mismo territorio. Caso real: un
+        # municipio del Valle contratando "en el marco de la calamidad publica
+        # decretada mediante Decreto Municipal 006 del 13 de febrero de 2026".
+        # Solo se degrada cuando la unica evidencia es la palabra generica: si
+        # cita uno de los decretos vigilados o menciona el sismo, no se toca.
+        fechas_citadas = fechas_en_texto(t)
+        citas_previas = sorted(d for d in fechas_citadas if d < fecha_evento)
+        hay_cita_posterior = any(d >= fecha_evento for d in fechas_citadas)
+        acto_anterior = bool(citas_previas) and not hay_cita_posterior \
+            and not golpes_decreto and not del_evento
         # "norma sismo resistente", "microzonificacion sismica" y similares son
         # contratacion tecnica rutinaria, no atencion del evento.
         if del_evento and any(fr in t for fr in excluidas) and not hay_emergencia:
@@ -440,6 +645,19 @@ def clasificar(df, nombre_fuente, cfg):
             if not razones:
                 razones.append("contratacion ordinaria de entidad vigilada")
 
+        # Se aplica al final y solo hacia abajo: nunca convierte en relacionado
+        # algo que no lo era, solo descarta lo que resulto serlo por una
+        # calamidad o una urgencia anterior al sismo.
+        if acto_anterior and nivel in ("Alta", "Media"):
+            nivel = "Otra urgencia"
+            razones.append(f"alude a un acto del {citas_previas[0]:%d/%m/%Y}, anterior al "
+                           f"sismo del {fecha_evento:%d/%m/%Y}")
+
+        if grupos[i] == "UNGRD" and nivel == "Contexto":
+            # No se pierde: la seccion de la UNGRD muestra toda su contratacion
+            # de la ventana, relacionada o no con el sismo.
+            razones.append("contratacion de la UNGRD sin mencion del evento")
+
         niveles.append(nivel)
         motivos.append("; ".join(razones))
 
@@ -449,7 +667,30 @@ def clasificar(df, nombre_fuente, cfg):
     df["nivel_relacion"] = niveles
     df["motivo_relacion"] = motivos
     df["anterior_al_sismo"] = (fecha < corte_sismo).fillna(False).values
+    df["plataforma"] = f["plataforma"]
+    df["es_ungrd"] = [g == "UNGRD" for g in grupos]
+    df["fecha_efectiva"] = fecha.dt.strftime("%Y-%m-%d").fillna("").values
     return df
+
+
+# Estados de SECOP I en los que ya existe contrato. No sirve mirar
+# numero_de_contrato: viene diligenciado incluso en procesos solo convocados. Y
+# 'Terminado Anormalmente despues de Convocado' es un proceso que murio antes de
+# contratar, pese a empezar por 'Terminado'.
+ESTADOS_CELEBRADOS = {"CELEBRADO", "LIQUIDADO", "TERMINADO SIN LIQUIDAR"}
+
+
+def tipo_registro(fila, f):
+    """Etiqueta 'Contrato' o 'Proceso' para una fila.
+
+    En SECOP II lo define el dataset. En SECOP I ambos viven en la misma tabla:
+    la fila es un contrato cuando ya se celebro, y un proceso mientras no.
+    """
+    if f["tipo"]:
+        return f["tipo"]
+    if solo_fecha(fila.get(f["fecha"])):
+        return "Contrato"
+    return "Contrato" if normalizar(fila.get(f["estado"])).strip() in ESTADOS_CELEBRADOS else "Proceso"
 
 
 # --------------------------------------------------------------------------
@@ -539,11 +780,12 @@ def registrar_novedades(nuevos, nombre_fuente, sello):
     if nuevos.empty:
         return
     f = FUENTES[nombre_fuente]
+    fechas = nuevos.get(f["fecha"], pd.Series([""] * len(nuevos), index=nuevos.index))
     filas = pd.DataFrame({
         "fecha_deteccion": sello,
         "fuente": nombre_fuente,
         "identificador": nuevos[f["id"]],
-        "fecha_registro": nuevos[f["fecha"]].astype(str).str[:10],
+        "fecha_registro": nuevos.get("fecha_efectiva", fechas).astype(str).str[:10],
         "entidad": nuevos.get(f["entidad"], ""),
         "grupo": nuevos.get("grupo", ""),
         "nivel_relacion": nuevos.get("nivel_relacion", ""),
@@ -565,16 +807,17 @@ def sembrar_novedades():
         return
 
     partes = []
-    for nombre in ("contratos", "procesos"):
+    for nombre in FUENTES:
         d = leer_estado(nombre)
         if d.empty or "primera_vez_visto" not in d.columns:
             continue
         f = FUENTES[nombre]
+        fechas = d.get(f["fecha"], pd.Series([""] * len(d), index=d.index))
         partes.append(pd.DataFrame({
             "fecha_deteccion": d["primera_vez_visto"],
             "fuente": nombre,
             "identificador": d[f["id"]],
-            "fecha_registro": d[f["fecha"]].astype(str).str[:10],
+            "fecha_registro": d.get("fecha_efectiva", fechas).astype(str).str[:10],
             "entidad": d.get(f["entidad"], ""),
             "grupo": d.get("grupo", ""),
             "nivel_relacion": d.get("nivel_relacion", ""),
@@ -615,53 +858,65 @@ def registrar_cambios(cambios):
 # Alertas
 # --------------------------------------------------------------------------
 
-def calcular_alertas(contratos, procesos, cfg):
+def calcular_alertas(resultados, cfg):
+    """Alertas sobre la contratacion relacionada de Cali y el Valle, en las dos plataformas."""
     alertas = []
-    fc = FUENTES["contratos"]
 
-    if not contratos.empty:
-        # Las alertas se concentran en Cali y el Valle, que es el objeto del seguimiento.
-        rel = contratos[
-            contratos["nivel_relacion"].isin(["Alta", "Media"])
-            & (contratos["ambito"] == "Territorial")
-        ].copy()
-        if not rel.empty:
-            rel["_valor"] = a_numero(rel[fc["valor"]])
+    planos = []
+    for nombre in fuentes_activas(cfg):
+        planos.extend(aplanar(resultados.get(nombre, pd.DataFrame()), nombre))
 
-            grandes = rel[rel["_valor"] >= cfg["alerta_valor_contrato"]]
-            for _, r in grandes.iterrows():
+    # Las alertas se concentran en Cali y el Valle, que es el objeto del seguimiento.
+    rel = [r for r in planos
+           if r["ambito"] == "Territorial"
+           and r["nivel"] in ("Alta", "Media")
+           and r["tipo"] == "Contrato"]
+
+    for r in rel:
+        if r["valor"] >= cfg["alerta_valor_contrato"]:
+            alertas.append({
+                "tipo": "Contrato de alto valor",
+                "detalle": f"{r['entidad']} - {pesos(r['valor'])} - {r['proveedor']} "
+                           f"[{r['plataforma']}]",
+                "identificador": r["id"],
+            })
+
+    por_proveedor = {}
+    for r in rel:
+        nombre_prov = str(r["proveedor"]).strip()
+        if not nombre_prov:
+            continue
+        acc = por_proveedor.setdefault(nombre_prov, {"n": 0, "total": 0.0})
+        acc["n"] += 1
+        acc["total"] += r["valor"]
+    for nombre_prov, acc in por_proveedor.items():
+        if acc["n"] >= cfg["alerta_contratos_mismo_proveedor"]:
+            alertas.append({
+                "tipo": "Proveedor con varios contratos",
+                "detalle": f"{nombre_prov}: {acc['n']} contratos por {pesos(acc['total'])}",
+                "identificador": "",
+            })
+
+    # Contratos de urgencia sin proceso publicado en SECOP II
+    contratos = resultados.get("contratos", pd.DataFrame())
+    procesos = resultados.get("procesos", pd.DataFrame())
+    if not contratos.empty and not procesos.empty:
+        fc = FUENTES["contratos"]
+        terr = contratos[
+            (contratos["nivel_relacion"] == "Alta") & (contratos["ambito"] == "Territorial")
+        ]
+        if not terr.empty:
+            refs = set(procesos[FUENTES["procesos"]["id"]].astype(str))
+            sin_proceso = terr[
+                ~terr.get("proceso_de_compra", pd.Series([""] * len(terr))).astype(str).isin(refs)
+            ]
+            if len(sin_proceso) > 0:
                 alertas.append({
-                    "tipo": "Contrato de alto valor",
-                    "detalle": f"{r.get(fc['entidad'],'')} - {pesos(r['_valor'])} - {r.get(fc['proveedor'],'')}",
-                    "identificador": r[fc["id"]],
-                })
-
-            conteo = rel.groupby(fc["proveedor"]).agg(
-                n=(fc["id"], "count"), total=("_valor", "sum")
-            ).reset_index()
-            repetidos = conteo[conteo["n"] >= cfg["alerta_contratos_mismo_proveedor"]]
-            for _, r in repetidos.iterrows():
-                if not str(r[fc["proveedor"]]).strip():
-                    continue
-                alertas.append({
-                    "tipo": "Proveedor con varios contratos",
-                    "detalle": f"{r[fc['proveedor']]}: {int(r['n'])} contratos por {pesos(r['total'])}",
+                    "tipo": "Contratos sin proceso publicado",
+                    "detalle": f"{len(sin_proceso)} contratos de relacion alta no tienen "
+                               f"proceso visible en el dataset de procesos",
                     "identificador": "",
                 })
-
-            # Contratos de urgencia sin proceso publicado en SECOP
-            if not procesos.empty:
-                refs = set(procesos[FUENTES["procesos"]["id"]].astype(str))
-                sin_proceso = rel[
-                    (rel["nivel_relacion"] == "Alta")
-                    & (~rel.get("proceso_de_compra", pd.Series([""] * len(rel))).astype(str).isin(refs))
-                ]
-                if len(sin_proceso) > 0:
-                    alertas.append({
-                        "tipo": "Contratos sin proceso publicado",
-                        "detalle": f"{len(sin_proceso)} contratos de relacion alta no tienen proceso visible en el dataset de procesos",
-                        "identificador": "",
-                    })
     return alertas
 
 
@@ -669,8 +924,10 @@ def calcular_alertas(contratos, procesos, cfg):
 # Reporte diario
 # --------------------------------------------------------------------------
 
-def escribir_reporte(hoy, contratos, procesos, nuevos_c, nuevos_p, cambios, alertas, cfg):
+def escribir_reporte(hoy, contratos, procesos, nuevos_c, nuevos_p, cambios, alertas, cfg,
+                     resultados=None):
     fc, fp = FUENTES["contratos"], FUENTES["procesos"]
+    resultados = resultados or {"contratos": contratos, "procesos": procesos}
     lineas = []
     a = lineas.append
 
@@ -740,6 +997,65 @@ def escribir_reporte(hoy, contratos, procesos, nuevos_c, nuevos_p, cambios, aler
         a("Nada de lo anterior cuenta en los indicadores de Cali y el Valle.")
         a("")
 
+    # ---- SECOP I -----------------------------------------------------------
+    planos = []
+    for nombre in fuentes_activas(cfg):
+        planos.extend(aplanar(resultados.get(nombre, pd.DataFrame()), nombre))
+
+    s1 = [r for r in planos if r["plataforma"] == "SECOP I"
+          and r["nivel"] in ("Alta", "Media", "Otra urgencia")]
+    a("## SECOP I")
+    a("")
+    if s1:
+        s1_rel = [r for r in s1 if r["nivel"] in ("Alta", "Media")]
+        s1_terr = [r for r in s1_rel if r["ambito"] == "Territorial"]
+        valor_s1 = sum(r["valor"] for r in s1_terr if r["tipo"] == "Contrato")
+        a(f"- **Relacionados con el sismo: {len(s1_rel)}** "
+          f"({len(s1_terr)} de Cali y el Valle, por {pesos(valor_s1)}).")
+        a(f"- Urgencia manifiesta por otras causas, o calamidades anteriores al sismo: "
+          f"{len(s1) - len(s1_rel)}. Se listan como referencia, no cuentan como relacionados.")
+        a("")
+        a("| Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |")
+        a("|---|---|---|---:|---|---|")
+        for r in sorted(s1, key=lambda x: x["valor"], reverse=True)[:30]:
+            obj = str(r["objeto"])[:110].replace("|", "/").replace("\n", " ")
+            causal = f"{r['modalidad']} · {r['justificacion']}".strip(" ·")
+            a(f"| {r['fecha']} | {r['entidad']} | {obj} | {pesos(r['valor'])} | "
+              f"{causal} | {r['nivel']} |")
+    else:
+        a("Sin contratos ni convenios relacionados con el sismo en SECOP I para esta ventana. "
+          "La mayor parte de la contratacion actual se tramita por SECOP II; SECOP I se "
+          "revisa porque sigue recibiendo cargues y porque algunas entidades y regimenes "
+          "especiales continuan publicando alli.")
+    a("")
+
+    # ---- UNGRD -------------------------------------------------------------
+    ung = [r for r in planos if r["es_ungrd"]]
+    a("## UNGRD y FNGRD · NIT 900.478.966-6 y 900.978.341")
+    a("")
+    if ung:
+        ung_rel = [r for r in ung if r["nivel"] in ("Alta", "Media")]
+        valor_ung = sum(r["valor"] for r in ung if r["tipo"] == "Contrato")
+        a(f"- Contratacion en la ventana: **{len(ung)}** registros por "
+          f"{pesos(valor_ung)}, de los cuales **{len(ung_rel)}** aluden al sismo del "
+          f"{cfg['fecha_evento']}.")
+        a("")
+        a("| Fecha | Entidad | Plataforma | Objeto | Valor | Contratista | Relacion |")
+        a("|---|---|---|---|---:|---|---|")
+        for r in sorted(ung, key=lambda x: x["valor"], reverse=True)[:30]:
+            obj = str(r["objeto"])[:110].replace("|", "/").replace("\n", " ")
+            a(f"| {r['fecha']} | {r['entidad']} | {r['plataforma']} | {obj} | "
+              f"{pesos(r['valor'])} | {r['proveedor']} | {r['nivel']} |")
+        a("")
+        a("Se lista **toda** la contratacion del periodo, mencione o no el sismo, porque es la "
+          "entidad que coordina la respuesta nacional al desastre. Se incluye el Fondo Nacional "
+          "de Gestion del Riesgo (FNGRD), entidad distinta pero cuyo ordenador del gasto es el "
+          "director de la UNGRD. Por ser nacionales no suman en los indicadores de Cali y el Valle.")
+    else:
+        a("Sin contratacion de la UNGRD ni del FNGRD registrada en la ventana, "
+          "ni en SECOP I ni en SECOP II.")
+    a("")
+
     if not rel_c.empty:
         a("## Contratos por entidad")
         a("")
@@ -806,7 +1122,8 @@ def escribir_reporte(hoy, contratos, procesos, nuevos_c, nuevos_p, cambios, aler
 
     a("---")
     a("")
-    a("Fuente: SECOP II via datos.gov.co (datasets `jbjy-vk9h` y `p6dx-8zbt`). "
+    a("Fuente: datos.gov.co. SECOP II (`jbjy-vk9h` contratos electronicos, `p6dx-8zbt` procesos) "
+      "y SECOP I (`f789-7hwg` procesos de compra publica). "
       "Los registros de SECOP se corrigen despues de publicados; el archivo `datos/cambios.csv` "
       "conserva la traza de cada modificacion.")
 
@@ -823,50 +1140,76 @@ def escribir_reporte(hoy, contratos, procesos, nuevos_c, nuevos_p, cambios, aler
 # Datos para el tablero HTML
 # --------------------------------------------------------------------------
 
-def exportar_tablero(hoy, contratos, procesos, cambios_totales, alertas, cfg, resumen_corrida=None):
-    """Genera datos/historial_tablero.js, que el tablero carga con <script src>
-    (funciona incluso abriendo el HTML con doble clic, sin servidor web)."""
-    fc, fp = FUENTES["contratos"], FUENTES["procesos"]
+def aplanar(df, nombre_fuente):
+    """Registros normalizados, con los mismos nombres de campo en las tres fuentes.
 
-    def compactar(df, f, tipo):
-        if df.empty:
-            return []
-        d = df[df["nivel_relacion"].isin(["Alta", "Media", "Otra urgencia"])].copy()
-        if d.empty:
-            return []
-        d["_v"] = a_numero(d[f["valor"]])
-        salida = []
-        for _, r in d.iterrows():
-            ini, fin, dur = calcular_duracion(r, f)
-            salida.append({
-                "tipo": tipo,
-                "id": r.get(f["id"], ""),
-                "fecha": str(r.get(f["fecha"], ""))[:10],
-                "etiqueta_fecha": f["etiqueta_fecha"],
-                "fecha_inicio": ini,
-                "fecha_fin": fin,
-                "duracion": dur,
-                "entidad": r.get(f["entidad"], ""),
-                "nit": r.get("nit_entidad", ""),
-                "departamento": r.get(f["departamento"], ""),
-                "ciudad": r.get(f["ciudad"], ""),
-                "objeto": objeto_completo(r, f),
-                "modalidad": r.get(f["modalidad"], ""),
-                "justificacion": r.get(f["justificacion"], ""),
-                "valor": float(r["_v"]),
-                "proveedor": r.get(f["proveedor"], ""),
-                "documento_proveedor": r.get(f["doc_proveedor"], ""),
-                "estado": r.get(f["estado"], ""),
-                "url": r.get("urlproceso", ""),
-                "grupo": r.get("grupo", ""),
-                "ambito": r.get("ambito", ""),
-                "nivel": r.get("nivel_relacion", ""),
-                "motivo": r.get("motivo_relacion", ""),
-                "barrido": r.get("origen_barrido", ""),
-            })
-        return salida
+    Se conserva lo relacionado con el sismo y, ademas, toda la contratacion de la
+    UNGRD de la ventana: su seccion muestra el universo completo de esa entidad,
+    no solo lo que menciona el evento.
+    """
+    if df.empty:
+        return []
+    f = FUENTES[nombre_fuente]
+    visibles = df["nivel_relacion"].isin(["Alta", "Media", "Otra urgencia"])
+    if "es_ungrd" in df.columns:
+        visibles = visibles | df["es_ungrd"].fillna(False).astype(bool)
+    d = df[visibles].copy()
+    if d.empty:
+        return []
 
-    registros = compactar(contratos, fc, "Contrato") + compactar(procesos, fp, "Proceso")
+    d["_v"] = a_numero(d[f["valor"]])
+    if f.get("valor_alt") and f["valor_alt"] in d.columns:
+        # En SECOP I un proceso aun no celebrado no tiene cuantia de contrato,
+        # solo cuantia del proceso.
+        d["_v"] = d["_v"].where(d["_v"] > 0, a_numero(d[f["valor_alt"]]))
+
+    salida = []
+    for _, r in d.iterrows():
+        ini, fin, dur = calcular_duracion(r, f)
+        # solo_fecha, no un recorte crudo: un campo vacio llega como NaN y
+        # str(NaN)[:10] deja el texto 'nan' en la columna de fecha.
+        fecha = solo_fecha(r.get(f["fecha"]))
+        etiqueta = f["etiqueta_fecha"]
+        if not fecha and f.get("fecha_alt"):
+            fecha = solo_fecha(r.get(f["fecha_alt"]))
+            etiqueta = f.get("etiqueta_fecha_alt", etiqueta)
+        salida.append({
+            "tipo": tipo_registro(r, f),
+            "plataforma": f["plataforma"],
+            "fuente": nombre_fuente,
+            "id": r.get(f["id"], ""),
+            "fecha": fecha,
+            "etiqueta_fecha": etiqueta,
+            "fecha_inicio": ini,
+            "fecha_fin": fin,
+            "duracion": dur,
+            "entidad": r.get(f["entidad"], ""),
+            "nit": r.get(f["nit"], ""),
+            "departamento": r.get(f["departamento"], ""),
+            "ciudad": r.get(f["ciudad"], ""),
+            "objeto": objeto_completo(r, f),
+            "modalidad": r.get(f["modalidad"], ""),
+            "justificacion": r.get(f["justificacion"], ""),
+            "valor": float(r["_v"]),
+            "proveedor": r.get(f["proveedor"], ""),
+            "documento_proveedor": r.get(f["doc_proveedor"], ""),
+            "estado": r.get(f["estado"], ""),
+            "url": r.get(f["url"], ""),
+            "grupo": r.get("grupo", ""),
+            "ambito": r.get("ambito", ""),
+            "es_ungrd": bool(r.get("es_ungrd", False)),
+            "nivel": r.get("nivel_relacion", ""),
+            "motivo": r.get("motivo_relacion", ""),
+            "barrido": r.get("origen_barrido", ""),
+        })
+    return salida
+
+
+def exportar_tablero(hoy, resultados, cambios_totales, alertas, cfg, resumen_corrida=None):
+    """Incrusta en tablero.html los datos de la ultima recoleccion."""
+    registros = []
+    for nombre in fuentes_activas(cfg):
+        registros.extend(aplanar(resultados.get(nombre, pd.DataFrame()), nombre))
 
     ruta_cambios = os.path.join(DIR_DATOS, "cambios.csv")
     historial_cambios = []
@@ -882,17 +1225,19 @@ def exportar_tablero(hoy, contratos, procesos, cambios_totales, alertas, cfg, re
         "corrida_anterior": resumen_corrida or {},
         "fecha_inicio": cfg["fecha_inicio"],
         "nits": cfg["nits_prioritarios"],
+        "nits_ungrd": cfg.get("nits_ungrd", []),
+        "secop1_activo": bool(cfg.get("secop1_activo", True)),
         "departamentos": cfg["departamentos_vigilados"],
         "palabras_fuertes": cfg["palabras_clave_fuertes"],
         "registros": registros,
         "cambios": historial_cambios,
         "alertas": alertas,
         "totales": {
-            "contratos_monitoreados": int(len(contratos)),
-            "procesos_monitoreados": int(len(procesos)),
-            "cambios_hoy": int(len(cambios_totales)),
+            nombre + "_monitoreados": int(len(resultados.get(nombre, pd.DataFrame())))
+            for nombre in fuentes_activas(cfg)
         },
     }
+    payload["totales"]["cambios_hoy"] = int(len(cambios_totales))
 
     return incrustar_en_tablero(payload)
 
@@ -955,8 +1300,8 @@ def main():
     cambios_totales = []
     nuevos = {}
 
-    for nombre in ("contratos", "procesos"):
-        print(f"\n[{nombre}]")
+    for nombre in fuentes_activas(cfg):
+        print(f"\n[{nombre}] {FUENTES[nombre]['plataforma']} · {FUENTES[nombre]['dataset']}")
         if args.sin_red:
             df = leer_estado(nombre)
             print(f"  - modo sin red: {len(df)} filas leidas del disco")
@@ -995,32 +1340,41 @@ def main():
 
     contratos = resultados.get("contratos", pd.DataFrame())
     procesos = resultados.get("procesos", pd.DataFrame())
-    alertas = calcular_alertas(contratos, procesos, cfg)
+    secop1 = resultados.get("secop1", pd.DataFrame())
+    alertas = calcular_alertas(resultados, cfg)
 
     ruta_reporte = escribir_reporte(
         hoy, contratos, procesos,
         nuevos.get("contratos", pd.DataFrame()), nuevos.get("procesos", pd.DataFrame()),
-        cambios_totales, alertas, cfg,
+        cambios_totales, alertas, cfg, resultados=resultados,
     )
     estado = {
         "ultima_ejecucion": sello,
         "contratos": int(len(contratos)),
         "procesos": int(len(procesos)),
+        "secop1": int(len(secop1)),
         "nuevos_contratos": int(len(nuevos.get("contratos", pd.DataFrame()))),
         "nuevos_procesos": int(len(nuevos.get("procesos", pd.DataFrame()))),
+        "nuevos_secop1": int(len(nuevos.get("secop1", pd.DataFrame()))),
         "cambios": len(cambios_totales),
         "alertas": len(alertas),
     }
     with open(os.path.join(DIR_DATOS, "estado.json"), "w", encoding="utf-8") as fh:
         json.dump(estado, fh, ensure_ascii=False, indent=2)
 
-    ruta_tablero = exportar_tablero(hoy, contratos, procesos, cambios_totales,
+    ruta_tablero = exportar_tablero(hoy, resultados, cambios_totales,
                                     alertas, cfg, resumen_corrida=estado)
 
     print("\nListo.")
     print(f"  reporte : {ruta_reporte}")
     print(f"  tablero : {ruta_tablero}")
     print(f"  alertas : {len(alertas)}")
+    if not secop1.empty:
+        rel_s1 = secop1["nivel_relacion"].isin(["Alta", "Media"]).sum()
+        print(f"  secop I : {len(secop1)} registros revisados, {rel_s1} relacionados")
+    ungrd = sum(int(d.get("es_ungrd", pd.Series(dtype=bool)).sum())
+                for d in resultados.values() if not d.empty)
+    print(f"  UNGRD   : {ungrd} registros de contratacion en la ventana")
 
 
 if __name__ == "__main__":
