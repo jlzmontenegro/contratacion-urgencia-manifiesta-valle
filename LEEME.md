@@ -49,7 +49,6 @@ Sobre cada fuente se corren cuatro barridos que luego se deduplican por identifi
 | `nit` | Los 5 NIT de Cali central y Gobernación del Valle | Entidades directamente cobijadas por los decretos |
 | `departamento` | Toda entidad con departamento *Valle del Cauca* | Descentralizadas (EMCALI, Metro Cali, ESE) y municipios afectados. El Parágrafo Cuarto del Decreto 0964 obliga a las descentralizadas a declarar **su propia** urgencia manifiesta, con NIT distinto |
 | `nacional_clave` | Todo el país por palabras clave o justificación "Urgencia manifiesta" | Entidades nacionales (UNGRD, ministerios) que contraten para la emergencia |
-| `linea_base` | Urgencia manifiesta en el Valle entre enero y el 8 de agosto | Permite comparar el comportamiento previo al sismo y detectar contratos antefechados |
 
 ## Cómo se clasifica cada registro
 
@@ -73,8 +72,11 @@ Los tres primeros forman el ámbito `Territorial`; el último, el ámbito `Nacio
 | `Alta` | Cita uno de los decretos; o menciona sismo/terremoto siendo territorial o tratándose de atención de la emergencia; o tiene justificación "Urgencia manifiesta" y es territorial |
 | `Media` | Justificación "Urgencia manifiesta" fuera del territorio vigilado; u objeto propio de emergencia (albergue, escombros, ayuda humanitaria, demolición…) en entidad territorial |
 | `Otra urgencia` | Urgencia manifiesta de otra región por **otra** emergencia, u otro sismo. No cuenta como relacionado; se conserva como referencia |
-| `Contexto` | Contratación ordinaria de entidades vigiladas. Se conserva para tener el universo completo y poder comparar |
-| `Linea base` | Anterior al 10 de agosto de 2026 |
+| `Contexto` | Contratación ordinaria de las entidades vigiladas. **No se muestra** en el tablero ni en el reporte |
+
+La contratación ordinaria se sigue descargando y guardando en los CSV, aunque no se muestre.
+Es lo que permite reclasificar sin volver a pedirle nada a la API si más adelante se ajusta
+alguna palabra clave, y es sobre ese universo completo que opera la detección de cambios.
 
 Dentro de Cali y el Valle el criterio es generoso, porque es el territorio del seguimiento.
 **Fuera del territorio se exige una señal inequívoca**: que el objeto mencione a Cali o al

@@ -278,12 +278,6 @@ def condiciones(nombre_fuente, cfg, hoy):
         "nacional_clave": (
             f"{ventana} AND (({claves}) OR {campo_just} = 'Urgencia manifiesta')"
         ),
-        # D. Linea base: urgencia manifiesta en el Valle desde enero, para comparar
-        #    el comportamiento previo al sismo y detectar contratos antefechados
-        "linea_base": (
-            f"{campo_fecha} >= '2026-01-01T00:00:00' AND {campo_fecha} < '{inicio}' "
-            f"AND ({deps}) AND {campo_just} = 'Urgencia manifiesta'"
-        ),
     }
     return barridos
 
@@ -409,10 +403,9 @@ def clasificar(df, nombre_fuente, cfg):
             razones.append("coincidencia tecnica rutinaria, no atencion del evento")
 
         if not posterior:
-            # Anterior a la ventana: linea base para comparar el comportamiento
-            # de la urgencia manifiesta antes del sismo.
-            nivel = "Linea base"
-            razones.insert(0, "anterior al 9 de agosto de 2026")
+            # No deberia ocurrir: todos los barridos filtran desde la fecha del evento
+            nivel = "Contexto"
+            razones.insert(0, "anterior a la ventana de seguimiento")
         elif golpes_decreto:
             nivel = "Alta"
         elif territorial and (del_evento or "URGENCIA MANIFIESTA" in just or golpes_fuertes):
@@ -656,16 +649,6 @@ def calcular_alertas(contratos, procesos, cfg):
                     "identificador": "",
                 })
 
-            # Contrato de emergencia con fecha de firma anterior al sismo/decreto
-            firma = pd.to_datetime(rel[fc["fecha"]], errors="coerce")
-            antefechados = rel[firma < pd.Timestamp(cfg["fecha_evento"])]
-            for _, r in antefechados.iterrows():
-                alertas.append({
-                    "tipo": "Firmado antes del sismo",
-                    "detalle": f"{r.get(fc['entidad'],'')} - firma {str(r.get(fc['fecha'],''))[:10]} - {pesos(r['_valor'])}",
-                    "identificador": r[fc["id"]],
-                })
-
             # Contratos de urgencia sin proceso publicado en SECOP
             if not procesos.empty:
                 refs = set(procesos[FUENTES["procesos"]["id"]].astype(str))
@@ -722,10 +705,7 @@ def escribir_reporte(hoy, contratos, procesos, nuevos_c, nuevos_p, cambios, aler
     a(f"| Contratos nuevos en esta ejecucion | {len(nuevos_c)} |")
     a(f"| Procesos nuevos en esta ejecucion | {len(nuevos_p)} |")
     a(f"| Modificaciones detectadas | {len(cambios)} |")
-    base_c = int((contratos["nivel_relacion"] == "Linea base").sum()) if not contratos.empty else 0
-    base_p = int((procesos["nivel_relacion"] == "Linea base").sum()) if not procesos.empty else 0
-    a(f"| Linea base previa al sismo (urgencia manifiesta ene-ago 8) | {base_c + base_p} |")
-    a(f"| Filas totales monitoreadas (incluye contexto) | {len(contratos) + len(procesos)} |")
+    a(f"| Registros revisados en total | {len(contratos) + len(procesos)} |")
     a("")
 
     if not contratos.empty or not procesos.empty:
@@ -851,7 +831,7 @@ def exportar_tablero(hoy, contratos, procesos, cambios_totales, alertas, cfg, re
     def compactar(df, f, tipo):
         if df.empty:
             return []
-        d = df[df["nivel_relacion"].isin(["Alta", "Media", "Otra urgencia", "Linea base"])].copy()
+        d = df[df["nivel_relacion"].isin(["Alta", "Media", "Otra urgencia"])].copy()
         if d.empty:
             return []
         d["_v"] = a_numero(d[f["valor"]])
