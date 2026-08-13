@@ -60,7 +60,12 @@ Sobre cada fuente se corren cuatro barridos que luego se deduplican por identifi
 
 ## SECOP I y UNGRD
 
-Ambos tienen **sección propia en el tablero** y en el reporte diario.
+Ambos tienen **sección propia en el tablero** y en el reporte diario. Las dos secciones
+muestran **solo lo relacionado con el sismo** (relación alta o media). Quedan fuera de la
+vista, aunque se sigan descargando y guardando, la contratación ordinaria y la urgencia
+manifiesta declarada por otras causas o por calamidades anteriores al 10 de agosto; el pie de
+cada sección dice cuántos registros se descartaron. En la tabla de detalle sí se pueden
+consultar con el filtro *Urgencia manifiesta por otras causas*.
 
 **SECOP I** es la plataforma anterior y sigue viva: en 2026 se le cargaron 169.224 registros.
 Se barre con las mismas cuatro estrategias que SECOP II, pero tiene tres diferencias que
@@ -77,8 +82,10 @@ obligaron a tratarla aparte:
 - **La urgencia manifiesta no es una modalidad sino una causal**, que llega escrita como
   `Urgencia Manifiesta (Literal A)`.
 
-**La UNGRD** (NIT 900.478.966-6) se vigila entera dentro de la ventana, en las dos
-plataformas, mencione o no el sismo. Junto con ella se vigila el **Fondo Nacional de Gestión
+**La UNGRD** (NIT 900.478.966-6) se **revisa** entera dentro de la ventana, en las dos
+plataformas, mencione o no el sismo, pero en el tablero y en el reporte **solo se muestra lo
+relacionado con el sismo**: su contratación ordinaria queda en los CSV, disponible para
+reclasificar, sin ensuciar la vista. Junto con ella se vigila el **Fondo Nacional de Gestión
 del Riesgo de Desastres (FNGRD, NIT 900.978.341)**: es una entidad distinta, pero su ordenador
 del gasto es el director de la UNGRD y es el vehículo por el que se ejecuta buena parte del
 gasto de emergencia, contratando bajo su propio NIT. Vigilar solo 900478966 dejaría esa
@@ -125,7 +132,7 @@ Los tres primeros forman el ámbito `Territorial`; los dos últimos, el ámbito 
 | `Alta` | Cita uno de los decretos; o menciona sismo/terremoto siendo territorial o tratándose de atención de la emergencia; o tiene justificación "Urgencia manifiesta" y es territorial |
 | `Media` | Justificación "Urgencia manifiesta" fuera del territorio vigilado; u objeto propio de emergencia (albergue, escombros, ayuda humanitaria, demolición…) en entidad territorial |
 | `Otra urgencia` | Urgencia manifiesta de otra región por **otra** emergencia, u otro sismo. No cuenta como relacionado; se conserva como referencia |
-| `Contexto` | Contratación ordinaria de las entidades vigiladas. **No se muestra** en el tablero ni en el reporte, con una excepción: la de la UNGRD sí, en su sección |
+| `Contexto` | Contratación ordinaria de las entidades vigiladas. **No se muestra** en el tablero ni en el reporte |
 
 La contratación ordinaria se sigue descargando y guardando en los CSV, aunque no se muestre.
 Es lo que permite reclasificar sin volver a pedirle nada a la API si más adelante se ajusta

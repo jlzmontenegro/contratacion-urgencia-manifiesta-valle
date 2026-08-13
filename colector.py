@@ -1002,18 +1002,19 @@ def escribir_reporte(hoy, contratos, procesos, nuevos_c, nuevos_p, cambios, aler
     for nombre in fuentes_activas(cfg):
         planos.extend(aplanar(resultados.get(nombre, pd.DataFrame()), nombre))
 
+    # Solo lo relacionado con el sismo. La urgencia manifiesta por otras causas y
+    # las calamidades anteriores al evento se revisan, pero no se listan.
     s1 = [r for r in planos if r["plataforma"] == "SECOP I"
-          and r["nivel"] in ("Alta", "Media", "Otra urgencia")]
+          and r["nivel"] in ("Alta", "Media")]
+    descartados_s1 = len([r for r in planos if r["plataforma"] == "SECOP I"
+                          and r["nivel"] == "Otra urgencia"])
     a("## SECOP I")
     a("")
     if s1:
-        s1_rel = [r for r in s1 if r["nivel"] in ("Alta", "Media")]
-        s1_terr = [r for r in s1_rel if r["ambito"] == "Territorial"]
+        s1_terr = [r for r in s1 if r["ambito"] == "Territorial"]
         valor_s1 = sum(r["valor"] for r in s1_terr if r["tipo"] == "Contrato")
-        a(f"- **Relacionados con el sismo: {len(s1_rel)}** "
+        a(f"- **Relacionados con el sismo: {len(s1)}** "
           f"({len(s1_terr)} de Cali y el Valle, por {pesos(valor_s1)}).")
-        a(f"- Urgencia manifiesta por otras causas, o calamidades anteriores al sismo: "
-          f"{len(s1) - len(s1_rel)}. Se listan como referencia, no cuentan como relacionados.")
         a("")
         a("| Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |")
         a("|---|---|---|---:|---|---|")
@@ -1027,18 +1028,25 @@ def escribir_reporte(hoy, contratos, procesos, nuevos_c, nuevos_p, cambios, aler
           "La mayor parte de la contratacion actual se tramita por SECOP II; SECOP I se "
           "revisa porque sigue recibiendo cargues y porque algunas entidades y regimenes "
           "especiales continuan publicando alli.")
+    if descartados_s1:
+        a("")
+        a(f"_No se listan {descartados_s1} registros de SECOP I con urgencia manifiesta por "
+          f"otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._")
     a("")
 
     # ---- UNGRD -------------------------------------------------------------
-    ung = [r for r in planos if r["es_ungrd"]]
+    # Igual que arriba: solo lo del sismo. Su contratacion ordinaria se revisa
+    # entera, pero no se lista.
+    ung = [r for r in planos if r["es_ungrd"] and r["nivel"] in ("Alta", "Media")]
+    revisados_ung = sum(
+        int(d["es_ungrd"].fillna(False).astype(bool).sum())
+        for d in resultados.values() if not d.empty and "es_ungrd" in d.columns
+    )
     a("## UNGRD y FNGRD · NIT 900.478.966-6 y 900.978.341")
     a("")
     if ung:
-        ung_rel = [r for r in ung if r["nivel"] in ("Alta", "Media")]
         valor_ung = sum(r["valor"] for r in ung if r["tipo"] == "Contrato")
-        a(f"- Contratacion en la ventana: **{len(ung)}** registros por "
-          f"{pesos(valor_ung)}, de los cuales **{len(ung_rel)}** aluden al sismo del "
-          f"{cfg['fecha_evento']}.")
+        a(f"- **Relacionados con el sismo: {len(ung)}** registros por {pesos(valor_ung)}.")
         a("")
         a("| Fecha | Entidad | Plataforma | Objeto | Valor | Contratista | Relacion |")
         a("|---|---|---|---|---:|---|---|")
@@ -1047,13 +1055,16 @@ def escribir_reporte(hoy, contratos, procesos, nuevos_c, nuevos_p, cambios, aler
             a(f"| {r['fecha']} | {r['entidad']} | {r['plataforma']} | {obj} | "
               f"{pesos(r['valor'])} | {r['proveedor']} | {r['nivel']} |")
         a("")
-        a("Se lista **toda** la contratacion del periodo, mencione o no el sismo, porque es la "
-          "entidad que coordina la respuesta nacional al desastre. Se incluye el Fondo Nacional "
-          "de Gestion del Riesgo (FNGRD), entidad distinta pero cuyo ordenador del gasto es el "
-          "director de la UNGRD. Por ser nacionales no suman en los indicadores de Cali y el Valle.")
+        a("Se incluye el Fondo Nacional de Gestion del Riesgo (FNGRD), entidad distinta de la "
+          "UNGRD pero cuyo ordenador del gasto es su director. Por ser nacionales no suman en "
+          "los indicadores de Cali y el Valle.")
     else:
-        a("Sin contratacion de la UNGRD ni del FNGRD registrada en la ventana, "
+        a("La UNGRD y el FNGRD no registran todavia contratacion relacionada con el sismo, "
           "ni en SECOP I ni en SECOP II.")
+    if revisados_ung:
+        a("")
+        a(f"_Se revisaron {revisados_ung} registros de contratacion de estas dos entidades en "
+          f"la ventana; los que no aluden al sismo no se listan. Quedan en los CSV._")
     a("")
 
     if not rel_c.empty:
@@ -1143,17 +1154,15 @@ def escribir_reporte(hoy, contratos, procesos, nuevos_c, nuevos_p, cambios, aler
 def aplanar(df, nombre_fuente):
     """Registros normalizados, con los mismos nombres de campo en las tres fuentes.
 
-    Se conserva lo relacionado con el sismo y, ademas, toda la contratacion de la
-    UNGRD de la ventana: su seccion muestra el universo completo de esa entidad,
-    no solo lo que menciona el evento.
+    Se conserva lo relacionado con el sismo y la urgencia manifiesta de otras
+    causas, que el tablero deja disponible como filtro explicito. La contratacion
+    ordinaria no pasa: se queda en los CSV, que es lo que permite reclasificar sin
+    volver a pedirle nada a la API.
     """
     if df.empty:
         return []
     f = FUENTES[nombre_fuente]
-    visibles = df["nivel_relacion"].isin(["Alta", "Media", "Otra urgencia"])
-    if "es_ungrd" in df.columns:
-        visibles = visibles | df["es_ungrd"].fillna(False).astype(bool)
-    d = df[visibles].copy()
+    d = df[df["nivel_relacion"].isin(["Alta", "Media", "Otra urgencia"])].copy()
     if d.empty:
         return []
 
