@@ -550,10 +550,13 @@ def clasificar(df, nombre_fuente, cfg):
         else:
             grupos.append("Fuera del Valle")
 
-    # La UNGRD es entidad nacional con sede en Bogota: se vigila entera y tiene
-    # seccion propia, pero no entra en los indicadores de Cali y el Valle.
+    # La UNGRD es entidad nacional con sede en Bogota. Para clasificar se la trata
+    # como no territorial, de modo que solo cuente lo que aluda al sismo; pero lo
+    # que si alude al evento SI suma en los indicadores, porque es la entidad que
+    # coordina y financia la respuesta nacional al desastre del Valle.
     ambitos = ["Nacional" if g in ("Fuera del Valle", "UNGRD") else "Territorial"
                for g in grupos]
+    cuenta_indicador = [g != "Fuera del Valle" for g in grupos]
 
     niveles, motivos = [], []
     for i in range(len(df)):
@@ -664,6 +667,7 @@ def clasificar(df, nombre_fuente, cfg):
     df = df.copy()
     df["grupo"] = grupos
     df["ambito"] = ambitos
+    df["cuenta_indicador"] = cuenta_indicador
     df["nivel_relacion"] = niveles
     df["motivo_relacion"] = motivos
     df["anterior_al_sismo"] = (fecha < corte_sismo).fillna(False).values
@@ -830,8 +834,14 @@ def sembrar_novedades():
         print(f"  bitacora de novedades sembrada con {len(todo)} registros ya conocidos")
 
 
-def leer_novedades(dias=30):
-    """Mapa identificador -> fecha en que se vio por primera vez, ultimos N dias."""
+def leer_novedades(cfg, dias=30):
+    """Mapa identificador -> fecha en que se vio por primera vez, ultimos N dias.
+
+    Solo se devuelven registros cuya fecha propia cae dentro de la ventana de
+    seguimiento. La bitacora conserva entradas de barridos que ya se retiraron
+    (la linea base previa al sismo, por ejemplo) y sin este filtro el tablero
+    reportaria mas novedades que registros descargados.
+    """
     ruta = os.path.join(DIR_DATOS, "novedades.csv")
     if not os.path.exists(ruta):
         return {}
@@ -840,6 +850,8 @@ def leer_novedades(dias=30):
         return {}
     corte = (datetime.now() - timedelta(days=dias)).strftime("%Y-%m-%d")
     d = d[d["fecha_deteccion"].str[:10] >= corte]
+    if "fecha_registro" in d.columns:
+        d = d[d["fecha_registro"] >= cfg["fecha_inicio"]]
     # Si un identificador aparece varias veces se conserva la primera deteccion
     d = d.sort_values("fecha_deteccion").drop_duplicates("identificador", keep="first")
     return dict(zip(d["identificador"], d["fecha_deteccion"].str[:10]))
@@ -866,9 +878,10 @@ def calcular_alertas(resultados, cfg):
     for nombre in fuentes_activas(cfg):
         planos.extend(aplanar(resultados.get(nombre, pd.DataFrame()), nombre))
 
-    # Las alertas se concentran en Cali y el Valle, que es el objeto del seguimiento.
+    # Las alertas se concentran en lo que suma en los indicadores: Cali, el Valle
+    # y la UNGRD/FNGRD. La contratacion ordinaria no genera alertas.
     rel = [r for r in planos
-           if r["ambito"] == "Territorial"
+           if r.get("cuenta_indicador")
            and r["nivel"] in ("Alta", "Media")
            and r["tipo"] == "Contrato"]
 
@@ -903,7 +916,8 @@ def calcular_alertas(resultados, cfg):
     if not contratos.empty and not procesos.empty:
         fc = FUENTES["contratos"]
         terr = contratos[
-            (contratos["nivel_relacion"] == "Alta") & (contratos["ambito"] == "Territorial")
+            (contratos["nivel_relacion"] == "Alta")
+            & contratos["cuenta_indicador"].fillna(False).astype(bool)
         ]
         if not terr.empty:
             refs = set(procesos[FUENTES["procesos"]["id"]].astype(str))
@@ -936,23 +950,25 @@ def escribir_reporte(hoy, contratos, procesos, nuevos_c, nuevos_p, cambios, aler
     a(f"**Corte:** {hoy:%Y-%m-%d %H:%M}  |  **Ventana:** {cfg['fecha_inicio']} en adelante")
     a("")
 
-    def relevantes(df, solo_territorial=True):
+    def relevantes(df, solo_indicador=True):
         if df.empty:
             return pd.DataFrame()
         m = df["nivel_relacion"].isin(["Alta", "Media"])
-        if solo_territorial:
-            m &= df["ambito"] == "Territorial"
+        if solo_indicador:
+            # Cali, el Valle y la UNGRD/FNGRD. Queda fuera el resto del pais.
+            m &= df["cuenta_indicador"].fillna(False).astype(bool)
         return df[m]
 
     rel_c = relevantes(contratos)
     rel_p = relevantes(procesos)
     nac_c = relevantes(contratos, False)
     nac_p = relevantes(procesos, False)
-    nac_c = nac_c[nac_c["ambito"] == "Nacional"] if not nac_c.empty else pd.DataFrame()
-    nac_p = nac_p[nac_p["ambito"] == "Nacional"] if not nac_p.empty else pd.DataFrame()
+    sin_ind = lambda d: d[~d["cuenta_indicador"].fillna(False).astype(bool)] if not d.empty else pd.DataFrame()
+    nac_c = sin_ind(nac_c)
+    nac_p = sin_ind(nac_p)
     total_valor = a_numero(rel_c[fc["valor"]]).sum() if not rel_c.empty else 0
 
-    a("## Resumen · Cali y Valle del Cauca")
+    a("## Resumen · Cali, Valle del Cauca y UNGRD")
     a("")
     a("| Indicador | Valor |")
     a("|---|---|")
@@ -970,11 +986,31 @@ def escribir_reporte(hoy, contratos, procesos, nuevos_c, nuevos_p, cambios, aler
         a("")
         a("| Grupo | Contratos | Valor | Procesos |")
         a("|---|---:|---:|---:|")
-        for grupo in ("Alcaldía de Cali", "Gobernación del Valle", "Otras entidades del Valle"):
+        for grupo in ("Alcaldía de Cali", "Gobernación del Valle",
+                      "Otras entidades del Valle", "UNGRD"):
             gc = rel_c[rel_c["grupo"] == grupo] if not rel_c.empty else pd.DataFrame()
             gp = rel_p[rel_p["grupo"] == grupo] if not rel_p.empty else pd.DataFrame()
             valor = a_numero(gc[fc["valor"]]).sum() if not gc.empty else 0
-            a(f"| {grupo} | {len(gc)} | {pesos(valor)} | {len(gp)} |")
+            etiqueta = "UNGRD y FNGRD" if grupo == "UNGRD" else grupo
+            a(f"| {etiqueta} | {len(gc)} | {pesos(valor)} | {len(gp)} |")
+        a("")
+
+        # Contratacion ordinaria de las dos entidades del decreto, sin relacion
+        # con el sismo. No suma en los indicadores; se lista para dimensionarla.
+        a("### Contratación ordinaria de la Alcaldía y la Gobernación")
+        a("")
+        a("| Grupo | Contratos | Valor | Procesos |")
+        a("|---|---:|---:|---:|")
+        for grupo in GRUPOS_ORDINARIA:
+            oc = contratos[(contratos["nivel_relacion"] == "Contexto")
+                           & (contratos["grupo"] == grupo)] if not contratos.empty else pd.DataFrame()
+            op = procesos[(procesos["nivel_relacion"] == "Contexto")
+                          & (procesos["grupo"] == grupo)] if not procesos.empty else pd.DataFrame()
+            valor = a_numero(oc[fc["valor"]]).sum() if not oc.empty else 0
+            a(f"| {grupo} | {len(oc)} | {pesos(valor)} | {len(op)} |")
+        a("")
+        a("No tiene relación con el sismo y no suma en los indicadores de arriba. "
+          "Se incluye porque son las dos entidades que expidieron los decretos.")
         a("")
 
     otras_c = contratos[contratos["nivel_relacion"] == "Otra urgencia"] if not contratos.empty else pd.DataFrame()
@@ -1011,10 +1047,10 @@ def escribir_reporte(hoy, contratos, procesos, nuevos_c, nuevos_p, cambios, aler
     a("## SECOP I")
     a("")
     if s1:
-        s1_terr = [r for r in s1 if r["ambito"] == "Territorial"]
+        s1_terr = [r for r in s1 if r.get("cuenta_indicador")]
         valor_s1 = sum(r["valor"] for r in s1_terr if r["tipo"] == "Contrato")
         a(f"- **Relacionados con el sismo: {len(s1)}** "
-          f"({len(s1_terr)} de Cali y el Valle, por {pesos(valor_s1)}).")
+          f"({len(s1_terr)} que suman en los indicadores, por {pesos(valor_s1)}).")
         a("")
         a("| Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |")
         a("|---|---|---|---:|---|---|")
@@ -1056,8 +1092,9 @@ def escribir_reporte(hoy, contratos, procesos, nuevos_c, nuevos_p, cambios, aler
               f"{pesos(r['valor'])} | {r['proveedor']} | {r['nivel']} |")
         a("")
         a("Se incluye el Fondo Nacional de Gestion del Riesgo (FNGRD), entidad distinta de la "
-          "UNGRD pero cuyo ordenador del gasto es su director. Por ser nacionales no suman en "
-          "los indicadores de Cali y el Valle.")
+          "UNGRD pero cuyo ordenador del gasto es su director. Lo que aqui aparece SI suma en "
+          "los indicadores: es la entidad que coordina y financia la respuesta nacional al "
+          "desastre. Su contratacion ordinaria, en cambio, no se muestra.")
     else:
         a("La UNGRD y el FNGRD no registran todavia contratacion relacionada con el sismo, "
           "ni en SECOP I ni en SECOP II.")
@@ -1151,18 +1188,31 @@ def escribir_reporte(hoy, contratos, procesos, nuevos_c, nuevos_p, cambios, aler
 # Datos para el tablero HTML
 # --------------------------------------------------------------------------
 
+# Grupos cuya contratacion ordinaria si se muestra en el tablero, bajo su propio
+# filtro. Del resto de entidades solo se muestra lo relacionado con el sismo.
+GRUPOS_ORDINARIA = ("Alcaldía de Cali", "Gobernación del Valle")
+
+
 def aplanar(df, nombre_fuente):
     """Registros normalizados, con los mismos nombres de campo en las tres fuentes.
 
     Se conserva lo relacionado con el sismo y la urgencia manifiesta de otras
-    causas, que el tablero deja disponible como filtro explicito. La contratacion
-    ordinaria no pasa: se queda en los CSV, que es lo que permite reclasificar sin
-    volver a pedirle nada a la API.
+    causas, que el tablero deja disponible como filtro explicito. De la
+    contratacion ordinaria solo pasa la de la Alcaldia de Cali y la Gobernacion
+    del Valle, que el tablero muestra bajo su propio filtro; la del resto se
+    queda en los CSV, que es lo que permite reclasificar sin volver a pedirle
+    nada a la API.
     """
     if df.empty:
         return []
     f = FUENTES[nombre_fuente]
-    d = df[df["nivel_relacion"].isin(["Alta", "Media", "Otra urgencia"])].copy()
+    visible = df["nivel_relacion"].isin(["Alta", "Media", "Otra urgencia"])
+    if "grupo" in df.columns:
+        visible |= (
+            (df["nivel_relacion"] == "Contexto")
+            & df["grupo"].isin(GRUPOS_ORDINARIA)
+        )
+    d = df[visible].copy()
     if d.empty:
         return []
 
@@ -1206,6 +1256,7 @@ def aplanar(df, nombre_fuente):
             "url": r.get(f["url"], ""),
             "grupo": r.get("grupo", ""),
             "ambito": r.get("ambito", ""),
+            "cuenta_indicador": bool(r.get("cuenta_indicador", False)),
             "es_ungrd": bool(r.get("es_ungrd", False)),
             "nivel": r.get("nivel_relacion", ""),
             "motivo": r.get("motivo_relacion", ""),
@@ -1230,7 +1281,7 @@ def exportar_tablero(hoy, resultados, cambios_totales, alertas, cfg, resumen_cor
         "generado": hoy.strftime("%Y-%m-%d %H:%M:%S"),
         # Cuando aparecio publicado cada registro. Permite marcar novedades en el
         # tablero, que por si solo no tiene memoria de lo que vio antes.
-        "novedades": leer_novedades(30),
+        "novedades": leer_novedades(cfg, 30),
         "corrida_anterior": resumen_corrida or {},
         "fecha_inicio": cfg["fecha_inicio"],
         "nits": cfg["nits_prioritarios"],

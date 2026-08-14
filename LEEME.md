@@ -89,8 +89,9 @@ reclasificar, sin ensuciar la vista. Junto con ella se vigila el **Fondo Naciona
 del Riesgo de Desastres (FNGRD, NIT 900.978.341)**: es una entidad distinta, pero su ordenador
 del gasto es el director de la UNGRD y es el vehículo por el que se ejecuta buena parte del
 gasto de emergencia, contratando bajo su propio NIT. Vigilar solo 900478966 dejaría esa
-contratación por fuera. Por ser entidades nacionales con sede en Bogotá **no suman en los
-indicadores de Cali y el Valle**: tienen grupo propio y ámbito nacional.
+contratación por fuera. Lo que de ellas se relacione con el sismo **sí suma en los
+indicadores**, porque son las entidades que coordinan y financian la respuesta nacional al
+desastre del Valle; su contratación ordinaria, en cambio, no se muestra.
 
 ### El NIT se escribe distinto en cada plataforma
 
@@ -120,10 +121,14 @@ Dos ejes independientes, para no perder nada y a la vez poder filtrar el ruido.
 | `Alcaldía de Cali` | NIT 890399011 y 8903990113 |
 | `Gobernación del Valle` | NIT 890399029, 8903990291 y 8903990295 |
 | `Otras entidades del Valle` | Municipios del departamento y descentralizadas (EMCALI, Metro Cali, ESE…) |
-| `UNGRD` | NIT 900478966 y 900978341 (FNGRD), en cualquiera de sus formas. No cuenta en los indicadores |
-| `Fuera del Valle` | Resto del país. No cuenta en los indicadores |
+| `UNGRD` | NIT 900478966 y 900978341 (FNGRD), en cualquiera de sus formas |
+| `Fuera del Valle` | Resto del país. **No** cuenta en los indicadores |
 
-Los tres primeros forman el ámbito `Territorial`; los dos últimos, el ámbito `Nacional`.
+Los cuatro primeros suman en los indicadores; el último se muestra aparte, como referencia.
+
+Para clasificar, en cambio, la UNGRD se trata como entidad no territorial: se le exige que el
+objeto aluda al sismo, no basta la justificación de urgencia manifiesta. Así entra lo del
+evento y queda fuera su contratación corriente.
 
 **Nivel de relación**
 
@@ -132,9 +137,13 @@ Los tres primeros forman el ámbito `Territorial`; los dos últimos, el ámbito 
 | `Alta` | Cita uno de los decretos; o menciona sismo/terremoto siendo territorial o tratándose de atención de la emergencia; o tiene justificación "Urgencia manifiesta" y es territorial |
 | `Media` | Justificación "Urgencia manifiesta" fuera del territorio vigilado; u objeto propio de emergencia (albergue, escombros, ayuda humanitaria, demolición…) en entidad territorial |
 | `Otra urgencia` | Urgencia manifiesta de otra región por **otra** emergencia, u otro sismo. No cuenta como relacionado; se conserva como referencia |
-| `Contexto` | Contratación ordinaria de las entidades vigiladas. **No se muestra** en el tablero ni en el reporte |
+| `Contexto` | Contratación ordinaria, sin relación con el sismo |
 
-La contratación ordinaria se sigue descargando y guardando en los CSV, aunque no se muestre.
+**La contratación ordinaria solo se muestra para la Alcaldía de Cali y la Gobernación del
+Valle**, que son las dos entidades que expidieron los decretos, y solo al elegirla en el
+filtro de nivel. No suma en ningún indicador.
+
+La del resto de entidades se sigue descargando y guardando en los CSV, aunque no se liste.
 Es lo que permite reclasificar sin volver a pedirle nada a la API si más adelante se ajusta
 alguna palabra clave, y es sobre ese universo completo que opera la detección de cambios.
 
