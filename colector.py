@@ -1330,41 +1330,139 @@ GRUPOS_VIGILADOS = ("Alcaldía de Cali", "Descentralizadas de Cali",
                     "Otras entidades del Valle", "UNGRD")
 
 
-def resumen_ordinaria(resultados, cfg):
-    """Cifras por entidad de TODA la contratacion de la ventana, del sismo o no.
+ORDEN_DE_GRUPO = {
+    "Alcaldía de Cali": "Territorial · Distrital",
+    "Descentralizadas de Cali": "Territorial · Distrital",
+    "Gobernación del Valle": "Territorial · Departamental",
+    "Descentralizadas de la Gobernación": "Territorial · Departamental",
+    "Otras entidades del Valle": "Territorial · Municipal",
+    "UNGRD": "Nacional",
+    "Fuera del Valle": "Nacional / otras regiones",
+}
+
+# La naturaleza de cada dependencia se deduce del nombre con que SECOP la
+# publica: la fuente no trae un campo que lo diga. Sirve para filtrar, no es
+# un dato oficial. El orden importa: 'DEPARTAMENTO ADMINISTRATIVO' antes que
+# 'DEPARTAMENTO', 'RED DE SALUD' antes que cualquier otra cosa.
+_TIPOS = [
+    ("DEPARTAMENTO ADMINISTRATIVO", "Departamento Administrativo"),
+    ("SECRETARIA", "Secretaría"),
+    ("UNIDAD ADMINISTRATIVA", "Unidad Administrativa Especial"),
+    ("PERSONERIA", "Personería"),
+    ("CONTRALORIA", "Contraloría"),
+    ("CONCEJO", "Concejo"),
+    ("RED DE SALUD", "Hospital / ESE"),
+    ("HOSPITAL", "Hospital / ESE"),
+    ("E.S.E", "Hospital / ESE"),
+    ("EMPRESA SOCIAL DEL ESTADO", "Hospital / ESE"),
+    ("INSTITUCION EDUCATIVA", "Institución educativa"),
+    ("UNIVERSIDAD", "Universidad"),
+    ("INSTITUTO", "Instituto"),
+    ("CAMARA DE COMERCIO", "Cámara de Comercio"),
+    ("BIBLIOTECA", "Establecimiento cultural"),
+    ("GOBERNACION", "Gobernación"),
+    ("ALCALDIA", "Alcaldía municipal"),
+    ("MUNICIPIO", "Alcaldía municipal"),
+    ("FONDO", "Fondo"),
+    ("E.S.P", "Empresa de servicios públicos"),
+    ("CORPORACION", "Corporación"),
+    ("EMPRESA", "Empresa industrial y comercial"),
+]
+
+
+def tipo_entidad(nombre):
+    n = normalizar(nombre)
+    for clave, etiqueta in _TIPOS:
+        if clave in n:
+            return etiqueta
+    return "Otra"
+
+
+def padron_entidades(resultados, cfg):
+    """Censo de todas las entidades que el monitoreo consulta, con sus cifras.
 
     Va como agregado y no como filas por una razon de tamano: a cinco dias del
     sismo ya hay 1.745 registros, que a seis meses proyectan unos 62.800.
-    Embeberlos haria el tablero inservible. El agregado son unas pocas decenas
-    de lineas y no crece con el tiempo, solo con el numero de entidades.
+    Embeberlos haria el tablero inservible. El padron son unos cientos de lineas
+    y crece con el numero de entidades, no con el paso del tiempo.
 
-    Sin esto la vista de contratacion ordinaria mostraria solo lo que alcanza a
-    viajar embebido y subcontaria sin avisar, que es justo lo que no se puede.
+    Cumple dos funciones: es la pestana de consulta del padron, y es lo que la
+    vista de contratacion ordinaria usa cuando no hay conexion. Sin el, esa
+    vista contaria solo lo que alcanza a viajar embebido y subcontaria sin
+    avisar, que es justo lo que no se puede hacer.
+
+    Incluye las entidades configuradas que todavia no han contratado nada: se
+    estan consultando igual, y decirlo evita que su ausencia se lea como que no
+    se vigilan.
     """
-    por_entidad = {}
-    for nombre in fuentes_activas(cfg):
-        df = resultados.get(nombre, pd.DataFrame())
+    fijos = {}
+    def registrar(nit, nombre, grupo):
+        r = raiz_nit(nit)
+        if r:
+            fijos.setdefault(r, (nombre, grupo))
+
+    for n in cfg.get("nits_alcaldia_cali", []):
+        registrar(n, "Alcaldía de Santiago de Cali · nivel central", "Alcaldía de Cali")
+    for n in cfg.get("nits_gobernacion_valle", []):
+        registrar(n, "Gobernación del Valle del Cauca · nivel central", "Gobernación del Valle")
+    for e in cfg.get("descentralizadas_cali", []):
+        registrar(e["nit"], e["nombre"], "Descentralizadas de Cali")
+    for e in cfg.get("descentralizadas_valle", []):
+        registrar(e["nit"], e["nombre"], "Descentralizadas de la Gobernación")
+    for e in cfg.get("otras_valle_sin_departamento", []):
+        registrar(e["nit"], e["nombre"], "Otras entidades del Valle")
+    for n in cfg.get("nits_ungrd", []):
+        nom = ("Unidad Nacional para la Gestión del Riesgo de Desastres · UNGRD"
+               if raiz_nit(n) == "900478966"
+               else "Fondo Nacional de Gestión del Riesgo de Desastres · FNGRD")
+        registrar(n, nom, "UNGRD")
+
+    vistos = {}
+    for nombre_fuente in fuentes_activas(cfg):
+        df = resultados.get(nombre_fuente, pd.DataFrame())
         if df.empty or "grupo" not in df.columns:
             continue
-        f = FUENTES[nombre]
-        d = df[df["grupo"].isin(GRUPOS_VIGILADOS)]
-        if d.empty:
-            continue
-        valores = a_numero(d[f["valor"]])
-        if f.get("valor_alt") and f["valor_alt"] in d.columns:
-            valores = valores.where(valores > 0, a_numero(d[f["valor_alt"]]))
-        for i, (_, r) in enumerate(d.iterrows()):
-            clave = str(r.get(f["entidad"], "") or "(sin nombre)")
-            e = por_entidad.setdefault(clave, {
-                "entidad": clave, "grupo": r.get("grupo", ""),
-                "nit": str(r.get(f["nit"], "") or ""), "n": 0, "valor": 0.0, "rel": 0,
+        f = FUENTES[nombre_fuente]
+        etiqueta = f["plataforma"] + (" · contratos" if nombre_fuente == "contratos"
+                                      else " · procesos" if nombre_fuente == "procesos" else "")
+        valores = a_numero(df[f["valor"]])
+        if f.get("valor_alt") and f["valor_alt"] in df.columns:
+            valores = valores.where(valores > 0, a_numero(df[f["valor_alt"]]))
+        for i, (_, r) in enumerate(df.iterrows()):
+            nom = str(r.get(f["entidad"], "") or "").strip() or "(sin nombre)"
+            nit = str(r.get(f["nit"], "") or "").strip()
+            clave = (nom, nit)
+            e = vistos.setdefault(clave, {
+                "entidad": nom, "tipo": tipo_entidad(nom), "nit": nit,
+                "raiz": raiz_nit(nit), "grupo": r.get("grupo", ""),
+                "plat": set(), "n": 0, "valor": 0.0, "rel": 0,
             })
+            e["plat"].add(etiqueta)
             e["n"] += 1
             if tipo_registro(r, f) == "Contrato":
                 e["valor"] += float(valores.iloc[i])
             if r.get("nivel_relacion") in ("Alta", "Media"):
                 e["rel"] += 1
-    return sorted(por_entidad.values(), key=lambda e: -e["valor"])
+
+    padron = []
+    for e in vistos.values():
+        padron.append({**e,
+                       "plat": " + ".join(sorted(e["plat"])),
+                       "orden": ORDEN_DE_GRUPO.get(e["grupo"], e["grupo"]),
+                       "via": "NIT en configuración" if e["raiz"] in fijos
+                              else "Barrido territorial"})
+
+    # Configuradas que aun no aparecen en ningun dato
+    raices_vistas = {e["raiz"] for e in vistos.values()}
+    for r, (nom, grupo) in fijos.items():
+        if r in raices_vistas:
+            continue
+        padron.append({"entidad": nom, "tipo": tipo_entidad(nom), "nit": "—", "raiz": r,
+                       "grupo": grupo, "orden": ORDEN_DE_GRUPO.get(grupo, grupo),
+                       "via": "NIT en configuración", "plat": "—",
+                       "n": 0, "valor": 0.0, "rel": 0, "sin_contratacion": True})
+
+    return sorted(padron, key=lambda e: (-e["n"], e["entidad"]))
 
 
 def exportar_tablero(hoy, resultados, cambios_totales, alertas, cfg, resumen_corrida=None):
@@ -1396,7 +1494,7 @@ def exportar_tablero(hoy, resultados, cambios_totales, alertas, cfg, resumen_cor
         "departamentos": cfg["departamentos_vigilados"],
         "palabras_fuertes": cfg["palabras_clave_fuertes"],
         "registros": registros,
-        "resumen_ordinaria": resumen_ordinaria(resultados, cfg),
+        "padron": padron_entidades(resultados, cfg),
         "cambios": historial_cambios,
         "alertas": alertas,
         "totales": {
