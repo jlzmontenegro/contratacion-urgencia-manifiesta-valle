@@ -1,0 +1,67 @@
+name: Actualizar monitoreo
+
+# Corre el colector en la nube y publica el resultado. Sustituye a la tarea
+# programada de Windows, que exigia tener el computador encendido a esa hora.
+on:
+  schedule:
+    # 08:30 hora de Colombia. GitHub programa en UTC y Colombia es UTC-5.
+    # GitHub puede retrasar las ejecuciones programadas cuando hay mucha carga;
+    # para un seguimiento diario eso es irrelevante.
+    - cron: '30 13 * * *'
+  workflow_dispatch:        # permite lanzarlo a mano desde la pestana Actions
+
+# Sin esto el token no puede escribir en el repositorio y el push falla.
+permissions:
+  contents: write
+
+concurrency:
+  # Si una corrida se demora y entra la del dia siguiente, no se pisan.
+  group: actualizar-monitoreo
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Ejecutar el colector
+        env:
+          # Opcional: un app token de datos.gov.co evita el limite de peticiones
+          # anonimas. Se configura en Settings > Secrets > Actions.
+          SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
+        run: python colector.py
+
+      - name: Publicar los cambios
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Sin cambios que publicar."
+            exit 0
+          fi
+          git commit -m "Actualizacion automatica del tablero $(date -u -d '-5 hours' +%Y-%m-%d)"
+          # Otra corrida pudo haber empujado mientras tanto
+          git pull --rebase --autostash
+          git push
+
+      - name: Resumen de la corrida
+        if: always()
+        run: |
+          echo "### Monitoreo actualizado" >> $GITHUB_STEP_SUMMARY
+          if [ -f datos/estado.json ]; then
+            echo '```json' >> $GITHUB_STEP_SUMMARY
+            cat datos/estado.json >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+          fi

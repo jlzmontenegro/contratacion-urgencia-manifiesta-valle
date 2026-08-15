@@ -1,0 +1,50 @@
+name: Auditar cobertura
+
+# Comprueba que no se este escapando contratacion de ninguna entidad vigilada.
+# Va aparte del flujo diario porque son mas de 300 consultas y tarda ~20 minutos:
+# no tiene sentido pagar eso todos los dias, pero si vigilarlo cada semana.
+#
+# Si falla, la corrida queda en rojo en la pestana Actions y GitHub avisa por
+# correo al dueno del repositorio. Ese es el candado.
+on:
+  schedule:
+    - cron: '0 12 * * 1'    # lunes, 07:00 hora de Colombia
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Verificar cobertura
+        env:
+          SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
+        run: python verificar_cobertura.py | tee auditoria.txt
+
+      - name: Dejar el resultado a la vista
+        if: always()
+        run: |
+          echo "### Auditoria de cobertura" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          tail -25 auditoria.txt >> $GITHUB_STEP_SUMMARY 2>/dev/null || true
+          echo '```' >> $GITHUB_STEP_SUMMARY
+
+      - name: Guardar el informe completo
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: auditoria-cobertura
+          path: auditoria.txt
+          retention-days: 90
