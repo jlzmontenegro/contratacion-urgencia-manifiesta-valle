@@ -560,6 +560,25 @@ def clasificar(df, nombre_fuente, cfg):
         campos_texto.append(f["entidad"])
 
     texto = df[campos_texto].fillna("").agg(" | ".join, axis=1).map(normalizar)
+
+    # Frases que se borran antes de buscar palabras clave. 'Estudio de mercado'
+    # es contratacion rutinaria de cualquier entidad y no tiene nada que ver con
+    # entregar mercados a damnificados; sin esto, la palabra MERCADO seria
+    # inservible. Se borra solo la frase y se conserva el resto, de modo que un
+    # texto que diga "estudio de mercado para la compra de mercados" se sigue
+    # detectando por el segundo uso.
+    #
+    # Es distinto de frases_excluidas: aquellas solo anulan la coincidencia si el
+    # texto no trae ademas una palabra de emergencia. Estas no cuentan nunca.
+    neutralizadas = [normalizar(p) for p in cfg.get("frases_neutralizadas", [])]
+    if neutralizadas:
+        def sin_frases(t):
+            for fr in neutralizadas:
+                t = t.replace(fr, " ")
+            return t
+        texto_busqueda = texto.map(sin_frases)
+    else:
+        texto_busqueda = texto
     justificacion = df.get(f["justificacion"], pd.Series([""] * len(df))).map(normalizar)
     modalidad = df.get(f["modalidad"], pd.Series([""] * len(df))).map(normalizar)
     fecha = pd.to_datetime(df[f["fecha"]], errors="coerce")
@@ -640,6 +659,9 @@ def clasificar(df, nombre_fuente, cfg):
     niveles, motivos = [], []
     for i in range(len(df)):
         t = texto.iloc[i]
+        # tb: el mismo texto sin las frases neutralizadas. Solo se usa para
+        # buscar palabras clave; el resto de comprobaciones usa el texto integro.
+        tb = texto_busqueda.iloc[i]
         just = justificacion.iloc[i]
         moda = modalidad.iloc[i]
         territorial = ambitos[i] == "Territorial"
@@ -651,10 +673,10 @@ def clasificar(df, nombre_fuente, cfg):
         golpes_decreto = [d for d in decretos if d and d in t]
         if golpes_decreto:
             razones.append("cita el decreto " + golpes_decreto[0])
-        golpes_fuertes = [p for p in fuertes if contiene(t, p)]
+        golpes_fuertes = [p for p in fuertes if contiene(tb, p)]
         if golpes_fuertes:
             razones.append("menciona " + ", ".join(golpes_fuertes[:3]).lower())
-        golpes_sec = [p for p in secundarias if contiene(t, p)]
+        golpes_sec = [p for p in secundarias if contiene(tb, p)]
         if golpes_sec:
             razones.append("objeto de emergencia: " + ", ".join(golpes_sec[:3]).lower())
 

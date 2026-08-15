@@ -130,7 +130,43 @@
     "TALUD",
     "ALOJAMIENTO TEMPORAL",
     "BUSQUEDA Y RESCATE",
-    "SACO DE POLIPROPILENO"
+    "SACO DE POLIPROPILENO",
+
+    "AFECTAD",
+    "MITIGACION",
+    "SANEAMIENTO BASICO",
+    "PUNTOS CRITICOS",
+    "MAQUINARIA AMARILLA",
+    "DESASTRE",
+    "DECLARATORIA",
+    "MURO DE CONTENCION",
+    "COLAPSO",
+    "ENSERES",
+    "RETROEXCAVADORA",
+    "ESTABILIZACION",
+    "OBRAS DE EMERGENCIA",
+    "REUBICACION",
+    "ASISTENCIA HUMANITARIA",
+    "MERCADO"
+  ],
+
+  "_nota_secundarias_nuevas": "Las 16 de abajo se anadieron el 15-ago-2026 a partir de 1.521 contratos reales de urgencia manifiesta del pais, midiendo para cada palabra cuanto rescata frente a cuanto ruido mete en la contratacion ordinaria del Valle. AFECTAD era el caso mas notorio: es la palabra mas frecuente del vocabulario de emergencia (13% de los contratos), ya estaba en el archivo pero en palabras_emergencia, que solo califica coincidencias y no las detecta, de modo que una entidad del Valle contratando 'atencion a familias afectadas' caia en contratacion ordinaria. Cobertura del objeto: paso de 45% a 52%. Se descarto MAQUINARIA PESADA, que mete tanto ruido como senal. MERCADO entra porque 'mercados' es como se llaman los kits de alimentos, pero necesita las frases neutralizadas de abajo.",
+
+  "_nota_neutralizadas": "Frases que se BORRAN del texto antes de buscar palabras clave. Distinto de frases_excluidas: aquellas solo anulan la coincidencia si el texto no trae ademas una palabra de emergencia; estas no cuentan nunca. 'Estudio de mercado' es contratacion rutinaria en cualquier entidad y no tiene nada que ver con entregar mercados a damnificados; sin esto, MERCADO seria inservible. Al borrarlas se conserva el resto del texto, asi que un contrato que diga 'estudio de mercado para la compra de mercados' sigue detectandose por el segundo uso.",
+  "frases_neutralizadas": [
+    "ESTUDIO DE MERCADO",
+    "ESTUDIOS DE MERCADO",
+    "SONDEO DE MERCADO",
+    "ANALISIS DE MERCADO",
+    "INVESTIGACION DE MERCADO",
+    "PRECIO DE MERCADO",
+    "PRECIOS DE MERCADO",
+    "VALOR DE MERCADO",
+    "MERCADO PUBLICO",
+    "PLAZA DE MERCADO",
+    "PLAZAS DE MERCADO",
+    "MERCADO LABORAL",
+    "MERCADO INMOBILIARIO"
   ],
 
   "_nota_secundarias": "Se quitaron AGUA POTABLE y PUENTE: aparecen en contratacion rutinaria de cualquier municipio y generaban mas ruido que hallazgos. Las palabras se buscan como inicio de palabra, no como fragmento, para que EDAN no coincida dentro de 'puedan'.",
