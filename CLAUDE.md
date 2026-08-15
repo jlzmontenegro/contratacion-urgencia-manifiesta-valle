@@ -1,0 +1,89 @@
+# Monitor de contratación · sismo del 10 de agosto de 2026
+
+Seguimiento de la contratación pública relacionada con el sismo de Cali y el Valle del Cauca.
+Vigilancia **del 10-ago-2026 hasta al menos feb-2027**. Publicado en
+<https://jlzmontenegro.github.io/contratacion-urgencia-manifiesta-valle/>
+
+`LEEME.md` es la documentación completa. Esto es lo que hay que saber **antes de tocar nada**.
+
+## Cómo está armado
+
+```
+colector.py            consulta, clasifica y escribe. La única implementación de las reglas.
+config.json            NIT, palabras clave, umbrales. Se ajusta sin tocar código.
+verificar_cobertura.py auditoría independiente. No importa colector.py, a propósito.
+index.html             estructura       ┐
+tablero.css            estilos          ├ la página SOLO pinta
+tablero.js             render           ┘
+datos/tablero.json     lo que la página carga
+datos/*.csv            estado y trazas; los mantiene GitHub Actions
+```
+
+**GitHub Actions corre el colector a diario a las 8:30 (Colombia)**, audita y publica.
+`publicar.bat` sube **solo código**; los datos son de Actions.
+
+## Reglas que no se rompen
+
+**La página no vuelve a clasificar.** Hubo 477 líneas de JavaScript que repetían el colector.
+Se arregló un fallo en Python, se olvidó en JavaScript, y el sitio mostró ceros durante una
+caída de la fuente. Si algo hay que clasificar, va en `colector.py` y viaja en el JSON.
+
+**Vacío nunca es lo mismo que fallido.** Si todos los barridos de una fuente fallan, el
+colector aborta con código 2 sin tocar nada. Si el navegador no puede cargar el JSON, lo dice.
+Un cero en este tablero se lee como "no hay contratación del sismo": no puede aparecer por un
+fallo técnico.
+
+**Nunca mostrar un conteo parcial como si fuera el total.** Las cifras de la vista ordinaria
+salen del padrón, no de los registros embebidos: en el archivo viaja una parte. Cuando el
+detalle es parcial, la página lo dice.
+
+**Ningún NIT se inventa.** Todos los de `config.json` se obtuvieron consultando la API.
+
+**Antes de publicar, `py -3 verificar_cobertura.py`.** En Actions es un candado: si falla, no
+se publica. Compara API-simple / API-amplio / CSV por entidad y fuente.
+
+## Trampas de la fuente, ya pagadas
+
+**El NIT se escribe distinto en cada dataset.** En contratos de SECOP II `nit_entidad` es
+columna **numérica**: compararla contra `'900478966-6'` **aborta la consulta**, no devuelve
+vacío. En SECOP I es texto y conviven `891900764` y `890983664-7`. De ahí `clausula_nit()`.
+
+**Los NIT colisionan.** En SECOP I la cadena `891900493-2` es Caruru (Vaupés) y `891900493`
+es Cartago (Valle). Por eso una coincidencia por NIT contra las listas de descentralizadas
+solo vale si el departamento es del Valle o viene sin diligenciar.
+
+**Hay entidades del Valle con `departamento` y `ciudad` en "No Definido"** —entre ellas tres
+hospitales departamentales—. Ningún campo geográfico las delata: solo el NIT. De ahí las tres
+listas de `config.json`.
+
+**SoQL compara subcadenas, no palabras.** `like '%CALI%'` encuentra CALIDAD. El barrido usa
+`nombres_territorio_barrido` (nombres largos); el clasificador usa la lista larga porque
+compara por inicio de palabra.
+
+**La fuente publica el mismo proceso repetido.** Contar con `count(1)` en vez de
+`count(distinct id)` da diferencias que no son pérdida de datos.
+
+**SECOP I no separa proceso y contrato.** El tipo se decide por `estado_del_proceso`; no sirve
+`numero_de_contrato`, que viene lleno incluso en procesos solo convocados.
+
+**`entidad_centralizada` y `orden` son autodeclarados y poco fiables**: marcan "Descentralizada"
+a la Gobernación y "Nacional" a la CVC. No basar nada en ellos.
+
+**En bash, `python x.py | tee log` devuelve el código de `tee`.** Sin `set -o pipefail` una
+auditoría fallida pasa por buena.
+
+## Decisiones del usuario, no cambiar sin preguntar
+
+- **Solo del 10-ago-2026 en adelante.** Nada de comparar contra periodos anteriores.
+- **Solo se muestra lo relacionado con el sismo.** La contratación ordinaria se descarga y se
+  guarda, pero fuera de la vista; la excepción es Cali, la Gobernación y sus descentralizadas,
+  visibles bajo su propio filtro.
+- **El ruido del nivel Media se tolera**: prefiere que sobre por revisar. No proponer volver
+  a recortarlo salvo que lo pida.
+- Publicar solo cuando lo pida.
+
+## Al escribir código
+
+Comentarios en español, sin tildes en `colector.py` (evita problemas de consola en Windows).
+Explican **por qué**, no qué: casi todos documentan una trampa real de la fuente. Los mensajes
+de commit llevan el razonamiento completo; `git log` es la memoria del proyecto.
