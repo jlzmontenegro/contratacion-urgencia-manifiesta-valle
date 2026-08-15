@@ -42,6 +42,19 @@ jobs:
           SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
         run: python colector.py
 
+      # EL CANDADO. Si el colector dejo de capturar contratacion de alguna
+      # entidad vigilada, este paso falla y la publicacion no ocurre: es
+      # preferible que el sitio muestre los datos de ayer, completos, a que
+      # muestre los de hoy con huecos que nadie ve.
+      - name: Auditar cobertura antes de publicar
+        env:
+          SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
+        run: |
+          # pipefail es indispensable: sin el, bash devuelve el codigo de salida
+          # de 'tee' y no el de Python, y la auditoria "pasaria" siempre.
+          set -o pipefail
+          python verificar_cobertura.py | tee auditoria.txt
+
       - name: Publicar los cambios
         run: |
           git config user.name  "github-actions[bot]"
@@ -59,9 +72,25 @@ jobs:
       - name: Resumen de la corrida
         if: always()
         run: |
-          echo "### Monitoreo actualizado" >> $GITHUB_STEP_SUMMARY
+          echo "### Monitoreo" >> $GITHUB_STEP_SUMMARY
           if [ -f datos/estado.json ]; then
             echo '```json' >> $GITHUB_STEP_SUMMARY
             cat datos/estado.json >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
           fi
+          echo "### Auditoria de cobertura" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          tail -20 auditoria.txt >> $GITHUB_STEP_SUMMARY 2>/dev/null \
+            || echo "(la auditoria no alcanzo a ejecutarse)" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+
+      # Se guarda tambien cuando falla: si el candado salta, este archivo es lo
+      # que dice que entidad se quedo corta.
+      - name: Guardar el informe de auditoria
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: auditoria-${{ github.run_number }}
+          path: auditoria.txt
+          retention-days: 90
+          if-no-files-found: ignore

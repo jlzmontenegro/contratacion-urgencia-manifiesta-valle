@@ -1,14 +1,14 @@
 name: Auditar cobertura
 
-# Comprueba que no se este escapando contratacion de ninguna entidad vigilada.
-# Va aparte del flujo diario porque son mas de 300 consultas y tarda ~20 minutos:
-# no tiene sentido pagar eso todos los dias, pero si vigilarlo cada semana.
+# Auditoria a peticion, sin correr el colector: sirve para comprobar la
+# cobertura en cualquier momento sin tocar los datos.
 #
-# Si falla, la corrida queda en rojo en la pestana Actions y GitHub avisa por
-# correo al dueno del repositorio. Ese es el candado.
+# NO tiene horario propio. La auditoria de verdad va dentro de 'Actualizar
+# monitoreo', que la ejecuta a diario ANTES de publicar y aborta la publicacion
+# si encuentra huecos. Alli es donde funciona como candado; aqui solo como
+# consulta. En la nube tarda ~2 minutos, no los ~20 que tarda en un equipo
+# domestico, y por eso puede correr todos los dias.
 on:
-  schedule:
-    - cron: '0 12 * * 1'    # lunes, 07:00 hora de Colombia
   workflow_dispatch:
 
 permissions:
@@ -31,7 +31,11 @@ jobs:
       - name: Verificar cobertura
         env:
           SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
-        run: python verificar_cobertura.py | tee auditoria.txt
+        run: |
+          # pipefail es indispensable: sin el, bash devuelve el codigo de salida
+          # de 'tee' y no el de Python, y la auditoria "pasaria" siempre.
+          set -o pipefail
+          python verificar_cobertura.py | tee auditoria.txt
 
       - name: Dejar el resultado a la vista
         if: always()
