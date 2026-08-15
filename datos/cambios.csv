@@ -1,0 +1,101 @@
+﻿"fecha_deteccion","fuente","identificador","entidad","campo","valor_anterior","valor_nuevo","nivel_relacion"
+"2026-08-12 21:24:48","procesos","CO1.REQ.10818823","Departamento Administrativo de Planeación - Alcaldía de Tuluá","estado_del_procedimiento","Publicado","Seleccionado","Contexto"
+"2026-08-12 21:24:48","procesos","CO1.REQ.10818814","Departamento Administrativo de Planeación - Alcaldía de Tuluá","estado_del_procedimiento","Publicado","Seleccionado","Contexto"
+"2026-08-12 21:24:48","procesos","CO1.REQ.10818814","Departamento Administrativo de Planeación - Alcaldía de Tuluá","fase","Presentación de oferta","Fase de ofertas","Contexto"
+"2026-08-12 21:24:48","procesos","CO1.REQ.10818814","Departamento Administrativo de Planeación - Alcaldía de Tuluá","estado_resumen","Presentación de oferta","Fase de ofertas","Contexto"
+"2026-08-12 21:24:48","procesos","CO1.REQ.10818717","Departamento Administrativo de Planeación - Alcaldía de Tuluá","estado_del_procedimiento","Publicado","Seleccionado","Contexto"
+"2026-08-12 21:24:48","procesos","CO1.REQ.10818545","Departamento Administrativo de Planeación - Alcaldía de Tuluá","estado_del_procedimiento","Publicado","Seleccionado","Contexto"
+"2026-08-12 21:24:48","procesos","CO1.REQ.10818545","Departamento Administrativo de Planeación - Alcaldía de Tuluá","fase","Presentación de oferta","Fase de ofertas","Contexto"
+"2026-08-12 21:24:48","procesos","CO1.REQ.10818545","Departamento Administrativo de Planeación - Alcaldía de Tuluá","estado_resumen","Presentación de oferta","Fase de ofertas","Contexto"
+"2026-08-12 21:24:48","procesos","CO1.REQ.10818729","Departamento Administrativo de Planeación - Alcaldía de Tuluá","estado_del_procedimiento","Publicado","Seleccionado","Contexto"
+"2026-08-12 21:24:48","procesos","CO1.REQ.10818742","Departamento Administrativo de Planeación - Alcaldía de Tuluá","estado_del_procedimiento","Publicado","Seleccionado","Contexto"
+"2026-08-12 21:24:48","procesos","CO1.REQ.10818727","Departamento Administrativo de Planeación - Alcaldía de Tuluá","estado_del_procedimiento","Publicado","Seleccionado","Contexto"
+"2026-08-12 21:24:48","procesos","CO1.REQ.10818737","Departamento Administrativo de Planeación - Alcaldía de Tuluá","estado_del_procedimiento","Publicado","Seleccionado","Contexto"
+"2026-08-12 21:24:48","procesos","CO1.REQ.10818721","Departamento Administrativo de Planeación - Alcaldía de Tuluá","estado_del_procedimiento","Publicado","Seleccionado","Contexto"
+"2026-08-12 21:24:48","procesos","CO1.REQ.10818735","Departamento Administrativo de Planeación - Alcaldía de Tuluá","estado_del_procedimiento","Publicado","Seleccionado","Contexto"
+"2026-08-12 21:24:48","procesos","CO1.REQ.10818536","Departamento Administrativo de Planeación - Alcaldía de Tuluá","estado_del_procedimiento","Publicado","Seleccionado","Contexto"
+"2026-08-12 21:24:48","procesos","CO1.REQ.10818740","Departamento Administrativo de Planeación - Alcaldía de Tuluá","estado_del_procedimiento","Publicado","Seleccionado","Contexto"
+"2026-08-12 21:24:48","procesos","CO1.REQ.10818808","Departamento Administrativo de Planeación - Alcaldía de Tuluá","estado_del_procedimiento","Publicado","Seleccionado","Contexto"
+"2026-08-12 21:24:48","procesos","CO1.REQ.10818516","Departamento Administrativo de Planeación - Alcaldía de Tuluá","estado_del_procedimiento","Publicado","Seleccionado","Contexto"
+"2026-08-12 21:24:48","procesos","CO1.REQ.10818724","Departamento Administrativo de Planeación - Alcaldía de Tuluá","estado_del_procedimiento","Publicado","Seleccionado","Contexto"
+"2026-08-12 21:24:48","procesos","CO1.REQ.10818724","Departamento Administrativo de Planeación - Alcaldía de Tuluá","fase","Presentación de oferta","Fase de ofertas","Contexto"
+"2026-08-12 21:24:48","procesos","CO1.REQ.10818724","Departamento Administrativo de Planeación - Alcaldía de Tuluá","estado_resumen","Presentación de oferta","Fase de ofertas","Contexto"
+2026-08-14 13:57:44,contratos,CO1.PCCNTR.9780736,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-14 13:57:44,contratos,CO1.PCCNTR.9781708,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-14 13:57:44,contratos,CO1.PCCNTR.9782741,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-14 13:57:44,contratos,CO1.PCCNTR.9778043,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-14 13:57:44,contratos,CO1.PCCNTR.9783245,FISCALÍA GENERAL DE LA NACIÓN REGIONAL PACÍFICO,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-14 13:57:44,contratos,CO1.PCCNTR.9783245,FISCALÍA GENERAL DE LA NACIÓN REGIONAL PACÍFICO,nombre_supervisor,No definido,DANIELA FERNANDA SUAREZ TERAN,Contexto
+2026-08-14 13:57:44,contratos,CO1.PCCNTR.9778869,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE PALMIRA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-14 13:57:44,contratos,CO1.PCCNTR.9778332,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE PALMIRA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-14 13:57:44,contratos,CO1.PCCNTR.9779330,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE PALMIRA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-14 13:57:44,contratos,CO1.PCCNTR.9778843,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE PALMIRA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-14 13:57:44,contratos,CO1.PCCNTR.9778372,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE PALMIRA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-14 13:57:44,contratos,CO1.PCCNTR.9775493,DEPARTAMENTO ADMINISTRATIVO NACIONAL DE ESTADISTICA-SUROCCIDENTE,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-14 13:57:44,contratos,CO1.PCCNTR.9775703,DEPARTAMENTO ADMINISTRATIVO NACIONAL DE ESTADISTICA-SUROCCIDENTE,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-14 13:57:44,contratos,CO1.PCCNTR.9778227,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE PALMIRA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-14 13:57:44,contratos,CO1.PCCNTR.9787724,Sena - Centro Agropecuario de Buga,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-14 13:57:44,contratos,CO1.PCCNTR.9778546,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE PALMIRA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-14 13:57:44,contratos,CO1.PCCNTR.9792856,ALCALDIA DE CARACOLI,valor_facturado,0,4300000,Contexto
+2026-08-14 13:57:44,contratos,CO1.PCCNTR.9792776,MUNICIPIO DE PALESTINA CALDAS,estado_contrato,En ejecución,Modificado,Alta
+2026-08-14 13:57:44,procesos,CO1.REQ.10800448,PLANEACIÓN MUNICIPAL CALI**,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-14 13:57:44,procesos,CO1.REQ.10837734,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-14 13:57:44,procesos,CO1.REQ.10800491,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-14 13:57:44,procesos,CO1.REQ.10827590,HOSPITAL SAN VICENTE FERRER ESE,precio_base,3744000,6924000,Contexto
+2026-08-14 13:57:44,procesos,CO1.REQ.10835891,FISCALÍA GENERAL DE LA NACIÓN REGIONAL PACÍFICO,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9782741,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,nombre_supervisor,No definido,LUIS EDUARDO VARELA GUTIERREZ,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9792428,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9780736,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,nombre_supervisor,No definido,Natalia Zuluaga Londoño,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9784245,DEPARTAMENTO ADMINISTRATIVO DE GESTION DEL MEDIO AMBIENTE DAGMA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9778268,DEPARTAMENTO ADMINISTRATIVO DE GESTION DEL MEDIO AMBIENTE DAGMA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9742242,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9792498,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9798906,DEPARTAMENTO ADMINISTRATIVO DE GESTION DEL MEDIO AMBIENTE DAGMA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9794369,SECRETARIA DE AMBIENTE Y DESARROLLO SOSTENIBLE,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9786101,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9781708,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,nombre_supervisor,No definido,LUIS EDUARDO VARELA GUTIERREZ,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9781347,SECRETARIA DE AMBIENTE Y DESARROLLO SOSTENIBLE,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9795587,SECRETARIA DE AMBIENTE Y DESARROLLO SOSTENIBLE,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9777077,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9792199,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9785113,GOBERNACIÓN VALLE DEL CAUCA -SECRETARIA DE SALUD,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9785113,GOBERNACIÓN VALLE DEL CAUCA -SECRETARIA DE SALUD,nombre_supervisor,No definido,ANDREA MELISSA PORRAS BELTRAN,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9792481,DEPARTAMENTO ADMINISTRATIVO DE GESTION DEL MEDIO AMBIENTE DAGMA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9772118,PLANEACIÓN MUNICIPAL CALI**,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9780631,SECRETARIA DE EDUCACION DE CALI,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9778043,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,nombre_supervisor,No definido,LUIS EDUARDO VARELA GUTIERREZ,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9795853,SECRETARIA DE AMBIENTE Y DESARROLLO SOSTENIBLE,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9793771,SECRETARIA DE AMBIENTE Y DESARROLLO SOSTENIBLE,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9780906,SECRETARIA DE AMBIENTE Y DESARROLLO SOSTENIBLE,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9795268,MUNICIPIO DE TORO,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9793474,ALCALDIA MUNICIPIO DE JAMUNDI,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9775280,DEPARTAMENTO ADMINISTRATIVO NACIONAL DE ESTADISTICA-SUROCCIDENTE,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9775280,DEPARTAMENTO ADMINISTRATIVO NACIONAL DE ESTADISTICA-SUROCCIDENTE,fecha_de_fin_del_contrato,2026-11-12T00:00:00.000,2026-11-11T00:00:00.000,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9736563,REGIONAL DE ASEGURAMIENTO EN SALUD No. 4,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9781379,MUNICIPIO DE TORO,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9792708,ALCALDIA MUNICIPIO DE JAMUNDI,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9793617,ALCALDIA MUNICIPIO DE JAMUNDI,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9793617,ALCALDIA MUNICIPIO DE JAMUNDI,valor_pendiente_de_pago,0,25000000,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9756093,HOSPITAL SAN RAFAEL EL CERRITO,estado_contrato,En ejecución,Modificado,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9756093,HOSPITAL SAN RAFAEL EL CERRITO,fecha_de_fin_del_contrato,2026-11-30T00:00:00.000,2026-08-31T00:00:00.000,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9776909,HOSPITAL SAN RAFAEL EL CERRITO,estado_contrato,En ejecución,Modificado,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9782550,PERSONERIA MUNICIPAL DE YUMBO,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9792174,ALCALDIA MUNICIPIO DE JAMUNDI,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9763000,CVC,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9769486,DISPENSARIO MEDICO DE CALI,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9776345,MUNICIPIO DE BUGALAGRANDE,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9776345,MUNICIPIO DE BUGALAGRANDE,fecha_de_fin_del_contrato,2026-09-21T00:00:00.000,2026-09-09T00:00:00.000,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9794611,"Secretaría de Gobierno, Convivencia y Seguridad - Alcaldía de Tuluá",estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9776791,UNIDAD CENTRAL DEL VALLE DEL CAUCA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9793970,ALCALDIA MUNICIPIO DE JAMUNDI,estado_contrato,Aprobado,terminado,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9788942,MUNICIPIO DE EL ROSAL,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-15 11:25:34,contratos,CO1.PCCNTR.9788942,MUNICIPIO DE EL ROSAL,fecha_de_fin_del_contrato,2026-10-10T00:00:00.000,2026-10-11T00:00:00.000,Contexto
+2026-08-15 11:25:34,procesos,CO1.REQ.10828901,HOSPITAL SAN VICENTE FERRER ESE,precio_base,2700000,3072000,Contexto
+2026-08-15 11:25:34,procesos,CO1.REQ.10810696,PERSONERIA DISTRITAL DE SANTIAGO DE CALI,valor_total_adjudicacion,0,289000,Contexto
+2026-08-15 11:25:34,procesos,CO1.REQ.10810696,PERSONERIA DISTRITAL DE SANTIAGO DE CALI,adjudicado,No,Si,Contexto
+2026-08-15 11:25:34,procesos,CO1.REQ.10810696,PERSONERIA DISTRITAL DE SANTIAGO DE CALI,nombre_del_proveedor,No Definido,EL PAIS S A,Contexto
+2026-08-15 11:25:34,procesos,CO1.REQ.10820805,ESTABLECIMIENTO PÚBLICO AMBIENTAL DEL DISTRITO DE BUENAVENTURA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-15 11:25:34,procesos,CO1.REQ.10829171,UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-15 11:25:34,procesos,CO1.REQ.10820269,ESTABLECIMIENTO PÚBLICO AMBIENTAL DEL DISTRITO DE BUENAVENTURA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-15 11:25:34,procesos,CO1.REQ.10819874,HOSPITAL MUNICIPAL LUIS ABLANQUE DE LA PLATA EMPRESA SOCIAL DEL ESTADO,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-08-15 11:25:34,procesos,CO1.REQ.10820369,ESTABLECIMIENTO PÚBLICO AMBIENTAL DEL DISTRITO DE BUENAVENTURA,estado_del_procedimiento,Publicado,Evaluación,Contexto

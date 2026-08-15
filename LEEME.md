@@ -93,6 +93,36 @@ contratación por fuera. Lo que de ellas se relacione con el sismo **sí suma en
 indicadores**, porque son las entidades que coordinan y financian la respuesta nacional al
 desastre del Valle; su contratación ordinaria, en cambio, no se muestra.
 
+## Descentralizadas: por qué no basta el barrido por departamento
+
+El Parágrafo Cuarto del Decreto 0964 obliga a las descentralizadas a declarar **su propia**
+urgencia manifiesta: contratan con NIT propio, no con el de su matriz. El barrido por
+`departamento = 'Valle del Cauca'` las capturaba casi todas, pero se descubrió un hueco al
+censarlas contra la API el 15 de agosto de 2026:
+
+> **Hay entidades del Valle cuyo campo `departamento` dice `No Definido`.** Y su campo
+> `ciudad` también. No hay ningún campo geográfico que las delate; lo único que las identifica
+> es el NIT. El barrido territorial no las ve.
+
+Entre ellas, tres **hospitales departamentales** —Roldanillo, Zarzal y el Centenario de
+Sevilla— y varios hospitales municipales. Justo el tipo de entidad que más contrata tras un
+sismo. Por eso `config.json` trae tres listas de NIT (`descentralizadas_cali`,
+`descentralizadas_valle`, `otras_valle_sin_departamento`) que se barren por NIT propio, además
+del barrido territorial. Todos esos NIT se obtuvieron consultando la API; ninguno se supuso.
+
+De estas entidades se muestra **toda** su contratación bajo su propio filtro, igual que la de
+Cali y la Gobernación centrales, no solo lo que nombre el sismo.
+
+### Cuidado con las colisiones de NIT
+
+Buscar por prefijo de la raíz de nueve dígitos tiene un riesgo real, no teórico: en SECOP I la
+cadena `891900493-2` identifica a la **alcaldía de Caruru (Vaupés)**, mientras `891900493` es
+**Cartago (Valle)**. La búsqueda por prefijo se traga las dos. Por eso una coincidencia por NIT
+contra estas listas solo se acepta si el registro dice Valle del Cauca o trae el departamento
+sin diligenciar; si nombra explícitamente otro departamento, se descarta como colisión. La
+guarda **no** se aplica a los NIT centrales: la Casa del Valle figura en Bogotá y sí es de la
+Gobernación.
+
 ### El NIT se escribe distinto en cada plataforma
 
 Esto no es un detalle menor, es la parte que más fácil hace perder registros:
@@ -118,9 +148,11 @@ Dos ejes independientes, para no perder nada y a la vez poder filtrar el ruido.
 
 | Grupo | Quién entra |
 |---|---|
-| `Alcaldía de Cali` | NIT 890399011 y 8903990113 |
-| `Gobernación del Valle` | NIT 890399029, 8903990291 y 8903990295 |
-| `Otras entidades del Valle` | Municipios del departamento y descentralizadas (EMCALI, Metro Cali, ESE…) |
+| `Alcaldía de Cali` | NIT 890399011 y 8903990113 (nivel central) |
+| `Descentralizadas de Cali` | EMCALI, Metro Cali, las cuatro redes de salud, Fondo de Vivienda, IPC… |
+| `Gobernación del Valle` | NIT 890399029, 8903990291 y 8903990295 (nivel central) |
+| `Descentralizadas de la Gobernación` | HUV, INDERVALLE, INFIVALLE, INCIVA, ACUAVALLE, hospitales departamentales… |
+| `Otras entidades del Valle` | Municipios del departamento y sus entidades |
 | `UNGRD` | NIT 900478966 y 900978341 (FNGRD), en cualquiera de sus formas |
 | `Fuera del Valle` | Resto del país. **No** cuenta en los indicadores |
 

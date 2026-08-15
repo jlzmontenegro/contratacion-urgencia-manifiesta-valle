@@ -35,6 +35,66 @@
   "_nota_secop1": "SECOP I sigue recibiendo cargues (169.224 registros cargados en 2026). Es un dataset distinto, con una fila por proceso que ya trae el contrato adentro, no dos datasets separados como SECOP II. Se apaga poniendo secop1_activo en false.",
   "secop1_activo": true,
 
+  "_nota_descentralizadas": "El Paragrafo Cuarto del Decreto 0964 obliga a las descentralizadas a declarar SU PROPIA urgencia manifiesta: contratan con NIT propio, no con el de su matriz. Estas listas cumplen dos funciones: (1) separarlas en el tablero por nivel de gobierno, y (2) barrerlas por NIT, que es la unica red que las atrapa cuando su campo departamento viene mal diligenciado. Verificado el 13-ago-2026 contra la API: hay entidades del Valle con departamento y ciudad en 'No Definido' que se escapaban por completo del barrido territorial; van marcadas con sin_departamento. Todos los NIT de estas listas se obtuvieron consultando la API, ninguno se supuso.",
+
+  "descentralizadas_cali": [
+    { "nit": "890399003", "nombre": "EMCALI - Empresas Municipales de Cali" },
+    { "nit": "805013171", "nombre": "Metro Cali S.A." },
+    { "nit": "805027289", "nombre": "Red de Salud de Ladera ESE" },
+    { "nit": "805027287", "nombre": "Red de Salud del Norte ESE" },
+    { "nit": "805027337", "nombre": "Red de Salud del Oriente ESE" },
+    { "nit": "805027338", "nombre": "Red de Salud del Suroriente ESE" },
+    { "nit": "805013033", "nombre": "Fondo Especial de Vivienda de Santiago de Cali" },
+    { "nit": "900431928", "nombre": "Instituto Popular de Cultura - IPC" },
+    { "nit": "805003895", "nombre": "Personeria Distrital de Santiago de Cali" },
+    { "nit": "800217831", "nombre": "Contraloria de Santiago de Cali" },
+    { "nit": "800243065", "nombre": "IE Normal Superior Santiago de Cali", "sin_departamento": true }
+  ],
+
+  "descentralizadas_valle": [
+    { "nit": "805012896", "nombre": "INDERVALLE - Instituto del Deporte del Valle" },
+    { "nit": "890308051", "nombre": "INFIVALLE - Instituto Financiero para el Desarrollo del Valle" },
+    { "nit": "800086201", "nombre": "INCIVA" },
+    { "nit": "890399010", "nombre": "Universidad del Valle" },
+    { "nit": "890325989", "nombre": "Instituto Departamental de Bellas Artes" },
+    { "nit": "890399039", "nombre": "Biblioteca Departamental Jorge Garces Borrero" },
+    { "nit": "900333452", "nombre": "Vallecaucana de Aguas S.A. E.S.P." },
+    { "nit": "890399032", "nombre": "ACUAVALLE - Acueductos y Alcantarillados del Valle" },
+    { "nit": "890399027", "nombre": "Beneficencia del Valle del Cauca E.I.C.E." },
+    { "nit": "890399012", "nombre": "Industria de Licores del Valle" },
+    { "nit": "890303461", "nombre": "HUV - Hospital Universitario del Valle Evaristo Garcia ESE" },
+    { "nit": "890304155", "nombre": "Hospital Departamental Psiquiatrico Universitario del Valle" },
+    { "nit": "890399047", "nombre": "Hospital Departamental Mario Correa Rengifo ESE" },
+    { "nit": "891901158", "nombre": "Hospital Departamental Tomas Uribe Uribe ESE (Tulua)" },
+    { "nit": "891900343", "nombre": "Hospital Departamental San Antonio de Roldanillo", "sin_departamento": true },
+    { "nit": "891900441", "nombre": "Hospital Departamental San Rafael ESE de Zarzal", "sin_departamento": true },
+    { "nit": "821003143", "nombre": "Hospital Departamental Centenario ESE (Sevilla)", "sin_departamento": true },
+    { "nit": "800090735", "nombre": "Contraloria Departamental del Valle del Cauca" }
+  ],
+
+  "_nota_valle_sin_departamento": "Entidades del Valle que NO son descentralizadas de Cali ni de la Gobernacion (son municipales o de sus municipios) pero cuyo campo departamento dice 'No Definido', de modo que el barrido territorial no las ve. Se barren por NIT y quedan clasificadas como 'Otras entidades del Valle'. Todas verificadas el 13-ago-2026.",
+  "otras_valle_sin_departamento": [
+    { "nit": "891380070", "nombre": "Hospital del Rosario de Ginebra" },
+    { "nit": "890312380", "nombre": "ESE Hospital San Jorge de Calima El Darien" },
+    { "nit": "891901296", "nombre": "Hospital Santa Lucia ESE de El Dovio" },
+    { "nit": "890309115", "nombre": "Hospital Local Yotoco" },
+    { "nit": "890305496", "nombre": "Hospital Local Jose Rufino Vivas (Dagua)" },
+    { "nit": "900401903", "nombre": "Empresa de Servicio Publico de Aseo de Yotoco" },
+    { "nit": "891900474", "nombre": "Empresas Publicas Municipales de Sevilla E.S.P." },
+    { "nit": "891900528", "nombre": "Instituto Municipal del Deporte y la Recreacion de Tulua" },
+    { "nit": "890399992", "nombre": "Instituto Distrital del Deporte de Buenaventura" },
+    { "nit": "891900493", "nombre": "Personeria Municipal de Cartago" },
+    { "nit": "901159063", "nombre": "Personeria Municipal de El Dovio" },
+    { "nit": "900085817", "nombre": "Personeria Municipal de La Cumbre" },
+    { "nit": "800100524", "nombre": "Personeria Municipal de La Victoria" },
+    { "nit": "890399046", "nombre": "Concejo Municipal de Jamundi" },
+    { "nit": "805000057", "nombre": "IE Alfonso Lopez Pumarejo - Jamundi" },
+    { "nit": "815004730", "nombre": "IE Paulo VI - Palmira" },
+    { "nit": "891380108", "nombre": "IE Ginebra La Salle" },
+    { "nit": "800034326", "nombre": "IE Zaragoza - Cartago" },
+    { "nit": "805015675", "nombre": "IE Camilo Torres - Dagua" }
+  ],
+
   "departamentos_vigilados": [
     "Valle del Cauca"
   ],

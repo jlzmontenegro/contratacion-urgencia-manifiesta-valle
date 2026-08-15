@@ -458,6 +458,20 @@ def condiciones(nombre_fuente, cfg, hoy):
     if nits_ungrd:
         barridos["ungrd"] = f"{ventana} AND {clausula_nit(campo_nit, nits_ungrd, nit_texto)}"
 
+    # E. Descentralizadas y demas entidades del Valle, por NIT propio.
+    #    Es la unica red que las atrapa cuando su campo departamento viene como
+    #    'No Definido': hay hospitales departamentales del Valle con departamento
+    #    y ciudad sin diligenciar, que el barrido territorial no ve. Se trocea
+    #    porque una sola clausula con cien 'like' hace fallar la consulta.
+    nits_desc = [e["nit"] for clave in ("descentralizadas_cali", "descentralizadas_valle",
+                                        "otras_valle_sin_departamento")
+                 for e in cfg.get(clave, [])]
+    for i in range(0, len(nits_desc), 15):
+        lote = nits_desc[i:i + 15]
+        barridos[f"descentralizadas_{i // 15 + 1}"] = (
+            f"{ventana} AND {clausula_nit(campo_nit, lote, nit_texto)}"
+        )
+
     return barridos
 
 
@@ -533,19 +547,45 @@ def clasificar(df, nombre_fuente, cfg):
     nits_alcaldia = {raiz_nit(n) for n in cfg.get("nits_alcaldia_cali", [])}
     nits_gob = {raiz_nit(n) for n in cfg.get("nits_gobernacion_valle", [])}
     nits_ungrd = {raiz_nit(n) for n in cfg.get("nits_ungrd", [])}
+    # Descentralizadas: se identifican por NIT propio, no por el de su matriz.
+    # El Paragrafo Cuarto del Decreto 0964 las obliga a declarar SU PROPIA
+    # urgencia manifiesta, asi que contratan aparte y hay que poder separarlas.
+    desc_cali = {raiz_nit(e["nit"]) for e in cfg.get("descentralizadas_cali", [])}
+    desc_valle = {raiz_nit(e["nit"]) for e in cfg.get("descentralizadas_valle", [])}
     dep_serie = df.get(f["departamento"], pd.Series([""] * len(df))).map(normalizar)
     nit_serie = df.get(f["nit"], pd.Series([""] * len(df))).astype(str).map(raiz_nit)
+
+    desc_otras = {raiz_nit(e["nit"]) for e in cfg.get("otras_valle_sin_departamento", [])}
+    # Un departamento se considera "sin diligenciar" cuando viene vacio o como
+    # 'No Definido', que es justo el caso que obliga a barrer por NIT.
+    sin_dato = {"", "NO DEFINIDO", "NAN", "NONE"}
 
     grupos = []
     for i in range(len(df)):
         nit = nit_serie.iloc[i]
+        dep = dep_serie.iloc[i]
+        # Guarda contra colisiones de NIT en la fuente. Caso real: en SECOP I la
+        # cadena '891900493-2' identifica a la alcaldia de Caruru (Vaupes),
+        # mientras '891900493' es Cartago (Valle); la busqueda por prefijo se
+        # traga ambas. Si el registro dice explicitamente otro departamento, la
+        # coincidencia por NIT no es de fiar. No aplica a los NIT centrales de
+        # Cali, la Gobernacion y la UNGRD: la Casa del Valle figura en Bogota y
+        # si es de la Gobernacion.
+        nit_confiable = dep in deps_vig or dep in sin_dato
+
         if nit and nit in nits_ungrd:
             grupos.append("UNGRD")
         elif nit in nits_alcaldia:
             grupos.append("Alcaldía de Cali")
         elif nit in nits_gob:
             grupos.append("Gobernación del Valle")
-        elif dep_serie.iloc[i] in deps_vig:
+        elif nit in desc_cali and nit_confiable:
+            grupos.append("Descentralizadas de Cali")
+        elif nit in desc_valle and nit_confiable:
+            grupos.append("Descentralizadas de la Gobernación")
+        elif nit in desc_otras and nit_confiable:
+            grupos.append("Otras entidades del Valle")
+        elif dep in deps_vig:
             grupos.append("Otras entidades del Valle")
         else:
             grupos.append("Fuera del Valle")
@@ -1190,7 +1230,11 @@ def escribir_reporte(hoy, contratos, procesos, nuevos_c, nuevos_p, cambios, aler
 
 # Grupos cuya contratacion ordinaria si se muestra en el tablero, bajo su propio
 # filtro. Del resto de entidades solo se muestra lo relacionado con el sismo.
-GRUPOS_ORDINARIA = ("Alcaldía de Cali", "Gobernación del Valle")
+# Las descentralizadas reciben el mismo trato que su matriz: el Paragrafo Cuarto
+# del Decreto 0964 las obliga a declarar su propia urgencia manifiesta, asi que
+# hay que poder revisar todo lo que contraten, no solo lo que nombre el sismo.
+GRUPOS_ORDINARIA = ("Alcaldía de Cali", "Gobernación del Valle",
+                    "Descentralizadas de Cali", "Descentralizadas de la Gobernación")
 
 
 def aplanar(df, nombre_fuente):
@@ -1287,6 +1331,10 @@ def exportar_tablero(hoy, resultados, cambios_totales, alertas, cfg, resumen_cor
         "nits": cfg["nits_prioritarios"],
         "nits_ungrd": cfg.get("nits_ungrd", []),
         "secop1_activo": bool(cfg.get("secop1_activo", True)),
+        "descentralizadas_cali": [e["nit"] for e in cfg.get("descentralizadas_cali", [])],
+        "descentralizadas_valle": [e["nit"] for e in cfg.get("descentralizadas_valle", [])],
+        "otras_valle_sin_departamento": [e["nit"] for e in
+                                         cfg.get("otras_valle_sin_departamento", [])],
         "departamentos": cfg["departamentos_vigilados"],
         "palabras_fuertes": cfg["palabras_clave_fuertes"],
         "registros": registros,
@@ -1313,9 +1361,17 @@ def incrustar_en_tablero(payload):
     enviar por correo o publicar en cualquier servidor y sigue consultando la
     API en vivo desde el navegador.
     """
-    ruta = os.path.join(BASE, "tablero.html")
-    if not os.path.exists(ruta):
-        print("  ! no se encontro tablero.html; no se incrusto el historial")
+    # En la carpeta de trabajo el tablero se llama tablero.html; en el repositorio
+    # publicado, index.html. El mismo colector sirve para los dos, que es lo que
+    # permite que GitHub Actions ejecute exactamente el mismo codigo.
+    ruta = ""
+    for nombre in ("tablero.html", "index.html"):
+        candidato = os.path.join(BASE, nombre)
+        if os.path.exists(candidato):
+            ruta = candidato
+            break
+    if not ruta:
+        print("  ! no se encontro tablero.html ni index.html; no se incrusto el historial")
         return ""
 
     with open(ruta, encoding="utf-8") as fh:

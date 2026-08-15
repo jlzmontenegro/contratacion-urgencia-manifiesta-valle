@@ -1,0 +1,13 @@
+# Windows y GitHub Actions (Linux) escriben finales de linea distintos. Sin
+# normalizar, cada corrida produciria diferencias de archivo completo aunque el
+# contenido fuera identico, y el historial quedaria ilegible.
+* text=auto eol=lf
+*.csv text eol=lf
+*.md  text eol=lf
+*.py  text eol=lf
+*.json text eol=lf
+*.html text eol=lf
+*.yml text eol=lf
+
+# Los snapshots comprimidos no se tocan
+*.gz binary
