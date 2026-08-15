@@ -1,0 +1,214 @@
+  :root{
+    --fondo:#f6f7f9; --panel:#ffffff; --borde:#e2e5ea; --texto:#1a1d21; --suave:#646b75;
+    --acento:#1f6feb; --alta:#c0392b; --media:#c77800; --base:#5b6470; --ok:#1e8e4e;
+    --contrato:#1f6feb; --proceso:#7d3cc4;
+    --sombra:0 1px 2px rgba(16,24,40,.06),0 1px 3px rgba(16,24,40,.1);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --fondo:#0f1216; --panel:#171b21; --borde:#272d36; --texto:#e8eaed; --suave:#98a1ad;
+           --acento:#5b9dff; --alta:#ff6b5a; --media:#ffb020; --base:#8b949e; --ok:#3fb950;
+           --contrato:#5b9dff; --proceso:#b388f5;
+           --sombra:0 1px 3px rgba(0,0,0,.5); }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--fondo);color:var(--texto);
+       font:15px/1.5 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .envoltura{max-width:1500px;margin:0 auto;padding:20px 16px 60px}
+  header{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start;justify-content:space-between;margin-bottom:16px}
+  h1{font-size:clamp(17px,2.4vw,21px);margin:0 0 4px;line-height:1.25}
+  .sub{color:var(--suave);font-size:13px}
+  .acciones{display:flex;gap:8px;flex-wrap:wrap}
+  button,.boton{font:inherit;border:1px solid var(--borde);background:var(--panel);color:var(--texto);
+         padding:8px 14px;border-radius:8px;cursor:pointer;box-shadow:var(--sombra);
+         text-decoration:none;display:inline-block;white-space:nowrap}
+  button:hover,.boton:hover{border-color:var(--acento)}
+  button.principal{background:var(--acento);color:#fff;border-color:var(--acento)}
+  button:disabled{opacity:.55;cursor:progress}
+
+  .titulo-bloque{font-size:13px;color:var(--suave);text-transform:uppercase;letter-spacing:.05em;
+                 margin:22px 0 10px;font-weight:650}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:12px}
+  .kpi{background:var(--panel);border:1px solid var(--borde);border-radius:10px;padding:14px;box-shadow:var(--sombra)}
+  .kpi .etq{font-size:11.5px;color:var(--suave);text-transform:uppercase;letter-spacing:.04em}
+  .kpi .val{font-size:clamp(20px,3.5vw,26px);font-weight:650;margin-top:6px;font-variant-numeric:tabular-nums}
+  .kpi .pie{font-size:12px;color:var(--suave);margin-top:4px}
+  .kpi.cero .val{color:var(--suave)}
+  .nacional{background:var(--panel);border:1px dashed var(--borde);border-radius:10px;padding:12px 14px;
+            font-size:13px;color:var(--suave)}
+  .nacional b{color:var(--texto)}
+
+  .rejilla{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+  .tarjeta{background:var(--panel);border:1px solid var(--borde);border-radius:10px;padding:14px;box-shadow:var(--sombra)}
+  .tarjeta h2{font-size:13px;margin:0 0 12px;color:var(--suave);text-transform:uppercase;letter-spacing:.04em}
+  .barra{display:grid;gap:7px}
+  .barra .fila{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center;font-size:13px}
+  .barra .nom{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .barra .pista{height:6px;background:var(--borde);border-radius:3px;overflow:hidden}
+  .barra .relleno{height:100%;background:var(--acento);border-radius:3px}
+
+  .filtros{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 12px;align-items:center}
+  input[type=search],select{font:inherit;font-size:14px;padding:8px 10px;border:1px solid var(--borde);
+    border-radius:8px;background:var(--panel);color:var(--texto);min-width:0;flex:1 1 190px;max-width:320px}
+  .pill{font-size:11.5px;color:var(--suave);border:1px solid var(--borde);border-radius:20px;
+        padding:3px 10px;white-space:nowrap}
+
+  .tabla-envoltura{overflow-x:auto;background:var(--panel);border:1px solid var(--borde);
+                   border-radius:10px;box-shadow:var(--sombra)}
+  table{border-collapse:collapse;width:100%;font-size:12.5px}
+  #tabla{min-width:1180px}
+  th,td{padding:10px 11px;text-align:left;border-bottom:1px solid var(--borde);vertical-align:top}
+  th{position:sticky;top:0;background:var(--panel);font-size:11.5px;color:var(--suave);
+     text-transform:uppercase;letter-spacing:.03em;cursor:pointer;white-space:nowrap;z-index:2}
+  tbody tr:hover{background:rgba(127,127,127,.05)}
+  td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .menor{font-size:11.5px;color:var(--suave);margin-top:3px;line-height:1.35}
+  /* El objeto se muestra completo: sin truncar, con letra menor */
+  td.objeto{min-width:330px;max-width:520px;font-size:12px;line-height:1.45;white-space:pre-wrap;
+            overflow-wrap:anywhere}
+  .col-fecha{white-space:nowrap}
+  .col-dur{white-space:nowrap;font-size:12px}
+
+  .etiqueta{display:inline-block;padding:2px 9px;border-radius:20px;font-size:11px;font-weight:650;white-space:nowrap}
+  .t-Contrato{background:color-mix(in srgb,var(--contrato) 15%,transparent);color:var(--contrato);
+              border:1px solid color-mix(in srgb,var(--contrato) 40%,transparent)}
+  .t-Proceso{background:color-mix(in srgb,var(--proceso) 15%,transparent);color:var(--proceso);
+             border:1px solid color-mix(in srgb,var(--proceso) 40%,transparent)}
+  .n-Alta{background:color-mix(in srgb,var(--alta) 16%,transparent);color:var(--alta)}
+  .n-Media{background:color-mix(in srgb,var(--media) 18%,transparent);color:var(--media)}
+  .n-Linea{background:color-mix(in srgb,var(--base) 18%,transparent);color:var(--base)}
+  .n-Otra{background:color-mix(in srgb,var(--base) 14%,transparent);color:var(--base);
+          border:1px dashed color-mix(in srgb,var(--base) 45%,transparent)}
+  .n-Contexto{background:color-mix(in srgb,var(--base) 12%,transparent);color:var(--base)}
+  .nuevo{display:inline-block;background:var(--ok);color:#fff;border-radius:4px;
+         padding:1px 6px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+  /* Plataforma de origen: SECOP I es la anterior, SECOP II la actual */
+  .plat{display:inline-block;padding:1px 7px;border-radius:4px;font-size:10.5px;font-weight:650;
+        border:1px solid var(--borde);color:var(--suave);white-space:nowrap}
+  .plat-1{border-style:dashed}
+  /* Sección exclusiva: SECOP I y UNGRD */
+  .exclusiva{background:var(--panel);border:1px solid var(--borde);border-radius:10px;
+             padding:14px;box-shadow:var(--sombra);margin-bottom:14px}
+  .exclusiva > h2{font-size:14px;margin:0 0 4px;display:flex;gap:9px;align-items:baseline;flex-wrap:wrap}
+  .exclusiva > h2 .nit{font-size:11.5px;color:var(--suave);font-weight:500}
+  .exclusiva .intro{font-size:12.5px;color:var(--suave);margin:0 0 12px;line-height:1.5}
+  .exclusiva .kpis{margin-bottom:12px}
+  .boton-secop{padding:5px 11px;font-size:12px;border-radius:7px;background:var(--acento);
+               color:#fff;border:1px solid var(--acento)}
+  .boton-secop:hover{opacity:.88}
+
+  /* ---- Portada: lo primero que ve alguien que llega sin contexto ---- */
+  .portada{background:var(--panel);border:1px solid var(--borde);border-radius:12px;
+           padding:20px 22px;box-shadow:var(--sombra);margin:14px 0 18px}
+  .portada .titular{font-size:clamp(16px,2.6vw,20px);line-height:1.5;font-weight:500;margin:0}
+  .portada .titular b{font-weight:700}
+  .portada .cifras{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+                   gap:14px;margin:18px 0 4px}
+  .portada .cifra .n{font-size:clamp(24px,4.5vw,34px);font-weight:700;
+                     font-variant-numeric:tabular-nums;line-height:1.1}
+  .portada .cifra .t{font-size:12.5px;color:var(--suave);margin-top:3px;line-height:1.35}
+  .portada .cifra.nula .n{color:var(--suave)}
+
+  /* Procedencia de los datos: siempre visible, nunca en letra pequena. El
+     15-ago-2026 el tablero mostro ceros durante una caida de la fuente y nada
+     lo advertia con claridad; de ahi que esto sea un bloque y no una nota. */
+  .fuente-datos{display:flex;gap:10px;align-items:flex-start;margin-top:18px;
+                padding-top:14px;border-top:1px solid var(--borde);font-size:13px;
+                line-height:1.5}
+  .fuente-datos .luz{width:11px;height:11px;border-radius:50%;flex:none;margin-top:5px}
+  .luz.viva{background:var(--ok)}
+  .luz.vieja{background:var(--media)}
+  .luz.rota{background:var(--alta)}
+  .fuente-datos b{color:var(--texto)}
+
+  /* ---- Pestanas: dos preguntas distintas, no una pantalla revuelta ---- */
+  .pestanas{display:flex;gap:4px;margin:0 0 18px;border-bottom:2px solid var(--borde);
+            flex-wrap:wrap}
+  .pestanas button{background:none;border:0;border-bottom:2px solid transparent;
+                   margin-bottom:-2px;padding:11px 16px;font-size:14.5px;font-weight:600;
+                   color:var(--suave);cursor:pointer;border-radius:0}
+  .pestanas button:hover{color:var(--texto)}
+  .pestanas button[aria-selected="true"]{color:var(--acento);border-bottom-color:var(--acento)}
+  .pestanas .cuantos{font-weight:400;font-size:12.5px;opacity:.8}
+
+  /* Tabla de entidades de la vista ordinaria */
+  /* Padron */
+  .nota-padron{background:var(--panel);border-left:3px solid var(--acento);border-radius:0 8px 8px 0;
+               padding:14px 16px;margin:16px 0 18px;font-size:13px;color:var(--suave);line-height:1.55}
+  .nota-padron b{color:var(--texto)}
+  .nota-padron p{margin:0 0 8px} .nota-padron p:last-child{margin:0}
+  .nota-padron code{font-size:.92em;background:var(--fondo);padding:1px 5px;
+                    border:1px solid var(--borde);border-radius:3px}
+  .chip{display:inline-block;font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;
+        padding:2px 7px;border:1px solid var(--borde);border-radius:3px;
+        color:var(--suave);white-space:nowrap}
+  .chip.fija{border-color:var(--acento);color:var(--acento);
+             background:color-mix(in srgb,var(--acento) 12%,transparent)}
+  /* Que una entidad vigilada NO haya contratado es informacion, no ausencia de
+     ella. Va marcado a la vista, no en letra chica. */
+  .chip.silencio{border-color:var(--media);color:var(--media);
+                 background:color-mix(in srgb,var(--media) 14%,transparent);
+                 font-weight:650}
+  tr.silenciosa td{background:color-mix(in srgb,var(--media) 5%,transparent)}
+  .nit-col{font-family:ui-monospace,Consolas,monospace;font-size:12.5px;white-space:nowrap}
+  .nit-col .raiz{display:block;font-size:11px;color:var(--suave)}
+  .grupo-padron{margin-top:26px}
+  .grupo-padron h3{font-size:15px;margin:0 0 3px;display:flex;gap:10px;
+                   align-items:baseline;flex-wrap:wrap}
+  .grupo-padron h3 .orden{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;
+                          color:var(--suave);font-weight:400}
+  .grupo-padron .resumen{font-size:12.5px;color:var(--suave);margin:0 0 10px}
+
+  .barra-mini{height:6px;background:var(--borde);border-radius:3px;overflow:hidden;
+              margin-top:5px;min-width:70px}
+  .barra-mini i{display:block;height:100%;background:var(--acento)}
+  .barra-mini i.rel{background:var(--alta)}
+  tr.abrible{cursor:pointer}
+  tr.abrible:hover td{background:color-mix(in srgb,var(--acento) 7%,transparent)}
+  .detalle-entidad{background:color-mix(in srgb,var(--acento) 4%,transparent)}
+
+  .como-leer{margin:0 0 18px;font-size:13.5px}
+  .como-leer summary{cursor:pointer;color:var(--acento);padding:6px 0}
+  .como-leer dl{margin:8px 0 0;padding:14px 16px;background:var(--panel);
+                border:1px solid var(--borde);border-radius:10px;line-height:1.55}
+  .como-leer dt{font-weight:650;margin-top:10px}
+  .como-leer dt:first-child{margin-top:0}
+  .como-leer dd{margin:2px 0 0;color:var(--suave)}
+
+  .alerta{display:flex;gap:9px;padding:9px 0;border-bottom:1px solid var(--borde);font-size:13px}
+  .alerta:last-child{border-bottom:0}
+  .alerta .tipo{font-weight:600;white-space:nowrap}
+  .estado{font-size:13px;color:var(--suave);margin:10px 0 4px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .punto{width:8px;height:8px;border-radius:50%;background:var(--ok);display:inline-block;flex:none}
+  .punto.cargando{background:var(--media);animation:late 1s infinite}
+  .punto.error{background:var(--alta)}
+  @keyframes late{50%{opacity:.3}}
+  a{color:var(--acento)}
+  .vacio{padding:30px 18px;text-align:center;color:var(--suave);font-size:13.5px}
+  details summary{cursor:pointer;color:var(--suave);font-size:13px}
+
+  /* ---- Responsive: por debajo de 900px cada fila se vuelve una ficha ---- */
+  @media (max-width:900px){
+    .envoltura{padding:16px 12px 48px}
+    .tabla-envoltura{overflow-x:visible;background:transparent;border:0;box-shadow:none}
+    #tabla{min-width:0}
+    #tabla thead{display:none}
+    #tabla tbody tr{display:block;background:var(--panel);border:1px solid var(--borde);
+      border-radius:10px;margin-bottom:12px;padding:6px 2px;box-shadow:var(--sombra)}
+    #tabla tbody td{display:grid;grid-template-columns:112px minmax(0,1fr);gap:10px;
+      border-bottom:1px solid var(--borde);padding:8px 12px;text-align:left}
+    #tabla tbody tr td:last-child{border-bottom:0}
+    #tabla tbody td::before{content:attr(data-etq);font-size:11px;color:var(--suave);
+      text-transform:uppercase;letter-spacing:.03em;padding-top:2px}
+    #tabla tbody td.objeto{max-width:none;min-width:0}
+    #tabla td.num{text-align:left}
+    /* Las etiquetas y botones no deben estirarse a todo el ancho de la ficha */
+    #tabla tbody td > .etiqueta,
+    #tabla tbody td > .boton{justify-self:start}
+    input[type=search],select{flex:1 1 100%;max-width:none}
+    .filtros{gap:7px}
+  }
+  @media (max-width:560px){
+    #tabla tbody td{grid-template-columns:1fr;gap:2px}
+    #tabla tbody td::before{padding-top:0}
+  }

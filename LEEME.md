@@ -25,8 +25,10 @@ GitHub Actions corre el colector todos los días a las **8:30 hora de Colombia**
 cobertura y publica. No depende de que ningún computador esté encendido.
 
 **Ver los datos:** <https://jlzmontenegro.github.io/contratacion-urgencia-manifiesta-valle/>
-El tablero consulta la API en vivo al cargar, así que muestra el estado del momento.
-También sirve abrir `tablero.html` con doble clic desde esta carpeta.
+La página muestra los datos de la última recolección y dice de cuándo son. **Ya no se abre
+con doble clic**: el navegador bloquea la lectura de `datos/tablero.json` desde `file://`.
+Para verla en local, sirva la carpeta por HTTP: `py -3 -m http.server 8765` y abra
+<http://127.0.0.1:8765/>.
 
 **Forzar una actualización ahora, sin esperar a mañana:** en el repositorio, pestaña
 **Actions** → *Actualizar monitoreo* → botón **Run workflow**.
@@ -232,16 +234,25 @@ datos/
 reportes/
   reporte_AAAA-MM-DD.md      reporte diario
 REPORTE_ULTIMO.md            copia del reporte más reciente
-tablero.html                 el colector le incrusta el historial en cada ejecución
+datos/tablero.json           lo que la pagina carga y pinta
+index.html                   estructura de la pagina (16 KB)
+tablero.css                  estilos
+tablero.js                   render
 publicar/                    copia del repositorio publicado en GitHub Pages
 ```
 
 ## El tablero es un archivo autónomo
 
-`tablero.html` no depende de ningún otro archivo ni de librerías externas: el historial va
-incrustado dentro del propio HTML y los datos se consultan directamente contra datos.gov.co
-desde el navegador. Se puede enviar por correo, copiar a una USB o publicar en cualquier
-servidor, y quien lo reciba ve todo y puede pulsar **Actualizar datos**.
+La página está partida en cuatro archivos: `index.html` (16 KB) con la estructura,
+`tablero.css` con los estilos, `tablero.js` con el render, y `datos/tablero.json` con los
+datos ya consultados y clasificados por el colector.
+
+**La página solo pinta.** Antes el navegador consultaba la API por su cuenta y volvía a
+clasificar todo: eran 477 líneas de JavaScript que repetían lo que ya hace `colector.py`, y
+cada regla había que cambiarla en dos idiomas. Se arregló un fallo en Python, se olvidó en
+JavaScript, y el tablero publicado llegó a mostrar ceros durante una caída de la fuente. Con
+una sola implementación eso no se repite, la página carga en una petición en vez de 24, y
+deja de volverse más lenta a medida que crece la ventana.
 
 Está publicado en
 **https://jlzmontenegro.github.io/contratacion-urgencia-manifiesta-valle/**

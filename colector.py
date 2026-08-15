@@ -1466,7 +1466,7 @@ def padron_entidades(resultados, cfg):
 
 
 def exportar_tablero(hoy, resultados, cambios_totales, alertas, cfg, resumen_corrida=None):
-    """Incrusta en tablero.html los datos de la ultima recoleccion."""
+    """Arma el paquete de datos que la pagina carga y pinta."""
     registros = []
     for nombre in fuentes_activas(cfg):
         registros.extend(aplanar(resultados.get(nombre, pd.DataFrame()), nombre))
@@ -1484,15 +1484,8 @@ def exportar_tablero(hoy, resultados, cambios_totales, alertas, cfg, resumen_cor
         "novedades": leer_novedades(cfg, 30),
         "corrida_anterior": resumen_corrida or {},
         "fecha_inicio": cfg["fecha_inicio"],
-        "nits": cfg["nits_prioritarios"],
-        "nits_ungrd": cfg.get("nits_ungrd", []),
-        "secop1_activo": bool(cfg.get("secop1_activo", True)),
-        "descentralizadas_cali": [e["nit"] for e in cfg.get("descentralizadas_cali", [])],
-        "descentralizadas_valle": [e["nit"] for e in cfg.get("descentralizadas_valle", [])],
-        "otras_valle_sin_departamento": [e["nit"] for e in
-                                         cfg.get("otras_valle_sin_departamento", [])],
-        "departamentos": cfg["departamentos_vigilados"],
-        "palabras_fuertes": cfg["palabras_clave_fuertes"],
+        "fecha_evento": cfg["fecha_evento"],
+        "decretos": cfg.get("decretos", []),
         "registros": registros,
         "padron": padron_entidades(resultados, cfg),
         "cambios": historial_cambios,
@@ -1504,48 +1497,24 @@ def exportar_tablero(hoy, resultados, cambios_totales, alertas, cfg, resumen_cor
     }
     payload["totales"]["cambios_hoy"] = int(len(cambios_totales))
 
-    return incrustar_en_tablero(payload)
+    return escribir_datos_tablero(payload)
 
 
-MARCA_INI = '<script id="datos-locales" type="application/json">'
-MARCA_FIN = "</script>"
+def escribir_datos_tablero(payload):
+    """Escribe datos/tablero.json, que es lo que la pagina carga y pinta.
 
-
-def incrustar_en_tablero(payload):
-    """Escribe el historial dentro de tablero.html.
-
-    El tablero queda autonomo: un solo archivo, sin dependencias, que se puede
-    enviar por correo o publicar en cualquier servidor y sigue consultando la
-    API en vivo desde el navegador.
+    Antes estos datos iban incrustados dentro del propio HTML, para que el
+    tablero fuera un archivo autonomo que se pudiera mandar por correo. Se dejo
+    de necesitar eso, y el precio era alto: el HTML llegaba a 959 KB, de los
+    cuales 864 eran datos, y ademas el navegador tenia que reimplementar el
+    clasificador entero para poder consultar la API por su cuenta. Eran 477
+    lineas de JavaScript que repetian lo que ya hace este archivo, y cada regla
+    habia que cambiarla en dos idiomas. Con los datos ya clasificados aqui, la
+    pagina solo pinta.
     """
-    # En la carpeta de trabajo el tablero se llama tablero.html; en el repositorio
-    # publicado, index.html. El mismo colector sirve para los dos, que es lo que
-    # permite que GitHub Actions ejecute exactamente el mismo codigo.
-    ruta = ""
-    for nombre in ("tablero.html", "index.html"):
-        candidato = os.path.join(BASE, nombre)
-        if os.path.exists(candidato):
-            ruta = candidato
-            break
-    if not ruta:
-        print("  ! no se encontro tablero.html ni index.html; no se incrusto el historial")
-        return ""
-
-    with open(ruta, encoding="utf-8") as fh:
-        html = fh.read()
-
-    ini = html.find(MARCA_INI)
-    if ini == -1:
-        print("  ! tablero.html no tiene el bloque 'datos-locales'; no se incrusto nada")
-        return ruta
-    fin = html.find(MARCA_FIN, ini)
-
-    # '<' escapado para que ningun texto del objeto contractual pueda cerrar la etiqueta
-    datos = json.dumps(payload, ensure_ascii=False).replace("<", "\\u003c")
-    nuevo = html[:ini] + MARCA_INI + "\n" + datos + "\n" + html[fin:]
-
+    ruta = os.path.join(DIR_DATOS, "tablero.json")
     with open(ruta, "w", encoding="utf-8", newline="") as fh:
-        fh.write(nuevo)
+        json.dump(payload, fh, ensure_ascii=False, separators=(",", ":"))
     return ruta
 
 
@@ -1648,7 +1617,7 @@ def main():
 
     print("\nListo.")
     print(f"  reporte : {ruta_reporte}")
-    print(f"  tablero : {ruta_tablero}")
+    print(f"  datos   : {ruta_tablero}")
     print(f"  alertas : {len(alertas)}")
     if not secop1.empty:
         rel_s1 = secop1["nivel_relacion"].isin(["Alta", "Media"]).sum()
