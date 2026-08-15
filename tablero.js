@@ -41,7 +41,8 @@ const compacto = v => {
  * Render                                                              *
  * ------------------------------------------------------------------ */
 let DATOS = [];
-let orden = { col: "fecha", asc: false };
+/* De mayor a menor valor: lo que más plata mueve se mira primero. */
+let orden = { col: "valor", asc: false };
 
 /* Cuándo apareció publicado cada registro, según la bitácora del colector.
    El tablero por sí solo no tiene memoria: consulta el estado actual, no sabe
@@ -66,6 +67,22 @@ const esRelevante = r => r.nivel === "Alta" || r.nivel === "Media";
    la interfaz, así que tampoco debe aparecer en los conteos: un número que no
    se puede abrir no le sirve a nadie. */
 const listable = r => r.nivel !== "Contexto" || GRUPOS_ORDINARIA.includes(r.grupo);
+/* La jerga del clasificador traducida. La etiqueta corta va en la tabla; la
+   explicación, en el título emergente y en la leyenda. Nadie que llegue de
+   nuevo sabe qué es "relación alta". */
+const NIVELES = {
+  "Alta":          { corto: "Del sismo",
+                     largo: "Nombra el sismo, o cita uno de los decretos de la emergencia." },
+  "Media":         { corto: "Por revisar",
+                     largo: "Su objeto es propio de una emergencia —albergues, escombros, ayuda humanitaria, maquinaria— pero no nombra el evento. Puede tener relación o no: hay que leerlo." },
+  "Otra urgencia": { corto: "Otra emergencia",
+                     largo: "Urgencia manifiesta declarada por otra causa, o por una calamidad anterior al 10 de agosto. No cuenta como relacionado." },
+  "Contexto":      { corto: "Ordinaria",
+                     largo: "Contratación corriente de una entidad vigilada. Sin relación aparente con el sismo." }
+};
+const nivelCorto = n => (NIVELES[n] || {}).corto || n;
+const nivelLargo = n => (NIVELES[n] || {}).largo || "";
+
 /* Los niveles con espacios necesitan una clase CSS válida */
 const claseNivel = n => "n-" + ({ "Otra urgencia": "Otra" }[n] || n);
 /* Los indicadores cuentan Cali, el Valle del Cauca y la UNGRD/FNGRD, que es la
@@ -74,6 +91,42 @@ const claseNivel = n => "n-" + ({ "Otra urgencia": "Otra" }[n] || n);
 const cuenta = r => r.grupo !== "Fuera del Valle";
 const territoriales = () => DATOS.filter(r => cuenta(r) && esRelevante(r));
 const nacionales    = () => DATOS.filter(r => !cuenta(r) && esRelevante(r));
+
+/* ------------------------------------------------------------------ *
+ * Paginación                                                          *
+ * ------------------------------------------------------------------ */
+/* 20 filas por página. Antes se pintaban 500 de golpe: nadie baja 500 filas
+   y el navegador tarda en dibujarlas. */
+const POR_PAGINA = 20;
+const paginas = {};
+
+function trozo(clave, filas){
+  const total = Math.max(1, Math.ceil(filas.length / POR_PAGINA));
+  if (!paginas[clave] || paginas[clave] > total) paginas[clave] = 1;
+  const p = paginas[clave];
+  return { filas: filas.slice((p - 1) * POR_PAGINA, p * POR_PAGINA), pagina: p, total };
+}
+
+function pintarPaginacion(destino, clave, t, cuantos, repintar){
+  const el = document.getElementById(destino);
+  if (!el) return;
+  if (cuantos <= POR_PAGINA){ el.innerHTML = ""; return; }
+  const desde = (t.pagina - 1) * POR_PAGINA + 1;
+  const hasta = Math.min(t.pagina * POR_PAGINA, cuantos);
+  el.innerHTML =
+    `<button ${t.pagina === 1 ? "disabled" : ""} data-ir="1">« Primera</button>`
+  + `<button ${t.pagina === 1 ? "disabled" : ""} data-ir="${t.pagina - 1}">‹ Anterior</button>`
+  + `<span class="cual">Mostrando <b>${desde}–${hasta}</b> de <b>${cuantos}</b>`
+  + ` · página ${t.pagina} de ${t.total}</span>`
+  + `<button ${t.pagina === t.total ? "disabled" : ""} data-ir="${t.pagina + 1}">Siguiente ›</button>`
+  + `<button ${t.pagina === t.total ? "disabled" : ""} data-ir="${t.total}">Última »</button>`;
+  el.querySelectorAll("button[data-ir]").forEach(b =>
+    b.addEventListener("click", () => {
+      paginas[clave] = Number(b.dataset.ir);
+      repintar();
+      el.scrollIntoView({ block: "nearest" });
+    }));
+}
 
 /* ------------------------------------------------------------------ *
  * Portada: el resumen que entiende alguien que llega sin contexto     *
@@ -254,7 +307,10 @@ function pintarOrdinaria(){
   if (!filas.length) vacio.textContent = "Ninguna entidad coincide con el filtro.";
 
   const max = Math.max(...filas.map(e => e.valor), 1);
-  document.querySelector("#tabla-ordinaria tbody").innerHTML = filas.map(e => {
+  const t = trozo("ordinaria", filas);
+  pintarPaginacion("pag-ordinaria", "ordinaria", t, filas.length, pintarOrdinaria);
+
+  document.querySelector("#tabla-ordinaria tbody").innerHTML = t.filas.map(e => {
     const abierta = entidadAbierta === e.entidad;
     const fila = `
       <tr class="abrible" data-entidad="${esc(e.entidad)}">
@@ -292,7 +348,7 @@ function pintarOrdinaria(){
 function detalleEntidad(e){
   const filas = e.filas.slice()
     .sort((a, b) => (esRelevante(b) - esRelevante(a)) || (b.valor - a.valor))
-    .slice(0, 60);
+    .slice(0, POR_PAGINA);
   const oculto = e.filas.length - filas.length;
   const faltan = e.n - e.filas.length;
   return `
@@ -308,13 +364,13 @@ function detalleEntidad(e){
             <td class="objeto">${esc(String(r.objeto).slice(0, 220))}</td>
             <td class="num">${esc(pesos(r.valor))}</td>
             <td>${esc(r.proveedor) || '<span class="menor">sin adjudicar</span>'}</td>
-            <td><span class="etiqueta ${claseNivel(r.nivel)}">${esc(r.nivel)}</span></td>
+            <td><span class="etiqueta ${claseNivel(r.nivel)}" title="${esc(nivelLargo(r.nivel))}">${esc(nivelCorto(r.nivel))}</span></td>
             <td>${r.url ? `<a class="boton boton-secop" href="${esc(r.url)}" target="_blank"
                  rel="noopener">Ver</a>` : ""}</td>
           </tr>`).join("")}</tbody>
       </table>
     </div>
-    ${oculto > 0 ? `<div class="menor" style="padding:8px 2px">Se muestran los 60 de mayor
+    ${oculto > 0 ? `<div class="menor" style="padding:8px 2px">Se muestran los 20 de mayor
       valor; hay ${oculto} más en el archivo.</div>` : ""}
     ${faltan > 0 ? `<div class="menor" style="padding:8px 2px">De los <b>${e.n}</b> registros
       de esta entidad, ${faltan} son contratación ordinaria que no viaja en el archivo del
@@ -324,23 +380,6 @@ function detalleEntidad(e){
 /* ------------------------------------------------------------------ *
  * Padrón de entidades                                                 *
  * ------------------------------------------------------------------ */
-/* Lo genera el colector en cada corrida, así que una entidad nueva aparece
-   sola al día siguiente sin tocar nada. */
-
-const ORDEN_GRUPOS_PADRON = ["Alcaldía de Cali", "Descentralizadas de Cali",
-  "Gobernación del Valle", "Descentralizadas de la Gobernación",
-  "Otras entidades del Valle", "UNGRD", "Nacional para el Valle", "Fuera del Valle"];
-
-const NOTA_GRUPO = {
-  "Alcaldía de Cali": "Nivel central del distrito: sus secretarías y departamentos administrativos comparten un mismo NIT.",
-  "Descentralizadas de Cali": "Entidades con personería y NIT propios. El Parágrafo Cuarto del Decreto 0964 las obliga a declarar su propia urgencia manifiesta.",
-  "Gobernación del Valle": "Nivel central del departamento, incluida la Casa del Valle en Bogotá.",
-  "Descentralizadas de la Gobernación": "Institutos, empresas y hospitales departamentales con NIT propio.",
-  "Otras entidades del Valle": "Municipios del departamento y sus entidades. Entran por territorio, salvo las que tienen el departamento sin diligenciar.",
-  "UNGRD": "Entidades nacionales que coordinan y financian la respuesta al desastre. No suman en los indicadores territoriales.",
-  "Nacional para el Valle": "Entidades de otras regiones —ministerios, agencias— cuya contratación está destinada al territorio afectado. Sí cuentan en los indicadores.",
-  "Fuera del Valle": "Aparecen por el barrido nacional de palabras clave, no porque se vigilen. Se conservan como referencia."
-};
 
 /* Vigilada y en silencio: se consulta todos los días y no ha publicado nada
    desde el sismo. Solo aplica a las que tienen NIT en la configuración; las
@@ -394,58 +433,49 @@ function pintarPadron(){
   const cont = document.getElementById("secciones-padron");
   if (!filas.length){
     cont.innerHTML = '<div class="vacio">Ninguna entidad coincide con el filtro.</div>';
+    document.getElementById("pag-padron").innerHTML = "";
     return;
   }
 
-  const porGrupo = new Map();
-  filas.forEach(e => {
-    if (!porGrupo.has(e.grupo)) porGrupo.set(e.grupo, []);
-    porGrupo.get(e.grupo).push(e);
-  });
-  const grupos = [...porGrupo.keys()].sort((a, b) =>
-    (ORDEN_GRUPOS_PADRON.indexOf(a) + 1 || 99) - (ORDEN_GRUPOS_PADRON.indexOf(b) + 1 || 99));
+  /* Una sola tabla, de mayor a menor valor contratado. Antes iba partida en
+     siete secciones por grupo; con el filtro de grupo al lado, la división
+     sobraba y obligaba a recorrer toda la página para encontrar una entidad. */
+  const ordenadas = filas.slice().sort((a, b) =>
+    b.valor - a.valor || b.n - a.n || a.entidad.localeCompare(b.entidad, "es"));
+  const t = trozo("padron", ordenadas);
+  pintarPaginacion("pag-padron", "padron", t, ordenadas.length, pintarPadron);
 
-  cont.innerHTML = grupos.map(g => {
-    const es = porGrupo.get(g).slice()
-      .sort((a, b) => b.n - a.n || a.entidad.localeCompare(b.entidad, "es"));
-    const reg = es.reduce((s, e) => s + e.n, 0);
-    const rel = es.reduce((s, e) => s + e.rel, 0);
-    return `
-      <div class="grupo-padron">
-        <h3>${esc(g)} <span class="orden">${esc(es[0].orden)}</span></h3>
-        <p class="resumen">${es.length} entidades · ${reg} registros${
-          rel ? ` · <b>${rel}</b> relacionados con el sismo` : ""}${
-          es.filter(enSilencio).length
-            ? ` · ${es.filter(enSilencio).length} sin contratar` : ""
-          } — ${esc(NOTA_GRUPO[g] || "")}</p>
-        <div class="tabla-envoltura">
-          <table>
-            <thead><tr>
-              <th>Entidad</th><th>NIT</th><th>Cómo entra</th><th>Plataformas</th>
-              <th class="num">Registros</th><th class="num">Valor</th><th>Del sismo</th>
-            </tr></thead>
-            <tbody>${es.map(e => `
-              <tr class="${enSilencio(e) ? "silenciosa" : ""}">
-                <td data-etq="Entidad"><b>${esc(e.entidad)}</b>
-                  ${enSilencio(e)
-                    ? ' <span class="chip silencio">sin contratar</span>' : ""}
-                  <div class="menor">${esc(e.tipo)}</div></td>
-                <td class="nit-col" data-etq="NIT">${esc(e.nit)}${
-                  e.nit !== e.raiz && e.nit !== "—"
-                    ? `<span class="raiz">raíz ${esc(e.raiz)}</span>` : ""}</td>
-                <td data-etq="Cómo entra"><span class="chip${
-                  e.via === "NIT en configuración" ? " fija" : ""}">${esc(e.via)}</span></td>
-                <td data-etq="Plataformas"><span class="menor">${esc(e.plat)}</span></td>
-                <td class="num" data-etq="Registros">${e.n}</td>
-                <td class="num" data-etq="Valor">${esc(compacto(e.valor))}</td>
-                <td data-etq="Del sismo">${e.rel
-                  ? `<span class="etiqueta n-Alta">${e.rel}</span>`
-                  : '<span class="menor">—</span>'}</td>
-              </tr>`).join("")}</tbody>
-          </table>
-        </div>
-      </div>`;
-  }).join("");
+  cont.innerHTML = `
+    <div class="tabla-envoltura">
+      <table>
+        <thead><tr>
+          <th>Entidad</th><th>Nivel de gobierno</th><th>NIT</th><th>Cómo entra</th>
+          <th class="num">Registros</th><th class="num">Valor contratado</th><th>Del sismo</th>
+        </tr></thead>
+        <tbody>${t.filas.map(e => `
+          <tr class="${enSilencio(e) ? "silenciosa" : ""}">
+            <td data-etq="Entidad"><b>${esc(e.entidad)}</b>
+              ${enSilencio(e) ? ' <span class="chip silencio">sin contratar</span>' : ""}
+              <div class="menor">${esc(e.tipo)}${e.plat !== "—" ? " · " + esc(e.plat) : ""}</div></td>
+            <td data-etq="Nivel de gobierno">${esc(e.grupo)}
+              <div class="menor">${esc(e.orden)}</div></td>
+            <td class="nit-col" data-etq="NIT">${esc(e.nit)}${
+              e.nit !== e.raiz && e.nit !== "—"
+                ? `<span class="raiz">raíz ${esc(e.raiz)}</span>` : ""}</td>
+            <td data-etq="Cómo entra"><span class="chip${
+              e.via === "NIT en configuración" ? " fija" : ""}"
+              title="${e.via === "NIT en configuración"
+                ? "Se consulta siempre, aunque no contrate nada y aunque su departamento venga mal diligenciado."
+                : "Aparece por tener departamento Valle del Cauca. Si ese campo viniera vacío, no se vería."}"
+              >${esc(e.via)}</span></td>
+            <td class="num" data-etq="Registros">${e.n}</td>
+            <td class="num" data-etq="Valor">${esc(compacto(e.valor))}</td>
+            <td data-etq="Del sismo">${e.rel
+              ? `<span class="etiqueta n-Alta">${e.rel}</span>`
+              : '<span class="menor">—</span>'}</td>
+          </tr>`).join("")}</tbody>
+      </table>
+    </div>`;
 }
 
 function cambiarVista(cual){
@@ -601,7 +631,18 @@ function celdaDuracion(r){
                               : '<div class="menor">sin fechas publicadas</div>');
 }
 
+/* La leyenda explica los cuatro niveles con palabras, no con etiquetas. Va
+   junto a la tabla porque es ahí donde el lector se topa con ellas. */
+function pintarLeyenda(){
+  const el = document.getElementById("leyenda-niveles");
+  if (!el) return;
+  el.innerHTML = Object.entries(NIVELES).map(([n, d]) =>
+    `<div><span class="etiqueta ${claseNivel(n)}">${esc(d.corto)}</span>
+       <span>${esc(d.largo)}</span></div>`).join("");
+}
+
 function pintarTabla(){
+  pintarLeyenda();
   const filas = filtrados();
   const cuerpo = document.querySelector("#tabla tbody");
   const valorFiltrado = filas.reduce((s, r) => s + (r.tipo === "Contrato" ? r.valor : 0), 0);
@@ -623,7 +664,10 @@ function pintarTabla(){
         : "Sin registros con los filtros actuales.";
   }
 
-  cuerpo.innerHTML = filas.slice(0, 500).map(r => `
+  const t = trozo("tabla", filas);
+  pintarPaginacion("pag-tabla", "tabla", t, filas.length, pintarTabla);
+
+  cuerpo.innerHTML = t.filas.map(r => `
     <tr>
       <td class="col-fecha" data-etq="Fecha">${esc(r.fecha)}
         <div class="menor">${esc(r.etiqueta_fecha || "")}</div></td>
@@ -641,7 +685,8 @@ function pintarTabla(){
       <td data-etq="Modalidad">${esc(r.modalidad)}
         <div class="menor">${esc(r.justificacion)}</div>
         <div class="menor">${esc(r.estado)}</div></td>
-      <td data-etq="Relación"><span class="etiqueta ${claseNivel(r.nivel)}">${esc(r.nivel)}</span>
+      <td data-etq="Relación"><span class="etiqueta ${claseNivel(r.nivel)}"
+          title="${esc(nivelLargo(r.nivel))}">${esc(nivelCorto(r.nivel))}</span>
         <div class="menor">${esc(r.motivo)}</div></td>
       <td data-etq="Enlace">${r.url
         ? `<a class="boton boton-secop" href="${esc(r.url)}" target="_blank" rel="noopener">Ver en SECOP</a>`
@@ -692,7 +737,8 @@ function filasSeccion(destinoTabla, destinoVacio, filas, segunda, mensajeVacio){
         <td data-etq="Modalidad">${esc(r.modalidad)}
           <div class="menor">${esc(r.justificacion)}</div>
           <div class="menor">${esc(r.estado)}</div></td>
-        <td data-etq="Relación"><span class="etiqueta ${claseNivel(r.nivel)}">${esc(r.nivel)}</span>
+        <td data-etq="Relación"><span class="etiqueta ${claseNivel(r.nivel)}"
+            title="${esc(nivelLargo(r.nivel))}">${esc(nivelCorto(r.nivel))}</span>
           <div class="menor">${esc(r.motivo)}</div></td>
         <td data-etq="Enlace">${r.url
           ? `<a class="boton boton-secop" href="${esc(r.url)}" target="_blank" rel="noopener">Ver</a>`
@@ -873,18 +919,21 @@ function descargarCsv(){
 document.getElementById("btn-refrescar").addEventListener("click", cargar);
 document.getElementById("btn-csv").addEventListener("click", descargarCsv);
 ["f-texto","f-grupo","f-nivel","f-tipo","f-novedad","f-entidad","f-plataforma"].forEach(id =>
-  document.getElementById(id).addEventListener("input", pintarTabla));
+  document.getElementById(id).addEventListener("input",
+    () => { paginas.tabla = 1; pintarTabla(); }));
 ["sismo","ordinaria","padron"].forEach(v =>
   document.getElementById("tab-" + v).addEventListener("click", () => cambiarVista(v)));
 ["fo-texto","fo-grupo","fo-orden"].forEach(id =>
   document.getElementById(id).addEventListener("input",
-    () => { entidadAbierta = null; pintarOrdinaria(); }));
+    () => { entidadAbierta = null; paginas.ordinaria = 1; pintarOrdinaria(); }));
 ["fp-texto","fp-via","fp-tipo","fp-grupo","fp-actividad"].forEach(id =>
-  document.getElementById(id).addEventListener("input", pintarPadron));
+  document.getElementById(id).addEventListener("input",
+    () => { paginas.padron = 1; pintarPadron(); }));
 document.querySelectorAll("#tabla th[data-col]").forEach(th =>
   th.addEventListener("click", () => {
     const col = th.dataset.col;
     orden = { col, asc: orden.col === col ? !orden.asc : false };
+    paginas.tabla = 1;
     pintarTabla();
   }));
 

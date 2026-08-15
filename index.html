@@ -101,9 +101,90 @@
 </div>
 
 <div id="vista-sismo" role="tabpanel">
+<div class="titulo-bloque">Alertas</div>
+<div class="tarjeta" style="margin-bottom:18px"><div id="lista-alertas"></div></div>
 
 <div class="titulo-bloque" id="titulo-kpis">Detalle por nivel de gobierno · Cali y Valle del Cauca</div>
 <div class="kpis" id="kpis"></div>
+
+<div class="titulo-bloque">Resultados</div>
+<div class="filtros">
+  <input type="search" id="f-texto" placeholder="Buscar por objeto, entidad o contratista…">
+  <select id="f-grupo">
+    <option value="territorial">Cali y Valle del Cauca</option>
+    <option value="Alcaldía de Cali">Solo Alcaldía de Cali</option>
+    <option value="Gobernación del Valle">Solo Gobernación del Valle</option>
+    <option value="Descentralizadas de Cali">Solo descentralizadas de Cali</option>
+    <option value="Descentralizadas de la Gobernación">Solo descentralizadas de la Gobernación</option>
+    <option value="Otras entidades del Valle">Municipios del Valle y sus entidades</option>
+    <option value="UNGRD">Solo UNGRD</option>
+    <option value="Nacional para el Valle">Nacional, destinado al Valle</option>
+    <option value="Fuera del Valle">Fuera del Valle (referencia)</option>
+    <option value="todos">Todo el país</option>
+  </select>
+  <select id="f-plataforma">
+    <option value="">Las dos plataformas</option>
+    <option value="SECOP II">Solo SECOP II</option>
+    <option value="SECOP I">Solo SECOP I</option>
+  </select>
+  <select id="f-nivel">
+    <option value="rel">Todo lo relacionado con el sismo</option>
+    <option value="Alta">Solo lo que nombra el sismo o un decreto</option>
+    <option value="Media">Solo lo que parece de emergencia</option>
+    <option value="Otra urgencia">Urgencia manifiesta por otra causa</option>
+    <option value="Contexto">Contratación ordinaria de Cali y la Gobernación</option>
+    <option value="todos">Mostrar todo</option>
+  </select>
+  <select id="f-tipo">
+    <option value="">Contratos y procesos</option>
+    <option value="Contrato">Solo contratos</option>
+    <option value="Proceso">Solo procesos de contratación</option>
+  </select>
+  <select id="f-novedad">
+    <option value="">Aparecidos en cualquier fecha</option>
+    <option value="7">Aparecidos en los últimos 7 días</option>
+    <option value="30">Aparecidos en los últimos 30 días</option>
+  </select>
+  <select id="f-entidad"><option value="">Todas las entidades</option></select>
+  <span class="pill" id="conteo-filtro"></span>
+</div>
+<div class="leyenda" id="leyenda-niveles"></div>
+
+<div class="tabla-envoltura">
+  <table id="tabla">
+    <thead><tr>
+      <th data-col="fecha">Fecha</th>
+      <th data-col="tipo">Tipo</th>
+      <th data-col="entidad">Entidad</th>
+      <th data-col="objeto">Objeto</th>
+      <th data-col="valor" class="num">Valor</th>
+      <th data-col="fecha_inicio">Duración</th>
+      <th data-col="proveedor">Contratista</th>
+      <th data-col="modalidad">Modalidad</th>
+      <th data-col="nivel">Relación</th>
+      <th>Enlace</th>
+    </tr></thead>
+    <tbody></tbody>
+  </table>
+  <div class="vacio" id="vacio" hidden></div>
+</div>
+<div class="paginacion" id="pag-tabla"></div>
+
+<div class="titulo-bloque">Distribución</div>
+<div class="rejilla">
+  <div class="tarjeta">
+    <h2>Valor contratado por entidad</h2>
+    <div class="barra" id="graf-entidades"></div>
+  </div>
+  <div class="tarjeta">
+    <h2>Registros por día</h2>
+    <div class="barra" id="graf-dias"></div>
+  </div>
+  <div class="tarjeta">
+    <h2>Contratistas con mayor valor</h2>
+    <div class="barra" id="graf-proveedores"></div>
+  </div>
+</div>
 
 <div class="titulo-bloque">Resto del país · solo como referencia</div>
 <div class="nacional" id="bloque-nacional"></div>
@@ -159,87 +240,6 @@
     <div class="vacio" id="vacio-ungrd" hidden></div>
   </div>
 </section>
-
-<div class="titulo-bloque">Distribución</div>
-<div class="rejilla">
-  <div class="tarjeta">
-    <h2>Valor contratado por entidad</h2>
-    <div class="barra" id="graf-entidades"></div>
-  </div>
-  <div class="tarjeta">
-    <h2>Registros por día</h2>
-    <div class="barra" id="graf-dias"></div>
-  </div>
-  <div class="tarjeta">
-    <h2>Contratistas con mayor valor</h2>
-    <div class="barra" id="graf-proveedores"></div>
-  </div>
-  <div class="tarjeta">
-    <h2>Alertas</h2>
-    <div id="lista-alertas"></div>
-  </div>
-</div>
-
-<div class="titulo-bloque">Detalle</div>
-<div class="filtros">
-  <input type="search" id="f-texto" placeholder="Buscar en objeto, entidad, contratista…">
-  <select id="f-grupo">
-    <option value="territorial">Cali y Valle del Cauca</option>
-    <option value="Alcaldía de Cali">Solo Alcaldía de Cali</option>
-    <option value="Gobernación del Valle">Solo Gobernación del Valle</option>
-    <option value="Descentralizadas de Cali">Solo descentralizadas de Cali</option>
-    <option value="Descentralizadas de la Gobernación">Solo descentralizadas de la Gobernación</option>
-    <option value="Otras entidades del Valle">Municipios del Valle y sus entidades</option>
-    <option value="UNGRD">Solo UNGRD</option>
-    <option value="Nacional para el Valle">Nacional, destinado al Valle</option>
-    <option value="Fuera del Valle">Fuera del Valle (referencia)</option>
-    <option value="todos">Todo el país</option>
-  </select>
-  <select id="f-plataforma">
-    <option value="">SECOP I y SECOP II</option>
-    <option value="SECOP II">Solo SECOP II</option>
-    <option value="SECOP I">Solo SECOP I</option>
-  </select>
-  <select id="f-nivel">
-    <option value="rel">Relación alta y media</option>
-    <option value="Alta">Solo relación alta</option>
-    <option value="Media">Solo relación media</option>
-    <option value="Otra urgencia">Urgencia manifiesta por otras causas</option>
-    <option value="Contexto">Contratación ordinaria (Alcaldía y Gobernación)</option>
-    <option value="todos">Todos los relacionados</option>
-  </select>
-  <select id="f-tipo">
-    <option value="">Contratos y procesos</option>
-    <option value="Contrato">Solo contratos</option>
-    <option value="Proceso">Solo procesos de contratación</option>
-  </select>
-  <select id="f-novedad">
-    <option value="">Cualquier antigüedad</option>
-    <option value="7">Aparecidos en los últimos 7 días</option>
-    <option value="30">Aparecidos en los últimos 30 días</option>
-  </select>
-  <select id="f-entidad"><option value="">Todas las entidades</option></select>
-  <span class="pill" id="conteo-filtro"></span>
-</div>
-
-<div class="tabla-envoltura">
-  <table id="tabla">
-    <thead><tr>
-      <th data-col="fecha">Fecha</th>
-      <th data-col="tipo">Tipo</th>
-      <th data-col="entidad">Entidad</th>
-      <th data-col="objeto">Objeto</th>
-      <th data-col="valor" class="num">Valor</th>
-      <th data-col="fecha_inicio">Duración</th>
-      <th data-col="proveedor">Contratista</th>
-      <th data-col="modalidad">Modalidad</th>
-      <th data-col="nivel">Relación</th>
-      <th>Enlace</th>
-    </tr></thead>
-    <tbody></tbody>
-  </table>
-  <div class="vacio" id="vacio" hidden></div>
-</div>
 
 <details style="margin-top:18px">
   <summary>Registro de modificaciones detectadas por el colector local (<span id="n-cambios">0</span>)</summary>
@@ -302,6 +302,7 @@
     </table>
     <div class="vacio" id="vacio-ordinaria" hidden></div>
   </div>
+  <div class="paginacion" id="pag-ordinaria"></div>
 
   <p class="sub" style="margin-top:16px">
     Pulse una entidad para ver sus registros. El valor suma únicamente contratos firmados;
@@ -359,6 +360,7 @@
   </div>
 
   <div id="secciones-padron"></div>
+  <div class="paginacion" id="pag-padron"></div>
 
   <p class="sub" style="margin-top:18px">
     El padrón lo regenera el colector en cada corrida: si una entidad nueva empieza a
