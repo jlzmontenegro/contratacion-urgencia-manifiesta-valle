@@ -451,6 +451,29 @@ def condiciones(nombre_fuente, cfg, hoy):
         "nacional_clave": f"{ventana} AND (({claves}) OR {urgencia})",
     }
 
+    # D-bis. Cualquier entidad, de donde sea, cuyo objeto contractual mencione el
+    #    territorio afectado. Es la red para la contratacion del gobierno
+    #    nacional: si un ministerio contrata reconstruccion para Cali, entra por
+    #    aqui aunque no diga "sismo" y aunque no este en ninguna lista.
+    #
+    #    Se hace asi y no con un padron de ministerios porque el orden nacional
+    #    son 280 entidades que en cinco dias firmaron 3.047 contratos: traerlos
+    #    todos ahogaria la senal. Y porque el campo 'orden' de SECOP es
+    #    autodeclarado y poco fiable —marca "Nacional" a la CVC—, de modo que una
+    #    lista basada en el dejaria huecos. Cruzar por el objeto no necesita
+    #    mantenimiento: cubre a las 280 y a las que aparezcan manana.
+    #    Se usa la lista corta de nombres inequivocos, no la del clasificador:
+    #    SoQL compara por subcadena y no por palabra, asi que '%CALI%' encuentra
+    #    tambien CALIDAD, CALIFICACION y CALIBRACION. Con la lista larga, 1.060
+    #    de 1.323 registros traidos eran ruido de esa clase.
+    territorio_obj = " OR ".join(
+        f"upper({campo}) like '%{normalizar(p)}%'"
+        for p in cfg.get("nombres_territorio_barrido", [])
+        for campo in f["descripcion"]
+    )
+    if territorio_obj:
+        barridos["objeto_territorio"] = f"{ventana} AND ({territorio_obj})"
+
     # D. UNGRD completa: es la entidad nacional que coordina la respuesta al
     #    desastre, asi que se trae toda su contratacion de la ventana y no solo
     #    la que menciona el sismo. Su relacion con el evento se evalua despues.
@@ -711,6 +734,18 @@ def clasificar(df, nombre_fuente, cfg):
             nivel = "Otra urgencia"
             razones.append(f"alude a un acto del {citas_previas[0]:%d/%m/%Y}, anterior al "
                            f"sismo del {fecha_evento:%d/%m/%Y}")
+
+        # Una entidad de otra region cuyo objeto va destinado al territorio
+        # afectado no es "fuera del Valle": es el gobierno nacional u otra region
+        # contratando PARA el Valle, y eso si cuenta. Se le da grupo propio para
+        # que se distinga de la contratacion ajena al evento. La reasignacion va
+        # despues de clasificar, de modo que no altera el criterio: solo cambia
+        # como se agrupa lo que ya resulto relacionado.
+        if grupos[i] == "Fuera del Valle" and menciona_territorio \
+                and nivel in ("Alta", "Media"):
+            grupos[i] = "Nacional para el Valle"
+            cuenta_indicador[i] = True
+            razones.append("entidad de otra region contratando para el territorio afectado")
 
         if grupos[i] == "UNGRD" and nivel == "Contexto":
             # No se pierde: la seccion de la UNGRD muestra toda su contratacion
@@ -1337,6 +1372,7 @@ ORDEN_DE_GRUPO = {
     "Descentralizadas de la Gobernación": "Territorial · Departamental",
     "Otras entidades del Valle": "Territorial · Municipal",
     "UNGRD": "Nacional",
+    "Nacional para el Valle": "Nacional · destinado al territorio",
     "Fuera del Valle": "Nacional / otras regiones",
 }
 

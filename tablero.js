@@ -324,7 +324,7 @@ function detalleEntidad(e){
 
 const ORDEN_GRUPOS_PADRON = ["Alcaldía de Cali", "Descentralizadas de Cali",
   "Gobernación del Valle", "Descentralizadas de la Gobernación",
-  "Otras entidades del Valle", "UNGRD", "Fuera del Valle"];
+  "Otras entidades del Valle", "UNGRD", "Nacional para el Valle", "Fuera del Valle"];
 
 const NOTA_GRUPO = {
   "Alcaldía de Cali": "Nivel central del distrito: sus secretarías y departamentos administrativos comparten un mismo NIT.",
@@ -333,6 +333,7 @@ const NOTA_GRUPO = {
   "Descentralizadas de la Gobernación": "Institutos, empresas y hospitales departamentales con NIT propio.",
   "Otras entidades del Valle": "Municipios del departamento y sus entidades. Entran por territorio, salvo las que tienen el departamento sin diligenciar.",
   "UNGRD": "Entidades nacionales que coordinan y financian la respuesta al desastre. No suman en los indicadores territoriales.",
+  "Nacional para el Valle": "Entidades de otras regiones —ministerios, agencias— cuya contratación está destinada al territorio afectado. Sí cuentan en los indicadores.",
   "Fuera del Valle": "Aparecen por el barrido nacional de palabras clave, no porque se vigilen. Se conservan como referencia."
 };
 

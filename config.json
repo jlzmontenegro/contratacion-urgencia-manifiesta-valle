@@ -166,7 +166,15 @@
     "ATENCION HUMANITARIA"
   ],
 
-  "_nota_territorio": "Nombres del territorio afectado. Sirven para detectar contratos de entidades de otras regiones (UNGRD, ministerios) cuyo objeto esta destinado a Cali o al Valle.",
+  "_nota_territorio_barrido": "Subconjunto que se usa para BARRER la API. Solo nombres inequivocos: la consulta SoQL compara por subcadena y no distingue palabras, de modo que '%CALI%' tambien encuentra CALIDAD, CALIFICACION y CALIBRACION. Con la lista completa, 1.060 de 1.323 registros traidos eran ruido. El clasificador si usa la lista larga de abajo, porque compara por inicio de palabra y no se deja enganar.",
+  "nombres_territorio_barrido": [
+    "VALLE DEL CAUCA",
+    "SANTIAGO DE CALI",
+    "BUENAVENTURA",
+    "GUADALAJARA DE BUGA"
+  ],
+
+  "_nota_territorio": "Nombres del territorio afectado. Sirven para detectar contratos de entidades de otras regiones (UNGRD, ministerios) cuyo objeto esta destinado a Cali o al Valle. Esta lista la usa el CLASIFICADOR, que compara por inicio de palabra.",
   "nombres_territorio": [
     "VALLE DEL CAUCA",
     "SANTIAGO DE CALI",
