@@ -243,6 +243,33 @@ publicar/                    copia del repositorio publicado en GitHub Pages
 
 ## El tablero es un archivo autónomo
 
+## Cómo se lee el tablero
+
+Tres pestañas: **Por el sismo**, **Contratación ordinaria** y **Padrón de entidades**.
+
+Arriba de todas, una portada con un resumen escrito automáticamente, cuatro cifras grandes y
+un semáforo que dice de qué recolección son los datos y hace cuánto. Si pasan más de 48 horas
+sin actualizarse, avisa en ámbar: conviene revisar la pestaña Actions del repositorio.
+
+Dentro de *Por el sismo* el orden va de lo que exige acción a lo que da contexto: alertas,
+cifras, resultados, gráficos, resto del país, SECOP I y UNGRD, y registro de modificaciones.
+
+Las tablas muestran **20 filas por página**, ordenadas **de mayor a menor valor**.
+
+Los cuatro niveles de relación se muestran con palabras, no con la etiqueta interna:
+
+| En pantalla | Qué significa |
+|---|---|
+| **Del sismo** | Nombra el sismo o cita uno de los decretos de la emergencia |
+| **Por revisar** | Objeto propio de una emergencia, pero no nombra el evento. Puede tener relación o no: hay que leerlo |
+| **Otra emergencia** | Urgencia manifiesta por otra causa, o calamidad anterior al 10 de agosto |
+| **Ordinaria** | Contratación corriente de una entidad vigilada |
+
+La leyenda con estas explicaciones está debajo de los filtros, y el desplegable
+*"¿Cómo se lee este tablero?"* de la portada trae un glosario más amplio.
+
+## Los archivos
+
 La página está partida en cuatro archivos: `index.html` (16 KB) con la estructura,
 `tablero.css` con los estilos, `tablero.js` con el render, y `datos/tablero.json` con los
 datos ya consultados y clasificados por el colector.

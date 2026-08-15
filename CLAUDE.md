@@ -82,6 +82,47 @@ auditoría fallida pasa por buena.
   a recortarlo salvo que lo pida.
 - Publicar solo cuando lo pida.
 
+## Cómo está la página
+
+Tres pestañas: **Por el sismo** · **Contratación ordinaria** · **Padrón de entidades**.
+
+Arriba, común a todas: una portada con resumen redactado automáticamente, cuatro cifras y un
+**semáforo de procedencia** que dice de qué recolección son los datos y hace cuánto (en ámbar
+si pasan de 48 horas). Debajo, un desplegable *"¿Cómo se lee este tablero?"* con glosario.
+
+Orden dentro de "Por el sismo", de lo que exige acción a lo que da contexto:
+**alertas → cifras → resultados → gráficos → resto del país → SECOP I y UNGRD → modificaciones**.
+
+**Las tablas van de a 20 filas con paginación, ordenadas de mayor a menor valor.** Al cambiar
+un filtro se vuelve a la página 1.
+
+**Nada de jerga del clasificador en pantalla.** `Alta` se muestra como *"Del sismo"*, `Media`
+como *"Por revisar"*, `Otra urgencia` como *"Otra emergencia"* y `Contexto` como *"Ordinaria"*,
+cada una con su explicación completa en la leyenda y en el título emergente. Los nombres
+internos siguen vivos en los datos y en `config.json`; solo no se muestran.
+
+## Cómo probar sin navegador
+
+El panel del navegador de este entorno **no abre `file://` ni `localhost`**. La forma de
+probar el tablero es cargar `tablero.js` en Node con un DOM mínimo simulado y un `fetch` que
+sirva `datos/tablero.json`. Ojo con dos trampas del arnés: `querySelector` debe devolver un
+nodo distinto por selector, y hay que fijar a mano los valores por defecto de los `<select>`
+(`f-grupo="territorial"`, `f-nivel="rel"`), o los filtros se comportan distinto que en el
+navegador y los conteos salen en cero.
+
+Para verlo de verdad: `py -3 -m http.server 8765` y abrir <http://127.0.0.1:8765/>.
+
+## Lo que quedó pendiente
+
+**Que la portada abra por "¿qué cambió desde ayer?"** en vez del acumulado. Está propuesto y
+aceptado, no empezado. La razón de no haberlo hecho: se probó un día en que la cifra marcaba
+cero, porque hubo varias corridas seguidas. Conviene retomarlo mirando una corrida real con
+24 horas de diferencia, para ver si el enfoque sirve.
+
+**El usuario dejó puesta la palabra `DESASTRE`** aunque la evidencia mostró que solo atrapa
+"Gestión del Riesgo de **Desastres**", el nombre de la dependencia, y no contenido del sismo.
+Está informado. Si pide quitarla, es borrar una línea de `config.json`.
+
 ## Al escribir código
 
 Comentarios en español, sin tildes en `colector.py` (evita problemas de consola en Windows).
