@@ -20,16 +20,27 @@ Actos administrativos que enmarcan el seguimiento:
 
 ## Uso diario
 
-**Ver los datos:** abra `tablero.html` con doble clic. Consulta la API en vivo al cargar
-y tiene el botón **Actualizar datos** para volver a consultarla en cualquier momento.
+**No hay que hacer nada.** Desde el 15 de agosto de 2026 el monitoreo se actualiza solo:
+GitHub Actions corre el colector todos los días a las **8:30 hora de Colombia**, verifica la
+cobertura y publica. No depende de que ningún computador esté encendido.
 
-**Actualizar el histórico, el reporte y el log de cambios:** doble clic en `actualizar.bat`
-(o `py -3 colector.py` desde la consola).
+**Ver los datos:** <https://jlzmontenegro.github.io/contratacion-urgencia-manifiesta-valle/>
+El tablero consulta la API en vivo al cargar, así que muestra el estado del momento.
+También sirve abrir `tablero.html` con doble clic desde esta carpeta.
 
-**Dejarlo corriendo solo:** doble clic en `registrar_tarea_diaria.bat`. Registra una tarea de
-Windows que ejecuta la actualización todos los días a las 8:30 a.m. Para otra hora:
-`registrar_tarea_diaria.bat 19:00`. Para eliminarla:
-`schtasks /delete /tn "UrgenciaManifiesta_Sismo2026" /f`.
+**Forzar una actualización ahora, sin esperar a mañana:** en el repositorio, pestaña
+**Actions** → *Actualizar monitoreo* → botón **Run workflow**.
+
+**Ver si algo falló:** la pestaña **Actions** muestra cada corrida. Si sale en rojo, GitHub
+manda un correo. Una corrida en rojo significa que **no se publicó nada** y que el sitio
+sigue mostrando la última corrida buena, completa. Eso es intencional.
+
+**Publicar un cambio de código** (no de datos): `publicar.bat`. Sincroniza con el remoto y
+sube solo el código. Ya **no** sube la carpeta `datos/`: si lo hiciera, borraría los
+snapshots que Actions generó los días que este equipo estuvo apagado.
+
+**Correr el colector a mano en este equipo:** `actualizar.bat` (o `py -3 colector.py`).
+Sirve para probar cambios en local. Los datos que produzca aquí no se publican.
 
 **Comprobar que no se esté escapando nada:** `py -3 verificar_cobertura.py`. Para cada entidad
 vigilada y cada fuente compara tres caminos independientes —la API con el NIT simple, la API
@@ -235,8 +246,20 @@ servidor, y quien lo reciba ve todo y puede pulsar **Actualizar datos**.
 Está publicado en
 **https://jlzmontenegro.github.io/contratacion-urgencia-manifiesta-valle/**
 
-Para actualizar los datos y republicar en un solo paso: `publicar.bat`.
-Para republicar sin volver a consultar la API: `publicar.bat solo`.
+Los datos se actualizan y publican solos cada día. `publicar.bat` sirve únicamente para
+subir cambios de código.
+
+## Qué pasa cuando la fuente se cae
+
+Ocurrió el 15 de agosto de 2026: la plataforma Socrata que aloja datos.gov.co se cayó
+entera —no era un límite de peticiones nuestro; los portales de otros países también
+respondían 503—. El colector distingue **"no hay nada que traer"** de **"no se pudo traer
+nada"**: si fallan todos los barridos de una fuente, aborta con código 2 y **no toca el
+tablero ni el reporte**. Sin eso habría confundido el vacío con ausencia de contratación y
+habría reescrito el respaldo sin conexión en blanco.
+
+En ese caso la corrida sale en rojo, no se publica nada, y el sitio sigue mostrando la
+última corrida completa. Al día siguiente reintenta solo.
 
 ## Alertas que levanta
 
