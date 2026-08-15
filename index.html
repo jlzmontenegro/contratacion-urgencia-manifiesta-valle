@@ -161,6 +161,12 @@
         color:var(--suave);white-space:nowrap}
   .chip.fija{border-color:var(--acento);color:var(--acento);
              background:color-mix(in srgb,var(--acento) 12%,transparent)}
+  /* Que una entidad vigilada NO haya contratado es informacion, no ausencia de
+     ella. Va marcado a la vista, no en letra chica. */
+  .chip.silencio{border-color:var(--media);color:var(--media);
+                 background:color-mix(in srgb,var(--media) 14%,transparent);
+                 font-weight:650}
+  tr.silenciosa td{background:color-mix(in srgb,var(--media) 5%,transparent)}
   .nit-col{font-family:ui-monospace,Consolas,monospace;font-size:12.5px;white-space:nowrap}
   .nit-col .raiz{display:block;font-size:11px;color:var(--suave)}
   .grupo-padron{margin-top:26px}
@@ -550,6 +556,12 @@
       <option value="Barrido territorial">Solo barrido territorial</option>
     </select>
     <select id="fp-tipo"><option value="">Todos los tipos</option></select>
+    <select id="fp-actividad">
+      <option value="">Con y sin contratación</option>
+      <option value="sin">Sin contratación en la ventana</option>
+      <option value="con">Solo las que han contratado</option>
+      <option value="sismo">Solo con registros del sismo</option>
+    </select>
     <select id="fp-grupo">
       <option value="">Todos los grupos</option>
       <option value="Alcaldía de Cali">Alcaldía de Cali</option>
@@ -1353,15 +1365,25 @@ const NOTA_GRUPO = {
   "Fuera del Valle": "Aparecen por el barrido nacional de palabras clave, no porque se vigilen. Se conservan como referencia."
 };
 
+/* Vigilada y en silencio: se consulta todos los días y no ha publicado nada
+   desde el sismo. Solo aplica a las que tienen NIT en la configuración; las
+   del barrido territorial aparecen precisamente porque contrataron algo, así
+   que un cero ahí no significa lo mismo. */
+const enSilencio = e => e.n === 0 && e.via === "NIT en configuración";
+
 function filtradosPadron(){
   const txt = norm(document.getElementById("fp-texto").value.trim());
   const via = document.getElementById("fp-via").value;
   const tipo = document.getElementById("fp-tipo").value;
   const grupo = document.getElementById("fp-grupo").value;
+  const act = document.getElementById("fp-actividad").value;
   return PADRON.filter(e => {
     if (via && e.via !== via) return false;
     if (tipo && e.tipo !== tipo) return false;
     if (grupo && e.grupo !== grupo) return false;
+    if (act === "sin" && e.n !== 0) return false;
+    if (act === "con" && e.n === 0) return false;
+    if (act === "sismo" && !e.rel) return false;
     if (txt && !norm(e.entidad + " " + e.nit + " " + e.raiz).includes(txt)) return false;
     return true;
   });
@@ -1379,10 +1401,12 @@ function pintarPadron(){
   const nits = new Set(PADRON.map(e => e.raiz)).size;
   const conSismo = PADRON.filter(e => e.rel > 0).length;
   const registros = PADRON.reduce((s, e) => s + e.n, 0);
+  const calladas = PADRON.filter(enSilencio).length;
   tarjetas("kpis-padron", [
     ["Entidades en el padrón", PADRON.length, nits + " NIT distintos"],
     ["Por NIT en configuración", fijas, "se consultan siempre"],
     ["Por barrido territorial", PADRON.length - fijas, "aparecen por estar en el Valle"],
+    ["Vigiladas sin contratar", calladas, "no han publicado nada desde el sismo"],
     ["Con registros del sismo", conSismo, registros + " registros en total"]
   ]);
 
@@ -1413,7 +1437,10 @@ function pintarPadron(){
       <div class="grupo-padron">
         <h3>${esc(g)} <span class="orden">${esc(es[0].orden)}</span></h3>
         <p class="resumen">${es.length} entidades · ${reg} registros${
-          rel ? ` · <b>${rel}</b> relacionados con el sismo` : ""} — ${esc(NOTA_GRUPO[g] || "")}</p>
+          rel ? ` · <b>${rel}</b> relacionados con el sismo` : ""}${
+          es.filter(enSilencio).length
+            ? ` · ${es.filter(enSilencio).length} sin contratar` : ""
+          } — ${esc(NOTA_GRUPO[g] || "")}</p>
         <div class="tabla-envoltura">
           <table>
             <thead><tr>
@@ -1421,10 +1448,11 @@ function pintarPadron(){
               <th class="num">Registros</th><th class="num">Valor</th><th>Del sismo</th>
             </tr></thead>
             <tbody>${es.map(e => `
-              <tr>
+              <tr class="${enSilencio(e) ? "silenciosa" : ""}">
                 <td data-etq="Entidad"><b>${esc(e.entidad)}</b>
-                  <div class="menor">${esc(e.tipo)}${e.sin_contratacion
-                    ? " · sin contratación en la ventana" : ""}</div></td>
+                  ${enSilencio(e)
+                    ? ' <span class="chip silencio">sin contratar</span>' : ""}
+                  <div class="menor">${esc(e.tipo)}</div></td>
                 <td class="nit-col" data-etq="NIT">${esc(e.nit)}${
                   e.nit !== e.raiz && e.nit !== "—"
                     ? `<span class="raiz">raíz ${esc(e.raiz)}</span>` : ""}</td>
@@ -1857,7 +1885,7 @@ document.getElementById("btn-csv").addEventListener("click", descargarCsv);
   document.getElementById("tab-" + v).addEventListener("click", () => cambiarVista(v)));
 ["fo-texto","fo-grupo","fo-orden"].forEach(id =>
   document.getElementById(id).addEventListener("input", () => { entidadAbierta = null; pintarOrdinaria(); }));
-["fp-texto","fp-via","fp-tipo","fp-grupo"].forEach(id =>
+["fp-texto","fp-via","fp-tipo","fp-grupo","fp-actividad"].forEach(id =>
   document.getElementById(id).addEventListener("input", pintarPadron));
 
 /* El desplegable de tipos se llena con lo que traiga el padrón: si mañana
