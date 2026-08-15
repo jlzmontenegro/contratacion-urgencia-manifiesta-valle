@@ -22,6 +22,10 @@ concurrency:
 jobs:
   actualizar:
     runs-on: ubuntu-latest
+    # Una corrida sana tarda 3 minutos. Si datos.gov.co limita las peticiones,
+    # el colector se queda reintentando; sin este tope la corrida podria seguir
+    # hasta el limite de GitHub, que son 6 horas.
+    timeout-minutes: 25
     steps:
       - name: Descargar el repositorio
         uses: actions/checkout@v4

@@ -479,12 +479,15 @@ def descargar_fuente(nombre_fuente, cfg, hoy, verbose=True):
     f = FUENTES[nombre_fuente]
     acumulado = {}
     origenes = {}
+    barridos = condiciones(nombre_fuente, cfg, hoy)
+    fallos = 0
 
-    for nombre_barrido, where in condiciones(nombre_fuente, cfg, hoy).items():
+    for nombre_barrido, where in barridos.items():
         try:
             filas = consultar(f["dataset"], where, cfg["app_token"])
         except Exception as e:
             print(f"  ! barrido '{nombre_barrido}' de {nombre_fuente} fallo: {e}")
+            fallos += 1
             continue
         if verbose:
             print(f"  - {nombre_fuente}/{nombre_barrido}: {len(filas)} filas")
@@ -494,6 +497,19 @@ def descargar_fuente(nombre_fuente, cfg, hoy, verbose=True):
                 continue
             acumulado[clave] = fila
             origenes.setdefault(clave, set()).add(nombre_barrido)
+
+    # Distinguir "no hay nada que traer" de "no se pudo traer nada" es critico.
+    # Si la API esta caida o limitando peticiones, todos los barridos fallan y
+    # el resultado vacio se confundiria con ausencia de contratacion: el colector
+    # seguiria adelante y sobrescribiria el tablero con un respaldo en blanco.
+    if fallos == len(barridos):
+        raise RuntimeError(
+            f"los {fallos} barridos de '{nombre_fuente}' fallaron; la fuente no "
+            f"esta respondiendo. No se toca nada: es preferible conservar los "
+            f"datos de la ultima corrida buena."
+        )
+    if fallos:
+        print(f"  ! atencion: {fallos} de {len(barridos)} barridos fallaron")
 
     if not acumulado:
         return pd.DataFrame()
@@ -1422,7 +1438,15 @@ def main():
             df = leer_estado(nombre)
             print(f"  - modo sin red: {len(df)} filas leidas del disco")
         else:
-            df = descargar_fuente(nombre, cfg, hoy.date())
+            try:
+                df = descargar_fuente(nombre, cfg, hoy.date())
+            except RuntimeError as e:
+                # Se aborta sin escribir el tablero ni el reporte. Lo publicado
+                # sigue siendo la ultima corrida completa, que es lo correcto:
+                # mejor un dato de ayer entero que uno de hoy a medias.
+                print(f"\n*** {e}")
+                print("*** Corrida abortada. No se modifico el tablero ni el reporte.")
+                sys.exit(2)
 
         if df.empty:
             print("  ! sin datos")
