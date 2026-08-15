@@ -1325,6 +1325,48 @@ def aplanar(df, nombre_fuente):
     return salida
 
 
+GRUPOS_VIGILADOS = ("Alcaldía de Cali", "Descentralizadas de Cali",
+                    "Gobernación del Valle", "Descentralizadas de la Gobernación",
+                    "Otras entidades del Valle", "UNGRD")
+
+
+def resumen_ordinaria(resultados, cfg):
+    """Cifras por entidad de TODA la contratacion de la ventana, del sismo o no.
+
+    Va como agregado y no como filas por una razon de tamano: a cinco dias del
+    sismo ya hay 1.745 registros, que a seis meses proyectan unos 62.800.
+    Embeberlos haria el tablero inservible. El agregado son unas pocas decenas
+    de lineas y no crece con el tiempo, solo con el numero de entidades.
+
+    Sin esto la vista de contratacion ordinaria mostraria solo lo que alcanza a
+    viajar embebido y subcontaria sin avisar, que es justo lo que no se puede.
+    """
+    por_entidad = {}
+    for nombre in fuentes_activas(cfg):
+        df = resultados.get(nombre, pd.DataFrame())
+        if df.empty or "grupo" not in df.columns:
+            continue
+        f = FUENTES[nombre]
+        d = df[df["grupo"].isin(GRUPOS_VIGILADOS)]
+        if d.empty:
+            continue
+        valores = a_numero(d[f["valor"]])
+        if f.get("valor_alt") and f["valor_alt"] in d.columns:
+            valores = valores.where(valores > 0, a_numero(d[f["valor_alt"]]))
+        for i, (_, r) in enumerate(d.iterrows()):
+            clave = str(r.get(f["entidad"], "") or "(sin nombre)")
+            e = por_entidad.setdefault(clave, {
+                "entidad": clave, "grupo": r.get("grupo", ""),
+                "nit": str(r.get(f["nit"], "") or ""), "n": 0, "valor": 0.0, "rel": 0,
+            })
+            e["n"] += 1
+            if tipo_registro(r, f) == "Contrato":
+                e["valor"] += float(valores.iloc[i])
+            if r.get("nivel_relacion") in ("Alta", "Media"):
+                e["rel"] += 1
+    return sorted(por_entidad.values(), key=lambda e: -e["valor"])
+
+
 def exportar_tablero(hoy, resultados, cambios_totales, alertas, cfg, resumen_corrida=None):
     """Incrusta en tablero.html los datos de la ultima recoleccion."""
     registros = []
@@ -1354,6 +1396,7 @@ def exportar_tablero(hoy, resultados, cambios_totales, alertas, cfg, resumen_cor
         "departamentos": cfg["departamentos_vigilados"],
         "palabras_fuertes": cfg["palabras_clave_fuertes"],
         "registros": registros,
+        "resumen_ordinaria": resumen_ordinaria(resultados, cfg),
         "cambios": historial_cambios,
         "alertas": alertas,
         "totales": {
