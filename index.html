@@ -114,6 +114,38 @@
                color:#fff;border:1px solid var(--acento)}
   .boton-secop:hover{opacity:.88}
 
+  /* ---- Portada: lo primero que ve alguien que llega sin contexto ---- */
+  .portada{background:var(--panel);border:1px solid var(--borde);border-radius:12px;
+           padding:20px 22px;box-shadow:var(--sombra);margin:14px 0 18px}
+  .portada .titular{font-size:clamp(16px,2.6vw,20px);line-height:1.5;font-weight:500;margin:0}
+  .portada .titular b{font-weight:700}
+  .portada .cifras{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+                   gap:14px;margin:18px 0 4px}
+  .portada .cifra .n{font-size:clamp(24px,4.5vw,34px);font-weight:700;
+                     font-variant-numeric:tabular-nums;line-height:1.1}
+  .portada .cifra .t{font-size:12.5px;color:var(--suave);margin-top:3px;line-height:1.35}
+  .portada .cifra.nula .n{color:var(--suave)}
+
+  /* Procedencia de los datos: siempre visible, nunca en letra pequena. El
+     15-ago-2026 el tablero mostro ceros durante una caida de la fuente y nada
+     lo advertia con claridad; de ahi que esto sea un bloque y no una nota. */
+  .fuente-datos{display:flex;gap:10px;align-items:flex-start;margin-top:18px;
+                padding-top:14px;border-top:1px solid var(--borde);font-size:13px;
+                line-height:1.5}
+  .fuente-datos .luz{width:11px;height:11px;border-radius:50%;flex:none;margin-top:5px}
+  .luz.viva{background:var(--ok)}
+  .luz.vieja{background:var(--media)}
+  .luz.rota{background:var(--alta)}
+  .fuente-datos b{color:var(--texto)}
+
+  .como-leer{margin:0 0 18px;font-size:13.5px}
+  .como-leer summary{cursor:pointer;color:var(--acento);padding:6px 0}
+  .como-leer dl{margin:8px 0 0;padding:14px 16px;background:var(--panel);
+                border:1px solid var(--borde);border-radius:10px;line-height:1.55}
+  .como-leer dt{font-weight:650;margin-top:10px}
+  .como-leer dt:first-child{margin-top:0}
+  .como-leer dd{margin:2px 0 0;color:var(--suave)}
+
   .alerta{display:flex;gap:9px;padding:9px 0;border-bottom:1px solid var(--borde);font-size:13px}
   .alerta:last-child{border-bottom:0}
   .alerta .tipo{font-weight:600;white-space:nowrap}
@@ -178,7 +210,58 @@
   <span class="pill" id="sello-local"></span>
 </div>
 
-<div class="titulo-bloque" id="titulo-kpis">Cali y Valle del Cauca · desde el 10 de agosto de 2026</div>
+<section class="portada">
+  <p class="titular" id="titular">Consultando la contratación pública…</p>
+  <div class="cifras" id="cifras-portada"></div>
+  <div class="fuente-datos">
+    <span class="luz" id="luz-fuente"></span>
+    <div id="texto-fuente">Verificando el origen de los datos…</div>
+  </div>
+</section>
+
+<details class="como-leer">
+  <summary>¿Cómo se lee este tablero?</summary>
+  <dl>
+    <dt>Qué es esto</dt>
+    <dd>Un seguimiento de la contratación pública relacionada con el sismo del 10 de agosto
+      de 2026. Los datos salen de SECOP, el sistema donde las entidades del Estado están
+      obligadas a publicar lo que contratan. Nadie los digita aquí: se consultan directamente
+      y se clasifican de forma automática.</dd>
+
+    <dt>Urgencia manifiesta</dt>
+    <dd>Figura del artículo 42 de la Ley 80 de 1993 que permite contratar <em>sin licitación
+      ni convocatoria</em> cuando hay una calamidad. Agiliza la respuesta, y por lo mismo es
+      donde más hay que vigilar: el artículo 43 obliga a que un órgano de control revise
+      después cada contrato firmado así.</dd>
+
+    <dt>Calamidad pública</dt>
+    <dd>Declaración de una alcaldía o gobernación que reconoce una situación de desastre y
+      habilita medidas excepcionales. Cali y el Valle la declararon el 10 de agosto de 2026.</dd>
+
+    <dt>Proceso y contrato</dt>
+    <dd>El <b>proceso</b> es la convocatoria: la entidad anuncia qué necesita. El
+      <b>contrato</b> es el acuerdo ya firmado con quien lo va a ejecutar. Un proceso puede
+      no terminar en contrato.</dd>
+
+    <dt>Relación con el sismo</dt>
+    <dd><b>Alta</b>: cita uno de los decretos de la emergencia o menciona el sismo
+      directamente. <b>Media</b>: su objeto es propio de una emergencia (albergues, escombros,
+      ayuda humanitaria) en una entidad del territorio, pero no nombra el evento. La media es
+      una capa para revisar, no una conclusión: puede traer coincidencias que al leerlas
+      resulten no tener relación.</dd>
+
+    <dt>SECOP I y SECOP II</dt>
+    <dd>Dos plataformas que conviven. SECOP II es la actual; SECOP I es la anterior y sigue
+      recibiendo registros de algunas entidades. Se consultan las dos.</dd>
+
+    <dt>Por qué a veces las cifras cambian</dt>
+    <dd>SECOP publica con cerca de un día de rezago, y las entidades <em>corrigen</em>
+      registros ya publicados: valor, plazo, estado. El sistema guarda la traza de cada
+      modificación, que es justamente lo que sirve para el control fiscal.</dd>
+  </dl>
+</details>
+
+<div class="titulo-bloque" id="titulo-kpis">Detalle por nivel de gobierno · Cali y Valle del Cauca</div>
 <div class="kpis" id="kpis"></div>
 
 <div class="titulo-bloque">Resto del país · solo como referencia</div>
@@ -849,6 +932,106 @@ const cuenta = r => r.grupo !== "Fuera del Valle";
 const territoriales = () => DATOS.filter(r => cuenta(r) && esRelevante(r));
 const nacionales    = () => DATOS.filter(r => !cuenta(r) && esRelevante(r));
 
+/* ------------------------------------------------------------------ *
+ * Portada: el resumen que entiende alguien que llega sin contexto     *
+ * ------------------------------------------------------------------ */
+
+/* Procedencia de los datos que se estan viendo. Se fija desde actualizar()
+   y la portada la refleja. Que esto sea explicito y permanente es una
+   leccion de la caida del 15-ago-2026: el tablero mostro ceros como si
+   fueran un hallazgo. */
+let PROCEDENCIA = { estado: "cargando", detalle: "" };
+
+const diasDesdeEvento = () =>
+  Math.max(0, Math.floor((Date.now() - new Date(CFG.evento + "T00:00:00").getTime()) / 86400000));
+
+function frasePlural(n, singular, plural){
+  return n === 1 ? `1 ${singular}` : `${n} ${plural}`;
+}
+
+function pintarPortada(){
+  const rel = territoriales();
+  const contratos = rel.filter(r => r.tipo === "Contrato");
+  const procesos  = rel.filter(r => r.tipo === "Proceso");
+  const valor = contratos.reduce((s, r) => s + r.valor, 0);
+  const urgencia = rel.filter(r => norm(r.justificacion).includes("URGENCIA MANIFIESTA"));
+  const fuera = DATOS.filter(r => !cuenta(r) && esRelevante(r));
+  const dias = diasDesdeEvento();
+
+  const partes = [];
+  partes.push(`Han pasado <b>${frasePlural(dias, "día", "días")}</b> desde el sismo del `
+            + `10 de agosto de 2026.`);
+
+  if (!rel.length){
+    partes.push(`En Cali y el Valle del Cauca <b>todavía no se ha identificado contratación `
+              + `relacionada con la emergencia</b>.`);
+  } else {
+    const trozos = [];
+    if (contratos.length) trozos.push(`<b>${frasePlural(contratos.length, "contrato", "contratos")}</b>`);
+    if (procesos.length)  trozos.push(`<b>${frasePlural(procesos.length, "proceso", "procesos")}</b>`);
+    const total = contratos.length + procesos.length;
+    partes.push(`En Cali y el Valle del Cauca se ${total === 1 ? "ha" : "han"} identificado `
+      + `${trozos.join(" y ")} ${total === 1 ? "relacionado" : "relacionados"} con la emergencia`
+      + (valor ? `, por <b>${esc(pesos(valor))}</b>.` : `.`));
+    if (urgencia.length){
+      partes.push(`${urgencia.length === 1 ? "Uno" : urgencia.length} se tramitó por `
+                + `<b>urgencia manifiesta</b>, la figura que permite contratar sin convocatoria.`);
+    }
+  }
+
+  if (fuera.length){
+    partes.push(`Fuera del Valle hay ${frasePlural(fuera.length, "registro relacionado",
+      "registros relacionados")}, que se muestran aparte y no suman en estas cifras.`);
+  }
+
+  document.getElementById("titular").innerHTML = partes.join(" ");
+
+  const cifras = [
+    [contratos.length, "contratos relacionados<br>en Cali y el Valle"],
+    [compacto(valor), "valor de esos contratos"],
+    [procesos.length, "procesos abiertos<br>aún sin contrato"],
+    [urgencia.length, "por urgencia manifiesta"]
+  ];
+  document.getElementById("cifras-portada").innerHTML = cifras.map(([n, t]) =>
+    `<div class="cifra${(n === 0 || n === "$ 0") ? " nula" : ""}">
+       <div class="n">${esc(n)}</div><div class="t">${t}</div>
+     </div>`).join("");
+
+  pintarFuente();
+}
+
+/* De donde salen los datos y de cuando son. En palabras, no en jerga. */
+function pintarFuente(){
+  const luz = document.getElementById("luz-fuente");
+  const txt = document.getElementById("texto-fuente");
+  const corrida = (LOCAL && LOCAL.generado) ? LOCAL.generado : null;
+  const recoleccion = corrida
+    ? ` La última recolección completa, con su registro de novedades y modificaciones, es del <b>${esc(corrida)}</b>.`
+    : "";
+
+  if (PROCEDENCIA.estado === "vivo"){
+    luz.className = "luz viva";
+    txt.innerHTML = `<b>Datos consultados en vivo</b> contra datos.gov.co hace unos segundos, `
+      + `sobre SECOP I y SECOP II.${recoleccion}`;
+  } else if (PROCEDENCIA.estado === "parcial"){
+    luz.className = "luz vieja";
+    txt.innerHTML = `<b>Datos incompletos.</b> ${esc(PROCEDENCIA.detalle)} Las cifras de arriba `
+      + `se quedan cortas: no las tome como el total.${recoleccion}`;
+  } else if (PROCEDENCIA.estado === "respaldo"){
+    luz.className = "luz rota";
+    txt.innerHTML = `<b>La fuente no está respondiendo.</b> Lo que ve no son datos del momento, `
+      + `sino la última recolección completa${corrida ? `, del <b>${esc(corrida)}</b>` : ""}. `
+      + `Cuando datos.gov.co vuelva, el tablero se actualiza solo al recargar.`;
+  } else if (PROCEDENCIA.estado === "sin-datos"){
+    luz.className = "luz rota";
+    txt.innerHTML = `<b>No hay datos que mostrar.</b> No fue posible consultar la fuente y esta `
+      + `copia del tablero no trae respaldo incorporado.`;
+  } else {
+    luz.className = "luz vieja";
+    txt.innerHTML = "Consultando la fuente…";
+  }
+}
+
 function pintarKpis(){
   const rel = territoriales();
   const contratos = rel.filter(r => r.tipo === "Contrato");
@@ -1161,7 +1344,7 @@ function pintarCambios(){
 }
 
 function pintarTodo(){
-  pintarKpis(); pintarSecopI(); pintarUngrd(); pintarGraficos();
+  pintarPortada(); pintarKpis(); pintarSecopI(); pintarUngrd(); pintarGraficos();
   pintarAlertas(); pintarEntidades(); pintarTabla(); pintarCambios(); pintarSello();
 }
 
@@ -1187,10 +1370,15 @@ async function actualizar(){
       /* Una consulta caida se lleva por delante una parte de los registros. El
          numero que queda es real pero incompleto, y hay que decirlo: callarlo
          seria presentar un subconteo como si fuera el total. */
+      PROCEDENCIA = { estado: "parcial",
+        detalle: `${r.fallos} de ${r.intentos} consultas a datos.gov.co fallaron.` };
+      pintarFuente();
       estado(`Datos incompletos: ${r.fallos} de ${r.intentos} consultas fallaron. `
            + `Se muestran ${DATOS.length} registros, pero faltan datos. `
            + `Vuelva a pulsar Actualizar datos en unos minutos.`, "error");
     } else {
+      PROCEDENCIA = { estado: "vivo", detalle: "" };
+      pintarFuente();
       estado(`Datos en vivo al ${new Date().toLocaleString("es-CO")} · ${DATOS.length} registros `
            + `en ${seg} s`, "");
     }
@@ -1198,11 +1386,14 @@ async function actualizar(){
     console.error(e);
     if (LOCAL && LOCAL.registros && LOCAL.registros.length){
       DATOS = LOCAL.registros;
+      PROCEDENCIA = { estado: "respaldo", detalle: "" };
       pintarTodo();
       estado("La fuente de datos (datos.gov.co) no está respondiendo. Lo que se muestra "
            + "es la última recolección completa, del " + LOCAL.generado
            + ". No son datos del momento.", "error");
     }else{
+      PROCEDENCIA = { estado: "sin-datos", detalle: e.message };
+      pintarFuente();
       estado("No fue posible consultar la API ni encontrar datos locales: " + e.message, "error");
     }
   }finally{
@@ -1239,7 +1430,8 @@ document.querySelectorAll("#tabla th[data-col]").forEach(th =>
   }));
 
 document.getElementById("titulo-kpis").textContent =
-  "Cali, Valle del Cauca y UNGRD · desde el " + CFG.inicio.split("-").reverse().join("/");
+  "Detalle por nivel de gobierno · Cali, Valle del Cauca y UNGRD desde el "
+  + CFG.inicio.split("-").reverse().join("/");
 
 /* El sello se recalcula tras cada descarga: las novedades se cuentan sobre los
    registros que el tablero realmente muestra, no sobre el tamaño de la bitácora.
