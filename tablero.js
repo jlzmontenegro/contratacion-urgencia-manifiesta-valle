@@ -197,27 +197,26 @@ let entidadAbierta = null;
    lo embebido daría un número menor sin avisar. */
 let PADRON = [];
 
-function usandoRespaldo(){
-  return PROCEDENCIA.estado === "respaldo" && PADRON.length > 0;
-}
-
+/* Las cifras SIEMPRE salen del padrón, nunca de contar los registros que viajan.
+   No es lo mismo: el padrón cubre los 2.635 registros de la ventana, mientras
+   que en el archivo solo viajan 1.024 —la contratación ordinaria de los 177
+   municipios se queda fuera porque embeberla llevaría el archivo a decenas de
+   megas—. Contar sobre lo que viaja mostraba 11 registros donde hay 1.540.
+   Los registros sirven para el detalle de cada entidad, no para los totales. */
 function agregarPorEntidad(){
-  if (usandoRespaldo())
-    return PADRON.filter(e => GRUPOS_VIGILADOS.includes(e.grupo))
-                 .map(e => ({ ...e, filas: [], agregado: true }));
-
-  const m = new Map();
+  const detalle = new Map();
   for (const r of DATOS){
     if (!GRUPOS_VIGILADOS.includes(r.grupo)) continue;
     const k = r.entidad || "(sin nombre)";
-    let e = m.get(k);
-    if (!e){ e = { entidad:k, grupo:r.grupo, nit:r.nit, n:0, valor:0, rel:0, filas:[] }; m.set(k, e); }
-    e.n++;
-    if (r.tipo === "Contrato") e.valor += r.valor;
-    if (esRelevante(r)) e.rel++;
-    e.filas.push(r);
+    if (!detalle.has(k)) detalle.set(k, []);
+    detalle.get(k).push(r);
   }
-  return [...m.values()];
+  return PADRON
+    .filter(e => GRUPOS_VIGILADOS.includes(e.grupo))
+    .map(e => {
+      const filas = detalle.get(e.entidad) || [];
+      return { ...e, filas, parcial: filas.length < e.n };
+    });
 }
 
 function filtradosOrdinaria(){
@@ -271,11 +270,14 @@ function pintarOrdinaria(){
       </tr>`;
     if (!abierta) return fila;
     return fila + `
-      <tr class="detalle-entidad"><td colspan="5">${e.agregado
-        ? `<div class="menor" style="padding:10px 2px">El detalle registro por registro no
-             está disponible sin conexión con datos.gov.co: en el respaldo solo viajan las
-             cifras agregadas. Recargue cuando la fuente vuelva a responder.</div>`
-        : detalleEntidad(e)}</td></tr>`;
+      <tr class="detalle-entidad"><td colspan="5">${e.filas.length
+        ? detalleEntidad(e)
+        : `<div class="menor" style="padding:10px 2px">Esta entidad tiene
+             <b>${e.n}</b> registros en la ventana, pero su contratación ordinaria no viaja
+             en el archivo del tablero: son 2.635 registros en total y embeberlos todos lo
+             haría inservible. Las cifras de la fila son completas; el detalle registro por
+             registro está en <code>datos/contratos.csv</code> y <code>datos/procesos.csv</code>
+             del repositorio.</div>`}</td></tr>`;
   }).join("");
 
   document.querySelectorAll("#tabla-ordinaria tr.abrible").forEach(tr =>
@@ -292,6 +294,7 @@ function detalleEntidad(e){
     .sort((a, b) => (esRelevante(b) - esRelevante(a)) || (b.valor - a.valor))
     .slice(0, 60);
   const oculto = e.filas.length - filas.length;
+  const faltan = e.n - e.filas.length;
   return `
     <div class="tabla-envoltura">
       <table>
@@ -312,8 +315,10 @@ function detalleEntidad(e){
       </table>
     </div>
     ${oculto > 0 ? `<div class="menor" style="padding:8px 2px">Se muestran los 60 de mayor
-      valor; hay ${oculto} más. Use la pestaña <em>Por el sismo</em> o descargue el CSV
-      para verlos todos.</div>` : ""}`;
+      valor; hay ${oculto} más en el archivo.</div>` : ""}
+    ${faltan > 0 ? `<div class="menor" style="padding:8px 2px">De los <b>${e.n}</b> registros
+      de esta entidad, ${faltan} son contratación ordinaria que no viaja en el archivo del
+      tablero. Están en los CSV del repositorio.</div>` : ""}`;
 }
 
 /* ------------------------------------------------------------------ *
@@ -765,7 +770,9 @@ function pintarCambios(){
 
 function pintarContadoresPestanas(){
   const sismo = DATOS.filter(r => cuenta(r) && esRelevante(r)).length;
-  const ordinaria = DATOS.filter(r => GRUPOS_VIGILADOS.includes(r.grupo)).length;
+  /* Del padrón, no de DATOS: el contador debe decir lo mismo que la pestaña. */
+  const ordinaria = PADRON.filter(e => GRUPOS_VIGILADOS.includes(e.grupo))
+                          .reduce((s, e) => s + e.n, 0);
   document.getElementById("n-tab-sismo").textContent = sismo ? `· ${sismo}` : "";
   document.getElementById("n-tab-ordinaria").textContent = ordinaria ? `· ${ordinaria}` : "";
   document.getElementById("n-tab-padron").textContent = PADRON.length ? `· ${PADRON.length}` : "";
