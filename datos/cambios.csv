@@ -202,3 +202,41 @@
 2026-08-16 13:54:16,procesos,CO1.REQ.10838278,MUNICIPIO DE PUERTO TEJADA,nombre_del_proveedor,No Definido,CUERPO DE BOMBEROS VOLUNTARIOS DE PUERTO TEJADA,Contexto
 2026-08-16 13:54:16,procesos,CO1.REQ.10838278,MUNICIPIO DE PUERTO TEJADA,fecha_adjudicacion,,2026-08-14T00:00:00.000,Contexto
 2026-08-16 13:54:16,procesos,CO1.REQ.10838278,MUNICIPIO DE PUERTO TEJADA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9810138,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE VIVIENDA SOCIAL Y HABITAT,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9779601,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9795201,GOBERNACIÓN VALLE DEL CAUCA -SECRETARIA DE SALUD,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9795201,GOBERNACIÓN VALLE DEL CAUCA -SECRETARIA DE SALUD,nombre_supervisor,No definido,ANDREA MELISSA PORRAS BELTRAN,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9800986,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9817116,SECRETARIA DE MOVILIDAD Y TRANSPORTE,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9777598,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE PAZ Y CULTURA CIUDADANA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9808253,MUNICIPIO DE BUGALAGRANDE,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9808253,MUNICIPIO DE BUGALAGRANDE,fecha_de_fin_del_contrato,2026-11-03T00:00:00.000,2026-11-02T00:00:00.000,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9805164,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE YUMBO,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9808713,MUNICIPIO DE BUGALAGRANDE,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9813158,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9783827,ALCALDIA MUNICIPAL DE YOTOCO,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9803483,ALCALDIA MUNICIPAL DE YOTOCO,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9783829,ALCALDIA MUNICIPAL DE YOTOCO,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9793568,ALCALDIA MUNICIPIO DE JAMUNDI,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9793568,ALCALDIA MUNICIPIO DE JAMUNDI,valor_pendiente_de_pago,0,25000000,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9807942,MUNICIPIO DE BUGALAGRANDE,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9808947,MUNICIPIO DE BUGALAGRANDE,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9803467,ALCALDIA MUNICIPAL DE YOTOCO,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9816540,CONCEJO MUNICIPAL DE CANDELARIA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9783826,ALCALDIA MUNICIPAL DE YOTOCO,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9811774,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9805095,CONCEJO MUNICIPAL DE CANDELARIA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-17 14:02:18,contratos,CO1.PCCNTR.9815997,INSTITUCIÓN UNIVERSITARIA ITM,estado_contrato,Aprobado,En ejecución,Otra urgencia
+2026-08-17 14:02:18,procesos,CO1.REQ.10854887,GOBERNACION DEL VALLE DEL CAUCA - DADI,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-17 14:02:18,procesos,CO1.REQ.10861578,SECRETARIA GENERAL- GOBERNACION DEL VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-17 14:02:18,procesos,CO1.REQ.10854405,SECRETARIA GENERAL- GOBERNACION DEL VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-17 14:02:18,procesos,CO1.REQ.10861422,SECRETARIA GENERAL- GOBERNACION DEL VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-17 14:02:18,procesos,CO1.REQ.10861445,SECRETARIA GENERAL- GOBERNACION DEL VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-17 14:02:18,procesos,CO1.REQ.10861711,SECRETARIA GENERAL- GOBERNACION DEL VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-17 14:02:18,procesos,CO1.REQ.10861492,SECRETARIA GENERAL- GOBERNACION DEL VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-17 14:02:18,procesos,CO1.REQ.10861702,SECRETARIA GENERAL- GOBERNACION DEL VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-17 14:02:18,procesos,CO1.REQ.10861569,SECRETARIA GENERAL- GOBERNACION DEL VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-17 14:02:18,procesos,CO1.REQ.10847791,INSTITUCION EDUCATIVA MAYOR DE YUMBO,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-08-17 14:02:18,procesos,CO1.REQ.10852164,INSTITUCION EDUCATIVA SIXTO MARIA ROJAS,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-17 14:02:18,procesos,CO1.REQ.10857123,ALCALDIA MUNICIPAL DE YOTOCO,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-17 14:02:18,procesos,CO1.REQ.10851564,INSTITUCION EDUCATIVA SIXTO MARIA ROJAS,estado_del_procedimiento,Publicado,Evaluación,Contexto

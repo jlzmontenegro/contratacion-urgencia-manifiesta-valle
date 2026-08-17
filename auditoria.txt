@@ -1,11 +1,11 @@
-Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-08-18T00:00:00
+Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-08-19T00:00:00
 Entidades auditadas: 52  (2 centrales + 2 UNGRD/FNGRD + 11 descentralizadas de Cali + 18 de la Gobernacion + 19 otras del Valle)
 Comprobaciones: 52 entidades x 3 fuentes = 156, cada una por tres caminos independientes
 
 Fuente     Entidad                NIT         API simple  API amplio    CSV   Veredicto
 ------------------------------------------------------------------------------------
-contratos  Alcaldia de Cali       890399011          240         249    249   OK
-contratos  Gobernacion del Valle  890399029          105         230    230   OK
+contratos  Alcaldia de Cali       890399011          256         265    265   OK
+contratos  Gobernacion del Valle  890399029          116         367    367   OK
 contratos  UNGRD / FNGRD          900478966            1           1      1   OK
 contratos  UNGRD / FNGRD          900978341            0           0      0   OK
 contratos  Desc.Cali EMCALI - Empresas Munici890399003            0           0      0   OK
@@ -14,7 +14,7 @@ contratos  Desc.Cali Red de Salud de Ladera E805027289            0           0 
 contratos  Desc.Cali Red de Salud del Norte E805027287            0           0      0   OK
 contratos  Desc.Cali Red de Salud del Oriente805027337            1           1      1   OK
 contratos  Desc.Cali Red de Salud del Surorie805027338            1           1      1   OK
-contratos  Desc.Cali Fondo Especial de Vivien805013033            0           0      0   OK
+contratos  Desc.Cali Fondo Especial de Vivien805013033            2           2      2   OK
 contratos  Desc.Cali Instituto Popular de Cul900431928            0           0      0   OK
 contratos  Desc.Cali Personeria Distrital de 805003895            0           0      0   OK
 contratos  Desc.Cali Contraloria de Santiago 800217831            0           0      0   OK
@@ -50,23 +50,23 @@ contratos  Otras     Personeria Municipal de 891900493           14          14 
 contratos  Otras     Personeria Municipal de 901159063            0           0      0   OK
 contratos  Otras     Personeria Municipal de 900085817            0           0      0   OK
 contratos  Otras     Personeria Municipal de 800100524            0           0      0   OK
-contratos  Otras     Concejo Municipal de Jam890399046           77          77     77   OK
+contratos  Otras     Concejo Municipal de Jam890399046           86          86     86   OK
 contratos  Otras     IE Alfonso Lopez Pumarej805000057            0           0      0   OK
 contratos  Otras     IE Paulo VI - Palmira815004730            0           0      0   OK
 contratos  Otras     IE Ginebra La Salle891380108            0           0      0   OK
 contratos  Otras     IE Zaragoza - Cartago800034326            0           0      0   OK
 contratos  Otras     IE Camilo Torres - Dagua805015675            0           0      0   OK
-procesos   Alcaldia de Cali       890399011          218         226    226   OK
-procesos   Gobernacion del Valle  890399029           83         282    282   OK
+procesos   Alcaldia de Cali       890399011          246         254    254   OK
+procesos   Gobernacion del Valle  890399029           96         389    389   OK
 procesos   UNGRD / FNGRD          900478966            0           0      0   OK
 procesos   UNGRD / FNGRD          900978341            0           0      0   OK
-procesos   Desc.Cali EMCALI - Empresas Munici890399003            5           5      5   OK
+procesos   Desc.Cali EMCALI - Empresas Munici890399003            6           6      6   OK
 procesos   Desc.Cali Metro Cali S.A.805013171            3           3      3   OK
 procesos   Desc.Cali Red de Salud de Ladera E805027289           37          37     37   OK
 procesos   Desc.Cali Red de Salud del Norte E805027287           10          10     10   OK
 procesos   Desc.Cali Red de Salud del Oriente805027337            0           0      0   OK
 procesos   Desc.Cali Red de Salud del Surorie805027338            1           1      1   OK
-procesos   Desc.Cali Fondo Especial de Vivien805013033            0           0      0   OK
+procesos   Desc.Cali Fondo Especial de Vivien805013033            2           2      2   OK
 procesos   Desc.Cali Instituto Popular de Cul900431928            0           0      0   OK
 procesos   Desc.Cali Personeria Distrital de 805003895            1           1      1   OK
 procesos   Desc.Cali Contraloria de Santiago 800217831            0           0      0   OK
@@ -102,7 +102,7 @@ procesos   Otras     Personeria Municipal de 891900493           16          16 
 procesos   Otras     Personeria Municipal de 901159063            0           0      0   OK
 procesos   Otras     Personeria Municipal de 900085817            0           0      0   OK
 procesos   Otras     Personeria Municipal de 800100524            0           0      0   OK
-procesos   Otras     Concejo Municipal de Jam890399046           72          72     72   OK
+procesos   Otras     Concejo Municipal de Jam890399046           83          83     83   OK
 procesos   Otras     IE Alfonso Lopez Pumarej805000057            0           0      0   OK
 procesos   Otras     IE Paulo VI - Palmira815004730            0           0      0   OK
 procesos   Otras     IE Ginebra La Salle891380108            0           0      0   OK
