@@ -199,24 +199,46 @@
     .tabla-envoltura{overflow-x:visible;background:transparent;border:0;box-shadow:none}
     #tabla{min-width:0}
     #tabla thead{display:none}
+
+    /* Cada operacion es una ficha. Antes cada celda era un bloque rotulado con su
+       propio borde y una fila ocupaba 624px: pantalla y media por operacion, y la
+       pagina entera medía 17 pantallas. Con seis columnas en vez de diez, casi
+       todos los rotulos sobran —el contenido se explica solo— y lo que queda cabe
+       en linea. */
     #tabla tbody tr{display:block;background:var(--panel);border:1px solid var(--borde);
-      border-radius:10px;margin-bottom:12px;padding:6px 2px;box-shadow:var(--sombra)}
-    #tabla tbody td{display:grid;grid-template-columns:112px minmax(0,1fr);gap:10px;
-      border-bottom:1px solid var(--borde);padding:8px 12px;text-align:left}
-    #tabla tbody tr td:last-child{border-bottom:0}
-    #tabla tbody td::before{content:attr(data-etq);font-size:11px;color:var(--suave);
-      text-transform:uppercase;letter-spacing:.03em;padding-top:2px}
-    #tabla tbody td.objeto{max-width:none;min-width:0}
+      border-radius:10px;margin-bottom:10px;padding:10px 0;box-shadow:var(--sombra)}
+    #tabla tbody td{display:block;border-bottom:0;padding:2px 12px;text-align:left}
     #tabla td.num{text-align:left}
-    /* Las etiquetas y botones no deben estirarse a todo el ancho de la ficha */
+
+    /* Rotulo solo donde el contenido no se explica solo, y en linea, no encima. */
+    #tabla tbody td::before{display:none}
+    #tabla tbody td[data-etq="Contratista"]::before{content:attr(data-etq) ": ";
+      display:inline;font-size:11px;color:var(--suave);text-transform:uppercase;
+      letter-spacing:.03em}
+
+    /* Estado y fecha en una sola linea, arriba del todo. */
+    #tabla .col-est{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;
+                    padding-bottom:6px}
+    #tabla .col-est .menor{margin-top:0}
+
+    /* El valor es lo que se busca de un vistazo: grande y con su rotulo al lado. */
+    #tabla td.num{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;
+                  font-size:15px;font-weight:600;padding-top:6px}
+    #tabla td.num .menor{margin-top:0;font-weight:400}
+
+    /* En pantalla estrecha el objeto se recorta a dos lineas: el texto integro
+       sigue en el emergente y en SECOP. */
+    .col-que .obj{-webkit-line-clamp:2}
+    .col-que{min-width:0;max-width:none}
+
+    #tabla tbody td[data-etq="Relación"]{padding-top:6px}
     #tabla tbody td > .etiqueta,
     #tabla tbody td > .boton{justify-self:start}
+    #tabla .col-enl{display:flex;gap:8px;flex-wrap:wrap;padding-top:8px}
+
     input[type=search],select{flex:1 1 100%;max-width:none}
     .filtros{gap:7px}
-  }
-  @media (max-width:560px){
-    #tabla tbody td{grid-template-columns:1fr;gap:2px}
-    #tabla tbody td::before{padding-top:0}
+    .filtro{min-width:0;flex:1 1 100%}
   }
 
 /* ---- Paginación ----------------------------------------------------- */

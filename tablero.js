@@ -767,14 +767,14 @@ function pintarTabla(){
         <div class="refs">${refs}</div></td>
       <td class="num" data-etq="Valor">${esc(pesos(o.valor))}
         <div class="menor">${o.firmado ? "valor firmado" : "precio base"}</div>
-        ${o.duracion ? `<div class="menor">${esc(o.duracion)}</div>` : ""}</td>
+        ${o.duracion && !/^0/.test(o.duracion) ? `<div class="menor">${esc(o.duracion)}</div>` : ""}</td>
       <td data-etq="Contratista">${o.proveedor
         ? esc(o.proveedor)
         : '<span class="menor">aún sin contratista</span>'}</td>
       <td data-etq="Relación"><span class="etiqueta ${claseNivel(o.nivel)}"
           title="${esc(nivelLargo(o.nivel))}">${esc(nivelCorto(o.nivel))}</span>
         <div class="menor">${esc(o.motivo)}</div></td>
-      <td class="col-enl" data-etq="Enlace">${enlaces || '<span class="menor">sin enlace</span>'}</td>
+      <td class="col-enl" data-etq="SECOP">${enlaces || '<span class="menor">sin enlace</span>'}</td>
     </tr>`;
   }).join("");
 }
