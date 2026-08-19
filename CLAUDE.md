@@ -32,14 +32,23 @@ con la fecha del dia siguiente y el sello de la pagina salia cinco horas adelant
 Se arregló un fallo en Python, se olvidó en JavaScript, y el sitio mostró ceros durante una
 caída de la fuente. Si algo hay que clasificar, va en `colector.py` y viaja en el JSON.
 
+**Un cero tiene que decir por qué.** En este tablero un cero se lee como "no hay contratación
+del sismo", que es una afirmación fuerte. El mensaje de tabla vacía se redacta según el filtro
+activo: no da lo mismo "esa entidad está vigilada y no ha publicado nada" que "ese dato no
+viaja en el archivo".
+
 **Vacío nunca es lo mismo que fallido.** Si todos los barridos de una fuente fallan, el
 colector aborta con código 2 sin tocar nada. Si el navegador no puede cargar el JSON, lo dice.
 Un cero en este tablero se lee como "no hay contratación del sismo": no puede aparecer por un
 fallo técnico.
 
-**Nunca mostrar un conteo parcial como si fuera el total.** Las cifras de la vista ordinaria
-salen del padrón, no de los registros embebidos: en el archivo viaja una parte. Cuando el
-detalle es parcial, la página lo dice.
+**Nunca mostrar un conteo parcial como si fuera el total.** En el JSON viaja alrededor de la
+mitad de lo monitoreado: la contratación ordinaria solo se embebe para los grupos de
+`GRUPOS_ORDINARIA` (Cali, la Gobernación, sus descentralizadas y la UNGRD). Cuando el filtro
+incluye ordinaria, la página muestra un aviso de que esa cuenta no es el total y remite al
+padrón. **`GRUPOS_ORDINARIA` está en `colector.py` y en `tablero.js`: si se desincronizan,
+los registros llegan pero `listable()` los descarta y el filtro da cero sin explicación.**
+Así estuvo la UNGRD hasta el 19-ago-2026.
 
 **Ningún NIT se inventa.** Todos los de `config.json` se obtuvieron consultando la API.
 
@@ -108,15 +117,24 @@ auditoría fallida pasa por buena.
 
 ## Cómo está la página
 
-Tres pestañas: **Por el sismo** · **Contratación ordinaria** · **Padrón de entidades**.
+**Una sola vista.** Hubo tres pestañas —sismo, ordinaria, padrón— y tres bloques aparte
+—SECOP I, UNGRD, resto del país—, cada uno con su propio juego de filtros: el mismo concepto
+"territorio" salía tres veces con 10, 7 y 9 opciones distintas, y cambiar de pestaña cambiaba
+lo que se podía preguntar. Ahora es **una tabla de operaciones con un solo juego de filtros**,
+y cada uno lleva etiqueta visible que dice qué hace. Las secciones son estados de filtro.
+
+**El padrón sigue siendo un bloque propio, al pie**, y no puede dejar de serlo: 27 de las 341
+entidades vigiladas no han contratado nada y por tanto no tienen ninguna operación. En una
+tabla de operaciones desaparecerían, y el padrón existe justamente para probar que se las
+vigila, incluido su silencio.
 
 Arriba, común a todas: una portada con resumen redactado automáticamente, cuatro cifras y un
 **semáforo de procedencia** que dice de qué recolección son los datos y hace cuánto (en ámbar
 si pasan de 48 horas). Debajo, un desplegable *"¿Cómo se lee este tablero?"* con glosario.
 
-Orden dentro de "Por el sismo", de lo que exige acción a lo que da contexto:
-**alertas → cifras → tabla de operaciones → (plegados: filtros, detalle por nivel, gráficos) →
-resto del país → SECOP I y UNGRD → modificaciones**.
+Orden, de lo que exige acción a lo que da contexto: **portada → alertas → cifras → tabla de
+operaciones → (plegados: filtros, detalle por nivel, gráficos, leyenda, padrón,
+modificaciones)**.
 
 **La tabla del sismo lista OPERACIONES, no registros.** Un proceso y el contrato que salió de él
 son el mismo hecho en dos momentos; la fuente los publica en datasets distintos y el tablero los

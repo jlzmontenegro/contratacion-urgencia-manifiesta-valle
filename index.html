@@ -89,19 +89,8 @@
   </dl>
 </details>
 
-<div class="pestanas" role="tablist">
-  <button id="tab-sismo" role="tab" aria-selected="true" aria-controls="vista-sismo">
-    Por el sismo <span class="cuantos" id="n-tab-sismo"></span>
-  </button>
-  <button id="tab-ordinaria" role="tab" aria-selected="false" aria-controls="vista-ordinaria">
-    Contratación ordinaria <span class="cuantos" id="n-tab-ordinaria"></span>
-  </button>
-  <button id="tab-padron" role="tab" aria-selected="false" aria-controls="vista-padron">
-    Padrón de entidades <span class="cuantos" id="n-tab-padron"></span>
-  </button>
-</div>
 
-<div id="vista-sismo" role="tabpanel">
+
 <div class="titulo-bloque">Alertas</div>
 <div class="tarjeta" style="margin-bottom:18px"><div id="lista-alertas"></div></div>
 
@@ -111,46 +100,75 @@
 <details class="plegable filtros-plegables" id="caja-filtros">
   <summary>Filtrar y buscar <span class="resumen-filtros" id="resumen-filtros"></span></summary>
 <div class="filtros">
-  <input type="search" id="f-texto" placeholder="Buscar por objeto, entidad, contratista o número de proceso…">
-  <select id="f-grupo">
+  <div class="filtro">
+    <label for="f-texto">Buscar</label>
+    <input type="search" id="f-texto" placeholder="Escriba para buscar…">
+    <span class="ayuda">Objeto, entidad, contratista o número de proceso</span>
+  </div>
+  <div class="filtro">
+    <label for="f-grupo">Territorio y nivel</label>
+    <select id="f-grupo">
     <option value="territorial">Cali y Valle del Cauca</option>
     <option value="Alcaldía de Cali">Solo Alcaldía de Cali</option>
     <option value="Gobernación del Valle">Solo Gobernación del Valle</option>
     <option value="Descentralizadas de Cali">Solo descentralizadas de Cali</option>
     <option value="Descentralizadas de la Gobernación">Solo descentralizadas de la Gobernación</option>
     <option value="Otras entidades del Valle">Municipios del Valle y sus entidades</option>
-    <option value="UNGRD">Solo UNGRD</option>
+    <option value="UNGRD">Solo UNGRD y FNGRD</option>
     <option value="Nacional para el Valle">Nacional, destinado al Valle</option>
     <option value="Fuera del Valle">Fuera del Valle (referencia)</option>
     <option value="todos">Todo el país</option>
-  </select>
-  <select id="f-plataforma">
+    </select>
+    <span class="ayuda">Qué entidades entran en la vista</span>
+  </div>
+  <div class="filtro">
+    <label for="f-plataforma">Plataforma</label>
+    <select id="f-plataforma">
     <option value="">Las dos plataformas</option>
     <option value="SECOP II">Solo SECOP II</option>
     <option value="SECOP I">Solo SECOP I</option>
-  </select>
-  <select id="f-nivel">
+    </select>
+    <span class="ayuda">SECOP II es la actual; SECOP I, la anterior</span>
+  </div>
+  <div class="filtro">
+    <label for="f-nivel">Relación con el sismo</label>
+    <select id="f-nivel">
     <option value="rel">Todo lo relacionado con el sismo</option>
     <option value="Alta">Solo lo que nombra el sismo o un decreto</option>
     <option value="Media">Solo lo que parece de emergencia</option>
     <option value="Otra urgencia">Urgencia manifiesta por otra causa</option>
-    <option value="Contexto">Contratación ordinaria de Cali y la Gobernación</option>
-    <option value="todos">Mostrar todo</option>
-  </select>
-  <select id="f-tipo">
+    <option value="Contexto">Solo la ordinaria de Cali y la Gobernación</option>
+    <option value="todos">Todo, incluida la ordinaria</option>
+    </select>
+    <span class="ayuda">De lo que nombra la emergencia a la contratación corriente</span>
+  </div>
+  <div class="filtro">
+    <label for="f-tipo">Estado</label>
+    <select id="f-tipo">
     <option value="">Contratadas y abiertas</option>
     <option value="firmada">Solo las ya contratadas</option>
     <option value="abierta">Solo las que siguen abiertas</option>
-  </select>
-  <select id="f-novedad">
+    </select>
+    <span class="ayuda">Si ya hay contrato firmado o el proceso sigue abierto</span>
+  </div>
+  <div class="filtro">
+    <label for="f-novedad">Cuándo apareció</label>
+    <select id="f-novedad">
     <option value="">Aparecidos en cualquier fecha</option>
     <option value="7">Aparecidos en los últimos 7 días</option>
     <option value="30">Aparecidos en los últimos 30 días</option>
-  </select>
-  <select id="f-entidad"><option value="">Todas las entidades</option></select>
+    </select>
+    <span class="ayuda">Desde cuándo lo ve el monitoreo</span>
+  </div>
+  <div class="filtro">
+    <label for="f-entidad">Entidad</label>
+    <select id="f-entidad"><option value="">Todas las entidades</option></select>
+    <span class="ayuda">Una entidad concreta</span>
+  </div>
 </div>
 </details>
 <div class="barra-conteo"><span class="pill" id="conteo-filtro"></span></div>
+<div class="aviso-parcial" id="aviso-parcial" hidden></div>
 <details class="plegable"><summary>Qué significa cada etiqueta de relación</summary>
 <div class="leyenda" id="leyenda-niveles"></div></details>
 
@@ -187,63 +205,10 @@
 </div>
 </details>
 
-<div class="titulo-bloque">Resto del país · solo como referencia</div>
 
-<div class="nacional" id="bloque-nacional"></div>
 
-<div class="titulo-bloque">Seguimiento específico · SECOP I y UNGRD</div>
 
-<section class="exclusiva">
-  <h2>SECOP I <span class="nit">plataforma anterior · dataset <code>f789-7hwg</code></span></h2>
-  <p class="intro">
-    Contratos y convenios <b>relacionados con el sismo</b> que se tramitan por la plataforma
-    anterior, que sigue recibiendo cargues. A diferencia de SECOP II, aquí cada fila es un
-    proceso que trae el contrato adentro cuando llega a celebrarse. Se barren las mismas
-    entidades: Alcaldía de Cali, Gobernación del Valle, municipios y descentralizadas del
-    departamento, más el barrido nacional por palabras clave y por la causal
-    <em>Urgencia Manifiesta (Literal A)</em>. La urgencia manifiesta declarada por otras
-    causas, o por calamidades anteriores al 10 de agosto, se revisa pero no se muestra aquí.
-  </p>
-  <div class="kpis" id="kpis-secop1"></div>
-  <div class="tabla-envoltura">
-    <table id="tabla-secop1">
-      <thead><tr>
-        <th>Fecha</th><th>Entidad</th><th>Objeto</th><th class="num">Valor</th>
-        <th>Contratista</th><th>Modalidad / causal</th><th>Relación</th><th>Enlace</th>
-      </tr></thead>
-      <tbody></tbody>
-    </table>
-    <div class="vacio" id="vacio-secop1" hidden></div>
-  </div>
-</section>
-
-<section class="exclusiva">
-  <h2>UNGRD y FNGRD <span class="nit">Unidad Nacional para la Gestión del Riesgo de Desastres
-    · NIT 900.478.966-6 · y su Fondo Nacional, NIT 900.978.341 · SECOP I y SECOP II</span></h2>
-  <p class="intro">
-    Contratación <b>relacionada con el sismo</b> de la entidad que coordina la respuesta
-    nacional al desastre. Se incluye el <b>Fondo Nacional de Gestión del Riesgo (FNGRD)</b>,
-    entidad distinta pero cuyo ordenador del gasto es el director de la UNGRD: es el vehículo
-    por el que se ejecuta buena parte del gasto de emergencia y contrata bajo su propio NIT.
-    Los NIT se buscan en todas sus formas —con y sin el dígito de verificación, con guion y
-    con puntos— porque cada plataforma los escribe distinto. Se revisa toda su contratación
-    del periodo, pero aquí solo aparece lo que alude al sismo. Por ser entidades nacionales
-    <b>no suma</b> en los indicadores de Cali y el Valle.
-  </p>
-  <div class="kpis" id="kpis-ungrd"></div>
-  <div class="tabla-envoltura">
-    <table id="tabla-ungrd">
-      <thead><tr>
-        <th>Fecha</th><th>Plataforma</th><th>Objeto</th><th class="num">Valor</th>
-        <th>Contratista</th><th>Modalidad / causal</th><th>Relación</th><th>Enlace</th>
-      </tr></thead>
-      <tbody></tbody>
-    </table>
-    <div class="vacio" id="vacio-ungrd" hidden></div>
-  </div>
-</section>
-
-<details style="margin-top:18px">
+<details class="plegable">
   <summary>Registro de modificaciones detectadas por el colector local (<span id="n-cambios">0</span>)</summary>
   <div class="tabla-envoltura" style="margin-top:10px">
     <table id="tabla-cambios">
@@ -254,66 +219,18 @@
 </details>
 
 <p class="sub" style="margin-top:22px">
-  El tablero consulta la API en vivo al abrirse y cada vez que se pulsa <em>Actualizar datos</em>.
-  Los indicadores de arriba cuentan únicamente entidades de Cali y del Valle del Cauca; lo de otras
-  regiones se muestra aparte. SECOP II publica con aproximadamente un día de rezago y corrige
-  registros ya publicados: el histórico y el log de cambios los produce <code>colector.py</code>.
+  Esta página no consulta la fuente: pinta lo que <code>colector.py</code> ya consultó y clasificó,
+  y que se recoge dos veces al día. Las cifras de arriba cuentan únicamente entidades de Cali y del
+  Valle del Cauca; lo de otras regiones se ve cambiando el filtro de territorio. SECOP publica con
+  alrededor de un día de rezago y corrige registros ya publicados: el histórico y el registro de
+  modificaciones los produce el colector.
 </p>
 
-</div><!-- /vista-sismo -->
 
-<div id="vista-ordinaria" role="tabpanel" hidden>
 
-  <p class="intro" style="font-size:13.5px;color:var(--suave);line-height:1.6;margin:0 0 18px">
-    Todo lo que han contratado las entidades vigiladas <b>desde el 10 de agosto de 2026</b>,
-    tenga o no relación con el sismo. Sirve de denominador: un contrato de la emergencia
-    cobra sentido al lado del resto de lo que esa entidad contrató en el mismo periodo.
-    No se compara contra años anteriores — el seguimiento arranca el día del sismo.
-  </p>
 
-  <div class="kpis" id="kpis-ordinaria"></div>
-
-  <div class="titulo-bloque" style="margin-top:20px">Por entidad</div>
-  <div class="filtros">
-    <input type="search" id="fo-texto" placeholder="Buscar entidad…">
-    <select id="fo-grupo">
-      <option value="">Todos los grupos</option>
-      <option value="Alcaldía de Cali">Alcaldía de Cali</option>
-      <option value="Descentralizadas de Cali">Descentralizadas de Cali</option>
-      <option value="Gobernación del Valle">Gobernación del Valle</option>
-      <option value="Descentralizadas de la Gobernación">Descentralizadas de la Gobernación</option>
-      <option value="Otras entidades del Valle">Municipios del Valle</option>
-      <option value="UNGRD">UNGRD y FNGRD</option>
-    </select>
-    <select id="fo-orden">
-      <option value="valor">Ordenar por valor</option>
-      <option value="n">Ordenar por número de registros</option>
-      <option value="rel">Ordenar por registros del sismo</option>
-    </select>
-    <span class="pill" id="conteo-ordinaria"></span>
-  </div>
-
-  <div class="tabla-envoltura">
-    <table id="tabla-ordinaria">
-      <thead><tr>
-        <th>Entidad</th><th>Grupo</th>
-        <th class="num">Registros</th><th class="num">Valor contratado</th>
-        <th>Del sismo</th>
-      </tr></thead>
-      <tbody></tbody>
-    </table>
-    <div class="vacio" id="vacio-ordinaria" hidden></div>
-  </div>
-  <div class="paginacion" id="pag-ordinaria"></div>
-
-  <p class="sub" style="margin-top:16px">
-    Pulse una entidad para ver sus registros. El valor suma únicamente contratos firmados;
-    los procesos aún sin adjudicar no tienen valor definitivo y no se suman.
-  </p>
-
-</div><!-- /vista-ordinaria -->
-
-<div id="vista-padron" role="tabpanel" hidden>
+<details class="plegable" id="caja-padron">
+  <summary>Padrón de entidades vigiladas <span class="resumen-filtros" id="n-padron"></span></summary>
 
   <div class="kpis" id="kpis-padron"></div>
 
@@ -371,7 +288,7 @@
     trae un campo que lo diga.
   </p>
 
-</div><!-- /vista-padron -->
+</details><!-- /padron -->
 
 </div>
 <script src="tablero.js"></script>

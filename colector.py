@@ -1366,8 +1366,14 @@ def escribir_reporte(hoy, contratos, procesos, nuevos_c, nuevos_p, cambios, aler
 # Las descentralizadas reciben el mismo trato que su matriz: el Paragrafo Cuarto
 # del Decreto 0964 las obliga a declarar su propia urgencia manifiesta, asi que
 # hay que poder revisar todo lo que contraten, no solo lo que nombre el sismo.
+# Grupos cuya contratacion ordinaria viaja en el JSON. Del resto se descarga y se
+# guarda todo, pero no se embebe: a seis meses son decenas de miles de filas.
+# La UNGRD entra aunque sea nacional porque de ella se sigue TODA la contratacion
+# de la ventana, mencione o no el sismo, y sin embeberla el filtro de UNGRD de la
+# pagina daba cero sin poder distinguir "no ha contratado" de "no viaja el dato".
 GRUPOS_ORDINARIA = ("Alcaldía de Cali", "Gobernación del Valle",
-                    "Descentralizadas de Cali", "Descentralizadas de la Gobernación")
+                    "Descentralizadas de Cali", "Descentralizadas de la Gobernación",
+                    "UNGRD")
 
 
 def aplanar(df, nombre_fuente):

@@ -306,3 +306,22 @@
     .col-que{min-width:0;max-width:none}
     .col-que .obj{-webkit-line-clamp:4}
   }
+
+  /* ---------------------------------------------------------------- *
+   * Filtros con etiqueta                                             *
+   * ---------------------------------------------------------------- */
+  /* Cada control dice que hace. Antes eran doce desplegables sueltos y habia
+     que abrirlos para adivinar de que trataban; ademas el mismo concepto salia
+     tres veces con opciones distintas segun la pestana en que uno estuviera. */
+  .filtros{display:flex;flex-wrap:wrap;gap:14px}
+  .filtro{display:flex;flex-direction:column;gap:3px;min-width:190px;flex:1 1 190px}
+  .filtro label{font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+                color:var(--suave)}
+  .filtro select,.filtro input{width:100%}
+  .filtro .ayuda{font-size:11px;color:var(--suave);line-height:1.35}
+
+  /* Un conteo parcial presentado como total es la mentira mas cara de este
+     tablero. Cuando la vista incluye contratacion corriente, se dice. */
+  .aviso-parcial{border:1px solid #d9b168;background:rgba(217,177,104,.12);
+                 border-radius:8px;padding:10px 12px;font-size:12.5px;line-height:1.5;
+                 margin:8px 0 12px}

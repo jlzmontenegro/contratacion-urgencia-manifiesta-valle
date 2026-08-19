@@ -57,8 +57,12 @@ const diasDesde = fecha => fecha
 /* Las descentralizadas reciben el mismo trato que su matriz: el Parágrafo Cuarto
    del Decreto 0964 las obliga a declarar su propia urgencia manifiesta, así que
    hay que poder revisar todo lo que contraten, no solo lo que nombre el sismo. */
+/* Debe coincidir con GRUPOS_ORDINARIA de colector.py: es la lista de grupos cuya
+   contratacion ordinaria viaja en el JSON. Si aqui falta uno, sus registros llegan
+   pero listable() los descarta y el filtro correspondiente da cero. */
 const GRUPOS_ORDINARIA = ["Alcaldía de Cali", "Gobernación del Valle",
-                          "Descentralizadas de Cali", "Descentralizadas de la Gobernación"];
+                          "Descentralizadas de Cali", "Descentralizadas de la Gobernación",
+                          "UNGRD"];
 
 const esRelevante = r => r.nivel === "Alta" || r.nivel === "Media";
 
@@ -90,7 +94,6 @@ const claseNivel = n => "n-" + ({ "Otra urgencia": "Otra" }[n] || n);
    fuera el resto del país, que se muestra aparte como referencia. */
 const cuenta = r => r.grupo !== "Fuera del Valle";
 const territoriales = () => DATOS.filter(r => cuenta(r) && esRelevante(r));
-const nacionales    = () => DATOS.filter(r => !cuenta(r) && esRelevante(r));
 
 /* ------------------------------------------------------------------ *
  * Paginación                                                          *
@@ -253,7 +256,8 @@ function pintarPortada(){
 
   if (fuera.length){
     partes.push(`Fuera del Valle hay ${frasePlural(fuera.length, "registro relacionado",
-      "registros relacionados")}, que se muestran aparte y no suman en estas cifras.`);
+      "registros relacionados")}, que no suman en estas cifras: para verlos, elija `
+      + `<em>Fuera del Valle</em> en el filtro de territorio.`);
   }
 
   document.getElementById("titular").innerHTML = partes.join(" ");
@@ -322,7 +326,6 @@ const GRUPOS_VIGILADOS = ["Alcaldía de Cali", "Descentralizadas de Cali",
   "Gobernación del Valle", "Descentralizadas de la Gobernación",
   "Otras entidades del Valle", "UNGRD"];
 
-let entidadAbierta = null;
 
 /* Agrupa por entidad. Solo entidades vigiladas: el resto del país no es objeto
    de este seguimiento y meterlo aquí volvería la tabla ilegible.
@@ -334,132 +337,9 @@ let entidadAbierta = null;
    lo embebido daría un número menor sin avisar. */
 let PADRON = [];
 
-/* Las cifras SIEMPRE salen del padrón, nunca de contar los registros que viajan.
-   No es lo mismo: el padrón cubre los 2.635 registros de la ventana, mientras
-   que en el archivo solo viajan 1.024 —la contratación ordinaria de los 177
-   municipios se queda fuera porque embeberla llevaría el archivo a decenas de
-   megas—. Contar sobre lo que viaja mostraba 11 registros donde hay 1.540.
-   Los registros sirven para el detalle de cada entidad, no para los totales. */
-function agregarPorEntidad(){
-  const detalle = new Map();
-  for (const r of DATOS){
-    if (!GRUPOS_VIGILADOS.includes(r.grupo)) continue;
-    const k = r.entidad || "(sin nombre)";
-    if (!detalle.has(k)) detalle.set(k, []);
-    detalle.get(k).push(r);
-  }
-  return PADRON
-    .filter(e => GRUPOS_VIGILADOS.includes(e.grupo))
-    .map(e => {
-      const filas = detalle.get(e.entidad) || [];
-      return { ...e, filas, parcial: filas.length < e.n };
-    });
-}
 
-function filtradosOrdinaria(){
-  const txt = norm(document.getElementById("fo-texto").value.trim());
-  const grupo = document.getElementById("fo-grupo").value;
-  const orden = document.getElementById("fo-orden").value;
-  let filas = agregarPorEntidad();
-  if (grupo) filas = filas.filter(e => e.grupo === grupo);
-  if (txt) filas = filas.filter(e => norm(e.entidad + " " + e.nit).includes(txt));
-  const clave = orden === "n" ? "n" : orden === "rel" ? "rel" : "valor";
-  return filas.sort((a, b) => b[clave] - a[clave] || b.valor - a.valor);
-}
 
-function pintarOrdinaria(){
-  const todas = agregarPorEntidad();
-  const registros = todas.reduce((s, e) => s + e.n, 0);
-  const valor = todas.reduce((s, e) => s + e.valor, 0);
-  const rel = todas.reduce((s, e) => s + e.rel, 0);
-  const porcentaje = registros ? (rel / registros * 100) : 0;
 
-  tarjetas("kpis-ordinaria", [
-    ["Registros en total", registros, "desde el 10 de agosto"],
-    ["Valor contratado", compacto(valor), "solo contratos firmados"],
-    ["Entidades que contrataron", todas.length, "de las vigiladas"],
-    ["Relacionados con el sismo", rel,
-     registros ? porcentaje.toFixed(1).replace(".", ",") + " % del total" : "—"]
-  ]);
-
-  const filas = filtradosOrdinaria();
-  document.getElementById("conteo-ordinaria").textContent =
-    filas.length + (filas.length === 1 ? " entidad" : " entidades");
-
-  const vacio = document.getElementById("vacio-ordinaria");
-  vacio.hidden = filas.length > 0;
-  if (!filas.length) vacio.textContent = "Ninguna entidad coincide con el filtro.";
-
-  const max = Math.max(...filas.map(e => e.valor), 1);
-  const t = trozo("ordinaria", filas);
-  pintarPaginacion("pag-ordinaria", "ordinaria", t, filas.length, pintarOrdinaria);
-
-  document.querySelector("#tabla-ordinaria tbody").innerHTML = t.filas.map(e => {
-    const abierta = entidadAbierta === e.entidad;
-    const fila = `
-      <tr class="abrible" data-entidad="${esc(e.entidad)}">
-        <td data-etq="Entidad">${esc(e.entidad)}
-          <div class="menor">NIT ${esc(e.nit) || "—"}${abierta ? " · pulse para cerrar" : ""}</div></td>
-        <td data-etq="Grupo"><span class="menor">${esc(e.grupo)}</span></td>
-        <td class="num" data-etq="Registros">${e.n}</td>
-        <td class="num" data-etq="Valor">${esc(pesos(e.valor))}
-          <div class="barra-mini"><i style="width:${(e.valor / max * 100).toFixed(1)}%"></i></div></td>
-        <td data-etq="Del sismo">${e.rel
-          ? `<span class="etiqueta n-Alta">${e.rel}</span>`
-          : '<span class="menor">ninguno</span>'}</td>
-      </tr>`;
-    if (!abierta) return fila;
-    return fila + `
-      <tr class="detalle-entidad"><td colspan="5">${e.filas.length
-        ? detalleEntidad(e)
-        : `<div class="menor" style="padding:10px 2px">Esta entidad tiene
-             <b>${e.n}</b> registros en la ventana, pero su contratación ordinaria no viaja
-             en el archivo del tablero: son 2.635 registros en total y embeberlos todos lo
-             haría inservible. Las cifras de la fila son completas; el detalle registro por
-             registro está en <code>datos/contratos.csv</code> y <code>datos/procesos.csv</code>
-             del repositorio.</div>`}</td></tr>`;
-  }).join("");
-
-  document.querySelectorAll("#tabla-ordinaria tr.abrible").forEach(tr =>
-    tr.addEventListener("click", () => {
-      entidadAbierta = entidadAbierta === tr.dataset.entidad ? null : tr.dataset.entidad;
-      pintarOrdinaria();
-    }));
-}
-
-/* Detalle de una entidad: sus registros, los del sismo primero. Se limita a 60
-   porque una alcaldia puede tener cientos y la tabla dejaria de leerse. */
-function detalleEntidad(e){
-  const filas = e.filas.slice()
-    .sort((a, b) => (esRelevante(b) - esRelevante(a)) || (b.valor - a.valor))
-    .slice(0, POR_PAGINA);
-  const oculto = e.filas.length - filas.length;
-  const faltan = e.n - e.filas.length;
-  return `
-    <div class="tabla-envoltura">
-      <table>
-        <thead><tr><th>Fecha</th><th>Tipo</th><th>Objeto</th>
-          <th class="num">Valor</th><th>Contratista</th><th>Relación</th><th></th></tr></thead>
-        <tbody>${filas.map(r => `
-          <tr>
-            <td class="col-fecha">${esc(r.fecha)}</td>
-            <td><span class="etiqueta t-${r.tipo}">${esc(r.tipo)}</span>
-              <div class="menor">${etiquetaPlataforma(r.plataforma)}</div></td>
-            <td class="objeto">${esc(String(r.objeto).slice(0, 220))}</td>
-            <td class="num">${esc(pesos(r.valor))}</td>
-            <td>${esc(r.proveedor) || '<span class="menor">sin adjudicar</span>'}</td>
-            <td><span class="etiqueta ${claseNivel(r.nivel)}" title="${esc(nivelLargo(r.nivel))}">${esc(nivelCorto(r.nivel))}</span></td>
-            <td>${r.url ? `<a class="boton boton-secop" href="${esc(r.url)}" target="_blank"
-                 rel="noopener">Ver</a>` : ""}</td>
-          </tr>`).join("")}</tbody>
-      </table>
-    </div>
-    ${oculto > 0 ? `<div class="menor" style="padding:8px 2px">Se muestran los 20 de mayor
-      valor; hay ${oculto} más en el archivo.</div>` : ""}
-    ${faltan > 0 ? `<div class="menor" style="padding:8px 2px">De los <b>${e.n}</b> registros
-      de esta entidad, ${faltan} son contratación ordinaria que no viaja en el archivo del
-      tablero. Están en los CSV del repositorio.</div>` : ""}`;
-}
 
 /* ------------------------------------------------------------------ *
  * Padrón de entidades                                                 *
@@ -489,7 +369,19 @@ function filtradosPadron(){
   });
 }
 
+/* Fila de cifras grandes. La usan el padron y el detalle por nivel de gobierno. */
+function tarjetas(destino, lista){
+  document.getElementById(destino).innerHTML = lista.map(([e, v, p]) =>
+    `<div class="kpi${(v === 0 || v === "$ 0") ? " cero" : ""}">
+       <div class="etq">${esc(e)}</div><div class="val">${esc(v)}</div><div class="pie">${esc(p)}</div>
+     </div>`).join("");
+}
+
 function pintarPadron(){
+  const rotulo = document.getElementById("n-padron");
+  if (rotulo) rotulo.textContent = PADRON.length
+    ? `· ${PADRON.length} entidades, ${PADRON.filter(e => e.sin_contratacion).length} sin contratación`
+    : "";
   if (!PADRON.length){
     document.getElementById("secciones-padron").innerHTML =
       '<div class="vacio">El padrón lo genera <code>colector.py</code>. Esta copia del '
@@ -562,14 +454,6 @@ function pintarPadron(){
     </div>`;
 }
 
-function cambiarVista(cual){
-  for (const v of ["sismo", "ordinaria", "padron"]){
-    document.getElementById("vista-" + v).hidden = (v !== cual);
-    document.getElementById("tab-" + v).setAttribute("aria-selected", String(v === cual));
-  }
-  if (cual === "ordinaria") pintarOrdinaria();
-  if (cual === "padron") pintarPadron();
-}
 
 function pintarKpis(){
   const rel = territoriales();
@@ -597,29 +481,6 @@ function pintarKpis(){
        <div class="etq">${esc(e)}</div><div class="val">${esc(v)}</div><div class="pie">${esc(p)}</div>
      </div>`).join("");
 
-  const nac = nacionales();
-  const vnac = nac.filter(r => r.tipo === "Contrato").reduce((s, r) => s + r.valor, 0);
-  const otras = DATOS.filter(r => r.nivel === "Otra urgencia");
-  const votras = otras.filter(r => r.tipo === "Contrato").reduce((s, r) => s + r.valor, 0);
-  const lineas = [];
-
-  if (nac.length){
-    lineas.push(`<b>Relacionados con el sismo:</b> ${nac.filter(r => r.tipo === "Contrato").length}
-      contratos (<b>${esc(compacto(vnac))}</b>) y ${nac.filter(r => r.tipo === "Proceso").length}
-      procesos de otras regiones del país.`);
-  }
-  if (otras.length){
-    lineas.push(`<b>Urgencia manifiesta por otras causas:</b>
-      ${otras.filter(r => r.tipo === "Contrato").length} contratos
-      (<b>${esc(compacto(votras))}</b>) y ${otras.filter(r => r.tipo === "Proceso").length} procesos.
-      Sin relación con el sismo — otras emergencias del país. Sirven para dimensionar cuánta
-      urgencia manifiesta se declara por motivos distintos.`);
-  }
-  document.getElementById("bloque-nacional").innerHTML = lineas.length
-    ? lineas.map(l => `<div style="margin:4px 0">${l}</div>`).join("")
-      + `<div style="margin-top:8px">Nada de esto cuenta en los indicadores de arriba.
-         Para verlo, elija <em>Fuera del Valle</em> o el nivel <em>Otra urgencia</em> en los filtros.</div>`
-    : "Sin registros relacionados fuera del Valle del Cauca.";
 }
 
 function barras(destino, pares, formato){
@@ -682,7 +543,10 @@ function filtraRegistro(r, ctx){
   // no se lista. Esto incluye a la UNGRD: se revisa entera, se muestra solo
   // lo del sismo.
   if (!listable(r)) return false;
-  if (r.nivel === "Contexto" && niv !== "Contexto") return false;
+  /* La ordinaria no se muestra por defecto —decision del usuario— pero si cuando
+     se pide expresamente, sea con su propia opcion o con "todo". Antes "todo" la
+     excluia y la opcion mentia: daba 99 donde la ordinaria sola daba 1.319. */
+  if (r.nivel === "Contexto" && niv !== "Contexto" && niv !== "todos") return false;
   if (plat && r.plataforma !== plat) return false;
   if (nov){
     const d = diasDesde(NOVEDADES[r.id]);
@@ -774,14 +638,6 @@ const ordenarOperaciones = (lista) => lista.sort((a, b) => {
   return orden.asc ? cmp : -cmp;
 });
 
-function celdaDuracion(r){
-  const partes = [];
-  if (r.fecha_inicio) partes.push(`Inicio ${esc(r.fecha_inicio)}`);
-  if (r.fecha_fin) partes.push(`Fin ${esc(r.fecha_fin)}`);
-  const dur = r.duracion ? `<div><b>${esc(r.duracion)}</b></div>` : "";
-  return dur + (partes.length ? `<div class="menor">${partes.join("<br>")}</div>`
-                              : '<div class="menor">sin fechas publicadas</div>');
-}
 
 /* La leyenda explica los cuatro niveles con palabras, no con etiquetas. Va
    junto a la tabla porque es ahí donde el lector se topa con ellas. */
@@ -798,9 +654,15 @@ function pintarLeyenda(){
 function pintarResumenFiltros(){
   const el = document.getElementById("resumen-filtros");
   if (!el) return;
+  /* Por valor y no por selectedIndex: cada control tiene un valor por defecto
+     distinto y el indice no dice cual es. */
+  const PORDEFECTO = { "f-grupo": "territorial", "f-nivel": "rel", "f-plataforma": "",
+                       "f-tipo": "", "f-novedad": "", "f-entidad": "" };
   const texto = id => {
     const s = document.getElementById(id);
-    return s && s.selectedIndex > 0 ? s.options[s.selectedIndex].text : "";
+    if (!s || s.value === PORDEFECTO[id]) return "";
+    const op = s.options && [...s.options].find(o => o.value === s.value);
+    return op ? op.text : String(s.value);
   };
   const activos = ["f-grupo","f-plataforma","f-nivel","f-tipo","f-novedad","f-entidad"]
     .map(texto).filter(Boolean);
@@ -810,9 +672,27 @@ function pintarResumenFiltros(){
   el.className = "resumen-filtros" + (activos.length ? " hay" : "");
 }
 
+/* En el JSON viaja alrededor de la mitad de lo monitoreado: la contratacion
+   ordinaria solo se embebe para Cali y la Gobernacion. Mostrar ese conteo sin
+   decirlo lo convierte en un total falso, que es la regla que mas caro sale.
+   Las cifras completas por entidad estan en el padron, al pie. */
+function pintarAvisoParcial(){
+  const el = document.getElementById("aviso-parcial");
+  if (!el) return;
+  const niv = document.getElementById("f-nivel").value;
+  const parcial = niv === "Contexto" || niv === "todos";
+  el.hidden = !parcial;
+  if (parcial) el.innerHTML =
+    `<b>Esta cuenta no es el total.</b> De la contratación corriente solo viaja en el archivo `
+    + `la de la Alcaldía de Cali y la Gobernación del Valle; la del resto de entidades se `
+    + `descarga y se guarda, pero no se lista aquí. Los totales completos por entidad están `
+    + `en <em>Padrón de entidades vigiladas</em>, al pie de la página.`;
+}
+
 function pintarTabla(){
   pintarLeyenda();
   pintarResumenFiltros();
+  pintarAvisoParcial();
   /* El filtro de estado se aplica sobre la operacion y no sobre el registro:
      "aun abierta" significa que no existe contrato, y eso solo se sabe despues
      de juntar el proceso con su contrato. */
@@ -832,16 +712,32 @@ function pintarTabla(){
   const vacio = document.getElementById("vacio");
   vacio.hidden = filas.length > 0;
   if (!filas.length){
+    /* Un cero tiene que decir POR QUE. En este tablero un cero se lee como "no hay
+       contratación del sismo", que es una afirmación fuerte: si en realidad es que
+       el filtro no da o que el dato no viaja en el archivo, hay que decirlo. */
     const grupo = document.getElementById("f-grupo").value;
     const niv = document.getElementById("f-nivel").value;
+    const ent = document.getElementById("f-entidad").value;
+    const busq = document.getElementById("f-texto").value.trim();
     vacio.textContent =
-      niv === "Contexto"
-        ? "La contratación ordinaria solo se muestra para la Alcaldía de Cali y la Gobernación "
-          + "del Valle. Con el grupo seleccionado no hay registros."
+      busq
+        ? `Ninguna operación coincide con "${busq}". Se busca en el objeto, la entidad, el `
+          + "contratista y los números de proceso y de contrato."
+      : ent
+        ? "Esa entidad no tiene operaciones que cumplan los demás filtros. Está vigilada: "
+          + "si no aparece, es que no ha publicado nada que encaje, no que no se la mire."
+      : grupo === "UNGRD"
+        ? "La UNGRD y el FNGRD no han publicado contratación en la ventana de seguimiento. "
+          + "Se consultan en cada corrida por NIT: el cero es un hallazgo, no un vacío del "
+          + "monitoreo."
+      : niv === "Contexto" || niv === "todos"
+        ? "De la contratación corriente solo viaja en el archivo la de Cali, la Gobernación, "
+          + "sus descentralizadas y la UNGRD. Con el territorio seleccionado no hay nada que "
+          + "listar; los totales completos están en el padrón, al pie."
       : grupo === "territorial"
-        ? "Todavía no hay contratos ni procesos relacionados con el sismo en Cali ni en el Valle "
-          + "del Cauca. SECOP publica con alrededor de un día de rezago."
-        : "Sin registros con los filtros actuales.";
+        ? "Todavía no hay contratación relacionada con el sismo en Cali ni en el Valle del "
+          + "Cauca. SECOP publica con alrededor de un día de rezago."
+        : "Ninguna operación cumple los filtros actuales.";
   }
 
   const t = trozo("tabla", filas);
@@ -889,103 +785,10 @@ function pintarTabla(){
 const etiquetaPlataforma = p =>
   `<span class="plat ${p === "SECOP I" ? "plat-1" : "plat-2"}">${esc(p || "—")}</span>`;
 
-function tarjetas(destino, lista){
-  document.getElementById(destino).innerHTML = lista.map(([e, v, p]) =>
-    `<div class="kpi${(v === 0 || v === "$ 0") ? " cero" : ""}">
-       <div class="etq">${esc(e)}</div><div class="val">${esc(v)}</div><div class="pie">${esc(p)}</div>
-     </div>`).join("");
-}
 
-/* Filas de las tablas de la sección. La segunda columna cambia: en SECOP I
-   interesa qué entidad contrató; en la UNGRD, siempre la misma entidad, lo que
-   interesa es por cuál de las dos plataformas se tramitó. */
-function filasSeccion(destinoTabla, destinoVacio, filas, segunda, mensajeVacio){
-  const vacio = document.getElementById(destinoVacio);
-  vacio.hidden = filas.length > 0;
-  if (!filas.length) vacio.textContent = mensajeVacio;
 
-  document.querySelector("#" + destinoTabla + " tbody").innerHTML = filas
-    .slice()
-    .sort((a, b) => b.valor - a.valor)
-    .slice(0, 200)
-    .map(r => `
-      <tr>
-        <td class="col-fecha" data-etq="Fecha">${esc(r.fecha) || "<span class='menor'>sin fecha</span>"}
-          <div class="menor">${esc(r.etiqueta_fecha || "")}</div></td>
-        <td data-etq="${segunda === "entidad" ? "Entidad" : "Plataforma"}">
-          ${segunda === "entidad"
-            ? esc(r.entidad) + `<div class="menor">${esc(r.ciudad || r.departamento)}</div>`
-            : etiquetaPlataforma(r.plataforma)
-              + `<div class="menor">${esc(r.entidad)}</div>`}
-          <div class="menor"><span class="etiqueta t-${r.tipo}">${esc(r.tipo)}</span>
-            ${NOVEDADES[r.id] ? ` <span class="nuevo">nuevo</span>` : ""}</div></td>
-        <td class="objeto" data-etq="Objeto">${esc(r.objeto)}</td>
-        <td class="num" data-etq="Valor">${esc(pesos(r.valor))}</td>
-        <td data-etq="Contratista">${esc(r.proveedor) || '<span class="menor">sin adjudicar</span>'}</td>
-        <td data-etq="Modalidad">${esc(r.modalidad)}
-          <div class="menor">${esc(r.justificacion)}</div>
-          <div class="menor">${esc(r.estado)}</div></td>
-        <td data-etq="Relación"><span class="etiqueta ${claseNivel(r.nivel)}"
-            title="${esc(nivelLargo(r.nivel))}">${esc(nivelCorto(r.nivel))}</span>
-          <div class="menor">${esc(r.motivo)}</div></td>
-        <td data-etq="Enlace">${r.url
-          ? `<a class="boton boton-secop" href="${esc(r.url)}" target="_blank" rel="noopener">Ver</a>`
-          : '<span class="menor">sin enlace</span>'}
-          <div class="menor">${esc(r.id)}</div></td>
-      </tr>`).join("");
-}
 
-/* Las dos secciones muestran únicamente lo relacionado con el sismo: relación
-   alta o media. Lo demás se sigue descargando y guardando en los CSV —es lo que
-   permite reclasificar sin volver a pedirle nada a la API— pero no se muestra.
-   Quedan fuera a propósito la contratación ordinaria y la urgencia manifiesta
-   declarada por otras causas o por calamidades anteriores al 10 de agosto. */
-function pintarSecopI(){
-  const filas = DATOS.filter(r => r.plataforma === "SECOP I" && esRelevante(r));
-  const terr = filas.filter(cuenta);
-  const contratos = filas.filter(r => r.tipo === "Contrato");
-  const valorTerr = terr.filter(r => r.tipo === "Contrato").reduce((s, r) => s + r.valor, 0);
-  const urgencia = filas.filter(r => norm(r.justificacion).includes("URGENCIA MANIFIESTA"));
 
-  tarjetas("kpis-secop1", [
-    ["Relacionados con el sismo", filas.length, "en toda la plataforma"],
-    ["En Cali y el Valle", terr.length, "de esos registros"],
-    ["Valor en el territorio", compacto(valorTerr), "contratos ya celebrados"],
-    ["Con urgencia manifiesta", urgencia.length, "causal Literal A"]
-  ]);
-
-  filasSeccion("tabla-secop1", "vacio-secop1", filas, "entidad",
-    "Sin contratos ni convenios relacionados con el sismo en SECOP I. La mayor parte de la "
-    + "contratación actual se tramita por SECOP II; SECOP I se revisa porque sigue recibiendo "
-    + "cargues y porque algunas entidades y regímenes especiales continúan publicando allí.");
-}
-
-function pintarUngrd(){
-  const filas = DATOS.filter(r => r.es_ungrd && esRelevante(r));
-  const contratos = filas.filter(r => r.tipo === "Contrato");
-  const valor = contratos.reduce((s, r) => s + r.valor, 0);
-  const enS1 = filas.filter(r => r.plataforma === "SECOP I").length;
-
-  tarjetas("kpis-ungrd", [
-    ["Relacionados con el sismo", filas.length, "UNGRD y FNGRD"],
-    ["Valor contratado", compacto(valor), "contratos firmados"],
-    ["Contratos", contratos.length, "el resto son procesos"],
-    ["Por SECOP I", enS1, "el resto por SECOP II"]
-  ]);
-
-  filasSeccion("tabla-ungrd", "vacio-ungrd", filas, "plataforma",
-    "La UNGRD y el FNGRD no registran todavía contratación relacionada con el sismo, "
-    + "ni en SECOP I ni en SECOP II. Su contratación ordinaria del periodo se sigue "
-    + "revisando, pero no se muestra aquí.");
-}
-
-function pintarEntidades(){
-  const sel = document.getElementById("f-entidad");
-  const previo = sel.value;
-  const ents = [...new Set(DATOS.filter(esRelevante).map(r => r.entidad).filter(Boolean))].sort();
-  sel.innerHTML = '<option value="">Todas las entidades</option>' +
-    ents.map(e => `<option${e === previo ? " selected" : ""}>${esc(e)}</option>`).join("");
-}
 
 function pintarCambios(){
   const cambios = (LOCAL && LOCAL.cambios) || [];
@@ -1002,21 +805,14 @@ function pintarCambios(){
       }</td></tr>`;
 }
 
-function pintarContadoresPestanas(){
-  const sismo = DATOS.filter(r => cuenta(r) && esRelevante(r)).length;
-  /* Del padrón, no de DATOS: el contador debe decir lo mismo que la pestaña. */
-  const ordinaria = PADRON.filter(e => GRUPOS_VIGILADOS.includes(e.grupo))
-                          .reduce((s, e) => s + e.n, 0);
-  document.getElementById("n-tab-sismo").textContent = sismo ? `· ${sismo}` : "";
-  document.getElementById("n-tab-ordinaria").textContent = ordinaria ? `· ${ordinaria}` : "";
-  document.getElementById("n-tab-padron").textContent = PADRON.length ? `· ${PADRON.length}` : "";
-}
 
+/* Una sola vista: no hay pestanas que sincronizar ni secciones que pintar aparte.
+   SECOP I, la UNGRD y el resto del pais eran bloques propios y ahora son estados
+   del filtro; el padron sigue siendo su propio bloque porque una entidad que no
+   ha contratado nada no tiene ninguna operacion que mostrar en la tabla. */
 function pintarTodo(){
-  pintarContadoresPestanas();
-  if (!document.getElementById("vista-ordinaria").hidden) pintarOrdinaria();
-  pintarPortada(); pintarKpis(); pintarSecopI(); pintarUngrd(); pintarGraficos();
-  pintarAlertas(); pintarEntidades(); pintarTabla(); pintarCambios(); pintarSello();
+  pintarPortada(); pintarKpis(); pintarGraficos();
+  pintarAlertas(); pintarTabla(); pintarPadron(); pintarCambios(); pintarSello();
 }
 
 /* ------------------------------------------------------------------ *
@@ -1113,11 +909,7 @@ document.getElementById("btn-csv").addEventListener("click", descargarCsv);
 ["f-texto","f-grupo","f-nivel","f-tipo","f-novedad","f-entidad","f-plataforma"].forEach(id =>
   document.getElementById(id).addEventListener("input",
     () => { paginas.tabla = 1; pintarTabla(); }));
-["sismo","ordinaria","padron"].forEach(v =>
-  document.getElementById("tab-" + v).addEventListener("click", () => cambiarVista(v)));
-["fo-texto","fo-grupo","fo-orden"].forEach(id =>
-  document.getElementById(id).addEventListener("input",
-    () => { entidadAbierta = null; paginas.ordinaria = 1; pintarOrdinaria(); }));
+
 ["fp-texto","fp-via","fp-tipo","fp-grupo","fp-actividad"].forEach(id =>
   document.getElementById(id).addEventListener("input",
     () => { paginas.padron = 1; pintarPadron(); }));
