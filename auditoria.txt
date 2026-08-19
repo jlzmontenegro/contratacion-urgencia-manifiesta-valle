@@ -4,8 +4,8 @@ Comprobaciones: 52 entidades x 3 fuentes = 156, cada una por tres caminos indepe
 
 Fuente     Entidad                NIT         API simple  API amplio    CSV   Veredicto
 ------------------------------------------------------------------------------------
-contratos  Alcaldia de Cali       890399011          286         295    295   OK
-contratos  Gobernacion del Valle  890399029          125         466    466   OK
+contratos  Alcaldia de Cali       890399011          334         346    346   OK
+contratos  Gobernacion del Valle  890399029          240         745    745   OK
 contratos  UNGRD / FNGRD          900478966            1           1      1   OK
 contratos  UNGRD / FNGRD          900978341            0           0      0   OK
 contratos  Desc.Cali EMCALI - Empresas Munici890399003            0           0      0   OK
@@ -14,7 +14,7 @@ contratos  Desc.Cali Red de Salud de Ladera E805027289            0           0 
 contratos  Desc.Cali Red de Salud del Norte E805027287            0           0      0   OK
 contratos  Desc.Cali Red de Salud del Oriente805027337            1           1      1   OK
 contratos  Desc.Cali Red de Salud del Surorie805027338            1           1      1   OK
-contratos  Desc.Cali Fondo Especial de Vivien805013033            2           2      2   OK
+contratos  Desc.Cali Fondo Especial de Vivien805013033           15          15     15   OK
 contratos  Desc.Cali Instituto Popular de Cul900431928            0           0      0   OK
 contratos  Desc.Cali Personeria Distrital de 805003895            0           0      0   OK
 contratos  Desc.Cali Contraloria de Santiago 800217831            0           0      0   OK
@@ -50,7 +50,7 @@ contratos  Otras     Personeria Municipal de 891900493           14          14 
 contratos  Otras     Personeria Municipal de 901159063            0           0      0   OK
 contratos  Otras     Personeria Municipal de 900085817            0           0      0   OK
 contratos  Otras     Personeria Municipal de 800100524            0           0      0   OK
-contratos  Otras     Concejo Municipal de Jam890399046           90          90     90   OK
+contratos  Otras     Concejo Municipal de Jam890399046          117         117    117   OK
 contratos  Otras     IE Alfonso Lopez Pumarej805000057            0           0      0   OK
 contratos  Otras     IE Paulo VI - Palmira815004730            0           0      0   OK
 contratos  Otras     IE Ginebra La Salle891380108            0           0      0   OK
