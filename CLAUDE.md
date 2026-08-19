@@ -43,6 +43,11 @@ daría siempre tabla vacía.
 de urgencia. Estar en el padrón no basta para llamarlas vigiladas; la prueba es no ser del grupo
 `Fuera del Valle`.
 
+**Ninguna lista se recorta en silencio.** La portada listaba 5 novedades de 28 sin decir que
+faltaban 23: una lista recortada sin avisar se lee como si fueran todas. Ahora cierra con "y N
+operaciones más en la tabla". En pantalla estrecha muestra 3 en vez de 5 —la portada dejaba la
+tabla a casi cuatro pantallas de distancia— y el aviso se ajusta solo.
+
 **Un cero tiene que decir por qué.** En este tablero un cero se lee como "no hay contratación
 del sismo", que es una afirmación fuerte. El mensaje de tabla vacía se redacta según el filtro
 activo: no da lo mismo "esa entidad está vigilada y no ha publicado nada" que "ese dato no
