@@ -4,10 +4,14 @@ name: Actualizar monitoreo
 # programada de Windows, que exigia tener el computador encendido a esa hora.
 on:
   schedule:
-    # 08:30 hora de Colombia. GitHub programa en UTC y Colombia es UTC-5.
+    # Cada 12 horas: 08:30 y 20:30 hora de Colombia. GitHub programa en UTC y
+    # Colombia es UTC-5, sin horario de verano. Dos corridas porque SECOP publica
+    # a lo largo del dia y una urgencia manifiesta firmada por la manana se veia
+    # hasta el dia siguiente.
     # GitHub puede retrasar las ejecuciones programadas cuando hay mucha carga;
-    # para un seguimiento diario eso es irrelevante.
-    - cron: '30 13 * * *'
+    # a esta cadencia eso es irrelevante.
+    - cron: '30 13 * * *'   # 08:30 Colombia
+    - cron: '30 1  * * *'   # 20:30 Colombia (del dia anterior en UTC)
   workflow_dispatch:        # permite lanzarlo a mano desde la pestana Actions
 
 # Sin esto el token no puede escribir en el repositorio y el push falla.
@@ -15,13 +19,23 @@ permissions:
   contents: write
 
 concurrency:
-  # Si una corrida se demora y entra la del dia siguiente, no se pisan.
+  # Si una corrida se demora y entra la siguiente, no se pisan: la segunda espera.
+  # Importa mas con dos corridas diarias, y sobre todo si alguien lanza una a mano
+  # desde Actions mientras corre la programada: dos procesos escribiendo los mismos
+  # CSV y empujando al mismo tiempo dejarian el repositorio en conflicto.
   group: actualizar-monitoreo
   cancel-in-progress: false
 
 jobs:
   actualizar:
     runs-on: ubuntu-latest
+    env:
+      # El runner viene en UTC y el colector sella todo con datetime.now(): sin
+      # esto la corrida de las 20:30 de Colombia se archiva con la fecha del dia
+      # siguiente (01:30 UTC) y la portada titularia 'Novedades del 20/08' a las
+      # ocho de la noche del 19. Ademas el sello que la pagina compara contra la
+      # hora del navegador quedaba cinco horas adelantado.
+      TZ: America/Bogota
     # Una corrida sana tarda 3 minutos. Si datos.gov.co limita las peticiones,
     # el colector se queda reintentando; sin este tope la corrida podria seguir
     # hasta el limite de GitHub, que son 6 horas.
@@ -68,7 +82,9 @@ jobs:
             echo "Sin cambios que publicar."
             exit 0
           fi
-          git commit -m "Actualizacion automatica del tablero $(date -u -d '-5 hours' +%Y-%m-%d)"
+          # Con la hora, no solo la fecha: hay dos commits por dia y el log es la
+          # memoria del proyecto.
+          git commit -m "Actualizacion automatica del tablero $(date -u -d '-5 hours' '+%Y-%m-%d %H:%M')"
           # Otra corrida pudo haber empujado mientras tanto
           git pull --rebase --autostash
           git push

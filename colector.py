@@ -72,6 +72,10 @@ FUENTES = {
         "proveedor": "proveedor_adjudicado",
         "doc_proveedor": "documento_proveedor",
         "estado": "estado_contrato",
+        # Numero con que la entidad identifica el contrato en sus actos: es lo que
+        # el funcionario tiene a la mano, no el id interno CO1.PCCNTR.*, y es por
+        # lo que pregunta quien llega desde el buscador de SECOP.
+        "referencia": "referencia_del_contrato",
         "etiqueta_fecha": "Firma del contrato",
         "fecha_ini": "fecha_de_inicio_del_contrato",
         "fecha_fin": "fecha_de_fin_del_contrato",
@@ -103,6 +107,10 @@ FUENTES = {
         "proveedor": "nombre_del_proveedor",
         "doc_proveedor": "nit_del_proveedor_adjudicado",
         "estado": "estado_del_procedimiento",
+        # Ojo: la fuente le agrega la fase entre parentesis cuando el proceso se
+        # republica ('SETIC-LP-001-2026  (Presentacion de oferta)'). Se conserva
+        # tal cual: el numero va al principio y la busqueda por subcadena lo halla.
+        "referencia": "referencia_del_proceso",
         "etiqueta_fecha": "Publicación del proceso",
         "fecha_ini": None,
         "fecha_fin": None,
@@ -145,6 +153,10 @@ FUENTES = {
         "proveedor": "nom_razon_social_contratista",
         "doc_proveedor": "identificacion_del_contratista",
         "estado": "estado_del_proceso",
+        # numero_de_proceso y no numero_de_contrato: este ultimo viene diligenciado
+        # incluso en procesos solo convocados (ver tipo_registro), asi que como
+        # identificador visible despista.
+        "referencia": "numero_de_proceso",
         "etiqueta_fecha": "Firma del contrato (SECOP I)",
         "etiqueta_fecha_alt": "Cargue en SECOP I",
         "fecha_ini": "fecha_ini_ejec_contrato",
@@ -230,6 +242,20 @@ def objeto_completo(fila, f):
 def solo_fecha(valor):
     s = str(valor or "")
     return s[:10] if len(s) >= 10 else ""
+
+
+def referencia_registro(fila, f):
+    """Numero con que la entidad nombra el proceso o contrato ('SETIC-LP-001-2026').
+
+    Es el dato por el que pregunta quien llega desde el buscador de SECOP: el id
+    interno (CO1.REQ.*) no aparece en ninguna pantalla publica. Se colapsan los
+    espacios porque la fuente separa con dos y tres, y 'No Definido' se vacia:
+    mostrarlo como si fuera un numero de referencia confunde.
+    """
+    if not f.get("referencia"):
+        return ""
+    s = " ".join(texto_campo(fila.get(f["referencia"])).split())
+    return "" if s.lower() in ("no definido", "no definida", "-") else s
 
 
 def calcular_duracion(fila, f):
@@ -947,6 +973,36 @@ def sembrar_novedades():
         print(f"  bitacora de novedades sembrada con {len(todo)} registros ya conocidos")
 
 
+def nuevos_del_dia(dia):
+    """Cuantos registros se detectaron por primera vez hoy, por fuente.
+
+    No sirve contar los de esta corrida: el colector corre dos veces al dia y la
+    portada titula 'Novedades del DD/MM' listando por nombre todo lo detectado en
+    la fecha. Si el total viniera de una sola corrida, la frase diria '2 registros
+    nuevos' encima de una lista de cinco. La bitacora es acumulativa y es la unica
+    que sabe lo que vio la corrida de la manana.
+    """
+    ruta = os.path.join(DIR_DATOS, "novedades.csv")
+    if not os.path.exists(ruta):
+        return {}
+    dfn = pd.read_csv(ruta, dtype=str, keep_default_na=False)
+    if dfn.empty or "fecha_deteccion" not in dfn.columns:
+        return {}
+    del_dia = dfn[dfn["fecha_deteccion"].astype(str).str[:10] == dia]
+    return del_dia["fuente"].value_counts().to_dict()
+
+
+def cambios_del_dia(dia):
+    """Modificaciones detectadas hoy, sumando las dos corridas del dia."""
+    ruta = os.path.join(DIR_DATOS, "cambios.csv")
+    if not os.path.exists(ruta):
+        return 0
+    dfc = pd.read_csv(ruta, dtype=str, keep_default_na=False)
+    if dfc.empty or "fecha_deteccion" not in dfc.columns:
+        return 0
+    return int((dfc["fecha_deteccion"].astype(str).str[:10] == dia).sum())
+
+
 def leer_novedades(cfg, dias=30):
     """Mapa identificador -> fecha en que se vio por primera vez, ultimos N dias.
 
@@ -1288,7 +1344,11 @@ def escribir_reporte(hoy, contratos, procesos, nuevos_c, nuevos_p, cambios, aler
       "Los registros de SECOP se corrigen despues de publicados; el archivo `datos/cambios.csv` "
       "conserva la traza de cada modificacion.")
 
-    ruta = os.path.join(DIR_REPORTES, f"reporte_{hoy:%Y-%m-%d}.md")
+    # Con la hora en el nombre: el colector corre dos veces al dia y el reporte
+    # lista lo nuevo DE ESA EJECUCION. Con el nombre solo por fecha, la corrida de
+    # las 20:30 pisaba el reporte de la manana y lo aparecido temprano desaparecia
+    # del historial escrito (la bitacora datos/novedades.csv si lo conserva).
+    ruta = os.path.join(DIR_REPORTES, f"reporte_{hoy:%Y-%m-%d_%H%M}.md")
     with open(ruta, "w", encoding="utf-8") as fh:
         fh.write("\n".join(lineas))
 
@@ -1354,6 +1414,7 @@ def aplanar(df, nombre_fuente):
             "plataforma": f["plataforma"],
             "fuente": nombre_fuente,
             "id": r.get(f["id"], ""),
+            "referencia": referencia_registro(r, f),
             "fecha": fecha,
             "etiqueta_fecha": etiqueta,
             "fecha_inicio": ini,
@@ -1523,7 +1584,7 @@ def padron_entidades(resultados, cfg):
     return sorted(padron, key=lambda e: (-e["n"], e["entidad"]))
 
 
-def exportar_tablero(hoy, resultados, cambios_totales, alertas, cfg, resumen_corrida=None):
+def exportar_tablero(hoy, resultados, alertas, cfg, resumen_corrida=None):
     """Arma el paquete de datos que la pagina carga y pinta."""
     registros = []
     for nombre in fuentes_activas(cfg):
@@ -1553,7 +1614,9 @@ def exportar_tablero(hoy, resultados, cambios_totales, alertas, cfg, resumen_cor
             for nombre in fuentes_activas(cfg)
         },
     }
-    payload["totales"]["cambios_hoy"] = int(len(cambios_totales))
+    # Por dia y no por corrida: con dos recolecciones diarias esta cifra tiene que
+    # cuadrar con la lista de modificaciones que la pagina filtra por fecha.
+    payload["totales"]["cambios_hoy"] = cambios_del_dia(hoy.strftime("%Y-%m-%d"))
 
     return escribir_datos_tablero(payload)
 
@@ -1656,22 +1719,26 @@ def main():
         nuevos.get("contratos", pd.DataFrame()), nuevos.get("procesos", pd.DataFrame()),
         cambios_totales, alertas, cfg, resultados=resultados,
     )
+    # Los 'nuevos' se cuentan por dia y no por corrida: ver nuevos_del_dia().
+    ndia = nuevos_del_dia(hoy.strftime("%Y-%m-%d"))
     estado = {
         "ultima_ejecucion": sello,
         "contratos": int(len(contratos)),
         "procesos": int(len(procesos)),
         "secop1": int(len(secop1)),
-        "nuevos_contratos": int(len(nuevos.get("contratos", pd.DataFrame()))),
-        "nuevos_procesos": int(len(nuevos.get("procesos", pd.DataFrame()))),
-        "nuevos_secop1": int(len(nuevos.get("secop1", pd.DataFrame()))),
-        "cambios": len(cambios_totales),
+        "nuevos_contratos": int(ndia.get("contratos", 0)),
+        "nuevos_procesos": int(ndia.get("procesos", 0)),
+        "nuevos_secop1": int(ndia.get("secop1", 0)),
+        # Lo que aporto esta corrida en concreto, para leer el log de Actions.
+        "nuevos_en_esta_corrida": int(sum(len(v) for v in nuevos.values())),
+        "cambios": cambios_del_dia(hoy.strftime("%Y-%m-%d")),
         "alertas": len(alertas),
     }
     with open(os.path.join(DIR_DATOS, "estado.json"), "w", encoding="utf-8") as fh:
         json.dump(estado, fh, ensure_ascii=False, indent=2)
 
-    ruta_tablero = exportar_tablero(hoy, resultados, cambios_totales,
-                                    alertas, cfg, resumen_corrida=estado)
+    ruta_tablero = exportar_tablero(hoy, resultados, alertas, cfg,
+                                    resumen_corrida=estado)
 
     print("\nListo.")
     print(f"  reporte : {ruta_reporte}")

@@ -63,6 +63,10 @@
   tbody tr:hover{background:rgba(127,127,127,.05)}
   td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
   .menor{font-size:11.5px;color:var(--suave);margin-top:3px;line-height:1.35}
+  /* El numero de referencia se copia y se pega en el buscador de SECOP: va en
+     monoespaciada y algo mas oscuro que el id interno, que casi nadie usa. */
+  .menor.ref{font-family:ui-monospace,Consolas,monospace;color:var(--texto);
+             overflow-wrap:anywhere}
   /* El objeto se muestra completo: sin truncar, con letra menor */
   td.objeto{min-width:330px;max-width:520px;font-size:12px;line-height:1.45;white-space:pre-wrap;
             overflow-wrap:anywhere}

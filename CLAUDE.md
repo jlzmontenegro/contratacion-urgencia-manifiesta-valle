@@ -19,8 +19,12 @@ datos/tablero.json     lo que la página carga
 datos/*.csv            estado y trazas; los mantiene GitHub Actions
 ```
 
-**GitHub Actions corre el colector a diario a las 8:30 (Colombia)**, audita y publica.
-`publicar.bat` sube **solo código**; los datos son de Actions.
+**GitHub Actions corre el colector cada 12 horas, 8:30 y 20:30 (Colombia)**, audita y
+publica. El runner lleva `TZ: America/Bogota`: sin eso la corrida de la noche se archivaba
+con la fecha del dia siguiente y el sello de la pagina salia cinco horas adelantado.
+`publicar.bat` sube **solo código**; los datos son de Actions. Los flujos de
+`.github/workflows/` también se editan en esta carpeta y `publicar.bat` los copia: dentro de
+`publicar\` no sobreviven, porque ese script hace `git reset --hard` antes de copiar.
 
 ## Reglas que no se rompen
 
@@ -38,6 +42,12 @@ salen del padrón, no de los registros embebidos: en el archivo viaja una parte.
 detalle es parcial, la página lo dice.
 
 **Ningún NIT se inventa.** Todos los de `config.json` se obtuvieron consultando la API.
+
+**Lo del día se cuenta por día, no por corrida.** Hay dos recolecciones diarias y la portada
+titula *"Novedades del DD/MM"* listando por nombre todo lo detectado en la fecha. Los totales
+que la acompañan salen de `nuevos_del_dia()` y `cambios_del_dia()`, que leen las bitácoras
+acumulativas; si vinieran de una sola corrida, la frase diría "2 registros nuevos" encima de
+una lista de cinco.
 
 **Antes de publicar, `py -3 verificar_cobertura.py`.** En Actions es un candado: si falla, no
 se publica. Compara API-simple / API-amplio / CSV por entidad y fuente.
@@ -95,6 +105,14 @@ Orden dentro de "Por el sismo", de lo que exige acción a lo que da contexto:
 
 **Las tablas van de a 20 filas con paginación, ordenadas de mayor a menor valor.** Al cambiar
 un filtro se vuelve a la página 1.
+
+**Cada fila muestra el número de referencia** (`4182.010.32.1.653-2026`), que es por el que
+pregunta quien llega desde el buscador de SECOP; el id interno `CO1.REQ.*` no aparece en
+ninguna pantalla pública. El buscador de la página encuentra por los dos. Sale de
+`referencia_del_contrato` / `referencia_del_proceso` / `numero_de_proceso` según la fuente
+—no de `numero_de_contrato`, que viene lleno también en procesos solo convocados—. En
+procesos la fuente le agrega la fase entre paréntesis al republicar; se conserva tal cual
+porque el número va al principio.
 
 **Nada de jerga del clasificador en pantalla.** `Alta` se muestra como *"Del sismo"*, `Media`
 como *"Por revisar"*, `Otra urgencia` como *"Otra emergencia"* y `Contexto` como *"Ordinaria"*,

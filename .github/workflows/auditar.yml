@@ -4,8 +4,8 @@ name: Auditar cobertura
 # cobertura en cualquier momento sin tocar los datos.
 #
 # NO tiene horario propio. La auditoria de verdad va dentro de 'Actualizar
-# monitoreo', que la ejecuta a diario ANTES de publicar y aborta la publicacion
-# si encuentra huecos. Alli es donde funciona como candado; aqui solo como
+# monitoreo', que la ejecuta en cada corrida ANTES de publicar y aborta la
+# publicacion si encuentra huecos. Alli es candado; aqui solo consulta.
 # consulta. En la nube tarda ~2 minutos, no los ~20 que tarda en un equipo
 # domestico, y por eso puede correr todos los dias.
 on:

@@ -21,8 +21,9 @@ Actos administrativos que enmarcan el seguimiento:
 ## Uso diario
 
 **No hay que hacer nada.** Desde el 15 de agosto de 2026 el monitoreo se actualiza solo:
-GitHub Actions corre el colector todos los días a las **8:30 hora de Colombia**, verifica la
-cobertura y publica. No depende de que ningún computador esté encendido.
+GitHub Actions corre el colector **cada 12 horas, a las 8:30 y a las 20:30 hora de
+Colombia**, verifica la cobertura y publica. No depende de que ningún computador esté
+encendido.
 
 **Ver los datos:** <https://jlzmontenegro.github.io/contratacion-urgencia-manifiesta-valle/>
 La página muestra los datos de la última recolección y dice de cuándo son. **Ya no se abre
@@ -232,7 +233,7 @@ datos/
   estado.json                resumen de la última ejecución
   historial/                 snapshot comprimido de cada día
 reportes/
-  reporte_AAAA-MM-DD.md      reporte diario
+  reporte_AAAA-MM-DD_HHMM.md reporte de cada recolección (dos al día)
 REPORTE_ULTIMO.md            copia del reporte más reciente
 datos/tablero.json           lo que la pagina carga y pinta
 index.html                   estructura de la pagina (16 KB)

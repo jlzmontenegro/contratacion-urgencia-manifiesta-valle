@@ -6,8 +6,8 @@
 <title>Contratación urgencia manifiesta · Sismo 10 ago 2026</title>
 <!--
   La pagina solo pinta. Los datos llegan ya consultados y clasificados en
-  datos/tablero.json, que produce colector.py y GitHub Actions regenera todos
-  los dias a las 8:30. Por eso hay que abrirla servida por HTTP, no con doble
+  datos/tablero.json, que produce colector.py y GitHub Actions regenera cada
+  12 horas (8:30 y 20:30 de Colombia). Por eso hay que abrirla servida por HTTP, no con doble
   clic: el navegador bloquea la lectura de archivos locales desde file://.
 -->
 <link rel="stylesheet" href="tablero.css">
@@ -110,7 +110,7 @@
 
 <div class="titulo-bloque">Resultados</div>
 <div class="filtros">
-  <input type="search" id="f-texto" placeholder="Buscar por objeto, entidad o contratista…">
+  <input type="search" id="f-texto" placeholder="Buscar por objeto, entidad, contratista o número de proceso…">
   <select id="f-grupo">
     <option value="territorial">Cali y Valle del Cauca</option>
     <option value="Alcaldía de Cali">Solo Alcaldía de Cali</option>

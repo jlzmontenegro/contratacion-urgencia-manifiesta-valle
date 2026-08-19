@@ -3,8 +3,8 @@
 /* Tablero de contratación · sismo del 10 de agosto de 2026
  *
  * Este archivo SOLO pinta. Los datos llegan ya consultados y clasificados en
- * datos/tablero.json, que produce colector.py y GitHub Actions regenera todos
- * los días a las 8:30.
+ * datos/tablero.json, que produce colector.py y GitHub Actions regenera cada
+ * 12 horas, a las 8:30 y a las 20:30 de Colombia.
  *
  * Antes el navegador consultaba la API por su cuenta y volvía a clasificar
  * todo: eran 477 líneas que repetían en JavaScript lo que colector.py ya hacía
@@ -280,17 +280,18 @@ function pintarFuente(){
     return;
   }
 
-  /* El colector corre en la nube todos los días a las 8:30 y publica. Si la
-     recolección es de hace más de dos días, algo se atascó y hay que decirlo:
-     una cifra vieja presentada sin fecha se lee como si fuera de hoy. */
+  /* El colector corre en la nube cada 12 horas —8:30 y 20:30— y publica. El
+     umbral va atado a esa cadencia: si pasan 26 horas es que se saltaron dos
+     recolecciones seguidas, y hay que decirlo, porque una cifra vieja presentada
+     sin fecha se lee como si fuera de hoy. */
   const horas = PROCEDENCIA.horas;
-  const vieja = horas !== null && horas > 48;
+  const vieja = horas !== null && horas > 26;
   luz.className = "luz " + (vieja ? "vieja" : "viva");
   txt.innerHTML = `<b>Datos de la recolección del ${esc(LOCAL.generado)}</b>`
     + (horas !== null ? ` · hace ${horas < 24 ? horas + " horas" : Math.round(horas/24) + " días"}` : "")
-    + `. El colector consulta SECOP I y SECOP II todos los días a las 8:30 y verifica la `
-    + `cobertura antes de publicar.`
-    + (vieja ? ` <b>Hace más de dos días que no se actualiza:</b> revise la pestaña Actions `
+    + `. El colector consulta SECOP I y SECOP II dos veces al día, a las 8:30 y a las `
+    + `20:30, y verifica la cobertura antes de publicar.`
+    + (vieja ? ` <b>Se saltó al menos una recolección:</b> revise la pestaña Actions `
              + `del repositorio, es probable que una corrida haya fallado.` : "");
 }
 
@@ -681,7 +682,7 @@ function filtrados(){
     if (niv !== "rel" && niv !== "todos" && r.nivel !== niv) return false;
     if (tipo && r.tipo !== tipo) return false;
     if (ent && r.entidad !== ent) return false;
-    if (txt && !norm([r.objeto, r.entidad, r.proveedor, r.id].join(" ")).includes(txt)) return false;
+    if (txt && !norm([r.objeto, r.entidad, r.proveedor, r.id, r.referencia].join(" ")).includes(txt)) return false;
     return true;
   }).sort((a, b) => {
     const x = a[orden.col], y = b[orden.col];
@@ -759,6 +760,7 @@ function pintarTabla(){
       <td data-etq="Enlace">${r.url
         ? `<a class="boton boton-secop" href="${esc(r.url)}" target="_blank" rel="noopener">Ver en SECOP</a>`
         : '<span class="menor">sin enlace</span>'}
+        ${r.referencia ? `<div class="menor ref">${esc(r.referencia)}</div>` : ""}
         <div class="menor">${esc(r.id)}</div></td>
     </tr>`).join("");
 }
@@ -926,9 +928,13 @@ async function cargar(){
     CFG.inicio = LOCAL.fecha_inicio || CFG.inicio;
     CFG.evento = LOCAL.fecha_evento || CFG.evento;
 
+    /* El sello no lleva huso: el navegador lo lee como hora local. Si quien
+       consulta no está en Colombia, la resta puede salir negativa y el semáforo
+       anunciaba 'hace -5 horas'. Se acota en cero: la antigüedad nunca es menos
+       que nada. */
     const t = Date.parse(String(LOCAL.generado).replace(" ", "T"));
     PROCEDENCIA = { estado: "archivo", detalle: "",
-                    horas: isNaN(t) ? null : Math.round((Date.now() - t) / 3600000) };
+                    horas: isNaN(t) ? null : Math.max(0, Math.round((Date.now() - t) / 3600000)) };
 
     llenarTipos();
     pintarTitulos();
