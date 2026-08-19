@@ -154,6 +154,11 @@ sus registros y la conserva si alguno pasa el filtro. Al revés —filtrar y lue
 por el número del proceso devolvía la operación sin su contrato y la fila anunciaba "aún sin
 contratar" algo ya firmado.
 
+**Todo lo que se cuenta en pantalla se cuenta en operaciones.** El desglose por nivel de
+gobierno contaba registros y sumaba 169 frente a las 98 de la portada; y rotulaba sus 85
+procesos como "aún sin contrato" cuando 71 ya lo tenían. Al cambiar la unidad en un sitio hay
+que revisar los demás: la portada, las tarjetas y el conteo de la tabla deben cuadrar entre sí.
+
 **Nunca se suma precio base con valor firmado.** Son la misma plata en dos momentos. La operación
 muestra el valor firmado si hay contrato y el precio base si no, siempre rotulado.
 

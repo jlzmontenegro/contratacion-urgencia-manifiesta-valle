@@ -458,32 +458,42 @@ function pintarPadron(){
 }
 
 
-function pintarKpis(){
-  const rel = territoriales();
-  const contratos = rel.filter(r => r.tipo === "Contrato");
-  const procesos  = rel.filter(r => r.tipo === "Proceso");
-  const total = contratos.reduce((s, r) => s + r.valor, 0);
-  const porGrupo = g => rel.filter(r => r.grupo === g).length;
+/* Desglose por nivel de gobierno, EN OPERACIONES como el resto del tablero.
+   Antes contaba registros —sumaban 169 frente a las 98 de la portada— y ademas
+   repetia los totales con dos tarjetas, "84 contratos" y "85 procesos", que el
+   lector suma: es el mismo doble conteo que se quito de la portada, porque 71 de
+   esos 85 procesos YA tienen contrato. Una de ellas llegaba a rotular los 85 como
+   "aun sin contrato", contradiciendo a la portada en la misma pantalla.
 
-  const tarjetas = [
-    ["Contratos relacionados", contratos.length,
-     rel.filter(r => r.nivel === "Alta" && r.tipo === "Contrato").length + " con relación alta"],
-    ["Valor contratado", compacto(total), "Cali, Valle y UNGRD"],
-    ["Procesos de contratación", procesos.length, "publicados, aún sin contrato"],
-    ["Alcaldía de Cali", porGrupo("Alcaldía de Cali"), "nivel central"],
-    ["Descentralizadas de Cali", porGrupo("Descentralizadas de Cali"),
-     "EMCALI, Metro Cali, redes de salud…"],
-    ["Gobernación del Valle", porGrupo("Gobernación del Valle"), "nivel central"],
-    ["Descentralizadas de la Gobernación", porGrupo("Descentralizadas de la Gobernación"),
+   Los totales viven arriba; aqui solo va lo que el titulo promete. */
+function pintarKpis(){
+  const ops = operaciones(territoriales());
+
+  const GRUPOS = [
+    ["Alcaldía de Cali", "Alcaldía de Cali", "nivel central"],
+    ["Descentralizadas de Cali", "Descentralizadas de Cali", "EMCALI, Metro Cali, redes de salud…"],
+    ["Gobernación del Valle", "Gobernación del Valle", "nivel central"],
+    ["Descentralizadas de la Gobernación", "Descentralizadas de la Gobernación",
      "HUV, INDERVALLE, ACUAVALLE…"],
-    ["Municipios del Valle", porGrupo("Otras entidades del Valle"), "y sus entidades"],
-    ["UNGRD y FNGRD", porGrupo("UNGRD"), "respuesta nacional al desastre"]
+    ["Municipios del Valle", "Otras entidades del Valle", "y sus entidades"],
+    ["UNGRD y FNGRD", "UNGRD", "respuesta nacional al desastre"],
   ];
+
+  const tarjetas = GRUPOS.map(([rotulo, grupo, quienes]) => {
+    const suyas = ops.filter(o => o.grupo === grupo);
+    const firmado = suyas.filter(o => o.firmado).reduce((s, o) => s + o.valor, 0);
+    /* Un cero aqui no es un hueco del monitoreo: esas entidades se consultan en
+       cada corrida por NIT. Decirlo evita que se lea como dato faltante. */
+    const pie = suyas.length
+      ? `${compacto(firmado)} firmados · ${quienes}`
+      : `vigiladas, sin contratación del sismo · ${quienes}`;
+    return [rotulo, suyas.length, pie];
+  });
+
   document.getElementById("kpis").innerHTML = tarjetas.map(([e, v, p]) =>
-    `<div class="kpi${(v === 0 || v === "$ 0") ? " cero" : ""}">
+    `<div class="kpi${v === 0 ? " cero" : ""}">
        <div class="etq">${esc(e)}</div><div class="val">${esc(v)}</div><div class="pie">${esc(p)}</div>
      </div>`).join("");
-
 }
 
 function barras(destino, pares, formato){
