@@ -113,6 +113,10 @@ auditoría fallida pasa por buena.
   visibles bajo su propio filtro.
 - **El ruido del nivel Media se tolera**: prefiere que sobre por revisar. No proponer volver
   a recortarlo salvo que lo pida.
+- **El objeto se muestra completo en la tabla, sin truncar.** Se recortó a tres líneas durante
+  el rediseño del 19-ago-2026 para ganar densidad y el usuario lo revirtió: es el texto por el
+  que se juzga si una contratación tiene que ver con el sismo, y recortarlo obliga a abrir SECOP
+  para saberlo. Cuesta una pantalla más en móvil y está bien pagado.
 - Publicar solo cuando lo pida.
 
 ## Cómo está la página
