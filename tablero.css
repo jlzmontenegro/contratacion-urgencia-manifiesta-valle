@@ -335,12 +335,23 @@
   /* Cada control dice que hace. Antes eran doce desplegables sueltos y habia
      que abrirlos para adivinar de que trataban; ademas el mismo concepto salia
      tres veces con opciones distintas segun la pestana en que uno estuviera. */
-  .filtros{display:flex;flex-wrap:wrap;gap:14px}
+  /* align-items:stretch iguala la altura de las columnas para que las etiquetas
+     arranquen a la misma linea; sin esto el contenedor las centraba y las de ayuda
+     mas larga quedaban 8px mas abajo que las demas. */
+  .filtros{display:flex;flex-wrap:wrap;gap:14px;align-items:stretch}
   .filtro{display:flex;flex-direction:column;gap:3px;min-width:190px;flex:1 1 190px}
   .filtro label{font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
                 color:var(--suave)}
-  .filtro select,.filtro input{width:100%}
-  .filtro .ayuda{font-size:11px;color:var(--suave);line-height:1.35}
+
+  /* El control NO crece. La regla base le da flex:1 1 190px, pensada para cuando los
+     filtros iban sueltos en una fila: alli 190px era un ancho. Dentro de .filtro, que
+     es una columna, ese mismo valor pasa a ser una ALTURA y cada desplegable se
+     estiraba a 190px de alto. */
+  .filtro select,.filtro input{width:100%;flex:0 0 auto;max-width:none}
+
+  /* La ayuda al pie: asi todas quedan alineadas aunque unas ocupen dos lineas. */
+  .filtro .ayuda{font-size:11px;color:var(--suave);line-height:1.35;margin-top:auto;
+                 padding-top:3px}
 
   /* Un conteo parcial presentado como total es la mentira mas cara de este
      tablero. Cuando la vista incluye contratacion corriente, se dice. */
