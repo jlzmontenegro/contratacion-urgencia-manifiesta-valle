@@ -112,16 +112,34 @@ navegador y los conteos salen en cero.
 
 Para verlo de verdad: `py -3 -m http.server 8765` y abrir <http://127.0.0.1:8765/>.
 
-## Lo que quedó pendiente
+La portada **abre por lo que cambió**, no por el acumulado: cuánta contratación nueva del
+sismo apareció en la recolección del día, cuántos registros en total y cuántas
+modificaciones, con los relacionados listados por nombre y valor. El acumulado va después.
 
-**Que la portada abra por "¿qué cambió desde ayer?"** en vez del acumulado. Está propuesto y
-aceptado, no empezado. La razón de no haberlo hecho: se probó un día en que la cifra marcaba
-cero, porque hubo varias corridas seguidas. Conviene retomarlo mirando una corrida real con
-24 horas de diferencia, para ver si el enfoque sirve.
+## Estado al 19 de agosto de 2026
 
-**El usuario dejó puesta la palabra `DESASTRE`** aunque la evidencia mostró que solo atrapa
-"Gestión del Riesgo de **Desastres**", el nombre de la dependencia, y no contenido del sismo.
-Está informado. Si pide quitarla, es borrar una línea de `config.json`.
+El sistema **lleva cuatro días corriendo solo**: las corridas programadas del 16, 17, 18 y 19
+en verde, sin intervención. El candado diario funciona.
+
+Cifras del momento: **62 contratos y 85 procesos** relacionados en Cali y el Valle, por
+**$1.973 millones**, 23 por urgencia manifiesta.
+
+El primero grande de Cali llegó el **17 de agosto**: la UAESP publicó por urgencia manifiesta
+el cargue y transporte de residuos de construcción y demolición, **$3.759.980.000**, citando
+"los hechos acaecidos el 10 de agosto de 2026". Aún sin contratista.
+
+**Bugalagrande y Andalucía** contratan demolición de viviendas afectadas y materiales de
+reparación, nombrando el evento de forma explícita.
+
+## Falsos positivos conocidos, ya informados al usuario
+
+Decidió **tolerarlos** para no perder cobertura. No proponer quitarlos salvo que lo pida:
+
+- **`DESASTRE`** solo atrapa "Gestión del Riesgo de **Desastres**", el nombre de la
+  dependencia. Es borrar una línea de `config.json`.
+- **`MERCADO`** atrapa "ingeniero de **mercados**" de la Secretaría de Infraestructura. Se
+  corrige añadiendo la frase a `frases_neutralizadas`.
+- **`GESTION DEL RIESGO`** marca toda la nómina de esas secretarías.
 
 ## Al escribir código
 
