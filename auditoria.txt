@@ -1,11 +1,11 @@
-Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-08-20T00:00:00
+Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-08-21T00:00:00
 Entidades auditadas: 52  (2 centrales + 2 UNGRD/FNGRD + 11 descentralizadas de Cali + 18 de la Gobernacion + 19 otras del Valle)
 Comprobaciones: 52 entidades x 3 fuentes = 156, cada una por tres caminos independientes
 
 Fuente     Entidad                NIT         API simple  API amplio    CSV   Veredicto
 ------------------------------------------------------------------------------------
-contratos  Alcaldia de Cali       890399011          256         265    265   OK
-contratos  Gobernacion del Valle  890399029          116         367    367   OK
+contratos  Alcaldia de Cali       890399011          286         295    295   OK
+contratos  Gobernacion del Valle  890399029          125         466    466   OK
 contratos  UNGRD / FNGRD          900478966            1           1      1   OK
 contratos  UNGRD / FNGRD          900978341            0           0      0   OK
 contratos  Desc.Cali EMCALI - Empresas Munici890399003            0           0      0   OK
@@ -50,14 +50,14 @@ contratos  Otras     Personeria Municipal de 891900493           14          14 
 contratos  Otras     Personeria Municipal de 901159063            0           0      0   OK
 contratos  Otras     Personeria Municipal de 900085817            0           0      0   OK
 contratos  Otras     Personeria Municipal de 800100524            0           0      0   OK
-contratos  Otras     Concejo Municipal de Jam890399046           86          86     86   OK
+contratos  Otras     Concejo Municipal de Jam890399046           90          90     90   OK
 contratos  Otras     IE Alfonso Lopez Pumarej805000057            0           0      0   OK
 contratos  Otras     IE Paulo VI - Palmira815004730            0           0      0   OK
 contratos  Otras     IE Ginebra La Salle891380108            0           0      0   OK
 contratos  Otras     IE Zaragoza - Cartago800034326            0           0      0   OK
 contratos  Otras     IE Camilo Torres - Dagua805015675            0           0      0   OK
-procesos   Alcaldia de Cali       890399011          270         278    278   OK
-procesos   Gobernacion del Valle  890399029          140         569    569   OK
+procesos   Alcaldia de Cali       890399011          289         299    299   OK
+procesos   Gobernacion del Valle  890399029          149         668    668   OK
 procesos   UNGRD / FNGRD          900478966            0           0      0   OK
 procesos   UNGRD / FNGRD          900978341            0           0      0   OK
 procesos   Desc.Cali EMCALI - Empresas Munici890399003            6           6      6   OK
@@ -66,7 +66,7 @@ procesos   Desc.Cali Red de Salud de Ladera E805027289           37          37 
 procesos   Desc.Cali Red de Salud del Norte E805027287           10          10     10   OK
 procesos   Desc.Cali Red de Salud del Oriente805027337            0           0      0   OK
 procesos   Desc.Cali Red de Salud del Surorie805027338            1           1      1   OK
-procesos   Desc.Cali Fondo Especial de Vivien805013033            2           2      2   OK
+procesos   Desc.Cali Fondo Especial de Vivien805013033           15          15     15   OK
 procesos   Desc.Cali Instituto Popular de Cul900431928            0           0      0   OK
 procesos   Desc.Cali Personeria Distrital de 805003895            1           1      1   OK
 procesos   Desc.Cali Contraloria de Santiago 800217831            0           0      0   OK
@@ -87,7 +87,7 @@ procesos   Desc.Gob  Hospital Departamental M890399047            5           5 
 procesos   Desc.Gob  Hospital Departamental T891901158            0           0      0   OK
 procesos   Desc.Gob  Hospital Departamental S891900343            0           0      0   OK
 procesos   Desc.Gob  Hospital Departamental S891900441            2           2      2   OK
-procesos   Desc.Gob  Hospital Departamental C821003143            4           4      4   OK
+procesos   Desc.Gob  Hospital Departamental C821003143            9           9      9   OK
 procesos   Desc.Gob  Contraloria Departamenta800090735            0           0      0   OK
 procesos   Otras     Hospital del Rosario de 891380070            3           3      3   OK
 procesos   Otras     ESE Hospital San Jorge d890312380            0           0      0   OK
@@ -102,7 +102,7 @@ procesos   Otras     Personeria Municipal de 891900493           16          16 
 procesos   Otras     Personeria Municipal de 901159063            0           0      0   OK
 procesos   Otras     Personeria Municipal de 900085817            0           0      0   OK
 procesos   Otras     Personeria Municipal de 800100524            0           0      0   OK
-procesos   Otras     Concejo Municipal de Jam890399046           91          91     91   OK
+procesos   Otras     Concejo Municipal de Jam890399046          106         106    106   OK
 procesos   Otras     IE Alfonso Lopez Pumarej805000057            0           0      0   OK
 procesos   Otras     IE Paulo VI - Palmira815004730            0           0      0   OK
 procesos   Otras     IE Ginebra La Salle891380108            0           0      0   OK
