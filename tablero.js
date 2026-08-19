@@ -767,7 +767,7 @@ function pintarTabla(){
         <div class="refs">${refs}</div></td>
       <td class="num" data-etq="Valor">${esc(pesos(o.valor))}
         <div class="menor">${o.firmado ? "valor firmado" : "precio base"}</div>
-        ${o.duracion && !/^0/.test(o.duracion) ? `<div class="menor">${esc(o.duracion)}</div>` : ""}</td>
+        ${o.duracion && !o.duracion.startsWith("0 ") ? `<div class="menor">${esc(o.duracion)}</div>` : ""}</td>
       <td data-etq="Contratista">${o.proveedor
         ? esc(o.proveedor)
         : '<span class="menor">aún sin contratista</span>'}</td>
