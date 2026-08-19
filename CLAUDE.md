@@ -49,6 +49,12 @@ que la acompañan salen de `nuevos_del_dia()` y `cambios_del_dia()`, que leen la
 acumulativas; si vinieran de una sola corrida, la frase diría "2 registros nuevos" encima de
 una lista de cinco.
 
+**Código y datos van juntos si se toca el formato del JSON.** La página lee `operacion` de
+`tablero.json`; si se publica el código sin recolectar, el archivo viejo no trae la llave, cada
+registro se vuelve su propia operación y los duplicados reaparecen hasta la siguiente corrida.
+Publicar y **enseguida** lanzar *Run workflow*. GitHub Pages tarda unos minutos más en servir el
+JSON nuevo: hasta que lo haga se ve el efecto, y no es un fallo del código.
+
 **La auditoria que vale es la de Actions.** Ahi es un candado: corre el colector, audita lo que
 acaba de recolectar y si falla no publica. Compara API-simple / API-amplio / CSV por entidad y
 fuente.
@@ -109,7 +115,29 @@ Arriba, común a todas: una portada con resumen redactado automáticamente, cuat
 si pasan de 48 horas). Debajo, un desplegable *"¿Cómo se lee este tablero?"* con glosario.
 
 Orden dentro de "Por el sismo", de lo que exige acción a lo que da contexto:
-**alertas → cifras → resultados → gráficos → resto del país → SECOP I y UNGRD → modificaciones**.
+**alertas → cifras → tabla de operaciones → (plegados: filtros, detalle por nivel, gráficos) →
+resto del país → SECOP I y UNGRD → modificaciones**.
+
+**La tabla del sismo lista OPERACIONES, no registros.** Un proceso y el contrato que salió de él
+son el mismo hecho en dos momentos; la fuente los publica en datasets distintos y el tablero los
+mostraba dos veces, con el mismo valor. `emparejar_operaciones()` les pone la misma clave
+`operacion` y la página los junta en una fila. **La llave no es la obvia:** en contratos
+`proceso_de_compra` trae un `CO1.BDOS.*` que cruza contra `id_del_portafolio` de procesos, no
+contra `id_del_proceso`. El cruce obvio da **cero** coincidencias, fácil de confundir con "no hay
+relación". Enlaza el 77% de los contratos; el resto se muestra como operación suelta y la fila
+avisa "sin proceso publicado".
+
+**Se agrupa primero y se filtra después.** `operacionesFiltradas()` arma la operación con todos
+sus registros y la conserva si alguno pasa el filtro. Al revés —filtrar y luego agrupar— buscar
+por el número del proceso devolvía la operación sin su contrato y la fila anunciaba "aún sin
+contratar" algo ya firmado.
+
+**Nunca se suma precio base con valor firmado.** Son la misma plata en dos momentos. La operación
+muestra el valor firmado si hay contrato y el precio base si no, siempre rotulado.
+
+**Lo que no exige acción va plegado**: filtros, detalle por nivel de gobierno, gráficos y leyenda.
+Con el panel de filtros cerrado su título dice cuáles están activos: un tablero filtrado en
+silencio miente.
 
 **Las tablas van de a 20 filas con paginación, ordenadas de mayor a menor valor.** Al cambiar
 un filtro se vuelve a la página 1.
