@@ -49,8 +49,16 @@ que la acompañan salen de `nuevos_del_dia()` y `cambios_del_dia()`, que leen la
 acumulativas; si vinieran de una sola corrida, la frase diría "2 registros nuevos" encima de
 una lista de cinco.
 
-**Antes de publicar, `py -3 verificar_cobertura.py`.** En Actions es un candado: si falla, no
-se publica. Compara API-simple / API-amplio / CSV por entidad y fuente.
+**La auditoria que vale es la de Actions.** Ahi es un candado: corre el colector, audita lo que
+acaba de recolectar y si falla no publica. Compara API-simple / API-amplio / CSV por entidad y
+fuente.
+
+**Correrla en local antes de publicar ya no sirve** (decidido el 19-ago-2026). `publicar.bat`
+sube solo codigo, y `verificar_cobertura.py` compara la API contra los `datos/*.csv` de esta
+carpeta, que estan viejos porque los datos los mantiene Actions: marcaria como faltante todo lo
+publicado desde la ultima vez que alguien corrio el colector aqui. Ademas no importa
+`colector.py` a proposito, asi que tampoco prueba los cambios al colector. Para eso esta
+`py -3 colector.py --sin-red` sobre una copia de la carpeta.
 
 ## Trampas de la fuente, ya pagadas
 
