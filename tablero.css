@@ -56,7 +56,9 @@
   .tabla-envoltura{overflow-x:auto;background:var(--panel);border:1px solid var(--borde);
                    border-radius:10px;box-shadow:var(--sombra)}
   table{border-collapse:collapse;width:100%;font-size:12.5px}
-  #tabla{min-width:1180px}
+  /* Con diez columnas hacian falta 1180px y la tabla se arrastraba de lado en
+     cualquier portatil. Con seis cabe sin desplazamiento horizontal. */
+  #tabla{min-width:860px}
   th,td{padding:10px 11px;text-align:left;border-bottom:1px solid var(--borde);vertical-align:top}
   th{position:sticky;top:0;background:var(--panel);font-size:11.5px;color:var(--suave);
      text-transform:uppercase;letter-spacing:.03em;cursor:pointer;white-space:nowrap;z-index:2}
@@ -247,3 +249,60 @@
 .novedad ul{margin:11px 0 0;padding-left:18px;font-size:13.5px;line-height:1.6}
 .novedad li{margin-bottom:5px}
 .novedad .quieto{color:var(--suave)}
+
+  /* ---------------------------------------------------------------- *
+   * Vista por operacion                                              *
+   * ---------------------------------------------------------------- */
+  /* Una operacion es un proceso y su contrato: el mismo hecho en dos momentos.
+     El estado es lo primero que se mira, asi que va en su propia columna y con
+     color; el resto de la fila lo acompana. */
+  .est{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;
+       font-weight:600;letter-spacing:.02em;white-space:nowrap}
+  .est-firmada{background:rgba(34,139,84,.14);color:#1c7a49}
+  .est-abierta{background:rgba(58,120,200,.14);color:#2c62a8}
+  .col-est{white-space:nowrap;vertical-align:top}
+  .col-enl{white-space:nowrap;vertical-align:top}
+  .menor.aviso{color:#a8761b}
+
+  /* La columna que carga el contenido. El objeto se recorta a tres lineas: antes
+     iba completo y una sola fila podia ocupar media pantalla, que es justo lo que
+     hacia ilegible la tabla. El texto integro queda en el title. */
+  .col-que{min-width:320px;max-width:560px;vertical-align:top}
+  .col-que .ent{font-weight:600;font-size:12.5px;line-height:1.3}
+  .col-que .obj{font-size:12px;line-height:1.45;margin-top:3px;color:var(--texto);
+                display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;
+                overflow:hidden;overflow-wrap:anywhere}
+  .col-que .pie{margin-top:4px}
+
+  /* Los numeros de referencia: los dos, porque la entidad numera distinto el
+     proceso y el contrato y quien busca en SECOP puede llegar por cualquiera. */
+  .refs{margin-top:5px;display:flex;flex-wrap:wrap;gap:5px}
+  .refs .ref{font-family:ui-monospace,Consolas,monospace;font-size:11px;
+             background:var(--fondo);border:1px solid var(--borde);border-radius:4px;
+             padding:1px 5px;color:var(--suave);overflow-wrap:anywhere}
+
+  /* ---------------------------------------------------------------- *
+   * Desplegables: lo que no exige accion no ocupa pantalla           *
+   * ---------------------------------------------------------------- */
+  .plegable{border:1px solid var(--borde);border-radius:8px;background:var(--panel);
+            margin:14px 0;overflow:hidden}
+  .plegable > summary{cursor:pointer;padding:10px 14px;font-size:12px;font-weight:600;
+                      letter-spacing:.06em;text-transform:uppercase;color:var(--suave);
+                      user-select:none;display:flex;gap:8px;align-items:baseline;
+                      flex-wrap:wrap}
+  .plegable > summary:hover{color:var(--texto);background:var(--fondo)}
+  .plegable[open] > summary{border-bottom:1px solid var(--borde)}
+  .plegable > *:not(summary){padding:0 14px 14px}
+  .plegable .kpis,.plegable .rejilla,.plegable .filtros{padding-top:14px}
+
+  /* Lo que el filtro esta haciendo, visible con el panel cerrado: un tablero
+     filtrado en silencio miente. */
+  .resumen-filtros{font-weight:400;text-transform:none;letter-spacing:0;font-size:12px;
+                   color:var(--suave)}
+  .resumen-filtros.hay{color:var(--texto)}
+  .barra-conteo{margin:10px 0 6px}
+
+  @media (max-width:760px){
+    .col-que{min-width:0;max-width:none}
+    .col-que .obj{-webkit-line-clamp:4}
+  }

@@ -105,10 +105,11 @@
 <div class="titulo-bloque">Alertas</div>
 <div class="tarjeta" style="margin-bottom:18px"><div id="lista-alertas"></div></div>
 
-<div class="titulo-bloque" id="titulo-kpis">Detalle por nivel de gobierno · Cali y Valle del Cauca</div>
-<div class="kpis" id="kpis"></div>
+<details class="plegable"><summary id="titulo-kpis">Detalle por nivel de gobierno</summary>
+<div class="kpis" id="kpis"></div></details>
 
-<div class="titulo-bloque">Resultados</div>
+<details class="plegable filtros-plegables" id="caja-filtros">
+  <summary>Filtrar y buscar <span class="resumen-filtros" id="resumen-filtros"></span></summary>
 <div class="filtros">
   <input type="search" id="f-texto" placeholder="Buscar por objeto, entidad, contratista o número de proceso…">
   <select id="f-grupo">
@@ -137,9 +138,9 @@
     <option value="todos">Mostrar todo</option>
   </select>
   <select id="f-tipo">
-    <option value="">Contratos y procesos</option>
-    <option value="Contrato">Solo contratos</option>
-    <option value="Proceso">Solo procesos de contratación</option>
+    <option value="">Contratadas y abiertas</option>
+    <option value="firmada">Solo las ya contratadas</option>
+    <option value="abierta">Solo las que siguen abiertas</option>
   </select>
   <select id="f-novedad">
     <option value="">Aparecidos en cualquier fecha</option>
@@ -147,23 +148,21 @@
     <option value="30">Aparecidos en los últimos 30 días</option>
   </select>
   <select id="f-entidad"><option value="">Todas las entidades</option></select>
-  <span class="pill" id="conteo-filtro"></span>
 </div>
-<div class="leyenda" id="leyenda-niveles"></div>
+</details>
+<div class="barra-conteo"><span class="pill" id="conteo-filtro"></span></div>
+<details class="plegable"><summary>Qué significa cada etiqueta de relación</summary>
+<div class="leyenda" id="leyenda-niveles"></div></details>
 
 <div class="tabla-envoltura">
   <table id="tabla">
     <thead><tr>
-      <th data-col="fecha">Fecha</th>
-      <th data-col="tipo">Tipo</th>
-      <th data-col="entidad">Entidad</th>
-      <th data-col="objeto">Objeto</th>
+      <th data-col="fecha">Estado</th>
+      <th data-col="entidad">Qué y quién</th>
       <th data-col="valor" class="num">Valor</th>
-      <th data-col="fecha_inicio">Duración</th>
       <th data-col="proveedor">Contratista</th>
-      <th data-col="modalidad">Modalidad</th>
       <th data-col="nivel">Relación</th>
-      <th>Enlace</th>
+      <th>SECOP</th>
     </tr></thead>
     <tbody></tbody>
   </table>
@@ -171,7 +170,7 @@
 </div>
 <div class="paginacion" id="pag-tabla"></div>
 
-<div class="titulo-bloque">Distribución</div>
+<details class="plegable"><summary>Distribución por entidad, día y contratista</summary>
 <div class="rejilla">
   <div class="tarjeta">
     <h2>Valor contratado por entidad</h2>
@@ -186,8 +185,10 @@
     <div class="barra" id="graf-proveedores"></div>
   </div>
 </div>
+</details>
 
 <div class="titulo-bloque">Resto del país · solo como referencia</div>
+
 <div class="nacional" id="bloque-nacional"></div>
 
 <div class="titulo-bloque">Seguimiento específico · SECOP I y UNGRD</div>

@@ -1584,11 +1584,53 @@ def padron_entidades(resultados, cfg):
     return sorted(padron, key=lambda e: (-e["n"], e["entidad"]))
 
 
+def emparejar_operaciones(registros, resultados):
+    """Marca con la misma clave el proceso y el contrato que son un mismo hecho.
+
+    Un contrato y el proceso que lo convoco son la misma operacion en dos momentos,
+    y la fuente los publica en datasets distintos. Sin unirlos el tablero mostraba
+    el RCD de la UAESP dos veces, con el mismo valor, y la portada sumaba precio
+    base y valor firmado como si fueran plata distinta: 166 registros que en
+    realidad son 95 operaciones.
+
+    La llave no es evidente. En contratos, proceso_de_compra trae un CO1.BDOS.*;
+    en procesos, id_del_proceso es un CO1.REQ.* y el CO1.BDOS.* vive en
+    id_del_portafolio. Cruzar por el campo obvio (proceso_de_compra contra
+    id_del_proceso) da CERO coincidencias, que es facil confundir con "no hay
+    relacion" en vez de "cruce mal hecho".
+
+    La clave de operacion es el id del proceso cuando se conoce, y el propio id
+    del registro cuando no: asi cada registro pertenece siempre a una operacion,
+    tenga pareja o no, y la pagina puede agrupar sin casos especiales.
+    """
+    procesos = resultados.get("procesos", pd.DataFrame())
+    if procesos.empty or "id_del_portafolio" not in procesos.columns:
+        # SECOP I no participa: no separa proceso y contrato en dos datasets.
+        for r in registros:
+            r["operacion"] = r["id"]
+        return
+
+    portafolio = dict(zip(procesos["id_del_portafolio"], procesos["id_del_proceso"]))
+    portafolio.pop("", None)
+
+    contratos = resultados.get("contratos", pd.DataFrame())
+    de_contrato = {}
+    if not contratos.empty and "proceso_de_compra" in contratos.columns:
+        for id_contrato, compra in zip(contratos["id_contrato"], contratos["proceso_de_compra"]):
+            proceso = portafolio.get(compra)
+            if proceso:
+                de_contrato[id_contrato] = proceso
+
+    for r in registros:
+        r["operacion"] = de_contrato.get(r["id"], r["id"])
+
+
 def exportar_tablero(hoy, resultados, alertas, cfg, resumen_corrida=None):
     """Arma el paquete de datos que la pagina carga y pinta."""
     registros = []
     for nombre in fuentes_activas(cfg):
         registros.extend(aplanar(resultados.get(nombre, pd.DataFrame()), nombre))
+    emparejar_operaciones(registros, resultados)
 
     ruta_cambios = os.path.join(DIR_DATOS, "cambios.csv")
     historial_cambios = []

@@ -166,8 +166,11 @@ function pintarNovedad(){
 
   /* De lo aparecido hoy, lo que importa es lo que alude al sismo. Los otros
      cientos son contratación corriente del departamento. */
-  const nuevosRel = DATOS.filter(r =>
-    soloDia(NOVEDADES[r.id]) === dia && esRelevante(r) && cuenta(r));
+  /* Por operacion, no por registro: el contrato del RCD y su proceso aparecieron
+     el mismo dia y la lista los mostraba como dos hallazgos de $3.760 millones
+     cada uno. */
+  const nuevosRel = operaciones(DATOS.filter(r =>
+    soloDia(NOVEDADES[r.id]) === dia && esRelevante(r) && cuenta(r)));
 
   const cambios = (LOCAL.cambios || []).filter(x => soloDia(x.fecha_deteccion) === dia);
 
@@ -176,16 +179,16 @@ function pintarNovedad(){
     /* Contratos y procesos se cuentan aparte: un proceso solo tiene precio base
        y todavía puede no firmarse. Sumarlos en una sola cifra hacía que el total
        contradijera la lista que va justo debajo. */
-    const cs = nuevosRel.filter(r => r.tipo === "Contrato");
-    const ps = nuevosRel.filter(r => r.tipo === "Proceso");
-    const vc = cs.reduce((s, r) => s + r.valor, 0);
-    const vp = ps.reduce((s, r) => s + r.valor, 0);
+    const firmadas = nuevosRel.filter(o => o.firmado);
+    const abiertas = nuevosRel.filter(o => o.abierta);
+    const vf = firmadas.reduce((s, o) => s + o.valor, 0);
     const trozos = [];
-    if (cs.length) trozos.push(`<b>${frasePlural(cs.length, "contrato", "contratos")}</b>`
-      + (vc ? ` por ${esc(pesos(vc))}` : ""));
-    if (ps.length) trozos.push(`<b>${frasePlural(ps.length, "proceso", "procesos")}</b>`
-      + (vp ? ` con precio base de ${esc(pesos(vp))}` : ""));
-    partes.push(`Apareció contratación nueva relacionada con el sismo: ${trozos.join(" y ")}.`);
+    if (firmadas.length) trozos.push(`<b>${frasePlural(firmadas.length, "ya contratada", "ya contratadas")}</b>`
+      + (vf ? ` por ${esc(pesos(vf))}` : ""));
+    if (abiertas.length) trozos.push(`<b>${frasePlural(abiertas.length, "aún abierta", "aún abiertas")}</b>`);
+    partes.push(`Apareció contratación nueva relacionada con el sismo: `
+      + `<b>${frasePlural(nuevosRel.length, "operación", "operaciones")}</b>`
+      + (trozos.length ? `, ${trozos.join(" y ")}` : "") + `.`);
   } else {
     partes.push(`<span class="quieto">No apareció contratación nueva relacionada con el `
       + `sismo en Cali, el Valle ni la UNGRD.</span>`);
@@ -202,8 +205,10 @@ function pintarNovedad(){
   /* Los nuevos relacionados se listan con nombre: son pocos y son la noticia. */
   const lista = nuevosRel
     .slice().sort((a, b) => b.valor - a.valor).slice(0, 5)
-    .map(r => `<li><b>${esc(pesos(r.valor))}</b> · ${esc(r.entidad)}
-        <span class="menor">${esc(String(r.objeto).slice(0, 130))}</span></li>`).join("");
+    .map(o => `<li><b>${esc(pesos(o.valor))}</b>
+        <span class="menor">${o.firmado ? "firmado" : "precio base"}</span> · ${esc(o.entidad)}
+        <span class="menor">${esc(String(o.objeto).slice(0, 130))}</span>
+        ${o.proveedor ? `<span class="menor">Contratista: ${esc(o.proveedor)}</span>` : ""}</li>`).join("");
 
   el.className = "novedad" + (nuevosRel.length ? " hay" : "");
   el.innerHTML = `<div class="que">Novedades del ${esc(dia.split("-").reverse().join("/"))}`
@@ -212,11 +217,15 @@ function pintarNovedad(){
 }
 
 function pintarPortada(){
+  /* La portada cuenta operaciones. Antes decia "84 contratos y 85 procesos", dos
+     cifras que el lector suma sin saber que 71 de esos pares son el mismo hecho.
+     Una operacion o esta contratada o sigue abierta: nunca las dos. */
+  const ops = operaciones(territoriales());
   const rel = territoriales();
-  const contratos = rel.filter(r => r.tipo === "Contrato");
-  const procesos  = rel.filter(r => r.tipo === "Proceso");
-  const valor = contratos.reduce((s, r) => s + r.valor, 0);
-  const urgencia = rel.filter(r => norm(r.justificacion).includes("URGENCIA MANIFIESTA"));
+  const firmadas = ops.filter(o => o.firmado);
+  const abiertas = ops.filter(o => o.abierta);
+  const valor = firmadas.reduce((s, o) => s + o.valor, 0);
+  const urgencia = ops.filter(o => norm(o.justificacion).includes("URGENCIA MANIFIESTA"));
   const fuera = DATOS.filter(r => !cuenta(r) && esRelevante(r));
   const dias = diasDesdeEvento();
 
@@ -228,13 +237,13 @@ function pintarPortada(){
     partes.push(`En Cali y el Valle del Cauca <b>todavía no se ha identificado contratación `
               + `relacionada con la emergencia</b>.`);
   } else {
-    const trozos = [];
-    if (contratos.length) trozos.push(`<b>${frasePlural(contratos.length, "contrato", "contratos")}</b>`);
-    if (procesos.length)  trozos.push(`<b>${frasePlural(procesos.length, "proceso", "procesos")}</b>`);
-    const total = contratos.length + procesos.length;
-    partes.push(`En Cali y el Valle del Cauca se ${total === 1 ? "ha" : "han"} identificado `
-      + `${trozos.join(" y ")} ${total === 1 ? "relacionado" : "relacionados"} con la emergencia`
-      + (valor ? `, por <b>${esc(pesos(valor))}</b>.` : `.`));
+    partes.push(`En Cali y el Valle del Cauca se ${ops.length === 1 ? "ha" : "han"} identificado `
+      + `<b>${frasePlural(ops.length, "operación relacionada", "operaciones relacionadas")}</b> `
+      + `con la emergencia`
+      + (valor ? `: <b>${esc(pesos(valor))}</b> ya firmados en `
+                 + `${frasePlural(firmadas.length, "contrato", "contratos")}` : ``)
+      + (abiertas.length ? `, y ${frasePlural(abiertas.length, "proceso", "procesos")} `
+                           + `todavía sin adjudicar.` : `.`));
     if (urgencia.length){
       partes.push(`${urgencia.length === 1 ? "Uno se tramitó" : urgencia.length + " se tramitaron"}`
                 + ` por <b>urgencia manifiesta</b>, la figura que permite contratar sin `
@@ -249,10 +258,13 @@ function pintarPortada(){
 
   document.getElementById("titular").innerHTML = partes.join(" ");
 
+  /* Cuatro cifras que no se pisan: el total, la plata, lo que falta y la figura
+     excepcional. La plata es solo la firmada; el precio base de lo abierto no es
+     dinero comprometido. */
   const cifras = [
-    [contratos.length, "contratos relacionados<br>en Cali y el Valle"],
-    [compacto(valor), "valor de esos contratos"],
-    [procesos.length, "procesos abiertos<br>aún sin contrato"],
+    [ops.length, "operaciones relacionadas<br>en Cali y el Valle"],
+    [compacto(valor), "ya firmados<br>en contratos"],
+    [abiertas.length, "procesos abiertos<br>aún sin adjudicar"],
     [urgencia.length, "por urgencia manifiesta"]
   ];
   document.getElementById("cifras-portada").innerHTML = cifras.map(([n, t]) =>
@@ -288,7 +300,10 @@ function pintarFuente(){
   const vieja = horas !== null && horas > 26;
   luz.className = "luz " + (vieja ? "vieja" : "viva");
   txt.innerHTML = `<b>Datos de la recolección del ${esc(LOCAL.generado)}</b>`
-    + (horas !== null ? ` · hace ${horas < 24 ? horas + " horas" : Math.round(horas/24) + " días"}` : "")
+    + (horas === null ? ""
+        : horas < 1 ? " · recién recogidos"
+        : horas < 24 ? ` · hace ${frasePlural(horas, "hora", "horas")}`
+        : ` · hace ${frasePlural(Math.round(horas / 24), "día", "días")}`)
     + `. El colector consulta SECOP I y SECOP II dos veces al día, a las 8:30 y a las `
     + `20:30, y verifica la cobertura antes de publicar.`
     + (vieja ? ` <b>Se saltó al menos una recolección:</b> revise la pestaña Actions `
@@ -653,43 +668,111 @@ function pintarAlertas(){
     : '<div class="sub">Sin alertas en Cali y el Valle con los datos actuales.</div>';
 }
 
-function filtrados(){
-  const txt = norm(document.getElementById("f-texto").value.trim());
-  const grupo = document.getElementById("f-grupo").value;
-  const niv = document.getElementById("f-nivel").value;
-  const tipo = document.getElementById("f-tipo").value;
-  const nov = document.getElementById("f-novedad").value;
-  const ent = document.getElementById("f-entidad").value;
-  const plat = document.getElementById("f-plataforma").value;
+/* La prueba se hace por registro pero se aplica por operacion (ver
+   operacionesFiltradas): si se filtra antes de agrupar, una busqueda por el
+   numero del proceso devuelve la operacion sin su contrato y la fila anuncia
+   "aun sin contratar" algo que ya se firmo. */
+function filtraRegistro(r, ctx){
+  const { txt, grupo, niv, nov, ent, plat } = ctx;
 
-  return DATOS.filter(r => {
-    // La contratación ordinaria solo se muestra para la Alcaldía de Cali y la
-    // Gobernación del Valle, y solo cuando se pide expresamente en el filtro.
-    // La del resto de entidades se sigue descargando y guardando en los CSV
-    // — es lo que permite reclasificar si se ajustan las palabras clave — pero
-    // no se lista. Esto incluye a la UNGRD: se revisa entera, se muestra solo
-    // lo del sismo.
-    if (!listable(r)) return false;
-    if (r.nivel === "Contexto" && niv !== "Contexto") return false;
-    if (plat && r.plataforma !== plat) return false;
-    if (nov){
-      const d = diasDesde(NOVEDADES[r.id]);
-      if (d === null || d > Number(nov)) return false;
-    }
-    if (grupo === "territorial" && !cuenta(r)) return false;
-    if (grupo !== "territorial" && grupo !== "todos" && r.grupo !== grupo) return false;
-    if (niv === "rel" && !esRelevante(r)) return false;
-    if (niv !== "rel" && niv !== "todos" && r.nivel !== niv) return false;
-    if (tipo && r.tipo !== tipo) return false;
-    if (ent && r.entidad !== ent) return false;
-    if (txt && !norm([r.objeto, r.entidad, r.proveedor, r.id, r.referencia].join(" ")).includes(txt)) return false;
-    return true;
-  }).sort((a, b) => {
-    const x = a[orden.col], y = b[orden.col];
-    const cmp = (typeof x === "number" && typeof y === "number") ? x - y : String(x).localeCompare(String(y));
-    return orden.asc ? cmp : -cmp;
+  // La contratación ordinaria solo se muestra para la Alcaldía de Cali y la
+  // Gobernación del Valle, y solo cuando se pide expresamente en el filtro.
+  // La del resto de entidades se sigue descargando y guardando en los CSV
+  // — es lo que permite reclasificar si se ajustan las palabras clave — pero
+  // no se lista. Esto incluye a la UNGRD: se revisa entera, se muestra solo
+  // lo del sismo.
+  if (!listable(r)) return false;
+  if (r.nivel === "Contexto" && niv !== "Contexto") return false;
+  if (plat && r.plataforma !== plat) return false;
+  if (nov){
+    const d = diasDesde(NOVEDADES[r.id]);
+    if (d === null || d > Number(nov)) return false;
+  }
+  if (grupo === "territorial" && !cuenta(r)) return false;
+  if (grupo !== "territorial" && grupo !== "todos" && r.grupo !== grupo) return false;
+  if (niv === "rel" && !esRelevante(r)) return false;
+  if (niv !== "rel" && niv !== "todos" && r.nivel !== niv) return false;
+  if (ent && r.entidad !== ent) return false;
+  if (txt && !norm([r.objeto, r.entidad, r.proveedor, r.id, r.referencia].join(" ")).includes(txt)) return false;
+  return true;
+}
+
+function contextoFiltros(){
+  return {
+    txt: norm(document.getElementById("f-texto").value.trim()),
+    grupo: document.getElementById("f-grupo").value,
+    niv: document.getElementById("f-nivel").value,
+    nov: document.getElementById("f-novedad").value,
+    ent: document.getElementById("f-entidad").value,
+    plat: document.getElementById("f-plataforma").value,
+  };
+}
+
+/* Para la descarga: registros sueltos, que es lo que espera quien abre el CSV. */
+function filtrados(){
+  const ctx = contextoFiltros();
+  return DATOS.filter(r => filtraRegistro(r, ctx));
+}
+
+/* Para la pantalla: operaciones completas. Se arma la operacion con TODOS sus
+   registros y se conserva si alguno pasa el filtro, de modo que la fila siempre
+   muestra el estado real. */
+function operacionesFiltradas(){
+  const ctx = contextoFiltros();
+  return operaciones(DATOS.filter(listable))
+    .filter(o => [o.contrato, o.proceso].some(r => r && filtraRegistro(r, ctx)));
+}
+
+/* Un contrato y el proceso que lo convoco son el mismo hecho en dos momentos.
+   El colector los marca con la misma clave `operacion`; aqui se juntan en una
+   fila. Antes se listaban por separado y el lector veia el RCD de la UAESP dos
+   veces, con el mismo valor, como si fueran $7.500 millones. */
+function operaciones(filas){
+  const mapa = new Map();
+  filas.forEach(r => {
+    const k = r.operacion || r.id;
+    if (!mapa.has(k)) mapa.set(k, { clave: k, contrato: null, proceso: null });
+    const o = mapa.get(k);
+    /* Si la fuente publicara dos contratos para una misma operacion, manda el de
+       mayor valor: es el vigente tras las adiciones. */
+    if (r.tipo === "Contrato"){ if (!o.contrato || r.valor > o.contrato.valor) o.contrato = r; }
+    else { if (!o.proceso || r.valor > o.proceso.valor) o.proceso = r; }
+  });
+
+  return [...mapa.values()].map(o => {
+    const c = o.contrato, pr = o.proceso;
+    const jefe = c || pr;              // el contrato manda cuando existe
+    const otro = c ? pr : null;
+    /* El valor mostrado es el firmado si ya hay contrato, y el precio base si no.
+       Nunca se suman: son la misma plata en dos momentos. */
+    const nov = [c, pr].filter(Boolean).map(r => NOVEDADES[r.id]).filter(Boolean).sort();
+    return {
+      clave: o.clave, contrato: c, proceso: pr, jefe: jefe, otro: otro,
+      entidad: jefe.entidad, objeto: jefe.objeto, grupo: jefe.grupo,
+      valor: jefe.valor,
+      firmado: !!c,
+      abierta: !c,
+      huerfana: !!c && !pr,           // contrato sin proceso publicado
+      proveedor: c ? c.proveedor : "",
+      fecha: jefe.fecha,
+      nivel: (c && c.nivel === "Alta") || (pr && pr.nivel === "Alta") ? "Alta" : jefe.nivel,
+      motivo: jefe.motivo,
+      plataforma: jefe.plataforma,
+      modalidad: jefe.modalidad,
+      justificacion: jefe.justificacion,
+      duracion: jefe.duracion,
+      novedad: nov.length ? nov[nov.length - 1] : null,
+    };
   });
 }
+
+const ordenarOperaciones = (lista) => lista.sort((a, b) => {
+  const col = orden.col;
+  const x = col === "valor" ? a.valor : String(a.jefe[col] ?? "");
+  const y = col === "valor" ? b.valor : String(b.jefe[col] ?? "");
+  const cmp = (typeof x === "number") ? x - y : String(x).localeCompare(String(y));
+  return orden.asc ? cmp : -cmp;
+});
 
 function celdaDuracion(r){
   const partes = [];
@@ -710,13 +793,41 @@ function pintarLeyenda(){
        <span>${esc(d.largo)}</span></div>`).join("");
 }
 
+/* El panel de filtros va cerrado para no llenar la pantalla, asi que el resumen
+   tiene que decir que se esta viendo: un tablero filtrado en silencio miente. */
+function pintarResumenFiltros(){
+  const el = document.getElementById("resumen-filtros");
+  if (!el) return;
+  const texto = id => {
+    const s = document.getElementById(id);
+    return s && s.selectedIndex > 0 ? s.options[s.selectedIndex].text : "";
+  };
+  const activos = ["f-grupo","f-plataforma","f-nivel","f-tipo","f-novedad","f-entidad"]
+    .map(texto).filter(Boolean);
+  const busq = document.getElementById("f-texto").value.trim();
+  if (busq) activos.unshift(`"${busq}"`);
+  el.textContent = activos.length ? "· " + activos.join(" · ") : "· sin filtros";
+  el.className = "resumen-filtros" + (activos.length ? " hay" : "");
+}
+
 function pintarTabla(){
   pintarLeyenda();
-  const filas = filtrados();
+  pintarResumenFiltros();
+  /* El filtro de estado se aplica sobre la operacion y no sobre el registro:
+     "aun abierta" significa que no existe contrato, y eso solo se sabe despues
+     de juntar el proceso con su contrato. */
+  const estado = document.getElementById("f-tipo").value;
+  let filas = ordenarOperaciones(operacionesFiltradas());
+  if (estado === "firmada") filas = filas.filter(o => o.firmado);
+  if (estado === "abierta") filas = filas.filter(o => o.abierta);
   const cuerpo = document.querySelector("#tabla tbody");
-  const valorFiltrado = filas.reduce((s, r) => s + (r.tipo === "Contrato" ? r.valor : 0), 0);
+  /* Solo se suma lo firmado. El precio base de un proceso abierto no es plata
+     comprometida y mezclarlo inflaba el total. */
+  const valorFiltrado = filas.reduce((s, o) => s + (o.firmado ? o.valor : 0), 0);
+  const abiertas = filas.filter(o => o.abierta).length;
   document.getElementById("conteo-filtro").textContent =
-    filas.length + " registros · " + compacto(valorFiltrado);
+    frasePlural(filas.length, "operación", "operaciones") + " · " + compacto(valorFiltrado)
+    + " firmado" + (abiertas ? " · " + abiertas + " aún sin contratar" : "");
 
   const vacio = document.getElementById("vacio");
   vacio.hidden = filas.length > 0;
@@ -736,33 +847,40 @@ function pintarTabla(){
   const t = trozo("tabla", filas);
   pintarPaginacion("pag-tabla", "tabla", t, filas.length, pintarTabla);
 
-  cuerpo.innerHTML = t.filas.map(r => `
+  cuerpo.innerHTML = t.filas.map(o => {
+    const est = o.abierta
+      ? `<span class="est est-abierta">Abierta</span>`
+      : `<span class="est est-firmada">Contratada</span>`;
+    /* Las dos referencias cuando existen: la entidad numera distinto el proceso
+       y el contrato (…010.32.1.653 contra …010.26.1.653) y quien busca en SECOP
+       puede llegar por cualquiera de las dos. */
+    const refs = [o.proceso, o.contrato].filter(Boolean)
+      .map(r => `<span class="ref" title="Número de ${r.tipo.toLowerCase()} en SECOP">${esc(r.referencia || r.id)}</span>`).join("");
+    const enlaces = [o.contrato, o.proceso].filter(r => r && r.url)
+      .map(r => `<a class="boton boton-secop" href="${esc(r.url)}" target="_blank" rel="noopener">${r.tipo === "Contrato" ? "Contrato" : "Proceso"}</a>`).join("");
+    return `
     <tr>
-      <td class="col-fecha" data-etq="Fecha">${esc(r.fecha)}
-        <div class="menor">${esc(r.etiqueta_fecha || "")}</div></td>
-      <td data-etq="Tipo"><span class="etiqueta t-${r.tipo}">${esc(r.tipo)}</span>
-        <div class="menor">${etiquetaPlataforma(r.plataforma)}</div>
-        ${NOVEDADES[r.id] ? `<div class="menor"><span class="nuevo">nuevo</span>
-          visto el ${esc(NOVEDADES[r.id])}</div>` : ""}</td>
-      <td data-etq="Entidad">${esc(r.entidad)}
-        <div class="menor">${esc(r.ciudad || r.departamento)} · ${esc(r.grupo)}</div></td>
-      <td class="objeto" data-etq="Objeto">${esc(r.objeto)}</td>
-      <td class="num" data-etq="Valor">${esc(pesos(r.valor))}
-        <div class="menor">${esc(r.tipo === "Proceso" ? "precio base" : "valor del contrato")}</div></td>
-      <td class="col-dur" data-etq="Duración">${celdaDuracion(r)}</td>
-      <td data-etq="Contratista">${esc(r.proveedor) || '<span class="menor">sin adjudicar</span>'}</td>
-      <td data-etq="Modalidad">${esc(r.modalidad)}
-        <div class="menor">${esc(r.justificacion)}</div>
-        <div class="menor">${esc(r.estado)}</div></td>
-      <td data-etq="Relación"><span class="etiqueta ${claseNivel(r.nivel)}"
-          title="${esc(nivelLargo(r.nivel))}">${esc(nivelCorto(r.nivel))}</span>
-        <div class="menor">${esc(r.motivo)}</div></td>
-      <td data-etq="Enlace">${r.url
-        ? `<a class="boton boton-secop" href="${esc(r.url)}" target="_blank" rel="noopener">Ver en SECOP</a>`
-        : '<span class="menor">sin enlace</span>'}
-        ${r.referencia ? `<div class="menor ref">${esc(r.referencia)}</div>` : ""}
-        <div class="menor">${esc(r.id)}</div></td>
-    </tr>`).join("");
+      <td class="col-est" data-etq="Estado">${est}
+        <div class="menor">${esc(o.fecha)}</div>
+        ${o.huerfana ? '<div class="menor aviso" title="El contrato se firmó pero la entidad no publicó el proceso que lo convocó">sin proceso publicado</div>' : ""}
+        ${o.novedad ? `<div class="menor"><span class="nuevo">nuevo</span></div>` : ""}</td>
+      <td class="col-que" data-etq="Qué y quién">
+        <div class="ent">${esc(o.entidad)}</div>
+        <div class="obj" title="${esc(o.objeto)}">${esc(o.objeto)}</div>
+        <div class="menor pie">${esc(o.grupo)} · ${esc(o.modalidad)}${o.justificacion ? " · " + esc(o.justificacion) : ""}</div>
+        <div class="refs">${refs}</div></td>
+      <td class="num" data-etq="Valor">${esc(pesos(o.valor))}
+        <div class="menor">${o.firmado ? "valor firmado" : "precio base"}</div>
+        ${o.duracion ? `<div class="menor">${esc(o.duracion)}</div>` : ""}</td>
+      <td data-etq="Contratista">${o.proveedor
+        ? esc(o.proveedor)
+        : '<span class="menor">aún sin contratista</span>'}</td>
+      <td data-etq="Relación"><span class="etiqueta ${claseNivel(o.nivel)}"
+          title="${esc(nivelLargo(o.nivel))}">${esc(nivelCorto(o.nivel))}</span>
+        <div class="menor">${esc(o.motivo)}</div></td>
+      <td class="col-enl" data-etq="Enlace">${enlaces || '<span class="menor">sin enlace</span>'}</td>
+    </tr>`;
+  }).join("");
 }
 
 /* ------------------------------------------------------------------ *
@@ -975,7 +1093,7 @@ function pintarTitulos(){
 
 function descargarCsv(){
   const filas = filtrados();
-  const cols = ["plataforma","tipo","id","fecha","etiqueta_fecha","entidad","nit","departamento",
+  const cols = ["plataforma","tipo","operacion","id","referencia","fecha","etiqueta_fecha","entidad","nit","departamento",
                 "ciudad","grupo","es_ungrd","objeto","modalidad","justificacion","valor",
                 "fecha_inicio","fecha_fin","duracion","proveedor","estado","ambito","nivel",
                 "motivo","url"];
@@ -1018,7 +1136,10 @@ document.querySelectorAll("#tabla th[data-col]").forEach(th =>
 function pintarSello(){
   if (!LOCAL) return;
   const c = LOCAL.corrida_anterior || {};
-  const nuevos = (Number(c.nuevos_contratos) || 0) + (Number(c.nuevos_procesos) || 0);
+  /* Las tres fuentes, como en la portada. Sumar solo dos hacia que el sello
+     dijera 800 y la portada 808 a diez centimetros de distancia. */
+  const nuevos = (Number(c.nuevos_contratos) || 0) + (Number(c.nuevos_procesos) || 0)
+                + (Number(c.nuevos_secop1) || 0);
   const partes = ["recolección: " + LOCAL.generado];
   if (nuevos) partes.push(nuevos + " registros nuevos");
   if (Number(c.cambios)) partes.push(c.cambios + " modificaciones");
@@ -1027,7 +1148,11 @@ function pintarSello(){
     const d = diasDesde(NOVEDADES[r.id]);
     return d !== null && d <= 7;
   }).length;
-  if (recientes) partes.push(recientes + " aparecidos en los últimos 7 días");
+  /* Solo si informa: mientras el sismo sea reciente, "aparecidos en los ultimos
+     7 dias" es el tablero entero y no dice nada. */
+  const listables = DATOS.filter(listable).length;
+  if (recientes && recientes < listables * 0.9)
+    partes.push(recientes + " aparecidos en los últimos 7 días");
   document.getElementById("sello-local").textContent = partes.join(" · ");
 }
 
