@@ -228,7 +228,6 @@
 
     /* En pantalla estrecha el objeto se recorta a dos lineas: el texto integro
        sigue en el emergente y en SECOP. */
-    .col-que .obj{-webkit-line-clamp:2}
     .col-que{min-width:0;max-width:none}
 
     #tabla tbody td[data-etq="Relación"]{padding-top:6px}
@@ -291,9 +290,11 @@
      hacia ilegible la tabla. El texto integro queda en el title. */
   .col-que{min-width:320px;max-width:560px;vertical-align:top}
   .col-que .ent{font-weight:600;font-size:12.5px;line-height:1.3}
+  /* El objeto se muestra COMPLETO, sin truncar: decision del usuario. Es el texto
+     por el que se juzga si una contratacion tiene que ver con el sismo, y recortarlo
+     obliga a abrir SECOP para saberlo. Se paga en alto de fila y esta bien pagado. */
   .col-que .obj{font-size:12px;line-height:1.45;margin-top:3px;color:var(--texto);
-                display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;
-                overflow:hidden;overflow-wrap:anywhere}
+                white-space:pre-wrap;overflow-wrap:anywhere}
   .col-que .pie{margin-top:4px}
 
   /* Los numeros de referencia: los dos, porque la entidad numera distinto el
@@ -326,7 +327,6 @@
 
   @media (max-width:760px){
     .col-que{min-width:0;max-width:none}
-    .col-que .obj{-webkit-line-clamp:4}
   }
 
   /* ---------------------------------------------------------------- *
