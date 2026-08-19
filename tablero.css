@@ -328,9 +328,13 @@
   /* Portada en pantalla estrecha: es lo primero que se ve y no puede dejar la tabla
      a casi cuatro pantallas de distancia. */
   @media (max-width:700px){
-    /* Las cuatro cifras en dos columnas en vez de cuatro filas. */
-    .cifras{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-    .cifras .kpi{padding:8px 10px}
+    /* Las cuatro cifras en dos columnas en vez de cuatro filas. Va con el mismo
+       selector que la regla base (.portada .cifras): con solo .cifras perdia por
+       especificidad y la portada seguia en una columna. La base pide columnas de
+       150px con 12 de separacion —312 en total— y el telefono da 305: se quedaba
+       a siete pixeles de caber en dos. */
+    .portada .cifras{grid-template-columns:1fr 1fr;gap:8px}
+    .portada .cifras .kpi{padding:8px 10px}
     /* El objeto de cada novedad, a dos lineas: el texto completo esta en la tabla. */
     #novedad li .menor{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
                        overflow:hidden}
