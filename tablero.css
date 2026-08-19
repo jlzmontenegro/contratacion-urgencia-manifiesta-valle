@@ -229,3 +229,17 @@
 .leyenda{display:flex;gap:16px;flex-wrap:wrap;margin:10px 0 0;font-size:12.5px;
          color:var(--suave);line-height:1.5}
 .leyenda div{display:flex;gap:7px;align-items:baseline;max-width:290px}
+
+/* ---- Qué cambió desde la recolección anterior ------------------------ */
+/* Va antes del acumulado porque esto es un monitoreo diario: la pregunta
+   de cada mañana es qué apareció, no cuánto hay en total. */
+.novedad{border-left:3px solid var(--acento);padding:2px 0 2px 15px;margin:0 0 18px}
+.novedad .que{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;
+              color:var(--suave);margin-bottom:6px}
+.novedad .frase{font-size:clamp(15px,2.3vw,17.5px);line-height:1.5;margin:0}
+.novedad .frase b{font-weight:700}
+.novedad.hay{border-left-color:var(--alta)}
+.novedad.hay .que{color:var(--alta)}
+.novedad ul{margin:11px 0 0;padding-left:18px;font-size:13.5px;line-height:1.6}
+.novedad li{margin-bottom:5px}
+.novedad .quieto{color:var(--suave)}

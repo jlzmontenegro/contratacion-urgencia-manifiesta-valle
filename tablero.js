@@ -145,6 +145,72 @@ function frasePlural(n, singular, plural){
   return n === 1 ? `1 ${singular}` : `${n} ${plural}`;
 }
 
+/* ------------------------------------------------------------------ *
+ * Qué cambió desde la recolección anterior                            *
+ * ------------------------------------------------------------------ */
+/* Esto va antes del acumulado. Un monitoreo diario se abre para saber qué
+   apareció, no cuánto hay en total: el acumulado apenas se mueve de un día a
+   otro y enterrar la novedad al final obliga a comparar de memoria. */
+
+const soloDia = s => String(s || "").slice(0, 10);
+
+function pintarNovedad(){
+  const el = document.getElementById("novedad");
+  if (!el || !LOCAL) return;
+
+  const dia = soloDia(LOCAL.generado);
+  const c = LOCAL.corrida_anterior || {};
+  const nuevosTotal = (Number(c.nuevos_contratos) || 0)
+                    + (Number(c.nuevos_procesos) || 0)
+                    + (Number(c.nuevos_secop1) || 0);
+
+  /* De lo aparecido hoy, lo que importa es lo que alude al sismo. Los otros
+     cientos son contratación corriente del departamento. */
+  const nuevosRel = DATOS.filter(r =>
+    soloDia(NOVEDADES[r.id]) === dia && esRelevante(r) && cuenta(r));
+
+  const cambios = (LOCAL.cambios || []).filter(x => soloDia(x.fecha_deteccion) === dia);
+
+  const partes = [];
+  if (nuevosRel.length){
+    /* Contratos y procesos se cuentan aparte: un proceso solo tiene precio base
+       y todavía puede no firmarse. Sumarlos en una sola cifra hacía que el total
+       contradijera la lista que va justo debajo. */
+    const cs = nuevosRel.filter(r => r.tipo === "Contrato");
+    const ps = nuevosRel.filter(r => r.tipo === "Proceso");
+    const vc = cs.reduce((s, r) => s + r.valor, 0);
+    const vp = ps.reduce((s, r) => s + r.valor, 0);
+    const trozos = [];
+    if (cs.length) trozos.push(`<b>${frasePlural(cs.length, "contrato", "contratos")}</b>`
+      + (vc ? ` por ${esc(pesos(vc))}` : ""));
+    if (ps.length) trozos.push(`<b>${frasePlural(ps.length, "proceso", "procesos")}</b>`
+      + (vp ? ` con precio base de ${esc(pesos(vp))}` : ""));
+    partes.push(`Apareció contratación nueva relacionada con el sismo: ${trozos.join(" y ")}.`);
+  } else {
+    partes.push(`<span class="quieto">No apareció contratación nueva relacionada con el `
+      + `sismo en Cali, el Valle ni la UNGRD.</span>`);
+  }
+  if (nuevosTotal){
+    partes.push(`En total se publicaron ${nuevosTotal} registros nuevos, casi todos `
+      + `contratación corriente.`);
+  }
+  if (cambios.length){
+    partes.push(`<b>${frasePlural(cambios.length, "modificación", "modificaciones")}</b> `
+      + `sobre registros ya conocidos.`);
+  }
+
+  /* Los nuevos relacionados se listan con nombre: son pocos y son la noticia. */
+  const lista = nuevosRel
+    .slice().sort((a, b) => b.valor - a.valor).slice(0, 5)
+    .map(r => `<li><b>${esc(pesos(r.valor))}</b> · ${esc(r.entidad)}
+        <span class="menor">${esc(String(r.objeto).slice(0, 130))}</span></li>`).join("");
+
+  el.className = "novedad" + (nuevosRel.length ? " hay" : "");
+  el.innerHTML = `<div class="que">Novedades del ${esc(dia.split("-").reverse().join("/"))}`
+    + `</div><p class="frase">${partes.join(" ")}</p>`
+    + (lista ? `<ul>${lista}</ul>` : "");
+}
+
 function pintarPortada(){
   const rel = territoriales();
   const contratos = rel.filter(r => r.tipo === "Contrato");
@@ -170,8 +236,9 @@ function pintarPortada(){
       + `${trozos.join(" y ")} ${total === 1 ? "relacionado" : "relacionados"} con la emergencia`
       + (valor ? `, por <b>${esc(pesos(valor))}</b>.` : `.`));
     if (urgencia.length){
-      partes.push(`${urgencia.length === 1 ? "Uno" : urgencia.length} se tramitó por `
-                + `<b>urgencia manifiesta</b>, la figura que permite contratar sin convocatoria.`);
+      partes.push(`${urgencia.length === 1 ? "Uno se tramitó" : urgencia.length + " se tramitaron"}`
+                + ` por <b>urgencia manifiesta</b>, la figura que permite contratar sin `
+                + `convocatoria previa.`);
     }
   }
 
@@ -193,6 +260,7 @@ function pintarPortada(){
        <div class="n">${esc(n)}</div><div class="t">${t}</div>
      </div>`).join("");
 
+  pintarNovedad();
   pintarFuente();
 }
 
