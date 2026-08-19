@@ -206,12 +206,22 @@ function pintarNovedad(){
   }
 
   /* Los nuevos relacionados se listan con nombre: son pocos y son la noticia. */
-  const lista = nuevosRel
-    .slice().sort((a, b) => b.valor - a.valor).slice(0, 5)
+  /* En el telefono la lista completa empujaba la tabla a cuatro pantallas de
+     distancia. Se muestran menos, pero se DICE cuantas quedan: una lista recortada
+     en silencio se lee como si fueran todas las novedades del dia. */
+  const tope = (window.innerWidth || 1024) < 700 ? 3 : 5;
+  const ordenadas = nuevosRel.slice().sort((a, b) => b.valor - a.valor);
+  const restantes = ordenadas.length - tope;
+  const lista = ordenadas
+    .slice(0, tope)
     .map(o => `<li><b>${esc(pesos(o.valor))}</b>
         <span class="menor">${o.firmado ? "firmado" : "precio base"}</span> · ${esc(o.entidad)}
         <span class="menor">${esc(String(o.objeto).slice(0, 130))}</span>
-        ${o.proveedor ? `<span class="menor">Contratista: ${esc(o.proveedor)}</span>` : ""}</li>`).join("");
+        ${o.proveedor ? `<span class="menor">Contratista: ${esc(o.proveedor)}</span>` : ""}</li>`).join("")
+    + (restantes > 0
+        ? `<li class="mas">y ${frasePlural(restantes, "operación más", "operaciones más")}`
+          + ` en la tabla, de menor valor.</li>`
+        : "");
 
   el.className = "novedad" + (nuevosRel.length ? " hay" : "");
   el.innerHTML = `<div class="que">Novedades del ${esc(dia.split("-").reverse().join("/"))}`
