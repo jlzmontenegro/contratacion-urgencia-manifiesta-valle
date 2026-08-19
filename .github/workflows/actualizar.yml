@@ -36,6 +36,11 @@ jobs:
       # ocho de la noche del 19. Ademas el sello que la pagina compara contra la
       # hora del navegador quedaba cinco horas adelantado.
       TZ: America/Bogota
+      # Sin esto, Python amortigua la salida por bloques al no escribir a una
+      # terminal y el registro de Actions llega VACIO si la corrida se corta por
+      # tiempo: el 19-ago-2026 una corrida se atasco 25 minutos y no dejo ni una
+      # linea con que saber en que fuente se quedo.
+      PYTHONUNBUFFERED: "1"
     # Una corrida sana tarda 3 minutos. Si datos.gov.co limita las peticiones,
     # el colector se queda reintentando; sin este tope la corrida podria seguir
     # hasta el limite de GitHub, que son 6 horas.
