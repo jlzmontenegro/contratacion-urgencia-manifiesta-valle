@@ -159,6 +159,13 @@ gobierno contaba registros y sumaba 169 frente a las 98 de la portada; y rotulab
 procesos como "aún sin contrato" cuando 71 ya lo tenían. Al cambiar la unidad en un sitio hay
 que revisar los demás: la portada, las tarjetas y el conteo de la tabla deben cuadrar entre sí.
 
+**En la serie por día, una operación cuenta una sola vez**, en su primera fecha (`primeraFecha`):
+la del contrato es la firma y la del proceso la publicación, así que la que se publicó el 14 y se
+firmó el 17 aparecía en los dos días. **Los días sin contratación salen en cero, no desaparecen**
+—antes se tomaban las últimas N fechas *con datos* y un día en blanco se comprimía en silencio—,
+y la serie termina en el último día con datos y no en hoy: SECOP publica con un día de rezago y
+el último tramo saldría siempre en cero por el rezago, no por falta de contratación.
+
 **Nunca se suma precio base con valor firmado.** Son la misma plata en dos momentos. La operación
 muestra el valor firmado si hay contrato y el precio base si no, siempre rotulado.
 

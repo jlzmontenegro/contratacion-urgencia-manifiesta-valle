@@ -517,10 +517,44 @@ function agrupar(filas, clave, sumarValor){
   return [...m.entries()].sort((a, b) => b[1] - a[1]);
 }
 
+/* Operaciones nuevas por dia, cada una contada UNA vez, en la fecha en que
+   aparecio. Antes se contaban registros: las barras sumaban 169 mientras la
+   pagina entera hablaba de 98 operaciones.
+
+   Los dias sin contratacion salen en CERO en vez de desaparecer. La version
+   anterior tomaba las ultimas N fechas *con datos*, asi que un dia en blanco se
+   comprimia en silencio; en este tablero "ese dia no se contrato nada" es
+   informacion, no ausencia de informacion.
+
+   La serie termina en el ultimo dia con datos y no en hoy: SECOP publica con
+   alrededor de un dia de rezago y el ultimo tramo saldria siempre en cero por el
+   rezago, no por falta de contratacion. */
+function operacionesPorDia(ops, dias){
+  const cuenta = new Map();
+  ops.forEach(o => {
+    if (o.primeraFecha) cuenta.set(o.primeraFecha, (cuenta.get(o.primeraFecha) || 0) + 1);
+  });
+  const conDatos = [...cuenta.keys()].sort();
+  if (!conDatos.length) return [];
+
+  const fin = new Date(conDatos[conDatos.length - 1] + "T00:00:00");
+  const inicioVentana = new Date(CFG.inicio + "T00:00:00");
+  const serie = [];
+  for (let i = dias - 1; i >= 0; i--){
+    const d = new Date(fin.getTime() - i * 86400000);
+    /* Nada antes del 10 de agosto: fuera de la ventana no hay nada que contar y
+       un cero ahi se leeria como "no se contrato", cuando es "no se vigila". */
+    if (d < inicioVentana) continue;
+    const clave = d.toISOString().slice(0, 10);
+    serie.push([clave, cuenta.get(clave) || 0]);
+  }
+  return serie;
+}
+
 function pintarGraficos(){
   const rel = territoriales();
   barras("graf-entidades", agrupar(rel.filter(r => r.tipo === "Contrato"), "entidad", true).slice(0, 8), compacto);
-  barras("graf-dias", agrupar(rel, "fecha", false).sort((a, b) => a[0] < b[0] ? -1 : 1).slice(-14), v => v);
+  barras("graf-dias", operacionesPorDia(operaciones(rel), 14), v => v);
   barras("graf-proveedores", agrupar(rel.filter(r => r.tipo === "Contrato" && r.proveedor), "proveedor", true).slice(0, 8), compacto);
 }
 
@@ -632,6 +666,11 @@ function operaciones(filas){
       huerfana: !!c && !pr,           // contrato sin proceso publicado
       proveedor: c ? c.proveedor : "",
       fecha: jefe.fecha,
+      /* La fecha del contrato es la firma y la del proceso la publicacion. Para
+         contar una operacion UNA sola vez en una serie temporal hace falta la
+         primera de las dos: si no, la que se publico el 14 y se firmo el 17
+         aparece en los dos dias y los dias dejan de repartir el total. */
+      primeraFecha: [c, pr].filter(Boolean).map(r => r.fecha).filter(Boolean).sort()[0] || "",
       nivel: (c && c.nivel === "Alta") || (pr && pr.nivel === "Alta") ? "Alta" : jefe.nivel,
       motivo: jefe.motivo,
       plataforma: jefe.plataforma,
