@@ -229,7 +229,10 @@ function pintarPortada(){
   const abiertas = ops.filter(o => o.abierta);
   const valor = firmadas.reduce((s, o) => s + o.valor, 0);
   const urgencia = ops.filter(o => norm(o.justificacion).includes("URGENCIA MANIFIESTA"));
-  const fuera = DATOS.filter(r => !cuenta(r) && esRelevante(r));
+  /* En operaciones, como el resto del parrafo. Contando registros decia "21"
+     junto a "98 operaciones" y el lector comparaba dos unidades distintas sin
+     saberlo: esos 21 registros son 11 operaciones. */
+  const fuera = operaciones(DATOS.filter(r => !cuenta(r) && esRelevante(r)));
   const dias = diasDesdeEvento();
 
   const partes = [];
@@ -255,8 +258,8 @@ function pintarPortada(){
   }
 
   if (fuera.length){
-    partes.push(`Fuera del Valle hay ${frasePlural(fuera.length, "registro relacionado",
-      "registros relacionados")}, que no suman en estas cifras: para verlos, elija `
+    partes.push(`Fuera del Valle hay ${frasePlural(fuera.length, "operación relacionada",
+      "operaciones relacionadas")}, que no suman en estas cifras: para verlas, elija `
       + `<em>Fuera del Valle</em> en el filtro de territorio.`);
   }
 
