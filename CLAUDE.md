@@ -32,6 +32,17 @@ con la fecha del dia siguiente y el sello de la pagina salia cinco horas adelant
 Se arregló un fallo en Python, se olvidó en JavaScript, y el sitio mostró ceros durante una
 caída de la fuente. Si algo hay que clasificar, va en `colector.py` y viaja en el JSON.
 
+**`llenarFiltroEntidades()` llena el desplegable de entidad, y el nombre es deliberado:** se
+llamaba `pintarEntidades` y en la unificación se borró creyendo que pintaba una de las secciones
+que se estaban eliminando. El filtro quedó con una sola opción. Lista las 119 entidades
+**alcanzables por algún filtro**, no las 341 del padrón: 27 no han contratado nada y elegirlas
+daría siempre tabla vacía.
+
+**No toda entidad del desplegable está vigilada.** 83 entradas del padrón son de otras regiones
+—Pasto, Honda, el Meta— y aparecen porque un barrido encontró contratación suya con vocabulario
+de urgencia. Estar en el padrón no basta para llamarlas vigiladas; la prueba es no ser del grupo
+`Fuera del Valle`.
+
 **Un cero tiene que decir por qué.** En este tablero un cero se lee como "no hay contratación
 del sismo", que es una afirmación fuerte. El mensaje de tabla vacía se redacta según el filtro
 activo: no da lo mismo "esa entidad está vigilada y no ha publicado nada" que "ese dato no

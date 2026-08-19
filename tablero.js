@@ -776,8 +776,17 @@ function pintarTabla(){
         ? `Ninguna operación coincide con "${busq}". Se busca en el objeto, la entidad, el `
           + "contratista y los números de proceso y de contrato."
       : ent
-        ? "Esa entidad no tiene operaciones que cumplan los demás filtros. Está vigilada: "
-          + "si no aparece, es que no ha publicado nada que encaje, no que no se la mire."
+        /* No todas las entidades del desplegable están vigiladas: 83 del padrón son de
+           otras regiones —Pasto, Honda, el Meta— y entraron porque un barrido encontró
+           contratación suya, no porque se las siga. La prueba no es estar en el padrón,
+           que también las incluye, sino no ser del grupo "Fuera del Valle". */
+        ? (!(PADRON.find(e => e.entidad === ent) || {}).grupo
+           || (PADRON.find(e => e.entidad === ent) || {}).grupo !== "Fuera del Valle"
+            ? "Esa entidad está vigilada y no tiene operaciones que cumplan los demás "
+              + "filtros: no ha publicado nada que encaje, no es que no se la mire."
+            : "Esa entidad no es de Cali ni del Valle. Aparece porque un barrido nacional "
+              + "encontró contratación suya que menciona una urgencia; para verla, cambie "
+              + "el filtro de relación a «Otra emergencia» o el de territorio.")
       : grupo === "UNGRD"
         ? "La UNGRD y el FNGRD no han publicado contratación en la ventana de seguimiento. "
           + "Se consultan en cada corrida por NIT: el cero es un hallazgo, no un vacío del "
@@ -863,6 +872,7 @@ function pintarCambios(){
    del filtro; el padron sigue siendo su propio bloque porque una entidad que no
    ha contratado nada no tiene ninguna operacion que mostrar en la tabla. */
 function pintarTodo(){
+  llenarFiltroEntidades();
   pintarPortada(); pintarKpis(); pintarGraficos();
   pintarAlertas(); pintarTabla(); pintarPadron(); pintarCambios(); pintarSello();
 }
@@ -922,6 +932,25 @@ async function cargar(){
 
 /* El desplegable de tipos se llena con lo que traiga el padrón: si mañana
    aparece una clase de entidad que hoy no existe, sale sola. */
+/* Llena el desplegable de entidad. El nombre dice "llenarFiltro" a proposito: se
+   llamaba pintarEntidades y en la unificacion del 19-ago-2026 se borro creyendo que
+   pintaba una de las secciones que se estaban eliminando. El filtro quedo con una
+   sola opcion, "Todas las entidades", y sin manera de elegir ninguna.
+
+   Se listan las entidades ALCANZABLES por algun filtro (listable), no solo las que
+   tienen contratacion relacionada: si el usuario pone el nivel en ordinaria, las
+   entidades de esa vista tienen que poder elegirse. Son 119; las 341 del padron no,
+   porque 27 no han contratado nada y elegirlas daria siempre una tabla vacia. */
+function llenarFiltroEntidades(){
+  const sel = document.getElementById("f-entidad");
+  if (!sel) return;
+  const previo = sel.value;
+  const ents = [...new Set(DATOS.filter(listable).map(r => r.entidad).filter(Boolean))]
+    .sort((a, b) => a.localeCompare(b, "es"));
+  sel.innerHTML = '<option value="">Todas las entidades</option>'
+    + ents.map(e => `<option${e === previo ? " selected" : ""}>${esc(e)}</option>`).join("");
+}
+
 function llenarTipos(){
   const sel = document.getElementById("fp-tipo");
   const previo = sel.value;
