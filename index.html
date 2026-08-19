@@ -10,7 +10,11 @@
   12 horas (8:30 y 20:30 de Colombia). Por eso hay que abrirla servida por HTTP, no con doble
   clic: el navegador bloquea la lectura de archivos locales desde file://.
 -->
-<link rel="stylesheet" href="tablero.css">
+<!-- El ?v= lo reescribe publicar.bat en cada publicacion. GitHub Pages sirve estos
+     archivos con max-age=600, asi que sin el sello un visitante puede recibir los datos
+     nuevos —que si se piden a prueba de cache— dibujados con el codigo viejo. Ese
+     desajuste es el que hace ver duplicados cuando cambia el formato del JSON. -->
+<link rel="stylesheet" href="tablero.css?v=202608191410">
 </head>
 <body>
 <div class="envoltura">
@@ -291,6 +295,6 @@
 </details><!-- /padron -->
 
 </div>
-<script src="tablero.js"></script>
+<script src="tablero.js?v=202608191410"></script>
 </body>
 </html>
