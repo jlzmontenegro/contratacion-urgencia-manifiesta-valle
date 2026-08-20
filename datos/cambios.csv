@@ -396,3 +396,44 @@
 2026-08-19 12:22:30,contratos,CO1.PCCNTR.9790441,"SECRETARIA DISTRITAL DE SEGURIDAD, CONVIVENCIA Y JUSTICIA",fecha_de_fin_del_contrato,2027-02-10T00:00:00.000,2027-02-12T00:00:00.000,Otra urgencia
 2026-08-19 12:22:30,contratos,CO1.PCCNTR.9791533,SERVICIO GEOLOGICO COLOMBIANO**,estado_contrato,Aprobado,En ejecución,Otra urgencia
 2026-08-19 12:22:30,contratos,CO1.PCCNTR.9814391,CENTRO NACIONAL DE MEMORIA  HISTORICA,estado_contrato,Aprobado,En ejecución,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10866772,Departamento Administrativo de Jurídica,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10865348,GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARIA DE LAS TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10822257,DEPARTAMENTO DEL VALLE DEL CAUCA - UNIDAD ADMINISTRATIVA ESPECIAL DE IMPUESTOS RENTAS Y GESTION TRIBUTARIA,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10822257,DEPARTAMENTO DEL VALLE DEL CAUCA - UNIDAD ADMINISTRATIVA ESPECIAL DE IMPUESTOS RENTAS Y GESTION TRIBUTARIA,fase,,Presentación de oferta,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10822257,DEPARTAMENTO DEL VALLE DEL CAUCA - UNIDAD ADMINISTRATIVA ESPECIAL DE IMPUESTOS RENTAS Y GESTION TRIBUTARIA,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10866762,Departamento Administrativo de Jurídica,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10866776,Departamento Administrativo de Jurídica,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10822060,DEPARTAMENTO DEL VALLE DEL CAUCA - UNIDAD ADMINISTRATIVA ESPECIAL DE IMPUESTOS RENTAS Y GESTION TRIBUTARIA,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10822060,DEPARTAMENTO DEL VALLE DEL CAUCA - UNIDAD ADMINISTRATIVA ESPECIAL DE IMPUESTOS RENTAS Y GESTION TRIBUTARIA,fase,,Presentación de oferta,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10822060,DEPARTAMENTO DEL VALLE DEL CAUCA - UNIDAD ADMINISTRATIVA ESPECIAL DE IMPUESTOS RENTAS Y GESTION TRIBUTARIA,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10867037,Departamento Administrativo de Jurídica,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10866955,Departamento Administrativo de Jurídica,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10856791,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10866766,Departamento Administrativo de Jurídica,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10866959,Departamento Administrativo de Jurídica,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10822325,DEPARTAMENTO DEL VALLE DEL CAUCA - UNIDAD ADMINISTRATIVA ESPECIAL DE IMPUESTOS RENTAS Y GESTION TRIBUTARIA,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10822325,DEPARTAMENTO DEL VALLE DEL CAUCA - UNIDAD ADMINISTRATIVA ESPECIAL DE IMPUESTOS RENTAS Y GESTION TRIBUTARIA,fase,,Presentación de oferta,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10822325,DEPARTAMENTO DEL VALLE DEL CAUCA - UNIDAD ADMINISTRATIVA ESPECIAL DE IMPUESTOS RENTAS Y GESTION TRIBUTARIA,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10824228,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10863369,ALCALDIA MUNICIPAL DE YOTOCO,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10863369,ALCALDIA MUNICIPAL DE YOTOCO,fecha_adjudicacion,,2026-08-18T00:00:00.000,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10863369,ALCALDIA MUNICIPAL DE YOTOCO,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10847516,ALCALDIA MUNICIPAL DE YOTOCO,valor_total_adjudicacion,0,1755469163,Media
+2026-08-19 21:33:02,procesos,CO1.REQ.10847516,ALCALDIA MUNICIPAL DE YOTOCO,adjudicado,No,Si,Media
+2026-08-19 21:33:02,procesos,CO1.REQ.10847516,ALCALDIA MUNICIPAL DE YOTOCO,nombre_del_proveedor,No Definido,EMPRESA DE SERVICIO PUBLICO DE ASEO DEL MUNICIPIO DE YOTOCO - VALLE DEL CAUCA S.A.S E.S.P,Media
+2026-08-19 21:33:02,procesos,CO1.REQ.10847516,ALCALDIA MUNICIPAL DE YOTOCO,fecha_adjudicacion,,2026-08-18T00:00:00.000,Media
+2026-08-19 21:33:02,procesos,CO1.REQ.10829456,ESAP TERRITORIAL VALLE DEL CAUCA,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10810696,PERSONERIA DISTRITAL DE SANTIAGO DE CALI,fecha_adjudicacion,,2026-08-18T00:00:00.000,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10852164,INSTITUCION EDUCATIVA SIXTO MARIA ROJAS,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10852164,INSTITUCION EDUCATIVA SIXTO MARIA ROJAS,valor_total_adjudicacion,0,5784200,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10852164,INSTITUCION EDUCATIVA SIXTO MARIA ROJAS,adjudicado,No,Si,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10852164,INSTITUCION EDUCATIVA SIXTO MARIA ROJAS,nombre_del_proveedor,No Definido,SIDMAG GROUP,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10857123,ALCALDIA MUNICIPAL DE YOTOCO,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10851564,INSTITUCION EDUCATIVA SIXTO MARIA ROJAS,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10851564,INSTITUCION EDUCATIVA SIXTO MARIA ROJAS,valor_total_adjudicacion,0,7184300,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10851564,INSTITUCION EDUCATIVA SIXTO MARIA ROJAS,adjudicado,No,Si,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10851564,INSTITUCION EDUCATIVA SIXTO MARIA ROJAS,nombre_del_proveedor,No Definido,SIDMAG GROUP,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10802963,ALCALDIA MUNICIPAL DE BUGA,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10846086,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10820688,DEPARTAMENTO DEL ATLANTICO**,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-08-19 21:33:02,procesos,CO1.REQ.10749253,FONDO ROTATORIO DE LA REGISTRADURIA,estado_del_procedimiento,Publicado,Abierto,Contexto
