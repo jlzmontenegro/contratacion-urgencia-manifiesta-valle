@@ -1,11 +1,9 @@
 {
   "_comentario": "Configuracion del monitor de contratacion por urgencia manifiesta - sismo 10 de agosto de 2026. Editable sin tocar el codigo.",
-
   "_nota_fechas": "Se traen contratos firmados y procesos publicados desde las 00:00 del 10 de agosto de 2026, dia del sismo y de los decretos.",
   "fecha_inicio": "2026-08-10",
   "fecha_evento": "2026-08-10",
   "meses_monitoreo": 6,
-
   "nits_prioritarios": [
     "890399029",
     "8903990291",
@@ -13,7 +11,6 @@
     "890399011",
     "8903990113"
   ],
-
   "_nota_grupos": "Los NIT de la Alcaldia comparten raiz 890399011 y los de la Gobernacion 890399029. Sirven para separar los indicadores por nivel de gobierno.",
   "nits_alcaldia_cali": [
     "890399011",
@@ -24,90 +21,236 @@
     "8903990291",
     "8903990295"
   ],
-
   "_nota_ungrd": "Unidad Nacional para la Gestion del Riesgo de Desastres. Es entidad nacional (Bogota), asi que no entra en los indicadores de Cali y el Valle: tiene su propio grupo y su propia seccion en el tablero. Se busca en SECOP II y en SECOP I. El NIT se escribe de formas distintas segun la plataforma y la entidad que carga el registro (900478966, 9004789666, 900478966-6, 900.478.966-6); el colector genera todas esas formas a partir de la raiz, por eso basta con listar la raiz de nueve digitos.",
   "_nota_fngrd": "900978341 es el Fondo Nacional de Gestion del Riesgo de Desastres (FNGRD), entidad distinta de la UNGRD pero que es el vehiculo financiero por el que la UNGRD ejecuta buena parte del gasto de emergencia: su ordenador del gasto es el director de la UNGRD. Contrata bajo su propio NIT, asi que vigilar solo 900478966 dejaria por fuera esa contratacion. Al 13-ago-2026 tenia 14 contratos historicos por 8.711 millones y ninguno en la ventana. Para dejar de seguirlo, basta con borrar esta linea de la lista.",
   "nits_ungrd": [
     "900478966",
     "900978341"
   ],
-
   "_nota_secop1": "SECOP I sigue recibiendo cargues (169.224 registros cargados en 2026). Es un dataset distinto, con una fila por proceso que ya trae el contrato adentro, no dos datasets separados como SECOP II. Se apaga poniendo secop1_activo en false.",
   "secop1_activo": true,
-
   "_nota_descentralizadas": "El Paragrafo Cuarto del Decreto 0964 obliga a las descentralizadas a declarar SU PROPIA urgencia manifiesta: contratan con NIT propio, no con el de su matriz. Estas listas cumplen dos funciones: (1) separarlas en el tablero por nivel de gobierno, y (2) barrerlas por NIT, que es la unica red que las atrapa cuando su campo departamento viene mal diligenciado. Verificado el 13-ago-2026 contra la API: hay entidades del Valle con departamento y ciudad en 'No Definido' que se escapaban por completo del barrido territorial; van marcadas con sin_departamento. Todos los NIT de estas listas se obtuvieron consultando la API, ninguno se supuso.",
-
   "descentralizadas_cali": [
-    { "nit": "890399003", "nombre": "EMCALI - Empresas Municipales de Cali" },
-    { "nit": "805013171", "nombre": "Metro Cali S.A." },
-    { "nit": "805027289", "nombre": "Red de Salud de Ladera ESE" },
-    { "nit": "805027287", "nombre": "Red de Salud del Norte ESE" },
-    { "nit": "805027337", "nombre": "Red de Salud del Oriente ESE" },
-    { "nit": "805027338", "nombre": "Red de Salud del Suroriente ESE" },
-    { "nit": "805013033", "nombre": "Fondo Especial de Vivienda de Santiago de Cali" },
-    { "nit": "900431928", "nombre": "Instituto Popular de Cultura - IPC" },
-    { "nit": "805003895", "nombre": "Personeria Distrital de Santiago de Cali" },
-    { "nit": "800217831", "nombre": "Contraloria de Santiago de Cali" },
-    { "nit": "800243065", "nombre": "IE Normal Superior Santiago de Cali", "sin_departamento": true }
+    {
+      "nit": "890399003",
+      "nombre": "EMCALI - Empresas Municipales de Cali"
+    },
+    {
+      "nit": "805013171",
+      "nombre": "Metro Cali S.A."
+    },
+    {
+      "nit": "805027289",
+      "nombre": "Red de Salud de Ladera ESE"
+    },
+    {
+      "nit": "805027287",
+      "nombre": "Red de Salud del Norte ESE"
+    },
+    {
+      "nit": "805027337",
+      "nombre": "Red de Salud del Oriente ESE"
+    },
+    {
+      "nit": "805027338",
+      "nombre": "Red de Salud del Suroriente ESE"
+    },
+    {
+      "nit": "805013033",
+      "nombre": "Fondo Especial de Vivienda de Santiago de Cali"
+    },
+    {
+      "nit": "900431928",
+      "nombre": "Instituto Popular de Cultura - IPC"
+    },
+    {
+      "nit": "805003895",
+      "nombre": "Personeria Distrital de Santiago de Cali"
+    },
+    {
+      "nit": "800217831",
+      "nombre": "Contraloria de Santiago de Cali"
+    },
+    {
+      "nit": "800243065",
+      "nombre": "IE Normal Superior Santiago de Cali",
+      "sin_departamento": true
+    }
   ],
-
   "descentralizadas_valle": [
-    { "nit": "805012896", "nombre": "INDERVALLE - Instituto del Deporte del Valle" },
-    { "nit": "890308051", "nombre": "INFIVALLE - Instituto Financiero para el Desarrollo del Valle" },
-    { "nit": "800086201", "nombre": "INCIVA" },
-    { "nit": "890399010", "nombre": "Universidad del Valle" },
-    { "nit": "890325989", "nombre": "Instituto Departamental de Bellas Artes" },
-    { "nit": "890399039", "nombre": "Biblioteca Departamental Jorge Garces Borrero" },
-    { "nit": "900333452", "nombre": "Vallecaucana de Aguas S.A. E.S.P." },
-    { "nit": "890399032", "nombre": "ACUAVALLE - Acueductos y Alcantarillados del Valle" },
-    { "nit": "890399027", "nombre": "Beneficencia del Valle del Cauca E.I.C.E." },
-    { "nit": "890399012", "nombre": "Industria de Licores del Valle" },
-    { "nit": "890303461", "nombre": "HUV - Hospital Universitario del Valle Evaristo Garcia ESE" },
-    { "nit": "890304155", "nombre": "Hospital Departamental Psiquiatrico Universitario del Valle" },
-    { "nit": "890399047", "nombre": "Hospital Departamental Mario Correa Rengifo ESE" },
-    { "nit": "891901158", "nombre": "Hospital Departamental Tomas Uribe Uribe ESE (Tulua)" },
-    { "nit": "891900343", "nombre": "Hospital Departamental San Antonio de Roldanillo", "sin_departamento": true },
-    { "nit": "891900441", "nombre": "Hospital Departamental San Rafael ESE de Zarzal", "sin_departamento": true },
-    { "nit": "821003143", "nombre": "Hospital Departamental Centenario ESE (Sevilla)", "sin_departamento": true },
-    { "nit": "800090735", "nombre": "Contraloria Departamental del Valle del Cauca" }
+    {
+      "nit": "805012896",
+      "nombre": "INDERVALLE - Instituto del Deporte del Valle"
+    },
+    {
+      "nit": "890308051",
+      "nombre": "INFIVALLE - Instituto Financiero para el Desarrollo del Valle"
+    },
+    {
+      "nit": "800086201",
+      "nombre": "INCIVA"
+    },
+    {
+      "nit": "890399010",
+      "nombre": "Universidad del Valle"
+    },
+    {
+      "nit": "890325989",
+      "nombre": "Instituto Departamental de Bellas Artes"
+    },
+    {
+      "nit": "890399039",
+      "nombre": "Biblioteca Departamental Jorge Garces Borrero"
+    },
+    {
+      "nit": "900333452",
+      "nombre": "Vallecaucana de Aguas S.A. E.S.P."
+    },
+    {
+      "nit": "890399032",
+      "nombre": "ACUAVALLE - Acueductos y Alcantarillados del Valle"
+    },
+    {
+      "nit": "890399027",
+      "nombre": "Beneficencia del Valle del Cauca E.I.C.E."
+    },
+    {
+      "nit": "890399012",
+      "nombre": "Industria de Licores del Valle"
+    },
+    {
+      "nit": "890303461",
+      "nombre": "HUV - Hospital Universitario del Valle Evaristo Garcia ESE"
+    },
+    {
+      "nit": "890304155",
+      "nombre": "Hospital Departamental Psiquiatrico Universitario del Valle"
+    },
+    {
+      "nit": "890399047",
+      "nombre": "Hospital Departamental Mario Correa Rengifo ESE"
+    },
+    {
+      "nit": "891901158",
+      "nombre": "Hospital Departamental Tomas Uribe Uribe ESE (Tulua)"
+    },
+    {
+      "nit": "891900343",
+      "nombre": "Hospital Departamental San Antonio de Roldanillo",
+      "sin_departamento": true
+    },
+    {
+      "nit": "891900441",
+      "nombre": "Hospital Departamental San Rafael ESE de Zarzal",
+      "sin_departamento": true
+    },
+    {
+      "nit": "821003143",
+      "nombre": "Hospital Departamental Centenario ESE (Sevilla)",
+      "sin_departamento": true
+    },
+    {
+      "nit": "800090735",
+      "nombre": "Contraloria Departamental del Valle del Cauca"
+    }
   ],
-
   "_nota_valle_sin_departamento": "Entidades del Valle que NO son descentralizadas de Cali ni de la Gobernacion (son municipales o de sus municipios) pero cuyo campo departamento dice 'No Definido', de modo que el barrido territorial no las ve. Se barren por NIT y quedan clasificadas como 'Otras entidades del Valle'. Todas verificadas el 13-ago-2026.",
   "otras_valle_sin_departamento": [
-    { "nit": "891380070", "nombre": "Hospital del Rosario de Ginebra" },
-    { "nit": "890312380", "nombre": "ESE Hospital San Jorge de Calima El Darien" },
-    { "nit": "891901296", "nombre": "Hospital Santa Lucia ESE de El Dovio" },
-    { "nit": "890309115", "nombre": "Hospital Local Yotoco" },
-    { "nit": "890305496", "nombre": "Hospital Local Jose Rufino Vivas (Dagua)" },
-    { "nit": "900401903", "nombre": "Empresa de Servicio Publico de Aseo de Yotoco" },
-    { "nit": "891900474", "nombre": "Empresas Publicas Municipales de Sevilla E.S.P." },
-    { "nit": "891900528", "nombre": "Instituto Municipal del Deporte y la Recreacion de Tulua" },
-    { "nit": "890399992", "nombre": "Instituto Distrital del Deporte de Buenaventura" },
-    { "nit": "891900493", "nombre": "Personeria Municipal de Cartago" },
-    { "nit": "901159063", "nombre": "Personeria Municipal de El Dovio" },
-    { "nit": "900085817", "nombre": "Personeria Municipal de La Cumbre" },
-    { "nit": "800100524", "nombre": "Personeria Municipal de La Victoria" },
-    { "nit": "890399046", "nombre": "Concejo Municipal de Jamundi" },
-    { "nit": "805000057", "nombre": "IE Alfonso Lopez Pumarejo - Jamundi" },
-    { "nit": "815004730", "nombre": "IE Paulo VI - Palmira" },
-    { "nit": "891380108", "nombre": "IE Ginebra La Salle" },
-    { "nit": "800034326", "nombre": "IE Zaragoza - Cartago" },
-    { "nit": "805015675", "nombre": "IE Camilo Torres - Dagua" }
+    {
+      "nit": "891380070",
+      "nombre": "Hospital del Rosario de Ginebra"
+    },
+    {
+      "nit": "890312380",
+      "nombre": "ESE Hospital San Jorge de Calima El Darien"
+    },
+    {
+      "nit": "891901296",
+      "nombre": "Hospital Santa Lucia ESE de El Dovio"
+    },
+    {
+      "nit": "890309115",
+      "nombre": "Hospital Local Yotoco"
+    },
+    {
+      "nit": "890305496",
+      "nombre": "Hospital Local Jose Rufino Vivas (Dagua)"
+    },
+    {
+      "nit": "900401903",
+      "nombre": "Empresa de Servicio Publico de Aseo de Yotoco"
+    },
+    {
+      "nit": "891900474",
+      "nombre": "Empresas Publicas Municipales de Sevilla E.S.P."
+    },
+    {
+      "nit": "891900528",
+      "nombre": "Instituto Municipal del Deporte y la Recreacion de Tulua"
+    },
+    {
+      "nit": "890399992",
+      "nombre": "Instituto Distrital del Deporte de Buenaventura"
+    },
+    {
+      "nit": "891900493",
+      "nombre": "Personeria Municipal de Cartago"
+    },
+    {
+      "nit": "901159063",
+      "nombre": "Personeria Municipal de El Dovio"
+    },
+    {
+      "nit": "900085817",
+      "nombre": "Personeria Municipal de La Cumbre"
+    },
+    {
+      "nit": "800100524",
+      "nombre": "Personeria Municipal de La Victoria"
+    },
+    {
+      "nit": "890399046",
+      "nombre": "Concejo Municipal de Jamundi"
+    },
+    {
+      "nit": "805000057",
+      "nombre": "IE Alfonso Lopez Pumarejo - Jamundi"
+    },
+    {
+      "nit": "815004730",
+      "nombre": "IE Paulo VI - Palmira"
+    },
+    {
+      "nit": "891380108",
+      "nombre": "IE Ginebra La Salle"
+    },
+    {
+      "nit": "800034326",
+      "nombre": "IE Zaragoza - Cartago"
+    },
+    {
+      "nit": "805015675",
+      "nombre": "IE Camilo Torres - Dagua"
+    }
   ],
-
   "departamentos_vigilados": [
     "Valle del Cauca"
   ],
-
   "palabras_clave_fuertes": [
     "SISMO",
+    "SISMIC",
     "TERREMOTO",
     "URGENCIA MANIFIESTA",
     "CALAMIDAD",
     "DAMNIFICAD",
     "MOVIMIENTO TELURICO"
   ],
-
+  "palabras_del_evento": [
+    "SISMO",
+    "SISMIC",
+    "TERREMOTO",
+    "MOVIMIENTO TELURICO"
+  ],
   "palabras_clave_secundarias": [
     "ALBERGUE",
     "ESCOMBRO",
@@ -131,7 +274,6 @@
     "ALOJAMIENTO TEMPORAL",
     "BUSQUEDA Y RESCATE",
     "SACO DE POLIPROPILENO",
-
     "AFECTAD",
     "MITIGACION",
     "SANEAMIENTO BASICO",
@@ -149,9 +291,7 @@
     "ASISTENCIA HUMANITARIA",
     "MERCADO"
   ],
-
   "_nota_secundarias_nuevas": "Las 16 de abajo se anadieron el 15-ago-2026 a partir de 1.521 contratos reales de urgencia manifiesta del pais, midiendo para cada palabra cuanto rescata frente a cuanto ruido mete en la contratacion ordinaria del Valle. AFECTAD era el caso mas notorio: es la palabra mas frecuente del vocabulario de emergencia (13% de los contratos), ya estaba en el archivo pero en palabras_emergencia, que solo califica coincidencias y no las detecta, de modo que una entidad del Valle contratando 'atencion a familias afectadas' caia en contratacion ordinaria. Cobertura del objeto: paso de 45% a 52%. Se descarto MAQUINARIA PESADA, que mete tanto ruido como senal. MERCADO entra porque 'mercados' es como se llaman los kits de alimentos, pero necesita las frases neutralizadas de abajo.",
-
   "_nota_neutralizadas": "Frases que se BORRAN del texto antes de buscar palabras clave. Distinto de frases_excluidas: aquellas solo anulan la coincidencia si el texto no trae ademas una palabra de emergencia; estas no cuentan nunca. 'Estudio de mercado' es contratacion rutinaria en cualquier entidad y no tiene nada que ver con entregar mercados a damnificados; sin esto, MERCADO seria inservible. Al borrarlas se conserva el resto del texto, asi que un contrato que diga 'estudio de mercado para la compra de mercados' sigue detectandose por el segundo uso.",
   "frases_neutralizadas": [
     "ESTUDIO DE MERCADO",
@@ -168,9 +308,7 @@
     "MERCADO LABORAL",
     "MERCADO INMOBILIARIO"
   ],
-
   "_nota_secundarias": "Se quitaron AGUA POTABLE y PUENTE: aparecen en contratacion rutinaria de cualquier municipio y generaban mas ruido que hallazgos. Las palabras se buscan como inicio de palabra, no como fragmento, para que EDAN no coincida dentro de 'puedan'.",
-
   "_nota_exclusiones": "Frases tecnicas rutinarias que contienen 'sismo' pero no aluden al evento. Neutralizan la coincidencia salvo que el texto traiga tambien una palabra de emergencia.",
   "frases_excluidas": [
     "SISMO RESISTENTE",
@@ -182,7 +320,6 @@
     "NORMA SISMICA",
     "ESTUDIO DE SUELOS"
   ],
-
   "palabras_emergencia": [
     "CALAMIDAD",
     "URGENCIA MANIFIESTA",
@@ -192,7 +329,6 @@
     "AFECTAD",
     "ATENCION HUMANITARIA"
   ],
-
   "_nota_emergencia_fuerte": "Subconjunto inequivoco. Se exige para dar por relacionado un contrato de una entidad de otra region cuyo objeto menciona a Cali o el Valle; 'emergencia' a secas aparece en cualquier servicio medico y no basta.",
   "palabras_emergencia_fuerte": [
     "CALAMIDAD",
@@ -201,7 +337,6 @@
     "DESASTRE",
     "ATENCION HUMANITARIA"
   ],
-
   "_nota_territorio_barrido": "Subconjunto que se usa para BARRER la API. Solo nombres inequivocos: la consulta SoQL compara por subcadena y no distingue palabras, de modo que '%CALI%' tambien encuentra CALIDAD, CALIFICACION y CALIBRACION. Con la lista completa, 1.060 de 1.323 registros traidos eran ruido. El clasificador si usa la lista larga de abajo, porque compara por inicio de palabra y no se deja enganar.",
   "nombres_territorio_barrido": [
     "VALLE DEL CAUCA",
@@ -209,7 +344,6 @@
     "BUENAVENTURA",
     "GUADALAJARA DE BUGA"
   ],
-
   "_nota_territorio": "Nombres del territorio afectado. Sirven para detectar contratos de entidades de otras regiones (UNGRD, ministerios) cuyo objeto esta destinado a Cali o al Valle. Esta lista la usa el CLASIFICADOR, que compara por inicio de palabra.",
   "nombres_territorio": [
     "VALLE DEL CAUCA",
@@ -219,7 +353,6 @@
     "GUADALAJARA DE BUGA",
     "SEVILLA"
   ],
-
   "decretos": [
     "4112.010.20.0964",
     "4112.010.20.0963",
@@ -227,10 +360,8 @@
     "0964 DE 2026",
     "0963 DE 2026"
   ],
-
   "_nota_token": "Opcional. Un app token de datos.gov.co evita el limite de peticiones anonimas. Se puede poner aqui o en la variable de entorno SOCRATA_APP_TOKEN.",
   "app_token": "",
-
   "_nota_alertas": "Umbrales para las alertas del reporte y del tablero.",
   "alerta_valor_contrato": 500000000,
   "alerta_contratos_mismo_proveedor": 3

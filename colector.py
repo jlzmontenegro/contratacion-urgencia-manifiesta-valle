@@ -618,6 +618,10 @@ def clasificar(df, nombre_fuente, cfg):
     secundarias = [normalizar(p) for p in cfg["palabras_clave_secundarias"]]
     decretos = [normalizar(d) for d in cfg["decretos"]]
     excluidas = [normalizar(p) for p in cfg.get("frases_excluidas", [])]
+    # Si la clave falta, se cae a la lista historica: dejarla vacia apagaria en
+    # silencio la deteccion del evento y todo pasaria a "otra urgencia".
+    nombres_evento = {normalizar(p) for p in cfg.get("palabras_del_evento",
+                      ["SISMO", "SISMIC", "TERREMOTO", "MOVIMIENTO TELURICO"])}
     emergencia = [normalizar(p) for p in cfg.get("palabras_emergencia", [])]
     emergencia_fuerte = [normalizar(p) for p in cfg.get("palabras_emergencia_fuerte", [])]
     territorio = [normalizar(p) for p in cfg.get("nombres_territorio", [])]
@@ -706,9 +710,13 @@ def clasificar(df, nombre_fuente, cfg):
         if golpes_sec:
             razones.append("objeto de emergencia: " + ", ".join(golpes_sec[:3]).lower())
 
-        # Palabras que apuntan al evento mismo, no a cualquier emergencia
-        del_evento = [p for p in golpes_fuertes
-                      if p in ("SISMO", "TERREMOTO", "MOVIMIENTO TELURICO")]
+        # Palabras que apuntan al evento mismo, no a cualquier emergencia. La lista
+        # vive en config.json: estuvo escrita aqui y anadir una palabra en la
+        # configuracion no hacia nada, porque para contar como "nombra el evento"
+        # hay que estar ademas en esta lista. Ojo con SISMIC: el patron se ancla al
+        # inicio de palabra, asi que SISMO no coincide con SISMICO y "evento sismico"
+        # -que es como lo escribe media Colombia- no se contaba como el sismo.
+        del_evento = [p for p in golpes_fuertes if p in nombres_evento]
         hay_emergencia = any(contiene(t, p) for p in emergencia)
         hay_emergencia_fuerte = any(contiene(t, p) for p in emergencia_fuerte)
         menciona_territorio = any(contiene(t, p) for p in territorio)

@@ -66,6 +66,18 @@ padrón. **`GRUPOS_ORDINARIA` está en `colector.py` y en `tablero.js`: si se de
 los registros llegan pero `listable()` los descarta y el filtro da cero sin explicación.**
 Así estuvo la UNGRD hasta el 19-ago-2026.
 
+**El patrón de palabra clave se ancla al INICIO de palabra** (`SISMO`), no a cualquier
+fragmento —si no, `EDAN` coincidiría dentro de "puEDAN"—. La consecuencia es que **`SISMO` no
+coincide con `SISMICO`**: "evento sísmico", que es como lo escribe media Colombia, no contaba
+como nombrar el sismo. Se añadió `SISMIC` el 20-ago-2026 y rescató 11 registros, ninguno falso.
+Al añadir una palabra, comprobar si necesita su propia raíz.
+
+**Las palabras que nombran el evento están en `palabras_del_evento` de `config.json`**, aparte de
+`palabras_clave_fuertes`. Una palabra tiene que estar en **las dos** para que cuente como "nombra
+el sismo": la primera la detecta, la segunda decide que apunta al evento y no a cualquier
+emergencia. Estuvo escrita a mano en `colector.py` y añadirla solo a la configuración no hacía
+nada, en silencio.
+
 **Ningún NIT se inventa.** Todos los de `config.json` se obtuvieron consultando la API.
 
 **Lo del día se cuenta por día, no por corrida.** Hay dos recolecciones diarias y la portada
