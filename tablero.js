@@ -487,6 +487,11 @@ function pintarKpis(){
      "HUV, INDERVALLE, ACUAVALLE…"],
     ["Municipios del Valle", "Otras entidades del Valle", "y sus entidades"],
     ["UNGRD y FNGRD", "UNGRD", "respuesta nacional al desastre"],
+    /* Entidades de otras regiones contratando PARA el Valle. Cuenta en los
+       indicadores desde siempre, pero estuvo en cero hasta el 20-ago-2026 y por eso
+       nadie noto que le faltaba tarjeta: el desglose sumaba 101 y la portada 102. */
+    ["Nacional para el Valle", "Nacional para el Valle",
+     "de otras regiones, contratando para el territorio afectado"],
   ];
 
   const tarjetas = GRUPOS.map(([rotulo, grupo, quienes]) => {
@@ -494,11 +499,22 @@ function pintarKpis(){
     const firmado = suyas.filter(o => o.firmado).reduce((s, o) => s + o.valor, 0);
     /* Un cero aqui no es un hueco del monitoreo: esas entidades se consultan en
        cada corrida por NIT. Decirlo evita que se lea como dato faltante. */
-    const pie = suyas.length
-      ? `${compacto(firmado)} firmados · ${quienes}`
-      : `vigiladas, sin contratación del sismo · ${quienes}`;
+    const pie = !suyas.length
+      ? `vigiladas, sin contratación del sismo · ${quienes}`
+      /* "$ 0 firmados" se lee como un error; lo que pasa es que todo sigue abierto. */
+      : firmado
+        ? `${compacto(firmado)} firmados · ${quienes}`
+        : `sin contratos firmados aún · ${quienes}`;
     return [rotulo, suyas.length, pie];
   });
+
+  /* Red de seguridad: si apareciera un grupo nuevo sin tarjeta, el desglose dejaria
+     de cuadrar con la portada y nadie se enteraria. Antes que callar, se muestra. */
+  const contadas = tarjetas.reduce((s, [, n]) => s + n, 0);
+  if (ops.length > contadas){
+    tarjetas.push(["Otros grupos", ops.length - contadas,
+                   "cuentan en el total y no tienen tarjeta propia"]);
+  }
 
   document.getElementById("kpis").innerHTML = tarjetas.map(([e, v, p]) =>
     `<div class="kpi${v === 0 ? " cero" : ""}">

@@ -186,6 +186,9 @@ contratar" algo ya firmado.
 gobierno contaba registros y sumaba 169 frente a las 98 de la portada; y rotulaba sus 85
 procesos como "aún sin contrato" cuando 71 ya lo tenían. Al cambiar la unidad en un sitio hay
 que revisar los demás: la portada, las tarjetas y el conteo de la tabla deben cuadrar entre sí.
+El desglose lleva una red: si aparece un grupo sin tarjeta, añade una de *Otros grupos* en vez
+de callar. Hizo falta el 20-ago-2026, cuando `Nacional para el Valle` dejó de estar en cero y
+el desglose sumó 101 frente a 102.
 
 **En la serie por día, una operación cuenta una sola vez**, en su primera fecha (`primeraFecha`):
 la del contrato es la firma y la del proceso la publicación, así que la que se publicó el 14 y se
