@@ -1,4 +1,4 @@
-Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-08-21T00:00:00
+Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-08-22T00:00:00
 Entidades auditadas: 52  (2 centrales + 2 UNGRD/FNGRD + 11 descentralizadas de Cali + 18 de la Gobernacion + 19 otras del Valle)
 Comprobaciones: 52 entidades x 3 fuentes = 156, cada una por tres caminos independientes
 
