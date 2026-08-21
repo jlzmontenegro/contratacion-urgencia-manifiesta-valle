@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600&family=Public+Sans:wght@300..700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="tablero.css?v=202608211237">
+<link rel="stylesheet" href="tablero.css?v=202608211240">
 </head>
 <body>
 <div class="envoltura">
@@ -106,7 +106,9 @@
 <details class="plegable" open><summary id="titulo-kpis">Detalle por nivel de gobierno</summary>
 <div class="kpis" id="kpis"></div></details>
 
-<details class="plegable filtros-plegables" id="caja-filtros">
+<!-- Abiertos de entrada, a peticion del usuario: prefiere ver de una que se puede
+     preguntar. El resumen del titulo sigue estando para cuando se pliegue. -->
+<details class="plegable filtros-plegables" id="caja-filtros" open>
   <summary>Filtrar y buscar <span class="resumen-filtros" id="resumen-filtros"></span></summary>
 <div class="filtros">
   <div class="filtro">
@@ -309,6 +311,6 @@
 </details><!-- /padron -->
 
 </div>
-<script src="tablero.js?v=202608211237"></script>
+<script src="tablero.js?v=202608211240"></script>
 </body>
 </html>

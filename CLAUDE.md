@@ -224,7 +224,9 @@ el último tramo saldría siempre en cero por el rezago, no por falta de contrat
 **Nunca se suma precio base con valor firmado.** Son la misma plata en dos momentos. La operación
 muestra el valor firmado si hay contrato y el precio base si no, siempre rotulado.
 
-**Lo que no exige acción va plegado**: filtros, detalle por nivel de gobierno, gráficos y leyenda.
+**Lo que no exige acción va plegado**: gráficos y leyenda. Los filtros y el detalle por nivel
+de gobierno se abren de entrada, a petición del usuario (21-ago-2026): prefiere ver de una qué
+se puede preguntar y cómo se reparte. Cuesta pantalla en móvil y está asumido.
 Con el panel de filtros cerrado su título dice cuáles están activos: un tablero filtrado en
 silencio miente.
 
