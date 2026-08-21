@@ -1,19 +1,50 @@
+  /* Paleta y tipografia compartidas con el tablero de contratacion logistica, para
+     que los dos sitios se lean como del mismo autor. Los nombres de variable no
+     cambian: es un cambio de piel, no de estructura. */
   :root{
-    --fondo:#f6f7f9; --panel:#ffffff; --borde:#e2e5ea; --texto:#1a1d21; --suave:#646b75;
-    --acento:#1f6feb; --alta:#c0392b; --media:#c77800; --base:#5b6470; --ok:#1e8e4e;
-    --contrato:#1f6feb; --proceso:#7d3cc4;
-    --sombra:0 1px 2px rgba(16,24,40,.06),0 1px 3px rgba(16,24,40,.1);
+    --fondo:#F5F7F6; --panel:#FFFFFF; --panel-2:#EDF1F0; --panel-3:#E3E9E7;
+    --texto:#131C1B; --texto-2:#33423F; --suave:#5A6A68;
+    --borde:#DCE3E1; --borde-fuerte:#C3CFCC;
+    --acento:#0E5C58; --acento-suave:#DCEBE8; --acento-tinta:#0A403D;
+    --media:#8E5407;  --media-suave:#F6EBD8;
+    --alta:#8F3324;   --alta-suave:#F6E3DF;
+    --ok:#0E5C58;     --ok-suave:#DCEBE8;
+    --base:#5A6A68;   --contrato:#0E5C58; --proceso:#8E5407;
+    --sombra:0 1px 2px rgba(19,28,27,.05),0 8px 24px -16px rgba(19,28,27,.28);
   }
+  /* Tres estados: eleccion explicita clara, oscura, y el sistema por defecto. */
   @media (prefers-color-scheme: dark){
-    :root{ --fondo:#0f1216; --panel:#171b21; --borde:#272d36; --texto:#e8eaed; --suave:#98a1ad;
-           --acento:#5b9dff; --alta:#ff6b5a; --media:#ffb020; --base:#8b949e; --ok:#3fb950;
-           --contrato:#5b9dff; --proceso:#b388f5;
-           --sombra:0 1px 3px rgba(0,0,0,.5); }
+    :root:not([data-theme="light"]){
+      --fondo:#0E1413; --panel:#161E1D; --panel-2:#1D2725; --panel-3:#24302D;
+      --texto:#E3EAE8; --texto-2:#C2CFCC; --suave:#8FA3A0;
+      --borde:#26312F; --borde-fuerte:#3A4A46;
+      --acento:#5AB9B1; --acento-suave:#17302E; --acento-tinta:#8FD6CF;
+      --media:#D69A4C;  --media-suave:#2C2417;
+      --alta:#D9806E;   --alta-suave:#2E1C18;
+      --ok:#5AB9B1;     --ok-suave:#17302E;
+      --base:#8FA3A0;   --contrato:#5AB9B1; --proceso:#D69A4C;
+      --sombra:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.7);
+    }
+  }
+  :root[data-theme="dark"]{
+    --fondo:#0E1413; --panel:#161E1D; --panel-2:#1D2725; --panel-3:#24302D;
+    --texto:#E3EAE8; --texto-2:#C2CFCC; --suave:#8FA3A0;
+    --borde:#26312F; --borde-fuerte:#3A4A46;
+    --acento:#5AB9B1; --acento-suave:#17302E; --acento-tinta:#8FD6CF;
+    --media:#D69A4C;  --media-suave:#2C2417;
+    --alta:#D9806E;   --alta-suave:#2E1C18;
+    --ok:#5AB9B1;     --ok-suave:#17302E;
+    --base:#8FA3A0;   --contrato:#5AB9B1; --proceso:#D69A4C;
+    --sombra:0 1px 2px rgba(0,0,0,.4),0 8px 24px -16px rgba(0,0,0,.7);
   }
   *{box-sizing:border-box}
   html{-webkit-text-size-adjust:100%}
   body{margin:0;background:var(--fondo);color:var(--texto);
-       font:15px/1.5 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+       font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+       font-size:15.5px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  h1,h2{font-family:"Zilla Slab",Georgia,serif;text-wrap:balance}
+  .mono,.ref,td.num,.kpi .val,.cifra .val{font-family:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+                                          font-variant-numeric:tabular-nums}
   .envoltura{max-width:1500px;margin:0 auto;padding:20px 16px 60px}
   header{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start;justify-content:space-between;margin-bottom:16px}
   h1{font-size:clamp(17px,2.4vw,21px);margin:0 0 4px;line-height:1.25}
@@ -386,3 +417,83 @@
   .aviso-parcial{border:1px solid #d9b168;background:rgba(217,177,104,.12);
                  border-radius:8px;padding:10px 12px;font-size:12.5px;line-height:1.5;
                  margin:8px 0 12px}
+
+  /* ================================================================== *
+   * Piel editorial                                                     *
+   * ------------------------------------------------------------------ *
+   * Mismo lenguaje visual que el tablero de contratacion logistica, para
+   * que los dos sitios se lean como del mismo autor: serif para titulos,
+   * monoespaciada para cifras y referencias, filetes finos en vez de
+   * sombras, esquinas de 3px. Va al final para ganar por orden a las
+   * reglas de arriba sin tener que reescribirlas.
+   * ================================================================== */
+
+  /* Cabecera con antetitulo, como la portada de un informe. */
+  header{border-bottom:2px solid var(--texto);padding-bottom:16px;align-items:flex-end}
+  h1{font-size:clamp(1.35rem,2.6vw,1.9rem);font-weight:600;letter-spacing:-.015em;line-height:1.1}
+  header .sub{font-size:12.5px;line-height:1.5;max-width:80ch}
+
+  /* Los rotulos de bloque hacen de antetitulo: monoespaciada, versalita. */
+  .titulo-bloque,.plegable > summary,.filtro label{
+    font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;letter-spacing:.15em;
+    text-transform:uppercase;font-weight:500}
+  .titulo-bloque{color:var(--acento)}
+
+  /* Controles rectos, con filete y sin sombra. */
+  button,.boton,input[type=search],select{border-radius:3px;box-shadow:none;
+    border:1px solid var(--borde-fuerte);background:var(--panel)}
+  button.principal{background:var(--acento);border-color:var(--acento);color:#fff}
+  button:hover,.boton:hover{border-color:var(--acento);color:var(--acento)}
+  button.principal:hover{color:#fff}
+
+  /* Las cuatro cifras: una banda con divisores, no cuatro tarjetas sueltas. */
+  .portada .cifras{background:var(--panel);border:1px solid var(--borde);border-radius:3px;
+                   box-shadow:var(--sombra);gap:0}
+  .portada .cifra{padding:18px 16px;border-right:1px solid var(--borde);background:none;
+                  border-radius:0;box-shadow:none}
+  .portada .cifra:last-child{border-right:0}
+  .cifra .val,.kpi .val{font-family:"Zilla Slab",Georgia,serif;font-weight:600;letter-spacing:-.02em;
+                        line-height:1;font-size:clamp(1.35rem,2.6vw,1.8rem)}
+  .cifra .etq,.kpi .etq{font-size:11.5px;color:var(--suave)}
+
+  .tarjeta,.kpi,.plegable,.tabla-envoltura,.novedad,.fuente-datos{border-radius:3px}
+  .kpi{border:1px solid var(--borde);background:var(--panel);box-shadow:var(--sombra)}
+
+  /* Etiquetas de relacion y estado: monoespaciada pequena, fondo suave, sin borde. */
+  .etiqueta,.est,.revisada,.nuevo,.plat,.chip{font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:10px;letter-spacing:.04em;text-transform:uppercase;border-radius:2px;padding:3px 7px;
+    font-weight:500;border:0}
+  .etiqueta.n-Alta{background:var(--alta-suave);color:var(--alta)}
+  .etiqueta.n-Media{background:var(--media-suave);color:var(--media)}
+  .etiqueta.n-Otra{background:var(--panel-3);color:var(--suave)}
+  .etiqueta.n-Contexto{background:var(--panel-2);color:var(--suave)}
+  .est-firmada{background:var(--acento-suave);color:var(--acento-tinta)}
+  .est-abierta{background:var(--panel-3);color:var(--texto-2)}
+  .revisada{background:var(--acento-suave);color:var(--acento-tinta);text-transform:none;
+            letter-spacing:.02em}
+
+  /* Tabla: cabecera fija en monoespaciada, filas separadas por filete. */
+  #tabla{font-size:13.5px}
+  #tabla thead th{background:var(--panel-2);font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:10.5px;letter-spacing:.1em;color:var(--texto-2);
+    border-bottom:1px solid var(--borde-fuerte)}
+  .tabla-envoltura{box-shadow:var(--sombra)}
+  .col-que .ent{font-family:"Public Sans",system-ui,sans-serif;font-weight:600}
+  .refs .ref{background:var(--panel-2);border-color:var(--borde);color:var(--texto-2);border-radius:2px}
+
+  /* Avisos: filete de color a la izquierda, como una nota al margen. */
+  .aviso-parcial{border:0;border-left:3px solid var(--media);background:var(--panel);
+                 border-radius:0 3px 3px 0;box-shadow:var(--sombra);color:var(--texto-2)}
+  .menor.aviso{color:var(--media)}
+  .novedad{border:1px solid var(--borde);border-left:3px solid var(--acento);background:var(--panel);
+           box-shadow:var(--sombra)}
+  .novedad .que{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;
+                letter-spacing:.15em;color:var(--acento)}
+
+  /* En pantalla estrecha la banda se parte en dos columnas: los divisores
+     verticales dejan de tener sentido y pasan a ser horizontales. */
+  @media (max-width:700px){
+    .portada .cifra{border-right:1px solid var(--borde);border-bottom:1px solid var(--borde)}
+    .portada .cifra:nth-child(2n){border-right:0}
+    .portada .cifra:nth-last-child(-n+2){border-bottom:0}
+  }
