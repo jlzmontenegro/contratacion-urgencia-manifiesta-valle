@@ -460,9 +460,12 @@
   .portada .cifra:last-child{border-right:0}
   /* En la portada el numero es .n y su rotulo .t; en el desglose por nivel de
      gobierno son .val y .etq. Dos marcados distintos para la misma idea. */
+  /* Cifras de titular en numeros PROPORCIONALES. Con tabular-nums el "1" de Zilla
+     Slab ocupa 19,7px midiendo 12,8, y "114" se leia como "1 14". La cifra tabular
+     sirve para alinear columnas, no para un numero suelto grande. */
   .cifra .n,.kpi .val{font-family:"Zilla Slab",Georgia,serif;font-weight:600;letter-spacing:-.02em;
                       line-height:1;font-size:clamp(1.35rem,2.6vw,1.8rem);
-                      font-variant-numeric:tabular-nums}
+                      font-variant-numeric:proportional-nums}
   .cifra .t,.kpi .etq{font-size:11.5px;color:var(--suave);line-height:1.35}
   .kpi .pie{font-size:11px;color:var(--suave)}
 
