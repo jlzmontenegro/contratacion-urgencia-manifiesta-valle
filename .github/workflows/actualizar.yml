@@ -12,6 +12,13 @@ on:
     # a esta cadencia eso es irrelevante.
     - cron: '30 13 * * *'   # 08:30 Colombia
     - cron: '30 1  * * *'   # 20:30 Colombia (del dia anterior en UTC)
+  # Revisar una operacion en github.com debe verse en la pagina enseguida, no en la
+  # corrida de dentro de doce horas: quien edita el archivo espera que su decision
+  # llegue a los demas. Solo dispara con ESE archivo, asi que los commits de datos
+  # que hace este mismo flujo no se retroalimentan.
+  push:
+    paths:
+      - "revisiones.csv"
   workflow_dispatch:        # permite lanzarlo a mano desde la pestana Actions
 
 # Sin esto el token no puede escribir en el repositorio y el push falla.

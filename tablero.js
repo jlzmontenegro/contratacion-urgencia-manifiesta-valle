@@ -704,6 +704,10 @@ function operaciones(filas){
       justificacion: jefe.justificacion,
       duracion: jefe.duracion,
       novedad: nov.length ? nov[nov.length - 1] : null,
+      revisada: !!jefe.revisada,
+      revisionNota: jefe.revision_nota || "",
+      revisionRevisor: jefe.revision_revisor || "",
+      revisionFecha: jefe.revision_fecha || "",
     };
   });
 }
@@ -734,7 +738,7 @@ function pintarResumenFiltros(){
   if (!el) return;
   /* Por valor y no por selectedIndex: cada control tiene un valor por defecto
      distinto y el indice no dice cual es. */
-  const PORDEFECTO = { "f-grupo": "territorial", "f-nivel": "rel", "f-plataforma": "",
+  const PORDEFECTO = { "f-grupo": "territorial", "f-nivel": "rel", "f-plataforma": "", "f-revision": "",
                        "f-tipo": "", "f-novedad": "", "f-entidad": "" };
   const texto = id => {
     const s = document.getElementById(id);
@@ -742,7 +746,7 @@ function pintarResumenFiltros(){
     const op = s.options && [...s.options].find(o => o.value === s.value);
     return op ? op.text : String(s.value);
   };
-  const activos = ["f-grupo","f-plataforma","f-nivel","f-tipo","f-novedad","f-entidad"]
+  const activos = ["f-grupo","f-plataforma","f-nivel","f-tipo","f-revision","f-novedad","f-entidad"]
     .map(texto).filter(Boolean);
   const busq = document.getElementById("f-texto").value.trim();
   if (busq) activos.unshift(`"${busq}"`);
@@ -778,6 +782,11 @@ function pintarTabla(){
   let filas = ordenarOperaciones(operacionesFiltradas());
   if (estado === "firmada") filas = filas.filter(o => o.firmado);
   if (estado === "abierta") filas = filas.filter(o => o.abierta);
+  /* "Por revisar" es la bandeja de trabajo: lo que el clasificador marco como
+     posible pero nadie ha confirmado ni descartado todavia. */
+  const rev = document.getElementById("f-revision").value;
+  if (rev === "pendiente") filas = filas.filter(o => o.nivel === "Media" && !o.revisada);
+  if (rev === "revisada") filas = filas.filter(o => o.revisada);
   const cuerpo = document.querySelector("#tabla tbody");
   /* Solo se suma lo firmado. El precio base de un proceso abierto no es plata
      comprometida y mezclarlo inflaba el total. */
@@ -860,6 +869,7 @@ function pintarTabla(){
         : '<span class="menor">aún sin contratista</span>'}</td>
       <td data-etq="Relación"><span class="etiqueta ${claseNivel(o.nivel)}"
           title="${esc(nivelLargo(o.nivel))}">${esc(nivelCorto(o.nivel))}</span>
+        ${o.revisada ? `<div class="revisada" title="Lo decidió una persona, no el clasificador automático">✓ revisado${o.revisionRevisor ? " · " + esc(o.revisionRevisor) : ""}${o.revisionFecha ? " · " + esc(o.revisionFecha) : ""}</div>` : ""}
         <div class="menor">${esc(o.motivo)}</div></td>
       <td class="col-enl" data-etq="SECOP">${enlaces || '<span class="menor">sin enlace</span>'}</td>
     </tr>`;
@@ -1013,7 +1023,7 @@ function descargarCsv(){
 
 document.getElementById("btn-refrescar").addEventListener("click", cargar);
 document.getElementById("btn-csv").addEventListener("click", descargarCsv);
-["f-texto","f-grupo","f-nivel","f-tipo","f-novedad","f-entidad","f-plataforma"].forEach(id =>
+["f-texto","f-grupo","f-nivel","f-tipo","f-revision","f-novedad","f-entidad","f-plataforma"].forEach(id =>
   document.getElementById(id).addEventListener("input",
     () => { paginas.tabla = 1; pintarTabla(); }));
 

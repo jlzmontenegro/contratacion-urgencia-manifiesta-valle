@@ -575,6 +575,88 @@ def descargar_fuente(nombre_fuente, cfg, hoy, verbose=True):
 # Clasificacion de relacion con el sismo
 # --------------------------------------------------------------------------
 
+DECISIONES = {"relacionado": "Alta", "descartado": "Contexto"}
+
+
+def leer_revisiones():
+    """Decisiones humanas sobre operaciones concretas: identificador -> fila.
+
+    El colector reclasifica todo desde cero en cada corrida, asi que una decision
+    guardada en la SALIDA duraria doce horas. Esto es una ENTRADA, como config.json.
+
+    El archivo se edita en github.com y NO lo copia publicar.bat: si lo copiara, la
+    copia local -vieja- pisaria lo que se haya revisado desde el navegador.
+    """
+    ruta = os.path.join(BASE, "revisiones.csv")
+    if not os.path.exists(ruta):
+        return {}
+    try:
+        d = pd.read_csv(ruta, dtype=str, keep_default_na=False, comment="#")
+    except Exception as e:
+        # Un archivo mal escrito no puede tumbar la corrida: se avisa y se sigue
+        # con el criterio del clasificador, que es como se comporta sin revisiones.
+        print(f"  ! revisiones.csv ilegible ({e}); se ignora")
+        return {}
+    if d.empty or "identificador" not in d.columns:
+        return {}
+
+    revisiones = {}
+    for _, r in d.iterrows():
+        ident = str(r.get("identificador", "")).strip()
+        dec = str(r.get("decision", "")).strip().lower()
+        if not ident:
+            continue
+        if dec not in DECISIONES:
+            print(f"  ! revision ignorada, decision no valida: {ident} -> {dec!r}")
+            continue
+        revisiones[ident] = {
+            "decision": dec,
+            "nivel": DECISIONES[dec],
+            "fecha": str(r.get("fecha", "")).strip(),
+            "revisor": str(r.get("revisor", "")).strip(),
+            "nota": str(r.get("nota", "")).strip(),
+        }
+    if revisiones:
+        print(f"  - revisiones humanas en el archivo: {len(revisiones)}")
+    return revisiones
+
+
+def aplicar_revisiones(df, nombre_fuente, revisiones):
+    """Sobrescribe el nivel del clasificador con la decision de una persona.
+
+    Nunca en silencio: se deja constancia en motivo_relacion y en las columnas
+    revisada / revision_nota, que viajan al tablero para que la pagina pueda decir
+    que ahi decidio alguien y por que.
+    """
+    f = FUENTES[nombre_fuente]
+    ids = df[f["id"]].astype(str)
+    marcada, notas, quien, cuando = [], [], [], []
+    niveles = list(df["nivel_relacion"])
+    motivos = list(df["motivo_relacion"])
+    for i, ident in enumerate(ids):
+        rev = revisiones.get(ident)
+        if not rev:
+            marcada.append(False); notas.append(""); quien.append(""); cuando.append("")
+            continue
+        niveles[i] = rev["nivel"]
+        etiqueta = "confirmada como del sismo" if rev["decision"] == "relacionado" \
+            else "descartada como ordinaria"
+        detalle = f"revisada a mano: {etiqueta}"
+        if rev["nota"]:
+            detalle += f" ({rev['nota']})"
+        motivos[i] = detalle + "; criterio automatico: " + motivos[i]
+        marcada.append(True); notas.append(rev["nota"])
+        quien.append(rev["revisor"]); cuando.append(rev["fecha"])
+    df = df.copy()
+    df["nivel_relacion"] = niveles
+    df["motivo_relacion"] = motivos
+    df["revisada"] = marcada
+    df["revision_nota"] = notas
+    df["revision_revisor"] = quien
+    df["revision_fecha"] = cuando
+    return df
+
+
 def clasificar(df, nombre_fuente, cfg):
     """Asigna nivel_relacion (Alta / Media / Contexto) y el motivo de esa asignacion."""
     if df.empty:
@@ -1403,6 +1485,11 @@ def aplanar(df, nombre_fuente):
             (df["nivel_relacion"] == "Contexto")
             & df["grupo"].isin(GRUPOS_ORDINARIA)
         )
+    if "revisada" in df.columns:
+        # Lo revisado a mano viaja SIEMPRE, aunque se haya descartado a ordinaria de
+        # un municipio, que normalmente no se embebe. Si no, la decision desaparece
+        # de la vista y no hay forma de comprobarla ni de deshacerla desde el tablero.
+        visible |= df["revisada"].fillna(False).astype(bool)
     d = df[visible].copy()
     if d.empty:
         return []
@@ -1453,6 +1540,12 @@ def aplanar(df, nombre_fuente):
             "nivel": r.get("nivel_relacion", ""),
             "motivo": r.get("motivo_relacion", ""),
             "barrido": r.get("origen_barrido", ""),
+            # Una decision humana no puede parecer una decision del clasificador:
+            # viaja marcada para que la pagina la muestre como lo que es.
+            "revisada": bool(r.get("revisada", False)),
+            "revision_nota": r.get("revision_nota", ""),
+            "revision_revisor": r.get("revision_revisor", ""),
+            "revision_fecha": r.get("revision_fecha", ""),
         })
     return salida
 
@@ -1638,6 +1731,23 @@ def emparejar_operaciones(registros, resultados):
     for r in registros:
         r["operacion"] = de_contrato.get(r["id"], r["id"])
 
+    # Basta revisar UNO de los dos ids: si se descarta el proceso pero no su
+    # contrato, la operacion seguiria apareciendo y la decision no serviria de nada.
+    revisadas = {}
+    for r in registros:
+        if r.get("revisada"):
+            revisadas[r["operacion"]] = r
+    for r in registros:
+        jefe = revisadas.get(r["operacion"])
+        if jefe is None or r is jefe:
+            continue
+        r["nivel"] = jefe["nivel"]
+        r["revisada"] = True
+        r["revision_nota"] = jefe["revision_nota"]
+        r["revision_revisor"] = jefe["revision_revisor"]
+        r["revision_fecha"] = jefe["revision_fecha"]
+        r["motivo"] = jefe["motivo"]
+
 
 def exportar_tablero(hoy, resultados, alertas, cfg, resumen_corrida=None):
     """Arma el paquete de datos que la pagina carga y pinta."""
@@ -1715,6 +1825,8 @@ def main():
 
     sembrar_novedades()
 
+    revisiones = leer_revisiones()
+
     resultados = {}
     cambios_totales = []
     nuevos = {}
@@ -1742,6 +1854,7 @@ def main():
             continue
 
         df = clasificar(df, nombre, cfg)
+        df = aplicar_revisiones(df, nombre, revisiones)
         previo = leer_estado(nombre)
         df_nuevos, cambios = detectar_cambios(previo, df, nombre, sello)
 

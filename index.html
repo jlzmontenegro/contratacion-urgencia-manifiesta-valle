@@ -14,7 +14,7 @@
      archivos con max-age=600, asi que sin el sello un visitante puede recibir los datos
      nuevos —que si se piden a prueba de cache— dibujados con el codigo viejo. Ese
      desajuste es el que hace ver duplicados cuando cambia el formato del JSON. -->
-<link rel="stylesheet" href="tablero.css?v=202608200804">
+<link rel="stylesheet" href="tablero.css?v=202608202011">
 </head>
 <body>
 <div class="envoltura">
@@ -156,6 +156,15 @@
     <span class="ayuda">Si ya hay contrato firmado o el proceso sigue abierto</span>
   </div>
   <div class="filtro">
+    <label for="f-revision">Revisión humana</label>
+    <select id="f-revision">
+    <option value="">Revisadas y sin revisar</option>
+    <option value="pendiente">Solo las que faltan por revisar</option>
+    <option value="revisada">Solo las ya revisadas</option>
+    </select>
+    <span class="ayuda">Quién decidió: el clasificador o una persona</span>
+  </div>
+  <div class="filtro">
     <label for="f-novedad">Cuándo apareció</label>
     <select id="f-novedad">
     <option value="">Aparecidos en cualquier fecha</option>
@@ -295,6 +304,6 @@
 </details><!-- /padron -->
 
 </div>
-<script src="tablero.js?v=202608200804"></script>
+<script src="tablero.js?v=202608202011"></script>
 </body>
 </html>

@@ -343,6 +343,12 @@
     header .sub{font-size:11px;line-height:1.4}
   }
 
+  /* Una decision humana no puede parecer una del clasificador: lleva su marca,
+     quien la tomo y cuando. */
+  .revisada{display:inline-block;margin-top:4px;font-size:11px;font-weight:600;
+            color:#1c7a49;background:rgba(34,139,84,.12);border-radius:999px;
+            padding:1px 7px}
+
   /* Nunca se recorta una lista en silencio: si faltan, se dicen. */
   #novedad li.mas{list-style:none;margin-left:-1em;color:var(--suave);font-size:12px;
                   padding-top:2px}
