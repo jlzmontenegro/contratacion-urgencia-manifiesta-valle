@@ -80,6 +80,24 @@ nada, en silencio.
 
 **Ningún NIT se inventa.** Todos los de `config.json` se obtuvieron consultando la API.
 
+**Y no se reconstruyen con la fórmula del dígito de verificación.** SECOP publica el mismo NIT
+con dígitos que no son el matemático: la Gobernación convive como `890399029`, `8903990291` y
+`8903990295`. `verificar_cobertura.py` los reconstruía y solo acertaba dos, así que contaba 951
+donde el colector tenía 984 y **bloqueaba la publicación con una discrepancia inexistente**. Pasó
+el 20-ago-2026, cuando la variante `...1` dejó de estar en cero. La auditoría usa ahora las
+variantes de `config.json`, que es de donde bebe el colector.
+
+**Las revisiones humanas están en `revisiones.csv`, y son una ENTRADA.** El colector reclasifica
+todo en cada corrida: una decisión guardada en la salida duraría doce horas. Se edita en
+github.com y un `push` sobre ese archivo dispara el flujo, así que la decisión llega a todos los
+lectores en minutos. **`publicar.bat` no lo copia** —la copia local está vieja y pisaría lo
+revisado desde el navegador—, igual que pasa con `datos\`.
+
+**Una decisión humana nunca parece una del clasificador.** La fila lleva su distintivo con quién
+y cuándo, el motivo conserva el criterio automático debajo, y lo revisado **viaja siempre** al
+JSON aunque se haya descartado a ordinaria de un municipio: si no, la decisión desaparece de la
+vista y no hay forma de comprobarla ni de deshacerla. Para deshacer se borra la línea.
+
 **Lo del día se cuenta por día, no por corrida.** Hay dos recolecciones diarias y la portada
 titula *"Novedades del DD/MM"* listando por nombre todo lo detectado en la fecha. Los totales
 que la acompañan salen de `nuevos_del_dia()` y `cambios_del_dia()`, que leen las bitácoras
