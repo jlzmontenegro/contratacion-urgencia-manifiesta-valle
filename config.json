@@ -308,6 +308,29 @@
     "MERCADO LABORAL",
     "MERCADO INMOBILIARIO"
   ],
+  "frases_servicios_genericos": [
+    "PRESTACION DE SERVICIOS",
+    "PRESTAR LOS SERVICIOS",
+    "PRESTAR SERVICIOS",
+    "SERVICIOS PROFESIONALES",
+    "SERVICIOS DE APOYO",
+    "APOYO A LA GESTION"
+  ],
+  "objetos_concretos_emergencia": [
+    "KIT",
+    "AYUDA HUMANITARIA",
+    "AYUDAS HUMANITARIAS",
+    "ASISTENCIA HUMANITARIA",
+    "DAMNIFICAD",
+    "ESCOMBRO",
+    "DEMOLICION",
+    "ALBERGUE TEMPORAL",
+    "ALOJAMIENTO TEMPORAL",
+    "CARPA",
+    "COLCHONETA",
+    "ENTREGA DE MERCADO",
+    "REMOCION"
+  ],
   "_nota_secundarias": "Se quitaron AGUA POTABLE y PUENTE: aparecen en contratacion rutinaria de cualquier municipio y generaban mas ruido que hallazgos. Las palabras se buscan como inicio de palabra, no como fragmento, para que EDAN no coincida dentro de 'puedan'.",
   "_nota_exclusiones": "Frases tecnicas rutinarias que contienen 'sismo' pero no aluden al evento. Neutralizan la coincidencia salvo que el texto traiga tambien una palabra de emergencia.",
   "frases_excluidas": [

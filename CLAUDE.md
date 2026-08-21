@@ -79,6 +79,16 @@ el sismo": la primera la detecta, la segunda decide que apunta al evento y no a 
 emergencia. Estuvo escrita a mano en `colector.py` y añadirla solo a la configuración no hacía
 nada, en silencio.
 
+**Prestación de servicios con PERSONA NATURAL no es atención del sismo** (decisión del usuario,
+21-ago-2026). Son las nóminas de las secretarías de gestión del riesgo, que enganchan por el
+nombre de la dependencia. La regla vive en `clasificar()` y **solo degrada `Media`**: si el objeto
+nombra el sismo (`Alta`) o describe una acción concreta —entregar kits, retirar escombros, atender
+damnificados: lista `objetos_concretos_emergencia`— se respeta. Movió 35 registros.
+
+**La regla solo puede evaluarse en el CONTRATO**, porque en procesos todavía no hay proveedor, y
+se propaga a su proceso en `emparejar_operaciones()`. Un proceso suelto sin contrato queda fuera
+de su alcance y hay que revisarlo a mano; así pasó con `CVC CD 1242 2026`.
+
 **Ningún NIT se inventa.** Todos los de `config.json` se obtuvieron consultando la API.
 
 **Y no se reconstruyen con la fórmula del dígito de verificación.** SECOP publica el mismo NIT

@@ -664,6 +664,10 @@ def clasificar(df, nombre_fuente, cfg):
 
     f = FUENTES[nombre_fuente]
     campos_texto = [c for c in f["descripcion"] if c in df.columns]
+    # Solo los contratos dicen si el proveedor es persona natural; en procesos aun no
+    # hay proveedor. La regla se aplica al contrato y se propaga a su proceso en
+    # emparejar_operaciones().
+    tipodoc = df["tipodocproveedor"].astype(str) if "tipodocproveedor" in df.columns else None
     if f["entidad"] in df.columns:
         campos_texto.append(f["entidad"])
 
@@ -700,6 +704,8 @@ def clasificar(df, nombre_fuente, cfg):
     secundarias = [normalizar(p) for p in cfg["palabras_clave_secundarias"]]
     decretos = [normalizar(d) for d in cfg["decretos"]]
     excluidas = [normalizar(p) for p in cfg.get("frases_excluidas", [])]
+    serv_genericos = [normalizar(p) for p in cfg.get("frases_servicios_genericos", [])]
+    obj_concretos = [normalizar(p) for p in cfg.get("objetos_concretos_emergencia", [])]
     # Si la clave falta, se cae a la lista historica: dejarla vacia apagaria en
     # silencio la deteccion del evento y todo pasaria a "otra urgencia".
     nombres_evento = {normalizar(p) for p in cfg.get("palabras_del_evento",
@@ -769,6 +775,7 @@ def clasificar(df, nombre_fuente, cfg):
     cuenta_indicador = [g != "Fuera del Valle" for g in grupos]
 
     niveles, motivos = [], []
+    regla_pn = {}
     for i in range(len(df)):
         t = texto.iloc[i]
         # tb: el mismo texto sin las frases neutralizadas. Solo se usa para
@@ -890,6 +897,21 @@ def clasificar(df, nombre_fuente, cfg):
             # de la ventana, relacionada o no con el sismo.
             razones.append("contratacion de la UNGRD sin mencion del evento")
 
+        # Prestacion de servicios con PERSONA NATURAL no es atencion del sismo aunque
+        # el objeto roce el vocabulario de emergencia: son las nominas de las
+        # secretarias de gestion del riesgo, que enganchan por el nombre de la
+        # dependencia. Decision del usuario el 21-ago-2026. Solo degrada Media: si el
+        # objeto NOMBRA el sismo (Alta) o describe una accion concreta -entregar kits,
+        # retirar escombros, atender damnificados- se respeta.
+        if (nivel == "Media" and tipodoc is not None
+                and "CEDULA" in normalizar(tipodoc.iat[i])
+                and any(fr in t for fr in serv_genericos)
+                and not any(fr in t for fr in obj_concretos)):
+            nivel = "Contexto"
+            razones.append("prestacion de servicios con persona natural,"
+                           " sin objeto concreto de emergencia")
+            regla_pn[i] = True
+
         niveles.append(nivel)
         motivos.append("; ".join(razones))
 
@@ -899,6 +921,7 @@ def clasificar(df, nombre_fuente, cfg):
     df["cuenta_indicador"] = cuenta_indicador
     df["nivel_relacion"] = niveles
     df["motivo_relacion"] = motivos
+    df["regla_persona_natural"] = [regla_pn.get(i, False) for i in range(len(df))]
     df["anterior_al_sismo"] = (fecha < corte_sismo).fillna(False).values
     df["plataforma"] = f["plataforma"]
     df["es_ungrd"] = [g == "UNGRD" for g in grupos]
@@ -1542,6 +1565,7 @@ def aplanar(df, nombre_fuente):
             "barrido": r.get("origen_barrido", ""),
             # Una decision humana no puede parecer una decision del clasificador:
             # viaja marcada para que la pagina la muestre como lo que es.
+            "regla_pn": bool(r.get("regla_persona_natural", False)),
             "revisada": bool(r.get("revisada", False)),
             "revision_nota": r.get("revision_nota", ""),
             "revision_revisor": r.get("revision_revisor", ""),
@@ -1730,6 +1754,16 @@ def emparejar_operaciones(registros, resultados):
 
     for r in registros:
         r["operacion"] = de_contrato.get(r["id"], r["id"])
+
+    # La regla de persona natural solo puede evaluarse en el contrato -el proceso aun
+    # no tiene proveedor-, asi que se propaga a su pareja. Si no, el proceso seguiria
+    # en Media y la operacion continuaria apareciendo como relacionada.
+    caidas = {r["operacion"] for r in registros if r.get("regla_pn")}
+    for r in registros:
+        if r["operacion"] in caidas and r["nivel"] == "Media":
+            r["nivel"] = "Contexto"
+            if "persona natural" not in r["motivo"]:
+                r["motivo"] += "; prestacion de servicios con persona natural"
 
     # Basta revisar UNO de los dos ids: si se descarta el proceso pero no su
     # contrato, la operacion seguiria apareciendo y la decision no serviria de nada.
