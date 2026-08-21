@@ -97,9 +97,25 @@ jobs:
           # Con la hora, no solo la fecha: hay dos commits por dia y el log es la
           # memoria del proyecto.
           git commit -m "Actualizacion automatica del tablero $(date -u -d '-5 hours' '+%Y-%m-%d %H:%M')"
-          # Otra corrida pudo haber empujado mientras tanto
-          git pull --rebase --autostash
-          git push
+          # Otra corrida pudo haber publicado mientras tanto. Los datos NO se
+          # fusionan archivo por archivo: cada corrida los regenera enteros, asi que
+          # ante un conflicto manda esta corrida, que es la mas reciente. Un rebase
+          # a secas fallaba con "could not apply" y dejaba la recoleccion sin
+          # publicar aunque el colector y la auditoria hubieran ido bien.
+          for intento in 1 2 3; do
+            git fetch origin main || true
+            if git rebase -X theirs origin/main; then
+              if git push; then
+                exit 0
+              fi
+            else
+              git rebase --abort || true
+            fi
+            echo "Reintento de publicacion $intento"
+            sleep 5
+          done
+          echo "No se pudo publicar tras tres intentos."
+          exit 1
 
       - name: Resumen de la corrida
         if: always()
