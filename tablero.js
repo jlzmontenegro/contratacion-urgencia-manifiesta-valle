@@ -504,11 +504,21 @@ function pintarPadron(){
     return;
   }
 
-  /* Una sola tabla, de mayor a menor valor contratado. Antes iba partida en
-     siete secciones por grupo; con el filtro de grupo al lado, la división
-     sobraba y obligaba a recorrer toda la página para encontrar una entidad. */
+  /* Una sola tabla. Antes iba partida en siete secciones por grupo; con el filtro
+     de grupo al lado, la división sobraba y obligaba a recorrer toda la página.
+
+     Primero las que tienen contratación DEL SISMO, que es lo que este tablero
+     vigila; el resto detrás, por valor. Ordenando solo por valor contratado, la
+     primera fila era una agencia del Meta con cero registros del sismo y $19.7 mm
+     de contratación ordinaria: encabezaba el padrón algo ajeno a la emergencia.
+     Las que no han contratado nada siguen estando, al final, que es justo para lo
+     que existe el padrón. */
   const ordenadas = filas.slice().sort((a, b) =>
-    b.valor - a.valor || b.n - a.n || a.entidad.localeCompare(b.entidad, "es"));
+    (b.rel > 0) - (a.rel > 0)
+    || b.rel - a.rel
+    || b.valor - a.valor
+    || b.n - a.n
+    || a.entidad.localeCompare(b.entidad, "es"));
   const t = trozo("padron", ordenadas);
   pintarPaginacion("pag-padron", "padron", t, ordenadas.length, pintarPadron);
 
