@@ -163,6 +163,12 @@ auditoría fallida pasa por buena.
   el rediseño del 19-ago-2026 para ganar densidad y el usuario lo revirtió: es el texto por el
   que se juzga si una contratación tiene que ver con el sismo, y recortarlo obliga a abrir SECOP
   para saberlo. Cuesta una pantalla más en móvil y está bien pagado.
+- **El foco se mantiene en Cali y el Valle, pero lo de fuera queda a la vista** (21-ago-2026).
+  Los indicadores siguen contando solo el Valle; la contratación de otras regiones que nombra el
+  sismo se muestra al pie del desglose, separada por un filete y rotulada *"no suma en las cifras
+  de arriba"*, desglosada por departamento. Al 21-ago son 32 operaciones por $3.247 millones en
+  Caldas, Risaralda, Quindío, Antioquia y Chocó: un tercio de lo del Valle, y esconderlo tras un
+  filtro lo hacía invisible.
 - Publicar solo cuando lo pida.
 
 ## Cómo está la página

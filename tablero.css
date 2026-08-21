@@ -587,3 +587,20 @@
     .fila-detalle > td{display:block;padding:12px}
     .reg-pie .boton-secop{margin-left:0}
   }
+
+  /* ---- Fuera del Valle ---------------------------------------------- */
+  /* Visible, pero inequivocamente aparte: filete punteado arriba para que no se
+     lea como una fila mas del desglose, y el rotulo lo dice con todas las letras. */
+  .fuera-valle{margin-top:18px;padding-top:14px;border-top:2px dashed var(--borde-fuerte)}
+  .fuera-cab{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:baseline;
+             justify-content:space-between}
+  .fuera-valle .etq{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10.5px;
+                    letter-spacing:.1em;text-transform:uppercase;color:var(--media)}
+  .fuera-tot{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13px;
+             font-variant-numeric:tabular-nums;color:var(--texto-2)}
+  .fuera-valle p.menor{margin:6px 0 10px;max-width:78ch}
+  .deptos{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+  .deptos li{background:var(--panel-2);border:1px solid var(--borde);border-radius:3px;
+             padding:5px 9px;font-size:12.5px}
+  .deptos .menor{margin-top:0;display:inline;margin-left:5px;
+                 font-family:"IBM Plex Mono",ui-monospace,monospace}

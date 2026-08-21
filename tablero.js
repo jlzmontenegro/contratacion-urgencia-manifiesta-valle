@@ -273,8 +273,11 @@ function pintarPortada(){
   }
 
   if (fuera.length){
+    /* Con su cifra: decir solo cuantas son deja fuera lo que mide el hallazgo. */
+    const vf = fuera.filter(o => o.firmado).reduce((s, o) => s + o.valor, 0);
     partes.push(`Fuera del Valle hay ${frasePlural(fuera.length, "operación relacionada",
-      "operaciones relacionadas")}, que no suman en estas cifras: para verlas, elija `
+      "operaciones relacionadas")}` + (vf ? ` por <b>${esc(pesos(vf))}</b>` : "")
+      + `, que no suman en estas cifras: el foco es Cali y el Valle. Se ven eligiendo `
       + `<em>Fuera del Valle</em> en el filtro de territorio.`);
   }
 
@@ -562,6 +565,43 @@ function pintarPadron(){
 }
 
 
+/* Lo relacionado con el sismo FUERA del Valle. No suma en ningun indicador -el foco
+   es Cali y el Valle, decision del usuario- pero tampoco puede quedar escondido
+   detras de un filtro: a 21-ago-2026 son 32 operaciones por $3.247 millones en el
+   Eje Cafetero y Antioquia, un tercio de lo del Valle. Se muestra al pie del
+   desglose, separado del total y rotulado. */
+function resumenFueraDelValle(){
+  const ops = operaciones(DATOS.filter(r => !cuenta(r) && esRelevante(r)));
+  if (!ops.length) return "";
+  const firmadas = ops.filter(o => o.firmado);
+  const valor = firmadas.reduce((s, o) => s + o.valor, 0);
+  const porDepto = new Map();
+  ops.forEach(o => {
+    const d = (o.jefe.departamento || "sin departamento").trim();
+    const p = porDepto.get(d) || { n: 0, valor: 0 };
+    p.n += 1;
+    if (o.firmado) p.valor += o.valor;
+    porDepto.set(d, p);
+  });
+  const deptos = [...porDepto.entries()].sort((a, b) => b[1].valor - a[1].valor || b[1].n - a[1].n);
+  return `
+    <div class="fuera-valle">
+      <div class="fuera-cab">
+        <span class="etq">Fuera del Valle · no suma en las cifras de arriba</span>
+        <span class="fuera-tot">${frasePlural(ops.length, "operación", "operaciones")}
+          · ${esc(compacto(valor))} firmados</span>
+      </div>
+      <p class="menor">Contratación de otras regiones que <b>nombra el sismo del 10 de agosto</b>.
+        El tablero la detecta y la conserva, pero los indicadores cuentan solo Cali y el Valle.
+        Para verla en detalle, elija <em>Fuera del Valle</em> en el filtro de territorio.</p>
+      <ul class="deptos">
+        ${deptos.map(([d, p]) => `<li><b>${esc(d)}</b>
+           <span class="menor">${p.n} · ${esc(compacto(p.valor))}</span></li>`).join("")}
+      </ul>
+    </div>`;
+}
+
+
 /* Desglose por nivel de gobierno, con las MISMAS cuatro medidas de la portada:
    operaciones, valor firmado, procesos abiertos y urgencia manifiesta. Antes solo
    daba operaciones y valor, y la pregunta natural —cuanto de esto es de Cali y
@@ -636,7 +676,7 @@ function pintarKpis(){
         <td class="num" data-etq="Abiertas">${total.abiertas}</td>
         <td class="num" data-etq="Urgencia manifiesta">${total.urgencia}</td>
       </tr></tfoot>
-    </table>`;
+    </table>` + resumenFueraDelValle();
 }
 
 function barras(destino, pares, formato){
