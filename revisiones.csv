@@ -1,0 +1,13 @@
+﻿# Decisiones de revision humana sobre operaciones clasificadas por el colector.
+# Se edita en github.com (boton del lapiz) y la siguiente corrida lo aplica.
+#
+#   identificador  el id de SECOP de la operacion: CO1.REQ.* o CO1.PCCNTR.*
+#                  Sale en cada fila del tablero, debajo del numero de referencia.
+#   decision       relacionado  -> pasa a "Del sismo"
+#                  descartado   -> pasa a "Ordinaria"
+#   nota           por que. Se muestra en el tablero: escribala para otro lector.
+#
+# Basta con marcar UNO de los dos ids de una operacion: la decision se propaga
+# al proceso y a su contrato. Para deshacer, borre la linea: vuelve a mandar el
+# clasificador.
+identificador,decision,fecha,revisor,nota
