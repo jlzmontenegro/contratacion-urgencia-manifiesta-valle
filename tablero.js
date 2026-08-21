@@ -395,6 +395,74 @@ function tarjetas(destino, lista){
      </div>`).join("");
 }
 
+/* Entidades desplegadas en el padron. Se guarda por nombre y no por indice porque
+   la tabla se repinta al filtrar y al cambiar de pagina. */
+const padronAbierto = new Set();
+
+/* Lo que el archivo trae de una entidad. OJO: casi nunca es todo lo que el padron
+   cuenta. El padron cuenta sobre el corpus completo -344 entidades, 231 de ellas
+   con mas registros de los que viajan- mientras que en el JSON solo se embeben los
+   relacionados con el sismo y, ademas, la contratacion ordinaria de los grupos de
+   GRUPOS_ORDINARIA. Mostrar 28 bajo un contador que dice 244 parece un error si no
+   se explica, asi que se explica. */
+function registrosDeEntidad(nombre){
+  return DATOS.filter(r => r.entidad === nombre)
+    .slice()
+    .sort((a, b) => String(b.fecha).localeCompare(String(a.fecha)) || b.valor - a.valor);
+}
+
+function detallePadron(e){
+  const suyos = registrosDeEntidad(e.entidad);
+  const faltan = e.n - suyos.length;
+
+  /* Tres casos distintos, y confundirlos desinforma: no haber contratado nada no es
+     lo mismo que haber contratado y que el dato no viaje en el archivo. */
+  const aviso = !e.n
+    ? `<p class="aviso-detalle">Esta entidad <b>no ha publicado ninguna contratación</b>
+       desde el 10 de agosto de 2026. Se consulta en cada corrida: el cero es un hallazgo,
+       no un vacío del monitoreo.</p>`
+    : !suyos.length
+    ? `<p class="aviso-detalle">Sus ${frasePlural(e.n, "registro", "registros")} no
+       viaja${e.n === 1 ? "" : "n"} en este archivo: ninguno se relaciona con el sismo, y la
+       contratación corriente solo se embebe para Cali, la Gobernación, sus descentralizadas
+       y la UNGRD. El colector sí ${e.n === 1 ? "lo descarga y lo guarda" : "los descarga y los guarda"}.</p>`
+    : faltan > 0
+      ? `<p class="aviso-detalle">Se listan <b>${suyos.length}</b> de sus
+         ${frasePlural(e.n, "registro", "registros")}: los relacionados con el sismo y, si es
+         de Cali o de la Gobernación, también los ordinarios.
+         ${faltan === 1 ? "El otro se descarga y se guarda, pero no se lista aquí."
+                        : `Los otros ${faltan} se descargan y se guardan, pero no se listan aquí.`}</p>`
+      : `<p class="aviso-detalle">Se listan sus
+         ${frasePlural(e.n, "registro", "registros")}, que es todo lo que el colector le encontró.</p>`;
+
+  const items = suyos.map(r => `
+    <li class="reg">
+      <div class="reg-cab">
+        <span class="etiqueta ${claseNivel(r.nivel)}"
+              title="${esc(nivelLargo(r.nivel))}">${esc(nivelCorto(r.nivel))}</span>
+        <span class="menor">${esc(r.tipo)} · ${esc(r.fecha)}</span>
+        ${r.referencia ? `<span class="ref">${esc(r.referencia)}</span>` : ""}
+        ${r.revisada ? `<span class="revisada">✓ revisado</span>` : ""}
+      </div>
+      <div class="reg-obj">${esc(r.objeto)}</div>
+      <div class="reg-pie">
+        <b>${esc(pesos(r.valor))}</b>
+        <span class="menor">${r.tipo === "Contrato" ? "valor firmado" : "precio base"}</span>
+        ${r.proveedor && r.proveedor !== "No Definido"
+            ? `<span class="menor">· ${esc(r.proveedor)}</span>` : ""}
+        ${r.url ? `<a class="boton boton-secop" href="${esc(r.url)}" target="_blank"
+                      rel="noopener">Ver en SECOP</a>` : ""}
+      </div>
+      <div class="menor">${esc(r.motivo)}</div>
+    </li>`).join("");
+
+  return `<td colspan="7" class="detalle-padron">
+      ${aviso}
+      ${items ? `<ul class="regs">${items}</ul>` : ""}
+    </td>`;
+}
+
+
 function pintarPadron(){
   const rotulo = document.getElementById("n-padron");
   if (rotulo) rotulo.textContent = PADRON.length
@@ -447,8 +515,12 @@ function pintarPadron(){
           <th class="num">Registros</th><th class="num">Valor contratado</th><th>Del sismo</th>
         </tr></thead>
         <tbody>${t.filas.map(e => `
-          <tr class="${enSilencio(e) ? "silenciosa" : ""}">
-            <td data-etq="Entidad"><b>${esc(e.entidad)}</b>
+          <tr class="fila-entidad ${enSilencio(e) ? "silenciosa" : ""}${
+              padronAbierto.has(e.entidad) ? " abierta" : ""}"
+              data-entidad="${esc(e.entidad)}" tabindex="0" role="button"
+              aria-expanded="${padronAbierto.has(e.entidad)}"
+              title="Pulse para ver los registros de esta entidad">
+            <td data-etq="Entidad"><span class="flecha" aria-hidden="true"></span><b>${esc(e.entidad)}</b>
               ${enSilencio(e) ? ' <span class="chip silencio">sin contratar</span>' : ""}
               <div class="menor">${esc(e.tipo)}${e.plat !== "—" ? " · " + esc(e.plat) : ""}</div></td>
             <td data-etq="Nivel de gobierno">${esc(e.grupo)}
@@ -467,7 +539,9 @@ function pintarPadron(){
             <td data-etq="Del sismo">${e.rel
               ? `<span class="etiqueta n-Alta">${e.rel}</span>`
               : '<span class="menor">—</span>'}</td>
-          </tr>`).join("")}</tbody>
+          </tr>
+          ${padronAbierto.has(e.entidad) ? `<tr class="fila-detalle">${detallePadron(e)}</tr>` : ""}
+          `).join("")}</tbody>
       </table>
     </div>`;
 }
@@ -1054,6 +1128,23 @@ document.getElementById("btn-csv").addEventListener("click", descargarCsv);
 ["f-texto","f-grupo","f-nivel","f-tipo","f-revision","f-novedad","f-entidad","f-plataforma"].forEach(id =>
   document.getElementById(id).addEventListener("input",
     () => { paginas.tabla = 1; pintarTabla(); }));
+
+/* El padron se repinta entero al filtrar y al paginar, asi que la escucha va en el
+   contenedor y no en cada fila: delegar evita volver a enganchar 341 escuchas. */
+document.getElementById("secciones-padron").addEventListener("click", ev => {
+  const fila = ev.target.closest(".fila-entidad");
+  if (!fila || ev.target.closest("a")) return;
+  const ent = fila.dataset.entidad;
+  if (padronAbierto.has(ent)) padronAbierto.delete(ent); else padronAbierto.add(ent);
+  pintarPadron();
+});
+document.getElementById("secciones-padron").addEventListener("keydown", ev => {
+  if (ev.key !== "Enter" && ev.key !== " ") return;
+  const fila = ev.target.closest(".fila-entidad");
+  if (!fila) return;
+  ev.preventDefault();
+  fila.click();
+});
 
 ["fp-texto","fp-via","fp-tipo","fp-grupo","fp-actividad"].forEach(id =>
   document.getElementById(id).addEventListener("input",

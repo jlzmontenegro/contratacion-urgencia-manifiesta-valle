@@ -552,3 +552,38 @@
       text-align:left;font-variant-numeric:normal}
     #tabla-niveles tfoot tr{border-bottom:0;border-top:2px solid var(--texto)}
   }
+
+  /* ---- Padron: entidad desplegable --------------------------------- */
+  /* Pulsar una entidad muestra los registros que el archivo trae de ella. */
+  .fila-entidad{cursor:pointer}
+  .fila-entidad:hover{background:var(--panel-2)}
+  .fila-entidad:focus-visible{outline:2px solid var(--acento);outline-offset:-2px}
+  .fila-entidad.abierta{background:var(--panel-2)}
+  .flecha{display:inline-block;width:0;height:0;margin-right:7px;vertical-align:middle;
+          border-left:5px solid var(--suave);border-top:4px solid transparent;
+          border-bottom:4px solid transparent;transition:transform .12s}
+  .fila-entidad.abierta .flecha{transform:rotate(90deg) translateX(-1px)}
+
+  .fila-detalle > td{background:var(--panel-2);border-bottom:2px solid var(--borde-fuerte);
+                     padding:14px 16px}
+  /* Cuantos registros se listan de cuantos: el padron cuenta sobre el corpus
+     completo y en el archivo viaja alrededor de la mitad. Sin esta linea, ver 28
+     bajo un contador que dice 244 se lee como un fallo. */
+  .aviso-detalle{margin:0 0 12px;font-size:12.5px;line-height:1.5;color:var(--texto-2);
+                 border-left:3px solid var(--media);padding-left:10px}
+  .regs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+  .reg{background:var(--panel);border:1px solid var(--borde);border-radius:3px;padding:11px 13px}
+  .reg-cab{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .reg-cab .menor{margin-top:0}
+  .reg-obj{font-size:12.5px;line-height:1.45;margin:7px 0;overflow-wrap:anywhere}
+  .reg-pie{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}
+  .reg-pie b{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13.5px}
+  .reg-pie .menor{margin-top:0}
+  .reg-pie .boton-secop{margin-left:auto}
+
+  @media (max-width:900px){
+    /* En movil la tabla del padron ya son fichas: el detalle va debajo, sin td. */
+    .fila-detalle{display:block}
+    .fila-detalle > td{display:block;padding:12px}
+    .reg-pie .boton-secop{margin-left:0}
+  }
