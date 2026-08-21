@@ -43,7 +43,7 @@
        font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
        font-size:15.5px;line-height:1.55;-webkit-font-smoothing:antialiased}
   h1,h2{font-family:"Zilla Slab",Georgia,serif;text-wrap:balance}
-  .mono,.ref,td.num,.kpi .val,.cifra .val{font-family:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+  .mono,.ref,td.num{font-family:"IBM Plex Mono",ui-monospace,Consolas,monospace;
                                           font-variant-numeric:tabular-nums}
   .envoltura{max-width:1500px;margin:0 auto;padding:20px 16px 60px}
   header{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start;justify-content:space-between;margin-bottom:16px}
@@ -452,9 +452,13 @@
   .portada .cifra{padding:18px 16px;border-right:1px solid var(--borde);background:none;
                   border-radius:0;box-shadow:none}
   .portada .cifra:last-child{border-right:0}
-  .cifra .val,.kpi .val{font-family:"Zilla Slab",Georgia,serif;font-weight:600;letter-spacing:-.02em;
-                        line-height:1;font-size:clamp(1.35rem,2.6vw,1.8rem)}
-  .cifra .etq,.kpi .etq{font-size:11.5px;color:var(--suave)}
+  /* En la portada el numero es .n y su rotulo .t; en el desglose por nivel de
+     gobierno son .val y .etq. Dos marcados distintos para la misma idea. */
+  .cifra .n,.kpi .val{font-family:"Zilla Slab",Georgia,serif;font-weight:600;letter-spacing:-.02em;
+                      line-height:1;font-size:clamp(1.35rem,2.6vw,1.8rem);
+                      font-variant-numeric:tabular-nums}
+  .cifra .t,.kpi .etq{font-size:11.5px;color:var(--suave);line-height:1.35}
+  .kpi .pie{font-size:11px;color:var(--suave)}
 
   .tarjeta,.kpi,.plegable,.tabla-envoltura,.novedad,.fuente-datos{border-radius:3px}
   .kpi{border:1px solid var(--borde);background:var(--panel);box-shadow:var(--sombra)}
