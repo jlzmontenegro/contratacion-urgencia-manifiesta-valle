@@ -70,7 +70,12 @@ const esRelevante = r => r.nivel === "Alta" || r.nivel === "Media";
    contratación ordinaria se descarga y se guarda, pero no es alcanzable desde
    la interfaz, así que tampoco debe aparecer en los conteos: un número que no
    se puede abrir no le sirve a nadie. */
-const listable = r => r.nivel !== "Contexto" || GRUPOS_ORDINARIA.includes(r.grupo);
+/* Lo revisado a mano se lista SIEMPRE, aunque se haya descartado a ordinaria de un
+   municipio, que normalmente no se embebe. El colector ya lo hace viajar en el JSON
+   por el mismo motivo; si aqui se descartara, la decision desapareceria de la vista
+   y no habria forma de comprobarla ni de deshacerla. */
+const listable = r => r.nivel !== "Contexto" || GRUPOS_ORDINARIA.includes(r.grupo)
+                      || r.revisada;
 /* La jerga del clasificador traducida. La etiqueta corta va en la tabla; la
    explicación, en el título emergente y en la leyenda. Nadie que llegue de
    nuevo sabe qué es "relación alta". */
