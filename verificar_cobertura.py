@@ -74,6 +74,36 @@ def dv(r):
     return str(m if m < 2 else 11 - m)
 
 
+def _todos_los_nits(cfg):
+    """Todos los NIT que aparecen en la configuracion, en cualquiera de sus listas."""
+    fuera = []
+    for v in cfg.values():
+        if isinstance(v, list):
+            for x in v:
+                if isinstance(x, str):
+                    fuera.append(x)
+                elif isinstance(x, dict) and "nit" in x:
+                    fuera.append(x["nit"])
+    return fuera
+
+
+NITS_CONFIGURADOS = _todos_los_nits(CFG)
+
+
+def variantes(r):
+    """Formas en que puede venir escrito un NIT de raiz r, en columna numerica.
+
+    No basta con la formula: SECOP publica el mismo NIT con digitos de verificacion
+    que no son el matematico. La Gobernacion convive como 890399029, 8903990291 y
+    8903990295, y reconstruyendo solo se acertaban dos: la auditoria dejaba fuera 33
+    contratos y reportaba una discrepancia que no existia, bloqueando la publicacion.
+    Por eso mandan los NIT verificados de config.json, que es de donde bebe el colector.
+    """
+    formas = {r, r + dv(r)}
+    formas |= {re.sub(r"\D", "", str(n)) for n in NITS_CONFIGURADOS if raiz(n) == r}
+    return sorted(f for f in formas if f)
+
+
 def contar(dataset, where, campo_id):
     """Cuenta identificadores DISTINTOS, no filas.
 
@@ -123,7 +153,7 @@ for nombre, dataset, columna, es_texto, campo_id, ventana in FUENTES:
             punteado = f"{r[:3]}.{r[3:6]}.{r[6:]}"
             cond = f"({columna} like '{r}%' OR {columna} like '{punteado}%')"
         else:
-            cond = f"{columna} in ('{r}', '{r}{dv(r)}')"
+            cond = f"{columna} in (" + ", ".join(f"'{v}'" for v in variantes(r)) + ")"
         n_amplio = contar(dataset, f"{ventana} AND {cond}", campo_id)
 
         # En el CSV se cuenta por raiz del NIT, no por grupo: dos entidades
