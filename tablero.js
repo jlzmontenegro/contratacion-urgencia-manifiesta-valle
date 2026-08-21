@@ -473,14 +473,13 @@ function pintarPadron(){
 }
 
 
-/* Desglose por nivel de gobierno, EN OPERACIONES como el resto del tablero.
-   Antes contaba registros —sumaban 169 frente a las 98 de la portada— y ademas
-   repetia los totales con dos tarjetas, "84 contratos" y "85 procesos", que el
-   lector suma: es el mismo doble conteo que se quito de la portada, porque 71 de
-   esos 85 procesos YA tienen contrato. Una de ellas llegaba a rotular los 85 como
-   "aun sin contrato", contradiciendo a la portada en la misma pantalla.
+/* Desglose por nivel de gobierno, con las MISMAS cuatro medidas de la portada:
+   operaciones, valor firmado, procesos abiertos y urgencia manifiesta. Antes solo
+   daba operaciones y valor, y la pregunta natural —cuanto de esto es de Cali y
+   cuanto de la Gobernacion— habia que hacerla a mano.
 
-   Los totales viven arriba; aqui solo va lo que el titulo promete. */
+   La fila de total no es decorativa: es la comprobacion de que el desglose cuadra
+   con la portada. Si un dia no cuadra, se ve aqui. */
 function pintarKpis(){
   const ops = operaciones(territoriales());
 
@@ -494,37 +493,61 @@ function pintarKpis(){
     ["UNGRD y FNGRD", "UNGRD", "respuesta nacional al desastre"],
     /* Entidades de otras regiones contratando PARA el Valle. Cuenta en los
        indicadores desde siempre, pero estuvo en cero hasta el 20-ago-2026 y por eso
-       nadie noto que le faltaba tarjeta: el desglose sumaba 101 y la portada 102. */
+       nadie noto que le faltaba fila: el desglose sumaba 101 y la portada 102. */
     ["Nacional para el Valle", "Nacional para el Valle",
      "de otras regiones, contratando para el territorio afectado"],
   ];
 
-  const tarjetas = GRUPOS.map(([rotulo, grupo, quienes]) => {
-    const suyas = ops.filter(o => o.grupo === grupo);
-    const firmado = suyas.filter(o => o.firmado).reduce((s, o) => s + o.valor, 0);
-    /* Un cero aqui no es un hueco del monitoreo: esas entidades se consultan en
-       cada corrida por NIT. Decirlo evita que se lea como dato faltante. */
-    const pie = !suyas.length
-      ? `vigiladas, sin contratación del sismo · ${quienes}`
-      /* "$ 0 firmados" se lee como un error; lo que pasa es que todo sigue abierto. */
-      : firmado
-        ? `${compacto(firmado)} firmados · ${quienes}`
-        : `sin contratos firmados aún · ${quienes}`;
-    return [rotulo, suyas.length, pie];
+  const mide = suyas => ({
+    n: suyas.length,
+    firmado: suyas.filter(o => o.firmado).reduce((s, o) => s + o.valor, 0),
+    contratos: suyas.filter(o => o.firmado).length,
+    abiertas: suyas.filter(o => o.abierta).length,
+    urgencia: suyas.filter(o => norm(o.justificacion).includes("URGENCIA MANIFIESTA")).length,
   });
 
-  /* Red de seguridad: si apareciera un grupo nuevo sin tarjeta, el desglose dejaria
-     de cuadrar con la portada y nadie se enteraria. Antes que callar, se muestra. */
-  const contadas = tarjetas.reduce((s, [, n]) => s + n, 0);
+  const filas = GRUPOS.map(([rotulo, grupo, quienes]) =>
+    ({ rotulo, quienes, ...mide(ops.filter(o => o.grupo === grupo)) }));
+
+  /* Red de seguridad: si apareciera un grupo nuevo sin fila, el desglose dejaria de
+     cuadrar con la portada y nadie se enteraria. Antes que callar, se muestra. */
+  const contadas = filas.reduce((s, f) => s + f.n, 0);
   if (ops.length > contadas){
-    tarjetas.push(["Otros grupos", ops.length - contadas,
-                   "cuentan en el total y no tienen tarjeta propia"]);
+    const sueltas = ops.filter(o => !GRUPOS.some(([, g]) => g === o.grupo));
+    filas.push({ rotulo: "Otros grupos", quienes: "cuentan en el total y no tienen fila propia",
+                 ...mide(sueltas) });
   }
 
-  document.getElementById("kpis").innerHTML = tarjetas.map(([e, v, p]) =>
-    `<div class="kpi${v === 0 ? " cero" : ""}">
-       <div class="etq">${esc(e)}</div><div class="val">${esc(v)}</div><div class="pie">${esc(p)}</div>
-     </div>`).join("");
+  const total = mide(ops);
+  const celda = (f) => `
+      <tr class="${f.n ? "" : "cero"}">
+        <th scope="row">${esc(f.rotulo)}<div class="menor">${esc(f.quienes)}</div></th>
+        <td class="num" data-etq="Operaciones">${f.n || "—"}</td>
+        <td class="num" data-etq="Valor firmado">${f.firmado ? esc(compacto(f.firmado)) : "—"}
+          ${f.contratos ? `<div class="menor">en ${frasePlural(f.contratos, "contrato", "contratos")}</div>` : ""}</td>
+        <td class="num" data-etq="Abiertas">${f.abiertas || "—"}</td>
+        <td class="num" data-etq="Urgencia manifiesta">${f.urgencia || "—"}</td>
+      </tr>`;
+
+  document.getElementById("kpis").innerHTML = `
+    <table id="tabla-niveles">
+      <thead><tr>
+        <th>Nivel de gobierno</th>
+        <th class="num">Operaciones</th>
+        <th class="num">Valor firmado</th>
+        <th class="num">Abiertas</th>
+        <th class="num">Urgencia manifiesta</th>
+      </tr></thead>
+      <tbody>${filas.map(celda).join("")}</tbody>
+      <tfoot><tr>
+        <th scope="row">Cali y el Valle</th>
+        <td class="num" data-etq="Operaciones">${total.n}</td>
+        <td class="num" data-etq="Valor firmado">${esc(compacto(total.firmado))}
+          <div class="menor">en ${frasePlural(total.contratos, "contrato", "contratos")}</div></td>
+        <td class="num" data-etq="Abiertas">${total.abiertas}</td>
+        <td class="num" data-etq="Urgencia manifiesta">${total.urgencia}</td>
+      </tr></tfoot>
+    </table>`;
 }
 
 function barras(destino, pares, formato){

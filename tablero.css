@@ -505,3 +505,39 @@
     .portada .cifra:nth-child(2n){border-right:0}
     .portada .cifra:nth-last-child(-n+2){border-bottom:0}
   }
+
+  /* ---- Desglose por nivel de gobierno ------------------------------- */
+  /* Matriz: una fila por nivel, las mismas cuatro medidas de la portada, y una
+     linea de total que sirve de comprobacion cruzada. */
+  #tabla-niveles{width:100%;border-collapse:collapse;font-size:13.5px;min-width:0}
+  #tabla-niveles th,#tabla-niveles td{padding:9px 12px;border-bottom:1px solid var(--borde);
+                                      vertical-align:top;text-align:left}
+  #tabla-niveles thead th{position:static;background:var(--panel-2);
+    font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10.5px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--texto-2);white-space:normal;cursor:default}
+  #tabla-niveles tbody th{font-weight:600;font-size:13px}
+  #tabla-niveles td.num,#tabla-niveles th.num{text-align:right;white-space:nowrap;
+    font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+  #tabla-niveles tbody th .menor{font-weight:400}
+  /* Las filas en cero son informacion —esas entidades se vigilan y no han
+     contratado— pero no deben competir visualmente con las que si tienen. */
+  #tabla-niveles tr.cero{color:var(--suave)}
+  #tabla-niveles tr.cero th{font-weight:500}
+  #tabla-niveles tfoot th,#tabla-niveles tfoot td{border-top:2px solid var(--texto);
+    border-bottom:0;font-weight:600;padding-top:11px}
+  #tabla-niveles tfoot th{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;
+    letter-spacing:.1em;text-transform:uppercase}
+
+  @media (max-width:760px){
+    /* Cada nivel pasa a ficha: la matriz completa no cabe en un telefono. */
+    #tabla-niveles thead{display:none}
+    #tabla-niveles tbody tr,#tabla-niveles tfoot tr{display:block;padding:10px 0;
+      border-bottom:1px solid var(--borde)}
+    #tabla-niveles tbody th,#tabla-niveles tfoot th{display:block;border:0;padding:0 2px 6px}
+    #tabla-niveles td{display:flex;justify-content:space-between;gap:12px;border:0;
+      padding:2px 2px;text-align:right}
+    #tabla-niveles td::before{content:attr(data-etq);font-family:"IBM Plex Mono",ui-monospace,monospace;
+      font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--suave);
+      text-align:left;font-variant-numeric:normal}
+    #tabla-niveles tfoot tr{border-bottom:0;border-top:2px solid var(--texto)}
+  }

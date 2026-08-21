@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600&family=Public+Sans:wght@300..700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="tablero.css?v=202608202204">
+<link rel="stylesheet" href="tablero.css?v=202608202210">
 </head>
 <body>
 <div class="envoltura">
@@ -101,7 +101,9 @@
 <div class="titulo-bloque">Alertas</div>
 <div class="tarjeta" style="margin-bottom:18px"><div id="lista-alertas"></div></div>
 
-<details class="plegable"><summary id="titulo-kpis">Detalle por nivel de gobierno</summary>
+<!-- Abierto de entrada: es el desglose que responde "cuanto es de Cali y cuanto de
+     la Gobernacion". Para volver a plegarlo basta quitar el atributo open. -->
+<details class="plegable" open><summary id="titulo-kpis">Detalle por nivel de gobierno</summary>
 <div class="kpis" id="kpis"></div></details>
 
 <details class="plegable filtros-plegables" id="caja-filtros">
@@ -307,6 +309,6 @@
 </details><!-- /padron -->
 
 </div>
-<script src="tablero.js?v=202608202204"></script>
+<script src="tablero.js?v=202608202210"></script>
 </body>
 </html>
