@@ -444,6 +444,12 @@
     border:1px solid var(--borde-fuerte);background:var(--panel)}
   button.principal{background:var(--acento);border-color:var(--acento);color:#fff}
   button:hover,.boton:hover{border-color:var(--acento);color:var(--acento)}
+  /* El boton de SECOP es solido: la regla generica de arriba le pisaba el fondo de
+     acento y lo dejaba con texto blanco sobre panel blanco, invisible salvo al pasar
+     el raton, que era cuando recuperaba color. Se repite aqui para ganar por orden. */
+  .boton-secop,.boton-secop:hover{background:var(--acento);border:1px solid var(--acento);
+                                  color:#fff}
+  .boton-secop:hover{opacity:.85}
   button.principal:hover{color:#fff}
 
   /* Las cuatro cifras: una banda con divisores, no cuatro tarjetas sueltas. */
