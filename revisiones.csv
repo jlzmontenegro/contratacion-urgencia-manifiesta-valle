@@ -12,3 +12,5 @@
 # clasificador.
 identificador,decision,fecha,revisor,nota
 CO1.PCCNTR.9820606,descartado,2026-08-20,jlzmontenegro,"Seguimiento ambiental de olores, ruido y calidad del aire. La justificacion de la modalidad dice urgencia manifiesta, pero el objeto no tiene relacion con el sismo."
+CO1.PCCNTR.9799801,descartado,2026-08-20,jlzmontenegro,"Gobernanza acustica y zonas de proteccion: mitigacion del RUIDO, no del sismo. Engancho por la palabra mitigacion."
+CO1.REQ.10820805,descartado,2026-08-20,jlzmontenegro,Conectividad ecologica y mitigacion del efecto de isla de calor. Engancho por la palabra mitigacion; sin relacion con el sismo.
