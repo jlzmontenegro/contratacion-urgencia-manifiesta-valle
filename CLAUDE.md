@@ -11,6 +11,7 @@ Vigilancia **del 10-ago-2026 hasta al menos feb-2027**. Publicado en
 ```
 colector.py            consulta, clasifica y escribe. La única implementación de las reglas.
 config.json            NIT, palabras clave, umbrales. Se ajusta sin tocar código.
+revisiones.csv         decisiones humanas. ENTRADA al colector; se edita en github.com
 verificar_cobertura.py auditoría independiente. No importa colector.py, a propósito.
 index.html             estructura       ┐
 tablero.css            estilos          ├ la página SOLO pinta
@@ -230,6 +231,30 @@ se puede preguntar y cómo se reparte. Cuesta pantalla en móvil y está asumido
 Con el panel de filtros cerrado su título dice cuáles están activos: un tablero filtrado en
 silencio miente.
 
+**El padrón se despliega.** Pulsar una entidad muestra los registros que el archivo trae de
+ella, con objeto completo, valor, contratista y enlace a SECOP. **El aviso de cuántos se
+listan es obligatorio y son tres casos distintos:** no haber contratado nada (0 registros),
+haber contratado y que nada viaje en el archivo, y que viaje solo una parte —231 de las 344
+entidades con registros traen menos de los que anuncia su contador; Jamundí dice 249 y
+viajan 28—. Confundirlos desinforma.
+
+**El padrón se ordena por registros del sismo, no por valor contratado.** Ordenando por
+valor, la primera fila era una agencia del Meta con cero registros del sismo y $19,7 mm de
+contratación ordinaria. Las que no han contratado nada siguen al final, que es para lo que
+existe el padrón.
+
+**El bloque se llama "Padrón de entidades", no "de entidades vigiladas":** 101 de las 397
+son de otras regiones y entraron por barrido, no porque se las siga.
+
+**La piel es la misma que la del tablero de contratación logística** (`ContratacionLogisticaCaliYValle`),
+para que los dos se lean como del mismo autor: Zilla Slab en titulares y cifras, Public Sans
+en el cuerpo, IBM Plex Mono en etiquetas y referencias; verde azulado `#0E5C58` sobre
+`#F5F7F6`; esquinas de 3px y filetes finos. Modo oscuro de tres estados.
+
+**Las cifras de titular van en números PROPORCIONALES.** Con `tabular-nums` el "1" de Zilla
+Slab ocupa 19,7px midiendo 12,8 y "114" se leía como "1 14". La cifra tabular es para
+alinear columnas de una tabla, no para un número grande suelto.
+
 **Las tablas van de a 20 filas con paginación, ordenadas de mayor a menor valor.** Al cambiar
 un filtro se vuelve a la página 1.
 
@@ -261,20 +286,68 @@ La portada **abre por lo que cambió**, no por el acumulado: cuánta contrataci�
 sismo apareció en la recolección del día, cuántos registros en total y cuántas
 modificaciones, con los relacionados listados por nombre y valor. El acumulado va después.
 
-## Estado al 19 de agosto de 2026
+## Estado al 21 de agosto de 2026
 
-El sistema **lleva cuatro días corriendo solo**: las corridas programadas del 16, 17, 18 y 19
-en verde, sin intervención. El candado diario funciona.
+El sistema lleva seis días corriendo solo, con dos recolecciones diarias. Cifras del
+momento, **después de la depuración manual**:
 
-Cifras del momento: **62 contratos y 85 procesos** relacionados en Cali y el Valle, por
-**$1.973 millones**, 23 por urgencia manifiesta.
+**78 operaciones relacionadas en Cali y el Valle por $9.015 millones** (64 contratos
+firmados), 14 procesos abiertos y 30 por urgencia manifiesta.
 
-El primero grande de Cali llegó el **17 de agosto**: la UAESP publicó por urgencia manifiesta
-el cargue y transporte de residuos de construcción y demolición, **$3.759.980.000**, citando
-"los hechos acaecidos el 10 de agosto de 2026". Aún sin contratista.
+**El reparto sorprende y conviene tenerlo presente:** los municipios del Valle son
+quienes contratan la emergencia —75 de las 78 operaciones y 29 de las 30 urgencias
+manifiestas—. La Alcaldía de Cali tiene **2** y la Gobernación **ninguna**: sus 39
+operaciones originales resultaron ser, casi todas, prestación de servicios con persona
+natural que enganchaban por el nombre de la Secretaría de Gestión del Riesgo o por
+"albergue" (que era bienestar animal). Se revisaron a mano y se descartaron.
 
-**Bugalagrande y Andalucía** contratan demolición de viviendas afectadas y materiales de
-reparación, nombrando el evento de forma explícita.
+**Lo más grande:** Calima El Darién, 6 contratos por $2.734 millones —albergues
+temporales, rehabilitación de vías, demolición de viviendas, aulas temporales, kits
+alimentarios y cubiertas escolares—, todos citando "el sismo de magnitud 7,4". Y el RCD
+de la UAESP de Cali, $3.759.980.000, con la Empresa Regional de Aseo de Candelaria.
+
+**Fuera del Valle hay 32 operaciones por $3.247 millones** que nombran el sismo, en
+Caldas ($1.485 M), Risaralda ($893 M), Quindío ($833 M), Antioquia y Chocó. Un tercio de
+lo del Valle. No suma en los indicadores pero se muestra al pie del desglose.
+
+### Revisión humana en marcha
+
+`revisiones.csv` lleva **44 decisiones**, todas descartes. Quedan unas 79 operaciones sin
+revisar, la mayoría enganchadas por "gestión del riesgo, desastre". La bandeja de trabajo
+es el filtro *Revisión humana → Solo las que faltan por revisar*.
+
+## Trampas del entorno, ya pagadas
+
+**El orden al publicar revisiones importa.** `revisiones.csv` se confirma y se empuja
+**antes** de correr `publicar.bat`, nunca después: ese script hace `git reset --hard` y
+se lleva por delante lo no confirmado. Pasó el 21-ago y se perdieron 38 revisiones.
+
+**Dos corridas seguidas se pisaban al publicar.** Editar `revisiones.csv` dispara una
+corrida, y encadenar dos hacía fallar el `git rebase` con "could not apply". Los datos se
+regeneran enteros en cada corrida, así que ante conflicto manda la más nueva: el paso de
+publicar usa `rebase -X theirs` con tres reintentos.
+
+**La API se pone lentísima a ratos.** El 21-ago un solo barrido de 22 filas tardó
+**18 minutos** y GitHub corto la corrida a los 25. No es el código: al reintentar pasó.
+Gracias a `PYTHONUNBUFFERED` el registro ahora dice en qué barrido se quedó. **Si una
+corrida se atasca, reintentar antes de tocar nada.**
+
+**La especificidad de CSS muerde en silencio.** Tres veces el 20-ago: una regla escrita al
+final no se aplicaba porque otra anterior era más específica (`.portada .cifras` contra
+`.cifras`, `.portada .cifra .n` contra `.cifra .n`, `.refs .ref` contra `.ref`). No hay
+error, simplemente no pasa nada. **Comprobar el resultado en la página, no en el código.**
+
+**`#kpis` era una rejilla.** Al meterle una tabla más un bloque, los colocaba en columnas
+paralelas y se solapaban encima de la tabla. Lleva `display:block` explícito.
+
+**Generar código con scripts de Python se come los escapes.** Escribiendo un arreglo quedó
+un **byte 0x08 literal** donde debía ir `\b`, y la expresión regular no coincidía nunca.
+En el diff se ve idéntico y `node --check` pasa. **Preferir construcciones sin escapes**
+—`startsWith` en vez de una regex— y comprobar que no haya bytes de control.
+
+**Pages cachea `index.html`.** Para verificar un despliegue hay que recargar con una cadena
+de consulta (`?recarga=...`); si no, se mide la versión anterior y parece que el arreglo
+falló.
 
 ## Falsos positivos conocidos, ya informados al usuario
 
