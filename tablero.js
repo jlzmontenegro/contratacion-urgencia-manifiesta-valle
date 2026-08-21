@@ -478,14 +478,19 @@ function pintarPadron(){
   const fijas = PADRON.filter(e => e.via === "NIT en configuración").length;
   const nits = new Set(PADRON.map(e => e.raiz)).size;
   const conSismo = PADRON.filter(e => e.rel > 0).length;
-  const registros = PADRON.reduce((s, e) => s + e.n, 0);
+  /* Los del sismo, no todos: el pie decia "5971 registros en total" bajo la tarjeta
+     de "con registros del sismo", cuando 5971 es la contratacion entera de las 397
+     entidades y los del sismo son 212. Se leia como un dato 28 veces mayor. */
+  const registrosSismo = PADRON.reduce((s, e) => s + e.rel, 0);
+  const registrosTodos = PADRON.reduce((s, e) => s + e.n, 0);
   const calladas = PADRON.filter(enSilencio).length;
   tarjetas("kpis-padron", [
-    ["Entidades en el padrón", PADRON.length, nits + " NIT distintos"],
+    ["Entidades en el padrón", PADRON.length,
+     nits + " NIT distintos · " + registrosTodos + " registros en total"],
     ["Por NIT en configuración", fijas, "se consultan siempre"],
     ["Por barrido territorial", PADRON.length - fijas, "aparecen por estar en el Valle"],
     ["Vigiladas sin contratar", calladas, "no han publicado nada desde el sismo"],
-    ["Con registros del sismo", conSismo, registros + " registros en total"]
+    ["Con registros del sismo", conSismo, registrosSismo + " registros del sismo entre ellas"]
   ]);
 
   const filas = filtradosPadron();
