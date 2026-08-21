@@ -518,6 +518,10 @@
   }
 
   /* ---- Desglose por nivel de gobierno ------------------------------- */
+  /* #kpis nacio siendo una rejilla de tarjetas y ahora contiene una tabla mas el
+     bloque de "fuera del Valle": como rejilla los ponia en columnas paralelas y se
+     solapaban encima de la tabla. Va en bloque. */
+  #kpis{display:block}
   /* Matriz: una fila por nivel, las mismas cuatro medidas de la portada, y una
      linea de total que sirve de comprobacion cruzada. */
   #tabla-niveles{width:100%;border-collapse:collapse;font-size:13.5px;min-width:0}
