@@ -97,7 +97,8 @@ procesos   Otras     Hospital Local Jose Rufi890305496            0           0 
 procesos   Otras     Empresa de Servicio Publ900401903            0           0      0   OK
 procesos   Otras     Empresas Publicas Munici891900474            0           0      0   OK
 procesos   Otras     Instituto Municipal del 891900528            0           0      0   OK
-procesos   Otras     Instituto Distrital del 890399992            0           0      0   OK
+    ! p6dx-8zbt: HTTP Error 500: Server Error
+procesos   Otras     Instituto Distrital del 890399992            0        None      0   SIN DATO
 procesos   Otras     Personeria Municipal de 891900493           16          17     17   OK
 procesos   Otras     Personeria Municipal de 901159063            0           0      0   OK
 procesos   Otras     Personeria Municipal de 900085817            0           0      0   OK
@@ -161,4 +162,7 @@ secop1     Otras     IE Ginebra La Salle891380108            0           0      
 secop1     Otras     IE Zaragoza - Cartago800034326            0           0      0   OK
 secop1     Otras     IE Camilo Torres - Dagua805015675            0           0      0   OK
 ------------------------------------------------------------------------------------
-Sin discrepancias: el colector capturo todo lo que la API reporta para las entidades vigiladas (156 comprobaciones efectivas).
+1 comprobaciones sin dato (la API no respondio):
+   ('procesos', 'Otras     Instituto Distrital del ', '890399992')
+
+Sin discrepancias: el colector capturo todo lo que la API reporta para las entidades vigiladas (155 comprobaciones efectivas).
