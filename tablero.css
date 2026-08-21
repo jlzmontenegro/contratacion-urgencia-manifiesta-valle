@@ -483,7 +483,11 @@
     border-bottom:1px solid var(--borde-fuerte)}
   .tabla-envoltura{box-shadow:var(--sombra)}
   .col-que .ent{font-family:"Public Sans",system-ui,sans-serif;font-weight:600}
-  .refs .ref{background:var(--panel-2);border-color:var(--borde);color:var(--texto-2);border-radius:2px}
+  /* La regla de mas arriba usa .refs .ref y gana por especificidad, asi que la
+     tipografia hay que repetirla aqui o los numeros de referencia se quedan en la
+     monoespaciada del sistema. */
+  .refs .ref{background:var(--panel-2);border-color:var(--borde);color:var(--texto-2);
+             border-radius:2px;font-family:"IBM Plex Mono",ui-monospace,monospace}
 
   /* Avisos: filete de color a la izquierda, como una nota al margen. */
   .aviso-parcial{border:0;border-left:3px solid var(--media);background:var(--panel);
