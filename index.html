@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600&family=Public+Sans:wght@300..700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="tablero.css?v=202608212048">
+<link rel="stylesheet" href="tablero.css?v=202608221126">
 </head>
 <body>
 <div class="envoltura">
@@ -61,7 +61,20 @@
     <dd>Un seguimiento de la contratación pública relacionada con el sismo del 10 de agosto
       de 2026. Los datos salen de SECOP, el sistema donde las entidades del Estado están
       obligadas a publicar lo que contratan. Nadie los digita aquí: se consultan directamente
-      y se clasifican de forma automática.</dd>
+      y se clasifican de forma automática. Una parte, además, la revisa una persona: esas
+      filas van marcadas.</dd>
+
+    <dt>Operación</dt>
+    <dd>La unidad de esta tabla. Un proceso y el contrato que salió de él son el mismo hecho
+      en dos momentos, y SECOP los publica por separado: aquí se juntan en una sola fila para
+      no contar dos veces la misma plata. Cada operación muestra el <b>valor firmado</b> si ya
+      hay contrato, y el <b>precio base</b> si sigue abierta. Nunca se suman: son la misma
+      plata en dos momentos.</dd>
+
+    <dt>Proceso y contrato</dt>
+    <dd>El <b>proceso</b> es la convocatoria: la entidad anuncia qué necesita. El
+      <b>contrato</b> es el acuerdo ya firmado con quien lo va a ejecutar. Un proceso puede
+      no terminar en contrato.</dd>
 
     <dt>Urgencia manifiesta</dt>
     <dd>Figura del artículo 42 de la Ley 80 de 1993 que permite contratar <em>sin licitación
@@ -73,17 +86,29 @@
     <dd>Declaración de una alcaldía o gobernación que reconoce una situación de desastre y
       habilita medidas excepcionales. Cali y el Valle la declararon el 10 de agosto de 2026.</dd>
 
-    <dt>Proceso y contrato</dt>
-    <dd>El <b>proceso</b> es la convocatoria: la entidad anuncia qué necesita. El
-      <b>contrato</b> es el acuerdo ya firmado con quien lo va a ejecutar. Un proceso puede
-      no terminar en contrato.</dd>
+    <dt>Las cuatro etiquetas de relación</dt>
+    <dd><b>Del sismo</b>: nombra el evento o cita uno de los decretos de la emergencia.
+      <b>Por revisar</b>: su objeto es propio de una emergencia —albergues, escombros, ayuda
+      humanitaria— pero no nombra el evento; es una capa para leer, no una conclusión.
+      <b>Otra emergencia</b>: urgencia manifiesta declarada por otra causa o por una calamidad
+      anterior. <b>Ordinaria</b>: contratación corriente, sin relación aparente.</dd>
 
-    <dt>Relación con el sismo</dt>
-    <dd><b>Alta</b>: cita uno de los decretos de la emergencia o menciona el sismo
-      directamente. <b>Media</b>: su objeto es propio de una emergencia (albergues, escombros,
-      ayuda humanitaria) en una entidad del territorio, pero no nombra el evento. La media es
-      una capa para revisar, no una conclusión: puede traer coincidencias que al leerlas
-      resulten no tener relación.</dd>
+    <dt>Revisado a mano</dt>
+    <dd>Cuando una persona lee una operación y decide si atiende el sismo o no, la fila queda
+      marcada con <b>✓ revisado</b>, quién y cuándo, y su motivo queda a la vista junto al del
+      clasificador. Una decisión humana nunca se presenta como si fuera automática.</dd>
+
+    <dt>Por qué no aparece toda la nómina</dt>
+    <dd>La prestación de servicios contratada con una <b>persona natural</b> se envía a
+      ordinaria automáticamente: son las nóminas de las secretarías de gestión del riesgo, que
+      aparecían solo por el nombre de la dependencia. Se respeta cuando el objeto nombra el
+      sismo o describe una acción concreta —entregar kits, retirar escombros, atender
+      damnificados—.</dd>
+
+    <dt>Fuera del Valle</dt>
+    <dd>El foco son Cali y el Valle del Cauca: los indicadores cuentan solo ese territorio.
+      La contratación de otras regiones que nombra el sismo se detecta, se conserva y se
+      muestra al pie del desglose, <b>sin sumar</b> en las cifras de arriba.</dd>
 
     <dt>SECOP I y SECOP II</dt>
     <dd>Dos plataformas que conviven. SECOP II es la actual; SECOP I es la anterior y sigue
@@ -311,6 +336,6 @@
 </details><!-- /padron -->
 
 </div>
-<script src="tablero.js?v=202608212048"></script>
+<script src="tablero.js?v=202608221126"></script>
 </body>
 </html>
