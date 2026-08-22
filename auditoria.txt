@@ -1,6 +1,6 @@
 Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-08-24T00:00:00
-Entidades auditadas: 52  (2 centrales + 2 UNGRD/FNGRD + 11 descentralizadas de Cali + 18 de la Gobernacion + 19 otras del Valle)
-Comprobaciones: 52 entidades x 3 fuentes = 156, cada una por tres caminos independientes
+Entidades auditadas: 53  (2 centrales + 2 UNGRD/FNGRD + 12 descentralizadas de Cali + 18 de la Gobernacion + 19 otras del Valle)
+Comprobaciones: 53 entidades x 3 fuentes = 159, cada una por tres caminos independientes
 
 Fuente     Entidad                NIT         API simple  API amplio    CSV   Veredicto
 ------------------------------------------------------------------------------------
@@ -19,6 +19,7 @@ contratos  Desc.Cali Instituto Popular de Cul900431928            0           0 
 contratos  Desc.Cali Personeria Distrital de 805003895            1           1      1   OK
 contratos  Desc.Cali Contraloria de Santiago 800217831            1           1      1   OK
 contratos  Desc.Cali IE Normal Superior Santi800243065            0           0      0   OK
+contratos  Desc.Cali Camara de Comercio de Ca890399001            0           0      0   OK
 contratos  Desc.Gob  INDERVALLE - Instituto d805012896            1           1      1   OK
 contratos  Desc.Gob  INFIVALLE - Instituto Fi890308051            0           0      0   OK
 contratos  Desc.Gob  INCIVA       800086201            7           7      7   OK
@@ -71,6 +72,7 @@ procesos   Desc.Cali Instituto Popular de Cul900431928            0           0 
 procesos   Desc.Cali Personeria Distrital de 805003895            1           1      1   OK
 procesos   Desc.Cali Contraloria de Santiago 800217831            0           0      0   OK
 procesos   Desc.Cali IE Normal Superior Santi800243065            0           0      0   OK
+procesos   Desc.Cali Camara de Comercio de Ca890399001            0           0      0   OK
 procesos   Desc.Gob  INDERVALLE - Instituto d805012896            1           1      1   OK
 procesos   Desc.Gob  INFIVALLE - Instituto Fi890308051            0           0      0   OK
 procesos   Desc.Gob  INCIVA       800086201            3           3      3   OK
@@ -123,6 +125,7 @@ secop1     Desc.Cali Instituto Popular de Cul900431928            0           0 
 secop1     Desc.Cali Personeria Distrital de 805003895            0           0      0   OK
 secop1     Desc.Cali Contraloria de Santiago 800217831            0           0      0   OK
 secop1     Desc.Cali IE Normal Superior Santi800243065            0           0      0   OK
+secop1     Desc.Cali Camara de Comercio de Ca890399001           14          14     14   OK
 secop1     Desc.Gob  INDERVALLE - Instituto d805012896            0           0      0   OK
 secop1     Desc.Gob  INFIVALLE - Instituto Fi890308051            0           0      0   OK
 secop1     Desc.Gob  INCIVA       800086201            0           0      0   OK
@@ -161,4 +164,4 @@ secop1     Otras     IE Ginebra La Salle891380108            0           0      
 secop1     Otras     IE Zaragoza - Cartago800034326            0           0      0   OK
 secop1     Otras     IE Camilo Torres - Dagua805015675            0           0      0   OK
 ------------------------------------------------------------------------------------
-Sin discrepancias: el colector capturo todo lo que la API reporta para las entidades vigiladas (156 comprobaciones efectivas).
+Sin discrepancias: el colector capturo todo lo que la API reporta para las entidades vigiladas (159 comprobaciones efectivas).
