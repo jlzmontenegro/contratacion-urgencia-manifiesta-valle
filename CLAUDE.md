@@ -6,6 +6,11 @@ Vigilancia **del 10-ago-2026 hasta al menos feb-2027**. Publicado en
 
 `LEEME.md` es la documentación completa. Esto es lo que hay que saber **antes de tocar nada**.
 
+**Si llegas nuevo a este proyecto:** el sistema corre solo en la nube y no necesita nada de
+nadie. Lo único que pide intervención humana es revisar lo que queda en *Por revisar*, y eso
+se hace editando `revisiones.csv` en github.com. Todo lo demás —recolectar, clasificar,
+auditar, publicar— ya está automatizado y verificado.
+
 ## Cómo está armado
 
 ```
@@ -296,68 +301,53 @@ La portada **abre por lo que cambió**, no por el acumulado: cuánta contrataci�
 sismo apareció en la recolección del día, cuántos registros en total y cuántas
 modificaciones, con los relacionados listados por nombre y valor. El acumulado va después.
 
-## Estado al 21 de agosto de 2026
+## Estado al 22 de agosto de 2026
 
-El sistema lleva seis días corriendo solo, con dos recolecciones diarias. Cifras del
-momento, **después de la depuración manual**:
+Siete días corriendo solo, dos recolecciones diarias. **Las cifras cambian en cada corrida:
+lo de abajo es una foto, no una constante.** Para el dato vivo, mirar la página.
 
-**78 operaciones relacionadas en Cali y el Valle por $9.015 millones** (64 contratos
-firmados), 14 procesos abiertos y 30 por urgencia manifiesta.
+**53 operaciones relacionadas en Cali y el Valle por $9.642 millones.** El reparto es el
+hallazgo que conviene no olvidar: **los municipios contratan la emergencia**, no las dos
+entidades que expidieron los decretos. La Alcaldía de Cali tiene 1 operación —el RCD de la
+UAESP, $3.759.980.000 con la Empresa Regional de Aseo de Candelaria— y la Gobernación
+ninguna: sus 39 operaciones originales eran prestación de servicios con persona natural.
 
-**El reparto sorprende y conviene tenerlo presente:** los municipios del Valle son
-quienes contratan la emergencia —75 de las 78 operaciones y 29 de las 30 urgencias
-manifiestas—. La Alcaldía de Cali tiene **2** y la Gobernación **ninguna**: sus 39
-operaciones originales resultaron ser, casi todas, prestación de servicios con persona
-natural que enganchaban por el nombre de la Secretaría de Gestión del Riesgo o por
-"albergue" (que era bienestar animal). Se revisaron a mano y se descartaron.
+**Lo más grande después del RCD:** Calima El Darién, 6 contratos por $2.734 millones
+—albergues temporales, rehabilitación de vías, demolición de viviendas, aulas temporales,
+kits alimentarios y cubiertas escolares—, todos citando "el sismo de magnitud 7,4".
 
-**Lo más grande:** Calima El Darién, 6 contratos por $2.734 millones —albergues
-temporales, rehabilitación de vías, demolición de viviendas, aulas temporales, kits
-alimentarios y cubiertas escolares—, todos citando "el sismo de magnitud 7,4". Y el RCD
-de la UAESP de Cali, $3.759.980.000, con la Empresa Regional de Aseo de Candelaria.
+**Fuera del Valle, 32 operaciones por $3.247 millones** que nombran el sismo, en Caldas,
+Risaralda, Quindío, Antioquia y Chocó. No suma en los indicadores; se muestra al pie del
+desglose.
 
-**Fuera del Valle hay 32 operaciones por $3.247 millones** que nombran el sismo, en
-Caldas ($1.485 M), Risaralda ($893 M), Quindío ($833 M), Antioquia y Chocó. Un tercio de
-lo del Valle. No suma en los indicadores pero se muestra al pie del desglose.
+### Revisión humana: cómo va y qué queda
 
-### Revisión humana en marcha
+`revisiones.csv` lleva **97 decisiones**, todas descartes. Quedaban **5 pendientes** el
+22-ago, pero ese número sube y baja en cada corrida: **la lista viva está en el filtro
+*Revisión humana → Solo las que faltan por revisar***. No hace falta recalcularla a mano.
 
-`revisiones.csv` lleva **88 decisiones**, todas descartes. Se edita en github.com y el
-`push` dispara la corrida, así que la decisión llega a los lectores en minutos.
-
-**El grueso ya no requiere trabajo manual:** la regla de persona natural degrada sola los
-contratos de prestación de servicios. Lo que sí llega a la bandeja son los tres casos que
-la regla no puede juzgar:
+**El grueso ya no exige trabajo:** la regla de persona natural despacha sola las nóminas.
+A la bandeja solo llegan los tres casos que la regla no puede juzgar:
 
 1. **Procesos sin contrato adjudicado** — sin proveedor no se sabe si es persona natural.
-   El 21-ago se descartaron 42 de golpe por ser la misma familia (nóminas de las
-   secretarías de gestión del riesgo).
-2. **Contratos con empresa** que enganchan por vocabulario, como el mantenimiento de
-   vehículos de El Cerrito ($248 M).
-3. **Contratos con persona natural protegidos por `objetos_concretos_emergencia`** —
-   quedan 4 de Yumbo, ~$41 M, con la fórmula "prestar por sus propios medios y autonomía
-   administrativa los servicios personales…". Merecen lectura humana.
+2. **Contratos con empresa** que enganchan por vocabulario (El Cerrito, mantenimiento de
+   vehículos, $248 M).
+3. **Contratos con persona natural protegidos** por `objetos_concretos_emergencia`.
 
-**Pendientes al 21-ago-2026 que NO son de esa familia y conviene mirar uno por uno:**
+**Patrón útil al revisar:** casi todo lo que llega es apoyo a la gestión en dependencias de
+riesgo, y va a ordinaria. Lo que merece lectura es lo que tiene objeto concreto —compra de
+elementos de emergencia, alquiler de carpas, obra— porque ahí sí puede haber respuesta real.
 
-| Valor | Entidad | Objeto |
-|---|---|---|
-| $1.755.469.163 | Yotoco | contrato interadministrativo de administración delegada |
-| $85.714.285 | Buga | aunar esfuerzos técnicos y económicos |
-| $48.780.074 | UNIAJC | compra de elementos para atención de emergencias |
-| $38 / $34,6 / $34,5 M | CVC | apoyo al Grupo de Gestión del Riesgo y Cambio Climático |
-| $26.000.000 | CVC | evaluación de trámites, seguimiento y control |
+### Lo que quedó sin construir
 
-El de Yotoco es el mayor sin revisar de todo el tablero.
-
-### Pendiente de decisión: el conjunto `dmgg-8hin`
-
-Trae los archivos del expediente y **cruza limpio por `n_mero_de_contrato` = `id_contrato`**.
-Medido sobre 30 contratos en duda: **0 tienen un nombre de archivo que mencione el sismo,
-un decreto o urgencia manifiesta** — son nombres administrativos genéricos ("Estudios
-Previos.pdf", "CDisponibilidad.pdf"). **No sirve para clasificar automáticamente.** Sí
-serviría como atajo: trae `url_descarga_documento`, así que la fila podría llevar enlace
-directo a los estudios previos, que es donde está la respuesta. No construido.
+**El conjunto `dmgg-8hin`** trae los archivos del expediente y **cruza limpio**: por
+`n_mero_de_contrato` = `id_contrato` para contratos, y por `proceso` = `id_del_portafolio`
+para procesos. Medido sobre 30 contratos en duda y sobre el expediente de Yotoco (17
+archivos): **ningún nombre de archivo menciona el sismo** — son nombres administrativos
+("06. ESTUDIOS PREVIOS.pdf", "14. RESOLUCION DE JUSTIFICACION.pdf"). **No sirve para
+clasificar.** Sí serviría como atajo: trae `url_descarga_documento`, así que la fila podría
+llevar enlace directo a los estudios previos, que es donde está la respuesta. Con eso, revisar
+una duda pasa de abrir SECOP y buscar, a un clic. **Propuesto y no construido.**
 
 ## Trampas del entorno, ya pagadas
 
