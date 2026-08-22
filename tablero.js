@@ -48,9 +48,34 @@ let orden = { col: "valor", asc: false };
    El tablero por sí solo no tiene memoria: consulta el estado actual, no sabe
    qué había ayer. Este mapa es lo que le permite señalar las novedades. */
 let NOVEDADES = {};
-const diasDesde = fecha => fecha
-  ? Math.floor((Date.now() - new Date(fecha + "T00:00:00").getTime()) / 86400000)
-  : null;
+/* La bitacora trae la deteccion con hora ("2026-08-12 20:06:54"), pero las
+   corridas anteriores al 22-ago-2026 solo dejaron la fecha. Se admiten las dos
+   formas: sin hora se toma medianoche, que es exactamente lo que hacia el tablero
+   antes. El sufijo con T y sin zona obliga al navegador a leerlo en hora local;
+   "2026-08-12" a secas se interpreta como UTC y en Colombia retrasaria cinco horas
+   cada deteccion. */
+const momento = fecha => {
+  const s = String(fecha || "");
+  if (!s) return null;
+  const t = new Date(s.slice(0, 10) + "T" + (s.slice(11, 19) || "00:00:00")).getTime();
+  return isNaN(t) ? null : t;
+};
+/* Las ventanas de dias siguen contando desde la medianoche de la deteccion, que
+   es lo que hacian cuando la bitacora solo traia la fecha: si contaran horas
+   rodantes, "ultimos 7 dias" pasaria a incluir detecciones de hace ocho dias por
+   la tarde. Solo la ventana de 24 horas rueda, y para eso esta horasDesde. */
+const diasDesde = fecha => {
+  const t = momento(String(fecha || "").slice(0, 10));
+  return t === null ? null : Math.floor((Date.now() - t) / 86400000);
+};
+/* Ventana rodante de verdad, para el filtro de las ultimas 24 horas: hay dos
+   recolecciones diarias y "hoy" dejaba fuera la de anoche. Si el dato viene sin
+   hora (JSON de antes del cambio) la cuenta arranca en medianoche y la opcion se
+   comporta como "lo de hoy" hasta la siguiente recoleccion. */
+const horasDesde = fecha => {
+  const t = momento(fecha);
+  return t === null ? null : Math.floor((Date.now() - t) / 3600000);
+};
 
 /* Grupos cuya contratación ordinaria sí se muestra, bajo su propio filtro:
    son las dos entidades que expidieron los decretos. */
@@ -779,8 +804,11 @@ function filtraRegistro(r, ctx){
   if (r.nivel === "Contexto" && niv !== "Contexto" && niv !== "todos") return false;
   if (plat && r.plataforma !== plat) return false;
   if (nov){
-    const d = diasDesde(NOVEDADES[r.id]);
-    if (d === null || d > Number(nov)) return false;
+    /* Las opciones en horas ("24h", "48h", "72h") ruedan de verdad; las de dias
+       cuentan por dia calendario. El sufijo distingue unas de otras. */
+    const enHoras = nov.endsWith("h");
+    const transcurrido = enHoras ? horasDesde(NOVEDADES[r.id]) : diasDesde(NOVEDADES[r.id]);
+    if (transcurrido === null || transcurrido > parseInt(nov, 10)) return false;
   }
   if (grupo === "territorial" && !cuenta(r)) return false;
   if (grupo !== "territorial" && grupo !== "todos" && r.grupo !== grupo) return false;

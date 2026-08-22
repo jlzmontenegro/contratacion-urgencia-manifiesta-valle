@@ -120,6 +120,17 @@ que la acompañan salen de `nuevos_del_dia()` y `cambios_del_dia()`, que leen la
 acumulativas; si vinieran de una sola corrida, la frase diría "2 registros nuevos" encima de
 una lista de cinco.
 
+**El mapa `novedades` del JSON lleva fecha Y hora** (`2026-08-12 20:06:54`) desde el
+22-ago-2026, porque las opciones *Cuándo apareció → últimas 24 / 48 / 72 horas* son ventanas
+rodantes y hay dos recolecciones diarias: recortando a la fecha, "24 horas" se degradaba a "lo
+de hoy" y dejaba fuera la corrida de las 20:30. `tablero.js` admite las dos formas —sin hora se toma
+medianoche—, así que un JSON viejo no rompe nada; solo que hasta la siguiente recolección esa
+opción se comporta como "hoy" (y las de 48 y 72, como "hoy y ayer" y "los tres días").
+**El sufijo `h` del valor es lo que distingue una ventana de horas de una de días** en
+`filtraRegistro()`: `24h` rueda, `7` cuenta días. **Las ventanas de días siguen contando por día calendario**
+(`diasDesde` recorta a la fecha a propósito): si contaran horas rodantes, "últimos 7 días"
+incluiría detecciones de hace ocho días por la tarde.
+
 **Código y datos van juntos si se toca el formato del JSON.** La página lee `operacion` de
 `tablero.json`; si se publica el código sin recolectar, el archivo viejo no trae la llave, cada
 registro se vuelve su propia operación y los duplicados reaparecen hasta la siguiente corrida.

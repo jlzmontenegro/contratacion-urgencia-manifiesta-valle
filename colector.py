@@ -1117,7 +1117,7 @@ def cambios_del_dia(dia):
 
 
 def leer_novedades(cfg, dias=30):
-    """Mapa identificador -> fecha en que se vio por primera vez, ultimos N dias.
+    """Mapa identificador -> fecha y hora en que se vio por primera vez, ultimos N dias.
 
     Solo se devuelven registros cuya fecha propia cae dentro de la ventana de
     seguimiento. La bitacora conserva entradas de barridos que ya se retiraron
@@ -1136,7 +1136,10 @@ def leer_novedades(cfg, dias=30):
         d = d[d["fecha_registro"] >= cfg["fecha_inicio"]]
     # Si un identificador aparece varias veces se conserva la primera deteccion
     d = d.sort_values("fecha_deteccion").drop_duplicates("identificador", keep="first")
-    return dict(zip(d["identificador"], d["fecha_deteccion"].str[:10]))
+    # Viaja la hora, no solo el dia: el tablero filtra por "ultimas 24 horas" y
+    # hay dos recolecciones diarias, asi que recortar a la fecha convertia esa
+    # ventana en "lo de hoy" y dejaba fuera la corrida de anoche.
+    return dict(zip(d["identificador"], d["fecha_deteccion"].str[:19]))
 
 
 def registrar_cambios(cambios):
