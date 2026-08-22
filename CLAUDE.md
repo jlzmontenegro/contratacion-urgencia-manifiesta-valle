@@ -322,9 +322,42 @@ lo del Valle. No suma en los indicadores pero se muestra al pie del desglose.
 
 ### Revisión humana en marcha
 
-`revisiones.csv` lleva **44 decisiones**, todas descartes. Quedan unas 79 operaciones sin
-revisar, la mayoría enganchadas por "gestión del riesgo, desastre". La bandeja de trabajo
-es el filtro *Revisión humana → Solo las que faltan por revisar*.
+`revisiones.csv` lleva **88 decisiones**, todas descartes. Se edita en github.com y el
+`push` dispara la corrida, así que la decisión llega a los lectores en minutos.
+
+**El grueso ya no requiere trabajo manual:** la regla de persona natural degrada sola los
+contratos de prestación de servicios. Lo que sí llega a la bandeja son los tres casos que
+la regla no puede juzgar:
+
+1. **Procesos sin contrato adjudicado** — sin proveedor no se sabe si es persona natural.
+   El 21-ago se descartaron 42 de golpe por ser la misma familia (nóminas de las
+   secretarías de gestión del riesgo).
+2. **Contratos con empresa** que enganchan por vocabulario, como el mantenimiento de
+   vehículos de El Cerrito ($248 M).
+3. **Contratos con persona natural protegidos por `objetos_concretos_emergencia`** —
+   quedan 4 de Yumbo, ~$41 M, con la fórmula "prestar por sus propios medios y autonomía
+   administrativa los servicios personales…". Merecen lectura humana.
+
+**Pendientes al 21-ago-2026 que NO son de esa familia y conviene mirar uno por uno:**
+
+| Valor | Entidad | Objeto |
+|---|---|---|
+| $1.755.469.163 | Yotoco | contrato interadministrativo de administración delegada |
+| $85.714.285 | Buga | aunar esfuerzos técnicos y económicos |
+| $48.780.074 | UNIAJC | compra de elementos para atención de emergencias |
+| $38 / $34,6 / $34,5 M | CVC | apoyo al Grupo de Gestión del Riesgo y Cambio Climático |
+| $26.000.000 | CVC | evaluación de trámites, seguimiento y control |
+
+El de Yotoco es el mayor sin revisar de todo el tablero.
+
+### Pendiente de decisión: el conjunto `dmgg-8hin`
+
+Trae los archivos del expediente y **cruza limpio por `n_mero_de_contrato` = `id_contrato`**.
+Medido sobre 30 contratos en duda: **0 tienen un nombre de archivo que mencione el sismo,
+un decreto o urgencia manifiesta** — son nombres administrativos genéricos ("Estudios
+Previos.pdf", "CDisponibilidad.pdf"). **No sirve para clasificar automáticamente.** Sí
+serviría como atajo: trae `url_descarga_documento`, así que la fila podría llevar enlace
+directo a los estudios previos, que es donde está la respuesta. No construido.
 
 ## Trampas del entorno, ya pagadas
 
