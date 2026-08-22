@@ -196,6 +196,13 @@ auditoría fallida pasa por buena.
   de arriba"*, desglosada por departamento. Al 21-ago son 32 operaciones por $3.247 millones en
   Caldas, Risaralda, Quindío, Antioquia y Chocó: un tercio de lo del Valle, y esconderlo tras un
   filtro lo hacía invisible.
+- **La Cámara de Comercio de Cali está en `descentralizadas_cali` sin serlo** (22-ago-2026).
+  Es una corporación privada con funciones públicas, no una descentralizada del Distrito. Se
+  metió ahí a sabiendas: ese grupo está en `GRUPOS_ORDINARIA`, y era la única forma de que su
+  contratación **ordinaria** se viera sin inventar un grupo nuevo. Se le advirtió al usuario
+  que el desglose por nivel de gobierno la contaría como distrital y decidió asumirlo. Entró
+  con 14 registros por $1.324 millones, ninguno del sismo. Si algún día se separa, su sitio
+  natural es un grupo propio, como el que ya tiene la UNGRD siendo una sola entidad.
 - Publicar solo cuando lo pida.
 
 ## Cómo está la página

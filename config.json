@@ -29,7 +29,7 @@
   ],
   "_nota_secop1": "SECOP I sigue recibiendo cargues (169.224 registros cargados en 2026). Es un dataset distinto, con una fila por proceso que ya trae el contrato adentro, no dos datasets separados como SECOP II. Se apaga poniendo secop1_activo en false.",
   "secop1_activo": true,
-  "_nota_descentralizadas": "El Paragrafo Cuarto del Decreto 0964 obliga a las descentralizadas a declarar SU PROPIA urgencia manifiesta: contratan con NIT propio, no con el de su matriz. Estas listas cumplen dos funciones: (1) separarlas en el tablero por nivel de gobierno, y (2) barrerlas por NIT, que es la unica red que las atrapa cuando su campo departamento viene mal diligenciado. Verificado el 13-ago-2026 contra la API: hay entidades del Valle con departamento y ciudad en 'No Definido' que se escapaban por completo del barrido territorial; van marcadas con sin_departamento. Todos los NIT de estas listas se obtuvieron consultando la API, ninguno se supuso.",
+  "_nota_descentralizadas": "El Paragrafo Cuarto del Decreto 0964 obliga a las descentralizadas a declarar SU PROPIA urgencia manifiesta: contratan con NIT propio, no con el de su matriz. Estas listas cumplen dos funciones: (1) separarlas en el tablero por nivel de gobierno, y (2) barrerlas por NIT, que es la unica red que las atrapa cuando su campo departamento viene mal diligenciado. Verificado el 13-ago-2026 contra la API: hay entidades del Valle con departamento y ciudad en 'No Definido' que se escapaban por completo del barrido territorial; van marcadas con sin_departamento. Todos los NIT de estas listas se obtuvieron consultando la API, ninguno se supuso. OJO: no todo lo que hay en descentralizadas_cali es una descentralizada. La Camara de Comercio de Cali se anadio ahi el 22-ago-2026 por decision del usuario, sabiendo que no lo es: es la unica forma de que su contratacion ordinaria se vea sin inventar un grupo nuevo. Si algun dia se separa, su sitio natural es un grupo propio como el de la UNGRD.",
   "descentralizadas_cali": [
     {
       "nit": "890399003",
@@ -75,6 +75,11 @@
       "nit": "800243065",
       "nombre": "IE Normal Superior Santiago de Cali",
       "sin_departamento": true
+    },
+    {
+      "nit": "890399001",
+      "nombre": "Camara de Comercio de Cali",
+      "_nota": "NO es una descentralizada del Distrito: es una corporacion privada con funciones publicas. Va en esta lista por decision del usuario (22-ago-2026) para que su contratacion ORDINARIA viaje al tablero, que es lo que hace el grupo 'Descentralizadas de Cali' al estar en GRUPOS_ORDINARIA. El costo asumido es que el desglose por nivel de gobierno la cuenta como distrital. NIT verificado contra la API: publica en SECOP I como 'VALLE DEL CAUCA - CAMARA DE COMERCIO DE CALI', departamento Valle del Cauca."
     }
   ],
   "descentralizadas_valle": [
