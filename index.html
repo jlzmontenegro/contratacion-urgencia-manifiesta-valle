@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600&family=Public+Sans:wght@300..700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="tablero.css?v=202608241101">
+<link rel="stylesheet" href="tablero.css?v=202608241147">
 </head>
 <body>
 <div class="envoltura">
@@ -228,8 +228,43 @@
   </div>
 </div>
 </details>
-<div class="barra-conteo"><span class="pill" id="conteo-filtro"></span></div>
+<div class="barra-conteo"><span class="pill" id="conteo-filtro"></span>
+  <label class="agrupar"><input type="checkbox" id="f-agrupar"> Agrupar por entidad</label>
+</div>
 <div class="aviso-parcial" id="aviso-parcial" hidden></div>
+<!-- Abierto de entrada: es lo que se pidio ver de un vistazo. Se pliega como
+     cualquier otro bloque si estorba en el telefono. -->
+<details class="plegable mapa-caja" open>
+  <summary>Dónde se está contratando <span class="resumen-filtros" id="mapa-resumen"></span></summary>
+<div class="mapas">
+  <div class="mapa-control">
+    <label for="f-mapa-metrica">Colorear por</label>
+    <select id="f-mapa-metrica">
+      <option value="valor">Valor firmado</option>
+      <option value="n">Número de operaciones</option>
+    </select>
+    <div class="leyenda-mapa" id="mapa-leyenda"></div>
+  </div>
+  <div class="aviso-parcial" id="mapa-aviso" hidden></div>
+  <div class="rejilla-mapas">
+    <figure>
+      <figcaption>Valle del Cauca · por municipio</figcaption>
+      <div class="lienzo" id="mapa-valle"></div>
+    </figure>
+    <figure>
+      <!-- Este NO respeta el filtro de territorio, y hay que decirlo donde se ve:
+           con el filtro por defecto saldria un pais en blanco, que se lee como
+           "no hay contratacion" y no como "esta filtrado". -->
+      <figcaption>Colombia · por departamento
+        <span class="ojo-mapa">sin el filtro de territorio</span></figcaption>
+      <div class="lienzo" id="mapa-pais"></div>
+      <p class="menor pie-mapa" id="pie-pais"></p>
+    </figure>
+  </div>
+  <p class="menor notas-mapa" id="mapa-notas"></p>
+</div>
+</details>
+
 <details class="plegable"><summary>Qué significa cada etiqueta de relación</summary>
 <div class="leyenda" id="leyenda-niveles"></div></details>
 
@@ -356,6 +391,6 @@
 <!-- Solo se ve al imprimir. Se arma en el momento con lo que hay en pantalla:
      la tabla va paginada de a 20 y en papel hacen falta todas las filas. -->
 <div id="impresion" aria-hidden="true"></div>
-<script src="tablero.js?v=202608241101"></script>
+<script src="tablero.js?v=202608241147"></script>
 </body>
 </html>

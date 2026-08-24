@@ -47,6 +47,22 @@ casillas saltarían bajo el cursor al elegir la segunda. Se reordena con las mar
 únicamente al buscar o al recargar datos. Una entidad que deje de venir en el archivo **se
 descarta sola** de la selección: dejarla puesta daría tabla vacía sin nada que lo explicara.
 
+**El panel de entidades se ancla al BLOQUE de filtros, no a su columna, y el bloque no
+recorta.** Dos trampas seguidas, las dos invisibles en el código: `.plegable` lleva
+`overflow:hidden` por las esquinas redondeadas y **cortaba el panel en seco** —se veía el
+buscador y la lista quedaba fuera de la caja—; y anclado a su columna, de unos 300px, los
+nombres de entidad (hay uno de 118 caracteres) se partían en cuatro renglones y solo cabían
+cinco entidades. Anclado al bloque entero son cuatro columnas y 32 entidades a la vista.
+**Medir la geometría del panel no cazó el recorte**: el rectángulo era correcto, lo cortaba un
+ancestro. Para eso hay que mirar quién tiene `overflow` o probar `elementFromPoint`.
+
+**Agrupar por entidad es ORDENAR, no pintar distinto** (24-ago-2026). `operacionesDeLaVista()`
+devuelve las operaciones de cada entidad contiguas y las entidades por lo que suman; la tabla
+solo intercala una banda cuando cambia el nombre. Hecho así, la paginación, el informe impreso
+y las tres descargas heredan el mismo orden sin tocar nada más. **La banda avisa cuando el grupo
+viene partido por la paginación** —"viene de la página anterior"—: sin eso, media docena de filas
+quedan bajo un encabezado cuya cuenta no cuadra con lo que se ve.
+
 **`llenarFiltroEntidades()` llena el desplegable de entidad, y el nombre es deliberado:** se
 llamaba `pintarEntidades` y en la unificación se borró creyendo que pintaba una de las secciones
 que se estaban eliminando. El filtro quedó con una sola opción. Lista las 119 entidades
@@ -286,6 +302,43 @@ objeto es el texto por el que se juzga si una contratación tiene que ver con el
 se imprimen **todas** las filas del filtro, no las 20 de la página: `imprimirInforme()` arma
 `#impresion` en el momento y `@media print` oculta `.envoltura` entera. El informe encabeza con
 los filtros aplicados y la recolección de la que salen los datos.
+
+**El mapa lo dibuja `mapa.json`, que es CÓDIGO y no dato** (24-ago-2026). Lo genera
+`preparar_mapa.py` a mano, una sola vez, con los contornos del Marco Geoestadístico del DANE:
+33 departamentos y los 42 municipios del Valle, simplificados con Douglas-Peucker y guardados
+ya como trazos SVG. Son 53 KB y **`publicar.bat` lo copia**; si no se copiara, la página pediría
+`mapa.json`, recibiría un 404 y la sección saldría con su aviso. Las fronteras no cambian cada
+doce horas: bajarlas en cada corrida sería pedirle a un tercero algo que ya tenemos, y con un
+servidor de teselas el tablero dejaría de ser autosuficiente.
+
+**El municipio se resuelve en el colector, no en la página**, como todo lo que es clasificar.
+Cada registro lleva `municipio` (código DIVIPOLA de cinco dígitos), `municipio_nombre` y
+**`municipio_origen`, que dice si lo trae la fuente o si se dedujo**. La deducción mira el
+nombre de la entidad cuando `ciudad` viene *No Definido*, y solo dentro del Valle: fuera, el
+mismo nombre de municipio se repite en varios departamentos. Rescata los 17 registros de la
+Alcaldía de La Victoria, que publica ciudad y departamento sin diligenciar y es de los
+municipios con más contratación relacionada del norte del Valle. **El origen viaja hasta la
+pantalla a propósito:** el mapa dice cuántas piezas ha colocado por deducción y cuántas no ha
+podido situar. Un mapa que se come operaciones en silencio se lee como un censo.
+
+**El mapa de Colombia ignora el filtro de territorio, y su rótulo lo dice.** Con el filtro por
+defecto —Cali y el Valle— saldría un país entero en blanco salvo una pieza, y eso no se lee como
+"está filtrado" sino como "no hay contratación". Es el mismo trato que el desglose le da a lo de
+fuera del Valle: a la vista, rotulado y sin sumar en las cifras. El del Valle sí respeta todos
+los filtros.
+
+**Los tramos de color son por cuantiles, no lineales.** El RCD de Cali, $3.760 millones en una
+sola operación, aplastaría a los demás municipios contra el extremo bajo de cualquier escala
+lineal. Y el cero tiene color propio, separado de la rampa: "no ha contratado" no es "ha
+contratado poco".
+
+**En el Excel el mapa va como PNG rasterizado en el navegador.** Excel no dibuja SVG. Dos
+trampas que cuestan una tarde: dentro de una imagen **no viajan las clases CSS** —hay que
+escribir el color en cada trazo— y **un SVG sin ancho ni alto explícitos se rasteriza a cero
+píxeles**, porque el `viewBox` solo da proporciones. El dibujo cuelga de la hoja *Territorio* por
+una cadena de cuatro piezas (hoja → rels → drawing → media) y **`<drawing>` va después de
+`<autoFilter>`**: el esquema fija el orden y con un elemento fuera de sitio Excel declara el
+archivo corrupto. Si la rasterización falla, el libro sale igual con sus cifras.
 
 **Nunca se suma precio base con valor firmado.** Son la misma plata en dos momentos. La operación
 muestra el valor firmado si hay contrato y el precio base si no, siempre rotulado.

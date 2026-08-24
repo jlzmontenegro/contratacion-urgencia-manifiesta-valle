@@ -614,7 +614,19 @@
      marcar mas de una y en el telefono es inmanejable. El resumen cerrado dice
      cuantas hay elegidas, porque un filtro puesto que no se ve miente igual que
      un tablero filtrado en silencio. */
-  .multi{position:relative}
+  /* El bloque de filtros NO recorta lo que sobresale, a diferencia del resto de
+     plegables. `.plegable` lleva overflow:hidden por las esquinas redondeadas, y eso
+     cortaba en seco el panel de entidades: se veia el buscador y la lista quedaba
+     fuera, tapada por el borde de la caja. La geometria del panel era correcta -por
+     eso no lo cazo medirlo-, lo que fallaba era quien lo recortaba por encima. */
+  .filtros-plegables{overflow:visible;position:relative}
+
+  /* El panel NO se ancla a su columna sino al bloque de filtros entero: la columna
+     mide unos 300px y los nombres de entidad llegan a 118 caracteres, asi que se
+     partian en cuatro lineas y solo cabian cinco a la vista. A lo ancho del bloque
+     caben en una linea y en varias columnas. `position:static` en el .multi es lo
+     que hace que el absolute de dentro se resuelva contra el bloque. */
+  .multi{position:static}
   .multi > summary{list-style:none;cursor:pointer;padding:7px 10px;font-size:13px;
                    border:1px solid var(--borde);border-radius:3px;background:var(--panel);
                    color:var(--texto);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -626,20 +638,103 @@
 
   /* Flotante: dentro del flujo empujaba los filtros de al lado media pantalla
      hacia abajo cada vez que se abria. */
-  .multi-panel{position:absolute;z-index:20;left:0;right:0;margin-top:4px;padding:8px;
+  /* top:auto deja el panel donde habria caido en el flujo -justo bajo su resumen- y
+     left/right lo estiran de lado a lado del bloque. */
+  .multi-panel{position:absolute;z-index:20;left:14px;right:14px;top:auto;margin-top:4px;padding:10px;
                background:var(--panel);border:1px solid var(--borde-fuerte);border-radius:3px;
                box-shadow:var(--sombra)}
   .multi-panel input[type="search"]{width:100%;margin-bottom:6px}
-  .multi-lista{max-height:230px;overflow-y:auto;display:flex;flex-direction:column;gap:1px}
+  /* En columnas que se rellenan solas: cuatro o cinco en un portatil, una en el
+     telefono. Rejilla y no `columns`, porque el multicolumna dentro de una caja con
+     scroll vertical desborda de lado en vez de hacia abajo. */
+  .multi-lista{max-height:min(340px,46vh);overflow-y:auto;display:grid;gap:1px;
+               grid-template-columns:repeat(auto-fill,minmax(280px,1fr));align-items:start}
   .multi-lista .opt{display:flex;gap:7px;align-items:flex-start;padding:4px 5px;font-size:12.5px;
                     line-height:1.35;border-radius:3px;cursor:pointer}
   .multi-lista .opt:hover{background:var(--panel-2)}
+  /* Dos lineas por entidad como maximo: hay nombres de 118 caracteres que se comian
+     cuatro renglones y dejaban cinco entidades a la vista. El nombre entero sigue
+     estando en el titulo emergente. */
+  .multi-lista .opt span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;
+                         overflow:hidden}
   .multi-lista .opt input{margin:2px 0 0;flex:0 0 auto;accent-color:var(--acento)}
   .multi-lista .nada{margin:6px 4px;font-size:12px;color:var(--suave)}
   .multi-panel > button{margin-top:7px;width:100%;padding:6px;font-size:12.5px;
                         border:1px solid var(--borde);border-radius:3px;
                         background:var(--panel-2);color:var(--texto);cursor:pointer}
   .multi-panel > button:hover{border-color:var(--acento);color:var(--acento)}
+
+  /* ---- Agrupado por entidad ------------------------------------------- */
+  /* La banda no es una fila de datos y tiene que no parecerlo: fondo propio,
+     versalitas y el nombre en el color del acento. */
+  .agrupar{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--suave);
+           cursor:pointer;user-select:none}
+  .agrupar input{accent-color:var(--acento);margin:0}
+  #tabla tr.grupo-ent > td{background:var(--panel-2);border-top:2px solid var(--borde-fuerte);
+                           padding:8px 12px}
+  .grupo-ent .ent{font-weight:700;font-size:12.5px;color:var(--acento);letter-spacing:.02em}
+  .grupo-ent .cuenta{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;
+                     color:var(--texto-2);margin-left:10px;font-variant-numeric:tabular-nums}
+  .grupo-ent .sigue{font-size:11px;color:var(--suave);margin-left:10px;font-style:italic}
+  @media (max-width:760px){
+    /* En movil la tabla se vuelve fichas; la banda tiene que seguir siendo una banda. */
+    #tabla tr.grupo-ent{display:block}
+    #tabla tr.grupo-ent > td{display:block;width:auto}
+    .grupo-ent .cuenta,.grupo-ent .sigue{display:block;margin-left:0;margin-top:2px}
+  }
+
+  /* ---- Mapas ---------------------------------------------------------- */
+  /* Rampa de un solo tono, la del acento. Con dos colores enfrentados el lector
+     busca un punto medio que aqui no significa nada: no hay valores negativos,
+     solo mas y menos contratacion. El cero tiene color propio y aparte, porque
+     "no ha contratado" no es "ha contratado poco". */
+  :root{
+    --m0:#E9EEEC; --m1:#CFE3E0; --m2:#93C6C0; --m3:#4E9A93; --m4:#0E5C58;
+    --m-borde:#FFFFFF;
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){
+      --m0:#1D2725; --m1:#234B47; --m2:#2F6C66; --m3:#47958D; --m4:#6FCFC6;
+      --m-borde:#0E1413;
+    }
+  }
+  :root[data-theme="dark"]{
+    --m0:#1D2725; --m1:#234B47; --m2:#2F6C66; --m3:#47958D; --m4:#6FCFC6;
+    --m-borde:#0E1413;
+  }
+
+  .mapa-control{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;
+                margin:12px 0 10px}
+  .mapa-control label{font-size:11px;font-weight:600;letter-spacing:.05em;
+                      text-transform:uppercase;color:var(--suave)}
+  .mapa-control select{flex:0 0 auto;max-width:230px}
+  .leyenda-mapa{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center;font-size:11.5px;
+                color:var(--texto-2)}
+  .leyenda-mapa .tramo{display:inline-flex;align-items:center;gap:5px;
+                       font-family:"IBM Plex Mono",ui-monospace,monospace;
+                       font-variant-numeric:tabular-nums}
+  .leyenda-mapa i{width:14px;height:14px;border-radius:2px;border:1px solid var(--borde);
+                  display:inline-block}
+
+  .rejilla-mapas{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+  .rejilla-mapas figure{margin:0}
+  .rejilla-mapas figcaption{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10.5px;
+                            letter-spacing:.1em;text-transform:uppercase;color:var(--suave);
+                            margin-bottom:6px}
+  .lienzo svg{width:100%;height:auto;display:block;max-height:62vh}
+  /* El filete entre piezas es del color del fondo, no gris: asi las fronteras se
+     leen como separacion y no como un dato mas. */
+  .lienzo path{stroke:var(--m-borde);stroke-width:.8;stroke-linejoin:round}
+  .lienzo path:hover{stroke:var(--texto);stroke-width:1.4}
+  .lienzo .m0{fill:var(--m0)} .lienzo .m1{fill:var(--m1)} .lienzo .m2{fill:var(--m2)}
+  .lienzo .m3{fill:var(--m3)} .lienzo .m4{fill:var(--m4)}
+  .leyenda-mapa .m0{background:var(--m0)} .leyenda-mapa .m1{background:var(--m1)}
+  .leyenda-mapa .m2{background:var(--m2)} .leyenda-mapa .m3{background:var(--m3)}
+  .leyenda-mapa .m4{background:var(--m4)}
+  .notas-mapa{margin-top:12px;line-height:1.5;max-width:78ch}
+  .ojo-mapa{text-transform:none;letter-spacing:0;color:var(--media);font-size:10.5px;
+            margin-left:6px}
+  .pie-mapa{margin-top:5px}
 
   /* ---- Informe impreso ------------------------------------------------ */
   /* Solo existe al imprimir. En pantalla estorbaria: son todas las filas del
@@ -673,6 +768,26 @@
     /* Una operacion no se parte entre dos hojas: el objeto es largo y cortado a la
        mitad no se puede juzgar, que es justo para lo que se imprime. */
     #impresion .listado tr{break-inside:avoid;page-break-inside:avoid}
+    /* Los mapas en papel llevan SIEMPRE la paleta clara: si quien imprime tiene el
+       navegador en modo oscuro, el mapa saldria con los tonos de pantalla y sobre
+       papel blanco eso es ilegible. Y print-color-adjust para que el navegador no
+       descarte los rellenos al imprimir, que es su comportamiento por defecto. */
+    #impresion{--m0:#E9EEEC;--m1:#CFE3E0;--m2:#93C6C0;--m3:#4E9A93;--m4:#0E5C58}
+    #impresion .mapas-papel{display:flex;gap:8mm;margin:4pt 0 6pt;
+                            break-inside:avoid;page-break-inside:avoid}
+    #impresion .mapas-papel figure{margin:0;flex:1 1 0;min-width:0}
+    #impresion .mapas-papel figcaption{font-size:8pt;color:#444;margin-bottom:3pt}
+    #impresion .mapas-papel svg{width:100%;height:auto;max-height:105mm;
+                                print-color-adjust:exact;-webkit-print-color-adjust:exact}
+    #impresion .mapas-papel path{stroke:#fff;stroke-width:.7}
+    #impresion .leyenda-mapa{display:flex;flex-wrap:wrap;gap:2pt 9pt;font-size:8pt;
+                             margin:0 0 8pt;print-color-adjust:exact;
+                             -webkit-print-color-adjust:exact}
+    #impresion .leyenda-mapa .tramo{display:inline-flex;align-items:center;gap:3pt}
+    #impresion .leyenda-mapa i{width:9pt;height:9pt;display:inline-block;
+                               border:.5pt solid #999}
+    #impresion .grupo-ent td{background:#eee;border-top:1pt solid #000;padding:4pt 5pt;
+                             font-size:9pt}
     #impresion .listado .num{text-align:right;white-space:nowrap;
                              font-variant-numeric:tabular-nums}
     #impresion .obj{margin:2pt 0;max-width:none}

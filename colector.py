@@ -657,6 +657,103 @@ def aplicar_revisiones(df, nombre_fuente, revisiones):
     return df
 
 
+# ------------------------------------------------------------------ #
+# Situar en el mapa                                                    #
+# ------------------------------------------------------------------ #
+# Un departamento o una ciudad vienen "No Definido" con mucha frecuencia: es la
+# trampa de la fuente que ya obliga a identificar entidades por NIT. Aqui se
+# resuelve el municipio para poder pintarlo, y se deja constancia de COMO se
+# resolvio.
+SIN_DILIGENCIAR = {"", "NO DEFINIDO", "NAN", "NONE"}
+
+ID_MAPA = {}
+
+# Como escribe SECOP el departamento frente a como lo llama el DANE. Solo los que
+# no coinciden; el resto casa tal cual. Verificado contra los datos publicados.
+ALIAS_DEPARTAMENTO = {
+    "DISTRITO CAPITAL DE BOGOTA": "SANTAFE DE BOGOTA D.C",
+    "BOGOTA": "SANTAFE DE BOGOTA D.C",
+    "BOGOTA D.C.": "SANTAFE DE BOGOTA D.C",
+    "SAN ANDRES": "ARCHIPIELAGO DE SAN ANDRES PROVIDENCIA Y SANTA CATALINA",
+    "SAN ANDRES Y PROVIDENCIA": "ARCHIPIELAGO DE SAN ANDRES PROVIDENCIA Y SANTA CATALINA",
+}
+
+
+def cargar_mapa():
+    """Indices de nombre -> codigo DANE, leidos del MISMO archivo que dibuja el mapa.
+
+    Que el nombre que colorea una pieza y el que decide su color salgan del mismo
+    sitio es lo que evita el fallo clasico de los mapas: un municipio que existe en
+    los datos, no casa con ningun contorno y desaparece sin avisar.
+
+    mapa.json lo genera preparar_mapa.py a mano y se publica como codigo. Si no
+    esta, se sigue sin situar nada: el tablero funciona igual y el mapa lo dice.
+    """
+    if ID_MAPA:
+        return ID_MAPA
+    ruta = os.path.join(BASE, "mapa.json")
+    if not os.path.exists(ruta):
+        print("  ! mapa.json no esta; los registros iran sin municipio")
+        ID_MAPA.update({"departamentos": {}, "municipios": {}, "orden": []})
+        return ID_MAPA
+    with open(ruta, encoding="utf-8") as fh:
+        m = json.load(fh)
+    deps = {normalizar(p["nombre"]).strip(): p["codigo"] for p in m["pais"]["piezas"]}
+    munis = {normalizar(p["nombre"]).strip(): (p["codigo"], p["nombre"])
+             for p in m["valle"]["piezas"]}
+    # De mas largo a mas corto: 'GUADALAJARA DE BUGA' antes que 'BUGA', y
+    # 'CALIMA' antes que 'CALI'. Al reves, media docena de municipios se
+    # atribuirian al vecino cuyo nombre es prefijo del suyo.
+    orden = sorted(munis, key=len, reverse=True)
+    ID_MAPA.update({"departamentos": deps, "municipios": munis, "orden": orden})
+    return ID_MAPA
+
+
+def codigo_departamento(departamento):
+    idx = cargar_mapa()["departamentos"]
+    n = normalizar(departamento).strip()
+    n = ALIAS_DEPARTAMENTO.get(n, n)
+    return idx.get(n, "")
+
+
+def situar(entidad, departamento, ciudad, del_valle):
+    """Municipio del Valle del registro, y de donde se dedujo.
+
+    Devuelve (codigo, nombre, origen). El origen viaja hasta la pagina a proposito:
+    un mapa que situa por deduccion tiene que poder decir cuantas piezas ha
+    colocado a mano, o se lee como si la fuente lo trajera.
+
+    La deduccion por el nombre de la entidad solo se aplica cuando la fuente NO
+    trae ciudad. Es el caso real de la Alcaldia de La Victoria, que publica
+    'No Definido' en ciudad y departamento y se lleva 17 registros: sin esto, el
+    municipio con mas contratacion relacionada del norte del Valle sale en blanco.
+    """
+    idx = cargar_mapa()
+    dep = normalizar(departamento).strip()
+    ciu = normalizar(ciudad).strip()
+    dep_util = dep in ("VALLE DEL CAUCA", "") or dep in SIN_DILIGENCIAR
+
+    if ciu and ciu not in SIN_DILIGENCIAR and dep_util and ciu in idx["municipios"]:
+        cod, nom = idx["municipios"][ciu]
+        return cod, nom, "fuente"
+
+    if del_valle and (not ciu or ciu in SIN_DILIGENCIAR):
+        texto = normalizar(entidad)
+        for nombre in idx["orden"]:
+            # Por palabra completa: 'TORO' no puede casar dentro de 'TOROS' ni
+            # 'CALI' dentro de 'CALIMA'. Es la misma regla que el clasificador usa
+            # con las palabras clave, y por el mismo motivo.
+            i = texto.find(nombre)
+            while i != -1:
+                antes = texto[i - 1] if i > 0 else " "
+                despues = texto[i + len(nombre)] if i + len(nombre) < len(texto) else " "
+                if not antes.isalpha() and not despues.isalpha():
+                    cod, nom = idx["municipios"][nombre]
+                    return cod, nom, "entidad"
+                i = texto.find(nombre, i + 1)
+    return "", "", ""
+
+
 def clasificar(df, nombre_fuente, cfg):
     """Asigna nivel_relacion (Alta / Media / Contexto) y el motivo de esa asignacion."""
     if df.empty:
@@ -734,7 +831,7 @@ def clasificar(df, nombre_fuente, cfg):
     desc_otras = {raiz_nit(e["nit"]) for e in cfg.get("otras_valle_sin_departamento", [])}
     # Un departamento se considera "sin diligenciar" cuando viene vacio o como
     # 'No Definido', que es justo el caso que obliga a barrer por NIT.
-    sin_dato = {"", "NO DEFINIDO", "NAN", "NONE"}
+    sin_dato = SIN_DILIGENCIAR
 
     grupos = []
     for i in range(len(df)):
@@ -1529,6 +1626,18 @@ def aplanar(df, nombre_fuente):
     salida = []
     for _, r in d.iterrows():
         ini, fin, dur = calcular_duracion(r, f)
+        # Donde cae en el mapa. La deduccion por el nombre de la entidad solo se
+        # intenta dentro del Valle: fuera, el mismo nombre de municipio se repite
+        # en varios departamentos y acertar seria casualidad.
+        grupo_r = r.get("grupo", "")
+        mun_cod, mun_nom, mun_origen = situar(
+            r.get(f["entidad"], ""), r.get(f["departamento"], ""),
+            r.get(f["ciudad"], ""), grupo_r != "Fuera del Valle")
+        # Si el departamento viene sin diligenciar pero el municipio se resolvio,
+        # el departamento sale de los dos primeros digitos del codigo DIVIPOLA. Si
+        # no, la Alcaldia de La Victoria tampoco pintaria el Valle en el mapa del
+        # pais, que es el mismo agujero una escala mas arriba.
+        dep_cod = codigo_departamento(r.get(f["departamento"], "")) or mun_cod[:2]
         # solo_fecha, no un recorte crudo: un campo vacio llega como NaN y
         # str(NaN)[:10] deja el texto 'nan' en la columna de fecha.
         fecha = solo_fecha(r.get(f["fecha"]))
@@ -1551,6 +1660,12 @@ def aplanar(df, nombre_fuente):
             "nit": r.get(f["nit"], ""),
             "departamento": r.get(f["departamento"], ""),
             "ciudad": r.get(f["ciudad"], ""),
+            "dep_codigo": dep_cod,
+            "municipio": mun_cod,
+            "municipio_nombre": mun_nom,
+            # 'fuente' si lo trae SECOP, 'entidad' si se dedujo del nombre de la
+            # entidad. Viaja hasta la pagina para que el mapa pueda declararlo.
+            "municipio_origen": mun_origen,
             "objeto": objeto_completo(r, f),
             "modalidad": r.get(f["modalidad"], ""),
             "justificacion": r.get(f["justificacion"], ""),

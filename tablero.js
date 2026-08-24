@@ -822,22 +822,24 @@ function filtraRegistro(r, ctx){
   return true;
 }
 
-function contextoFiltros(){
-  return {
+/* `sobre` permite pedir el mismo contexto con un filtro cambiado. Lo usa el mapa
+   del pais, que ignora a proposito el de territorio y lo dice en su rotulo. */
+function contextoFiltros(sobre){
+  return Object.assign({
     txt: norm(document.getElementById("f-texto").value.trim()),
     grupo: document.getElementById("f-grupo").value,
     niv: document.getElementById("f-nivel").value,
     nov: document.getElementById("f-novedad").value,
     ents: ENTIDADES_SEL,
     plat: document.getElementById("f-plataforma").value,
-  };
+  }, sobre || {});
 }
 
 /* Para la pantalla: operaciones completas. Se arma la operacion con TODOS sus
    registros y se conserva si alguno pasa el filtro, de modo que la fila siempre
    muestra el estado real. */
-function operacionesFiltradas(){
-  const ctx = contextoFiltros();
+function operacionesFiltradas(sobre){
+  const ctx = contextoFiltros(sobre);
   return operaciones(DATOS.filter(listable))
     .filter(o => [o.contrato, o.proceso].some(r => r && filtraRegistro(r, ctx)));
 }
@@ -874,6 +876,12 @@ function operaciones(filas){
       huerfana: !!c && !pr,           // contrato sin proceso publicado
       proveedor: c ? c.proveedor : "",
       fecha: jefe.fecha,
+      /* Del registro que manda: el contrato si existe. Proceso y contrato son el
+         mismo hecho, asi que comparten municipio. */
+      municipio: jefe.municipio || "",
+      municipioNombre: jefe.municipio_nombre || "",
+      municipioOrigen: jefe.municipio_origen || "",
+      depCodigo: jefe.dep_codigo || "",
       /* La fecha del contrato es la firma y la del proceso la publicacion. Para
          contar una operacion UNA sola vez en una serie temporal hace falta la
          primera de las dos: si no, la que se publico el 14 y se firmo el 17
@@ -970,8 +978,8 @@ function pintarAvisoParcial(){
    Excel y el informe impreso: si cada uno filtrara por su cuenta, el archivo
    descargado diria 53 operaciones donde la tabla dice 47 y no habria forma de
    saber cual de los dos miente. */
-function operacionesDeLaVista(){
-  let filas = ordenarOperaciones(operacionesFiltradas());
+function operacionesDeLaVista(sobre){
+  let filas = ordenarOperaciones(operacionesFiltradas(sobre));
   /* El filtro de estado se aplica sobre la operacion y no sobre el registro:
      "aun abierta" significa que no existe contrato, y eso solo se sabe despues
      de juntar el proceso con su contrato. */
@@ -983,13 +991,60 @@ function operacionesDeLaVista(){
   const rev = document.getElementById("f-revision").value;
   if (rev === "pendiente") filas = filas.filter(o => o.nivel === "Media" && !o.revisada);
   if (rev === "revisada") filas = filas.filter(o => o.revisada);
-  return filas;
+  return agrupando() ? agruparPorEntidad(filas) : filas;
+}
+
+/* Agrupar es, en el fondo, ORDENAR: las operaciones de una misma entidad quedan
+   contiguas y las entidades se ordenan por lo que suman. Hecho asi, la paginacion,
+   el informe impreso y las tres descargas heredan el mismo orden sin tocar nada
+   mas; si cada uno agrupara por su cuenta volveriamos a tener cuatro verdades. */
+const agrupando = () => {
+  const c = document.getElementById("f-agrupar");
+  return !!(c && c.checked);
+};
+
+function agruparPorEntidad(filas){
+  const por = new Map();
+  filas.forEach(o => {
+    if (!por.has(o.entidad)) por.set(o.entidad, []);
+    por.get(o.entidad).push(o);
+  });
+  const suma = ops => ops.reduce((t, o) => t + (o.firmado ? o.valor : 0), 0);
+  return [...por.values()]
+    .sort((a, b) => suma(b) - suma(a) || b.length - a.length)
+    .reduce((todo, ops) => todo.concat(ops), []);
+}
+
+/* Cuanto suma y cuantas hay de cada entidad, para la banda que encabeza el grupo. */
+function totalesPorEntidad(filas){
+  const m = new Map();
+  filas.forEach(o => {
+    if (!m.has(o.entidad)) m.set(o.entidad, { n: 0, valor: 0, abiertas: 0 });
+    const g = m.get(o.entidad);
+    g.n++;
+    if (o.firmado) g.valor += o.valor; else g.abiertas++;
+  });
+  return m;
+}
+
+/* La banda que encabeza cada entidad. `sigue` marca el grupo partido por la
+   paginacion: sin ese aviso, media docena de filas quedan bajo un encabezado que
+   parece decir que ahi empieza la entidad, y su cuenta no cuadra con lo visible. */
+function bandaEntidad(entidad, tot, sigue, columnas){
+  return `<tr class="grupo-ent"><td colspan="${columnas}">
+    <span class="ent">${esc(entidad)}</span>
+    <span class="cuenta">${frasePlural(tot.n, "operación", "operaciones")}`
+    + ` · ${esc(compacto(tot.valor))} firmado${tot.abiertas ? " · " + tot.abiertas + " sin contratar" : ""}</span>`
+    + `${sigue ? '<span class="sigue">viene de la página anterior</span>' : ""}</td></tr>`;
 }
 
 function pintarTabla(){
   pintarLeyenda();
   pintarResumenFiltros();
   pintarAvisoParcial();
+  /* El mapa colorea lo mismo que la tabla, asi que se repinta con ella y no hace
+     falta acordarse de llamarlo en cada filtro nuevo. */
+  pintarMapas();
   const filas = operacionesDeLaVista();
   const cuerpo = document.querySelector("#tabla tbody");
   /* Solo se suma lo firmado. El precio base de un proceso abierto no es plata
@@ -1048,41 +1103,56 @@ function pintarTabla(){
   const t = trozo("tabla", filas);
   pintarPaginacion("pag-tabla", "tabla", t, filas.length, pintarTabla);
 
-  cuerpo.innerHTML = t.filas.map(o => {
-    const est = o.abierta
-      ? `<span class="est est-abierta">Abierta</span>`
-      : `<span class="est est-firmada">Contratada</span>`;
-    /* Las dos referencias cuando existen: la entidad numera distinto el proceso
-       y el contrato (…010.32.1.653 contra …010.26.1.653) y quien busca en SECOP
-       puede llegar por cualquiera de las dos. */
-    const refs = [o.proceso, o.contrato].filter(Boolean)
-      .map(r => `<span class="ref" title="Número de ${r.tipo.toLowerCase()} en SECOP">${esc(r.referencia || r.id)}</span>`).join("");
-    const enlaces = [o.contrato, o.proceso].filter(r => r && r.url)
-      .map(r => `<a class="boton boton-secop" href="${esc(r.url)}" target="_blank" rel="noopener">${r.tipo === "Contrato" ? "Contrato" : "Proceso"}</a>`).join("");
-    return `
-    <tr>
-      <td class="col-est" data-etq="Estado">${est}
-        <div class="menor">${esc(o.fecha)}</div>
-        ${o.huerfana ? '<div class="menor aviso" title="El contrato se firmó pero la entidad no publicó el proceso que lo convocó">sin proceso publicado</div>' : ""}
-        ${o.novedad ? `<div class="menor"><span class="nuevo">nuevo</span></div>` : ""}</td>
-      <td class="col-que" data-etq="Qué y quién">
-        <div class="ent">${esc(o.entidad)}</div>
-        <div class="obj" title="${esc(o.objeto)}">${esc(o.objeto)}</div>
-        <div class="menor pie">${esc(o.grupo)} · ${esc(o.modalidad)}${o.justificacion ? " · " + esc(o.justificacion) : ""}</div>
-        <div class="refs">${refs}</div></td>
-      <td class="num" data-etq="Valor">${esc(pesos(o.valor))}
-        <div class="menor">${o.firmado ? "valor firmado" : "precio base"}</div>
-        ${o.duracion && !o.duracion.startsWith("0 ") ? `<div class="menor">${esc(o.duracion)}</div>` : ""}</td>
-      <td data-etq="Contratista">${o.proveedor
-        ? esc(o.proveedor)
-        : '<span class="menor">aún sin contratista</span>'}</td>
-      <td data-etq="Relación"><span class="etiqueta ${claseNivel(o.nivel)}"
-          title="${esc(nivelLargo(o.nivel))}">${esc(nivelCorto(o.nivel))}</span>
-        ${o.revisada ? `<div class="revisada" title="Lo decidió una persona, no el clasificador automático">✓ revisado${o.revisionRevisor ? " · " + esc(o.revisionRevisor) : ""}${o.revisionFecha ? " · " + esc(o.revisionFecha) : ""}</div>` : ""}
-        <div class="menor">${esc(o.motivo)}</div></td>
-      <td class="col-enl" data-etq="SECOP">${enlaces || '<span class="menor">sin enlace</span>'}</td>
-    </tr>`;
+  const porEntidad = agrupando() ? totalesPorEntidad(filas) : null;
+  const desde = (t.pagina - 1) * POR_PAGINA;
+  let entidadEnCurso = null;
+  cuerpo.innerHTML = t.filas.map((o, i) => {
+    let banda = "";
+    if (porEntidad && (i === 0 || o.entidad !== entidadEnCurso)){
+      /* En la primera fila de la pagina siempre se encabeza, aunque el grupo venga
+         de la anterior: si no, esas filas quedan sin decir de quien son. */
+      const partido = i === 0 && desde > 0 && filas[desde - 1].entidad === o.entidad;
+      banda = bandaEntidad(o.entidad, porEntidad.get(o.entidad), partido, 6);
+    }
+    entidadEnCurso = o.entidad;
+    return banda + filaOperacion(o);
   }).join("");
+}
+
+function filaOperacion(o){
+  const est = o.abierta
+    ? `<span class="est est-abierta">Abierta</span>`
+    : `<span class="est est-firmada">Contratada</span>`;
+  /* Las dos referencias cuando existen: la entidad numera distinto el proceso
+     y el contrato (…010.32.1.653 contra …010.26.1.653) y quien busca en SECOP
+     puede llegar por cualquiera de las dos. */
+  const refs = [o.proceso, o.contrato].filter(Boolean)
+    .map(r => `<span class="ref" title="Número de ${r.tipo.toLowerCase()} en SECOP">${esc(r.referencia || r.id)}</span>`).join("");
+  const enlaces = [o.contrato, o.proceso].filter(r => r && r.url)
+    .map(r => `<a class="boton boton-secop" href="${esc(r.url)}" target="_blank" rel="noopener">${r.tipo === "Contrato" ? "Contrato" : "Proceso"}</a>`).join("");
+  return `
+  <tr>
+    <td class="col-est" data-etq="Estado">${est}
+      <div class="menor">${esc(o.fecha)}</div>
+      ${o.huerfana ? '<div class="menor aviso" title="El contrato se firmó pero la entidad no publicó el proceso que lo convocó">sin proceso publicado</div>' : ""}
+      ${o.novedad ? `<div class="menor"><span class="nuevo">nuevo</span></div>` : ""}</td>
+    <td class="col-que" data-etq="Qué y quién">
+      <div class="ent">${esc(o.entidad)}</div>
+      <div class="obj" title="${esc(o.objeto)}">${esc(o.objeto)}</div>
+      <div class="menor pie">${esc(o.grupo)} · ${esc(o.modalidad)}${o.justificacion ? " · " + esc(o.justificacion) : ""}</div>
+      <div class="refs">${refs}</div></td>
+    <td class="num" data-etq="Valor">${esc(pesos(o.valor))}
+      <div class="menor">${o.firmado ? "valor firmado" : "precio base"}</div>
+      ${o.duracion && !o.duracion.startsWith("0 ") ? `<div class="menor">${esc(o.duracion)}</div>` : ""}</td>
+    <td data-etq="Contratista">${o.proveedor
+      ? esc(o.proveedor)
+      : '<span class="menor">aún sin contratista</span>'}</td>
+    <td data-etq="Relación"><span class="etiqueta ${claseNivel(o.nivel)}"
+        title="${esc(nivelLargo(o.nivel))}">${esc(nivelCorto(o.nivel))}</span>
+      ${o.revisada ? `<div class="revisada" title="Lo decidió una persona, no el clasificador automático">✓ revisado${o.revisionRevisor ? " · " + esc(o.revisionRevisor) : ""}${o.revisionFecha ? " · " + esc(o.revisionFecha) : ""}</div>` : ""}
+      <div class="menor">${esc(o.motivo)}</div></td>
+    <td class="col-enl" data-etq="SECOP">${enlaces || '<span class="menor">sin enlace</span>'}</td>
+  </tr>`;
 }
 
 /* ------------------------------------------------------------------ *
@@ -1130,6 +1200,16 @@ function estado(texto, clase){
   document.getElementById("punto").className = "punto" + (clase ? " " + clase : "");
 }
 
+async function cargarMapa(){
+  try{
+    const r = await fetch("mapa.json");
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    MAPA = await r.json();
+  }catch(e){
+    MAPA_ERROR = "No se pudo leer mapa.json: " + e.message + ".";
+  }
+}
+
 async function cargar(){
   const boton = document.getElementById("btn-refrescar");
   boton.disabled = true;
@@ -1142,6 +1222,10 @@ async function cargar(){
     const r = await fetch(RUTA_DATOS + "?v=" + Date.now(), { cache: "no-store" });
     if (!r.ok) throw new Error("HTTP " + r.status + " al pedir " + RUTA_DATOS);
     LOCAL = await r.json();
+
+    /* Los contornos se piden una sola vez: no cambian entre recolecciones, y son
+       codigo publicado, no dato recolectado. */
+    if (!MAPA && !MAPA_ERROR) await cargarMapa();
 
     DATOS = LOCAL.registros || [];
     PADRON = LOCAL.padron || [];
@@ -1205,7 +1289,7 @@ function llenarFiltroEntidades(){
   const orden = visibles.slice().sort((a, b) =>
     (ENTIDADES_SEL.has(b) ? 1 : 0) - (ENTIDADES_SEL.has(a) ? 1 : 0));
   lista.innerHTML = orden.length
-    ? orden.map(e => `<label class="opt"><input type="checkbox" value="${esc(e)}"`
+    ? orden.map(e => `<label class="opt" title="${esc(e)}"><input type="checkbox" value="${esc(e)}"`
         + `${ENTIDADES_SEL.has(e) ? " checked" : ""}><span>${esc(e)}</span></label>`).join("")
     : `<p class="nada">Ninguna entidad coincide con esa búsqueda.</p>`;
   pintarResumenEntidades();
@@ -1238,6 +1322,167 @@ function pintarTitulos(){
   document.getElementById("titulo-kpis").textContent =
     "Detalle por nivel de gobierno · Cali, Valle del Cauca y UNGRD desde el "
     + CFG.inicio.split("-").reverse().join("/");
+}
+
+/* ------------------------------------------------------------------ *
+ * Mapas                                                              *
+ * ------------------------------------------------------------------ */
+/* Los contornos son del DANE y viven en mapa.json, que genera preparar_mapa.py a
+   mano y se publica como CODIGO: no hay servidor de mapas ni tesela que pedirle a
+   nadie, igual que no hay libreria para el Excel. Si el archivo no carga, la
+   seccion lo dice y el resto del tablero sigue funcionando.
+
+   El mapa colorea lo MISMO que la tabla: sale de operacionesDeLaVista(), asi que
+   filtrar por entidad o por fecha repinta los dos a la vez. Un mapa que ignora los
+   filtros mientras la tabla los aplica es la peor version de dos verdades. */
+let MAPA = null;
+let MAPA_ERROR = "";
+
+/* Cinco tramos: el cero tiene color propio -y significa "no ha contratado", que en
+   este tablero es una afirmacion fuerte- y los otros cuatro reparten lo que hay por
+   cuantiles. Cuantiles y no tramos iguales porque el RCD de Cali, con $3.760
+   millones de una sola operacion, aplanaria a los demas municipios contra el
+   extremo bajo de cualquier escala lineal. */
+function tramos(valores){
+  const v = valores.filter(x => x > 0).sort((a, b) => a - b);
+  if (!v.length) return [];
+  const corte = q => v[Math.min(v.length - 1, Math.floor(q * v.length))];
+  return [...new Set([corte(0.25), corte(0.5), corte(0.75), v[v.length - 1]])];
+}
+
+const claseTramo = (valor, cortes) => {
+  if (!valor) return "m0";
+  for (let i = 0; i < cortes.length; i++) if (valor <= cortes[i]) return "m" + (i + 1);
+  return "m" + cortes.length;
+};
+
+/* Lo que cada pieza suma, en operaciones y en plata, sobre lo que hay filtrado. */
+function porTerritorio(ops, clave){
+  const m = new Map();
+  ops.forEach(o => {
+    const k = o[clave];
+    if (!k) return;
+    if (!m.has(k)) m.set(k, { n: 0, valor: 0, abiertas: 0, deducidas: 0 });
+    const g = m.get(k);
+    g.n++;
+    if (o.firmado) g.valor += o.valor; else g.abiertas++;
+    if (o.municipioOrigen === "entidad") g.deducidas++;
+  });
+  return m;
+}
+
+const metricaMapa = () => {
+  const s = document.getElementById("f-mapa-metrica");
+  return s && s.value === "n" ? "n" : "valor";
+};
+
+function pintarUnMapa(destino, def, datos, metrica, rotulo){
+  const el = document.getElementById(destino);
+  if (!el) return;
+  const cortes = tramos(def.piezas.map(p => (datos.get(p.codigo) || {})[metrica] || 0));
+  const piezas = def.piezas.map(p => {
+    const d = datos.get(p.codigo) || { n: 0, valor: 0, abiertas: 0 };
+    const cual = (d[metrica] || 0);
+    /* El titulo emergente es el unico sitio donde el mapa da la cifra exacta. Sin
+       el, un color oscuro solo dice "mas que el vecino". */
+    const dice = d.n
+      ? `${p.nombre}: ${frasePlural(d.n, "operación", "operaciones")}, `
+        + `${pesos(d.valor)} firmado${d.abiertas ? ", " + d.abiertas + " sin contratar" : ""}`
+      : `${p.nombre}: sin contratación que cumpla los filtros`;
+    return `<path d="${p.d}" class="${claseTramo(cual, cortes)}"><title>${esc(dice)}</title></path>`;
+  }).join("");
+  el.innerHTML = `<svg viewBox="0 0 ${def.ancho} ${def.alto}" role="img"
+      aria-label="${esc(rotulo)}" preserveAspectRatio="xMidYMid meet">${piezas}</svg>`;
+  return cortes;
+}
+
+function leyendaMapa(cortes, metrica){
+  const fmt = v => metrica === "n" ? String(v) : compacto(v);
+  const trozos = ['<span class="tramo"><i class="m0"></i>sin contratación</span>'];
+  let desde = 1;
+  cortes.forEach((c, i) => {
+    trozos.push(`<span class="tramo"><i class="m${i + 1}"></i>`
+      + `${esc(desde === c ? fmt(c) : fmt(desde) + "–" + fmt(c))}</span>`);
+    desde = c + 1;
+  });
+  return trozos.join("");
+}
+
+function pintarMapas(){
+  const caja = document.getElementById("mapa-aviso");
+  if (!caja) return;
+  if (MAPA_ERROR){
+    /* Que el mapa no cargue no puede parecerse a que no haya contratacion. */
+    caja.innerHTML = `<b>El mapa no se pudo dibujar.</b> ${esc(MAPA_ERROR)} `
+      + `Las cifras de la tabla y del resto de la página no dependen de esto.`;
+    caja.hidden = false;
+    return;
+  }
+  if (!MAPA) return;
+
+  const ops = operacionesDeLaVista();
+  /* El mapa del pais ignora SOLO el filtro de territorio, y su rotulo lo dice. Con
+     el filtro por defecto -Cali y el Valle- se veria un pais entero en blanco salvo
+     una pieza, y eso no se lee como "filtrado" sino como "no hay contratacion". Es
+     el mismo trato que el desglose le da a lo de fuera del Valle: a la vista, pero
+     rotulado y sin sumar en las cifras. */
+  const opsPais = operacionesDeLaVista({ grupo: "todos" });
+  const metrica = metricaMapa();
+  const porMun = porTerritorio(ops.filter(o => o.grupo !== "Fuera del Valle"), "municipio");
+  const porDep = porTerritorio(opsPais, "depCodigo");
+
+  const cortesValle = pintarUnMapa("mapa-valle", MAPA.valle, porMun, metrica,
+    "Municipios del Valle del Cauca según la contratación relacionada con el sismo");
+  pintarUnMapa("mapa-pais", MAPA.pais, porDep, metrica,
+    "Departamentos de Colombia según la contratación relacionada con el sismo");
+  document.getElementById("pie-pais").textContent =
+    frasePlural(opsPais.length, "operación", "operaciones") + " en todo el país";
+
+  document.getElementById("mapa-leyenda").innerHTML = leyendaMapa(cortesValle, metrica);
+
+  /* Lo que el mapa NO puede dibujar, dicho con nombre y numero. Un mapa que se come
+     operaciones en silencio es peor que no tener mapa: se lee como un censo. */
+  const delValle = ops.filter(o => o.grupo !== "Fuera del Valle");
+  const deducidas = delValle.filter(o => o.municipioOrigen === "entidad").length;
+  const sinSitio = delValle.filter(o => !o.municipio).length;
+  const conMunicipio = [...porMun.values()].reduce((s, g) => s + g.n, 0);
+  const notas = [
+    `${frasePlural(conMunicipio, "operación", "operaciones")} situadas en `
+      + `${frasePlural(porMun.size, "municipio", "municipios")} del Valle`,
+  ];
+  if (deducidas) notas.push(`<b>${deducidas}</b> por el nombre de la entidad, porque la `
+    + `fuente publica su municipio como «No Definido»`);
+
+  if (sinSitio) notas.push(`<b>${sinSitio}</b> sin municipio ni pista en el nombre de la `
+    + `entidad: ${sinSitio === 1 ? "no aparece" : "no aparecen"} en el mapa del Valle`);
+  const fuera = opsPais.filter(o => o.grupo === "Fuera del Valle").length;
+  if (fuera) notas.push(`el mapa de Colombia añade <b>${fuera}</b> de otras regiones que `
+    + `nombran el sismo, que no suman en las cifras del tablero`);
+  document.getElementById("mapa-notas").innerHTML = notas.join(" · ") + ".";
+  /* El titulo dice lo esencial aunque la seccion este plegada, que es como arranca
+     en el telefono: dos mapas ocupan ahi tres pantallas. */
+  const res = document.getElementById("mapa-resumen");
+  if (res) res.textContent = "· " + frasePlural(porMun.size, "municipio", "municipios")
+    + " del Valle con contratación";
+  caja.hidden = true;
+}
+
+/* Las cifras por territorio, para el Excel y para quien quiera cruzarlas. Sale de
+   lo mismo que colorea el mapa. */
+function filasTerritorio(){
+  const ops = operacionesDeLaVista();
+  const nombreMun = new Map((MAPA ? MAPA.valle.piezas : []).map(p => [p.codigo, p.nombre]));
+  const nombreDep = new Map((MAPA ? MAPA.pais.piezas : []).map(p => [p.codigo, p.nombre]));
+  const filas = [];
+  [...porTerritorio(ops.filter(o => o.grupo !== "Fuera del Valle"), "municipio").entries()]
+    .sort((a, b) => b[1].valor - a[1].valor)
+    .forEach(([cod, g]) => filas.push(["Municipio del Valle", cod,
+      nombreMun.get(cod) || cod, g.n, g.valor, g.abiertas, g.deducidas]));
+  [...porTerritorio(ops, "depCodigo").entries()]
+    .sort((a, b) => b[1].valor - a[1].valor)
+    .forEach(([cod, g]) => filas.push(["Departamento", cod,
+      nombreDep.get(cod) || cod, g.n, g.valor, g.abiertas, g.deducidas]));
+  return filas;
 }
 
 /* ------------------------------------------------------------------ *
@@ -1348,7 +1593,11 @@ function crc32(bytes){
 const bytesDe = txt => new TextEncoder().encode(txt);
 
 function zip(archivos){
-  const cod = archivos.map(a => ({ nombre: bytesDe(a.nombre), datos: bytesDe(a.contenido) }));
+  /* El contenido llega como texto (los XML) o como bytes (el PNG del mapa). */
+  const cod = archivos.map(a => ({
+    nombre: bytesDe(a.nombre),
+    datos: a.contenido instanceof Uint8Array ? a.contenido : bytesDe(a.contenido),
+  }));
   cod.forEach(a => { a.crc = crc32(a.datos); });
   const total = cod.reduce((s, a) => s + 30 + a.nombre.length + a.datos.length
                                        + 46 + a.nombre.length, 0) + 22;
@@ -1421,7 +1670,7 @@ function letraCol(i){
   return s;
 }
 
-function hojaXml(titulos, filas, anchos){
+function hojaXml(titulos, filas, anchos, conDibujo){
   const celda = (v, fila, col) => {
     const ref = letraCol(col) + fila;
     const numero = typeof v === "number" && isFinite(v);
@@ -1436,7 +1685,9 @@ function hojaXml(titulos, filas, anchos){
     .map((a, i) => `<col min="${i + 1}" max="${i + 1}" width="${a}" customWidth="1"/>`).join("");
   const ultima = letraCol(titulos.length - 1) + (filas.length + 1);
   return '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
-    + '<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">'
+    + '<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"'
+    + (conDibujo ? ' xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"' : "")
+    + '>'
     /* Fila de titulos congelada: con trescientas filas, a la mitad ya no se sabe
        que columna se esta mirando. */
     + '<sheetViews><sheetView workbookViewId="0">'
@@ -1444,7 +1695,11 @@ function hojaXml(titulos, filas, anchos){
     + '</sheetView></sheetViews>'
     + `<cols>${cols}</cols><sheetData>`
     + [titulos].concat(filas).map(filaXml).join("")
-    + `</sheetData><autoFilter ref="A1:${ultima}"/></worksheet>`;
+    /* El dibujo va DESPUES del autofiltro: el esquema de Excel fija el orden de
+       los elementos y con uno fuera de sitio el archivo se declara corrupto. */
+    + `</sheetData><autoFilter ref="A1:${ultima}"/>`
+    + (conDibujo ? '<drawing r:id="rId1"/>' : "")
+    + '</worksheet>';
 }
 
 const ESTILOS_XLSX = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
@@ -1464,7 +1719,102 @@ const ESTILOS_XLSX = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
   + '<cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles>'
   + '</styleSheet>';
 
-function libroXlsx(){
+/* ---- El mapa dentro del Excel --------------------------------------- *
+ * Excel no dibuja SVG: hay que llevarle un PNG. Se rasteriza en el propio
+ * navegador, sin servidor ni libreria. Dos avisos que cuestan una tarde si no se
+ * saben: dentro de una imagen NO viajan las clases CSS -hay que escribir el
+ * color en cada trazo- y un SVG sin ancho ni alto explicitos puede rasterizarse
+ * a cero pixeles, porque el viewBox solo dice proporciones.
+ * ------------------------------------------------------------------- */
+const PALETA_MAPA = { m0: "#E9EEEC", m1: "#CFE3E0", m2: "#93C6C0", m3: "#4E9A93",
+                      m4: "#0E5C58" };
+
+function svgAutonomo(sel, ancho){
+  const svg = document.querySelector(sel);
+  if (!svg) return null;
+  const vb = (svg.getAttribute("viewBox") || "0 0 1000 1000").split(/\s+/).map(Number);
+  const alto = Math.round(ancho * (vb[3] / vb[2]));
+  const copia = svg.cloneNode(true);
+  copia.querySelectorAll("path").forEach(p => {
+    /* Siempre la paleta clara: el archivo se abre en Excel, sobre fondo blanco,
+       y los tonos del modo oscuro alli no se leen. */
+    p.setAttribute("fill", PALETA_MAPA[p.getAttribute("class")] || PALETA_MAPA.m0);
+    p.setAttribute("stroke", "#FFFFFF");
+    p.setAttribute("stroke-width", "0.8");
+    p.removeAttribute("class");
+  });
+  copia.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+  copia.setAttribute("width", ancho);
+  copia.setAttribute("height", alto);
+  return { texto: new XMLSerializer().serializeToString(copia), ancho, alto };
+}
+
+async function pngDelMapa(sel, ancho){
+  const s = svgAutonomo(sel, ancho);
+  if (!s) return null;
+  const img = new Image();
+  await new Promise((listo, falla) => {
+    img.onload = listo;
+    img.onerror = () => falla(new Error("el navegador no pudo leer el SVG"));
+    img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(s.texto);
+  });
+  /* Al doble de resolucion: en Excel la imagen se amplia al mirarla de cerca y a
+     tamano natural se ve dentada. */
+  const lienzo = document.createElement("canvas");
+  lienzo.width = s.ancho * 2;
+  lienzo.height = s.alto * 2;
+  const ctx = lienzo.getContext("2d");
+  ctx.fillStyle = "#FFFFFF";
+  ctx.fillRect(0, 0, lienzo.width, lienzo.height);
+  ctx.drawImage(img, 0, 0, lienzo.width, lienzo.height);
+  const blob = await new Promise(r => lienzo.toBlob(r, "image/png"));
+  if (!blob) throw new Error("el lienzo no devolvio imagen");
+  return { bytes: new Uint8Array(await blob.arrayBuffer()), ancho: s.ancho, alto: s.alto };
+}
+
+/* Un pixel son 9.525 EMU, que es la unidad con la que Excel coloca los dibujos. */
+const EMU = 9525;
+
+function dibujoXml(imagenes){
+  const anclas = imagenes.map((im, i) => {
+    /* Una debajo de otra, dejando sitio a la tabla de la izquierda: columna 9,
+       que empieza despues de la ultima con datos. */
+    const fila = imagenes.slice(0, i).reduce((f, x) => f + Math.ceil(x.alto / 20) + 2, 1);
+    return `<xdr:oneCellAnchor>
+      <xdr:from><xdr:col>8</xdr:col><xdr:colOff>0</xdr:colOff>`
+      + `<xdr:row>${fila}</xdr:row><xdr:rowOff>0</xdr:rowOff></xdr:from>
+      <xdr:ext cx="${im.ancho * EMU}" cy="${im.alto * EMU}"/>
+      <xdr:pic>
+        <xdr:nvPicPr><xdr:cNvPr id="${i + 2}" name="${esc(im.nombre)}"/>
+          <xdr:cNvPicPr/></xdr:nvPicPr>
+        <xdr:blipFill><a:blip r:embed="rId${i + 1}"/><a:stretch><a:fillRect/></a:stretch></xdr:blipFill>
+        <xdr:spPr><a:xfrm><a:off x="0" y="0"/>`
+      + `<a:ext cx="${im.ancho * EMU}" cy="${im.alto * EMU}"/></a:xfrm>
+          <a:prstGeom prst="rect"><a:avLst/></a:prstGeom></xdr:spPr>
+      </xdr:pic><xdr:clientData/></xdr:oneCellAnchor>`;
+  }).join("");
+  return '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+    + '<xdr:wsDr xmlns:xdr="http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing" '
+    + 'xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" '
+    + 'xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">'
+    + anclas + '</xdr:wsDr>';
+}
+
+async function libroXlsx(){
+  /* El mapa como imagen. Si el navegador no lo puede rasterizar, el libro sale
+     igual con todas sus cifras: perder el dibujo no puede costar el archivo. */
+  let imagenes = [];
+  try{
+    const a = await pngDelMapa("#mapa-valle svg", 520);
+    const b = await pngDelMapa("#mapa-pais svg", 520);
+    imagenes = [];
+    if (a) imagenes.push(Object.assign(a, { nombre: "Valle del Cauca por municipio" }));
+    if (b) imagenes.push(Object.assign(b, { nombre: "Colombia por departamento" }));
+  }catch(e){
+    console.warn("El mapa no se pudo incrustar en el Excel:", e.message);
+    imagenes = [];
+  }
+
   const ops = operacionesDeLaVista();
   const hojaOps = hojaXml(
     COLS_OPERACION.map(c => c[0]),
@@ -1482,9 +1832,17 @@ function libroXlsx(){
       : (r[c] === null || r[c] === undefined ? "" : String(r[c])))),
     COLS_REGISTRO.map(c => c === "objeto" ? 70 : c === "url" ? 46 : 20));
 
+  /* Las mismas cifras que colorean el mapa. Un mapa en una hoja de calculo no se
+     puede pivotar; estas filas si. */
+  const hojaTerr = hojaXml(
+    ["Ambito", "Codigo DANE", "Nombre", "Operaciones", "Valor firmado", "Sin contratar",
+     "Situadas por el nombre de la entidad"],
+    filasTerritorio(), [22, 14, 34, 14, 18, 14, 34], imagenes.length > 0);
+
   const hojaProc = hojaXml(["Que es esto", "Valor"], procedencia(), [30, 90]);
 
-  const hojas = [["Operaciones", hojaOps], ["Registros", hojaRegs], ["Procedencia", hojaProc]];
+  const hojas = [["Operaciones", hojaOps], ["Registros", hojaRegs],
+                 ["Territorio", hojaTerr], ["Procedencia", hojaProc]];
 
   const tipos = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
     + '<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">'
@@ -1494,6 +1852,11 @@ function libroXlsx(){
     + hojas.map((h, i) => `<Override PartName="/xl/worksheets/sheet${i + 1}.xml" `
         + 'ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>').join("")
     + '<Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/>'
+    + (imagenes.length
+        ? '<Default Extension="png" ContentType="image/png"/>'
+          + '<Override PartName="/xl/drawings/drawing1.xml" '
+          + 'ContentType="application/vnd.openxmlformats-officedocument.drawing+xml"/>'
+        : "")
     + '</Types>';
 
   const libro = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
@@ -1517,20 +1880,58 @@ function libroXlsx(){
     + 'Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" '
     + 'Target="xl/workbook.xml"/></Relationships>';
 
-  return zip([
+  const partes = [
     { nombre: "[Content_Types].xml", contenido: tipos },
     { nombre: "_rels/.rels", contenido: raiz },
     { nombre: "xl/workbook.xml", contenido: libro },
     { nombre: "xl/_rels/workbook.xml.rels", contenido: relsLibro },
     { nombre: "xl/styles.xml", contenido: ESTILOS_XLSX },
-  ].concat(hojas.map((h, i) => ({ nombre: `xl/worksheets/sheet${i + 1}.xml`, contenido: h[1] }))));
+  ].concat(hojas.map((h, i) => ({ nombre: `xl/worksheets/sheet${i + 1}.xml`, contenido: h[1] })));
+
+  if (imagenes.length){
+    /* El dibujo cuelga de la hoja de Territorio, que es la tercera. Son cuatro
+       piezas encadenadas -hoja -> dibujo -> imagen- y si falta un eslabon Excel
+       abre el archivo pero sin la imagen y sin decir nada. */
+    const nHoja = hojas.findIndex(h => h[0] === "Territorio") + 1;
+    partes.push({
+      nombre: `xl/worksheets/_rels/sheet${nHoja}.xml.rels`,
+      contenido: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+        + '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">'
+        + '<Relationship Id="rId1" '
+        + 'Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/drawing" '
+        + 'Target="../drawings/drawing1.xml"/></Relationships>',
+    });
+    partes.push({ nombre: "xl/drawings/drawing1.xml", contenido: dibujoXml(imagenes) });
+    partes.push({
+      nombre: "xl/drawings/_rels/drawing1.xml.rels",
+      contenido: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+        + '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">'
+        + imagenes.map((im, i) => `<Relationship Id="rId${i + 1}" `
+            + 'Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" '
+            + `Target="../media/image${i + 1}.png"/>`).join("")
+        + '</Relationships>',
+    });
+    imagenes.forEach((im, i) => partes.push({
+      nombre: `xl/media/image${i + 1}.png`, contenido: im.bytes }));
+  }
+  return zip(partes);
 }
 
-function descargarXlsx(){
-  bajarArchivo(
-    new Blob([libroXlsx()],
-             { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" }),
-    "contratacion_urgencia_manifiesta_" + hoyArchivo() + ".xlsx");
+async function descargarXlsx(){
+  const boton = document.getElementById("btn-xlsx");
+  const antes = boton ? boton.textContent : "";
+  if (boton){ boton.disabled = true; boton.textContent = "Preparando…"; }
+  try{
+    bajarArchivo(
+      new Blob([await libroXlsx()],
+               { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" }),
+      "contratacion_urgencia_manifiesta_" + hoyArchivo() + ".xlsx");
+  }catch(e){
+    /* Un error aqui deja el boton muerto y sin explicacion; se dice. */
+    alert("No se pudo generar el Excel: " + e.message);
+  }finally{
+    if (boton){ boton.disabled = false; boton.textContent = antes; }
+  }
 }
 
 /* ---- Informe para papel y PDF --------------------------------------- *
@@ -1539,6 +1940,26 @@ function descargarXlsx(){
  * el texto por el que se juzga si una contratacion tiene que ver con el sismo.
  * En papel salen TODAS las filas filtradas, no las 20 de la pagina.
  * ------------------------------------------------------------------- */
+/* Los mapas para el papel. Se copian los SVG ya dibujados en vez de volver a
+   generarlos: son los mismos, y duplicar el codigo de pintado es como se acaba
+   teniendo dos mapas que no dicen lo mismo. */
+function mapasParaPapel(){
+  const valle = document.querySelector("#mapa-valle svg");
+  const pais = document.querySelector("#mapa-pais svg");
+  if (!valle && !pais) return "";
+  const notas = document.getElementById("mapa-notas");
+  const pie = document.getElementById("pie-pais");
+  return `<div class="mapas-papel">
+    ${valle ? `<figure><figcaption>Valle del Cauca · por municipio</figcaption>
+        ${valle.outerHTML}</figure>` : ""}
+    ${pais ? `<figure><figcaption>Colombia · por departamento (sin el filtro de
+        territorio${pie && pie.textContent ? " · " + esc(pie.textContent) : ""})</figcaption>
+        ${pais.outerHTML}</figure>` : ""}
+    </div>
+    <div class="leyenda-mapa">${document.getElementById("mapa-leyenda").innerHTML}</div>
+    ${notas ? `<p class="pie-inf">${notas.innerHTML}</p>` : ""}`;
+}
+
 function imprimirInforme(){
   const caja = document.getElementById("impresion");
   if (!caja) return;
@@ -1550,12 +1971,24 @@ function imprimirInforme(){
   const aviso = document.getElementById("aviso-parcial");
   const vacio = document.getElementById("vacio");
 
+  const porEntidad = agrupando() ? totalesPorEntidad(filas) : null;
+  let enCurso = null;
   const cuerpo = filas.map(o => {
+    /* En papel no hay paginacion propia, asi que la banda va una sola vez por
+       entidad; el navegador ya repite la cabecera de la tabla en cada hoja. */
+    let banda = "";
+    if (porEntidad && o.entidad !== enCurso){
+      const tot = porEntidad.get(o.entidad);
+      banda = `<tr class="grupo-ent"><td colspan="5"><b>${esc(o.entidad)}</b> · `
+        + `${frasePlural(tot.n, "operación", "operaciones")} · ${esc(pesos(tot.valor))} firmado`
+        + `${tot.abiertas ? " · " + tot.abiertas + " sin contratar" : ""}</td></tr>`;
+    }
+    enCurso = o.entidad;
     const refs = [o.proceso, o.contrato].filter(Boolean)
       .map(r => esc(r.referencia || r.id)).join(" · ");
-    return `<tr>
+    return banda + `<tr>
       <td>${o.firmado ? "Contratada" : "Abierta"}<div class="menor">${esc(o.fecha)}</div></td>
-      <td><b>${esc(o.entidad)}</b>
+      <td>${porEntidad ? "" : `<b>${esc(o.entidad)}</b>`}
         <div class="obj">${esc(o.objeto)}</div>
         <div class="menor">${esc(o.grupo)}${o.modalidad ? " · " + esc(o.modalidad) : ""}${
           refs ? " · " + refs : ""}</div></td>
@@ -1578,6 +2011,7 @@ function imprimirInforme(){
         · ${esc(pesos(valor))} firmado${abiertas ? " · " + abiertas + " aún sin contratar" : ""}</td></tr>
     </tbody></table>
     ${aviso && !aviso.hidden ? `<p class="ojo">${aviso.innerHTML}</p>` : ""}
+    ${mapasParaPapel()}
     ${filas.length
       ? `<table class="listado"><thead><tr><th>Estado</th><th>Entidad y objeto</th>
            <th>Valor</th><th>Contratista</th><th>Relación</th></tr></thead>
@@ -1621,6 +2055,19 @@ document.getElementById("f-entidad-lista").addEventListener("change", ev => {
   if (!c || c.type !== "checkbox") return;
   if (c.checked) ENTIDADES_SEL.add(c.value); else ENTIDADES_SEL.delete(c.value);
   pintarResumenEntidades();
+  paginas.tabla = 1;
+  pintarTabla();
+});
+/* En pantalla estrecha la seccion del mapa arranca plegada: son dos mapas y ahi
+   ocupan tres pantallas antes de llegar a la tabla. En el escritorio va abierta,
+   que es lo que se pidio. El lector puede abrirla o cerrarla; esto solo decide
+   como empieza. */
+if ((window.innerWidth || 1024) < 700){
+  const caja = document.querySelector(".mapa-caja");
+  if (caja) caja.open = false;
+}
+document.getElementById("f-mapa-metrica").addEventListener("change", pintarMapas);
+document.getElementById("f-agrupar").addEventListener("change", () => {
   paginas.tabla = 1;
   pintarTabla();
 });
