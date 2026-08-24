@@ -1404,9 +1404,13 @@ const letraPieza = area => Math.max(11, Math.min(21, Math.round(Math.sqrt(area |
 function etiquetaPieza(p, dato, metrica, mostrar){
   if (!mostrar) return "";
   const cuerpo = letraPieza(p.a);
-  const cifra = dato && dato.n
-    ? (metrica === "n" ? dato.n + (dato.n === 1 ? " op." : " ops.") : compacto(dato.valor))
-    : "";
+  /* "$ 0" no es una cifra, es un cero sin explicacion: pasa en los municipios que
+     solo tienen procesos sin firmar, que ya van en su propio color. Se escribe lo
+     que de verdad hay. */
+  const cifra = !dato || !dato.n ? ""
+    : metrica === "n" ? dato.n + (dato.n === 1 ? " op." : " ops.")
+    : dato.valor ? compacto(dato.valor)
+    : dato.n + (dato.n === 1 ? " sin firmar" : " sin firmar");
   const nombre = `<tspan x="${p.cx}" dy="0">${esc(p.rotulo || p.nombre)}</tspan>`;
   const linea2 = cifra
     ? `<tspan x="${p.cx}" dy="${(cuerpo * 1.05).toFixed(1)}" class="cifra">${esc(cifra)}</tspan>`
@@ -1473,10 +1477,13 @@ function pintarUnMapa(destino, def, datos, metrica, rotulo){
     const cual = (d[metrica] || 0);
     /* El titulo emergente es el unico sitio donde el mapa da la cifra exacta. Sin
        el, un color oscuro solo dice "mas que el vecino". */
-    const dice = d.n
-      ? `${p.nombre}: ${frasePlural(d.n, "operación", "operaciones")}, `
-        + `${pesos(d.valor)} firmado${d.abiertas ? ", " + d.abiertas + " sin contratar" : ""}`
-      : `${p.nombre}: sin contratación que cumpla los filtros`;
+    const dice = !d.n
+      ? `${p.nombre}: sin contratación que cumpla los filtros`
+      : d.valor
+        ? `${p.nombre}: ${frasePlural(d.n, "operación", "operaciones")}, `
+          + `${pesos(d.valor)} firmado${d.abiertas ? ", " + d.abiertas + " sin contratar" : ""}`
+        : `${p.nombre}: ${frasePlural(d.n, "operación", "operaciones")}, `
+          + `ninguna firmada todavía`;
     return `<path d="${p.d}" class="${claseMapa(d, metrica, cortes)}">`
       + `<title>${esc(dice)}</title></path>`;
   }).join("");
