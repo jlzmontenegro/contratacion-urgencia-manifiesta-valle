@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600&family=Public+Sans:wght@300..700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="tablero.css?v=202608241201">
+<link rel="stylesheet" href="tablero.css?v=202608241234">
 </head>
 <body>
 <div class="envoltura">
@@ -243,6 +243,8 @@
       <option value="valor">Valor firmado</option>
       <option value="n">Número de operaciones</option>
     </select>
+    <label class="agrupar"><input type="checkbox" id="f-mapa-nombres" checked> Nombres
+      en el mapa</label>
     <div class="leyenda-mapa" id="mapa-leyenda"></div>
   </div>
   <div class="aviso-parcial" id="mapa-aviso" hidden></div>
@@ -397,6 +399,6 @@
 <!-- Solo se ve al imprimir. Se arma en el momento con lo que hay en pantalla:
      la tabla va paginada de a 20 y en papel hacen falta todas las filas. -->
 <div id="impresion" aria-hidden="true"></div>
-<script src="tablero.js?v=202608241201"></script>
+<script src="tablero.js?v=202608241234"></script>
 </body>
 </html>

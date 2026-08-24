@@ -51,6 +51,15 @@ AREA_MINIMA_PAIS = 0.004
 AREA_MINIMA_VALLE = 0.0004
 
 
+# Como se ESCRIBE cada pieza en el mapa, cuando el nombre oficial no cabe. El
+# nombre oficial se conserva en `nombre` porque es la llave con la que el colector
+# empareja lo que publica SECOP; esto es solo el rotulo.
+ROTULOS = {
+    "ARCHIPIELAGO DE SAN ANDRES PROVIDENCIA Y SANTA CATALINA": "SAN ANDRES",
+    "SANTAFE DE BOGOTA D.C": "BOGOTA D.C.",
+}
+
+
 def bajar(url):
     print("  bajando", url.split("/")[-1])
     with urllib.request.urlopen(url, timeout=300) as r:
@@ -101,6 +110,31 @@ def area(anillo):
     return abs(s) / 2.0
 
 
+def centroide(anillo):
+    """Centroide del poligono, ponderado por area, no la media de los vertices.
+
+    La media simple se va hacia donde el contorno tiene mas puntos, que es donde
+    mas recovecos hay: en el Valle, hacia la cordillera. Esta formula da el centro
+    de masa de la figura, que es donde una etiqueta se ve centrada.
+    """
+    a = 0.0
+    cx = 0.0
+    cy = 0.0
+    for i in range(len(anillo)):
+        x1, y1 = anillo[i]
+        x2, y2 = anillo[(i + 1) % len(anillo)]
+        cruz = x1 * y2 - x2 * y1
+        a += cruz
+        cx += (x1 + x2) * cruz
+        cy += (y1 + y2) * cruz
+    if a == 0:
+        # Poligono degenerado: se cae a la media de los vertices antes que fallar.
+        return (sum(x for x, _ in anillo) / len(anillo),
+                sum(y for _, y in anillo) / len(anillo))
+    a *= 0.5
+    return cx / (6 * a), cy / (6 * a)
+
+
 def anillos_de(geom):
     """Los anillos EXTERIORES de un Polygon o MultiPolygon. Los interiores -los
     agujeros- se descartan: a esta escala no se ven y duplicarian el peso."""
@@ -132,9 +166,12 @@ def preparar(features, clave_codigo, clave_nombre, tol, area_min, extra=None):
                 anillos.append(s)
         if not anillos:
             continue
+        nombre = str(pr[clave_nombre]).strip()
         pieza = {"codigo": str(pr[clave_codigo]).strip(),
-                 "nombre": str(pr[clave_nombre]).strip(),
+                 "nombre": nombre,
                  "anillos": anillos}
+        if nombre in ROTULOS:
+            pieza["rotulo"] = ROTULOS[nombre]
         if extra:
             pieza.update({k: str(pr[v]).strip() for k, v in extra.items()})
         piezas.append(pieza)
@@ -159,10 +196,20 @@ def proyectar(piezas, ancho=1000.0):
 
     for p in piezas:
         trazos = []
+        proyectados = []
         for anillo in p["anillos"]:
             pts = [punto(x, y) for x, y in anillo]
+            proyectados.append(pts)
             trazos.append("M" + "L".join(f"{x} {y}" for x, y in pts) + "Z")
         p["d"] = "".join(trazos)
+        # Donde va la etiqueta: el centroide del anillo MAYOR, no el de todos. Con
+        # todos, Buenaventura -que tiene islas- se llevaria el nombre mar adentro.
+        mayor = max(proyectados, key=area)
+        cx, cy = centroide(mayor)
+        p["cx"], p["cy"] = round(cx, 1), round(cy, 1)
+        # El tamano de la pieza, para que la etiqueta se encoja en las pequenas:
+        # con un solo cuerpo de letra, el nombre de Yotoco tapaba tres municipios.
+        p["a"] = round(area(mayor))
         del p["anillos"]
     return round(alto, 1)
 

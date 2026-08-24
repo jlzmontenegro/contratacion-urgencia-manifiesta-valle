@@ -342,6 +342,24 @@ defecto —Cali y el Valle— saldría un país entero en blanco salvo una pieza
 fuera del Valle: a la vista, rotulado y sin sumar en las cifras. El del Valle sí respeta todos
 los filtros.
 
+**Cada pieza lleva su etiqueta dentro del SVG**, no como capa aparte: así se escala con el mapa
+y viaja tal cual al informe impreso y al PNG del Excel. El cuerpo de letra sale de la raíz del
+área de la pieza (`a` en `mapa.json`), porque con uno solo el nombre de un municipio pequeño se
+derramaba sobre tres vecinos. Van con halo del color del panel —`paint-order:stroke`, que pinta
+el borde debajo del relleno de la letra— o el nombre no se lee sobre el tono oscuro de la rampa.
+`separarEtiquetas()` resuelve los dos o tres solapes por mapa apartando la de la pieza **menor**,
+y luego mete hacia dentro las que se salgan por cualquiera de los cuatro lados: **San Andrés
+tiene su centroide en (0.9, 2.8)**, la esquina noroeste, y su rótulo centrado se salía por la
+izquierda y por arriba a la vez. Los nombres que no caben llevan `rotulo` corto en `mapa.json`
+—San Andrés, Bogotá D.C.—; `nombre` se conserva **porque es la llave con la que el colector
+empareja lo que publica SECOP**.
+
+**El informe impreso necesita SUS PROPIAS reglas de relleno.** Las de pantalla cuelgan de
+`.lienzo` y dentro de `#impresion` no hay ningún `.lienzo`: los mapas salían **enteros en negro**
+—el relleno por defecto de un `<path>`— mientras la leyenda, cuyas reglas no dependen del
+contenedor, salía en color. No hay error, simplemente no coincide el selector; se vio en el papel,
+no en el código. Y `print-color-adjust:exact`, o el navegador descarta los rellenos al imprimir.
+
 **Los tramos de color son por cuantiles, no lineales.** El RCD de Cali, $3.760 millones en una
 sola operación, aplastaría a los demás municipios contra el extremo bajo de cualquier escala
 lineal. Y el cero tiene color propio, separado de la rampa: "no ha contratado" no es "ha

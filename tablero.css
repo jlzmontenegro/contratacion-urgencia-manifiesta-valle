@@ -733,6 +733,17 @@
   .lienzo path:hover{stroke:var(--texto);stroke-width:1.4}
   .lienzo .m0{fill:var(--m0)} .lienzo .m1{fill:var(--m1)} .lienzo .m2{fill:var(--m2)}
   .lienzo .m3{fill:var(--m3)} .lienzo .m4{fill:var(--m4)} .lienzo .mp{fill:var(--mp)}
+
+  /* Etiquetas. El halo del color del panel es lo que las hace legibles sobre
+     cualquier relleno de la rampa; paint-order:stroke pinta el borde DEBAJO del
+     relleno de la letra, que si no se come el trazo. */
+  .lienzo .etq{fill:var(--texto-2);text-anchor:middle;dominant-baseline:middle;
+               font-family:"Public Sans",system-ui,sans-serif;font-weight:500;
+               paint-order:stroke;stroke:var(--panel);stroke-width:3.5;
+               stroke-linejoin:round;pointer-events:none}
+  .lienzo .etq.con{fill:var(--texto);font-weight:700}
+  .lienzo .etq .cifra{font-family:"IBM Plex Mono",ui-monospace,monospace;font-weight:600;
+                      fill:var(--acento-tinta)}
   .leyenda-mapa .m0{background:var(--m0)} .leyenda-mapa .m1{background:var(--m1)}
   .leyenda-mapa .m2{background:var(--m2)} .leyenda-mapa .m3{background:var(--m3)}
   .leyenda-mapa .m4{background:var(--m4)} .leyenda-mapa .mp{background:var(--mp)}
@@ -785,7 +796,19 @@
     #impresion .mapas-papel figcaption{font-size:8pt;color:#444;margin-bottom:3pt}
     #impresion .mapas-papel svg{width:100%;height:auto;max-height:105mm;
                                 print-color-adjust:exact;-webkit-print-color-adjust:exact}
+    /* Los rellenos se declaran TAMBIEN aqui. Las reglas de pantalla cuelgan de
+       .lienzo y dentro del informe no hay ningun .lienzo: el mapa salia entero en
+       negro -el relleno por defecto de un <path>- mientras la leyenda, cuyas
+       reglas no dependen del contenedor, salia bien. Se vio en el papel, no en el
+       codigo. */
+    #impresion .mapas-papel .m0{fill:var(--m0)} #impresion .mapas-papel .m1{fill:var(--m1)}
+    #impresion .mapas-papel .m2{fill:var(--m2)} #impresion .mapas-papel .m3{fill:var(--m3)}
+    #impresion .mapas-papel .m4{fill:var(--m4)} #impresion .mapas-papel .mp{fill:var(--mp)}
     #impresion .mapas-papel path{stroke:#fff;stroke-width:.7}
+    #impresion .mapas-papel .etq{fill:#1a1a1a;text-anchor:middle;dominant-baseline:middle;
+                                 font-weight:500;paint-order:stroke;stroke:#fff;
+                                 stroke-width:3.5;stroke-linejoin:round}
+    #impresion .mapas-papel .etq .cifra{font-weight:700;fill:#0A403D}
     #impresion .leyenda-mapa{display:flex;flex-wrap:wrap;gap:2pt 9pt;font-size:8pt;
                              margin:0 0 8pt;print-color-adjust:exact;
                              -webkit-print-color-adjust:exact}

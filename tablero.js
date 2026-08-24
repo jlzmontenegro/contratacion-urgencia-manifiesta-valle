@@ -1382,15 +1382,92 @@ function porTerritorio(ops, clave){
   return m;
 }
 
+const mostrarNombres = () => {
+  const c = document.getElementById("f-mapa-nombres");
+  return !c || c.checked;
+};
+
 const metricaMapa = () => {
   const s = document.getElementById("f-mapa-metrica");
   return s && s.value === "n" ? "n" : "valor";
 };
 
+/* El cuerpo de letra sale del tamano de la pieza: con uno solo, el nombre de un
+   municipio pequeno se derrama sobre tres vecinos. La raiz del area porque lo que
+   importa es cuanto mide de ancho, no cuanta superficie tiene. */
+const letraPieza = area => Math.max(11, Math.min(21, Math.round(Math.sqrt(area || 0) / 7)));
+
+/* Las etiquetas van DENTRO del SVG y no como capa aparte, para que se escalen con
+   el mapa y viajen tal cual al informe impreso y al PNG del Excel. El halo del
+   color del panel es lo que las hace legibles sobre cualquier relleno; sin el, un
+   nombre sobre el tono mas oscuro de la rampa no se lee. */
+function etiquetaPieza(p, dato, metrica, mostrar){
+  if (!mostrar) return "";
+  const cuerpo = letraPieza(p.a);
+  const cifra = dato && dato.n
+    ? (metrica === "n" ? dato.n + (dato.n === 1 ? " op." : " ops.") : compacto(dato.valor))
+    : "";
+  const nombre = `<tspan x="${p.cx}" dy="0">${esc(p.rotulo || p.nombre)}</tspan>`;
+  const linea2 = cifra
+    ? `<tspan x="${p.cx}" dy="${(cuerpo * 1.05).toFixed(1)}" class="cifra">${esc(cifra)}</tspan>`
+    : "";
+  return `<text class="etq${dato && dato.n ? " con" : ""}" x="${p.cx}" `
+    + `y="${cifra ? p.cy - cuerpo * 0.5 : p.cy}" font-size="${cuerpo}">${nombre}${linea2}</text>`;
+}
+
+/* Separa las etiquetas que se pisan. Manda la de la pieza mas grande -se queda
+   quieta- y la pequena se aparta en vertical lo justo. Son dos o tres casos por
+   mapa, no hace falta nada mas sofisticado; y con tres pasadas se corta, que un
+   ajuste de etiquetas no puede colgar la pagina. */
+function separarEtiquetas(svg, ancho, alto){
+  const etqs = [...svg.querySelectorAll("text")]
+    .map(t => ({ t, tam: Number(t.getAttribute("font-size")) || 12 }))
+    .sort((a, b) => b.tam - a.tam);
+  for (let pasada = 0; pasada < 3; pasada++){
+    let movio = false;
+    const cajas = etqs.map(e => e.t.getBBox());
+    for (let i = 0; i < etqs.length; i++){
+      for (let j = i + 1; j < etqs.length; j++){
+        const a = cajas[i], b = cajas[j];
+        const solapeX = Math.min(a.x + a.width, b.x + b.width) - Math.max(a.x, b.x);
+        const solapeY = Math.min(a.y + a.height, b.y + b.height) - Math.max(a.y, b.y);
+        if (solapeX <= 0 || solapeY <= 0) continue;
+        /* La pequena se aparta hacia el lado contrario a la grande. */
+        const haciaAbajo = (b.y + b.height / 2) >= (a.y + a.height / 2);
+        const salto = (solapeY + 1.5) * (haciaAbajo ? 1 : -1);
+        /* Sin acotar, el empujon sacaba a San Andres por el borde de arriba y su
+           nombre se cortaba. Fuera del lienzo una etiqueta no existe. */
+        const margen = etqs[j].tam;
+        const y = Math.max(margen, Math.min(alto - margen,
+          Number(etqs[j].t.getAttribute("y")) + salto));
+        etqs[j].t.setAttribute("y", y.toFixed(1));
+        cajas[j] = etqs[j].t.getBBox();
+        movio = true;
+      }
+    }
+    if (!movio) break;
+  }
+  /* Y hacia dentro por los cuatro lados. San Andres, que es la esquina noroeste del
+     pais, tenia su centroide en (0.9, 2.8): el rotulo centrado se salia por la
+     izquierda y por arriba a la vez. Se mueve con transform y no con la x y la y,
+     para no tener que tocar tambien las de cada tspan. */
+  etqs.forEach(e => {
+    const b = e.t.getBBox();
+    let dx = 0, dy = 0;
+    if (b.x < 2) dx = 2 - b.x;
+    else if (b.x + b.width > ancho - 2) dx = ancho - 2 - (b.x + b.width);
+    if (b.y < 2) dy = 2 - b.y;
+    else if (b.y + b.height > alto - 2) dy = alto - 2 - (b.y + b.height);
+    if (dx || dy)
+      e.t.setAttribute("transform", `translate(${dx.toFixed(1)},${dy.toFixed(1)})`);
+  });
+}
+
 function pintarUnMapa(destino, def, datos, metrica, rotulo){
   const el = document.getElementById(destino);
   if (!el) return;
   const cortes = tramos(def.piezas.map(p => (datos.get(p.codigo) || {})[metrica] || 0));
+  const nombres = mostrarNombres();
   const piezas = def.piezas.map(p => {
     const d = datos.get(p.codigo) || { n: 0, valor: 0, abiertas: 0 };
     const cual = (d[metrica] || 0);
@@ -1403,8 +1480,13 @@ function pintarUnMapa(destino, def, datos, metrica, rotulo){
     return `<path d="${p.d}" class="${claseMapa(d, metrica, cortes)}">`
       + `<title>${esc(dice)}</title></path>`;
   }).join("");
+  /* Todas las etiquetas despues de todos los contornos: si fueran por parejas, el
+     relleno del municipio siguiente taparia el nombre del anterior. */
+  const etiquetas = def.piezas.map(p =>
+    etiquetaPieza(p, datos.get(p.codigo), metrica, nombres)).join("");
   el.innerHTML = `<svg viewBox="0 0 ${def.ancho} ${def.alto}" role="img"
-      aria-label="${esc(rotulo)}" preserveAspectRatio="xMidYMid meet">${piezas}</svg>`;
+      aria-label="${esc(rotulo)}" preserveAspectRatio="xMidYMid meet">${piezas}${etiquetas}</svg>`;
+  if (nombres) separarEtiquetas(el.querySelector("svg"), def.ancho, def.alto);
   return cortes;
 }
 
@@ -1763,6 +1845,23 @@ function svgAutonomo(sel, ancho){
     p.setAttribute("stroke-width", "0.8");
     p.removeAttribute("class");
   });
+  /* Los textos tambien pierden el CSS: hay que escribirles el color, el halo y la
+     fuente como atributos, o salen en negro, sin halo y con la serif del sistema. */
+  copia.querySelectorAll("text").forEach(t => {
+    t.setAttribute("fill", "#1A1A1A");
+    t.setAttribute("stroke", "#FFFFFF");
+    t.setAttribute("stroke-width", "3.5");
+    t.setAttribute("stroke-linejoin", "round");
+    t.setAttribute("paint-order", "stroke");
+    t.setAttribute("text-anchor", "middle");
+    t.setAttribute("dominant-baseline", "middle");
+    t.setAttribute("font-family", "Arial, Helvetica, sans-serif");
+    t.setAttribute("font-weight", t.classList.contains("con") ? "700" : "500");
+    t.querySelectorAll(".cifra").forEach(c => {
+      c.setAttribute("fill", "#0A403D");
+      c.setAttribute("font-weight", "700");
+    });
+  });
   copia.setAttribute("xmlns", "http://www.w3.org/2000/svg");
   copia.setAttribute("width", ancho);
   copia.setAttribute("height", alto);
@@ -2089,6 +2188,7 @@ if ((window.innerWidth || 1024) < 700){
   if (caja) caja.open = false;
 }
 document.getElementById("f-mapa-metrica").addEventListener("change", pintarMapas);
+document.getElementById("f-mapa-nombres").addEventListener("change", pintarMapas);
 document.getElementById("f-agrupar").addEventListener("change", () => {
   paginas.tabla = 1;
   pintarTabla();
