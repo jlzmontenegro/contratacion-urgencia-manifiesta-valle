@@ -38,6 +38,15 @@ con la fecha del dia siguiente y el sello de la pagina salia cinco horas adelant
 Se arregló un fallo en Python, se olvidó en JavaScript, y el sitio mostró ceros durante una
 caída de la fuente. Si algo hay que clasificar, va en `colector.py` y viaja en el JSON.
 
+**El filtro de entidad admite VARIAS a la vez** (24-ago-2026). Es un `<details>` con casillas,
+no un `<select multiple>`: el nativo obliga a Ctrl+clic y en el teléfono es inmanejable. El
+estado vive en `ENTIDADES_SEL`, un `Set`; vacío significa *todas*. **El resumen cerrado dice
+cuántas hay elegidas** —un filtro puesto que no se ve miente igual que un tablero filtrado en
+silencio— y **marcar no repinta la lista**, solo el resumen y la tabla: si repintara, las
+casillas saltarían bajo el cursor al elegir la segunda. Se reordena con las marcadas arriba
+únicamente al buscar o al recargar datos. Una entidad que deje de venir en el archivo **se
+descarta sola** de la selección: dejarla puesta daría tabla vacía sin nada que lo explicara.
+
 **`llenarFiltroEntidades()` llena el desplegable de entidad, y el nombre es deliberado:** se
 llamaba `pintarEntidades` y en la unificación se borró creyendo que pintaba una de las secciones
 que se estaban eliminando. El filtro quedó con una sola opción. Lista las 119 entidades
@@ -255,6 +264,29 @@ firmó el 17 aparecía en los dos días. **Los días sin contratación salen en 
 y la serie termina en el último día con datos y no en hoy: SECOP publica con un día de rezago y
 el último tramo saldría siempre en cero por el rezago, no por falta de contratación.
 
+**Las tres descargas salen de `operacionesDeLaVista()`**, que es exactamente lo que la tabla
+está mostrando. Un archivo que sale del tablero y no cuadra con la pantalla es peor que no
+tenerlo: nadie sabe cuál de los dos creer. Al unificarlo apareció un fallo viejo —**el CSV salía
+de `filtrados()`, que ignoraba los filtros de estado y de revisión**: pidiendo "solo abiertas"
+el archivo traía también las contratadas, y eso no se veía hasta abrirlo.
+
+**El `.xlsx` se escribe a mano —ZIP con XML dentro— y no con una librería de un CDN.** La página
+no depende de nadie: el día que ese CDN no responda es justo el día en que un cero se leería como
+"no hay contratación del sismo". Las entradas van sin comprimir (método 0), que ahorra meter un
+deflate en el navegador y Excel las abre igual. Lleva tres hojas: *Operaciones* (lo que se ve),
+*Registros* (contrato y proceso por separado, para cruzar) y ***Procedencia*, que es obligatoria**:
+el archivo viaja solo y sin ella nadie sabe si esas 12 filas son todo lo del sismo o el resultado
+de tres filtros puestos aquella tarde. **`escXml()` recorre los caracteres a mano** porque XML no
+admite caracteres de control y en los objetos llegan —vienen de pegar texto desde un PDF—: uno
+solo hace que Excel declare el archivo ilegible sin decir por qué.
+
+**El PDF es la impresión del navegador con hoja de estilos, no una librería** (decisión del
+usuario, 24-ago-2026). Una librería obligaría a recortar el objeto para que la tabla cuadre, y el
+objeto es el texto por el que se juzga si una contratación tiene que ver con el sismo. En papel
+se imprimen **todas** las filas del filtro, no las 20 de la página: `imprimirInforme()` arma
+`#impresion` en el momento y `@media print` oculta `.envoltura` entera. El informe encabeza con
+los filtros aplicados y la recolección de la que salen los datos.
+
 **Nunca se suma precio base con valor firmado.** Son la misma plata en dos momentos. La operación
 muestra el valor firmado si hay contrato y el precio base si no, siempre rotulado.
 
@@ -304,11 +336,17 @@ como *"Por revisar"*, `Otra urgencia` como *"Otra emergencia"* y `Contexto` como
 cada una con su explicación completa en la leyenda y en el título emergente. Los nombres
 internos siguen vivos en los datos y en `config.json`; solo no se muestran.
 
-## Cómo probar sin navegador
+## Cómo probar
 
-El panel del navegador de este entorno **no abre `file://` ni `localhost`**. La forma de
-probar el tablero es cargar `tablero.js` en Node con un DOM mínimo simulado y un `fetch` que
-sirva `datos/tablero.json`. Ojo con dos trampas del arnés: `querySelector` debe devolver un
+**El panel del navegador SÍ abre `localhost`** desde `.claude/launch.json` (comprobado el
+24-ago-2026; la nota anterior decía lo contrario y ya no vale). `preview_start` levanta
+`py -3 -m http.server 8765` y desde ahí se puede leer el DOM y la geometría real que calcula
+el navegador, que es la única forma de cazar las trampas de especificidad del CSS. **Capturas de
+pantalla no hay**: el panel no compone imagen, así que lo visual se comprueba midiendo
+(`getBoundingClientRect`, `getComputedStyle`), no mirando.
+
+Para lógica pura sigue sirviendo cargar `tablero.js` en Node con un DOM mínimo simulado y un
+`fetch` que sirva `datos/tablero.json`. Ojo con dos trampas del arnés: `querySelector` debe devolver un
 nodo distinto por selector, y hay que fijar a mano los valores por defecto de los `<select>`
 (`f-grupo="territorial"`, `f-nivel="rel"`), o los filtros se comportan distinto que en el
 navegador y los conteos salen en cero.

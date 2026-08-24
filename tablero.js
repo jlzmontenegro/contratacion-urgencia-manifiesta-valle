@@ -41,6 +41,9 @@ const compacto = v => {
  * Render                                                              *
  * ------------------------------------------------------------------ */
 let DATOS = [];
+/* Entidades elegidas en el filtro. Vacio = todas, que es lo que dice el resumen.
+   Es un Set y no el valor de un <select> porque ahora se pueden marcar varias. */
+let ENTIDADES_SEL = new Set();
 /* De mayor a menor valor: lo que más plata mueve se mira primero. */
 let orden = { col: "valor", asc: false };
 
@@ -789,7 +792,7 @@ function pintarAlertas(){
    numero del proceso devuelve la operacion sin su contrato y la fila anuncia
    "aun sin contratar" algo que ya se firmo. */
 function filtraRegistro(r, ctx){
-  const { txt, grupo, niv, nov, ent, plat } = ctx;
+  const { txt, grupo, niv, nov, ents, plat } = ctx;
 
   // La contratación ordinaria solo se muestra para la Alcaldía de Cali y la
   // Gobernación del Valle, y solo cuando se pide expresamente en el filtro.
@@ -814,7 +817,7 @@ function filtraRegistro(r, ctx){
   if (grupo !== "territorial" && grupo !== "todos" && r.grupo !== grupo) return false;
   if (niv === "rel" && !esRelevante(r)) return false;
   if (niv !== "rel" && niv !== "todos" && r.nivel !== niv) return false;
-  if (ent && r.entidad !== ent) return false;
+  if (ents && ents.size && !ents.has(r.entidad)) return false;
   if (txt && !norm([r.objeto, r.entidad, r.proveedor, r.id, r.referencia].join(" ")).includes(txt)) return false;
   return true;
 }
@@ -825,15 +828,9 @@ function contextoFiltros(){
     grupo: document.getElementById("f-grupo").value,
     niv: document.getElementById("f-nivel").value,
     nov: document.getElementById("f-novedad").value,
-    ent: document.getElementById("f-entidad").value,
+    ents: ENTIDADES_SEL,
     plat: document.getElementById("f-plataforma").value,
   };
-}
-
-/* Para la descarga: registros sueltos, que es lo que espera quien abre el CSV. */
-function filtrados(){
-  const ctx = contextoFiltros();
-  return DATOS.filter(r => filtraRegistro(r, ctx));
 }
 
 /* Para la pantalla: operaciones completas. Se arma la operacion con TODOS sus
@@ -916,25 +913,38 @@ function pintarLeyenda(){
        <span>${esc(d.largo)}</span></div>`).join("");
 }
 
-/* El panel de filtros va cerrado para no llenar la pantalla, asi que el resumen
-   tiene que decir que se esta viendo: un tablero filtrado en silencio miente. */
-function pintarResumenFiltros(){
-  const el = document.getElementById("resumen-filtros");
-  if (!el) return;
+/* Que filtros hay puestos, en palabras. Lo usan el titulo del panel y tambien lo
+   que se descarga: el Excel y el informe impreso tienen que decir de que estan
+   hechos, y leerlo del texto ya pintado en pantalla obligaba a repintar antes de
+   descargar para no escribir el estado anterior. */
+function filtrosActivos(){
   /* Por valor y no por selectedIndex: cada control tiene un valor por defecto
      distinto y el indice no dice cual es. */
   const PORDEFECTO = { "f-grupo": "territorial", "f-nivel": "rel", "f-plataforma": "", "f-revision": "",
-                       "f-tipo": "", "f-novedad": "", "f-entidad": "" };
+                       "f-tipo": "", "f-novedad": "" };
   const texto = id => {
     const s = document.getElementById(id);
     if (!s || s.value === PORDEFECTO[id]) return "";
     const op = s.options && [...s.options].find(o => o.value === s.value);
     return op ? op.text : String(s.value);
   };
-  const activos = ["f-grupo","f-plataforma","f-nivel","f-tipo","f-revision","f-novedad","f-entidad"]
+  const activos = ["f-grupo","f-plataforma","f-nivel","f-tipo","f-revision","f-novedad"]
     .map(texto).filter(Boolean);
+  /* Las entidades van aparte: son varias y no hay <option> del que sacar el texto. */
+  const nEnt = ENTIDADES_SEL.size;
+  if (nEnt === 1) activos.push([...ENTIDADES_SEL][0]);
+  if (nEnt > 1) activos.push(nEnt + " entidades");
   const busq = document.getElementById("f-texto").value.trim();
   if (busq) activos.unshift(`"${busq}"`);
+  return activos;
+}
+
+/* El panel de filtros puede ir cerrado, asi que su titulo tiene que decir que se
+   esta viendo: un tablero filtrado en silencio miente. */
+function pintarResumenFiltros(){
+  const el = document.getElementById("resumen-filtros");
+  if (!el) return;
+  const activos = filtrosActivos();
   el.textContent = activos.length ? "· " + activos.join(" · ") : "· sin filtros";
   el.className = "resumen-filtros" + (activos.length ? " hay" : "");
 }
@@ -956,15 +966,16 @@ function pintarAvisoParcial(){
     + `en <em>Padrón de entidades vigiladas</em>, al pie de la página.`;
 }
 
-function pintarTabla(){
-  pintarLeyenda();
-  pintarResumenFiltros();
-  pintarAvisoParcial();
+/* Las operaciones tal como quedan en pantalla, ya ordenadas. Lo usan la tabla, el
+   Excel y el informe impreso: si cada uno filtrara por su cuenta, el archivo
+   descargado diria 53 operaciones donde la tabla dice 47 y no habria forma de
+   saber cual de los dos miente. */
+function operacionesDeLaVista(){
+  let filas = ordenarOperaciones(operacionesFiltradas());
   /* El filtro de estado se aplica sobre la operacion y no sobre el registro:
      "aun abierta" significa que no existe contrato, y eso solo se sabe despues
      de juntar el proceso con su contrato. */
   const estado = document.getElementById("f-tipo").value;
-  let filas = ordenarOperaciones(operacionesFiltradas());
   if (estado === "firmada") filas = filas.filter(o => o.firmado);
   if (estado === "abierta") filas = filas.filter(o => o.abierta);
   /* "Por revisar" es la bandeja de trabajo: lo que el clasificador marco como
@@ -972,6 +983,14 @@ function pintarTabla(){
   const rev = document.getElementById("f-revision").value;
   if (rev === "pendiente") filas = filas.filter(o => o.nivel === "Media" && !o.revisada);
   if (rev === "revisada") filas = filas.filter(o => o.revisada);
+  return filas;
+}
+
+function pintarTabla(){
+  pintarLeyenda();
+  pintarResumenFiltros();
+  pintarAvisoParcial();
+  const filas = operacionesDeLaVista();
   const cuerpo = document.querySelector("#tabla tbody");
   /* Solo se suma lo firmado. El precio base de un proceso abierto no es plata
      comprometida y mezclarlo inflaba el total. */
@@ -989,19 +1008,24 @@ function pintarTabla(){
        el filtro no da o que el dato no viaja en el archivo, hay que decirlo. */
     const grupo = document.getElementById("f-grupo").value;
     const niv = document.getElementById("f-nivel").value;
-    const ent = document.getElementById("f-entidad").value;
+    const elegidas = [...ENTIDADES_SEL];
+    const ent = elegidas.length === 1 ? elegidas[0] : "";
+    const grupoDe = e => (PADRON.find(p => p.entidad === e) || {}).grupo;
     const busq = document.getElementById("f-texto").value.trim();
     vacio.textContent =
       busq
         ? `Ninguna operación coincide con "${busq}". Se busca en el objeto, la entidad, el `
           + "contratista y los números de proceso y de contrato."
+      : elegidas.length > 1
+        ? `Ninguna de las ${elegidas.length} entidades elegidas tiene operaciones que `
+          + "cumplan los demás filtros. Quite entidades o amplíe la relación para ver "
+          + "qué han contratado."
       : ent
         /* No todas las entidades del desplegable están vigiladas: 83 del padrón son de
            otras regiones —Pasto, Honda, el Meta— y entraron porque un barrido encontró
            contratación suya, no porque se las siga. La prueba no es estar en el padrón,
            que también las incluye, sino no ser del grupo "Fuera del Valle". */
-        ? (!(PADRON.find(e => e.entidad === ent) || {}).grupo
-           || (PADRON.find(e => e.entidad === ent) || {}).grupo !== "Fuera del Valle"
+        ? (grupoDe(ent) !== "Fuera del Valle"
             ? "Esa entidad está vigilada y no tiene operaciones que cumplan los demás "
               + "filtros: no ha publicado nada que encaje, no es que no se la mire."
             : "Esa entidad no es de Cali ni del Valle. Aparece porque un barrido nacional "
@@ -1163,13 +1187,40 @@ async function cargar(){
    entidades de esa vista tienen que poder elegirse. Son 119; las 341 del padron no,
    porque 27 no han contratado nada y elegirlas daria siempre una tabla vacia. */
 function llenarFiltroEntidades(){
-  const sel = document.getElementById("f-entidad");
-  if (!sel) return;
-  const previo = sel.value;
+  const lista = document.getElementById("f-entidad-lista");
+  if (!lista) return;
   const ents = [...new Set(DATOS.filter(listable).map(r => r.entidad).filter(Boolean))]
     .sort((a, b) => a.localeCompare(b, "es"));
-  sel.innerHTML = '<option value="">Todas las entidades</option>'
-    + ents.map(e => `<option${e === previo ? " selected" : ""}>${esc(e)}</option>`).join("");
+  /* Si una entidad deja de venir en el archivo, su marca se cae con ella: dejarla
+     puesta daria tabla vacia sin nada en pantalla que explicara por que. */
+  const vivas = new Set(ents);
+  [...ENTIDADES_SEL].forEach(e => { if (!vivas.has(e)) ENTIDADES_SEL.delete(e); });
+
+  const caja = document.getElementById("f-entidad-buscar");
+  const busca = norm(caja && caja.value ? caja.value.trim() : "");
+  const visibles = busca ? ents.filter(e => norm(e).includes(busca)) : ents;
+  /* Las marcadas arriba: con mas de cien entidades, lo elegido se pierde de vista.
+     El reorden ocurre al repintar la lista, no al marcar, para que las casillas no
+     salten bajo el cursor mientras se eligen varias. */
+  const orden = visibles.slice().sort((a, b) =>
+    (ENTIDADES_SEL.has(b) ? 1 : 0) - (ENTIDADES_SEL.has(a) ? 1 : 0));
+  lista.innerHTML = orden.length
+    ? orden.map(e => `<label class="opt"><input type="checkbox" value="${esc(e)}"`
+        + `${ENTIDADES_SEL.has(e) ? " checked" : ""}><span>${esc(e)}</span></label>`).join("")
+    : `<p class="nada">Ninguna entidad coincide con esa búsqueda.</p>`;
+  pintarResumenEntidades();
+}
+
+/* El desplegable cerrado tiene que decir cuantas hay elegidas: un filtro puesto
+   que no se ve miente igual que un tablero filtrado en silencio. */
+function pintarResumenEntidades(){
+  const el = document.getElementById("f-entidad-resumen");
+  if (!el) return;
+  const n = ENTIDADES_SEL.size;
+  el.textContent = n === 0 ? "Todas las entidades"
+                 : n === 1 ? [...ENTIDADES_SEL][0]
+                 : n + " entidades elegidas";
+  el.className = n ? "hay" : "";
 }
 
 function llenarTipos(){
@@ -1189,28 +1240,397 @@ function pintarTitulos(){
     + CFG.inicio.split("-").reverse().join("/");
 }
 
-function descargarCsv(){
-  const filas = filtrados();
-  const cols = ["plataforma","tipo","operacion","id","referencia","fecha","etiqueta_fecha","entidad","nit","departamento",
-                "ciudad","grupo","es_ungrd","objeto","modalidad","justificacion","valor",
-                "fecha_inicio","fecha_fin","duracion","proveedor","estado","ambito","nivel",
-                "motivo","url"];
-  const csv = [cols.join(";")].concat(filas.map(r =>
-    cols.map(c => `"${String(r[c] ?? "").replace(/"/g, '""').replace(/\r?\n/g, " ")}"`).join(";")
-  )).join("\r\n");
-  const blob = new Blob(["﻿" + csv], { type: "text/csv;charset=utf-8" });
+/* ------------------------------------------------------------------ *
+ * Descargas: CSV, Excel e informe para papel                          *
+ * ------------------------------------------------------------------ */
+/* Las tres salidas parten de operacionesDeLaVista(), que es lo que la tabla esta
+   mostrando. Un archivo que sale del tablero y no coincide con lo que se ve en
+   pantalla es peor que no tenerlo: nadie sabe cual de los dos creer. */
+function registrosDeLaVista(){
+  return operacionesDeLaVista().flatMap(o => [o.contrato, o.proceso].filter(Boolean));
+}
+
+/* Los registros sueltos, que es lo que espera quien abre el archivo para cruzarlo
+   con otra cosa. Un contrato y su proceso van en dos filas, con la misma clave en
+   la columna `operacion`. */
+const COLS_REGISTRO = ["plataforma","tipo","operacion","id","referencia","fecha","etiqueta_fecha",
+                       "entidad","nit","departamento","ciudad","grupo","es_ungrd","objeto",
+                       "modalidad","justificacion","valor","fecha_inicio","fecha_fin","duracion",
+                       "proveedor","estado","ambito","nivel","motivo","url"];
+
+/* Las operaciones, una por fila, tal como se leen en la tabla. Los rotulos van en
+   castellano y sin jerga del clasificador, igual que en pantalla. */
+const COLS_OPERACION = [
+  ["Estado", o => o.firmado ? "Contratada" : "Abierta"],
+  ["Fecha", o => o.fecha],
+  ["Entidad", o => o.entidad],
+  ["Grupo", o => o.grupo],
+  ["Objeto", o => o.objeto],
+  ["Valor", o => o.valor],
+  ["Que es ese valor", o => o.firmado ? "valor firmado" : "precio base"],
+  ["Contratista", o => o.proveedor],
+  ["Duracion", o => o.duracion],
+  ["Modalidad", o => o.modalidad],
+  ["Justificacion", o => o.justificacion],
+  ["Relacion con el sismo", o => nivelCorto(o.nivel)],
+  ["Por que se clasifico asi", o => o.motivo],
+  ["Revisado por una persona", o => o.revisada ? (o.revisionRevisor || "si") : ""],
+  ["Fecha de la revision", o => o.revisionFecha],
+  ["Referencia del proceso", o => o.proceso ? (o.proceso.referencia || o.proceso.id) : ""],
+  ["Referencia del contrato", o => o.contrato ? (o.contrato.referencia || o.contrato.id) : ""],
+  ["Aparecio en el monitoreo", o => o.novedad || ""],
+  ["Enlace a SECOP", o => (o.contrato && o.contrato.url) || (o.proceso && o.proceso.url) || ""],
+];
+
+const hoyArchivo = () => {
+  const d = new Date(), p = n => String(n).padStart(2, "0");
+  return d.getFullYear() + "-" + p(d.getMonth() + 1) + "-" + p(d.getDate());
+};
+
+function bajarArchivo(blob, nombre){
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
-  a.download = "contratacion_urgencia_manifiesta_" + new Date().toISOString().slice(0,10) + ".csv";
+  a.download = nombre;
   a.click();
   URL.revokeObjectURL(a.href);
 }
 
+/* De que esta hecho lo que se descarga. El archivo se va del tablero y viaja solo:
+   sin esto, dentro de un mes nadie sabe si esas 12 filas son todo lo del sismo o
+   el resultado de tres filtros puestos aquella tarde. */
+function procedencia(){
+  const filas = operacionesDeLaVista();
+  const valor = filas.reduce((s, o) => s + (o.firmado ? o.valor : 0), 0);
+  const abiertas = filas.filter(o => o.abierta).length;
+  const activos = filtrosActivos();
+  const aviso = document.getElementById("aviso-parcial");
+  const lineas = [
+    ["Tablero", "Contratacion asociada a la urgencia manifiesta - sismo del 10 de agosto de 2026"],
+    ["Pagina", "https://jlzmontenegro.github.io/contratacion-urgencia-manifiesta-valle/"],
+    ["Descargado el", new Date().toLocaleString("es-CO")],
+    ["Datos de la recoleccion", LOCAL ? String(LOCAL.generado) : "sin datos"],
+    ["Filtros aplicados", activos.length ? activos.join(" · ") : "ninguno"],
+    ["Operaciones", filas.length],
+    ["Valor firmado", valor],
+    ["Aun sin contratar", abiertas],
+  ];
+  if (aviso && !aviso.hidden)
+    lineas.push(["Advertencia", "Esta cuenta no es el total: de la contratacion corriente solo "
+      + "viaja en el archivo la de Cali, la Gobernacion, sus descentralizadas y la UNGRD."]);
+  lineas.push(["Fuente", "datos.gov.co - SECOP II jbjy-vk9h y p6dx-8zbt - SECOP I f789-7hwg"]);
+  return lineas;
+}
+
+/* ---- Excel ---------------------------------------------------------- *
+ * Un .xlsx es un ZIP con varios XML dentro. Se escribe a mano y no con una
+ * libreria traida de un CDN: la pagina no depende de nadie mas y sigue
+ * funcionando el dia que ese CDN no responda, que es justo el dia en que un
+ * cero se leeria como "no hay contratacion del sismo". Las entradas van SIN
+ * comprimir (metodo 0), lo que ahorra meter un deflate en el navegador; Excel
+ * las abre igual.
+ * ------------------------------------------------------------------- */
+const CRC_TABLA = (() => {
+  const t = new Uint32Array(256);
+  for (let i = 0; i < 256; i++){
+    let c = i;
+    for (let k = 0; k < 8; k++) c = (c & 1) ? (0xEDB88320 ^ (c >>> 1)) : (c >>> 1);
+    t[i] = c >>> 0;
+  }
+  return t;
+})();
+
+function crc32(bytes){
+  let c = 0xFFFFFFFF;
+  for (let i = 0; i < bytes.length; i++) c = CRC_TABLA[(c ^ bytes[i]) & 0xFF] ^ (c >>> 8);
+  return (c ^ 0xFFFFFFFF) >>> 0;
+}
+
+const bytesDe = txt => new TextEncoder().encode(txt);
+
+function zip(archivos){
+  const cod = archivos.map(a => ({ nombre: bytesDe(a.nombre), datos: bytesDe(a.contenido) }));
+  cod.forEach(a => { a.crc = crc32(a.datos); });
+  const total = cod.reduce((s, a) => s + 30 + a.nombre.length + a.datos.length
+                                       + 46 + a.nombre.length, 0) + 22;
+  const buf = new Uint8Array(total);
+  const dv = new DataView(buf.buffer);
+  const donde = [];
+  let pos = 0;
+  cod.forEach(a => {
+    donde.push(pos);
+    dv.setUint32(pos, 0x04034b50, true);
+    dv.setUint16(pos + 4, 20, true);
+    dv.setUint16(pos + 6, 0x0800, true);      // los nombres van en UTF-8
+    dv.setUint16(pos + 8, 0, true);           // sin comprimir
+    dv.setUint16(pos + 12, 0x2100, true);     // fecha fija y valida: 1-ene-2000
+    dv.setUint32(pos + 14, a.crc, true);
+    dv.setUint32(pos + 18, a.datos.length, true);
+    dv.setUint32(pos + 22, a.datos.length, true);
+    dv.setUint16(pos + 26, a.nombre.length, true);
+    pos += 30;
+    buf.set(a.nombre, pos); pos += a.nombre.length;
+    buf.set(a.datos, pos);  pos += a.datos.length;
+  });
+  const central = pos;
+  cod.forEach((a, i) => {
+    dv.setUint32(pos, 0x02014b50, true);
+    dv.setUint16(pos + 4, 20, true);
+    dv.setUint16(pos + 6, 20, true);
+    dv.setUint16(pos + 8, 0x0800, true);
+    dv.setUint16(pos + 10, 0, true);
+    dv.setUint16(pos + 14, 0x2100, true);
+    dv.setUint32(pos + 16, a.crc, true);
+    dv.setUint32(pos + 20, a.datos.length, true);
+    dv.setUint32(pos + 24, a.datos.length, true);
+    dv.setUint16(pos + 28, a.nombre.length, true);
+    dv.setUint32(pos + 42, donde[i], true);
+    pos += 46;
+    buf.set(a.nombre, pos); pos += a.nombre.length;
+  });
+  dv.setUint32(pos, 0x06054b50, true);
+  dv.setUint16(pos + 8, cod.length, true);
+  dv.setUint16(pos + 10, cod.length, true);
+  dv.setUint32(pos + 12, pos - central, true);
+  dv.setUint32(pos + 16, central, true);
+  return buf;
+}
+
+/* XML no admite caracteres de control, y en los objetos llegan: vienen de pegar
+   texto desde un PDF. Uno solo hace que Excel declare el archivo ilegible sin
+   decir por que. Se recorren a mano y no con una expresion regular, que es donde
+   se cuelan los escapes rotos. */
+function escXml(valor){
+  const s = String(valor === null || valor === undefined ? "" : valor);
+  let salida = "";
+  for (let i = 0; i < s.length; i++){
+    const c = s.charCodeAt(i);
+    if (c < 32 && c !== 9 && c !== 10 && c !== 13){ salida += " "; continue; }
+    const ch = s[i];
+    salida += ch === "&" ? "&amp;"
+            : ch === "<" ? "&lt;"
+            : ch === ">" ? "&gt;"
+            : ch === '"' ? "&quot;"
+            : ch === "'" ? "&apos;" : ch;
+  }
+  return salida;
+}
+
+function letraCol(i){
+  let n = i + 1, s = "";
+  while (n > 0){ const r = (n - 1) % 26; s = String.fromCharCode(65 + r) + s; n = (n - r - 1) / 26; }
+  return s;
+}
+
+function hojaXml(titulos, filas, anchos){
+  const celda = (v, fila, col) => {
+    const ref = letraCol(col) + fila;
+    const numero = typeof v === "number" && isFinite(v);
+    const estilo = fila === 1 ? ' s="1"' : (numero ? ' s="2"' : "");
+    return numero
+      ? `<c r="${ref}"${estilo}><v>${v}</v></c>`
+      : `<c r="${ref}"${estilo} t="inlineStr"><is><t xml:space="preserve">${escXml(v)}</t></is></c>`;
+  };
+  const filaXml = (vals, i) =>
+    `<row r="${i + 1}">` + vals.map((v, c) => celda(v, i + 1, c)).join("") + "</row>";
+  const cols = (anchos || titulos.map(() => 22))
+    .map((a, i) => `<col min="${i + 1}" max="${i + 1}" width="${a}" customWidth="1"/>`).join("");
+  const ultima = letraCol(titulos.length - 1) + (filas.length + 1);
+  return '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+    + '<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">'
+    /* Fila de titulos congelada: con trescientas filas, a la mitad ya no se sabe
+       que columna se esta mirando. */
+    + '<sheetViews><sheetView workbookViewId="0">'
+    + '<pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/>'
+    + '</sheetView></sheetViews>'
+    + `<cols>${cols}</cols><sheetData>`
+    + [titulos].concat(filas).map(filaXml).join("")
+    + `</sheetData><autoFilter ref="A1:${ultima}"/></worksheet>`;
+}
+
+const ESTILOS_XLSX = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+  + '<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">'
+  + '<numFmts count="1"><numFmt numFmtId="164" formatCode="#,##0"/></numFmts>'
+  + '<fonts count="2"><font><sz val="11"/><name val="Calibri"/></font>'
+  + '<font><b/><sz val="11"/><name val="Calibri"/></font></fonts>'
+  + '<fills count="2"><fill><patternFill patternType="none"/></fill>'
+  + '<fill><patternFill patternType="gray125"/></fill></fills>'
+  + '<borders count="1"><border><left/><right/><top/><bottom/><diagonal/></border></borders>'
+  + '<cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs>'
+  + '<cellXfs count="3">'
+  + '<xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/>'
+  + '<xf numFmtId="0" fontId="1" fillId="0" borderId="0" xfId="0" applyFont="1"/>'
+  + '<xf numFmtId="164" fontId="0" fillId="0" borderId="0" xfId="0" applyNumberFormat="1"/>'
+  + '</cellXfs>'
+  + '<cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles>'
+  + '</styleSheet>';
+
+function libroXlsx(){
+  const ops = operacionesDeLaVista();
+  const hojaOps = hojaXml(
+    COLS_OPERACION.map(c => c[0]),
+    ops.map(o => COLS_OPERACION.map(c => {
+      const v = c[1](o);
+      return v === null || v === undefined ? "" : v;
+    })),
+    [12, 12, 34, 26, 70, 16, 14, 34, 14, 26, 26, 14, 40, 18, 14, 24, 24, 20, 46]);
+
+  const regs = registrosDeLaVista();
+  const hojaRegs = hojaXml(
+    COLS_REGISTRO,
+    regs.map(r => COLS_REGISTRO.map(c => c === "valor"
+      ? (Number(r[c]) || 0)
+      : (r[c] === null || r[c] === undefined ? "" : String(r[c])))),
+    COLS_REGISTRO.map(c => c === "objeto" ? 70 : c === "url" ? 46 : 20));
+
+  const hojaProc = hojaXml(["Que es esto", "Valor"], procedencia(), [30, 90]);
+
+  const hojas = [["Operaciones", hojaOps], ["Registros", hojaRegs], ["Procedencia", hojaProc]];
+
+  const tipos = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+    + '<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">'
+    + '<Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>'
+    + '<Default Extension="xml" ContentType="application/xml"/>'
+    + '<Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/>'
+    + hojas.map((h, i) => `<Override PartName="/xl/worksheets/sheet${i + 1}.xml" `
+        + 'ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>').join("")
+    + '<Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/>'
+    + '</Types>';
+
+  const libro = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+    + '<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" '
+    + 'xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets>'
+    + hojas.map((h, i) => `<sheet name="${escXml(h[0])}" sheetId="${i + 1}" r:id="rId${i + 1}"/>`).join("")
+    + '</sheets></workbook>';
+
+  const relsLibro = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+    + '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">'
+    + hojas.map((h, i) => `<Relationship Id="rId${i + 1}" `
+        + 'Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" '
+        + `Target="worksheets/sheet${i + 1}.xml"/>`).join("")
+    + `<Relationship Id="rId${hojas.length + 1}" `
+    + 'Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" '
+    + 'Target="styles.xml"/></Relationships>';
+
+  const raiz = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+    + '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">'
+    + '<Relationship Id="rId1" '
+    + 'Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" '
+    + 'Target="xl/workbook.xml"/></Relationships>';
+
+  return zip([
+    { nombre: "[Content_Types].xml", contenido: tipos },
+    { nombre: "_rels/.rels", contenido: raiz },
+    { nombre: "xl/workbook.xml", contenido: libro },
+    { nombre: "xl/_rels/workbook.xml.rels", contenido: relsLibro },
+    { nombre: "xl/styles.xml", contenido: ESTILOS_XLSX },
+  ].concat(hojas.map((h, i) => ({ nombre: `xl/worksheets/sheet${i + 1}.xml`, contenido: h[1] }))));
+}
+
+function descargarXlsx(){
+  bajarArchivo(
+    new Blob([libroXlsx()],
+             { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" }),
+    "contratacion_urgencia_manifiesta_" + hoyArchivo() + ".xlsx");
+}
+
+/* ---- Informe para papel y PDF --------------------------------------- *
+ * Se arma en el momento y solo se ve al imprimir. No se usa una libreria de
+ * PDF: obligaria a recortar el objeto para que la tabla cuadre, y el objeto es
+ * el texto por el que se juzga si una contratacion tiene que ver con el sismo.
+ * En papel salen TODAS las filas filtradas, no las 20 de la pagina.
+ * ------------------------------------------------------------------- */
+function imprimirInforme(){
+  const caja = document.getElementById("impresion");
+  if (!caja) return;
+  const filas = operacionesDeLaVista();
+  const valor = filas.reduce((s, o) => s + (o.firmado ? o.valor : 0), 0);
+  const abiertas = filas.filter(o => o.abierta).length;
+  const datos = procedencia();
+  const dato = clave => String((datos.find(l => l[0] === clave) || ["", ""])[1]);
+  const aviso = document.getElementById("aviso-parcial");
+  const vacio = document.getElementById("vacio");
+
+  const cuerpo = filas.map(o => {
+    const refs = [o.proceso, o.contrato].filter(Boolean)
+      .map(r => esc(r.referencia || r.id)).join(" · ");
+    return `<tr>
+      <td>${o.firmado ? "Contratada" : "Abierta"}<div class="menor">${esc(o.fecha)}</div></td>
+      <td><b>${esc(o.entidad)}</b>
+        <div class="obj">${esc(o.objeto)}</div>
+        <div class="menor">${esc(o.grupo)}${o.modalidad ? " · " + esc(o.modalidad) : ""}${
+          refs ? " · " + refs : ""}</div></td>
+      <td class="num">${esc(pesos(o.valor))}<div class="menor">${
+        o.firmado ? "valor firmado" : "precio base"}</div></td>
+      <td>${o.proveedor ? esc(o.proveedor) : '<span class="menor">aún sin contratista</span>'}</td>
+      <td>${esc(nivelCorto(o.nivel))}${o.revisada ? '<div class="menor">✓ revisado</div>' : ""}
+        <div class="menor">${esc(o.motivo)}</div></td>
+    </tr>`;
+  }).join("");
+
+  caja.innerHTML = `
+    <h1>Contratación asociada a la urgencia manifiesta · sismo del 10 de agosto de 2026</h1>
+    <p class="pie-inf">Cali y Valle del Cauca · datos de la recolección del
+      ${esc(dato("Datos de la recoleccion"))} · impreso el
+      ${esc(new Date().toLocaleString("es-CO"))}</p>
+    <table class="ficha"><tbody>
+      <tr><th>Filtros aplicados</th><td>${esc(dato("Filtros aplicados"))}</td></tr>
+      <tr><th>Lo que se lista</th><td>${frasePlural(filas.length, "operación", "operaciones")}
+        · ${esc(pesos(valor))} firmado${abiertas ? " · " + abiertas + " aún sin contratar" : ""}</td></tr>
+    </tbody></table>
+    ${aviso && !aviso.hidden ? `<p class="ojo">${aviso.innerHTML}</p>` : ""}
+    ${filas.length
+      ? `<table class="listado"><thead><tr><th>Estado</th><th>Entidad y objeto</th>
+           <th>Valor</th><th>Contratista</th><th>Relación</th></tr></thead>
+         <tbody>${cuerpo}</tbody></table>`
+      : `<p class="ojo">${esc(vacio ? vacio.textContent : "")}</p>`}
+    <p class="pie-inf">Una operación es un proceso y el contrato que salió de él, contados una
+      sola vez. El dato vivo está en
+      https://jlzmontenegro.github.io/contratacion-urgencia-manifiesta-valle/</p>`;
+  window.print();
+}
+
+function descargarCsv(){
+  /* Antes salia de filtrados(), que ignoraba los filtros de estado y de revision:
+     pidiendo "solo abiertas" el CSV traia tambien las contratadas y nadie lo veia
+     hasta abrirlo. Ahora es lo mismo que hay en pantalla. */
+  const filas = registrosDeLaVista();
+  const cols = COLS_REGISTRO;
+  const csv = [cols.join(";")].concat(filas.map(r =>
+    cols.map(c => `"${String(r[c] ?? "").replace(/"/g, '""').replace(/\r?\n/g, " ")}"`).join(";")
+  )).join("\r\n");
+  bajarArchivo(new Blob(["﻿" + csv], { type: "text/csv;charset=utf-8" }),
+               "contratacion_urgencia_manifiesta_" + hoyArchivo() + ".csv");
+}
+
 document.getElementById("btn-refrescar").addEventListener("click", cargar);
 document.getElementById("btn-csv").addEventListener("click", descargarCsv);
-["f-texto","f-grupo","f-nivel","f-tipo","f-revision","f-novedad","f-entidad","f-plataforma"].forEach(id =>
+document.getElementById("btn-xlsx").addEventListener("click", descargarXlsx);
+document.getElementById("btn-pdf").addEventListener("click", imprimirInforme);
+/* f-entidad ya no esta en esta lista: dejo de ser un <select> con un valor y paso a
+   ser un panel de casillas. Ademas los eventos de su buscador burbujean hasta el
+   <details>, asi que repintaria la tabla en cada tecla. */
+["f-texto","f-grupo","f-nivel","f-tipo","f-revision","f-novedad","f-plataforma"].forEach(id =>
   document.getElementById(id).addEventListener("input",
     () => { paginas.tabla = 1; pintarTabla(); }));
+
+/* Las casillas de entidad: una sola escucha en el contenedor, que se repinta entero
+   al buscar. Marcar NO repinta la lista, para que las casillas no salten bajo el
+   cursor mientras se eligen varias. */
+document.getElementById("f-entidad-lista").addEventListener("change", ev => {
+  const c = ev.target;
+  if (!c || c.type !== "checkbox") return;
+  if (c.checked) ENTIDADES_SEL.add(c.value); else ENTIDADES_SEL.delete(c.value);
+  pintarResumenEntidades();
+  paginas.tabla = 1;
+  pintarTabla();
+});
+document.getElementById("f-entidad-buscar").addEventListener("input", llenarFiltroEntidades);
+document.getElementById("f-entidad-limpiar").addEventListener("click", () => {
+  ENTIDADES_SEL.clear();
+  llenarFiltroEntidades();
+  paginas.tabla = 1;
+  pintarTabla();
+});
 
 /* El padron se repinta entero al filtrar y al paginar, asi que la escucha va en el
    contenedor y no en cada fila: delegar evita volver a enganchar 341 escuchas. */

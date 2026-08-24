@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600&family=Public+Sans:wght@300..700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="tablero.css?v=202608221338">
+<link rel="stylesheet" href="tablero.css?v=202608241101">
 </head>
 <body>
 <div class="envoltura">
@@ -35,6 +35,8 @@
   <div class="acciones">
     <button id="btn-refrescar" class="principal">Actualizar datos</button>
     <button id="btn-csv">Descargar CSV</button>
+    <button id="btn-xlsx">Descargar Excel</button>
+    <button id="btn-pdf">Imprimir / PDF</button>
   </div>
 </header>
 
@@ -208,10 +210,21 @@
     </select>
     <span class="ayuda">Desde cuándo lo ve el monitoreo</span>
   </div>
+  <!-- Varias entidades a la vez: comparar dos municipios exigia mirar la tabla dos
+       veces y sumar de cabeza. El <details> abre y cierra sin JavaScript y funciona
+       igual en el telefono; el resumen dice siempre cuantas hay elegidas, porque un
+       filtro puesto y no visible miente igual que un tablero filtrado en silencio. -->
   <div class="filtro">
-    <label for="f-entidad">Entidad</label>
-    <select id="f-entidad"><option value="">Todas las entidades</option></select>
-    <span class="ayuda">Una entidad concreta</span>
+    <label for="f-entidad-buscar">Entidad</label>
+    <details class="multi" id="f-entidad">
+      <summary id="f-entidad-resumen">Todas las entidades</summary>
+      <div class="multi-panel">
+        <input type="search" id="f-entidad-buscar" placeholder="Escriba para acotar la lista…">
+        <div class="multi-lista" id="f-entidad-lista"></div>
+        <button type="button" id="f-entidad-limpiar">Quitar la selección</button>
+      </div>
+    </details>
+    <span class="ayuda">Una o varias; sin marcar ninguna, entran todas</span>
   </div>
 </div>
 </details>
@@ -339,6 +352,10 @@
 </details><!-- /padron -->
 
 </div>
-<script src="tablero.js?v=202608221338"></script>
+
+<!-- Solo se ve al imprimir. Se arma en el momento con lo que hay en pantalla:
+     la tabla va paginada de a 20 y en papel hacen falta todas las filas. -->
+<div id="impresion" aria-hidden="true"></div>
+<script src="tablero.js?v=202608241101"></script>
 </body>
 </html>
