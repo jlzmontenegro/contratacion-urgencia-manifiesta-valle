@@ -694,7 +694,7 @@ def cargar_mapa():
     ruta = os.path.join(BASE, "mapa.json")
     if not os.path.exists(ruta):
         print("  ! mapa.json no esta; los registros iran sin municipio")
-        ID_MAPA.update({"departamentos": {}, "municipios": {}, "orden": []})
+        ID_MAPA.update({"departamentos": {}, "municipios": {}, "orden": [], "nombres": {}})
         return ID_MAPA
     with open(ruta, encoding="utf-8") as fh:
         m = json.load(fh)
@@ -705,7 +705,9 @@ def cargar_mapa():
     # 'CALIMA' antes que 'CALI'. Al reves, media docena de municipios se
     # atribuirian al vecino cuyo nombre es prefijo del suyo.
     orden = sorted(munis, key=len, reverse=True)
-    ID_MAPA.update({"departamentos": deps, "municipios": munis, "orden": orden})
+    nombres = {cod: nom for cod, nom in munis.values()}
+    ID_MAPA.update({"departamentos": deps, "municipios": munis, "orden": orden,
+                    "nombres": nombres})
     return ID_MAPA
 
 
@@ -716,7 +718,25 @@ def codigo_departamento(departamento):
     return idx.get(n, "")
 
 
-def situar(entidad, departamento, ciudad, del_valle):
+def municipios_nombrados(texto, idx):
+    """Los municipios del Valle que un texto nombra, por palabra completa."""
+    t = normalizar(texto)
+    hallados = []
+    for nombre in idx["orden"]:
+        i = t.find(nombre)
+        while i != -1:
+            antes = t[i - 1] if i > 0 else " "
+            despues = t[i + len(nombre)] if i + len(nombre) < len(t) else " "
+            if not antes.isalpha() and not despues.isalpha():
+                cod = idx["municipios"][nombre][0]
+                if cod not in hallados:
+                    hallados.append(cod)
+                break
+            i = t.find(nombre, i + 1)
+    return hallados
+
+
+def situar(entidad, departamento, ciudad, del_valle, objeto=""):
     """Municipio del Valle del registro, y de donde se dedujo.
 
     Devuelve (codigo, nombre, origen). El origen viaja hasta la pagina a proposito:
@@ -738,19 +758,24 @@ def situar(entidad, departamento, ciudad, del_valle):
         return cod, nom, "fuente"
 
     if del_valle and (not ciu or ciu in SIN_DILIGENCIAR):
-        texto = normalizar(entidad)
-        for nombre in idx["orden"]:
-            # Por palabra completa: 'TORO' no puede casar dentro de 'TOROS' ni
-            # 'CALI' dentro de 'CALIMA'. Es la misma regla que el clasificador usa
-            # con las palabras clave, y por el mismo motivo.
-            i = texto.find(nombre)
-            while i != -1:
-                antes = texto[i - 1] if i > 0 else " "
-                despues = texto[i + len(nombre)] if i + len(nombre) < len(texto) else " "
-                if not antes.isalpha() and not despues.isalpha():
-                    cod, nom = idx["municipios"][nombre]
-                    return cod, nom, "entidad"
-                i = texto.find(nombre, i + 1)
+        # Por palabra completa: 'TORO' no puede casar dentro de 'TOROS' ni 'CALI'
+        # dentro de 'CALIMA'. Es la misma regla que el clasificador usa con las
+        # palabras clave, y por el mismo motivo.
+        hallados = municipios_nombrados(entidad, idx)
+        if hallados:
+            return hallados[0], idx["nombres"][hallados[0]], "entidad"
+
+    # Ultimo recurso: el objeto. Aqui SI se entra aunque la fuente traiga ciudad,
+    # porque el caso que lo justifica es justamente ese: DICITEC SEM SAS contrata
+    # desde Bogota -y asi lo publica- materiales para reparar Vijes. Sin esto, una
+    # operacion destinada al Valle no aparece en el mapa del Valle.
+    # Solo si nombra UN municipio: el objeto de la Camara de Tulua nombra Zarzal y
+    # Tulua, y elegir uno de los dos seria inventar. Con dos o mas se queda sin
+    # situar, y el mapa lo declara.
+    if del_valle and objeto:
+        hallados = municipios_nombrados(objeto, idx)
+        if len(hallados) == 1:
+            return hallados[0], idx["nombres"][hallados[0]], "objeto"
     return "", "", ""
 
 
@@ -1632,7 +1657,8 @@ def aplanar(df, nombre_fuente):
         grupo_r = r.get("grupo", "")
         mun_cod, mun_nom, mun_origen = situar(
             r.get(f["entidad"], ""), r.get(f["departamento"], ""),
-            r.get(f["ciudad"], ""), grupo_r != "Fuera del Valle")
+            r.get(f["ciudad"], ""), grupo_r != "Fuera del Valle",
+            objeto_completo(r, f))
         # Si el departamento viene sin diligenciar pero el municipio se resolvio,
         # el departamento sale de los dos primeros digitos del codigo DIVIPOLA. Si
         # no, la Alcaldia de La Victoria tampoco pintaria el Valle en el mapa del

@@ -321,6 +321,21 @@ municipios con más contratación relacionada del norte del Valle. **El origen v
 pantalla a propósito:** el mapa dice cuántas piezas ha colocado por deducción y cuántas no ha
 podido situar. Un mapa que se come operaciones en silencio se lee como un censo.
 
+**El mapa pinta el municipio de la ENTIDAD QUE CONTRATA, no dónde se ejecuta**, y el rótulo lo
+dice con esas palabras. El campo `ciudad` de SECOP es el domicilio de la entidad: la Cámara de
+Comercio de Tuluá compró alimentos para damnificados **de Zarzal** y carpas para un comedor **de
+Bolívar**, y las dos operaciones se pintan en Tuluá. Se comprobó contra los 109 registros del
+Valle: el objeto coincide con el municipio asignado en 89, no nombra ninguno en 18 y **discrepa
+en 2**, que son justo esos. No es lo mismo el municipio que mueve la plata que el que recibe la
+ayuda, y el mapa no puede dar a entender lo segundo.
+
+**El objeto es el ÚLTIMO recurso para situar, y solo si nombra un único municipio.** Ahí sí se
+entra aunque la fuente traiga ciudad, porque el caso que lo justifica es ese: DICITEC SEM SAS
+contrata desde Bogotá —y así lo publica— materiales para reparar Vijes. Con dos o más nombres se
+queda sin situar: el objeto de la Cámara de Tuluá nombra Zarzal y Tuluá, y elegir uno sería
+inventar. `municipio_origen` distingue los tres caminos (`fuente`, `entidad`, `objeto`) y el mapa
+los cuenta por separado en pantalla.
+
 **El mapa de Colombia ignora el filtro de territorio, y su rótulo lo dice.** Con el filtro por
 defecto —Cali y el Valle— saldría un país entero en blanco salvo una pieza, y eso no se lee como
 "está filtrado" sino como "no hay contratación". Es el mismo trato que el desglose le da a lo de

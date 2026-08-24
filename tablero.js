@@ -1350,6 +1350,17 @@ function tramos(valores){
   return [...new Set([corte(0.25), corte(0.5), corte(0.75), v[v.length - 1]])];
 }
 
+/* Tres situaciones distintas, tres colores: no haber contratado nada, haber
+   contratado solo procesos que aun no se firman -valor cero, pero contratacion
+   hay- y tener valor firmado. Con la rampa sola, Vijes -una operacion abierta de
+   $20 millones- se pintaba del mismo color que un municipio en blanco, y eso es
+   justo el cero que no dice por que. */
+const claseMapa = (dato, metrica, cortes) => {
+  if (!dato || !dato.n) return "m0";
+  if (!dato[metrica]) return "mp";
+  return claseTramo(dato[metrica], cortes);
+};
+
 const claseTramo = (valor, cortes) => {
   if (!valor) return "m0";
   for (let i = 0; i < cortes.length; i++) if (valor <= cortes[i]) return "m" + (i + 1);
@@ -1389,16 +1400,19 @@ function pintarUnMapa(destino, def, datos, metrica, rotulo){
       ? `${p.nombre}: ${frasePlural(d.n, "operación", "operaciones")}, `
         + `${pesos(d.valor)} firmado${d.abiertas ? ", " + d.abiertas + " sin contratar" : ""}`
       : `${p.nombre}: sin contratación que cumpla los filtros`;
-    return `<path d="${p.d}" class="${claseTramo(cual, cortes)}"><title>${esc(dice)}</title></path>`;
+    return `<path d="${p.d}" class="${claseMapa(d, metrica, cortes)}">`
+      + `<title>${esc(dice)}</title></path>`;
   }).join("");
   el.innerHTML = `<svg viewBox="0 0 ${def.ancho} ${def.alto}" role="img"
       aria-label="${esc(rotulo)}" preserveAspectRatio="xMidYMid meet">${piezas}</svg>`;
   return cortes;
 }
 
-function leyendaMapa(cortes, metrica){
+function leyendaMapa(cortes, metrica, hayAbiertas){
   const fmt = v => metrica === "n" ? String(v) : compacto(v);
   const trozos = ['<span class="tramo"><i class="m0"></i>sin contratación</span>'];
+  if (hayAbiertas) trozos.push('<span class="tramo"><i class="mp"></i>'
+    + 'solo procesos aún sin firmar</span>');
   let desde = 1;
   cortes.forEach((c, i) => {
     trozos.push(`<span class="tramo"><i class="m${i + 1}"></i>`
@@ -1438,12 +1452,16 @@ function pintarMapas(){
   document.getElementById("pie-pais").textContent =
     frasePlural(opsPais.length, "operación", "operaciones") + " en todo el país";
 
-  document.getElementById("mapa-leyenda").innerHTML = leyendaMapa(cortesValle, metrica);
+  const soloAbiertas = [...porMun.values()].some(g => g.n && !g[metrica])
+                    || [...porDep.values()].some(g => g.n && !g[metrica]);
+  document.getElementById("mapa-leyenda").innerHTML =
+    leyendaMapa(cortesValle, metrica, soloAbiertas);
 
   /* Lo que el mapa NO puede dibujar, dicho con nombre y numero. Un mapa que se come
      operaciones en silencio es peor que no tener mapa: se lee como un censo. */
   const delValle = ops.filter(o => o.grupo !== "Fuera del Valle");
   const deducidas = delValle.filter(o => o.municipioOrigen === "entidad").length;
+  const porObjeto = delValle.filter(o => o.municipioOrigen === "objeto").length;
   const sinSitio = delValle.filter(o => !o.municipio).length;
   const conMunicipio = [...porMun.values()].reduce((s, g) => s + g.n, 0);
   const notas = [
@@ -1452,6 +1470,8 @@ function pintarMapas(){
   ];
   if (deducidas) notas.push(`<b>${deducidas}</b> por el nombre de la entidad, porque la `
     + `fuente publica su municipio como «No Definido»`);
+  if (porObjeto) notas.push(`<b>${porObjeto}</b> por el municipio que nombra el objeto, `
+    + `porque la entidad contrata desde fuera del Valle`);
 
   if (sinSitio) notas.push(`<b>${sinSitio}</b> sin municipio ni pista en el nombre de la `
     + `entidad: ${sinSitio === 1 ? "no aparece" : "no aparecen"} en el mapa del Valle`);
@@ -1727,7 +1747,7 @@ const ESTILOS_XLSX = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
  * a cero pixeles, porque el viewBox solo dice proporciones.
  * ------------------------------------------------------------------- */
 const PALETA_MAPA = { m0: "#E9EEEC", m1: "#CFE3E0", m2: "#93C6C0", m3: "#4E9A93",
-                      m4: "#0E5C58" };
+                      m4: "#0E5C58", mp: "#F0D9AE" };
 
 function svgAutonomo(sel, ancho){
   const svg = document.querySelector(sel);
@@ -1950,14 +1970,16 @@ function mapasParaPapel(){
   const notas = document.getElementById("mapa-notas");
   const pie = document.getElementById("pie-pais");
   return `<div class="mapas-papel">
-    ${valle ? `<figure><figcaption>Valle del Cauca · por municipio</figcaption>
-        ${valle.outerHTML}</figure>` : ""}
+    ${valle ? `<figure><figcaption>Valle del Cauca · por municipio de la entidad que
+        contrata</figcaption>${valle.outerHTML}</figure>` : ""}
     ${pais ? `<figure><figcaption>Colombia · por departamento (sin el filtro de
         territorio${pie && pie.textContent ? " · " + esc(pie.textContent) : ""})</figcaption>
         ${pais.outerHTML}</figure>` : ""}
     </div>
     <div class="leyenda-mapa">${document.getElementById("mapa-leyenda").innerHTML}</div>
-    ${notas ? `<p class="pie-inf">${notas.innerHTML}</p>` : ""}`;
+    ${notas ? `<p class="pie-inf">${notas.innerHTML}</p>` : ""}
+    <p class="pie-inf">El municipio es el de la entidad que contrata; el lugar donde se
+      ejecuta puede ser otro y, cuando consta, está dentro del objeto.</p>`;
 }
 
 function imprimirInforme(){
