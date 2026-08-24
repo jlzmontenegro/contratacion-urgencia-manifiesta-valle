@@ -693,18 +693,21 @@
     /* Ambar, el color que el tablero ya usa para los procesos: hay contratacion
        pero todavia no hay plata firmada. */
     --mp:#F0D9AE;
+    /* Tierra, deliberadamente fuera de la rampa y mas calido que el gris del cero:
+       "aqui hay contratacion, pero este filtro no la deja ver". */
+    --mf:#DCD3C4;
     --m-borde:#FFFFFF;
   }
   @media (prefers-color-scheme:dark){
     :root:not([data-theme="light"]){
       --m0:#1D2725; --m1:#234B47; --m2:#2F6C66; --m3:#47958D; --m4:#6FCFC6;
-      --mp:#5B4520;
+      --mp:#5B4520; --mf:#3A342B;
       --m-borde:#0E1413;
     }
   }
   :root[data-theme="dark"]{
     --m0:#1D2725; --m1:#234B47; --m2:#2F6C66; --m3:#47958D; --m4:#6FCFC6;
-    --mp:#5B4520;
+    --mp:#5B4520; --mf:#3A342B;
     --m-borde:#0E1413;
   }
 
@@ -733,6 +736,7 @@
   .lienzo path:hover{stroke:var(--texto);stroke-width:1.4}
   .lienzo .m0{fill:var(--m0)} .lienzo .m1{fill:var(--m1)} .lienzo .m2{fill:var(--m2)}
   .lienzo .m3{fill:var(--m3)} .lienzo .m4{fill:var(--m4)} .lienzo .mp{fill:var(--mp)}
+  .lienzo .mf{fill:var(--mf)}
 
   /* Etiquetas. El halo del color del panel es lo que las hace legibles sobre
      cualquier relleno de la rampa; paint-order:stroke pinta el borde DEBAJO del
@@ -747,6 +751,7 @@
   .leyenda-mapa .m0{background:var(--m0)} .leyenda-mapa .m1{background:var(--m1)}
   .leyenda-mapa .m2{background:var(--m2)} .leyenda-mapa .m3{background:var(--m3)}
   .leyenda-mapa .m4{background:var(--m4)} .leyenda-mapa .mp{background:var(--mp)}
+  .leyenda-mapa .mf{background:var(--mf)}
   .notas-mapa{margin-top:12px;line-height:1.5;max-width:78ch}
   .ojo-mapa{text-transform:none;letter-spacing:0;color:var(--media);font-size:10.5px;
             margin-left:6px}
@@ -789,7 +794,7 @@
        papel blanco eso es ilegible. Y print-color-adjust para que el navegador no
        descarte los rellenos al imprimir, que es su comportamiento por defecto. */
     #impresion{--m0:#E9EEEC;--m1:#CFE3E0;--m2:#93C6C0;--m3:#4E9A93;--m4:#0E5C58;
-               --mp:#F0D9AE}
+               --mp:#F0D9AE;--mf:#DCD3C4}
     #impresion .mapas-papel{display:flex;gap:8mm;margin:4pt 0 6pt;
                             break-inside:avoid;page-break-inside:avoid}
     #impresion .mapas-papel figure{margin:0;flex:1 1 0;min-width:0}
@@ -804,6 +809,7 @@
     #impresion .mapas-papel .m0{fill:var(--m0)} #impresion .mapas-papel .m1{fill:var(--m1)}
     #impresion .mapas-papel .m2{fill:var(--m2)} #impresion .mapas-papel .m3{fill:var(--m3)}
     #impresion .mapas-papel .m4{fill:var(--m4)} #impresion .mapas-papel .mp{fill:var(--mp)}
+    #impresion .mapas-papel .mf{fill:var(--mf)}
     #impresion .mapas-papel path{stroke:#fff;stroke-width:.7}
     #impresion .mapas-papel .etq{fill:#1a1a1a;text-anchor:middle;dominant-baseline:middle;
                                  font-weight:500;paint-order:stroke;stroke:#fff;

@@ -1355,7 +1355,11 @@ function tramos(valores){
    hay- y tener valor firmado. Con la rampa sola, Vijes -una operacion abierta de
    $20 millones- se pintaba del mismo color que un municipio en blanco, y eso es
    justo el cero que no dice por que. */
-const claseMapa = (dato, metrica, cortes) => {
+const claseMapa = (dato, metrica, cortes, fuera) => {
+  /* Una pieza sin dato puede ser dos cosas MUY distintas: que no haya contratacion,
+     o que la haya y el filtro la deje fuera. Pintarlas igual es el cero mudo de
+     siempre, una escala mas arriba. */
+  if ((!dato || !dato.n) && fuera && fuera.n) return "mf";
   if (!dato || !dato.n) return "m0";
   if (!dato[metrica]) return "mp";
   return claseTramo(dato[metrica], cortes);
@@ -1467,41 +1471,48 @@ function separarEtiquetas(svg, ancho, alto){
   });
 }
 
-function pintarUnMapa(destino, def, datos, metrica, rotulo){
+function pintarUnMapa(destino, def, datos, metrica, rotulo, dejaFuera){
   const el = document.getElementById(destino);
   if (!el) return;
   const cortes = tramos(def.piezas.map(p => (datos.get(p.codigo) || {})[metrica] || 0));
   const nombres = mostrarNombres();
   const piezas = def.piezas.map(p => {
     const d = datos.get(p.codigo) || { n: 0, valor: 0, abiertas: 0 };
+    const f = dejaFuera ? dejaFuera.get(p.codigo) : null;
     const cual = (d[metrica] || 0);
     /* El titulo emergente es el unico sitio donde el mapa da la cifra exacta. Sin
        el, un color oscuro solo dice "mas que el vecino". */
-    const dice = !d.n
+    const dice = !d.n && f && f.n
+      ? `${p.nombre}: ${frasePlural(f.n, "operación", "operaciones")} que los filtros `
+        + `actuales dejan fuera`
+      : !d.n
       ? `${p.nombre}: sin contratación que cumpla los filtros`
       : d.valor
         ? `${p.nombre}: ${frasePlural(d.n, "operación", "operaciones")}, `
           + `${pesos(d.valor)} firmado${d.abiertas ? ", " + d.abiertas + " sin contratar" : ""}`
         : `${p.nombre}: ${frasePlural(d.n, "operación", "operaciones")}, `
           + `ninguna firmada todavía`;
-    return `<path d="${p.d}" class="${claseMapa(d, metrica, cortes)}">`
+    return `<path d="${p.d}" class="${claseMapa(d, metrica, cortes, f)}">`
       + `<title>${esc(dice)}</title></path>`;
   }).join("");
   /* Todas las etiquetas despues de todos los contornos: si fueran por parejas, el
      relleno del municipio siguiente taparia el nombre del anterior. */
   const etiquetas = def.piezas.map(p =>
     etiquetaPieza(p, datos.get(p.codigo), metrica, nombres)).join("");
+
   el.innerHTML = `<svg viewBox="0 0 ${def.ancho} ${def.alto}" role="img"
       aria-label="${esc(rotulo)}" preserveAspectRatio="xMidYMid meet">${piezas}${etiquetas}</svg>`;
   if (nombres) separarEtiquetas(el.querySelector("svg"), def.ancho, def.alto);
   return cortes;
 }
 
-function leyendaMapa(cortes, metrica, hayAbiertas){
+function leyendaMapa(cortes, metrica, hayAbiertas, hayFuera){
   const fmt = v => metrica === "n" ? String(v) : compacto(v);
   const trozos = ['<span class="tramo"><i class="m0"></i>sin contratación</span>'];
   if (hayAbiertas) trozos.push('<span class="tramo"><i class="mp"></i>'
     + 'solo procesos aún sin firmar</span>');
+  if (hayFuera) trozos.push('<span class="tramo"><i class="mf"></i>'
+    + 'tiene contratación, pero los filtros la dejan fuera</span>');
   let desde = 1;
   cortes.forEach((c, i) => {
     trozos.push(`<span class="tramo"><i class="m${i + 1}"></i>`
@@ -1524,27 +1535,41 @@ function pintarMapas(){
   if (!MAPA) return;
 
   const ops = operacionesDeLaVista();
-  /* El mapa del pais ignora SOLO el filtro de territorio, y su rotulo lo dice. Con
-     el filtro por defecto -Cali y el Valle- se veria un pais entero en blanco salvo
-     una pieza, y eso no se lee como "filtrado" sino como "no hay contratacion". Es
-     el mismo trato que el desglose le da a lo de fuera del Valle: a la vista, pero
-     rotulado y sin sumar en las cifras. */
+  /* El mapa del pais respeta TODOS los filtros, incluido el de territorio: si no,
+     el Valle sumaba ahi $14,0 mm -todas sus entidades- mientras la tabla listaba
+     $10,2 mm del grupo filtrado, dos cifras distintas del mismo sitio en la misma
+     pantalla. Lo que se pinta aparte es lo que el filtro DEJA FUERA, con color
+     propio: si esas piezas salieran como las vacias, seria un cero mudo. */
   const opsPais = operacionesDeLaVista({ grupo: "todos" });
   const metrica = metricaMapa();
   const porMun = porTerritorio(ops.filter(o => o.grupo !== "Fuera del Valle"), "municipio");
-  const porDep = porTerritorio(opsPais, "depCodigo");
+  const porDep = porTerritorio(ops, "depCodigo");
+  const porDepTodo = porTerritorio(opsPais, "depCodigo");
+  /* Lo que hay en un departamento y el filtro no deja ver. */
+  const fueraDelFiltro = new Map();
+  porDepTodo.forEach((g, cod) => {
+    const visible = porDep.get(cod);
+    if (!visible || !visible.n) fueraDelFiltro.set(cod, g);
+  });
 
   const cortesValle = pintarUnMapa("mapa-valle", MAPA.valle, porMun, metrica,
     "Municipios del Valle del Cauca según la contratación relacionada con el sismo");
-  pintarUnMapa("mapa-pais", MAPA.pais, porDep, metrica,
-    "Departamentos de Colombia según la contratación relacionada con el sismo");
-  document.getElementById("pie-pais").textContent =
-    frasePlural(opsPais.length, "operación", "operaciones") + " en todo el país";
+  const abiertasValle = [...porMun.values()].some(g => g.n && !g[metrica]);
+  document.getElementById("leyenda-valle").innerHTML =
+    leyendaMapa(cortesValle, metrica, abiertasValle, false);
+  const cortesPais = pintarUnMapa("mapa-pais", MAPA.pais, porDep, metrica,
+    "Departamentos de Colombia según la contratación relacionada con el sismo",
+    fueraDelFiltro);
+  const abiertasPais = [...porDep.values()].some(g => g.n && !g[metrica]);
+  document.getElementById("leyenda-pais").innerHTML =
+    leyendaMapa(cortesPais, metrica, abiertasPais, fueraDelFiltro.size > 0);
+  const ocultas = opsPais.length - ops.length;
+  document.getElementById("pie-pais").textContent = ocultas
+    ? frasePlural(ops.length, "operación", "operaciones") + " con los filtros puestos · "
+      + ocultas + " más quedan fuera, en color aparte"
+    : frasePlural(ops.length, "operación", "operaciones") + " en todo el país";
 
-  const soloAbiertas = [...porMun.values()].some(g => g.n && !g[metrica])
-                    || [...porDep.values()].some(g => g.n && !g[metrica]);
-  document.getElementById("mapa-leyenda").innerHTML =
-    leyendaMapa(cortesValle, metrica, soloAbiertas);
+
 
   /* Lo que el mapa NO puede dibujar, dicho con nombre y numero. Un mapa que se come
      operaciones en silencio es peor que no tener mapa: se lee como un censo. */
@@ -1836,7 +1861,7 @@ const ESTILOS_XLSX = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
  * a cero pixeles, porque el viewBox solo dice proporciones.
  * ------------------------------------------------------------------- */
 const PALETA_MAPA = { m0: "#E9EEEC", m1: "#CFE3E0", m2: "#93C6C0", m3: "#4E9A93",
-                      m4: "#0E5C58", mp: "#F0D9AE" };
+                      m4: "#0E5C58", mp: "#F0D9AE", mf: "#DCD3C4" };
 
 function svgAutonomo(sel, ancho){
   const svg = document.querySelector(sel);
@@ -2077,12 +2102,16 @@ function mapasParaPapel(){
   const pie = document.getElementById("pie-pais");
   return `<div class="mapas-papel">
     ${valle ? `<figure><figcaption>Valle del Cauca · por municipio de la entidad que
-        contrata</figcaption>${valle.outerHTML}</figure>` : ""}
+        contrata</figcaption>${valle.outerHTML}
+        <div class="leyenda-mapa">${document.getElementById("leyenda-valle").innerHTML}</div>
+        </figure>` : ""}
     ${pais ? `<figure><figcaption>Colombia · por departamento (sin el filtro de
         territorio${pie && pie.textContent ? " · " + esc(pie.textContent) : ""})</figcaption>
-        ${pais.outerHTML}</figure>` : ""}
+        ${pais.outerHTML}
+        <div class="leyenda-mapa">${document.getElementById("leyenda-pais").innerHTML}</div>
+        </figure>` : ""}
     </div>
-    <div class="leyenda-mapa">${document.getElementById("mapa-leyenda").innerHTML}</div>
+
     ${notas ? `<p class="pie-inf">${notas.innerHTML}</p>` : ""}
     <p class="pie-inf">El municipio es el de la entidad que contrata; el lugar donde se
       ejecuta puede ser otro y, cuando consta, está dentro del objeto.</p>`;

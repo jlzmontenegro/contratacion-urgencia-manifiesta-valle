@@ -336,11 +336,18 @@ queda sin situar: el objeto de la Cámara de Tuluá nombra Zarzal y Tuluá, y el
 inventar. `municipio_origen` distingue los tres caminos (`fuente`, `entidad`, `objeto`) y el mapa
 los cuenta por separado en pantalla.
 
-**El mapa de Colombia ignora el filtro de territorio, y su rótulo lo dice.** Con el filtro por
-defecto —Cali y el Valle— saldría un país entero en blanco salvo una pieza, y eso no se lee como
-"está filtrado" sino como "no hay contratación". Es el mismo trato que el desglose le da a lo de
-fuera del Valle: a la vista, rotulado y sin sumar en las cifras. El del Valle sí respeta todos
-los filtros.
+**Los dos mapas respetan TODOS los filtros, y lo que el filtro deja fuera tiene color propio.**
+El mapa del país llegó a saltarse el filtro de territorio, para que no saliera en blanco al
+arrancar; el precio fue que **el Valle sumaba $14,0 mm en el mapa mientras la tabla listaba
+$10,2 mm** del grupo filtrado —dos cifras del mismo sitio en la misma pantalla, que es la regla
+que más caro sale—. Lo detectó el usuario, no la revisión. Ahora los departamentos con
+contratación que el filtro oculta van en **tierra**, fuera de la rampa, con su propia entrada en
+la leyenda y su cuenta en el título emergente: si salieran como los vacíos, sería el cero mudo una
+escala más arriba. Al pie va cuántas operaciones quedan fuera.
+
+**Una leyenda POR MAPA.** Los tramos se calculan sobre los datos de cada uno —un municipio y un
+departamento no juegan en la misma escala— y con una sola leyenda la del Valle describía los
+colores del mapa del país.
 
 **Cada pieza lleva su etiqueta dentro del SVG**, no como capa aparte: así se escala con el mapa
 y viaja tal cual al informe impreso y al PNG del Excel. El cuerpo de letra sale de la raíz del

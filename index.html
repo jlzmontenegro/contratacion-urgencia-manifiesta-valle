@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600&family=Public+Sans:wght@300..700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="tablero.css?v=202608241237">
+<link rel="stylesheet" href="tablero.css?v=202608241305">
 </head>
 <body>
 <div class="envoltura">
@@ -245,7 +245,6 @@
     </select>
     <label class="agrupar"><input type="checkbox" id="f-mapa-nombres" checked> Nombres
       en el mapa</label>
-    <div class="leyenda-mapa" id="mapa-leyenda"></div>
   </div>
   <div class="aviso-parcial" id="mapa-aviso" hidden></div>
   <div class="rejilla-mapas">
@@ -256,6 +255,10 @@
            donde contrata. El campo de SECOP es el domicilio de la entidad. -->
       <figcaption>Valle del Cauca · por municipio de la entidad que contrata</figcaption>
       <div class="lienzo" id="mapa-valle"></div>
+      <!-- Una leyenda POR MAPA: los tramos se calculan sobre los datos de cada uno y
+           un municipio y un departamento no juegan en la misma escala. Con una sola
+           leyenda, la del Valle describia los colores del mapa del pais. -->
+      <div class="leyenda-mapa" id="leyenda-valle"></div>
       <p class="menor pie-mapa">El lugar donde se ejecuta puede ser otro municipio, y no
         siempre consta: cuando aparece, está dentro del objeto del contrato.</p>
     </figure>
@@ -263,9 +266,9 @@
       <!-- Este NO respeta el filtro de territorio, y hay que decirlo donde se ve:
            con el filtro por defecto saldria un pais en blanco, que se lee como
            "no hay contratacion" y no como "esta filtrado". -->
-      <figcaption>Colombia · por departamento
-        <span class="ojo-mapa">sin el filtro de territorio</span></figcaption>
+      <figcaption>Colombia · por departamento</figcaption>
       <div class="lienzo" id="mapa-pais"></div>
+      <div class="leyenda-mapa" id="leyenda-pais"></div>
       <p class="menor pie-mapa" id="pie-pais"></p>
     </figure>
   </div>
@@ -399,6 +402,6 @@
 <!-- Solo se ve al imprimir. Se arma en el momento con lo que hay en pantalla:
      la tabla va paginada de a 20 y en papel hacen falta todas las filas. -->
 <div id="impresion" aria-hidden="true"></div>
-<script src="tablero.js?v=202608241237"></script>
+<script src="tablero.js?v=202608241305"></script>
 </body>
 </html>
