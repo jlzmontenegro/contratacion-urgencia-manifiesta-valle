@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600&family=Public+Sans:wght@300..700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="tablero.css?v=202608241305">
+<link rel="stylesheet" href="tablero.css?v=202608251229">
 </head>
 <body>
 <div class="envoltura">
@@ -214,6 +214,25 @@
        veces y sumar de cabeza. El <details> abre y cierra sin JavaScript y funciona
        igual en el telefono; el resumen dice siempre cuantas hay elegidas, porque un
        filtro puesto y no visible miente igual que un tablero filtrado en silencio. -->
+  <!-- Dos <input type=range> superpuestos: no existe un control nativo de rango
+       doble, y una libreria por esto seria romper la autosuficiencia de la pagina.
+       La pista y el tramo elegido se pintan debajo; los pulgares reciben el raton
+       gracias a pointer-events, ver tablero.css. -->
+  <div class="filtro">
+    <label for="f-monto-min">Monto de la operación</label>
+    <div class="rango">
+      <div class="rango-pista"><div class="rango-tramo" id="rango-tramo"></div></div>
+      <input type="range" id="f-monto-min" min="0" max="1000" step="1" value="0"
+             aria-label="Monto mínimo">
+      <input type="range" id="f-monto-max" min="0" max="1000" step="1" value="1000"
+             aria-label="Monto máximo">
+    </div>
+    <div class="rango-pie">
+      <span class="rango-cifras" id="rango-cifras">Cualquier monto</span>
+      <button type="button" id="f-monto-quitar" hidden>quitar</button>
+    </div>
+    <span class="ayuda">Valor firmado, o precio base si aún no hay contrato</span>
+  </div>
   <div class="filtro">
     <label for="f-entidad-buscar">Entidad</label>
     <details class="multi" id="f-entidad">
@@ -402,6 +421,6 @@
 <!-- Solo se ve al imprimir. Se arma en el momento con lo que hay en pantalla:
      la tabla va paginada de a 20 y en papel hacen falta todas las filas. -->
 <div id="impresion" aria-hidden="true"></div>
-<script src="tablero.js?v=202608241305"></script>
+<script src="tablero.js?v=202608251229"></script>
 </body>
 </html>

@@ -942,6 +942,8 @@ function filtrosActivos(){
   const nEnt = ENTIDADES_SEL.size;
   if (nEnt === 1) activos.push([...ENTIDADES_SEL][0]);
   if (nEnt > 1) activos.push(nEnt + " entidades");
+  const monto = rangoMonto();
+  if (monto.activo) activos.push("monto " + textoMonto(monto));
   const busq = document.getElementById("f-texto").value.trim();
   if (busq) activos.unshift(`"${busq}"`);
   return activos;
@@ -991,6 +993,8 @@ function operacionesDeLaVista(sobre){
   const rev = document.getElementById("f-revision").value;
   if (rev === "pendiente") filas = filas.filter(o => o.nivel === "Media" && !o.revisada);
   if (rev === "revisada") filas = filas.filter(o => o.revisada);
+  const monto = rangoMonto();
+  if (monto.activo) filas = filas.filter(o => o.valor >= monto.min && o.valor <= monto.max);
   return agrupando() ? agruparPorEntidad(filas) : filas;
 }
 
@@ -1067,8 +1071,12 @@ function pintarTabla(){
     const ent = elegidas.length === 1 ? elegidas[0] : "";
     const grupoDe = e => (PADRON.find(p => p.entidad === e) || {}).grupo;
     const busq = document.getElementById("f-texto").value.trim();
+    const monto = rangoMonto();
     vacio.textContent =
-      busq
+      monto.activo
+        ? `Ninguna operación queda entre ${textoMonto(monto)}. El monto es el valor `
+          + "firmado, o el precio base cuando todavía no hay contrato."
+      : busq
         ? `Ninguna operación coincide con "${busq}". Se busca en el objeto, la entidad, el `
           + "contratista y los números de proceso y de contrato."
       : elegidas.length > 1
@@ -1187,6 +1195,10 @@ function pintarCambios(){
    del filtro; el padron sigue siendo su propio bloque porque una entidad que no
    ha contratado nada no tiene ninguna operacion que mostrar en la tabla. */
 function pintarTodo(){
+  /* Los topes de la barra de monto, antes del primer pintado: dependen de los
+     datos recien cargados, no de los filtros. */
+  calcularLimitesValor();
+  pintarRangoMonto();
   llenarFiltroEntidades();
   pintarPortada(); pintarKpis(); pintarGraficos();
   pintarAlertas(); pintarTabla(); pintarPadron(); pintarCambios(); pintarSello();
@@ -1322,6 +1334,90 @@ function pintarTitulos(){
   document.getElementById("titulo-kpis").textContent =
     "Detalle por nivel de gobierno · Cali, Valle del Cauca y UNGRD desde el "
     + CFG.inicio.split("-").reverse().join("/");
+}
+
+/* ------------------------------------------------------------------ *
+ * Filtro por monto                                                    *
+ * ------------------------------------------------------------------ */
+/* Se filtra la OPERACION, no el registro, y por el valor que la tabla muestra:
+   el firmado si hay contrato y el precio base si todavia no. Filtrar el registro
+   partiria la operacion -el contrato entra y su proceso no- y la fila acabaria
+   diciendo "aun sin contratar" sobre algo ya firmado, que es el fallo que ya
+   costo arreglar una vez. */
+const POS_MAX = 1000;
+
+/* La escala se calcula una vez por carga, sobre TODO lo listable: si se
+   recalculara con cada filtro, la barra cambiaria de escala bajo el dedo y el
+   tramo elegido pasaria a significar otra cosa sin que nadie lo tocara. */
+let VALORES_ORD = [];
+
+function calcularLimitesValor(){
+  VALORES_ORD = operaciones(DATOS.filter(listable))
+    .map(o => o.valor).filter(v => v > 0).sort((a, b) => a - b);
+}
+
+/* Por CUANTILES, no lineal ni logaritmica. Lineal no sirve -el 95% de las
+   operaciones se apelotona en el primer centimetro- y logaritmica tampoco: entre
+   lo listable hay contratacion ordinaria de $220 mil millones, un orden de
+   magnitud por encima de todo lo del sismo, y con ella en el extremo la mitad
+   alta de la barra se queda sin nada que seleccionar. Repartiendo por cuantiles,
+   cada tramo de la barra tiene aproximadamente las mismas operaciones. */
+function posAValor(pos){
+  if (!VALORES_ORD.length) return 0;
+  const t = Math.min(1, Math.max(0, pos / POS_MAX));
+  return VALORES_ORD[Math.min(VALORES_ORD.length - 1,
+                              Math.round(t * (VALORES_ORD.length - 1)))];
+}
+
+function rangoMonto(){
+  const a = document.getElementById("f-monto-min");
+  const b = document.getElementById("f-monto-max");
+  if (!a || !b) return { activo: false, min: 0, max: Infinity };
+  /* Los dos pulgares pueden cruzarse: manda el orden, no cual se movio. */
+  const p1 = Math.min(Number(a.value), Number(b.value));
+  const p2 = Math.max(Number(a.value), Number(b.value));
+  /* Los extremos son "sin limite" y no un numero: en el tope de abajo entran los
+     de valor cero -hay dos- y en el de arriba no puede quedar fuera el RCD por un
+     redondeo de la escala. */
+  return {
+    activo: p1 > 0 || p2 < POS_MAX,
+    min: p1 <= 0 ? 0 : posAValor(p1),
+    max: p2 >= POS_MAX ? Infinity : posAValor(p2),
+    p1, p2,
+  };
+}
+
+function textoMonto(r){
+  if (!r.activo) return "";
+  if (r.min && r.max !== Infinity) return `${compacto(r.min)} a ${compacto(r.max)}`;
+  if (r.min) return `desde ${compacto(r.min)}`;
+  return `hasta ${compacto(r.max)}`;
+}
+
+function pintarRangoMonto(){
+  const r = rangoMonto();
+  const cifras = document.getElementById("rango-cifras");
+  if (cifras){
+    cifras.textContent = r.activo ? textoMonto(r) : "Cualquier monto";
+    cifras.className = "rango-cifras" + (r.activo ? " hay" : "");
+  }
+  /* El tramo elegido, pintado sobre la pista: sin esto no se ve donde estan los
+     dos pulgares cuando quedan juntos. */
+  const tramo = document.getElementById("rango-tramo");
+  if (tramo){
+    tramo.style.left = (r.p1 / POS_MAX * 100) + "%";
+    tramo.style.right = (100 - r.p2 / POS_MAX * 100) + "%";
+  }
+  const quitar = document.getElementById("f-monto-quitar");
+  if (quitar) quitar.hidden = !r.activo;
+}
+
+function quitarFiltroMonto(){
+  document.getElementById("f-monto-min").value = 0;
+  document.getElementById("f-monto-max").value = POS_MAX;
+  pintarRangoMonto();
+  paginas.tabla = 1;
+  pintarTabla();
 }
 
 /* ------------------------------------------------------------------ *
@@ -2223,6 +2319,13 @@ if ((window.innerWidth || 1024) < 700){
   const caja = document.querySelector(".mapa-caja");
   if (caja) caja.open = false;
 }
+["f-monto-min", "f-monto-max"].forEach(id =>
+  document.getElementById(id).addEventListener("input", () => {
+    pintarRangoMonto();
+    paginas.tabla = 1;
+    pintarTabla();
+  }));
+document.getElementById("f-monto-quitar").addEventListener("click", quitarFiltroMonto);
 document.getElementById("f-mapa-metrica").addEventListener("change", pintarMapas);
 document.getElementById("f-mapa-nombres").addEventListener("change", pintarMapas);
 document.getElementById("f-agrupar").addEventListener("change", () => {

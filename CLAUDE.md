@@ -79,6 +79,21 @@ faltaban 23: una lista recortada sin avisar se lee como si fueran todas. Ahora c
 operaciones más en la tabla". En pantalla estrecha muestra 3 en vez de 5 —la portada dejaba la
 tabla a casi cuatro pantallas de distancia— y el aviso se ajusta solo.
 
+**El filtro de monto va sobre la OPERACIÓN y su barra se reparte por CUANTILES.** Filtrar el
+registro partiría la operación —entra el contrato y su proceso no— y la fila acabaría diciendo
+"aún sin contratar" sobre algo ya firmado. La escala no puede ser lineal (el 95% de las
+operaciones se apelotona en el primer centímetro) ni logarítmica: entre lo listable hay
+contratación ordinaria de **$220 mil millones**, un orden de magnitud por encima de todo lo del
+sismo, y con ella en el extremo la mitad alta de la barra se queda sin nada que seleccionar. Por
+cuantiles, cada tramo tiene aproximadamente las mismas operaciones. **La escala se calcula una vez
+por carga**, no con cada filtro: si se recalculara, el tramo elegido pasaría a significar otra
+cosa sin que nadie lo tocara. Los extremos son *sin límite*, no un número: en el de abajo entran
+las operaciones de valor cero y en el de arriba no puede quedar fuera el RCD por un redondeo.
+
+**Los dos pulgares son dos `<input type=range>` superpuestos** —no existe control nativo de rango
+doble— y el truco está en `pointer-events`: el control entero no recibe el ratón y solo lo reciben
+los pulgares. Sin eso, el de arriba tapa al de abajo y uno de los dos topes se queda muerto.
+
 **Un cero tiene que decir por qué.** En este tablero un cero se lee como "no hay contratación
 del sismo", que es una afirmación fuerte. El mensaje de tabla vacía se redacta según el filtro
 activo: no da lo mismo "esa entidad está vigilada y no ha publicado nada" que "ese dato no

@@ -609,6 +609,33 @@
   .deptos .menor{margin-top:0;display:inline;margin-left:5px;
                  font-family:"IBM Plex Mono",ui-monospace,monospace}
 
+  /* ---- Filtro de monto ------------------------------------------------ */
+  /* Dos deslizadores encima del mismo carril. El truco es que el control entero no
+     recibe el raton y solo lo reciben los pulgares: si no, el de arriba tapa al de
+     abajo y uno de los dos topes se queda muerto. */
+  .rango{position:relative;height:26px;margin-top:2px}
+  .rango input[type=range]{position:absolute;top:0;left:0;width:100%;height:26px;margin:0;
+                           background:none;appearance:none;-webkit-appearance:none;
+                           pointer-events:none;flex:none;min-width:0;padding:0;border:0}
+  .rango input[type=range]::-webkit-slider-thumb{pointer-events:auto;-webkit-appearance:none;
+      width:16px;height:16px;border-radius:50%;background:var(--panel);cursor:grab;
+      border:2px solid var(--acento);box-shadow:0 1px 2px rgba(0,0,0,.25)}
+  .rango input[type=range]::-moz-range-thumb{pointer-events:auto;width:16px;height:16px;
+      border-radius:50%;background:var(--panel);cursor:grab;border:2px solid var(--acento);
+      box-shadow:0 1px 2px rgba(0,0,0,.25)}
+  .rango input[type=range]::-webkit-slider-runnable-track{background:none;border:none}
+  .rango input[type=range]::-moz-range-track{background:none;border:none}
+  .rango-pista{position:absolute;top:11px;left:0;right:0;height:4px;border-radius:2px;
+               background:var(--panel-3)}
+  .rango-tramo{position:absolute;top:0;bottom:0;background:var(--acento);border-radius:2px}
+  .rango-pie{display:flex;align-items:center;gap:8px;justify-content:space-between}
+  .rango-cifras{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;
+                color:var(--suave);font-variant-numeric:tabular-nums}
+  .rango-cifras.hay{color:var(--acento);font-weight:600}
+  .rango-pie button{font-size:11px;padding:2px 8px;border:1px solid var(--borde);
+                    border-radius:3px;background:var(--panel);color:var(--suave);cursor:pointer}
+  .rango-pie button:hover{border-color:var(--acento);color:var(--acento)}
+
   /* ---- Filtro de varias entidades ------------------------------------ */
   /* Un <details> y no un <select multiple>: el nativo obliga a Ctrl+clic para
      marcar mas de una y en el telefono es inmanejable. El resumen cerrado dice
