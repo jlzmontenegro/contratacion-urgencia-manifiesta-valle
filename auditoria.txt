@@ -1,4 +1,4 @@
-Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-08-26T00:00:00
+Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-08-27T00:00:00
 Entidades auditadas: 53  (2 centrales + 2 UNGRD/FNGRD + 12 descentralizadas de Cali + 18 de la Gobernacion + 19 otras del Valle)
 Comprobaciones: 53 entidades x 3 fuentes = 159, cada una por tres caminos independientes
 
@@ -57,10 +57,10 @@ contratos  Otras     IE Paulo VI - Palmira815004730            0           0    
 contratos  Otras     IE Ginebra La Salle891380108            0           0      0   OK
 contratos  Otras     IE Zaragoza - Cartago800034326            0           0      0   OK
 contratos  Otras     IE Camilo Torres - Dagua805015675            0           0      0   OK
-procesos   Alcaldia de Cali       890399011          715         729    729   OK
-procesos   Gobernacion del Valle  890399029          688        1558   1558   OK
+procesos   Alcaldia de Cali       890399011          742         756    756   OK
+procesos   Gobernacion del Valle  890399029          691        1561   1561   OK
 procesos   UNGRD / FNGRD          900478966            0           0      0   OK
-procesos   UNGRD / FNGRD          900978341           48          48     48   OK
+procesos   UNGRD / FNGRD          900978341           50          50     50   OK
 procesos   Desc.Cali EMCALI - Empresas Munici890399003           17          17     17   OK
 procesos   Desc.Cali Metro Cali S.A.805013171            3           3      3   OK
 procesos   Desc.Cali Red de Salud de Ladera E805027289           46          46     46   OK
@@ -76,7 +76,7 @@ procesos   Desc.Cali Camara de Comercio de Ca890399001            0           0 
 procesos   Desc.Gob  INDERVALLE - Instituto d805012896           11          11     11   OK
 procesos   Desc.Gob  INFIVALLE - Instituto Fi890308051            0           0      0   OK
 procesos   Desc.Gob  INCIVA       800086201           10          10     10   OK
-procesos   Desc.Gob  Universidad del Valle890399010           36          36     36   OK
+procesos   Desc.Gob  Universidad del Valle890399010           46          46     46   OK
 procesos   Desc.Gob  Instituto Departamental 890325989           22          22     22   OK
 procesos   Desc.Gob  Biblioteca Departamental890399039           10          10     10   OK
 procesos   Desc.Gob  Vallecaucana de Aguas S.900333452            2           2      2   OK
