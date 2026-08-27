@@ -3432,3 +3432,164 @@
 2026-08-25 21:41:57,secop1,26-12-14777513-13702443,VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE RIOFRÍO,fecha_fin_ejec_contrato,2026-12-13T00:00:00.000,2026-12-21T00:00:00.000,Contexto
 2026-08-25 21:41:57,secop1,26-12-14777541-13702462,VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE RIOFRÍO,fecha_fin_ejec_contrato,2026-11-18T00:00:00.000,2026-11-21T00:00:00.000,Contexto
 2026-08-25 21:41:57,secop1,26-4-14779877-13704863,RISARALDA - CÁMARA DE COMERCIO DE PEREIRA,estado_del_proceso,Celebrado,Terminado sin Liquidar,Alta
+2026-08-27 06:35:51,procesos,CO1.REQ.10866773,SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10883546,GOBVALLE - HACIENDA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10905006,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_del_procedimiento,Borrador,Seleccionado,Media
+2026-08-27 06:35:51,procesos,CO1.REQ.10905304,GOBVALLE - HACIENDA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10903584,GOBVALLE - HACIENDA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10903578,GOBVALLE - HACIENDA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10907081,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10884507,GOBVALLE - HACIENDA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10903006,GOBVALLE - HACIENDA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10866831,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE TECNOLOGIAS DE LA INFORMACION Y LAS COMUNICACIONES,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10885605,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10904771,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_del_procedimiento,Borrador,Seleccionado,Media
+2026-08-27 06:35:51,procesos,CO1.REQ.10904528,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_del_procedimiento,Borrador,Seleccionado,Media
+2026-08-27 06:35:51,procesos,CO1.REQ.10904528,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,fase,,Presentación de oferta,Media
+2026-08-27 06:35:51,procesos,CO1.REQ.10904528,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_resumen,No Definido,Presentación de oferta,Media
+2026-08-27 06:35:51,procesos,CO1.REQ.10889734,PLANEACIÓN MUNICIPAL CALI**,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10889775,PLANEACIÓN MUNICIPAL CALI**,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10899381,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10904540,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_del_procedimiento,Borrador,Seleccionado,Media
+2026-08-27 06:35:51,procesos,CO1.REQ.10904540,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,fase,,Presentación de oferta,Media
+2026-08-27 06:35:51,procesos,CO1.REQ.10904540,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_resumen,No Definido,Presentación de oferta,Media
+2026-08-27 06:35:51,procesos,CO1.REQ.10895887,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10904537,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_del_procedimiento,Borrador,Seleccionado,Media
+2026-08-27 06:35:51,procesos,CO1.REQ.10904537,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,fase,,Presentación de oferta,Media
+2026-08-27 06:35:51,procesos,CO1.REQ.10904537,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_resumen,No Definido,Presentación de oferta,Media
+2026-08-27 06:35:51,procesos,CO1.REQ.10904826,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_del_procedimiento,Borrador,Seleccionado,Media
+2026-08-27 06:35:51,procesos,CO1.REQ.10889933,PLANEACIÓN MUNICIPAL CALI**,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10874085,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE TECNOLOGIAS DE LA INFORMACION Y LAS COMUNICACIONES,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10906038,SECRETARIA DE EDUCACION DE CALI,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10904828,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_del_procedimiento,Borrador,Seleccionado,Media
+2026-08-27 06:35:51,procesos,CO1.REQ.10900430,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10900430,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO,fase,,Presentación de oferta,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10900430,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10902958,GOBVALLE - HACIENDA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10905114,GOBVALLE - HACIENDA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10904532,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_del_procedimiento,Borrador,Seleccionado,Media
+2026-08-27 06:35:51,procesos,CO1.REQ.10904532,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,fase,,Presentación de oferta,Media
+2026-08-27 06:35:51,procesos,CO1.REQ.10904532,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_resumen,No Definido,Presentación de oferta,Media
+2026-08-27 06:35:51,procesos,CO1.REQ.10905400,FISCALÍA GENERAL DE LA NACIÓN REGIONAL PACÍFICO,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10897013,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10907087,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10870697,EMAVI,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10907747,MUNICIPIO DE YUMBO VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10841801,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10882025,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10907547,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10904918,UNIAJC,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10867722,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10905123,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10906168,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10899991,CVC,estado_del_procedimiento,Aprobado,Publicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10906955,MUNICIPIO DE YUMBO VALLE,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10905135,SENA REGIONAL VALLE Grupo Administrativo CBI,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10907770,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10901325,REGION ADMINISTRATIVA DE PLANIFICACION RAP PACIFICO,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10906812,MUNICIPIO DE YUMBO VALLE,estado_del_procedimiento,Borrador,Publicado,Media
+2026-08-27 06:35:51,procesos,CO1.REQ.10905951,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10904909,INSTITUCION EDUCATIVA MAYOR DE YUMBO,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10907060,MUNICIPIO DE YUMBO VALLE,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10907060,MUNICIPIO DE YUMBO VALLE,fase,,Presentación de oferta,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10907060,MUNICIPIO DE YUMBO VALLE,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10906878,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10869130,ALCALDIA MUNICIPAL DE GINEBRA,valor_total_adjudicacion,0,25999479,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10869130,ALCALDIA MUNICIPAL DE GINEBRA,adjudicado,No,Si,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10869130,ALCALDIA MUNICIPAL DE GINEBRA,fecha_adjudicacion,,2026-08-25T00:00:00.000,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10874052,POLICIA METROPOLITANA SANTIAGO DE CALI,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10905407,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10899751,CVC,estado_del_procedimiento,Aprobado,Publicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10905440,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10898449,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10907650,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10905990,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10756923,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10894221,Sena - Centro Agropecuario de Buga,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10900443,CVC,estado_del_procedimiento,Aprobado,Publicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10906747,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10907387,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10883694,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10883316,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10849443,ARMADA NACIONAL BASE NAVAL ARC MALAGA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10906114,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10835241,UNIAJC,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10835241,UNIAJC,valor_total_adjudicacion,0,328096006,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10835241,UNIAJC,adjudicado,No,Si,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10907512,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10905923,CVC,estado_del_procedimiento,Aprobado,Publicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10906843,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10906985,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10907117,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10900223,CVC,estado_del_procedimiento,Aprobado,Publicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10907179,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10905125,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10905223,SENA REGIONAL VALLE Grupo Administrativo CBI,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10905864,CVC,estado_del_procedimiento,Aprobado,Publicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10879655,INSTITUTO DEPARTAMENTAL DE BELLAS ARTES,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10885326,MUNICIPIO DE VERSALLES,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10907443,MUNICIPIO DE YUMBO VALLE,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10847990,FISCALÍA GENERAL DE LA NACIÓN REGIONAL PACÍFICO,estado_del_procedimiento,Abierto,Cancelado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10905406,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10879582,Sena - Centro Agropecuario de Buga,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10907439,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10896817,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10891020,UNIDAD CENTRAL DEL VALLE DEL CAUCA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10907293,CVC,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10905373,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10869104,CVC,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10907717,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10869837,ALCALDIA MUNICIPAL DE GINEBRA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10869837,ALCALDIA MUNICIPAL DE GINEBRA,nombre_del_proveedor,No Definido,Javier Alexander Marin Gacia,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10869837,ALCALDIA MUNICIPAL DE GINEBRA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10907530,MUNICIPIO DE YUMBO VALLE,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10900269,CVC,estado_del_procedimiento,Aprobado,Publicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10883338,INSTITUTO COLOMBIANO DE BALLET CLÁSICO INCOLBALLET,nombre_del_proveedor,No Definido,FUNDACION MUJER Y GENERO,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10883338,INSTITUTO COLOMBIANO DE BALLET CLÁSICO INCOLBALLET,fecha_adjudicacion,,2026-08-25T00:00:00.000,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10892849,CVC,estado_del_procedimiento,Aprobado,Publicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10848060,UNIAJC,estado_del_procedimiento,Abierto,Seleccionado,Media
+2026-08-27 06:35:51,procesos,CO1.REQ.10848060,UNIAJC,valor_total_adjudicacion,0,31009938,Media
+2026-08-27 06:35:51,procesos,CO1.REQ.10848060,UNIAJC,adjudicado,No,Si,Media
+2026-08-27 06:35:51,procesos,CO1.REQ.10848060,UNIAJC,nombre_del_proveedor,No Definido,GENEB INGENIERÍA  Y  CONSULTORÍA  S.A.S,Media
+2026-08-27 06:35:51,procesos,CO1.REQ.10848060,UNIAJC,fecha_adjudicacion,,2026-08-25T00:00:00.000,Media
+2026-08-27 06:35:51,procesos,CO1.REQ.10883659,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10867406,ESCUELA DE POLICIA SIMON BOLIVAR,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10906357,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10877866,CVC,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10890662,ESE CENTRO,nombre_del_proveedor,INNOVA SOLUCIONES INTEGRALES & SERVICIOS SAS,No Definido,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10905402,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10882066,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10905213,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10905566,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Aprobado,Publicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10905566,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,fase,,Presentación de oferta,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10905566,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10907226,EMPRESAS MUNICIPALES DE CALI,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10906196,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10905652,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10875306,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Abierto,Cancelado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10906457,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10899967,CVC,estado_del_procedimiento,Aprobado,Publicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10849201,REGIONAL DE ASEGURAMIENTO EN SALUD No. 4,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10886527,UNIDAD CENTRAL DEL VALLE DEL CAUCA,valor_total_adjudicacion,0,55048700,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10886527,UNIDAD CENTRAL DEL VALLE DEL CAUCA,adjudicado,No,Si,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10886527,UNIDAD CENTRAL DEL VALLE DEL CAUCA,nombre_del_proveedor,No Definido,LIBRERIA TEMIS S.A.,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10886527,UNIDAD CENTRAL DEL VALLE DEL CAUCA,fecha_adjudicacion,,2026-08-25T00:00:00.000,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10886415,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10905750,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10898017,ALCALDIA MUNICIPAL DE BUGA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10832205,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10856187,UPRES VALLE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10899612,CVC,estado_del_procedimiento,Aprobado,Publicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10856805,UPRES VALLE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10896597,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10898799,MPIO DE STA MARIA,estado_del_procedimiento,Publicado,Seleccionado,Otra urgencia
+2026-08-27 06:35:51,procesos,CO1.REQ.10881842,DEPARTAMENTO DE ANTIOQUIA//,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10749253,FONDO ROTATORIO DE LA REGISTRADURIA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10749253,FONDO ROTATORIO DE LA REGISTRADURIA,nombre_del_proveedor,No Definido,INTEROBRAS A&R,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10611043,FONDO NACIONAL DE GESTIÓN DEL RIESGO DE DESASTRES - FNGRD,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10611043,FONDO NACIONAL DE GESTIÓN DEL RIESGO DE DESASTRES - FNGRD,nombre_del_proveedor,ALIANZA COLOMBIANA DE INSTITUCIONES PUBLICAS DE EDUCACION SUPERIOR,No Definido,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10907489,FONDO NACIONAL DE GESTIÓN DEL RIESGO DE DESASTRES - FNGRD,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-08-27 06:35:51,procesos,CO1.REQ.10907489,FONDO NACIONAL DE GESTIÓN DEL RIESGO DE DESASTRES - FNGRD,nombre_del_proveedor,DISTRACOM S.A.,No Definido,Contexto
+2026-08-27 06:35:51,secop1,26-12-14780317-13705315,VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE RIOFRÍO,fecha_fin_ejec_contrato,2026-11-19T00:00:00.000,2026-11-20T00:00:00.000,Contexto
+2026-08-27 06:35:51,secop1,26-12-14774340-13700964,BOYACÁ - ALCALDÍA MUNICIPIO DE MONGUA,valor_total_de_adiciones,0,3963927,Otra urgencia
+2026-08-27 06:35:51,secop1,26-12-14774340-13700964,BOYACÁ - ALCALDÍA MUNICIPIO DE MONGUA,valor_contrato_con_adiciones,78324367,82288294,Otra urgencia
