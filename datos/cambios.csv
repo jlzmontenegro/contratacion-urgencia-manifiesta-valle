@@ -3719,3 +3719,111 @@
 2026-08-28 09:37:12,secop1,26-12-14781061-13707077,VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE BOLÍVAR,nom_razon_social_contratista,JOSE DAVID MARTINEZ LOAIZA,JOSE DAVID MARTINEZ MOLINA,Contexto
 2026-08-28 09:37:12,secop1,26-13-14782700,VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE EL ÁGUILA,estado_del_proceso,Convocado,Terminado Anormalmente después de Convocado,Contexto
 2026-08-28 09:37:12,secop1,26-4-14782712-13707808,ANTIOQUIA - CAMARA DE COMERCIO DEL ORIENTE ANTIOQUEÑO,estado_del_proceso,Celebrado,Terminado sin Liquidar,Otra urgencia
+2026-08-29 02:56:56,procesos,CO1.REQ.10759333,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10861184,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,valor_total_adjudicacion,0,458537434,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10861184,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,adjudicado,No,Si,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10861184,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,fecha_adjudicacion,,2026-08-27T00:00:00.000,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10920145,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10893602,UAEPA2,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10920172,UAEPA2,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10920172,UAEPA2,fase,,Presentación de oferta,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10920172,UAEPA2,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10886262,SECRETARIA DE EDUCACION DE CALI,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10908028,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10904005,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10918439,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10921959,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,estado_del_procedimiento,Aprobado,Publicado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10899486,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10897065,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10903533,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10912185,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10859357,GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARIA DE LAS TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10905845,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10920683,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10907343,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10904918,UNIAJC,estado_del_procedimiento,Publicado,Cancelado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10904049,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10904099,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10923749,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10903838,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10921461,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10921461,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",fase,,Presentación de oferta,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10921461,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10859864,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10855903,MUNICIPIO DE ZARZAL,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10844436,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10920820,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10881327,ALCALDIA LOCAL CONTINENTE EL PAILON DEL DISTRITO DE BUENAVENTURA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10881327,ALCALDIA LOCAL CONTINENTE EL PAILON DEL DISTRITO DE BUENAVENTURA,nombre_del_proveedor,No Definido,FUNDACION DEJANDO HUELLAS,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10881327,ALCALDIA LOCAL CONTINENTE EL PAILON DEL DISTRITO DE BUENAVENTURA,estado_resumen,Fase de ofertas,Adjudicado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10910982,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10921455,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10921455,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",fase,,Presentación de oferta,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10921455,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10909067,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10855051,POLICIA METROPOLITANA SANTIAGO DE CALI,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10919443,CVC,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10882084,UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10863803,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10880063,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10839546,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10867406,ESCUELA DE POLICIA SIMON BOLIVAR,valor_total_adjudicacion,0,8000000,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10867406,ESCUELA DE POLICIA SIMON BOLIVAR,adjudicado,No,Si,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10867406,ESCUELA DE POLICIA SIMON BOLIVAR,fecha_adjudicacion,,2026-08-27T00:00:00.000,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10885326,MUNICIPIO DE VERSALLES,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10882326,ARMADA NACIONAL DE COLOMBIA DISPENSARIO MÉDICO NIVEL I BAHÍA MÁLAGA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10863363,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10835241,UNIAJC,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10835241,UNIAJC,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10849443,ARMADA NACIONAL BASE NAVAL ARC MALAGA,valor_total_adjudicacion,0,55982800,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10849443,ARMADA NACIONAL BASE NAVAL ARC MALAGA,adjudicado,No,Si,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10849443,ARMADA NACIONAL BASE NAVAL ARC MALAGA,fecha_adjudicacion,,2026-08-27T00:00:00.000,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10923186,CVC,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10899111,UNIAJC,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10908835,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10924738,INSTITUCION EDUCATIVA SAN JOSE,nombre_del_proveedor,MANUEL DE JESUS RAMIREZ,No Definido,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10859834,ESCUELA DE POLICIA SIMON BOLIVAR,valor_total_adjudicacion,0,20723850,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10859834,ESCUELA DE POLICIA SIMON BOLIVAR,adjudicado,No,Si,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10859834,ESCUELA DE POLICIA SIMON BOLIVAR,fecha_adjudicacion,,2026-08-27T00:00:00.000,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10905134,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10899886,UNIDAD CENTRAL DEL VALLE DEL CAUCA,valor_total_adjudicacion,0,80985565,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10899886,UNIDAD CENTRAL DEL VALLE DEL CAUCA,adjudicado,No,Si,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10899886,UNIDAD CENTRAL DEL VALLE DEL CAUCA,fecha_adjudicacion,,2026-08-27T00:00:00.000,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10923867,CONTRALORIA CALI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10910912,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10905514,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10905171,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10841963,ESCUELA DE POLICIA SIMON BOLIVAR,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10851869,UNIAJC,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10851869,UNIAJC,nombre_del_proveedor,No Definido,FERREPLASTICOS,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10851869,UNIAJC,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10906524,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10919181,INSTITUCION EDUCATIVA EL RODEO,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10922958,FONDO ESPECIAL DE VIVIENDA DEL MUNICIPIO DE SANTIAGO DE CALI,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10863124,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10903880,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10838881,DIMAR - GRUPO INTENDENCIA REGIONAL PACIFICO,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10838881,DIMAR - GRUPO INTENDENCIA REGIONAL PACIFICO,valor_total_adjudicacion,0,14265000,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10838881,DIMAR - GRUPO INTENDENCIA REGIONAL PACIFICO,adjudicado,No,Si,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10838881,DIMAR - GRUPO INTENDENCIA REGIONAL PACIFICO,nombre_del_proveedor,No Definido,FLOREZ Z Y CIA SAS,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10838881,DIMAR - GRUPO INTENDENCIA REGIONAL PACIFICO,fecha_adjudicacion,,2026-08-27T00:00:00.000,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10838881,DIMAR - GRUPO INTENDENCIA REGIONAL PACIFICO,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10843132,REGION ADMINISTRATIVA DE PLANIFICACION RAP PACIFICO,valor_total_adjudicacion,0,12733000,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10843132,REGION ADMINISTRATIVA DE PLANIFICACION RAP PACIFICO,adjudicado,No,Si,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10843132,REGION ADMINISTRATIVA DE PLANIFICACION RAP PACIFICO,fecha_adjudicacion,,2026-08-27T00:00:00.000,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10903959,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10809045,ARMADA NACIONAL BASE NAVAL ARC MALAGA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10863367,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10843008,ESCUELA DE POLICIA SIMON BOLIVAR,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10906407,MUNICIPIO DE OBANDO VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10923567,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10913636,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10829171,UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA,valor_total_adjudicacion,0,86324623,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10829171,UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA,adjudicado,No,Si,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10829171,UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA,fecha_adjudicacion,,2026-08-27T00:00:00.000,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10891020,UNIDAD CENTRAL DEL VALLE DEL CAUCA,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10891020,UNIDAD CENTRAL DEL VALLE DEL CAUCA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10921297,FONDO NACIONAL DE GESTIÓN DEL RIESGO DE DESASTRES - FNGRD,nombre_del_proveedor,ANGELA MARIA CUELLAR,No Definido,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10924150,FONDO NACIONAL DE GESTIÓN DEL RIESGO DE DESASTRES - FNGRD,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10925940,FONDO NACIONAL DE GESTIÓN DEL RIESGO DE DESASTRES - FNGRD,nombre_del_proveedor,JOCAZUZ CONSTRUCCIONES E INVERSIONES SAS,No Definido,Contexto
+2026-08-29 02:56:56,procesos,CO1.REQ.10921166,FONDO NACIONAL DE GESTIÓN DEL RIESGO DE DESASTRES - FNGRD,nombre_del_proveedor,Mayerli Karina Fernández Pochaina,No Definido,Contexto
