@@ -1,4 +1,4 @@
-Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-09-04T00:00:00
+Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-09-05T00:00:00
 Entidades auditadas: 53  (2 centrales + 2 UNGRD/FNGRD + 12 descentralizadas de Cali + 18 de la Gobernacion + 19 otras del Valle)
 Comprobaciones: 53 entidades x 3 fuentes = 159, cada una por tres caminos independientes
 
@@ -153,7 +153,7 @@ secop1     Otras     Empresa de Servicio Publ900401903            0           0 
 secop1     Otras     Empresas Publicas Munici891900474            0           0      0   OK
 secop1     Otras     Instituto Municipal del 891900528            0           0      0   OK
 secop1     Otras     Instituto Distrital del 890399992            1           1      1   OK
-secop1     Otras     Personeria Municipal de 891900493            0          17     17   OK
+secop1     Otras     Personeria Municipal de 891900493            0          18     18   OK
 secop1     Otras     Personeria Municipal de 901159063            0           0      0   OK
 secop1     Otras     Personeria Municipal de 900085817            0           0      0   OK
 secop1     Otras     Personeria Municipal de 800100524            0           0      0   OK
