@@ -4,8 +4,8 @@ Comprobaciones: 53 entidades x 3 fuentes = 159, cada una por tres caminos indepe
 
 Fuente     Entidad                NIT         API simple  API amplio    CSV   Veredicto
 ------------------------------------------------------------------------------------
-contratos  Alcaldia de Cali       890399011         1355        1396   1396   OK
-contratos  Gobernacion del Valle  890399029          980        1913   1913   OK
+contratos  Alcaldia de Cali       890399011         1441        1482   1482   OK
+contratos  Gobernacion del Valle  890399029          984        1917   1917   OK
 contratos  UNGRD / FNGRD          900478966            1           1      1   OK
 contratos  UNGRD / FNGRD          900978341            0           0      0   OK
 contratos  Desc.Cali EMCALI - Empresas Munici890399003            0           0      0   OK
@@ -13,20 +13,20 @@ contratos  Desc.Cali Metro Cali S.A.805013171            4           4      4   
 contratos  Desc.Cali Red de Salud de Ladera E805027289            0           0      0   OK
 contratos  Desc.Cali Red de Salud del Norte E805027287            0           0      0   OK
 contratos  Desc.Cali Red de Salud del Oriente805027337           16          16     16   OK
-contratos  Desc.Cali Red de Salud del Surorie805027338            2           2      2   OK
+contratos  Desc.Cali Red de Salud del Surorie805027338            3           3      3   OK
 contratos  Desc.Cali Fondo Especial de Vivien805013033           37          37     37   OK
 contratos  Desc.Cali Instituto Popular de Cul900431928            0           0      0   OK
 contratos  Desc.Cali Personeria Distrital de 805003895            1           1      1   OK
-contratos  Desc.Cali Contraloria de Santiago 800217831           10          10     10   OK
+contratos  Desc.Cali Contraloria de Santiago 800217831           12          12     12   OK
 contratos  Desc.Cali IE Normal Superior Santi800243065            0           0      0   OK
 contratos  Desc.Cali Camara de Comercio de Ca890399001            0           0      0   OK
 contratos  Desc.Gob  INDERVALLE - Instituto d805012896         1088        1088   1088   OK
 contratos  Desc.Gob  INFIVALLE - Instituto Fi890308051            1           1      1   OK
-contratos  Desc.Gob  INCIVA       800086201           16          16     16   OK
+contratos  Desc.Gob  INCIVA       800086201           26          26     26   OK
 contratos  Desc.Gob  Universidad del Valle890399010            0           0      0   OK
-contratos  Desc.Gob  Instituto Departamental 890325989           37          37     37   OK
+contratos  Desc.Gob  Instituto Departamental 890325989           38          38     38   OK
 contratos  Desc.Gob  Biblioteca Departamental890399039           50          50     50   OK
-contratos  Desc.Gob  Vallecaucana de Aguas S.900333452            7           7      7   OK
+contratos  Desc.Gob  Vallecaucana de Aguas S.900333452           16          16     16   OK
 contratos  Desc.Gob  ACUAVALLE - Acueductos y890399032            0           0      0   OK
 contratos  Desc.Gob  Beneficencia del Valle d890399027           16          16     16   OK
 contratos  Desc.Gob  Industria de Licores del890399012            0           0      0   OK
@@ -37,7 +37,7 @@ contratos  Desc.Gob  Hospital Departamental T891901158           30          30 
 contratos  Desc.Gob  Hospital Departamental S891900343            0           0      0   OK
 contratos  Desc.Gob  Hospital Departamental S891900441            0           0      0   OK
 contratos  Desc.Gob  Hospital Departamental C821003143            0           0      0   OK
-contratos  Desc.Gob  Contraloria Departamenta800090735            0           0      0   OK
+contratos  Desc.Gob  Contraloria Departamenta800090735            1           1      1   OK
 contratos  Otras     Hospital del Rosario de 891380070            0           0      0   OK
 contratos  Otras     ESE Hospital San Jorge d890312380            0           0      0   OK
 contratos  Otras     Hospital Santa Lucia ESE891901296            0           0      0   OK
@@ -47,11 +47,11 @@ contratos  Otras     Empresa de Servicio Publ900401903            0           0 
 contratos  Otras     Empresas Publicas Munici891900474            0           0      0   OK
 contratos  Otras     Instituto Municipal del 891900528            0           0      0   OK
 contratos  Otras     Instituto Distrital del 890399992            0           0      0   OK
-contratos  Otras     Personeria Municipal de 891900493           27          29     29   OK
+contratos  Otras     Personeria Municipal de 891900493           28          30     30   OK
 contratos  Otras     Personeria Municipal de 901159063            0           0      0   OK
 contratos  Otras     Personeria Municipal de 900085817            0           0      0   OK
-contratos  Otras     Personeria Municipal de 800100524           18          18     18   OK
-contratos  Otras     Concejo Municipal de Jam890399046          358         358    358   OK
+contratos  Otras     Personeria Municipal de 800100524           21          21     21   OK
+contratos  Otras     Concejo Municipal de Jam890399046          380         380    380   OK
 contratos  Otras     IE Alfonso Lopez Pumarej805000057            0           0      0   OK
 contratos  Otras     IE Paulo VI - Palmira815004730            0           0      0   OK
 contratos  Otras     IE Ginebra La Salle891380108            0           0      0   OK
