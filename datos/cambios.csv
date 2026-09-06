@@ -8321,3 +8321,179 @@
 2026-09-05 11:11:12,secop1,26-12-14776590-13701647,VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE BOLÍVAR,valor_total_de_adiciones,0,15000000,Alta
 2026-09-05 11:11:12,secop1,26-12-14776590-13701647,VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE BOLÍVAR,valor_contrato_con_adiciones,30000000,45000000,Alta
 2026-09-05 11:11:12,secop1,26-15-14785359,TOLIMA - ALCALDÍA MUNICIPIO DE RONCESVALLES,estado_del_proceso,Borrador,Convocado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10967231,GOBERNACIÓN VALLE DEL CAUCA -SECRETARIA DE SALUD,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10967231,GOBERNACIÓN VALLE DEL CAUCA -SECRETARIA DE SALUD,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10974100,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10966087,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10861184,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10959299,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10949966,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,valor_total_adjudicacion,0,360000000,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10949966,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,adjudicado,No,Si,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10949966,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,fecha_adjudicacion,,2026-09-04T00:00:00.000,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10974454,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10952692,SECRETARIA GENERAL- GOBERNACION DEL VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10968990,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10973601,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10920221,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10925297,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10921959,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10924567,SECRETARIA DE PAZ TERRITORIAL Y RECONCILIACIÓN,estado_resumen,Presentación de oferta,Adjudicado,Media
+2026-09-06 01:07:09,procesos,CO1.REQ.10893853,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,fecha_adjudicacion,,2026-09-04T00:00:00.000,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10967936,GOBERNACIÓN VALLE DEL CAUCA -SECRETARIA DE SALUD,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10967936,GOBERNACIÓN VALLE DEL CAUCA -SECRETARIA DE SALUD,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10973342,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10950391,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10974327,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10975874,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE PAZ Y CULTURA CIUDADANA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10975874,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE PAZ Y CULTURA CIUDADANA,fase,,Presentación de oferta,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10975874,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE PAZ Y CULTURA CIUDADANA,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10975850,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10976619,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE VIVIENDA SOCIAL Y HABITAT,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10912663,INSTITUTO MUNICIPAL DE DEPORTE Y  RECREACION DE JAMUNDI IMDERE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10975933,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10951211,MUNICIPIO DE LA UNION,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10952187,MUNICIPIO DE PRADERA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10894460,INCIVA,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10894460,INCIVA,valor_total_adjudicacion,0,78054433,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10894460,INCIVA,adjudicado,No,Si,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10932705,INSTITUTO FINANCIERO PARA EL DESARROLLO DEL VALLE-INFIVALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10912116,CDB,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10955396,UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10963026,ALCALDIA LA CUMBRE,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10963026,ALCALDIA LA CUMBRE,nombre_del_proveedor,No Definido,carlos roberto jurado muñoz,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10963026,ALCALDIA LA CUMBRE,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10925285,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10925285,ALCALDIA DE CAICEDONIA,valor_total_adjudicacion,0,15000000,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10925285,ALCALDIA DE CAICEDONIA,adjudicado,No,Si,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10925285,ALCALDIA DE CAICEDONIA,nombre_del_proveedor,No Definido,Ancizar Vásquez Loaiza,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10925285,ALCALDIA DE CAICEDONIA,fecha_adjudicacion,,2026-09-04T00:00:00.000,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10925285,ALCALDIA DE CAICEDONIA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10905923,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10967232,INSTITUCION EDUCATIVA MAYOR DE YUMBO,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10941993,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10943169,UPRES VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10916527,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,valor_total_adjudicacion,0,22272300,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10916527,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,adjudicado,No,Si,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10916527,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,fecha_adjudicacion,,2026-09-04T00:00:00.000,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10978433,EMPRESAS MUNICIPALES DE CALI,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10978433,EMPRESAS MUNICIPALES DE CALI,nombre_del_proveedor,DANIEL ORTIZ BEDOYA,No Definido,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10909423,MUNICIPIO DE YUMBO VALLE,estado_del_procedimiento,Publicado,Evaluación,Media
+2026-09-06 01:07:09,procesos,CO1.REQ.10931249,CVC,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10960496,ALCALDIA MUNICIPAL DE RESTREPO VALLE DEL CAUCA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10933932,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10933932,CVC,valor_total_adjudicacion,0,147954321,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10933932,CVC,adjudicado,No,Si,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10933932,CVC,nombre_del_proveedor,No Definido,CONSEJO COMUNITARIO DE LOS CORREGIMIENTOS SAN ANTONIO Y EL CASTILLO,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10933932,CVC,fecha_adjudicacion,,2026-09-04T00:00:00.000,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10963766,MUNICIPIO DE YUMBO VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10899612,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10908636,INSTITUTO DEPARTAMENTAL DE BELLAS ARTES,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10905864,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10906624,SENA REGIONAL VALLE Grupo Administrativo CTA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10965310,ALCALDIA MUNICIPAL DE YOTOCO,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10965310,ALCALDIA MUNICIPAL DE YOTOCO,valor_total_adjudicacion,0,19900000,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10965310,ALCALDIA MUNICIPAL DE YOTOCO,adjudicado,No,Si,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10965310,ALCALDIA MUNICIPAL DE YOTOCO,nombre_del_proveedor,No Definido,LOGINETWORK,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10968101,ALCALDIA LA CUMBRE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10968101,ALCALDIA LA CUMBRE,nombre_del_proveedor,No Definido,JUAN FELIPE BONILLA PEREA,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10968101,ALCALDIA LA CUMBRE,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10884134,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10978112,VALLECAUCANA DE AGUAS S.A. E.S.P,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10978112,VALLECAUCANA DE AGUAS S.A. E.S.P,fase,,Fase de ofertas,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10978112,VALLECAUCANA DE AGUAS S.A. E.S.P,estado_resumen,No Definido,Fase de ofertas,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10888034,CVC,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10886214,UNIAJC,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10932299,CVC,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10905127,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10905127,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10535759,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE YUMBO,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10963849,REGION DE PLANEACION Y GESTION AUTORIDAD REGIONAL DE TRANSPORTE DE LA AGLOMERACION SUROCCIDENTAL DE COLOMBIA EN EL VALLE DEL CAUCA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10917005,CVC,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10960985,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10476038,LOCALIDAD ISLA DEL CASCAJAL,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10926098,MUNICIPIO DE PRADERA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10927917,CVC,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10881741,ALCALDÍA MUNICIPIO DE PALMIRA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10973919,MUNICIPIO DE ZARZAL,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10849201,REGIONAL DE ASEGURAMIENTO EN SALUD No. 4,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10978431,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10978431,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,fase,,Presentación de oferta,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10978431,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10911208,ALCALDIA MUNICIPAL DE SAN PEDRO VALLE DEL CAUCA,estado_del_procedimiento,Publicado,Evaluación,Media
+2026-09-06 01:07:09,procesos,CO1.REQ.10923300,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10960485,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10923027,MUNICIPIO DE ZARZAL,valor_total_adjudicacion,0,34000000,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10923027,MUNICIPIO DE ZARZAL,adjudicado,No,Si,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10923027,MUNICIPIO DE ZARZAL,nombre_del_proveedor,No Definido,GRUPO TECNOLOGICO ITC SAS,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10964917,MUNICIPIO DE OBANDO VALLE,estado_del_procedimiento,Publicado,Abierto,Media
+2026-09-06 01:07:09,procesos,CO1.REQ.10938927,Secretaría de Hábitat e Infraestructura - Alcaldía de Tuluá,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10978375,EMPRESAS MUNICIPALES DE CALI,nombre_del_proveedor,SANDRA RUBIANO CAMACHO,No Definido,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10936180,ALCALDIA MUNICIPAL DE BUGA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10975942,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10946092,ESTABLECIMIENTO PÚBLICO AMBIENTAL DEL DISTRITO DE BUENAVENTURA,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10960917,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10923541,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10923541,ALCALDIA DE CAICEDONIA,valor_total_adjudicacion,0,3329800,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10923541,ALCALDIA DE CAICEDONIA,adjudicado,No,Si,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10923541,ALCALDIA DE CAICEDONIA,nombre_del_proveedor,No Definido,DISTRISALUD COLOMBIA SAS,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10923541,ALCALDIA DE CAICEDONIA,fecha_adjudicacion,,2026-09-04T00:00:00.000,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10923541,ALCALDIA DE CAICEDONIA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10963144,ALCALDIA LA CUMBRE,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10963144,ALCALDIA LA CUMBRE,nombre_del_proveedor,No Definido,YURLENA PATRICIA CHANCI SERNA,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10963144,ALCALDIA LA CUMBRE,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10976362,CVC,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10884676,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10884676,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,nombre_del_proveedor,No Definido,EMPRESASOCIAL,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10884676,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10946307,ESTABLECIMIENTO PÚBLICO AMBIENTAL DEL DISTRITO DE BUENAVENTURA,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10907431,SENA REGIONAL VALLE Grupo Administrativo CTA,estado_del_procedimiento,Evaluación,Cancelado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10911716,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,Publicado,Cancelado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10960375,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10932700,CVC,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10977074,ALCALDIA MUNICIPAL DE YOTOCO,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10960931,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10934294,UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA,valor_total_adjudicacion,0,46032880,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10934294,UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA,adjudicado,No,Si,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10934294,UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA,nombre_del_proveedor,No Definido,SEGURIDAD SEGAL LTDA,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10934294,UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA,fecha_adjudicacion,,2026-09-04T00:00:00.000,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10977811,CONTRALORIA CALI,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10977811,CONTRALORIA CALI,fase,,Presentación de oferta,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10977811,CONTRALORIA CALI,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10882084,UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA,valor_total_adjudicacion,0,12777536,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10882084,UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA,adjudicado,No,Si,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10882084,UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA,nombre_del_proveedor,No Definido,ATENCION EN SALUD INTEGRAL Y SEGURIDAD EN EL TRABAJO SAS,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10882084,UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA,fecha_adjudicacion,,2026-09-04T00:00:00.000,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10960544,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10898776,CVC,estado_del_procedimiento,Aprobado,Publicado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10972136,ALCALDIA MUNICIPAL DE RESTREPO VALLE DEL CAUCA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10850283,REGIONAL DE ASEGURAMIENTO EN SALUD No. 4,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10910038,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10927940,ESPY S.A. ESP**,valor_total_adjudicacion,0,1731057552,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10927940,ESPY S.A. ESP**,adjudicado,No,Si,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10858591,HIDC,precio_base,85000000,121400000,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10914353,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10899751,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10960175,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10915401,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10915401,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,nombre_del_proveedor,No Definido,TURES BOYACA SAS,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10973941,EMPRESAS MUNICIPALES DE TULUA E.S.P.,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10944814,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10902367,UPRES VALLE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10968808,MUNICIPIO DE EL CERRITO.,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10944320,REGIONAL DE ASEGURAMIENTO EN SALUD No. 4,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10960945,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10921415,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Abierto,Cancelado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10909260,DIMAR - GRUPO INTENDENCIA REGIONAL PACIFICO,estado_del_procedimiento,Evaluación,Cancelado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10896091,Secretaría de Bienestar Social - Alcaldía de Tuluá,nombre_del_proveedor,No Definido,Corporacion Proyectar Pais,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10857942,Desarrollo Institucional - Alcaldía de Tuluá,valor_total_adjudicacion,0,259869173,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10857942,Desarrollo Institucional - Alcaldía de Tuluá,adjudicado,No,Si,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10857942,Desarrollo Institucional - Alcaldía de Tuluá,nombre_del_proveedor,No Definido,GRAN ALMACEN PRINCIPE S.A.S.,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10837203,MUNICIPIO DE PUERTO BERRIO,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10837203,MUNICIPIO DE PUERTO BERRIO,nombre_del_proveedor,No Definido,WILLIAM ESTEBAN ISAZA GIL,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10837203,MUNICIPIO DE PUERTO BERRIO,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10835942,GOBERNACION DEL AMAZONAS,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10835942,GOBERNACION DEL AMAZONAS,fecha_adjudicacion,,2026-09-04T00:00:00.000,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10835942,GOBERNACION DEL AMAZONAS,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10921118,HOSPITAL SAN VICENTE DE PAÚL,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10921118,HOSPITAL SAN VICENTE DE PAÚL,valor_total_adjudicacion,0,20483414,Contexto
+2026-09-06 01:07:09,procesos,CO1.REQ.10921118,HOSPITAL SAN VICENTE DE PAÚL,adjudicado,No,Si,Contexto
