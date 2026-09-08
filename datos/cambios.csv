@@ -8912,3 +8912,26 @@
 2026-09-07 01:14:30,procesos,CO1.REQ.10986601,CAJA PROMOTORA DE VIVIENDA MILITAR Y DE POLICIA,fase,,Presentación de oferta,Otra urgencia
 2026-09-07 01:14:30,procesos,CO1.REQ.10986601,CAJA PROMOTORA DE VIVIENDA MILITAR Y DE POLICIA,estado_resumen,No Definido,Presentación de oferta,Otra urgencia
 2026-09-07 01:14:30,procesos,CO1.REQ.10921118,HOSPITAL SAN VICENTE DE PAÚL,nombre_del_proveedor,No Definido,ESEC CONSTRUCCIONES SAS,Contexto
+2026-09-08 01:04:10,contratos,CO1.PCCNTR.9896696,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN,estado_contrato,Aprobado,En ejecución,Contexto
+2026-09-08 01:04:10,contratos,CO1.PCCNTR.9892680,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN,estado_contrato,Aprobado,En ejecución,Contexto
+2026-09-08 01:04:10,contratos,CO1.PCCNTR.9872566,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,estado_contrato,Aprobado,En ejecución,Contexto
+2026-09-08 01:04:10,contratos,CO1.PCCNTR.9876706,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_contrato,Aprobado,En ejecución,Contexto
+2026-09-08 01:04:10,contratos,CO1.PCCNTR.9855324,ALCALDIA MUNICIPIO DE JAMUNDI,estado_contrato,Aprobado,En ejecución,Contexto
+2026-09-08 01:04:10,contratos,CO1.PCCNTR.9877008,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_contrato,Aprobado,En ejecución,Contexto
+2026-09-08 01:04:10,contratos,CO1.PCCNTR.9803935,HOSPITAL MUNICIPAL LUIS ABLANQUE DE LA PLATA EMPRESA SOCIAL DEL ESTADO,nombre_supervisor,No definido,Samanta Cortes Ángulo,Contexto
+2026-09-08 01:04:10,contratos,CO1.PCCNTR.9802811,HOSPITAL MUNICIPAL LUIS ABLANQUE DE LA PLATA EMPRESA SOCIAL DEL ESTADO,nombre_supervisor,No definido,Samanta Cortes Ángulo,Contexto
+2026-09-08 01:04:10,contratos,CO1.PCCNTR.9877699,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_contrato,Aprobado,En ejecución,Contexto
+2026-09-08 01:04:10,contratos,CO1.PCCNTR.9878408,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_contrato,Aprobado,En ejecución,Contexto
+2026-09-08 01:04:10,contratos,CO1.PCCNTR.9858124,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_contrato,Aprobado,En ejecución,Contexto
+2026-09-08 01:04:10,contratos,CO1.PCCNTR.9877691,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_contrato,Aprobado,En ejecución,Contexto
+2026-09-08 01:04:10,contratos,CO1.PCCNTR.9878839,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_contrato,Aprobado,En ejecución,Contexto
+2026-09-08 01:04:10,contratos,CO1.PCCNTR.9831416,CVC,estado_contrato,Aprobado,En ejecución,Contexto
+2026-09-08 01:04:10,procesos,CO1.REQ.10933230,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-08 01:04:10,procesos,CO1.REQ.10862774,UPRES VALLE,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-09-08 01:04:10,procesos,CO1.REQ.10992057,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-09-08 01:04:10,procesos,CO1.REQ.10992057,ALCALDIA DE CAICEDONIA,fase,,Manifestación de interés (Menor Cuantía),Contexto
+2026-09-08 01:04:10,procesos,CO1.REQ.10992057,ALCALDIA DE CAICEDONIA,estado_resumen,No Definido,Manifestación de interés (Menor Cuantía),Contexto
+2026-09-08 01:04:10,procesos,CO1.REQ.10930318,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-08 01:04:10,procesos,CO1.REQ.10930644,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-08 01:04:10,procesos,CO1.REQ.10960496,ALCALDIA MUNICIPAL DE RESTREPO VALLE DEL CAUCA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-08 01:04:10,procesos,CO1.REQ.10960496,ALCALDIA MUNICIPAL DE RESTREPO VALLE DEL CAUCA,nombre_del_proveedor,No Definido,LA PREVISORA S.A. COMPAÑÍA DE SEGUROS,Contexto
