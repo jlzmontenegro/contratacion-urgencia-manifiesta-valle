@@ -134,6 +134,22 @@ damnificados: lista `objetos_concretos_emergencia`— se respeta. Movió 35 regi
 se propaga a su proceso en `emparejar_operaciones()`. Un proceso suelto sin contrato queda fuera
 de su alcance y hay que revisarlo a mano; así pasó con `CVC CD 1242 2026`.
 
+**La obra pública del territorio tiene red de seguridad** (8-sep-2026). El agujero que las
+palabras clave no ven es **la reparación descrita en términos neutros**: *"mantenimiento locativo
+de las instalaciones físicas"* no nombra el sismo y es exactamente como se describe el arreglo de
+un edificio dañado. Fue el caso del hospital de Roldanillo, que llegó por la palabra «escombro» y
+necesitó una persona. Ahora, un contrato **de tipo OBRA** dentro del territorio vigilado que iba a
+quedar en `Contexto` sube a `Media` si su objeto nombra estructura o cerramiento
+(`palabras_obra_edificacion`). **Solo sube; nunca marca nada como del sismo**: eso lo decide una
+persona.
+
+**Se midió antes de escribirla, y luego se afinó con lo que salió.** En el Valle hay 9.443
+contratos firmados desde el sismo pero **solo 33 de obra pública**, así que el costo en revisión
+es mínimo. La primera lista incluía `ADECUACION`, `REPARACION`, `REHABILITACION` y `EDIFICIO`:
+subía **30 registros por corrida** —canchas sintéticas, parques lineales, acueductos rurales,
+sedes educativas—, palabras de obra corriente y no de daño. Con la lista afinada sube **5**, de
+los cuales dos o tres merecen lectura de verdad. `Alta` no se mueve: 485 antes y después.
+
 **Ningún NIT se inventa.** Todos los de `config.json` se obtuvieron consultando la API.
 
 **Y no se reconstruyen con la fórmula del dígito de verificación.** SECOP publica el mismo NIT

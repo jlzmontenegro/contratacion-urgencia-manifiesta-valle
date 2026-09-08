@@ -321,6 +321,14 @@
     "SERVICIOS DE APOYO",
     "APOYO A LA GESTION"
   ],
+  "_nota_obra": "Red de seguridad para la obra publica del territorio (8-sep-2026). El agujero que las palabras clave no ven es la reparacion descrita en terminos neutros: 'mantenimiento locativo de las instalaciones fisicas' no nombra el sismo y es justo como se describe el arreglo de un edificio danado. Estas palabras SOLO se aplican a contratos de tipo OBRA dentro del territorio vigilado, y solo suben de Contexto a Por revisar: nunca marcan nada como del sismo. Medido contra la fuente el 8-sep: en el Valle hay 9.443 contratos desde el sismo y solo 33 de obra, asi que el costo en revision es minimo.",
+  "_nota_obra_palabras": "Se probaron primero ADECUACION, REPARACION, REHABILITACION, EDIFICIO y EDIFICACION y subian 30 registros por corrida: canchas sinteticas, parques lineales, acueductos rurales y sedes educativas. Son palabras de obra corriente, no de dano. Quedan solo las que describen la ESTRUCTURA o el cerramiento de un edificio, que es lo que rompe un sismo.",
+  "palabras_obra_edificacion": [
+    "INSTALACIONES FISICAS", "MANTENIMIENTO LOCATIVO", "CUBIERTA", "TECHO",
+    "PANETE", "COLUMNA", "VIGA", "CIMENTACION", "ESTRUCTURAL", "REFORZAMIENTO",
+    "APUNTALAMIENTO", "ESTABILIZACION", "DEMOLICION", "MURO DE CONTENCION",
+    "FISURA", "GRIETA"
+  ],
   "objetos_concretos_emergencia": [
     "KIT",
     "AYUDA HUMANITARIA",

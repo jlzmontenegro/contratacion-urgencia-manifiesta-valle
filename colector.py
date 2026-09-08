@@ -896,6 +896,11 @@ def clasificar(df, nombre_fuente, cfg):
                for g in grupos]
     cuenta_indicador = [g != "Fuera del Valle" for g in grupos]
 
+    # "Obra", "Prestacion de servicios", "Suministro"... Lo traen las tres fuentes.
+    tipo_contrato = (df["tipo_de_contrato"].astype(str).map(normalizar)
+                     if "tipo_de_contrato" in df.columns else None)
+    palabras_obra = [normalizar(p) for p in cfg.get("palabras_obra_edificacion", [])]
+
     niveles, motivos = [], []
     regla_pn = {}
     for i in range(len(df)):
@@ -1033,6 +1038,27 @@ def clasificar(df, nombre_fuente, cfg):
             razones.append("prestacion de servicios con persona natural,"
                            " sin objeto concreto de emergencia")
             regla_pn[i] = True
+
+        # Red de seguridad para la OBRA PUBLICA del territorio (8-sep-2026). Una
+        # reparacion descrita en terminos neutros -"mantenimiento locativo de las
+        # instalaciones fisicas"- no la caza ninguna palabra del evento, y es
+        # exactamente como se describe el arreglo de un edificio danado. Es el
+        # unico agujero que las palabras clave no ven.
+        #
+        # Se comprobo contra la fuente antes de escribir esto: en el Valle hay
+        # 9.443 contratos firmados desde el sismo pero solo 33 de obra publica, de
+        # los cuales 10 ya estaban marcados. Mandar los otros a revision cuesta muy
+        # poco trabajo humano y tapa el agujero.
+        #
+        # Solo sube de Contexto a Media: NUNCA marca nada como del sismo por su
+        # cuenta. Que una obra sea del sismo lo decide una persona.
+        if (nivel == "Contexto" and territorial and posterior
+                and tipo_contrato is not None and "OBRA" in tipo_contrato.iloc[i]):
+            golpes_obra = [p for p in palabras_obra if p in t]
+            if golpes_obra:
+                nivel = "Media"
+                razones.append("obra publica en el territorio, sin nombrar el evento: "
+                               + ", ".join(golpes_obra[:3]).lower())
 
         niveles.append(nivel)
         motivos.append("; ".join(razones))
