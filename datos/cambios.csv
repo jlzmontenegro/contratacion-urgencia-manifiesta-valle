@@ -9124,3 +9124,87 @@
 2026-09-08 12:21:50,secop1,26-12-14787151,VALLE DEL CAUCA - CORPORACIÓN VALLECAUCANA DE LAS CUENCAS HIDROGRÁFICAS Y EL MEDIO AMBIENTE - CORPOCUENCAS,cuantia_proceso,161318365,90778560,Contexto
 2026-09-08 12:21:50,secop1,26-4-14779897-13704873,RISARALDA - CÁMARA DE COMERCIO DE PEREIRA,estado_del_proceso,Celebrado,Terminado sin Liquidar,Alta
 2026-09-08 12:21:50,secop1,26-11-14784036,CHOCÓ - ALCALDÍA MUNICIPIO DE JURADÓ,estado_del_proceso,Borrador,Convocado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10925295,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10981403,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10984050,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10993630,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10994392,MUNICIPIO DE DAGUA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10970763,MUNICIPIO DE PRADERA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10857942,Desarrollo Institucional - Alcaldía de Tuluá,fecha_adjudicacion,,2026-09-07T00:00:00.000,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10982276,INSTITUCION EDUCATIVA COMUNITARIA LUIS CARLOS VALENCIA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10982569,INSTITUCION EDUCATIVA COMUNITARIA LUIS CARLOS VALENCIA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10927940,ESPY S.A. ESP**,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10927940,ESPY S.A. ESP**,fecha_adjudicacion,,2026-09-07T00:00:00.000,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10899111,UNIAJC,valor_total_adjudicacion,0,34300000,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10899111,UNIAJC,adjudicado,No,Si,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10899111,UNIAJC,fecha_adjudicacion,,2026-09-07T00:00:00.000,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10917419,INSTITUTO DEPARTAMENTAL DE BELLAS ARTES,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10917419,INSTITUTO DEPARTAMENTAL DE BELLAS ARTES,valor_total_adjudicacion,0,11491711,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10917419,INSTITUTO DEPARTAMENTAL DE BELLAS ARTES,adjudicado,No,Si,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10917419,INSTITUTO DEPARTAMENTAL DE BELLAS ARTES,nombre_del_proveedor,No Definido,Xpress Estudio Grafico y Digital S.A.S.,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10917419,INSTITUTO DEPARTAMENTAL DE BELLAS ARTES,fecha_adjudicacion,,2026-09-07T00:00:00.000,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10917419,INSTITUTO DEPARTAMENTAL DE BELLAS ARTES,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10986837,MUNICIPIO DE CALIMA EL DARIEN VALLE,estado_del_procedimiento,Aprobado,Publicado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10986837,MUNICIPIO DE CALIMA EL DARIEN VALLE,fase,,Manifestación de interés (Menor Cuantía),Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10986837,MUNICIPIO DE CALIMA EL DARIEN VALLE,estado_resumen,No Definido,Manifestación de interés (Menor Cuantía),Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10980431,EMAVI,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10950113,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10988866,INSTITUCION EDUCATIVA EL RODEO,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10923265,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10923265,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,valor_total_adjudicacion,0,54621000,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10923265,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,adjudicado,No,Si,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10923265,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,nombre_del_proveedor,No Definido,KEMET,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10923265,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,fecha_adjudicacion,,2026-09-07T00:00:00.000,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10923265,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10965139,ALCALDIA LOCAL CONTINENTE EL PAILON DEL DISTRITO DE BUENAVENTURA,estado_del_procedimiento,Publicado,Cancelado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10924832,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10877201,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION ZARZALEÑA,estado_del_procedimiento,Abierto,Cancelado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10976341,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10961839,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10913728,REGION ADMINISTRATIVA DE PLANIFICACION RAP PACIFICO,valor_total_adjudicacion,0,99053828,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10913728,REGION ADMINISTRATIVA DE PLANIFICACION RAP PACIFICO,adjudicado,No,Si,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10913728,REGION ADMINISTRATIVA DE PLANIFICACION RAP PACIFICO,fecha_adjudicacion,,2026-09-07T00:00:00.000,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10908661,SENA REGIONAL VALLE Grupo Administrativo CTA,valor_total_adjudicacion,0,44295806,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10908661,SENA REGIONAL VALLE Grupo Administrativo CTA,adjudicado,No,Si,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10908661,SENA REGIONAL VALLE Grupo Administrativo CTA,fecha_adjudicacion,,2026-09-07T00:00:00.000,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10918843,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10918843,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,valor_total_adjudicacion,0,37217800,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10918843,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,adjudicado,No,Si,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10918843,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,nombre_del_proveedor,No Definido,ALEJANDRO CORREA REINA - COPIRENT,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10918843,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,fecha_adjudicacion,,2026-09-07T00:00:00.000,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10918843,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10909148,ARMADA NACIONAL BASE NAVAL ARC MALAGA,valor_total_adjudicacion,0,9215600,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10909148,ARMADA NACIONAL BASE NAVAL ARC MALAGA,adjudicado,No,Si,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10909148,ARMADA NACIONAL BASE NAVAL ARC MALAGA,fecha_adjudicacion,,2026-09-07T00:00:00.000,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10916527,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10896091,Secretaría de Bienestar Social - Alcaldía de Tuluá,fecha_adjudicacion,,2026-09-07T00:00:00.000,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10939625,MUNICIPIO DE EL DOVIO,valor_total_adjudicacion,0,17709530,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10939625,MUNICIPIO DE EL DOVIO,adjudicado,No,Si,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10939625,MUNICIPIO DE EL DOVIO,fecha_adjudicacion,,2026-09-07T00:00:00.000,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10949081,ALCALDIA MUNICIPAL DE SAN PEDRO VALLE DEL CAUCA,valor_total_adjudicacion,0,35000000,Alta
+2026-09-09 01:08:25,procesos,CO1.REQ.10949081,ALCALDIA MUNICIPAL DE SAN PEDRO VALLE DEL CAUCA,adjudicado,No,Si,Alta
+2026-09-09 01:08:25,procesos,CO1.REQ.10949081,ALCALDIA MUNICIPAL DE SAN PEDRO VALLE DEL CAUCA,fecha_adjudicacion,,2026-09-07T00:00:00.000,Alta
+2026-09-09 01:08:25,procesos,CO1.REQ.10906606,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10953149,ALCALDIA MUNICIPAL DE GINEBRA,valor_total_adjudicacion,0,19308690,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10953149,ALCALDIA MUNICIPAL DE GINEBRA,adjudicado,No,Si,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10953149,ALCALDIA MUNICIPAL DE GINEBRA,nombre_del_proveedor,No Definido,ASOCIACION DE PROFESIONALES DEL VALLE ASOPROVAL,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10953149,ALCALDIA MUNICIPAL DE GINEBRA,fecha_adjudicacion,,2026-09-07T00:00:00.000,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10952187,MUNICIPIO DE PRADERA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10952187,MUNICIPIO DE PRADERA,valor_total_adjudicacion,0,31051000,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10952187,MUNICIPIO DE PRADERA,adjudicado,No,Si,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10952187,MUNICIPIO DE PRADERA,nombre_del_proveedor,No Definido,NEXUS,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10952187,MUNICIPIO DE PRADERA,fecha_adjudicacion,,2026-09-07T00:00:00.000,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10855385,REGIONAL DE ASEGURAMIENTO EN SALUD No. 4,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10967924,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10863508,REGIONAL DE ASEGURAMIENTO EN SALUD No. 4,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10963172,MUNICIPIO DE PRADERA,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10907547,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10907547,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,valor_total_adjudicacion,0,72000000,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10907547,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,adjudicado,No,Si,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10907547,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,nombre_del_proveedor,No Definido,OLGA LILIANA PELÁEZ DUQUE,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10907547,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,fecha_adjudicacion,,2026-09-07T00:00:00.000,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10969210,ALCALDIA MUNICIPAL DE YOTOCO,valor_total_adjudicacion,0,20000000,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10969210,ALCALDIA MUNICIPAL DE YOTOCO,adjudicado,No,Si,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10969210,ALCALDIA MUNICIPAL DE YOTOCO,nombre_del_proveedor,No Definido,FUNMUNAYCO,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10941476,UNIAJC,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-09-09 01:08:25,procesos,CO1.REQ.10990500,MUNICIPIO DE SOLEDAD,estado_del_procedimiento,Publicado,Abierto,Contexto
