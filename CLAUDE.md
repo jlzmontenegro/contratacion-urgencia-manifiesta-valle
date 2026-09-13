@@ -827,6 +827,19 @@ Va como *«Sin departamento en la fuente»*, que dice de quién es el hueco.
 **El texto plano lleva las MISMAS dos secciones.** Si las dos versiones contaran distinto,
 quien tenga el cliente en texto estaría leyendo otro correo.
 
+**Cada ficha lleva el botón de estudios previos cuando el documento existe** (13-sep-2026),
+en hueco junto al de *Ver en SECOP*, que va macizo: uno lleva a un PDF y el otro a la ficha, y
+dos botones rellenos seguidos compiten entre sí. **Sin aviso cuando falta**, igual que en la
+versión ligera. En el texto plano va como una línea `Estudios previos: <url>`. Aquí viaja la
+URL entera y no el `DocumentId`: en un correo no hay guion que la rearme.
+
+**Una prueba no puede salir hacia afuera: `--solo-a`.** Lanzar el flujo a mano le mandaba el
+resumen a todo `para_resumen`, es decir también a Esteban; pasó **dos veces el 13-sep-2026**
+antes de arreglarlo. Ahora el `workflow_dispatch` tiene una entrada `solo_a`: con dirección,
+manda solo ahí y **antepone `[PRUEBA]` al asunto** —si alguien reenvía el correo tiene que
+verse que no es el informe del lunes—; en blanco, es el envío de verdad. El cron no pasa la
+entrada, así que el lunes sale como siempre.
+
 ## Cómo probar
 
 **El panel del navegador SÍ abre `localhost`** desde `.claude/launch.json` (comprobado el

@@ -288,6 +288,13 @@ def operaciones(registros):
             # en el tope, SECOP lo corto y hay que decirlo. Mismo criterio que la
             # vista ligera.
             "objeto_cortado": len(objeto) >= ligero.TOPE_FUENTE,
+            # Estudios previos: el documento donde la entidad explica POR QUE
+            # contrata esto. El contrato y su proceso comparten expediente, asi
+            # que sirve el primero de los dos que lo traiga. Aqui va la url
+            # entera y no el DocumentId como en ligero.html: en un correo no hay
+            # guion que la rearme.
+            "docs_ep": next((r.get("docs_ep") or "" for r in regs
+                             if r.get("docs_ep")), ""),
             "valor": float(pr.get("valor") or 0), "firmado": bool(contrato),
             "fecha": pr.get("fecha", ""), "mun": pr.get("municipio", ""),
             "mun_nombre": pr.get("municipio_nombre", ""),
@@ -406,12 +413,24 @@ def _fichas(ops, tope):
     esc = correo.esc
     fichas = ""
     for o in sorted(ops, key=lambda x: -x["valor"])[:tope]:
-        boton = ""
+        botones = ""
         if o["url"]:
-            boton = ('<div style="margin-top:10px"><a href="' + esc(o["url"]) + '" '
-                     'style="display:inline-block;background:#0E5C58;color:#fff;'
-                     'text-decoration:none;padding:7px 14px;border-radius:3px;'
-                     'font-size:12.5px;font-weight:600">Ver en SECOP</a></div>')
+            botones += ('<a href="' + esc(o["url"]) + '" '
+                        'style="display:inline-block;background:#0E5C58;color:#fff;'
+                        'text-decoration:none;padding:7px 14px;border-radius:3px;'
+                        'font-size:12.5px;font-weight:600;margin-right:8px">'
+                        'Ver en SECOP</a>')
+        # En hueco y no en relleno, como en el tablero: lleva a un PDF y no a la
+        # ficha, y dos botones macizos seguidos compiten entre si. Solo aparece
+        # cuando el archivo existe; no se pone un aviso cuando falta, misma
+        # decision que en la version ligera.
+        if o["docs_ep"]:
+            botones += ('<a href="' + esc(o["docs_ep"]) + '" '
+                        'style="display:inline-block;background:#fff;color:#0E5C58;'
+                        'text-decoration:none;padding:6px 13px;border-radius:3px;'
+                        'font-size:12.5px;font-weight:600;'
+                        'border:1px solid #0E5C58">Estudios previos</a>')
+        boton = ('<div style="margin-top:10px">' + botones + "</div>") if botones else ""
         # El objeto llego justo en el tope de la fuente: lo corto SECOP, no
         # nosotros, y presentarlo como entero desinforma. Lo mismo que avisa la
         # fila de ligero.html.
@@ -598,7 +617,10 @@ def texto_plano(ops_semana, ini, fin, generado):
             t += ["-" * 66,
                   f"{correo.pesos(o['valor'])} | {o['entidad']}",
                   f"{o['ref']} | {o['fecha']} | {sitio}",
-                  o["objeto"][:300], o["url"] or "", ""]
+                  o["objeto"][:300], o["url"] or ""]
+            if o["docs_ep"]:
+                t.append("Estudios previos: " + o["docs_ep"])
+            t.append("")
         if len(ops) > tope:
             t += [f"Y {len(ops) - tope} mas en el tablero.", ""]
         return t
@@ -620,6 +642,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--probar", action="store_true",
                     help="no envia; escribe el correo y el mapa en reportes/")
+    # Una prueba no puede salir hacia afuera. Sin esto, lanzar el flujo a mano
+    # para ver como quedo un cambio le mandaba el correo a todo el equipo: paso
+    # dos veces el 13-sep-2026. Con --solo-a se manda a una direccion y punto.
+    ap.add_argument("--solo-a", default="", metavar="CORREO",
+                    help="manda solo a esta direccion, en vez de para_resumen")
     args = ap.parse_args()
 
     ruta = os.path.join(DIR_DATOS, "tablero.json")
@@ -685,7 +712,17 @@ def main():
               f"({len(en_semana)} operaciones, mapa: {'sí' if png else 'no'})")
         return 0
 
-    para = [d for d in (cfg.get("correo", {}).get("para_resumen") or []) if d and "@" in d]
+    if args.solo_a:
+        if "@" not in args.solo_a:
+            print(f"  ! --solo-a no parece un correo: {args.solo_a}")
+            return 1
+        para = [args.solo_a]
+        # Se dice en el asunto, no solo en el registro: si alguien reenvia el
+        # correo, tiene que verse que era una prueba y no el informe del lunes.
+        asunto = "[PRUEBA] " + asunto
+    else:
+        para = [d for d in (cfg.get("correo", {}).get("para_resumen") or [])
+                if d and "@" in d]
     if not para:
         print("  ! no hay destinatarios en config.json > correo > para_resumen.")
         return 0

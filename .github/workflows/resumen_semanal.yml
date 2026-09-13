@@ -15,6 +15,13 @@ on:
   schedule:
     - cron: '30 14 * * 1'   # lunes 9:30 en Colombia (UTC-5)
   workflow_dispatch:
+    inputs:
+      solo_a:
+        description: >-
+          Probar: mandar solo a esta direccion. En blanco, va a todo
+          para_resumen de config.json (el envio de verdad).
+        required: false
+        default: ''
 
 jobs:
   resumen:
@@ -46,4 +53,4 @@ jobs:
           CORREO_REMITENTE: ${{ secrets.CORREO_REMITENTE }}
           CORREO_SERVIDOR: ${{ vars.CORREO_SERVIDOR }}
           CORREO_PUERTO: ${{ vars.CORREO_PUERTO }}
-        run: python resumen.py
+        run: python resumen.py ${{ inputs.solo_a && format('--solo-a {0}', inputs.solo_a) || '' }}
