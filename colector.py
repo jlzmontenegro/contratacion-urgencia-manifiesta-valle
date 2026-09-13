@@ -229,6 +229,45 @@ def a_numero(serie):
     return pd.to_numeric(serie, errors="coerce").fillna(0)
 
 
+# Las tres fuentes escriben el mismo tipo de contrato de formas distintas:
+# SECOP II dice 'Prestación de servicios', 'Suministros' y 'Otro'; SECOP I dice
+# 'Prestación de Servicios' con ese, 'Suministro' en singular y 'Otro Tipo de
+# Contrato'. Sin unificarlos, un filtro por tipo daria dos entradas para lo mismo
+# y el lector no sabria cual elegir. El orden importa: 'INTERVENTORIA' antes que
+# 'CONSULTORIA', porque hay fuentes que escriben 'Consultoria (Interventoria)'.
+_TIPOS_CONTRATO = [
+    ("PRESTACION DE SERVICIO", "Prestación de servicios"),
+    ("INTERVENTORIA", "Interventoría"),
+    ("CONSULTORIA", "Consultoría"),
+    ("SUMINISTRO", "Suministros"),
+    ("COMPRAVENTA", "Compraventa"),
+    ("OBRA", "Obra"),
+    ("ARRENDAMIENTO", "Arrendamiento"),
+    ("SEGURO", "Seguros"),
+    ("CONCESION", "Concesión"),
+    ("FIDUCIA", "Fiducia"),
+    ("CREDITO", "Crédito"),
+    ("ACUERDO MARCO", "Acuerdo marco"),
+    ("CONVENIO", "Convenio"),
+]
+
+
+def tipo_de_contrato(fila):
+    """Tipo de contrato unificado entre las tres fuentes.
+
+    Lo que no encaja en la lista se rotula 'Otro' y no se inventa: ahi caen los
+    valores que no son un tipo sino un regimen ('Decreto 092 de 2017') y los que
+    la fuente deja en blanco.
+    """
+    t = normalizar(fila.get("tipo_de_contrato", ""))
+    if not t or t in SIN_DILIGENCIAR:
+        return "Otro"
+    for clave, rotulo in _TIPOS_CONTRATO:
+        if clave in t:
+            return rotulo
+    return "Otro"
+
+
 def objeto_completo(fila, f):
     """El texto mas largo entre los campos de descripcion.
 
@@ -1755,6 +1794,9 @@ def aplanar(df, nombre_fuente):
             # entidad. Viaja hasta la pagina para que el mapa pueda declararlo.
             "municipio_origen": mun_origen,
             "objeto": objeto_completo(r, f),
+            # Unificado entre las tres fuentes: es lo que permite filtrar por tipo
+            # sin que 'Suministro' y 'Suministros' salgan como dos cosas distintas.
+            "tipo_contrato": tipo_de_contrato(r),
             "modalidad": r.get(f["modalidad"], ""),
             "justificacion": r.get(f["justificacion"], ""),
             "valor": float(r["_v"]),

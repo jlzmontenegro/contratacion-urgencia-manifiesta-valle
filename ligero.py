@@ -121,6 +121,7 @@ def _operaciones(registros):
             "df": principal.get("fecha_fin") or "",
             "p": (contrato or principal).get("proveedor") or "",
             "m": principal.get("modalidad") or "",
+            "tc": principal.get("tipo_contrato") or "Otro",
             "mu": principal.get("municipio") or "",
             "mn": principal.get("municipio_nombre") or "",
             "dp": principal.get("dep_codigo") or "",
@@ -660,6 +661,19 @@ figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
       inclusivos por abajo y exclusivos por arriba.</p>
     </div>
     <div class="campo">
+      <div class="rotulo"><label for="f-tipo">Tipo de contrato</label>
+        <button class="info" type="button" data-para="ay-tipo" aria-expanded="false"
+                aria-controls="ay-tipo" aria-label="Qué hace este filtro">i</button></div>
+      <select id="f-tipo">
+        <option value="">Todos los tipos</option>
+        <option value="!ps">Sin prestación de servicios</option>
+      </select>
+      <p class="ayuda" id="ay-tipo" hidden>La <b>prestación de servicios</b> es el tipo más
+      numeroso y a veces se quiere ver el resto por aparte. <b>Aquí solo se oculta, no se
+      descarta</b>: todo contrato cuyo objeto se relacione con el sismo está en el tablero
+      salvo que una persona lo haya revisado y descartado.</p>
+    </div>
+    <div class="campo">
       <div class="rotulo"><label for="f-orden">Ordenar por</label>
         <button class="info" type="button" data-para="ay-orden" aria-expanded="false"
                 aria-controls="ay-orden" aria-label="Qué hace este control">i</button></div>
@@ -785,9 +799,10 @@ var NIVELES = Object.create(null);
 function nivelesElegidos(){ return Object.keys(NIVELES); }
 
 var F = {
-  buscar: "", entidad: "", mun: "", dep: "", estado: "", monto: "",
+  buscar: "", entidad: "", mun: "", dep: "", estado: "", monto: "", tipo: "",
   agrupar: true, orden: "valor-desc"
 };
+var PS = "Prestación de servicios";
 
 function pasa(o){
   var ns = nivelesElegidos();
@@ -795,6 +810,11 @@ function pasa(o){
   if (F.entidad && o.e !== F.entidad) return false;
   if (F.mun && o.mu !== F.mun) return false;
   if (F.dep && o.dp !== F.dep) return false;
+  /* "!ps" es "todo menos prestacion de servicios". Cualquier otro valor es un
+     tipo concreto. Ocultar no es descartar: lo que se relaciona con el sismo
+     sigue en el archivo y en las descargas cuando el filtro esta quitado. */
+  if (F.tipo === "!ps"){ if (o.tc === PS) return false; }
+  else if (F.tipo && o.tc !== F.tipo) return false;
   if (F.estado === "f" && !o.f) return false;
   if (F.estado === "a" && o.f) return false;
   if (F.monto){
@@ -984,7 +1004,8 @@ function fila(o, i){
       (o.ot ? '<div class="cortado">SECOP corta el objeto en 500 caracteres: ' +
               'el texto completo está en el expediente.</div>' : "") +
       '<div class="pie">' + esc(NOMBRE_GRUPO[o.g] || "") +
-        (o.mn ? " · " + esc(o.mn) : "") + (o.m ? " · " + esc(o.m) : "") + "</div>" +
+        (o.mn ? " · " + esc(o.mn) : "") + (o.tc ? " · " + esc(o.tc) : "") +
+        (o.m ? " · " + esc(o.m) : "") + "</div>" +
       '<div class="refs">' + refs.join("") + "</div></td>" +
     '<td class="num" data-etq="Valor">' + esc(pesos(o.v)) +
       '<div class="menor">' + (o.f ? "valor firmado" : "precio base") + "</div></td>" +
@@ -1007,6 +1028,10 @@ function mensajeVacio(){
   if (F.estado === "f") return "No hay nada firmado con estos filtros; lo que coincide sigue " +
     "como proceso abierto.";
   if (F.monto) return "Ninguna operación cae en ese rango de monto.";
+  if (F.tipo === "!ps") return "Con estos filtros, toda la contratación que queda es de " +
+    "prestación de servicios. Quite «Sin prestación de servicios» para verla.";
+  if (F.tipo) return "No hay contratación de tipo «" + esc(F.tipo.toLowerCase()) +
+    "» con los filtros puestos.";
   if (F.mun || F.dep) return "Ese territorio no tiene contratación confirmada del sismo con " +
     "los filtros puestos.";
   var ns = nivelesElegidos();
@@ -1281,11 +1306,11 @@ function elegirTerritorio(cod, esMunicipio){
 /* ---- Descargas -------------------------------------------------------- */
 var COLS = ["Grupo", "Entidad contratante", "Estado", "Fecha", "Numero de proceso",
             "Numero de contrato", "Valor", "Tipo de valor", "Contratista", "Municipio",
-            "Modalidad", "Fecha inicio", "Fecha fin", "Objeto", "Enlace contrato",
-            "Enlace proceso"];
+            "Tipo de contrato", "Modalidad", "Fecha inicio", "Fecha fin", "Objeto",
+            "Enlace contrato", "Enlace proceso"];
 function filaDatos(o){
   return [NOMBRE_GRUPO[o.g] || "", o.e, o.f ? "Contratada" : "Abierta", o.d, o.rp, o.rc,
-          o.v, o.f ? "valor firmado" : "precio base", o.p, o.mn, o.m, o.di, o.df,
+          o.v, o.f ? "valor firmado" : "precio base", o.p, o.mn, o.tc, o.m, o.di, o.df,
           o.o, o.uc, o.up];
 }
 function textoFiltros(){
@@ -1297,6 +1322,8 @@ function textoFiltros(){
   if (F.entidad) p.push("entidad: " + F.entidad);
   if (F.mun) p.push("municipio: " + (NOMBRE_PIEZA[F.mun] || F.mun));
   if (F.dep) p.push("departamento: " + (NOMBRE_PIEZA[F.dep] || F.dep));
+  if (F.tipo === "!ps") p.push("sin prestación de servicios");
+  else if (F.tipo) p.push("tipo: " + F.tipo.toLowerCase());
   if (F.estado === "f") p.push("solo ya contratadas");
   if (F.estado === "a") p.push("solo aún sin contratar");
   if (F.monto){
@@ -1399,6 +1426,18 @@ function llenar(){
     var op = document.createElement("option");
     op.value = e; op.textContent = e + " (" + ents[e] + ")"; selE.appendChild(op);
   });
+  /* Los tipos que de verdad hay, con su cuenta. No se listan los que no aparecen:
+     elegirlos daría siempre tabla vacía. */
+  var tipos = {};
+  OPS.forEach(function(o){ tipos[o.tc] = (tipos[o.tc] || 0) + 1; });
+  var selT = document.getElementById("f-tipo");
+  Object.keys(tipos).sort(function(a, b){ return tipos[b] - tipos[a] || a.localeCompare(b); })
+    .forEach(function(k){
+      var op = document.createElement("option");
+      op.value = k; op.textContent = "Solo " + k.toLowerCase() + " (" + tipos[k] + ")";
+      selT.appendChild(op);
+    });
+
   var selM = document.getElementById("f-mun");
   Object.keys(muns).sort(function(a, b){ return muns[a].localeCompare(muns[b]); })
     .forEach(function(c){
@@ -1447,7 +1486,7 @@ function conectar(){
     clearTimeout(t);
     t = setTimeout(function(){ F.buscar = sinTildes(b.value.trim()); repintar(); }, 180);
   });
-  ["entidad", "mun", "estado", "monto", "orden"].forEach(function(k){
+  ["entidad", "mun", "estado", "monto", "tipo", "orden"].forEach(function(k){
     document.getElementById("f-" + k).addEventListener("change", function(e){
       F[k] = e.target.value;
       /* Elegir municipio a mano manda sobre el departamento del mapa. */
@@ -1488,10 +1527,10 @@ function conectar(){
     /* Agrupar y el orden no son filtros: no esconden nada, solo cambian como se
        presenta. Quitar los filtros no tiene por que deshacer como el lector
        prefiere ver la tabla. */
-    F = {buscar: "", entidad: "", mun: "", dep: "", estado: "", monto: "",
+    F = {buscar: "", entidad: "", mun: "", dep: "", estado: "", monto: "", tipo: "",
          agrupar: F.agrupar, orden: F.orden};
     b.value = "";
-    ["entidad", "mun", "estado", "monto"].forEach(function(k){
+    ["entidad", "mun", "estado", "monto", "tipo"].forEach(function(k){
       document.getElementById("f-" + k).value = "";
     });
     Object.keys(NIVELES).forEach(function(k){ delete NIVELES[k]; });

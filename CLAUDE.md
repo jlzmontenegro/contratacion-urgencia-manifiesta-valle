@@ -138,14 +138,27 @@ damnificados: lista `objetos_concretos_emergencia`— se respeta. Movió 35 regi
 se propaga a su proceso en `emparejar_operaciones()`. Un proceso suelto sin contrato queda fuera
 de su alcance y hay que revisarlo a mano; así pasó con `CVC CD 1242 2026`.
 
-**Y por tanto SÍ hay personas naturales en `Alta`, a propósito.** Medido el 13-sep-2026: de los
-226 contratos `Alta`, **134 son con cédula de ciudadanía** ($4.712 millones, el 8,6% del valor).
-De esos, 80 son de tipo *Prestación de servicios* y solo **15 están en el Valle** ($481
-millones). Al leerlos no son nómina: interventoría de la obra de reconstrucción de UNINTEP
-($257 M), visitas técnicas a instituciones educativas, seguimiento a la entrega de materiales.
-La regla no los degrada porque **solo actúa sobre `Media`**, y estos llegan a `Alta` por nombrar
-el sismo o por citar la urgencia manifiesta. Si alguna vez se quiere apretar, el sitio es la
-condición de `nivel == "Media"` en `clasificar()`; el usuario ya sabe la cifra y la dejó estar.
+**La prestación de servicios que se relaciona con el sismo ENTRA TODA, y se puede ocultar sin
+descartarla** (13-sep-2026). El usuario lo pidió con estas palabras: *"que se incluyan todos los
+que se relacionen con el sismo… que haya un filtro o algo que cuando se quiera no los cuente"*.
+**No hizo falta tocar el clasificador**: se midió y la regla de persona natural **no estaba
+quitando ni uno** que nombrara el evento. De los 252 registros que baja a `Contexto`, **cero**
+mencionan sismo, sismico, terremoto o el 10 de agosto: son nómina de la CVC, del Departamento de
+Gestión Jurídica de Cali y de las secretarías de gestión del riesgo, que enganchan por el nombre
+de la dependencia y nada más. La regla solo actúa sobre `Media`, así que cualquier objeto que
+nombre el evento llega a `Alta` intacto. Medido el 13-sep: de 378 operaciones, **200 son
+prestación de servicios**.
+
+Lo que se añadió es el **filtro por tipo de contrato**, con *Sin prestación de servicios* como
+primera opción y un *Solo …* por cada tipo que de verdad existe, con su cuenta. La ayuda del
+filtro dice la frase que importa: **aquí solo se oculta, no se descarta**.
+
+**El tipo de contrato se unifica en el colector** (`tipo_de_contrato()`), porque las tres fuentes
+escriben lo mismo distinto: SECOP II dice *Prestación de servicios*, *Suministros* y *Otro*;
+SECOP I dice *Prestación de Servicios* con ese mayúscula, *Suministro* en singular y *Otro Tipo
+de Contrato*. Sin unificar, el desplegable daría dos entradas para lo mismo y el lector no sabría
+cuál elegir. Lo que no encaja en la lista se rotula `Otro` y no se inventa: ahí caen los valores
+que no son un tipo sino un régimen (*Decreto 092 de 2017*).
 
 **La obra pública del territorio tiene red de seguridad** (8-sep-2026). El agujero que las
 palabras clave no ven es **la reparación descrita en términos neutros**: *"mantenimiento locativo
