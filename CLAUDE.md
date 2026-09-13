@@ -23,6 +23,7 @@ tablero.css            estilos          ├ la página SOLO pinta
 tablero.js             render           ┘
 ligero.py              genera ligero.html: un HTML autónomo, solo lo confirmado
 correo.py              avisa por correo de lo nuevo. Dos correos, dos públicos.
+resumen.py             informe semanal de los lunes, con el mapa dibujado en PNG
 datos/tablero.json     lo que la página carga
 datos/avisados.csv     de qué ya salió correo. Lo escribe correo.py
 datos/*.csv            estado y trazas; los mantiene GitHub Actions
@@ -704,6 +705,64 @@ corrida. Va con `or`.
 previsualizadores— que abren el HTML por su cuenta y sin esa línea leen el archivo en la
 codificación del sistema: «contratación» sale como «contrataciÃ³n» en todas las tildes.
 
+## El resumen semanal (`resumen.py`)
+
+**Sale los lunes a las 9:30 de Colombia, y a las 9:30 a propósito.** La recolección diaria
+arranca a las 8:30 y tarda unos seis minutos: a la misma hora, el resumen leería el
+`tablero.json` de la noche anterior y contaría una semana incompleta sin que nadie lo notara.
+La ventana es de **ayer menos seis a ayer**, contada hacia atrás desde ayer y no desde hoy,
+porque lo de hoy todavía no ha pasado. No toca `datos/avisados.csv`: es un informe, no un
+aviso, y de cada contrato ya se avisó el día que apareció.
+
+**SALE SIEMPRE, también cuando no hubo nada.** Un informe periódico que se calla cuando no hay
+novedades es indistinguible de uno que se rompió: quien lo espera no sabría si la semana
+estuvo tranquila o si el flujo lleva tres lunes cayéndose. Los avisos diarios son al revés
+—solo si hay algo— porque ahí el silencio no promete nada.
+
+**El mapa se dibuja aquí, con Pillow, no en el navegador.** En el correo no sirve un SVG:
+Gmail y Outlook lo descartan, así que tiene que ser un PNG incrustado. Rasterizarlo obligaría
+a cargar cairo o a levantar un navegador en el runner, y no hace falta ninguna de las dos:
+**los trazos de `mapa.json` solo usan `M`, `L` y `Z`** —son polígonos, porque Douglas-Peucker
+no produce curvas—, así que se parsean en diez líneas y se pintan con `ImageDraw.polygon`.
+`_subtrazos()` **revienta si aparece una curva** en vez de dibujar algo torcido en silencio.
+Se dibuja al doble y se reduce con LANCZOS, o los bordes salen dentados.
+
+**Solo se rotulan los ocho mayores, con figuras compactas y con desempate.** A 620 px de
+ancho, un rótulo por municipio es ilegible; el cuerpo de letra va en unidades del `viewBox`
+(18–34) y las cifras en forma corta (`$2,4 mm`, no `$2.381.278.400`). El desempate aparta
+etiquetas por aritmética de rectángulos —aquí no hay `getBBox()`, que es de navegador— y
+después mete hacia dentro las que se salgan por cualquiera de los cuatro lados.
+
+**Primero Cali y el Valle, y lo de fuera en su propia sección** (13-sep-2026, a petición del
+usuario). Antes iba todo mezclado: las cuatro cifras sumaban Valle y fuera bajo un titular que
+nombra el Valle, y *«Lo más grande de la semana»* podía encabezarse con un contrato de Caldas.
+Es exactamente la trampa que costó el episodio de los $14,0 mm contra $10,2 mm. Ahora son dos
+bloques con **sus propias cuatro cifras cada uno**, y el de abajo lleva escrito *«no suma en
+las cifras de arriba»*, igual que el desglose del tablero grande.
+
+**El reparto mira el departamento de la ENTIDAD** (`dep_codigo == "76"`), que es lo mismo que
+pinta el mapa y lo mismo que usa `ligero.py` (`dp === "76"`). **Cali entra en el bloque del
+Valle**, no en uno propio: es 76001. Si los tres criterios se desincronizan, el mapa y las
+cifras dirán cosas distintas sobre la misma pantalla.
+
+**Las novedades se cuentan por bloque, no se reparte un total global.** Por eso la operación
+lleva `ids` con los identificadores de **todos** sus registros: es nueva si lo es cualquiera
+de los dos. Con un solo número global, ninguno de los dos bloques cuadraría con él.
+
+**El mapa se alimenta solo de las operaciones del Valle.** Antes daba igual —los códigos de
+fuera no están en la definición y se ignoraban—, pero contarlas ahí y no en ningún bloque
+sería una cuenta que no cuadra con nada de lo que se ve.
+
+**`No Definido` no sale tal cual a una barra.** Es literalmente lo que publica SECOP cuando la
+entidad no diligencia el departamento; puesto como etiqueta se lee como un fallo del informe.
+Va como *«Sin departamento en la fuente»*, que dice de quién es el hueco.
+
+**Fuera del Valle, el municipio no dice nada sin su departamento**, así que la ficha escribe
+`Manizales (Caldas)`. Dentro del Valle va solo el municipio.
+
+**El texto plano lleva las MISMAS dos secciones.** Si las dos versiones contaran distinto,
+quien tenga el cliente en texto estaría leyendo otro correo.
+
 ## Cómo probar
 
 **El panel del navegador SÍ abre `localhost`** desde `.claude/launch.json` (comprobado el
@@ -723,6 +782,12 @@ algo se ve mal, la medida dice cuánto.
 `correo.py --probar` no manda nada y escribe los dos correos en `reportes/`, listos para
 abrirlos en el navegador. Para simular que hay novedades, se borran unas líneas de
 `datos/avisados.csv` y se vuelve a correr.
+
+**`resumen.py --probar` en local sale VACÍO, y no es un fallo.** Los `datos/` de esta carpeta
+están viejos a propósito —los mantiene Actions—, así que la ventana de la semana pasada no
+tiene nada. Para ejercitar el código de verdad hay que fijar a mano una ventana con datos
+(`ventana()` devuelve ayer−6 … ayer) y llamar a `cuerpo()` y `texto_plano()` directamente. Sin
+eso se prueba únicamente la rama de «esta semana no hubo nada».
 
 Para lógica pura sigue sirviendo cargar `tablero.js` en Node con un DOM mínimo simulado y un
 `fetch` que sirva `datos/tablero.json`. Ojo con dos trampas del arnés: `querySelector` debe devolver un

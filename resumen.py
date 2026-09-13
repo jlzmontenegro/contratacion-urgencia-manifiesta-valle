@@ -32,11 +32,32 @@ import sys
 from datetime import datetime, timedelta
 
 import correo
+import ligero
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 DIR_DATOS = os.path.join(BASE, "datos")
 ANCHO_PNG = 620          # ancho comodo para un correo; el alto sale de la proporcion
-TOPE_FICHAS = 6
+TOPE_FICHAS = 6          # fichas del bloque del Valle
+TOPE_FICHAS_FUERA = 3    # el de fuera del Valle es contexto, no el asunto del correo
+
+# El reparto Valle / fuera del Valle mira el departamento de la ENTIDAD, que es
+# lo mismo que pinta el mapa y lo mismo que usa la version ligera (dp === "76").
+# Cali es 76001, asi que "Cali y el Valle" es UN bloque, no dos.
+VALLE = "76"
+
+# El correo habla EN LOS MISMOS SEIS GRUPOS que ligero.html, que es la vista que
+# se publica hacia afuera (peticion del usuario, 13-sep-2026). No se copian aqui:
+# se importan de ligero.py, con su funcion de clasificacion incluida. Copiarlos
+# seria una segunda implementacion de las mismas reglas, y ya sabemos como acaba
+# eso -las 477 lineas de JavaScript que repetian el colector-.
+#
+# El ultimo grupo cambia de rotulo, y solo ahi. En ligero se llama "Otras
+# entidades y otras regiones" porque alli todo va en una sola tabla; en el correo
+# las otras regiones tienen su propia seccion, asi que dentro del bloque del
+# Valle solo quedan las otras entidades DEL Valle -hospitales, universidades,
+# camaras de comercio- y llamarlo "y otras regiones" seria falso.
+ROTULO_GRUPO = dict(ligero.GRUPOS)
+ROTULO_GRUPO["otros"] = "Otras entidades del Valle"
 
 # La misma rampa que la version ligera, para que el correo y el tablero se lean
 # como lo mismo. En RGB porque Pillow no entiende '#RRGGBB' en todas partes.
@@ -243,52 +264,201 @@ def ventana(hoy):
 
 
 def operaciones(registros):
-    """Agrupa proceso y contrato en una operacion, como el resto del sistema."""
+    """Agrupa proceso y contrato en una operacion, EXACTAMENTE como ligero.html.
+
+    El principal se elige igual que en ligero._operaciones() -contrato, si no
+    proceso, si no el primero- y el grupo sale de ligero._grupo_ligero(), que es
+    donde vive la decision de contar la UAESP como Alcaldia de Cali y la de
+    separar alcaldias de hospitales por el nombre. Si el correo eligiera por su
+    cuenta, diria otra cosa que la vista publica sobre los mismos contratos.
+    """
     por_clave = {}
     for r in registros:
         por_clave.setdefault(r.get("operacion") or r.get("id"), []).append(r)
     ops = []
     for regs in por_clave.values():
         contrato = next((r for r in regs if r.get("tipo") == "Contrato"), None)
-        pr = contrato or regs[0]
+        proceso = next((r for r in regs if r.get("tipo") == "Proceso"), None)
+        pr = contrato or proceso or regs[0]
+        objeto = max((r.get("objeto") or "" for r in regs), key=len)
         ops.append({
-            "entidad": pr.get("entidad", ""), "objeto": max(
-                (r.get("objeto") or "" for r in regs), key=len),
+            "entidad": pr.get("entidad", ""), "objeto": objeto,
+            "grupo": ligero._grupo_ligero(pr),
+            # Tope de la FUENTE, no recorte nuestro: cuando el objeto llega justo
+            # en el tope, SECOP lo corto y hay que decirlo. Mismo criterio que la
+            # vista ligera.
+            "objeto_cortado": len(objeto) >= ligero.TOPE_FUENTE,
             "valor": float(pr.get("valor") or 0), "firmado": bool(contrato),
             "fecha": pr.get("fecha", ""), "mun": pr.get("municipio", ""),
             "mun_nombre": pr.get("municipio_nombre", ""),
             "dep": pr.get("dep_codigo", ""),
-            "proveedor": pr.get("proveedor", ""),
-            "ref": (contrato or {}).get("referencia") or regs[0].get("referencia", ""),
-            "url": (contrato or regs[0]).get("url", ""),
+            "dep_nombre": pr.get("departamento", ""),
+            "proveedor": (contrato or pr).get("proveedor", ""),
+            # La referencia del contrato si la hay, y si no la del proceso: es el
+            # numero por el que pregunta quien llega desde el buscador de SECOP.
+            "ref": ((contrato or {}).get("referencia")
+                    or (proceso or {}).get("referencia") or pr.get("referencia", "")),
+            "url": (contrato or pr).get("url", ""),
+            # Los id de TODOS sus registros: una operacion es nueva si lo es
+            # cualquiera de los dos, y asi cada bloque cuenta sus propias novedades
+            # en vez de repartirse un total global que no cuadraria con ninguno.
+            "ids": [r.get("id") for r in regs if r.get("id")],
         })
     return ops
+
+
+def es_valle(o):
+    return (o.get("dep") or "") == VALLE
 
 
 # --------------------------------------------------------------------------
 # El correo
 # --------------------------------------------------------------------------
 
-def cuerpo(ops_semana, nuevas, ini, fin, generado, hay_mapa):
+def _cifra(n, t, color="#16211F"):
     esc = correo.esc
-    firmadas = [o for o in ops_semana if o["firmado"]]
-    plata = sum(o["valor"] for o in firmadas)
-    abiertas = [o for o in ops_semana if not o["firmado"]]
+    return ('<td style="padding:0 16px 0 0;vertical-align:top">'
+            f'<div style="font-size:26px;font-weight:700;color:{color};'
+            f'line-height:1.1">{esc(n)}</div>'
+            f'<div style="font-size:12px;color:#6B807C;line-height:1.35;'
+            f'padding-top:4px">{esc(t)}</div></td>')
 
-    por_mun = {}
-    for o in firmadas:
-        if o["mun_nombre"]:
-            por_mun.setdefault(o["mun_nombre"], [0, 0])
-            por_mun[o["mun_nombre"]][0] += o["valor"]
-            por_mun[o["mun_nombre"]][1] += 1
-    orden = sorted(por_mun.items(), key=lambda kv: -kv[1][0])
 
-    def cifra(n, t, color="#16211F"):
-        return ('<td style="padding:0 16px 0 0;vertical-align:top">'
-                f'<div style="font-size:26px;font-weight:700;color:{color};'
-                f'line-height:1.1">{esc(n)}</div>'
-                f'<div style="font-size:12px;color:#6B807C;line-height:1.35;'
-                f'padding-top:4px">{esc(t)}</div></td>')
+def _cifras(ops, nuevos_ids):
+    """Las cuatro cifras de un bloque, contadas SOLO sobre sus operaciones."""
+    firmadas = [o for o in ops if o["firmado"]]
+    abiertas = [o for o in ops if not o["firmado"]]
+    nuevas = sum(1 for o in ops if any(i in nuevos_ids for i in o["ids"]))
+    return ('<table cellpadding="0" cellspacing="0" style="margin-bottom:22px"><tr>'
+            + _cifra(str(len(ops)), "operaciones con fecha\nen la semana")
+            + _cifra(correo.pesos(sum(o["valor"] for o in firmadas)),
+                     f"firmados en {len(firmadas)} contratos", "#0E5C58")
+            + _cifra(str(len(abiertas)), "procesos abiertos\naún sin contratar")
+            + _cifra(str(nuevas), "aparecieron por primera vez\nen el monitor")
+            + "</tr></table>")
+
+
+def _rotulo(texto):
+    return ('<h2 style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;'
+            f'color:#6B807C;margin:0 0 10px">{correo.esc(texto)}</h2>')
+
+
+def _barras(pares):
+    """Ranking con barra proporcional. `pares` es [(nombre, valor), ...] ya ordenado."""
+    esc = correo.esc
+    tope = pares[0][1] or 1
+    filas = ""
+    for nombre, val in pares:
+        ancho = max(2, int(val / tope * 100))
+        filas += (
+            '<tr>'
+            f'<td style="padding:4px 10px 4px 0;font-size:13px;color:#16211F;'
+            f'white-space:nowrap">{esc(nombre)}</td>'
+            f'<td style="padding:4px 0;width:100%">'
+            f'<table cellpadding="0" cellspacing="0" style="width:{ancho}%">'
+            f'<tr><td style="background:#56A800;height:14px;border-radius:2px">'
+            f'&nbsp;</td></tr></table></td>'
+            f'<td style="padding:4px 0 4px 10px;font-family:Consolas,monospace;'
+            f'font-size:12px;color:#3D4F4C;white-space:nowrap">'
+            f'{esc(correo.pesos(val))}</td></tr>')
+    return ('<table cellpadding="0" cellspacing="0" style="width:100%;'
+            f'margin-bottom:24px">{filas}</table>')
+
+
+def _grupos(ops):
+    """Los seis grupos de ligero.html, SIEMPRE los seis, incluidos los que estan
+    en cero.
+
+    Que la Gobernacion del Valle no haya contratado es justamente una de las
+    cosas que hay que poder ver. Si la fila desapareciera, el correo no diria
+    nada y el silencio se leeria como que no se la vigila -es la misma razon por
+    la que en ligero.html los seis grupos van siempre en el desplegable-.
+    """
+    esc = correo.esc
+    acum = {k: [0, 0.0] for k, _ in ligero.GRUPOS}
+    for o in ops:
+        acum.setdefault(o["grupo"], [0, 0.0])
+        acum[o["grupo"]][0] += 1
+        if o["firmado"]:
+            acum[o["grupo"]][1] += o["valor"]
+    filas = ""
+    for k, _ in ligero.GRUPOS:
+        n, val = acum[k]
+        gris = "#9AA7A4"
+        col = gris if not n else "#16211F"
+        col2 = gris if not n else "#3D4F4C"
+        cuenta = ("sin contratación esta semana" if not n
+                  else f"{n} operación" if n == 1 else f"{n} operaciones")
+        filas += (
+            '<tr>'
+            f'<td style="padding:5px 10px 5px 0;font-size:13px;color:{col}">'
+            f'{esc(ROTULO_GRUPO[k])}</td>'
+            f'<td style="padding:5px 10px;font-size:12.5px;text-align:right;'
+            f'color:{col2};white-space:nowrap">{esc(cuenta)}</td>'
+            f'<td style="padding:5px 0 5px 10px;font-family:Consolas,monospace;'
+            f'font-size:12px;text-align:right;white-space:nowrap;color:{col2}">'
+            f'{"—" if not val else esc(correo.pesos(val))}</td></tr>')
+    return ('<table cellpadding="0" cellspacing="0" style="width:100%;'
+            f'margin-bottom:24px">{filas}</table>')
+
+
+def _fichas(ops, tope):
+    esc = correo.esc
+    fichas = ""
+    for o in sorted(ops, key=lambda x: -x["valor"])[:tope]:
+        boton = ""
+        if o["url"]:
+            boton = ('<div style="margin-top:10px"><a href="' + esc(o["url"]) + '" '
+                     'style="display:inline-block;background:#0E5C58;color:#fff;'
+                     'text-decoration:none;padding:7px 14px;border-radius:3px;'
+                     'font-size:12.5px;font-weight:600">Ver en SECOP</a></div>')
+        # El objeto llego justo en el tope de la fuente: lo corto SECOP, no
+        # nosotros, y presentarlo como entero desinforma. Lo mismo que avisa la
+        # fila de ligero.html.
+        corte = ""
+        if o["objeto_cortado"]:
+            corte = ('<div style="font-size:11.5px;color:#8A6D1F;margin-top:5px">'
+                     'SECOP corta este objeto; el texto completo está en el '
+                     'expediente.</div>')
+        # Fuera del Valle el municipio no dice nada sin su departamento.
+        sitio = o["mun_nombre"].title() if o["mun_nombre"] else ""
+        if sitio and not es_valle(o) and o["dep_nombre"]:
+            sitio += f" ({o['dep_nombre']})"
+        elif not sitio and o["dep_nombre"]:
+            sitio = o["dep_nombre"]
+        fichas += (
+            '<div style="border:1px solid #D6DEDC;border-radius:3px;padding:13px 15px;'
+            'margin-bottom:12px;background:#fff">'
+            f'<div style="font-size:11px;text-transform:uppercase;letter-spacing:.07em;'
+            f'color:#6B807C;margin-bottom:6px">'
+            f'{"Contratada" if o["firmado"] else "Abierta"} · {esc(o["fecha"])}'
+            f'{" · " + esc(sitio) if sitio else ""}</div>'
+            f'<div style="font-size:14.5px;font-weight:700;color:#16211F;'
+            f'margin-bottom:4px">{esc(correo.pesos(o["valor"]))} '
+            f'<span style="font-weight:400;font-size:12px;color:#6B807C">'
+            f'{"valor firmado" if o["firmado"] else "precio base"}</span></div>'
+            f'<div style="font-size:13px;color:#3D4F4C;margin-bottom:6px">'
+            f'{esc(o["entidad"])}</div>'
+            f'<div style="font-size:13px;color:#16211F;line-height:1.5">'
+            f'{esc(o["objeto"][:300])}{"…" if len(o["objeto"]) > 300 else ""}</div>'
+            + corte +
+            f'<div style="font-size:12px;color:#6B807C;margin-top:6px">'
+            f'{esc(o["ref"])}{" · " + esc(o["proveedor"]) if o["proveedor"] else ""}</div>'
+            + boton + "</div>")
+    if len(ops) > tope:
+        fichas += (f'<div style="font-size:13px;color:#3D4F4C;margin-top:4px">Y '
+                   f'<b>{len(ops) - tope}</b> más en el tablero.</div>')
+    return fichas
+
+
+def _aviso(texto):
+    return ('<div style="border:1px solid #E0C070;background:#FFF9EC;padding:14px 16px;'
+            'border-radius:3px;font-size:13.5px;color:#5C4708;line-height:1.55;'
+            f'margin-bottom:22px">{texto}</div>')
+
+
+def cuerpo(ops_semana, nuevos_ids, ini, fin, generado, hay_mapa):
+    esc = correo.esc
 
     cabeza = (
         f'<h1 style="font-size:19px;margin:0 0 4px;color:#16211F">Resumen de la semana</h1>'
@@ -307,13 +477,12 @@ def cuerpo(ops_semana, nuevas, ini, fin, generado, hay_mapa):
                 'no encontraron nada con fecha en este rango. El acumulado sigue completo '
                 f'en el tablero.</div>{pie(generado)}')
 
-    tabla = ('<table cellpadding="0" cellspacing="0" style="margin-bottom:22px">'
-             '<tr>' +
-             cifra(str(len(ops_semana)), "operaciones con fecha\nen la semana") +
-             cifra(correo.pesos(plata), f"firmados en {len(firmadas)} contratos", "#0E5C58") +
-             cifra(str(len(abiertas)), "procesos abiertos\naún sin contratar") +
-             cifra(str(nuevas), "aparecieron por primera vez\nen el monitor") +
-             "</tr></table>")
+    # El orden lo pidio el usuario (13-sep-2026): PRIMERO Cali y el Valle, que es
+    # el asunto del monitor, y lo de fuera en su propia seccion mas abajo. Antes
+    # iba todo mezclado y la ficha mas grande de la semana podia ser de Caldas
+    # bajo un titulo que nombra el Valle -la misma trampa de los $14,0 mm-.
+    valle = [o for o in ops_semana if es_valle(o)]
+    fuera = [o for o in ops_semana if not es_valle(o)]
 
     mapa = ""
     if hay_mapa:
@@ -327,65 +496,59 @@ def cuerpo(ops_semana, nuevas, ini, fin, generado, hay_mapa):
                 'que se movieron esta semana; el ámbar marca donde hay procesos abiertos '
                 'sin firmar.</div>')
 
-    munis = ""
-    if orden:
-        tope = orden[0][1][0] or 1
-        filas = ""
-        for nombre, (val, n) in orden[:10]:
-            ancho = max(2, int(val / tope * 100))
-            filas += (
-                '<tr>'
-                f'<td style="padding:4px 10px 4px 0;font-size:13px;color:#16211F;'
-                f'white-space:nowrap">{esc(nombre.title())}</td>'
-                f'<td style="padding:4px 0;width:100%">'
-                f'<table cellpadding="0" cellspacing="0" style="width:{ancho}%">'
-                f'<tr><td style="background:#56A800;height:14px;border-radius:2px">'
-                f'&nbsp;</td></tr></table></td>'
-                f'<td style="padding:4px 0 4px 10px;font-family:Consolas,monospace;'
-                f'font-size:12px;color:#3D4F4C;white-space:nowrap">'
-                f'{esc(correo.pesos(val))}</td></tr>')
-        munis = ('<h2 style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;'
-                 'color:#6B807C;margin:0 0 10px">Dónde se movió la plata</h2>'
-                 '<table cellpadding="0" cellspacing="0" style="width:100%;'
-                 f'margin-bottom:24px">{filas}</table>')
+    # ---------------- Cali y el Valle del Cauca ----------------
+    bloque1 = _rotulo("Cali y el Valle del Cauca")
+    if valle:
+        por_mun = {}
+        for o in valle:
+            if o["firmado"] and o["mun_nombre"]:
+                por_mun[o["mun_nombre"]] = por_mun.get(o["mun_nombre"], 0) + o["valor"]
+        orden = sorted(por_mun.items(), key=lambda kv: -kv[1])[:10]
+        bloque1 += _cifras(valle, nuevos_ids) + mapa
+        bloque1 += _rotulo("Quién contrató, por grupo") + _grupos(valle)
+        if orden:
+            bloque1 += (_rotulo("Dónde se movió la plata")
+                        + _barras([(n.title(), v) for n, v in orden]))
+        bloque1 += _rotulo("Lo más grande de la semana") + _fichas(valle, TOPE_FICHAS)
+    else:
+        # Un cero aqui es un hallazgo, no un hueco: hay que decir por que.
+        bloque1 += _aviso(
+            "<b>Ninguna entidad del Valle del Cauca contrató esta semana.</b><br>"
+            "Las dos recolecciones diarias corrieron y no encontraron nada con fecha "
+            "en este rango para el departamento. Lo de abajo es de otras regiones.")
 
-    grandes = sorted(ops_semana, key=lambda o: -o["valor"])[:TOPE_FICHAS]
-    fichas = ""
-    for o in grandes:
-        boton = ""
-        if o["url"]:
-            boton = ('<div style="margin-top:10px"><a href="' + esc(o["url"]) + '" '
-                     'style="display:inline-block;background:#0E5C58;color:#fff;'
-                     'text-decoration:none;padding:7px 14px;border-radius:3px;'
-                     'font-size:12.5px;font-weight:600">Ver en SECOP</a></div>')
-        fichas += (
-            '<div style="border:1px solid #D6DEDC;border-radius:3px;padding:13px 15px;'
-            'margin-bottom:12px;background:#fff">'
-            f'<div style="font-size:11px;text-transform:uppercase;letter-spacing:.07em;'
-            f'color:#6B807C;margin-bottom:6px">'
-            f'{"Contratada" if o["firmado"] else "Abierta"} · {esc(o["fecha"])}'
-            f'{" · " + esc(o["mun_nombre"].title()) if o["mun_nombre"] else ""}</div>'
-            f'<div style="font-size:14.5px;font-weight:700;color:#16211F;'
-            f'margin-bottom:4px">{esc(correo.pesos(o["valor"]))} '
-            f'<span style="font-weight:400;font-size:12px;color:#6B807C">'
-            f'{"valor firmado" if o["firmado"] else "precio base"}</span></div>'
-            f'<div style="font-size:13px;color:#3D4F4C;margin-bottom:6px">'
-            f'{esc(o["entidad"])}</div>'
-            f'<div style="font-size:13px;color:#16211F;line-height:1.5">'
-            f'{esc(o["objeto"][:300])}{"…" if len(o["objeto"]) > 300 else ""}</div>'
-            f'<div style="font-size:12px;color:#6B807C;margin-top:6px">'
-            f'{esc(o["ref"])}{" · " + esc(o["proveedor"]) if o["proveedor"] else ""}</div>'
-            + boton + "</div>")
+    # ---------------- Fuera del Valle ----------------
+    regla = ('<div style="border-top:1px solid #D6DEDC;margin:30px 0 18px"></div>')
+    bloque2 = regla + _rotulo("Otras entidades, fuera del Valle")
+    if fuera:
+        por_dep = {}
+        for o in fuera:
+            if o["firmado"]:
+                # "No Definido" es literalmente lo que publica SECOP cuando la
+                # entidad no diligencia el departamento. Sacarlo tal cual a una
+                # barra se lee como un fallo del informe; hay que decir de quien
+                # es el hueco.
+                clave = o["dep_nombre"]
+                if not clave or clave.lower().startswith("no definido"):
+                    clave = "Sin departamento en la fuente"
+                por_dep[clave] = por_dep.get(clave, 0) + o["valor"]
+        orden_dep = sorted(por_dep.items(), key=lambda kv: -kv[1])[:8]
+        bloque2 += (
+            '<div style="font-size:13px;color:#3D4F4C;line-height:1.55;'
+            'margin:-2px 0 16px">Contratación que nombra el sismo en los otros '
+            'departamentos declarados en desastre por el Decreto 1171. '
+            '<b>No suma en las cifras de arriba.</b></div>'
+            + _cifras(fuera, nuevos_ids))
+        if orden_dep:
+            bloque2 += _rotulo("Por departamento") + _barras(orden_dep)
+        bloque2 += (_rotulo("Lo más grande, fuera del Valle")
+                    + _fichas(fuera, TOPE_FICHAS_FUERA))
+    else:
+        bloque2 += ('<div style="font-size:13px;color:#3D4F4C;line-height:1.55">'
+                    'Esta semana no apareció contratación del sismo fuera del Valle '
+                    'del Cauca.</div>')
 
-    mas = ""
-    if len(ops_semana) > TOPE_FICHAS:
-        mas = (f'<div style="font-size:13px;color:#3D4F4C;margin-top:4px">Y '
-               f'<b>{len(ops_semana) - TOPE_FICHAS}</b> más en el tablero.</div>')
-
-    return (cabeza + tabla + mapa + munis +
-            '<h2 style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;'
-            'color:#6B807C;margin:0 0 10px">Lo más grande de la semana</h2>'
-            + fichas + mas + pie(generado))
+    return cabeza + bloque1 + bloque2 + pie(generado)
 
 
 def pie(generado):
@@ -394,7 +557,10 @@ def pie(generado):
             f'Recolección del {correo.esc(generado)}. Fuente: datos.gov.co — SECOP I y '
             'SECOP II. Solo se cuenta la contratación ya confirmada como atención de la '
             'emergencia; lo que está en duda no entra hasta que una persona lo revise. '
-            f'<a href="{correo.TABLERO}" style="color:#0E5C58">Ver el tablero</a>.</div>')
+            'Es la misma información y los mismos grupos de la vista pública. '
+            f'<a href="{correo.TABLERO}ligero.html" style="color:#0E5C58">Ver la vista '
+            f'pública</a> · <a href="{correo.TABLERO}" style="color:#0E5C58">tablero '
+            'completo</a>.</div>')
 
 
 def envoltura(interior):
@@ -413,16 +579,36 @@ def texto_plano(ops_semana, ini, fin, generado):
     if not ops_semana:
         l.append("Esta semana no aparecio contratacion nueva relacionada con el sismo.")
         return "\n".join(l)
-    firmadas = [o for o in ops_semana if o["firmado"]]
-    l.append(f"{len(ops_semana)} operaciones con fecha en la semana; "
-             f"{correo.pesos(sum(o['valor'] for o in firmadas))} firmados en "
-             f"{len(firmadas)} contratos.")
-    l.append("")
-    for o in sorted(ops_semana, key=lambda x: -x["valor"])[:TOPE_FICHAS]:
-        l += ["-" * 66,
-              f"{correo.pesos(o['valor'])} | {o['entidad']}",
-              f"{o['ref']} | {o['fecha']} | {o['mun_nombre']}",
-              o["objeto"][:300], o["url"] or "", ""]
+
+    # El mismo orden que el HTML: primero el Valle, luego lo de fuera. Si las dos
+    # versiones contaran distinto, quien lea la de texto veria otro correo.
+    def seccion(titulo, ops, tope, nota=""):
+        if not ops:
+            return [titulo.upper(), "", "  (nada esta semana)", ""]
+        firmadas = [o for o in ops if o["firmado"]]
+        t = [titulo.upper(), ""]
+        if nota:
+            t += [nota, ""]
+        t.append(f"{len(ops)} operaciones con fecha en la semana; "
+                 f"{correo.pesos(sum(o['valor'] for o in firmadas))} firmados en "
+                 f"{len(firmadas)} contratos.")
+        t.append("")
+        for o in sorted(ops, key=lambda x: -x["valor"])[:tope]:
+            sitio = o["mun_nombre"] or o["dep_nombre"]
+            t += ["-" * 66,
+                  f"{correo.pesos(o['valor'])} | {o['entidad']}",
+                  f"{o['ref']} | {o['fecha']} | {sitio}",
+                  o["objeto"][:300], o["url"] or "", ""]
+        if len(ops) > tope:
+            t += [f"Y {len(ops) - tope} mas en el tablero.", ""]
+        return t
+
+    valle = [o for o in ops_semana if es_valle(o)]
+    fuera = [o for o in ops_semana if not es_valle(o)]
+    l += seccion("Cali y el Valle del Cauca", valle, TOPE_FICHAS)
+    l += ["=" * 66, ""]
+    l += seccion("Otras entidades, fuera del Valle", fuera, TOPE_FICHAS_FUERA,
+                 "No suma en las cifras de arriba.")
     return "\n".join(l)
 
 
@@ -457,12 +643,16 @@ def main():
     # puede ser noticia de esta.
     nov = datos.get("novedades", {}) or {}
     ids = {r["id"] for r in registros}
-    nuevas = sum(1 for k, v in nov.items()
-                 if k in ids and ini.isoformat() <= str(v)[:10] <= fin.isoformat())
+    nuevos_ids = {k for k, v in nov.items()
+                  if k in ids and ini.isoformat() <= str(v)[:10] <= fin.isoformat()}
 
+    # El mapa es el del Valle: se alimenta solo de las operaciones del Valle. Con
+    # las de fuera daba igual -sus codigos no estan en la definicion y se
+    # ignoraban-, pero contarlas aqui y no en el bloque seria una cuenta que no
+    # cuadra con ninguna de las dos secciones.
     por_mun = {}
     for o in en_semana:
-        if not o["mun"]:
+        if not o["mun"] or not es_valle(o):
             continue
         por_mun.setdefault(o["mun"], {"v": 0, "n": 0})
         por_mun[o["mun"]]["n"] += 1
@@ -475,7 +665,7 @@ def main():
         with io.open(ruta_mapa, encoding="utf-8") as fh:
             png = dibujar_mapa(json.load(fh)["valle"], por_mun)
 
-    html = envoltura(cuerpo(en_semana, nuevas, ini, fin,
+    html = envoltura(cuerpo(en_semana, nuevos_ids, ini, fin,
                             datos.get("generado", ""), bool(png)))
     texto = texto_plano(en_semana, ini, fin, datos.get("generado", ""))
     asunto = (f"Sismo 10-ago · resumen del {dia_largo(ini)} al {dia_largo(fin)}"
