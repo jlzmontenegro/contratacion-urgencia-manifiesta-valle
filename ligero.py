@@ -526,9 +526,9 @@ figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
       a pulsarlo para quitar la selección.</li>
       <li><b>Afine con los filtros.</b> Se combinan entre sí: entidad, estado y rango de
       monto se aplican a la vez. Cada filtro tiene una <b>(i)</b> que explica qué hace.</li>
-      <li><b>Compruebe en la fuente.</b> Cada fila trae el número con que la entidad
-      identifica el contrato y un botón que abre el expediente en SECOP. Nada de lo que
-      aparece aquí hay que creérselo: está para verificarse.</li>
+      <li><b>Consulte el detalle en SECOP.</b> Cada fila trae el número con que la entidad
+      identifica el proceso o el contrato. Si desea verlo en detalle, puede ingresar
+      directamente a SECOP con el botón de la fila y revisar el expediente completo.</li>
     </ol>
 
     <h3>Convenciones</h3>
