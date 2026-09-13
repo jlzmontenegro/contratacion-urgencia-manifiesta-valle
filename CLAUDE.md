@@ -308,6 +308,21 @@ auditoría fallida pasa por buena.
 - **La versión ligera vive en el repo y se regenera sola cada 12 horas** (12-sep-2026), en
   `ligero.html`, para incrustarla por iframe o enlace desde otra instancia. Se descartó
   generarla a mano y subirla: dejaría de actualizarse el día que a nadie se le ocurra.
+- **La versión ligera se incrusta en `estebanoliveros.com`** (12-sep-2026), y por eso lleva la
+  piel de ese sitio y no la del tablero grande: blanco, verde de marca `#56A800` y Helvetica,
+  medidos sobre el propio sitio. **Sin modo oscuro**, porque la página que la aloja es blanca y
+  solo blanca. La tipografía de titulares del sitio es Cocosharp, con licencia de Wix: no se
+  puede incrustar, y la identidad la llevan el color y la geometría.
+- **Orden de la versión ligera: guía → mapa → filtros → tabla** (13-sep-2026), a petición del
+  usuario. El mapa va primero porque es el control con el que se empieza.
+- **Agrupar por entidad viene marcado de entrada** (13-sep-2026) y **no se desmarca al quitar los
+  filtros**: agrupar no esconde nada, solo cambia el orden, y quitar los filtros no tiene por qué
+  deshacer cómo el lector prefiere ver la tabla.
+- **El monto se filtra por rangos con nombre, no con barra deslizante** (13-sep-2026). El tablero
+  grande conserva la barra por cuantiles; aquí el usuario pidió rangos.
+- **En la versión ligera no se muestra el distintivo de revisión humana** (13-sep-2026). En el
+  tablero grande es imprescindible —ahí conviven lo dudoso y lo decidido—; aquí todo lo que se ve
+  está confirmado, así que marcar unas pocas filas sugeriría que las demás lo están menos.
 - **Los correos salen de una cuenta Gmail/Workspace con contraseña de aplicación**
   (12-sep-2026), no de un servicio transaccional. Si el dominio bloquea las contraseñas de
   aplicación, la alternativa acordada era Resend o SendGrid.
@@ -557,6 +572,48 @@ que pinta el mapa.
 página.** Estimar el ancho por el número de letras deja solapes; con `getBBox` son **cero en
 los dos mapas**, comprobado. Es el mismo algoritmo de `tablero.js`, copiado a propósito y no
 factorizado: son dos páginas que tienen que poder divergir sin romperse la una a la otra.
+
+**El mapa es el control principal, y por eso NO se respeta a sí mismo** (13-sep-2026). Pulsar
+un municipio o un departamento filtra la tabla. Los mapas respetan todos los demás filtros pero
+**no el territorio que ellos mismos ponen**: si lo respetaran, al elegir un municipio los demás
+quedarían en cero y no habría con qué cambiar de selección — el mapa dejaría de ser un control y
+pasaría a ser un callejón. La pieza elegida muestra la misma cifra que la tabla y va con borde
+grueso; las demás muestran la suya. El texto de ayuda del mapa lo dice con esas palabras, que es
+lo que impide que se lea como las dos cifras contradictorias del episodio de los $14,0 mm.
+
+**El reparto Valle / otras regiones desaparece cuando hay un territorio elegido.** El reparto
+mira el departamento de la **entidad** y el filtro del mapa mira el **municipio asignado**, y los
+dos no siempre coinciden: la Escuela Nacional del Deporte está en Cali y SECOP la publica en
+Bogotá. Con *municipio: CALI* puesto, la frase salía diciendo *"$36 M de otras regiones"* y se
+leía como un error del tablero. No lo era, pero da igual: una cifra que hay que explicar para que
+no parezca un error no debe estar ahí.
+
+**El objeto ya viene completo hasta donde la fuente da, y cuando no, se dice.** Comprobado contra
+la API el 12-sep-2026 sobre toda la ventana: en SECOP II `objeto_del_contrato` mide **como máximo
+500 caracteres exactos**, `descripci_n_del_procedimiento` también 500 y `descripcion_del_proceso`
+300. **Es un tope de la fuente, no un recorte nuestro**, y no hay campo más largo que pedir;
+SECOP I no tiene tope (el objeto más largo de la ventana mide 1.417). La operación ya toma el más
+largo de sus registros. Cuando el resultado llega justo en el tope, la fila **avisa que SECOP lo
+cortó** y remite al expediente: un texto cortado a mitad de palabra que se presenta como entero
+desinforma.
+
+**Los botones de compartir: tres funcionan y uno copia, y se dice cuál.** WhatsApp, X y Facebook
+tienen URL de compartir. **Instagram no tiene ninguna** —no existe forma de publicar en Stories
+desde otra página—, así que ese botón **copia el texto al portapapeles y lo explica**, en vez de
+abrir algo que no va a funcionar. **X tiene su propio mensaje**, no el largo recortado: X corta en
+280 y cuenta cualquier enlace como 23 caracteres pase lo que pase. El mensaje largo mide 768. Se
+arma lo fijo primero, se mide, y lo que sobra del presupuesto se le da al objeto, que es lo único
+elástico; si ni así cabe, cede el nombre de la entidad. **El enlace no se toca nunca**, porque es
+lo que hace verificable el dato. Comprobado sobre las 380 operaciones: ninguna pasa de 280.
+
+**La (i) de cada filtro abre por CLIC, no por hover.** En el teléfono no hay hover, y un tooltip
+que solo existe con ratón no existe para la mitad de los lectores.
+
+**El PDF imprime TODAS las filas del filtro y los dos mapas**, no las 20 de la página. Los SVG se
+clonan con `outerHTML`, así que conservan sus clases `m0..m4`; aun así el bloque `@media print`
+lleva **sus propias reglas de relleno** para `#impresion .mapas-papel`, porque las de pantalla
+cuelgan de `.lienzo` y ahí dentro no hay ningún `.lienzo` — es la trampa que ya sacó los mapas
+enteros en negro una vez.
 
 ## Los avisos por correo (`correo.py`)
 
