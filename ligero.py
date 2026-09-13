@@ -158,6 +158,11 @@ def _operaciones(registros):
             # porque alli se revisa fila por fila.
             "ep": _ep_corto(next((r.get("docs_ep") or "" for r in regs
                                   if r.get("docs_ep")), "")),
+            # Cuantas veces publico la entidad esta misma contratacion. Lo decide
+            # el colector; aqui la operacion ya llega unificada y solo se lee,
+            # para poder decirlo en vez de que la fila parezca una sola cosa que
+            # nunca estuvo repetida.
+            "rep": max((int(r.get("repetida") or 0) for r in regs), default=0),
         })
     # De mayor a menor valor, como el tablero grande.
     ops.sort(key=lambda o: -o["v"])
@@ -1116,6 +1121,9 @@ function fila(o, i){
       '<div class="obj">' + esc(o.o) + "</div>" +
       (o.ot ? '<div class="cortado">SECOP corta el objeto en 500 caracteres: ' +
               'el texto completo está en el expediente.</div>' : "") +
+      (o.rep ? '<div class="cortado">La entidad publicó esta misma contratación ' +
+               o.rep + ' veces en SECOP, en expedientes distintos. Aquí cuenta ' +
+               'como una sola.</div>' : "") +
       '<div class="pie">' + esc(NOMBRE_GRUPO[o.g] || "") +
         (o.mn ? " · " + esc(o.mn) : "") + (o.tc ? " · " + esc(o.tc) : "") +
         (o.m ? " · " + esc(o.m) : "") + "</div>" +

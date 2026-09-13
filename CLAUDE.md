@@ -40,6 +40,39 @@ con la fecha del dia siguiente y el sello de la pagina salia cinco horas adelant
 
 ## Reglas que no se rompen
 
+**La misma contratación publicada DOS VECES es UNA operación** (13-sep-2026,
+`unificar_publicaciones_repetidas()`). No es un fallo del emparejado: son **dos expedientes
+distintos** —otro `CO1.NTC`, otro `CO1.REQ`, otro `CO1.BDOS`— con el mismo número de
+referencia, el mismo objeto y el mismo valor. Manizales publicó dos veces sus obras por $2.000
+millones y solo una llegó a contrato, así que el tablero contaba dos operaciones y mostraba la
+misma contratación como *Contratada* y como *Abierta* a la vez.
+
+**Se unifica en la LLAVE DE OPERACIÓN, no en cada consumidor**, y por eso el conteo, el mapa,
+la tabla, las descargas y los dos correos se corrigen solos. Es la misma razón por la que la
+página no vuelve a clasificar.
+
+**La llave son las tres cosas a la vez: entidad, referencia normalizada y valor**, y ninguna
+sirve sola. Se midió: Manizales tiene **seis contratos de $70.000.000 exactos** con proveedores
+distintos —entidad + valor los habría fundido— y **dos contratos distintos que comparten la
+referencia `2608131019`**, por $1.000 y por $540 millones —entidad + referencia también—. Se
+comparan **todas** las referencias de la operación, no una: el proceso y su contrato suelen
+tener números distintos (`4182.010.32.1.653` contra `4182.010.26.1.653`) y elegir uno perdería
+la mitad de las coincidencias. Normalizar —quitar puntos, guiones y espacios— es lo que hace
+coincidir `2608201039.` con `2608201039`, `CI-001-2026-` con `CI-001-2026` y
+`SI-CDPS-161-2026*` con `SI-CDPS-161-2026`.
+
+**Sobre 7.995 operaciones fusiona 48, de las cuales 7 son `Alta`. Las cifras bajan de 382 a
+375 operaciones y EL DINERO NO SE MUEVE** —$64.230.331.615 antes y después—, porque en cada
+par solo una tenía contrato y la plata nunca se contó dos veces. Los convenios gemelos de Cali
+(`…1.4-2026` y `…1.5-2026`) **no se tocan**: tienen referencias distintas y el usuario decidió
+el 12-sep mostrarlos los dos.
+
+**Se dice, no se esconde.** Cada registro queda marcado con `repetida` = cuántas
+publicaciones, y las tres vistas lo muestran: el tablero grande con *"publicada N veces"*, la
+versión ligera con una línea bajo el objeto y el resumen semanal con un botón a la otra
+publicación. Es un hecho sobre cómo publica la entidad, y quien verifique se va a encontrar
+los dos expedientes.
+
 **La página no vuelve a clasificar.** Hubo 477 líneas de JavaScript que repetían el colector.
 Se arregló un fallo en Python, se olvidó en JavaScript, y el sitio mostró ceros durante una
 caída de la fuente. Si algo hay que clasificar, va en `colector.py` y viaja en el JSON.
@@ -833,8 +866,14 @@ dos botones rellenos seguidos compiten entre sí. **Sin aviso cuando falta**, ig
 versión ligera. En el texto plano va como una línea `Estudios previos: <url>`. Aquí viaja la
 URL entera y no el `DocumentId`: en un correo no hay guion que la rearme.
 
+**La misma contratación publicada DOS VECES cuenta como UNA**, y eso se resuelve en
+`colector.py` (`unificar_publicaciones_repetidas()`), no aquí: ver *Reglas que no se rompen*.
+El correo solo lee la marca `repetida` y lo dice en la ficha, con enlace al otro expediente.
+Antes estuvo resuelto solo en el correo; el usuario pidió el 13-sep-2026 que el conteo también
+las descontara, y el sitio correcto para eso es la llave de operación.
+
 **La misma contratación publicada DOS VECES se junta en una sola ficha**
-(`_sin_repetidas()`, 13-sep-2026). **No era un fallo del emparejado**: son dos expedientes
+(13-sep-2026). **No era un fallo del emparejado**: son dos expedientes
 distintos de SECOP —otro `CO1.NTC`, otro `CO1.REQ`, otro `CO1.BDOS`— con el mismo número de
 referencia, el mismo objeto y el mismo valor. Manizales publicó dos veces sus obras por $2.000
 millones y solo una llegó a contrato, así que salían dos fichas seguidas, una *Contratada* y

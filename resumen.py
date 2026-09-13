@@ -295,6 +295,16 @@ def operaciones(registros):
             # guion que la rearme.
             "docs_ep": next((r.get("docs_ep") or "" for r in regs
                              if r.get("docs_ep")), ""),
+            # Cuantas veces publico la entidad esta misma contratacion. Lo decide
+            # el colector (unificar_publicaciones_repetidas); aqui solo se lee.
+            "repetida": max((int(r.get("repetida") or 0) for r in regs), default=0),
+            # La otra publicacion es la del OTRO expediente: el proceso y el
+            # contrato del mismo comparten 'portafolio', asi que se distingue por
+            # ahi y no por la url, que cambia de forma entre proceso y contrato.
+            "url_otra": next(
+                (r.get("url") or "" for r in regs
+                 if r.get("portafolio") and r.get("portafolio") != (pr.get("portafolio") or "")),
+                ""),
             "valor": float(pr.get("valor") or 0), "firmado": bool(contrato),
             "fecha": pr.get("fecha", ""), "mun": pr.get("municipio", ""),
             "mun_nombre": pr.get("municipio_nombre", ""),
@@ -409,58 +419,8 @@ def _grupos(ops):
             f'margin-bottom:24px">{filas}</table>')
 
 
-def _norm_ref(s):
-    return re.sub(r"[^0-9A-Za-z]", "", s or "").upper()
-
-
-def _sin_repetidas(ops):
-    """Junta la MISMA contratacion cuando la entidad la publico dos veces.
-
-    No es un fallo del emparejado: son dos expedientes distintos de SECOP -otro
-    CO1.NTC, otro CO1.REQ, otro expediente- con el mismo numero de referencia, el
-    mismo objeto y el mismo valor. Manizales publico dos veces sus obras por
-    $2.000 millones y solo una de las dos llego a contrato, asi que la misma
-    contratacion salia en el correo dos veces seguidas, una "Contratada" y otra
-    "Abierta". Con tres fichas en el bloque de fuera del Valle, eso se comia dos
-    de las tres.
-
-    LA LLAVE SON LAS TRES COSAS A LA VEZ: entidad, referencia normalizada y
-    valor. Ninguna sirve sola y se comprobo por que:
-      - Manizales tiene SEIS contratos de $70.000.000 exactos con proveedores
-        distintos. Entidad + valor los habria fundido en uno.
-      - Y tiene dos contratos distintos que comparten la referencia 2608131019
-        por $1.000 y por $540 millones. Entidad + referencia tambien habria
-        fundido esos.
-    Normalizar la referencia -quitar puntos, guiones y espacios- es lo que hace
-    coincidir '2608201039.' con '2608201039' y 'CI-001-2026-' con 'CI-001-2026'.
-
-    Medido sobre las 382 operaciones confirmadas: colapsa 4. Los convenios
-    gemelos de Cali (…1.4-2026 y …1.5-2026) NO se tocan, porque tienen numeros
-    de referencia distintos y el usuario decidio el 12-sep mostrarlos los dos.
-
-    Solo afecta a las fichas del correo. Las cifras siguen contando lo que la
-    fuente publico, que es un hecho distinto del que aqui se muestra.
-    """
-    grupos = {}
-    for o in ops:
-        grupos.setdefault(
-            (o["entidad"], _norm_ref(o["ref"]), round(o["valor"], 2)), []).append(o)
-    salida = []
-    for v in grupos.values():
-        if len(v) == 1:
-            salida.append(v[0])
-            continue
-        # Manda la que ya tiene contrato: es la que dice con quien y por cuanto.
-        v = sorted(v, key=lambda o: (not o["firmado"], o["fecha"]))
-        jefe = dict(v[0])
-        jefe["gemelas"] = v[1:]
-        salida.append(jefe)
-    return salida
-
-
 def _fichas(ops, tope):
     esc = correo.esc
-    ops = _sin_repetidas(ops)
     fichas = ""
     for o in sorted(ops, key=lambda x: -x["valor"])[:tope]:
         botones = ""
@@ -483,20 +443,19 @@ def _fichas(ops, tope):
         # La publicacion repetida se dice, no se esconde: es un hecho sobre como
         # la entidad publica y quien verifique va a encontrarse los dos
         # expedientes. Se enlaza el otro para que pueda comprobarlo.
-        for g in o.get("gemelas", []):
-            if g.get("url"):
-                botones += ('<a href="' + esc(g["url"]) + '" '
-                            'style="display:inline-block;background:#fff;color:#8A6D1F;'
-                            'text-decoration:none;padding:6px 13px;border-radius:3px;'
-                            'font-size:12.5px;margin-left:8px;'
-                            'border:1px solid #E0C070">Ver la otra publicación</a>')
+        if o["repetida"] and o["url_otra"]:
+            botones += ('<a href="' + esc(o["url_otra"]) + '" '
+                        'style="display:inline-block;background:#fff;color:#8A6D1F;'
+                        'text-decoration:none;padding:6px 13px;border-radius:3px;'
+                        'font-size:12.5px;margin-left:8px;'
+                        'border:1px solid #E0C070">Ver la otra publicación</a>')
         boton = ('<div style="margin-top:10px">' + botones + "</div>") if botones else ""
         repetida = ""
-        if o.get("gemelas"):
-            n = len(o["gemelas"]) + 1
+        if o["repetida"]:
             repetida = ('<div style="font-size:11.5px;color:#8A6D1F;margin-top:6px">'
-                        f'La entidad publicó esta misma contratación {n} veces en '
-                        'SECOP, con expedientes distintos. Aquí va una sola vez.</div>')
+                        f'La entidad publicó esta misma contratación {o["repetida"]} '
+                        'veces en SECOP, con expedientes distintos. Cuenta como una.'
+                        '</div>')
         # El objeto llego justo en el tope de la fuente: lo corto SECOP, no
         # nosotros, y presentarlo como entero desinforma. Lo mismo que avisa la
         # fila de ligero.html.
@@ -671,9 +630,6 @@ def texto_plano(ops_semana, ini, fin, generado):
         if not ops:
             return [titulo.upper(), "", "  (nada esta semana)", ""]
         firmadas = [o for o in ops if o["firmado"]]
-        # Las cifras cuentan lo que la fuente publico; la lista junta la misma
-        # contratacion publicada dos veces, igual que el HTML.
-        ops = _sin_repetidas(ops)
         t = [titulo.upper(), ""]
         if nota:
             t += [nota, ""]
@@ -689,9 +645,9 @@ def texto_plano(ops_semana, ini, fin, generado):
                   o["objeto"][:300], o["url"] or ""]
             if o["docs_ep"]:
                 t.append("Estudios previos: " + o["docs_ep"])
-            for g in o.get("gemelas", []):
-                t.append("La entidad publico esta misma contratacion otra vez: "
-                         + (g.get("url") or g.get("ref") or ""))
+            if o["repetida"]:
+                t.append(f"La entidad publico esta contratacion {o['repetida']} veces "
+                         f"en SECOP; cuenta como una. La otra: {o['url_otra'] or 's/d'}")
             t.append("")
         if len(ops) > tope:
             t += [f"Y {len(ops) - tope} mas en el tablero.", ""]

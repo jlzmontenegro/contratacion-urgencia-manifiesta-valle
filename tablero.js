@@ -874,6 +874,9 @@ function operaciones(filas){
       firmado: !!c,
       abierta: !c,
       huerfana: !!c && !pr,           // contrato sin proceso publicado
+      /* Cuantas veces publico la entidad esta misma contratacion. Lo decide el
+         colector al unificar la llave de operacion; aqui solo se lee. */
+      repetida: Math.max(0, ...[c, pr].filter(Boolean).map(r => +r.repetida || 0)),
       proveedor: c ? c.proveedor : "",
       fecha: jefe.fecha,
       /* Del registro que manda: el contrato si existe. Proceso y contrato son el
@@ -1153,6 +1156,7 @@ function filaOperacion(o){
     <td class="col-est" data-etq="Estado">${est}
       <div class="menor">${esc(o.fecha)}</div>
       ${o.huerfana ? '<div class="menor aviso" title="El contrato se firmó pero la entidad no publicó el proceso que lo convocó">sin proceso publicado</div>' : ""}
+      ${o.repetida ? `<div class="menor aviso" title="Mismo número de referencia, misma entidad y mismo valor en expedientes distintos de SECOP. Se cuenta una sola vez.">publicada ${o.repetida} veces</div>` : ""}
       ${o.novedad ? `<div class="menor"><span class="nuevo">nuevo</span></div>` : ""}</td>
     <td class="col-que" data-etq="Qué y quién">
       <div class="ent">${esc(o.entidad)}</div>

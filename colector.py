@@ -1836,6 +1836,11 @@ def aplanar(df, nombre_fuente):
             "docs_n": 0,
             "docs_ep": "",
             "docs_ep_nombre": "",
+            # Cuantas veces publico la entidad esta misma contratacion. 0 es lo
+            # normal; lo pone unificar_publicaciones_repetidas() cuando encuentra
+            # el mismo numero, la misma entidad y el mismo valor en expedientes
+            # distintos.
+            "repetida": 0,
             "referencia": referencia_registro(r, f),
             "fecha": fecha,
             "etiqueta_fecha": etiqueta,
@@ -2022,6 +2027,110 @@ def padron_entidades(resultados, cfg):
     return sorted(padron, key=lambda e: (-e["n"], e["entidad"]))
 
 
+def _ref_normalizada(s):
+    return re.sub(r"[^0-9A-Za-z]", "", str(s or "")).upper()
+
+
+def unificar_publicaciones_repetidas(registros):
+    """Una misma contratacion publicada dos veces en SECOP es UNA operacion.
+
+    No es un fallo del emparejado: son dos expedientes distintos -otro CO1.NTC,
+    otro CO1.REQ, otro CO1.BDOS- con el mismo numero de referencia, el mismo
+    objeto y el mismo valor. Manizales publico dos veces sus obras por $2.000
+    millones y solo una llego a contrato, asi que el tablero contaba dos
+    operaciones y mostraba la misma contratacion como 'Contratada' y como
+    'Abierta' a la vez.
+
+    Se unifica AQUI, en la llave de operacion, y no en cada consumidor: asi el
+    conteo, el mapa, la tabla, las descargas y los correos se corrigen solos. Es
+    la misma razon por la que el tablero no vuelve a clasificar.
+
+    LA LLAVE SON LAS TRES COSAS A LA VEZ: entidad, referencia normalizada y
+    valor de la operacion. Ninguna sirve sola, y se midio por que:
+      - Manizales tiene SEIS contratos de $70.000.000 exactos con proveedores
+        distintos: entidad + valor los habria fundido en uno.
+      - Y tiene dos contratos distintos que comparten la referencia 2608131019,
+        por $1.000 y por $540 millones: entidad + referencia tambien.
+    Normalizar la referencia -quitar puntos, guiones y espacios- es lo que hace
+    coincidir '2608201039.' con '2608201039' y 'CI-001-2026-' con 'CI-001-2026'.
+
+    Se comparan TODAS las referencias de la operacion, no una sola: el proceso y
+    su contrato suelen tener numeros distintos (4182.010.32.1.653 contra
+    4182.010.26.1.653) y elegir uno perderia la mitad de las coincidencias.
+
+    El VALOR de la operacion es el del contrato si lo hay y el del proceso si no,
+    igual que en todas partes: nunca se suma precio base con valor firmado.
+
+    Los convenios gemelos de Cali (…1.4-2026 y …1.5-2026) NO se tocan, porque
+    tienen numeros de referencia distintos y el usuario decidio el 12-sep-2026
+    mostrarlos los dos.
+
+    Cada registro afectado queda marcado con 'repetida' = cuantas publicaciones
+    tiene esa contratacion. La fusion se DICE, no se esconde: es un hecho sobre
+    como publica la entidad y quien verifique se encontrara los dos expedientes.
+    """
+    por_op = {}
+    for r in registros:
+        por_op.setdefault(r["operacion"], []).append(r)
+
+    # Firma de cada operacion: entidad, valor (contrato si lo hay) y el conjunto
+    # de sus referencias normalizadas.
+    firmas = {}
+    for clave, regs in por_op.items():
+        contrato = next((r for r in regs if r.get("tipo") == "Contrato"), None)
+        principal = contrato or regs[0]
+        refs = frozenset(_ref_normalizada(r.get("referencia")) for r in regs)
+        refs = frozenset(x for x in refs if x)
+        if not refs:
+            continue
+        firmas[clave] = (str(principal.get("entidad", "")),
+                         round(float(principal.get("valor") or 0), 2), refs)
+
+    # Se agrupa por entidad+valor y dentro de cada grupo se unen las operaciones
+    # cuyas referencias se cruzan. El grupo es pequeño, asi que comparar de a
+    # pares no cuesta nada y evita encadenar fusiones que no tocan.
+    cubos = {}
+    for clave, (ent, val, refs) in firmas.items():
+        cubos.setdefault((ent, val), []).append((clave, refs))
+
+    renombrar = {}
+    cuantas = {}
+    for (ent, val), items in cubos.items():
+        if len(items) < 2:
+            continue
+        usados = set()
+        for i, (clave_a, refs_a) in enumerate(items):
+            if clave_a in usados:
+                continue
+            grupo = [clave_a]
+            for clave_b, refs_b in items[i + 1:]:
+                if clave_b not in usados and refs_a & refs_b:
+                    grupo.append(clave_b)
+                    usados.add(clave_b)
+            if len(grupo) < 2:
+                continue
+            usados.add(clave_a)
+            # Manda la operacion que ya tiene contrato: es la que dice con quien
+            # y por cuanto. Con empate, la clave menor, para que la eleccion no
+            # cambie de una corrida a otra y el diff no se llene de ruido.
+            def _tiene_contrato(c):
+                return any(x.get("tipo") == "Contrato" for x in por_op[c])
+            jefe = sorted(grupo, key=lambda c: (not _tiene_contrato(c), c))[0]
+            for c in grupo:
+                renombrar[c] = jefe
+                cuantas[c] = len(grupo)
+
+    if not renombrar:
+        return 0
+
+    for r in registros:
+        nueva = renombrar.get(r["operacion"])
+        if nueva:
+            r["repetida"] = cuantas[r["operacion"]]
+            r["operacion"] = nueva
+    return len(set(renombrar.values()))
+
+
 def emparejar_operaciones(registros, resultados):
     """Marca con la misma clave el proceso y el contrato que son un mismo hecho.
 
@@ -2061,6 +2170,8 @@ def emparejar_operaciones(registros, resultados):
 
     for r in registros:
         r["operacion"] = de_contrato.get(r["id"], r["id"])
+
+    unificar_publicaciones_repetidas(registros)
 
     # La regla de persona natural solo puede evaluarse en el contrato -el proceso aun
     # no tiene proveedor-, asi que se propaga a su pareja. Si no, el proceso seguiria
