@@ -191,7 +191,7 @@ def _mapa(base):
     return {"pais": m.get("pais"), "valle": m.get("valle")}
 
 
-def escribir(payload, base, destino=None):
+def escribir(payload, base, destino=None, origen=""):
     """Escribe ligero.html junto al index. Devuelve la ruta, o None si no pudo."""
     registros = [r for r in payload.get("registros", []) if r.get("nivel") == "Alta"]
     ops = _operaciones(registros)
@@ -213,7 +213,11 @@ def escribir(payload, base, destino=None):
     # contractuales pegados desde un PDF con marcado dentro.
     crudo = crudo.replace("</", "<\\/")
 
-    html = PLANTILLA.replace("__DATOS__", crudo)
+    # Solo se escribe en el HTML si de verdad hay un origen configurado. Vacio
+    # significa "pide los datos de donde te esten sirviendo", que es lo que evita
+    # que el nombre del repositorio viaje dentro de la pagina incrustada.
+    html = PLANTILLA.replace("__DATOS__", crudo).replace(
+        "__ORIGEN__", json.dumps(origen or "", ensure_ascii=False))
     destino = destino or os.path.join(base, "ligero.html")
     with io.open(destino, "w", encoding="utf-8", newline="") as fh:
         fh.write(html)
@@ -1827,10 +1831,24 @@ llenar(); conectar(); pintarTabla(); pintarMapas(); pintarChip(); pintarOrden();
    porque lleva la contratacion ordinaria entera.
 --------------------------------------------------------------------------- */
 (function(){
-  var ORIGEN = "https://jlzmontenegro.github.io/contratacion-urgencia-manifiesta-valle/datos/ligero.json";
+  /* De donde se piden los datos frescos, por orden:
+       1. La direccion desde la que se esta sirviendo esta misma pagina. Es lo
+          normal y no hace falta escribir ningun dominio en ninguna parte.
+       2. El de 'origen_ligero' de config.json, si esta puesto. Solo hace falta
+          para una COPIA alojada en otro servidor, que no tiene los datos al
+          lado. Se deja configurable para que el dia que haya dominio propio se
+          cambie ahi y no en el codigo.
+     Antes aqui habia una direccion escrita a mano, y eso metia el nombre del
+     repositorio dentro del HTML que se incrusta en el sitio de otro. */
+  var ORIGEN = __ORIGEN__;
   if (!window.fetch) return;
-  fetch(ORIGEN, { cache: "default" })
-    .then(function(r){ return r.ok ? r.json() : null; })
+  var url;
+  try { url = new URL("datos/ligero.json", location.href).href; }
+  catch (e) { url = ORIGEN; }
+  if (location.protocol === "file:" && ORIGEN) url = ORIGEN;
+  fetch(url, { cache: "default" })
+    .catch(function(){ return ORIGEN && url !== ORIGEN ? fetch(ORIGEN) : null; })
+    .then(function(r){ return r && r.ok ? r.json() : null; })
     .then(function(nuevo){
       if (!nuevo || !nuevo.ops || !nuevo.ops.length) return;
       /* Si es la misma recoleccion no se toca nada: repintar sin motivo perderia

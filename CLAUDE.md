@@ -605,6 +605,22 @@ enteraba.
 el sello de procedencia sigue diciendo de cuándo son los datos que hay. Un cero en este
 tablero no puede venir de un fallo de red, que es la regla de siempre.
 
+**El HTML no lleva ningún dominio escrito dentro** (13-sep-2026, a petición del usuario). El
+refresco pide `datos/ligero.json` **relativo a donde se esté sirviendo la página**, así que el
+nombre del repositorio no viaja en el archivo que se incrusta en el sitio de otro. Comprobado:
+**cero menciones de `jlzmontenegro` y de `github`** en `ligero.html`.
+
+`origen_ligero` en `config.json` es la excepción, y va **vacío por defecto**: solo hace falta
+para una COPIA alojada en otro servidor, donde los datos no están al lado. El día que haya
+dominio propio se cambia ahí y no en el código. Con `file://` se usa directamente ese origen,
+porque una ruta relativa sobre el disco no lleva a ninguna parte.
+
+**Esconder el origen del todo NO ES POSIBLE, y no hay que prometerlo.** El navegador tiene que
+conectarse a algún sitio: la dirección está en el `src` del iframe, en el código fuente de la
+página que lo aloja y en la pestaña de red de cualquier navegador. Lo único que lo cambia de
+verdad es **servir desde un dominio propio** (CNAME de GitHub Pages). Ofuscar el nombre en el
+código sería cosmética, no protección.
+
 **Se pide `datos/ligero.json`, NO `datos/tablero.json`**: el segundo mide **24,7 MB** porque
 lleva la contratación ordinaria entera. El del ligero pesa 349 KB en crudo y **59 KB
 servidos**. Va **sin el mapa** —53 KB de contornos del DANE que no cambian nunca—, así que

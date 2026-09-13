@@ -2270,7 +2270,12 @@ def exportar_tablero(hoy, resultados, alertas, cfg, resumen_corrida=None):
     # tablero principal no puede dejar de publicarse por culpa del derivado.
     try:
         import ligero
-        destino = ligero.escribir(payload, BASE)
+        # 'origen_ligero' solo hace falta para una COPIA del HTML alojada en otro
+        # servidor: ahi los datos no estan al lado. Vacio -lo normal- significa
+        # que la pagina los pide de donde la esten sirviendo, y asi no viaja
+        # ningun dominio escrito dentro del archivo que se incrusta.
+        destino = ligero.escribir(payload, BASE,
+                                  origen=cfg.get("origen_ligero", ""))
         print(f"  ligero  : {destino}")
     except Exception as e:
         print(f"  ! no se pudo escribir ligero.html: {e}")
