@@ -138,6 +138,15 @@ damnificados: lista `objetos_concretos_emergencia`— se respeta. Movió 35 regi
 se propaga a su proceso en `emparejar_operaciones()`. Un proceso suelto sin contrato queda fuera
 de su alcance y hay que revisarlo a mano; así pasó con `CVC CD 1242 2026`.
 
+**Y por tanto SÍ hay personas naturales en `Alta`, a propósito.** Medido el 13-sep-2026: de los
+226 contratos `Alta`, **134 son con cédula de ciudadanía** ($4.712 millones, el 8,6% del valor).
+De esos, 80 son de tipo *Prestación de servicios* y solo **15 están en el Valle** ($481
+millones). Al leerlos no son nómina: interventoría de la obra de reconstrucción de UNINTEP
+($257 M), visitas técnicas a instituciones educativas, seguimiento a la entrega de materiales.
+La regla no los degrada porque **solo actúa sobre `Media`**, y estos llegan a `Alta` por nombrar
+el sismo o por citar la urgencia manifiesta. Si alguna vez se quiere apretar, el sitio es la
+condición de `nivel == "Media"` en `clasificar()`; el usuario ya sabe la cifra y la dejó estar.
+
 **La obra pública del territorio tiene red de seguridad** (8-sep-2026). El agujero que las
 palabras clave no ven es **la reparación descrita en términos neutros**: *"mantenimiento locativo
 de las instalaciones físicas"* no nombra el sismo y es exactamente como se describe el arreglo de
@@ -608,6 +617,33 @@ lo que hace verificable el dato. Comprobado sobre las 380 operaciones: ninguna p
 
 **La (i) de cada filtro abre por CLIC, no por hover.** En el teléfono no hay hover, y un tooltip
 que solo existe con ratón no existe para la mitad de los lectores.
+
+**Se ORDENA primero y se agrupa después** (13-sep-2026). Primero se hizo al revés —entidades por
+lo que suman, y el orden elegido aplicado solo dentro de cada bloque— y **no servía: casi toda
+entidad tiene una sola operación**, así que pulsar la columna *Valor* no movía nada y el
+encabezado parecía roto. Ahora el orden manda y `agrupar()` respeta el orden que ya trae la
+lista: cada entidad aparece donde caiga su primera operación. Con *valor de mayor a menor* eso
+pone arriba a la entidad del contrato más grande, que es lo que espera quien pulsa esa columna.
+**La banda sigue diciendo el total real de la entidad**, así que el cambio de criterio no hace
+que nada mienta.
+
+**El encabezado ordenable es un `<button>` dentro del `<th>`**, no un `th` con `onclick`: así
+llega por tabulador y el lector de pantalla lo anuncia como algo que se pulsa. Y como en móvil
+`thead` va oculto, **el mismo estado vive también en un `<select>` «Ordenar por»** dentro de los
+filtros; los dos escriben en `F.orden` y se pintan sincronizados. Sin ese select, ordenar sería
+una función que en el teléfono no existe.
+
+**El filtro de nivel de gobierno admite VARIOS a la vez** (13-sep-2026), con la misma solución
+del tablero grande: un `<details>` con casillas, panel anclado al **bloque** de filtros —que
+lleva `position:relative` y `overflow:visible`— y **el resumen cerrado dice cuántos hay
+elegidos**. Marcar no repinta la lista, solo el resumen y la tabla, o las casillas saltarían bajo
+el cursor. Se llamaba *Entidad contratante* y se renombró porque se confundía con el filtro
+*Entidad*, que es otra cosa: uno es el nivel, el otro la entidad concreta.
+
+**En el PDF los enlaces van como `<a href>` de verdad.** Al imprimir a PDF el navegador conserva
+el hipervínculo y el botón queda pulsable dentro del archivo; escritos como texto, habría que
+copiar la URL a mano. El informe lleva además las tres fechas —firma, inicio y terminación— que
+en pantalla van en la columna de estado.
 
 **El PDF imprime TODAS las filas del filtro y los dos mapas**, no las 20 de la página. Los SVG se
 clonan con `outerHTML`, así que conservan sus clases `m0..m4`; aun así el bloque `@media print`

@@ -225,8 +225,11 @@ a{color:var(--acento-tinta)}
 header{border-bottom:3px solid var(--acento);padding-bottom:14px;margin-bottom:16px}
 .sello{margin-top:8px;font-size:11.5px;color:var(--suave);
        font-family:ui-monospace,Consolas,monospace}
+/* position:relative para que el panel de casillas se ancle aqui, al bloque entero,
+   y overflow visible para que no lo recorte: las dos trampas que ya se pagaron en
+   el tablero grande. */
 .panel{background:var(--panel);border:1px solid var(--borde);border-radius:3px;
-       padding:14px;margin-bottom:16px}
+       padding:14px;margin-bottom:16px;position:relative;overflow:visible}
 
 /* ---- Ayuda desplegable ---- */
 .guia{border:1px solid var(--borde);border-radius:3px;margin-bottom:16px;
@@ -269,6 +272,26 @@ label{font-size:10.5px;font-weight:700;letter-spacing:.09em;text-transform:upper
 select,input[type=search]{font:inherit;font-size:13px;padding:6px 8px;border-radius:3px;
       border:1px solid var(--borde);background:var(--panel);color:var(--texto);
       width:100%;min-width:0}
+/* Desplegable de varias casillas. El panel se ancla al BLOQUE de filtros y no a su
+   columna: anclado a la columna, de unos 190px, los rotulos largos se parten en
+   cuatro renglones. Y el bloque no puede recortar, o el panel se corta en seco. */
+.multi{position:static}
+.multi summary{font-size:13px;padding:6px 8px;border:1px solid var(--borde);
+      border-radius:3px;background:var(--panel);cursor:pointer;list-style:none;
+      display:flex;align-items:center;justify-content:space-between;gap:6px}
+.multi summary::-webkit-details-marker{display:none}
+.multi summary::after{content:"▾";color:var(--suave);font-size:11px;flex:0 0 auto}
+.multi[open] summary{border-color:var(--acento)}
+.multi-panel{position:absolute;left:14px;right:14px;top:auto;z-index:20;margin-top:4px;
+      background:var(--panel);border:1px solid var(--acento);border-radius:3px;
+      padding:10px;box-shadow:0 4px 14px rgba(0,0,0,.1);
+      display:grid;gap:6px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+      max-height:52vh;overflow:auto}
+.multi-panel label{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:400;
+      letter-spacing:0;text-transform:none;color:var(--texto);cursor:pointer;
+      padding:4px 5px;border-radius:3px}
+.multi-panel label:hover{background:var(--panel-2)}
+.multi-panel input{accent-color:var(--acento);width:15px;height:15px;margin:0;flex:0 0 auto}
 .campo.marca{justify-content:flex-start}
 .casilla{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:400;
       letter-spacing:0;text-transform:none;color:var(--texto);cursor:pointer;
@@ -297,9 +320,23 @@ button.principal:hover{background:var(--acento-tinta);border-color:var(--acento-
 /* ---- Tabla ---- */
 .marco{overflow-x:auto}
 table{width:100%;border-collapse:collapse;font-size:13px}
-th{text-align:left;padding:8px 10px;background:var(--panel-2);color:var(--acento-tinta);
+th{text-align:left;padding:0;background:var(--panel-2);color:var(--acento-tinta);
    font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;font-weight:700;
    border-bottom:1px solid var(--borde);white-space:nowrap}
+th.fijo{padding:8px 10px}
+/* El encabezado ordenable es un <button> de verdad dentro del <th>, no un th con
+   onclick: asi llega por tabulador y el lector de pantalla lo anuncia como algo
+   que se pulsa. */
+th .orden{font:inherit;color:inherit;background:none;border:0;border-radius:0;
+   padding:8px 10px;width:100%;text-align:inherit;cursor:pointer;
+   display:flex;align-items:center;gap:5px;text-transform:inherit;letter-spacing:inherit}
+th.num .orden{justify-content:flex-end}
+th .orden:hover{background:var(--borde)}
+th .orden i{font-style:normal;font-size:9px;color:var(--suave);opacity:.45}
+th .orden[data-dir] i{opacity:1;color:var(--acento-tinta)}
+th .orden i::before{content:"▲▼"}
+th .orden[data-dir="asc"] i::before{content:"▲"}
+th .orden[data-dir="desc"] i::before{content:"▼"}
 td{padding:10px;border-bottom:1px solid var(--borde);vertical-align:top}
 tbody tr:hover{background:var(--panel-2)}
 .num{text-align:right;font-family:ui-monospace,Consolas,monospace;
@@ -408,6 +445,14 @@ figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
       paint-order:stroke;stroke:#fff;stroke-width:3.5;stroke-linejoin:round;
       font-family:Helvetica,Arial,sans-serif;font-weight:600}
   #impresion .mapas-papel .etq .cifra{fill:#2E5C08;font-weight:700}
+  #impresion .fechas{color:#333;line-height:1.5}
+  /* El enlace tiene que parecer un boton en el papel y seguir siendo pulsable en
+     el PDF. Se conserva el subrayado fuera del recuadro para que se note que es
+     un enlace incluso impreso en blanco y negro. */
+  #impresion .enlaces{margin-top:4pt;display:flex;gap:4pt;flex-wrap:wrap}
+  #impresion a.ir{display:inline-block;border:.75pt solid #3E7C00;color:#2E5C08;
+      text-decoration:none;padding:2pt 5pt;border-radius:2pt;font-size:7.5pt;
+      white-space:nowrap;font-weight:bold}
   #impresion .ley-papel{font-size:7.5pt;color:#444;margin-top:3pt}
   #impresion .ley-papel i{display:inline-block;width:9pt;height:9pt;border:.5pt solid #999;
       vertical-align:-1pt;margin-right:3pt}
@@ -552,14 +597,19 @@ figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
       tildes ni mayúsculas.</p>
     </div>
     <div class="campo">
-      <div class="rotulo"><label for="f-grupo">Entidad contratante</label>
+      <div class="rotulo"><label for="res-nivel">Nivel de gobierno</label>
         <button class="info" type="button" data-para="ay-grupo" aria-expanded="false"
                 aria-controls="ay-grupo" aria-label="Qué hace este filtro">i</button></div>
-      <select id="f-grupo"><option value="">Todas</option></select>
-      <p class="ayuda" id="ay-grupo" hidden>Agrupa por nivel de gobierno. El número entre
-      paréntesis es cuántas operaciones tiene cada uno: si dice (0), esa entidad está
-      vigilada y no ha contratado nada del sismo, que es un hallazgo y no un dato que
-      falte.</p>
+      <!-- Casillas dentro de un <details>, no un <select multiple>: el nativo obliga a
+           Ctrl+clic y en el teléfono es inmanejable. Misma decisión que el tablero grande. -->
+      <details class="multi" id="f-nivel">
+        <summary id="res-nivel">Todos</summary>
+        <div class="multi-panel" id="lista-nivel"></div>
+      </details>
+      <p class="ayuda" id="ay-grupo" hidden>Se pueden marcar <b>varios a la vez</b>: sin
+      ninguno marcado se ven todos. El número entre paréntesis es cuántas operaciones tiene
+      cada nivel; si dice (0), está vigilado y no ha contratado nada del sismo, que es un
+      hallazgo y no un dato que falte.</p>
     </div>
     <div class="campo">
       <div class="rotulo"><label for="f-entidad">Entidad</label>
@@ -609,6 +659,24 @@ figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
       firmado si ya hay contrato, el precio base si sigue abierta. Los topes son
       inclusivos por abajo y exclusivos por arriba.</p>
     </div>
+    <div class="campo">
+      <div class="rotulo"><label for="f-orden">Ordenar por</label>
+        <button class="info" type="button" data-para="ay-orden" aria-expanded="false"
+                aria-controls="ay-orden" aria-label="Qué hace este control">i</button></div>
+      <select id="f-orden">
+        <option value="valor-desc">Valor, de mayor a menor</option>
+        <option value="valor-asc">Valor, de menor a mayor</option>
+        <option value="fecha-desc">Fecha, de la más reciente</option>
+        <option value="fecha-asc">Fecha, de la más antigua</option>
+        <option value="entidad-asc">Entidad, A–Z</option>
+        <option value="contratista-asc">Contratista, A–Z</option>
+      </select>
+      <p class="ayuda" id="ay-orden" hidden>Es lo mismo que pulsar el encabezado de una
+      columna en el computador; en el teléfono los encabezados no se ven, y por eso está
+      aquí. Con <b>agrupar por entidad</b> marcado, el orden manda igual: las entidades
+      quedan donde caiga su primera operación, así que «valor de mayor a menor» pone
+      arriba a la del contrato más grande.</p>
+    </div>
     <div class="campo marca">
       <div class="rotulo"><label for="f-agrupar">Presentación</label>
         <button class="info" type="button" data-para="ay-agrupar" aria-expanded="false"
@@ -633,8 +701,11 @@ figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
 <section class="marco">
   <table>
     <thead><tr>
-      <th>Estado</th><th>Qué y quién</th><th class="num">Valor</th>
-      <th>Contratista</th><th>SECOP y compartir</th>
+      <th><button type="button" class="orden" data-col="fecha">Estado<i></i></button></th>
+      <th><button type="button" class="orden" data-col="entidad">Qué y quién<i></i></button></th>
+      <th class="num"><button type="button" class="orden" data-col="valor">Valor<i></i></button></th>
+      <th><button type="button" class="orden" data-col="contratista">Contratista<i></i></button></th>
+      <th class="fijo">SECOP y compartir</th>
     </tr></thead>
     <tbody id="cuerpo"></tbody>
   </table>
@@ -707,13 +778,20 @@ var RANGOS = {
   "1000-":   [1000e6, Infinity]
 };
 
+/* Los niveles de gobierno elegidos. Conjunto vacío = todos, igual que en el
+   tablero grande: es la única forma de que "no he tocado nada" y "los he marcado
+   todos" no acaben significando cosas distintas. */
+var NIVELES = Object.create(null);
+function nivelesElegidos(){ return Object.keys(NIVELES); }
+
 var F = {
-  buscar: "", grupo: "", entidad: "", mun: "", dep: "", estado: "", monto: "",
-  agrupar: true
+  buscar: "", entidad: "", mun: "", dep: "", estado: "", monto: "",
+  agrupar: true, orden: "valor-desc"
 };
 
 function pasa(o){
-  if (F.grupo && o.g !== F.grupo) return false;
+  var ns = nivelesElegidos();
+  if (ns.length && !NIVELES[o.g]) return false;
   if (F.entidad && o.e !== F.entidad) return false;
   if (F.mun && o.mu !== F.mun) return false;
   if (F.dep && o.dp !== F.dep) return false;
@@ -735,23 +813,47 @@ function pasa(o){
    asi, la paginacion, el recuento de cabecera, el CSV y el PDF heredan el mismo
    orden sin tocar nada mas; la tabla se limita a intercalar una banda cuando
    cambia el nombre. */
+/* Agrupa RESPETANDO el orden que ya trae la lista: cada entidad aparece donde
+   aparece su primera operación bajo ese orden, y las suyas quedan contiguas.
+   Se probó antes ordenando las entidades por lo que suman y ordenando solo
+   dentro de cada bloque, y no servía: casi toda entidad tiene una sola
+   operación, así que ordenar por valor no movía nada y el encabezado parecía
+   roto. Con esta regla, "valor de mayor a menor" pone arriba a la entidad del
+   contrato más grande, que es lo que espera quien pulsa esa columna. La banda
+   sigue diciendo el total real de la entidad, así que nada miente. */
 function agrupar(ops){
-  var suma = {};
-  ops.forEach(function(o){ suma[o.e] = (suma[o.e] || 0) + (o.f ? o.v : 0); });
-  /* Desempate por nombre: dos entidades que suman cero -todo sin firmar- no
-     pueden quedar en un orden que cambie de una carga a otra. */
-  var orden = Object.keys(suma).sort(function(a, b){
-    return (suma[b] - suma[a]) || a.localeCompare(b);
+  var bloques = [], indice = Object.create(null);
+  ops.forEach(function(o){
+    var i = indice[o.e];
+    if (i === undefined){ indice[o.e] = bloques.length; bloques.push([o]); }
+    else bloques[i].push(o);
   });
-  var puesto = {};
-  orden.forEach(function(e, i){ puesto[e] = i; });
-  return ops.slice().sort(function(a, b){
-    return (puesto[a.e] - puesto[b.e]) || (b.v - a.v);
-  });
+  return [].concat.apply([], bloques);
+}
+
+/* El orden que pide el lector. Cuando hay agrupacion se aplica DENTRO de cada
+   entidad: el orden de las entidades sigue siendo por lo que suman, porque si no,
+   pedir "valor de mayor a menor" con agrupar puesto rompería los grupos y la
+   banda diria una cosa y las filas otra. La ayuda del control lo dice. */
+function comparador(){
+  var p = F.orden.split("-"), col = p[0], dir = p[1] === "asc" ? 1 : -1;
+  if (col === "valor")   return function(a, b){ return (a.v - b.v) * dir; };
+  if (col === "fecha")   return function(a, b){ return String(a.d).localeCompare(String(b.d)) * dir; };
+  if (col === "entidad") return function(a, b){ return a.e.localeCompare(b.e) * dir; };
+  return function(a, b){
+    /* Las que no tienen contratista al final siempre, se ordene como se ordene:
+       una lista alfabetica que empieza con doce huecos no informa de nada. */
+    if (!a.p && !b.p) return 0;
+    if (!a.p) return 1;
+    if (!b.p) return -1;
+    return a.p.localeCompare(b.p) * dir;
+  };
 }
 
 function vista(){
-  var v = OPS.filter(pasa);
+  /* Se ordena SIEMPRE primero y se agrupa después. Al revés, la agrupación
+     mandaría sobre el orden y pulsar una columna no se notaría. */
+  var v = OPS.filter(pasa).sort(comparador());
   return F.agrupar ? agrupar(v) : v;
 }
 /* Los mapas respetan todos los filtros MENOS el territorio que ellos mismos
@@ -907,9 +1009,12 @@ function mensajeVacio(){
   if (F.monto) return "Ninguna operación cae en ese rango de monto.";
   if (F.mun || F.dep) return "Ese territorio no tiene contratación confirmada del sismo con " +
     "los filtros puestos.";
-  if (F.grupo) return "<b>" + esc(NOMBRE_GRUPO[F.grupo] || "Ese grupo") + "</b> no tiene " +
+  var ns = nivelesElegidos();
+  if (ns.length === 1) return "<b>" + esc(NOMBRE_GRUPO[ns[0]] || "Ese nivel") + "</b> no tiene " +
     "contratación confirmada del sismo en la ventana de seguimiento. Está vigilado y su " +
     "contratación se revisa en cada recolección: el cero es un hallazgo, no un dato que falte.";
+  if (ns.length) return "Ninguno de los " + ns.length + " niveles de gobierno elegidos tiene " +
+    "contratación confirmada del sismo con los demás filtros puestos.";
   return "No hay contratación confirmada del sismo para mostrar.";
 }
 
@@ -1186,7 +1291,9 @@ function filaDatos(o){
 function textoFiltros(){
   var p = [];
   if (F.buscar) p.push("búsqueda: “" + F.buscar.toLowerCase() + "”");
-  if (F.grupo) p.push("entidad contratante: " + (NOMBRE_GRUPO[F.grupo] || F.grupo));
+  var ns = nivelesElegidos();
+  if (ns.length) p.push("nivel de gobierno: " +
+    ns.map(function(k){ return NOMBRE_GRUPO[k] || k; }).join(", "));
   if (F.entidad) p.push("entidad: " + F.entidad);
   if (F.mun) p.push("municipio: " + (NOMBRE_PIEZA[F.mun] || F.mun));
   if (F.dep) p.push("departamento: " + (NOMBRE_PIEZA[F.dep] || F.dep));
@@ -1233,15 +1340,28 @@ function imprimirInforme(){
               document.getElementById("ley-pais").innerHTML + "</div></figure>" : "") +
       "</div>";
   }
+  /* Los enlaces van como <a href> de verdad, no como texto: al imprimir a PDF el
+     navegador conserva el hipervinculo y el boton queda pulsable dentro del
+     archivo. Si fueran texto, el PDF traeria el enlace escrito y habria que
+     copiarlo a mano. */
   var cuerpo = v.map(function(o){
+    var enl = [];
+    if (o.uc) enl.push('<a class="ir" href="' + esc(o.uc) + '">Contrato ↗</a>');
+    if (o.up) enl.push('<a class="ir" href="' + esc(o.up) + '">Proceso ↗</a>');
+    var fechas = [];
+    if (o.d) fechas.push((o.f ? "Firma " : "Publicado ") + esc(o.d));
+    if (o.di) fechas.push("Inicia " + esc(o.di));
+    if (o.df) fechas.push("Termina " + esc(o.df));
     return "<tr><td>" + esc(o.e) + "<br><small>" + esc(NOMBRE_GRUPO[o.g] || "") +
       (o.mn ? " · " + esc(o.mn) : "") + "</small></td>" +
       "<td>" + esc(o.o) + "<br><small>" + esc(o.rp || "") +
       (o.rp && o.rc ? " · " : "") + esc(o.rc || "") + "</small></td>" +
-      "<td>" + esc(o.f ? "Contratada" : "Abierta") + "<br><small>" + esc(o.d) + "</small></td>" +
+      "<td>" + esc(o.f ? "Contratada" : "Abierta") +
+      '<br><small class="fechas">' + fechas.join("<br>") + "</small></td>" +
       '<td style="text-align:right;white-space:nowrap">' + esc(pesos(o.v)) +
       "<br><small>" + (o.f ? "firmado" : "precio base") + "</small></td>" +
-      "<td>" + esc(o.p || "—") + "</td></tr>";
+      "<td>" + esc(o.p || "—") +
+      (enl.length ? '<div class="enlaces">' + enl.join(" ") + "</div>" : "") + "</td></tr>";
   }).join("");
 
   document.getElementById("impresion").innerHTML =
@@ -1260,13 +1380,15 @@ function llenar(){
   /* Los seis grupos van SIEMPRE, incluso los que estan en cero, y con su cuenta
      al lado. La Gobernacion del Valle no tiene contratacion confirmada del
      sismo, y esa es justamente una de las cosas que hay que poder ver. */
-  var selG = document.getElementById("f-grupo");
+  var lista = document.getElementById("lista-nivel");
   (D.grupos || []).forEach(function(g){
     var n = OPS.filter(function(o){ return o.g === g.k; }).length;
-    var op = document.createElement("option");
-    op.value = g.k; op.textContent = g.n + " (" + n + ")";
-    selG.appendChild(op);
+    var l = document.createElement("label");
+    l.innerHTML = '<input type="checkbox" value="' + esc(g.k) + '">' +
+                  "<span>" + esc(g.n) + " (" + n + ")</span>";
+    lista.appendChild(l);
   });
+  resumenNivel();
   var ents = {}, muns = {};
   OPS.forEach(function(o){
     ents[o.e] = (ents[o.e] || 0) + 1;
@@ -1289,7 +1411,34 @@ function llenar(){
     " operaciones · ventana desde el 10 de agosto de 2026";
 }
 
-function repintar(){ pagina = 1; pintarTabla(); pintarMapas(); pintarChip(); }
+/* El resumen cerrado dice cuántos hay elegidos: un filtro puesto que no se ve
+   miente igual que un tablero filtrado en silencio. */
+function resumenNivel(){
+  var ns = nivelesElegidos();
+  var s = document.getElementById("res-nivel");
+  if (!ns.length){ s.textContent = "Todos"; return; }
+  if (ns.length === 1){ s.textContent = NOMBRE_GRUPO[ns[0]] || ns[0]; return; }
+  s.textContent = ns.length + " niveles elegidos";
+}
+
+/* Marca en los encabezados de columna cuál está ordenando y hacia dónde. */
+function pintarOrden(){
+  var p = F.orden.split("-");
+  document.querySelectorAll("th .orden").forEach(function(b){
+    if (b.getAttribute("data-col") === p[0]){
+      b.setAttribute("data-dir", p[1]);
+      b.setAttribute("aria-sort", p[1] === "asc" ? "ascending" : "descending");
+    } else {
+      b.removeAttribute("data-dir");
+      b.removeAttribute("aria-sort");
+    }
+  });
+  document.getElementById("f-orden").value = F.orden;
+}
+
+function repintar(){
+  pagina = 1; pintarTabla(); pintarMapas(); pintarChip(); pintarOrden();
+}
 
 function conectar(){
   var b = document.getElementById("f-buscar");
@@ -1298,7 +1447,7 @@ function conectar(){
     clearTimeout(t);
     t = setTimeout(function(){ F.buscar = sinTildes(b.value.trim()); repintar(); }, 180);
   });
-  ["grupo", "entidad", "mun", "estado", "monto"].forEach(function(k){
+  ["entidad", "mun", "estado", "monto", "orden"].forEach(function(k){
     document.getElementById("f-" + k).addEventListener("change", function(e){
       F[k] = e.target.value;
       /* Elegir municipio a mano manda sobre el departamento del mapa. */
@@ -1310,15 +1459,44 @@ function conectar(){
     F.agrupar = e.target.checked; repintar();
   });
 
+  /* Marcar un nivel NO repinta la lista de casillas, solo el resumen y la tabla:
+     si repintara, las casillas saltarían bajo el cursor al elegir la segunda. */
+  document.getElementById("lista-nivel").addEventListener("change", function(e){
+    var c = e.target;
+    if (!c || c.type !== "checkbox") return;
+    if (c.checked) NIVELES[c.value] = 1; else delete NIVELES[c.value];
+    resumenNivel();
+    pagina = 1; pintarTabla(); pintarMapas(); pintarChip();
+  });
+
+  /* Encabezados ordenables. Pulsar el que ya ordena invierte el sentido. */
+  document.querySelectorAll("th .orden").forEach(function(b){
+    b.addEventListener("click", function(){
+      var col = b.getAttribute("data-col");
+      var p = F.orden.split("-");
+      var dir = (p[0] === col && p[1] === "desc") ? "asc"
+              : (p[0] === col && p[1] === "asc") ? "desc"
+              /* Primer clic: lo útil por defecto. Valor y fecha interesan de
+                 mayor a menor; los nombres, alfabéticos. */
+              : (col === "valor" || col === "fecha") ? "desc" : "asc";
+      F.orden = col + "-" + dir;
+      repintar();
+    });
+  });
+
   document.getElementById("btn-limpiar").onclick = function(){
-    /* Agrupar no es un filtro: no esconde nada, solo cambia el orden. Quitar los
-       filtros no tiene por que deshacer como el lector prefiere ver la tabla. */
-    F = {buscar: "", grupo: "", entidad: "", mun: "", dep: "", estado: "", monto: "",
-         agrupar: F.agrupar};
+    /* Agrupar y el orden no son filtros: no esconden nada, solo cambian como se
+       presenta. Quitar los filtros no tiene por que deshacer como el lector
+       prefiere ver la tabla. */
+    F = {buscar: "", entidad: "", mun: "", dep: "", estado: "", monto: "",
+         agrupar: F.agrupar, orden: F.orden};
     b.value = "";
-    ["grupo", "entidad", "mun", "estado", "monto"].forEach(function(k){
+    ["entidad", "mun", "estado", "monto"].forEach(function(k){
       document.getElementById("f-" + k).value = "";
     });
+    Object.keys(NIVELES).forEach(function(k){ delete NIVELES[k]; });
+    document.querySelectorAll("#lista-nivel input").forEach(function(c){ c.checked = false; });
+    resumenNivel();
     repintar();
   };
   document.getElementById("btn-csv").onclick = descargarCSV;
@@ -1356,7 +1534,7 @@ function conectar(){
   });
 }
 
-llenar(); conectar(); pintarTabla(); pintarMapas(); pintarChip();
+llenar(); conectar(); pintarTabla(); pintarMapas(); pintarChip(); pintarOrden();
 </script>
 </body>
 </html>
