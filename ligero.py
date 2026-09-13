@@ -399,12 +399,31 @@ td.banda .cuanto{font-family:ui-monospace,Consolas,monospace;font-size:11.5px;
       color:var(--texto-2);margin-top:2px}
 td.banda .sigue{font-size:11.5px;color:var(--suave);font-style:italic}
 
+/* ---- Filtros a la izquierda, mapas a la derecha ----------------------- *
+ * En el DOM van primero los filtros: asi en el telefono se leen antes que el
+ * mapa -que es el orden que pidio el usuario- y en pantalla ancha la rejilla
+ * los coloca a la izquierda sin tener que mover nada. Un solo orden de lectura
+ * para las dos anchuras.                                                      */
+.tablero-sup{display:grid;gap:16px;grid-template-columns:1fr;align-items:start}
+@media (min-width:1000px){
+  .tablero-sup{grid-template-columns:minmax(330px,380px) 1fr}
+  /* En la columna estrecha los filtros van uno debajo de otro: dos columnas de
+     190px dentro de 380 dejan los rotulos partidos en tres renglones. */
+  .tablero-sup .filtros{grid-template-columns:1fr}
+  .tablero-sup .panel{margin-bottom:0}
+}
+
 /* ---- Mapas ---- */
-.mapas{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+/* Uno debajo del otro, no lado a lado: viven en una columna y el Valle va
+   arriba, que es donde esta el foco del seguimiento. */
+.mapas{display:grid;gap:18px;grid-template-columns:1fr}
 .mapas figure{margin:0;min-width:0}
 figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
      letter-spacing:.09em;text-transform:uppercase;color:var(--suave);margin-bottom:6px}
-.lienzo svg{width:100%;height:auto;display:block;max-height:58vh}
+/* Ancho maximo y centrado, SIN tope de altura. Con max-height el navegador dejaba
+   la caja mas ancha que alta y el mapa -que es casi cuadrado- se encajaba dentro
+   con franjas vacias a los lados: 722px de caja para 312 de mapa. */
+.lienzo svg{width:100%;max-width:560px;height:auto;display:block;margin:0 auto}
 /* El filete entre piezas es del color del fondo, no gris: asi las fronteras se
    leen como separacion y no como un dato mas. */
 .lienzo path{stroke:var(--m-borde);stroke-width:.8;stroke-linejoin:round;cursor:pointer}
@@ -558,54 +577,20 @@ figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
       <dd>El de la <b>entidad que contrata</b>, no el de la obra. El dato que publica SECOP
       es el domicilio de la entidad, y a veces se contrata desde una ciudad para otra.</dd>
 
-      <dt>Entidad contratante</dt>
-      <dd>El grupo al que pertenece: Alcaldía de Cali, Gobernación del Valle, sus
-      descentralizadas, los municipios del Valle, o el resto del país.</dd>
+      <dt>Nivel de gobierno</dt>
+      <dd>A cuál de los seis grupos pertenece la entidad: Alcaldía de Cali y sus
+      dependencias, Gobernación del Valle y las suyas, las descentralizadas de una y otra,
+      los municipios del Valle, o el resto del país. Se pueden marcar varios a la vez.</dd>
 
       <dt>Recolección</dt>
       <dd>Fecha y hora en que se consultó la fuente por última vez. Se actualiza dos veces
       al día.</dd>
     </dl>
 
-    <h3>Qué NO está aquí</h3>
-    <ul>
-      <li>Solo aparece la contratación <b>ya confirmada</b> como atención de la emergencia.
-      Lo que está en duda no se publica hasta que una persona lo revise.</li>
-      <li>La contratación ordinaria, la que no tiene que ver con el sismo, queda fuera.</li>
-    </ul>
   </div>
 </details>
 
-<section class="panel" id="sec-mapas">
-  <div class="rotulo" style="margin-bottom:8px">
-    <h2 style="margin:0">Dónde se está contratando</h2>
-    <button class="info" type="button" data-para="ay-mapa" aria-expanded="false"
-            aria-controls="ay-mapa" aria-label="Cómo funciona el mapa">i</button>
-  </div>
-  <p class="ayuda" id="ay-mapa" hidden>Pulse cualquier municipio del Valle o cualquier
-  departamento del país y la tabla de abajo se queda solo con la contratación de ese
-  territorio. El mapa sigue mostrando las cifras de todos los demás, para poder comparar y
-  cambiar de selección; el que está elegido va con borde grueso. Pulse otra vez para
-  quitarlo.</p>
-  <div class="mapas">
-    <figure>
-      <figcaption>Valle del Cauca · por municipio</figcaption>
-      <div class="lienzo" id="mapa-valle"></div>
-      <div class="leyenda" id="ley-valle"></div>
-    </figure>
-    <figure>
-      <figcaption>Colombia · por departamento</figcaption>
-      <div class="lienzo" id="mapa-pais"></div>
-      <div class="leyenda" id="ley-pais"></div>
-    </figure>
-  </div>
-  <p class="nota">
-    Los mapas pintan el municipio de la <b>entidad que contrata</b>, no dónde se ejecuta:
-    el campo de SECOP es el domicilio de la entidad. El color va por el valor ya
-    contratado; el ámbar marca los territorios donde solo hay procesos sin firmar.
-    <span id="nota-sitio"></span>
-  </p>
-</section>
+<div class="tablero-sup">
 
 <section class="panel">
   <h2>Filtros</h2>
@@ -731,6 +716,40 @@ figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
     <button id="btn-pdf" class="principal">Descargar PDF con el mapa</button>
   </div>
 </section>
+
+<section class="panel" id="sec-mapas">
+  <div class="rotulo" style="margin-bottom:8px">
+    <h2 style="margin:0">Dónde se está contratando</h2>
+    <button class="info" type="button" data-para="ay-mapa" aria-expanded="false"
+            aria-controls="ay-mapa" aria-label="Cómo funciona el mapa">i</button>
+  </div>
+  <p class="ayuda" id="ay-mapa" hidden>Pulse cualquier municipio del Valle o cualquier
+  departamento del país y la tabla de abajo se queda solo con la contratación de ese
+  territorio. El mapa sigue mostrando las cifras de todos los demás, para poder comparar y
+  cambiar de selección; el que está elegido va con borde grueso. Pulse otra vez para
+  quitarlo.</p>
+  <div class="mapas">
+    <figure>
+      <figcaption>Valle del Cauca · por municipio</figcaption>
+      <div class="lienzo" id="mapa-valle"></div>
+      <div class="leyenda" id="ley-valle"></div>
+    </figure>
+    <figure>
+      <figcaption>Colombia · por departamento</figcaption>
+      <div class="lienzo" id="mapa-pais"></div>
+      <div class="leyenda" id="ley-pais"></div>
+    </figure>
+  </div>
+  <p class="nota">
+    Los mapas pintan el municipio de la <b>entidad que contrata</b>, no dónde se ejecuta:
+    el campo de SECOP es el domicilio de la entidad. El color va por el valor ya
+    contratado; el ámbar marca los territorios donde solo hay procesos sin firmar.
+    <span id="nota-sitio"></span>
+  </p>
+</section>
+
+</div>
+
 
 <div class="cuenta" id="cuenta"></div>
 
