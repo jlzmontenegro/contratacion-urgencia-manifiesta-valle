@@ -243,7 +243,14 @@ def cuerpo_texto(clave, regs, generado, nuevas=True):
 # Envio
 # --------------------------------------------------------------------------
 
-def enviar(asunto, destinatarios, html, texto):
+def enviar(asunto, destinatarios, html, texto, imagenes=None):
+    """Manda el correo. `imagenes` es {cid: bytes} para incrustar PNG.
+
+    Incrustadas y no adjuntas ni enlazadas: una imagen remota la bloquean Gmail y
+    Outlook hasta que el lector pulsa "mostrar imagenes", y una adjunta suelta no
+    se puede colocar dentro del texto. Con Content-ID la imagen viaja en el mismo
+    mensaje y se ve sola.
+    """
     # 'or' y no el segundo argumento de get(): GitHub Actions define la variable
     # igual cuando no existe, solo que vacia. Con get(clave, defecto) el defecto
     # nunca se usaria y int("") reventaria la corrida.
@@ -264,6 +271,15 @@ def enviar(asunto, destinatarios, html, texto):
     msg["To"] = ", ".join(destinatarios)
     msg.set_content(texto)
     msg.add_alternative(html, subtype="html")
+
+    for cid, datos in (imagenes or {}).items():
+        if not datos:
+            continue
+        # Va sobre la PARTE HTML, no sobre el mensaje: si se adjunta al mensaje
+        # raiz, el cliente la muestra como archivo suelto al final y el <img
+        # src="cid:..."> del cuerpo se queda roto.
+        msg.get_payload()[1].add_related(datos, maintype="image", subtype="png",
+                                         cid=f"<{cid}>", filename=f"{cid}.png")
 
     contexto = ssl.create_default_context()
     with smtplib.SMTP_SSL(servidor, puerto, context=contexto, timeout=60) as s:

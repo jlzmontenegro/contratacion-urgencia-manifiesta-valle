@@ -1,0 +1,49 @@
+name: Resumen semanal
+
+# Los lunes a las 9:30 de Colombia, un informe de la semana que acaba de
+# terminar: cuanto se contrato, en que municipios, lo mas grande, y el mapa
+# dibujado como PNG.
+#
+# A las 9:30 y no a las 8:30 A PROPOSITO: la recoleccion diaria arranca a las
+# 8:30 y tarda unos seis minutos. Si el resumen saliera a la misma hora, leeria
+# el tablero.json de la noche anterior y contaria una semana incompleta sin que
+# nadie lo notara.
+#
+# No recolecta y no toca datos/avisados.csv: es un informe, no un aviso. De cada
+# contrato ya se avisa el dia que aparece.
+on:
+  schedule:
+    - cron: '30 14 * * 1'   # lunes 9:30 en Colombia (UTC-5)
+  workflow_dispatch:
+
+jobs:
+  resumen:
+    runs-on: ubuntu-latest
+    env:
+      TZ: America/Bogota
+      PYTHONUNBUFFERED: "1"
+    timeout-minutes: 8
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      # Pillow es lo unico que hace falta: el mapa se dibuja aqui, no en un
+      # navegador. Se instala solo esa, no todo requirements.txt, porque este
+      # flujo no consulta la API ni usa pandas.
+      - name: Instalar Pillow
+        run: pip install Pillow
+
+      - name: Enviar el resumen
+        env:
+          CORREO_USUARIO: ${{ secrets.CORREO_USUARIO }}
+          CORREO_CLAVE: ${{ secrets.CORREO_CLAVE }}
+          CORREO_REMITENTE: ${{ secrets.CORREO_REMITENTE }}
+          CORREO_SERVIDOR: ${{ vars.CORREO_SERVIDOR }}
+          CORREO_PUERTO: ${{ vars.CORREO_PUERTO }}
+        run: python resumen.py

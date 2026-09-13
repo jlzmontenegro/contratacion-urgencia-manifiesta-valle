@@ -426,7 +426,8 @@
   "_nota_correo": "A quien avisa correo.py cuando aparece contratacion nueva. Son dos listas a proposito y no una: 'para_relacionados' recibe lo que ya esta dado por del sismo y 'para_revision' recibe lo que hay que leer para decidir. Mezclarlas seria el peor resultado posible, porque lo dudoso acabaria leyendose como confirmado. Las direcciones no son secretas y por eso viven aqui; la contrasena de aplicacion va en Settings > Secrets and variables > Actions, como CORREO_CLAVE, y nunca en este archivo. Con la lista vacia no se envia nada y NO se anota como avisado: en cuanto se llene, la siguiente corrida manda lo acumulado.",
   "correo": {
     "para_relacionados": ["jlzmontenegro@gmail.com", "estebanoliverosm@gmail.com"],
-    "para_revision": ["jlzmontenegro@gmail.com"]
+    "para_revision": ["jlzmontenegro@gmail.com"],
+    "para_resumen": ["jlzmontenegro@gmail.com", "estebanoliverosm@gmail.com"]
   },
   "_nota_token": "Opcional. Un app token de datos.gov.co evita el limite de peticiones anonimas. Se puede poner aqui o en la variable de entorno SOCRATA_APP_TOKEN.",
   "app_token": "",
