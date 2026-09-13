@@ -67,9 +67,15 @@ AVISOS = {
 }
 
 
-def rotulo(clave, n):
+def rotulo(clave, n, nuevas=True):
+    """Titular del correo. `nuevas=False` en el envio de prueba: decir "8
+    contrataciones NUEVAS" encima de un aviso que explica que no lo son es
+    contradecirse dentro del mismo correo."""
     c = AVISOS[clave]
-    return "%d %s" % (n, c["uno"] if n == 1 else c["varias"])
+    s = c["uno"] if n == 1 else c["varias"]
+    if not nuevas:
+        s = s.replace("nuevas ", "").replace("nueva ", "")
+    return "%d %s" % (n, s)
 
 
 # --------------------------------------------------------------------------
@@ -166,7 +172,7 @@ def ficha(r):
         + "".join(campos) + "</table>" + boton + "</div>")
 
 
-def cuerpo_html(clave, regs, generado):
+def cuerpo_html(clave, regs, generado, nuevas=True):
     cfg = AVISOS[clave]
     n = len(regs)
     total = sum(float(r.get("valor") or 0) for r in regs)
@@ -186,12 +192,12 @@ def cuerpo_html(clave, regs, generado):
     return (
         '<!DOCTYPE html><html lang="es"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
-        "<title>" + esc(rotulo(clave, n)) + "</title></head><body style=\"margin:0\">"
+        "<title>" + esc(rotulo(clave, n, nuevas)) + "</title></head><body style=\"margin:0\">"
         '<div style="font-family:system-ui,-apple-system,Segoe UI,sans-serif;'
         'background:#F5F7F6;padding:22px;color:#16211F">'
         '<div style="max-width:680px;margin:0 auto">'
         '<h1 style="font-size:18px;margin:0 0 6px;font-weight:600">'
-        + esc(rotulo(clave, n)) + "</h1>"
+        + esc(rotulo(clave, n, nuevas)) + "</h1>"
         '<p style="font-size:13px;line-height:1.55;color:#3D4F4C;margin:0 0 4px">'
         + cfg["entrada"] + "</p>"
         '<p style="font-family:Consolas,monospace;font-size:11.5px;color:#6B807C;'
@@ -207,11 +213,11 @@ def cuerpo_html(clave, regs, generado):
         "</a>.</p></div></div></body></html>")
 
 
-def cuerpo_texto(clave, regs, generado):
+def cuerpo_texto(clave, regs, generado, nuevas=True):
     """Version en texto plano. No es un adorno: si el cliente no pinta HTML, sin
     esto el correo llega en blanco."""
     cfg = AVISOS[clave]
-    lineas = [rotulo(clave, len(regs)),
+    lineas = [rotulo(clave, len(regs), nuevas),
               "Recoleccion del %s" % generado, ""]
     for r in regs[:TOPE_FICHAS]:
         lineas += [
@@ -266,6 +272,60 @@ def enviar(asunto, destinatarios, html, texto):
     return True
 
 
+EN_PRUEBA = 8
+
+
+def enviar_prueba(registros, destinos, generado):
+    """Manda los dos correos una vez, con lo que hoy esta clasificado.
+
+    Sirve para dos cosas a la vez: ver como llega el correo y comprobar que la
+    contrasena de aplicacion quedo bien puesta. No escribe en avisados.csv a
+    proposito: si lo hiciera, esta prueba se comeria los avisos de verdad de la
+    contratacion que todavia no se ha notificado.
+    """
+    hubo = False
+    for clave, c in AVISOS.items():
+        muestras = [r for r in registros if r.get("nivel") == c["nivel"]]
+        if not muestras:
+            print(f"  {clave}: no hay nada en este nivel para mostrar.")
+            continue
+        muestras.sort(key=lambda r: -float(r.get("valor") or 0))
+        total = len(muestras)
+        muestras = muestras[:EN_PRUEBA]
+
+        para = [d for d in destinos.get(c["para"], []) if d and "@" in d]
+        if not para:
+            print(f"  ! {clave}: no hay destinatarios en config.json > correo > {c['para']}.")
+            continue
+
+        aviso = (f"PRUEBA. No es un aviso de novedades: son las {len(muestras)} de mayor "
+                 f"valor de las {total} que hoy estan en este nivel, para ver como llega "
+                 f"el correo. Nada de esto se marca como avisado.")
+        html = cuerpo_html(clave, muestras, generado, nuevas=False).replace(
+            "<h1 ", '<p style="background:#FFF4D6;border:1px solid #E0C070;padding:10px 12px;'
+                    'border-radius:3px;font-size:13px;color:#5C4708;margin:0 0 14px">'
+            + esc(aviso) + "</p><h1 ", 1)
+        texto = "*** " + aviso + " ***\n\n" + cuerpo_texto(clave, muestras, generado, nuevas=False)
+        # Sin la palabra "nuevas": no lo son, y un asunto que promete novedades
+        # sobre contratacion de hace semanas es justo lo que no puede hacer un
+        # aviso del que se espera que se le crea.
+        asunto = "[PRUEBA] Sismo 10-ago · %s · %s" % (
+            c["varias"].replace("nuevas ", "").replace("nueva ", ""), generado[:10])
+
+        try:
+            if enviar(asunto, para, html, texto):
+                print(f"  {clave}: PRUEBA enviada a {', '.join(para)} "
+                      f"({len(muestras)} de {total}). La bitacora no se toco.")
+                hubo = True
+        except Exception as e:
+            print(f"  ! {clave}: fallo el envio de prueba: {e}")
+            return 1
+    if not hubo:
+        print("  no se envio ninguna prueba. Revise las credenciales y los destinatarios.")
+        return 1
+    return 0
+
+
 # --------------------------------------------------------------------------
 # Principal
 # --------------------------------------------------------------------------
@@ -274,6 +334,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--probar", action="store_true",
                     help="no envia; escribe los correos en reportes/ para revisarlos")
+    ap.add_argument("--prueba", action="store_true",
+                    help="envia UNA vez, con lo que hoy esta clasificado, para ver como "
+                         "llega. No toca la bitacora: nada se da por avisado.")
     args = ap.parse_args()
 
     ruta_tablero = os.path.join(DIR_DATOS, "tablero.json")
@@ -289,6 +352,15 @@ def main():
 
     generado = datos.get("generado", "")
     registros = datos.get("registros", [])
+
+    # Envio de prueba, a mano. Manda los dos correos con lo que HOY esta
+    # clasificado, para ver como llegan, y NO toca la bitacora: nada se da por
+    # avisado, asi que la corrida siguiente sigue avisando de lo que de verdad
+    # aparezca. Se limita a las mas grandes porque el correo es para ver el
+    # formato, no para leerse entero.
+    if args.prueba:
+        return enviar_prueba(registros, destinos, generado)
+
     avisados = leer_avisados()
 
     # Primera vez: se siembra y no se manda nada. Si no, el estreno del aviso

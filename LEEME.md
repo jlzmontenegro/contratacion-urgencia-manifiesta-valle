@@ -313,8 +313,19 @@ después, el contrato vuelve a avisarse, porque la firma es la noticia.
    aplicación**, no la del correo). Opcionalmente `CORREO_REMITENTE`, y las variables
    `CORREO_SERVIDOR` y `CORREO_PUERTO` si no es Gmail (por defecto `smtp.gmail.com:465`).
 
+**El correo solo sale si hay algo nuevo.** Si la recolección no encontró contratación que no
+se hubiera avisado ya, el paso escribe *"nada nuevo"* en el registro y no manda nada. No hay
+correos de cortesía.
+
+**Para probarlo sin esperar a que aparezca algo**, en la pestaña *Actions* del repositorio hay un
+flujo llamado **«Enviar correo de prueba»** con su botón *Run workflow*. Manda los dos correos con
+lo que hoy está clasificado —las ocho de mayor valor de cada nivel—, marcados como PRUEBA en el
+asunto y con un aviso ámbar arriba. **No toca `datos/avisados.csv`**, así que la prueba no se come
+los avisos de verdad: lo que todavía no se ha notificado se sigue notificando en la corrida
+siguiente. Tarda segundos, porque no recolecta: lee el `tablero.json` ya publicado.
+
 Para ver cómo quedan los correos sin mandarlos: `py -3 correo.py --probar`, que los escribe
-en `reportes/`.
+en `reportes/`. Y `py -3 correo.py --prueba` es lo mismo que el botón, desde la línea de órdenes.
 
 ## El tablero es un archivo autónomo
 

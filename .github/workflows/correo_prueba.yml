@@ -1,0 +1,39 @@
+name: Enviar correo de prueba
+
+# Un boton para comprobar que la contrasena de aplicacion quedo bien puesta y
+# para ver como llega el correo, sin esperar a que aparezca contratacion nueva.
+#
+# NO recolecta: lee el datos/tablero.json que ya esta publicado, asi que tarda
+# segundos. Y NO toca datos/avisados.csv, de modo que esta prueba no se come los
+# avisos de verdad: la contratacion que todavia no se ha notificado se sigue
+# notificando en la corrida siguiente.
+on:
+  workflow_dispatch:
+
+jobs:
+  prueba:
+    runs-on: ubuntu-latest
+    env:
+      TZ: America/Bogota
+      PYTHONUNBUFFERED: "1"
+    timeout-minutes: 5
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Enviar la prueba
+        env:
+          CORREO_USUARIO: ${{ secrets.CORREO_USUARIO }}
+          CORREO_CLAVE: ${{ secrets.CORREO_CLAVE }}
+          CORREO_REMITENTE: ${{ secrets.CORREO_REMITENTE }}
+          CORREO_SERVIDOR: ${{ vars.CORREO_SERVIDOR }}
+          CORREO_PUERTO: ${{ vars.CORREO_PUERTO }}
+        # Sin pip install: correo.py solo usa la biblioteca estandar. Si algun dia
+        # dejara de ser asi, este paso falla y se vera aqui, no en la corrida de
+        # las 8:30.
+        run: python correo.py --prueba
