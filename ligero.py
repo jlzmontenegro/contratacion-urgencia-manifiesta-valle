@@ -736,10 +736,7 @@ figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
   <p class="ayuda" id="ay-mapa" hidden>Pulse cualquier municipio o departamento y la tabla
   de abajo se queda solo con la contratación de ese territorio; pulse otra vez para quitarlo.
   El que está elegido va con borde grueso, y el resto sigue mostrando sus cifras para poder
-  comparar y cambiar de selección. Los dos botones cambian la vista, no los filtros.
-  <b>Son dos mapas y no uno</b> porque el total de un departamento y el de un municipio no
-  caben en la misma escala de color: el Valle saldría pálido al lado de Antioquia aun
-  contratando más. En el PDF salen los dos.</p>
+  comparar y cambiar de selección. Los dos botones cambian la vista, no los filtros.</p>
   <!-- UN solo lienzo con selector, y no los dos mapas fundidos en un dibujo. Un
        mapa de Colombia con el Valle abierto en municipios obligaría a poner en la
        misma escala de color el total de un departamento y el de un municipio; el
