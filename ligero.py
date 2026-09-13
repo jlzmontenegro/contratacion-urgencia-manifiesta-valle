@@ -146,10 +146,16 @@ def _operaciones(registros):
             "rp": (proceso or {}).get("referencia") or "",
             "uc": (contrato or {}).get("url") or "",
             "up": (proceso or {}).get("url") or "",
-            # Expediente. El contrato y su proceso comparten el mismo, asi que da
-            # igual de cual de los dos se tome; se coge el primero que lo traiga
-            # porque en una operacion suelta solo hay uno.
-            "dn": next((int(r.get("docs_n") or 0) for r in regs if r.get("docs_n")), 0),
+            # Enlace a los estudios previos. El contrato y su proceso comparten
+            # expediente, asi que da igual de cual de los dos se tome.
+            #
+            # La CUENTA de documentos del expediente no viaja (decision del
+            # usuario, 13-sep-2026). Se probo con un aviso -"19 documentos en el
+            # expediente; ninguno publicado como estudios previos"- y ocupaba dos
+            # renglones en dos tercios de las filas para decir que algo no esta.
+            # Esta pagina va incrustada en otro sitio y se lee de arriba abajo:
+            # aqui manda la densidad. El tablero grande si conserva el detalle,
+            # porque alli se revisa fila por fila.
             "ep": _ep_corto(next((r.get("docs_ep") or "" for r in regs
                                   if r.get("docs_ep")), "")),
         })
@@ -611,9 +617,10 @@ figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
       <dd>El documento en el que la entidad explica <b>por qué</b> contrata esto, qué
       necesita y cómo calculó el precio. Es lo que permite juzgar si la contratación tiene
       sentido, y no solo si existe. El botón lleva directo al archivo en SECOP.
-      <b>Solo aparece cuando la entidad lo publicó con ese nombre</b>: si no está, la fila
-      dice cuántos documentos tiene el expediente. Que falte no significa que no se hayan
-      hecho —significa que ahí no están—, y eso también se puede preguntar.</dd>
+      <b>Solo aparece cuando la entidad lo publicó con ese nombre</b>, y hoy es así en una de
+      cada tres operaciones. Que el botón falte no significa que los estudios no se hayan
+      hecho —significa que en el expediente no están publicados con ese nombre—, y eso
+      también se le puede preguntar a la entidad.</dd>
 
       <dt>Contratista</dt>
       <dd>Quién es el encargado de ejecutar el objeto contratado. En un proceso abierto
@@ -1112,10 +1119,7 @@ function fila(o, i){
       '<div class="pie">' + esc(NOMBRE_GRUPO[o.g] || "") +
         (o.mn ? " · " + esc(o.mn) : "") + (o.tc ? " · " + esc(o.tc) : "") +
         (o.m ? " · " + esc(o.m) : "") + "</div>" +
-      '<div class="refs">' + refs.join("") + "</div>" +
-      (o.dn && !o.ep ? '<div class="menor">' + o.dn + ' documento' +
-          (o.dn === 1 ? "" : "s") + ' en el expediente; ninguno publicado como ' +
-          'estudios previos.</div>' : "") + "</td>" +
+      '<div class="refs">' + refs.join("") + "</div></td>" +
     '<td class="num" data-etq="Valor">' + esc(pesos(o.v)) +
       '<div class="menor">' + (o.f ? "valor firmado" : "precio base") + "</div></td>" +
     '<td data-etq="Contratista">' +

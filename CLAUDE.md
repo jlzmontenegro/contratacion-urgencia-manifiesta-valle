@@ -749,17 +749,25 @@ de ruido y el enlace bailaría sin que nadie hubiera publicado nada.
 en la del contrato—, así que se deduplica por `id_documento` antes de contar. Sin eso, la fila
 anunciaría el doble de documentos de los que hay.
 
-**Cuando no hay estudios previos, la fila dice cuántos documentos tiene el expediente.** Un
-hueco mudo se lee como un fallo del tablero; el número es información, y la guía añade la
-frase que importa: que falte **no significa que no se hayan hecho**, significa que ahí no
-están, y eso también se puede preguntar.
+**En el tablero grande, cuando no hay estudios previos la fila dice cuántos documentos tiene
+el expediente; en la versión ligera NO** (decisión del usuario, 13-sep-2026). Se probó con el
+aviso en los dos y en el ligero ocupaba dos renglones en dos tercios de las filas para decir
+que algo no está: esa página va incrustada en otro sitio, se lee de arriba abajo y ahí manda
+la densidad. En el tablero grande se revisa fila por fila y el detalle se gana el espacio.
+**Quitarlo ahorró 1 KB servido, no los 15 que se supusieron**: gzip ya comprimía la frase
+repetida. El motivo bueno era el espacio vertical, no el peso.
+
+**Que el botón falte no significa que los estudios no se hayan hecho**, sino que en el
+expediente no están publicados con ese nombre. La guía de la versión ligera lo dice con esas
+palabras, y añade que eso también se le puede preguntar a la entidad. Un hueco mudo se lee
+como un fallo del tablero.
 
 **En el payload de `ligero.html` viaja solo el `DocumentId`,** no la URL entera: son 140
 caracteres de los que únicamente cambia ese número, y en el payload van cien. `urlEp()` la
 rearma, y lo que no encaje en el patrón se guarda entero y se usa tal cual, así que el día que
 SECOP cambie la forma esto no se rompe. **Ahorra 13 KB en crudo y CERO servidos**: gzip ya
 deduplicaba el prefijo. Se conserva por el coste de parseo, no por el peso. La versión ligera
-pasó de 87 KB a **102 KB servidos**.
+pasó de 87 KB a **101 KB servidos**.
 
 ## El resumen semanal (`resumen.py`)
 
