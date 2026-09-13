@@ -594,6 +594,48 @@ cero peticiones de red después de la primera y ninguna dependencia externa. Lo 
 cada doce horas** con el mismo sello de hora que el tablero grande. No se edita a mano: se
 edita `ligero.py`.
 
+**Una COPIA del archivo también se actualiza sola** (13-sep-2026). Los datos siguen viajando
+dentro del HTML —eso es lo que lo hace cargar al instante, funcionar sin internet y no
+depender de nadie—, pero después de pintar con lo incrustado la página **pide los datos
+frescos** a `datos/ligero.json` del sitio de origen y vuelve a pintar si son más nuevos. Sin
+esto, quien se llevara el archivo se quedaba con la foto del día que lo descargó y nadie se
+enteraba.
+
+**La red solo MEJORA lo que ya se está viendo.** Si la petición falla, no pasa nada visible y
+el sello de procedencia sigue diciendo de cuándo son los datos que hay. Un cero en este
+tablero no puede venir de un fallo de red, que es la regla de siempre.
+
+**Se pide `datos/ligero.json`, NO `datos/tablero.json`**: el segundo mide **24,7 MB** porque
+lleva la contratación ordinaria entera. El del ligero pesa 349 KB en crudo y **59 KB
+servidos**. Va **sin el mapa** —53 KB de contornos del DANE que no cambian nunca—, así que
+`D.mapa` se conserva tal cual al refrescar; comprobado que el mapa sigue pintado después.
+
+**Al refrescar hay que reasignar `OPS`, no solo `D.ops`.** `OPS` se sacó de `D.ops` al
+arrancar y es la lista con la que trabaja todo el guion: cambiar solo `D.ops` deja la tabla
+pintando las viejas. Y `llenar()` reescribe el sello, así que no hay que tocarlo aparte. **Si
+la recolección es la misma, no se repinta**: hacerlo perdería el filtro, la página y el
+municipio que el lector tuviera elegidos.
+
+**GitHub Pages sirve con `access-control-allow-origin: *`**, comprobado, así que la copia
+alojada en otro dominio puede pedirlo sin más.
+
+**La página le dice su alto a quien la incrusta, por `postMessage`** (13-sep-2026). Un iframe
+de otro dominio no puede medirse desde fuera: quien aloja tiene que fijar un alto a mano, y si
+se queda corto el tablero sale con su propia barra dentro del marco y si se pasa deja un hueco.
+Ahora la medida la manda quien sí la sabe. El mensaje es
+`{tipo: "tablero-sismo:alto", alto: N}` y se envía al cargar, al cambiar el tamaño, al filtrar,
+al pasar de página y al abrir la guía —`ResizeObserver` sobre el `body` los coge todos, más un
+intervalo de 1,5 s como red de seguridad—.
+
+**`targetOrigin` va en `"*"` a propósito y es seguro aquí**: la página está pensada para
+incrustarse en cualquier sitio y no sabe cuál es el de arriba; lo único que manda es un número.
+**La comprobación de origen le toca a quien recibe**, y por eso el fragmento que se le entrega
+al que incrusta la trae escrita. **Umbral de 8 px** para cortar el rebote: la página avisa, el
+de arriba cambia el alto, el contenido refluye y volvería a avisar.
+
+Comprobado con una página anfitriona de prueba: alto aplicado **6.417 px contra 6.417 reales**,
+sin hueco ni barra interna, y al cambiar los datos se reajustó solo a 7.203.
+
 **Ni siquiera las tipografías de Google.** El tablero grande usa Zilla Slab, Public Sans e
 IBM Plex Mono; este usa la pila del sistema. Una página incrustada en otra no puede quedarse
 esperando una fuente remota, y una que no llega deja el texto saltando. Es el único sitio

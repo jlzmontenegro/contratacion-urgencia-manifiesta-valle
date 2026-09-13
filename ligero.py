@@ -217,6 +217,28 @@ def escribir(payload, base, destino=None):
     destino = destino or os.path.join(base, "ligero.html")
     with io.open(destino, "w", encoding="utf-8", newline="") as fh:
         fh.write(html)
+
+    # Los MISMOS datos, aparte, para que una copia del HTML alojada en otro sitio
+    # pueda refrescarse sola. Sin esto, quien se lleve el archivo se queda con la
+    # foto del dia que lo descargo y nadie se entera.
+    #
+    # Va sin el mapa: son 53 KB de contornos del DANE que no cambian nunca, y
+    # pedirlos cada vez seria pagar un cuarto del peso por nada. El HTML ya los
+    # trae dentro y el guion los conserva al refrescar.
+    #
+    # NO se usa datos/tablero.json para esto: mide 24,7 MB porque lleva la
+    # contratacion ordinaria entera. Este pesa unos 100 KB servidos.
+    sin_mapa = dict(datos)
+    sin_mapa.pop("mapa", None)
+    try:
+        ruta_datos = os.path.join(base, "datos", "ligero.json")
+        os.makedirs(os.path.dirname(ruta_datos), exist_ok=True)
+        with io.open(ruta_datos, "w", encoding="utf-8", newline="") as fh:
+            fh.write(json.dumps(sin_mapa, ensure_ascii=False, separators=(",", ":")))
+    except OSError as e:
+        # Que falle esto no puede tumbar la pagina: el HTML ya esta escrito y
+        # trae los datos dentro. Solo se pierde el refresco de las copias.
+        print(f"  ! no se pudo escribir datos/ligero.json: {e}")
     return destino
 
 
@@ -1786,6 +1808,96 @@ function conectar(){
 }
 
 llenar(); conectar(); pintarTabla(); pintarMapas(); pintarChip(); pintarOrden();
+
+/* ---------------------------------------------------------------------------
+   REFRESCO DE LOS DATOS
+
+   El HTML trae los datos DENTRO, asi que una copia descargada mostraria para
+   siempre la foto del dia en que se bajo. Aqui, despues de pintar con lo
+   incrustado, se piden los datos frescos al sitio de origen y se vuelve a
+   pintar si son mas nuevos.
+
+   Lo incrustado NO se quita: es lo que hace que la pagina cargue al instante,
+   funcione sin internet y no dependa de que responda un tercero. La red solo
+   MEJORA lo que ya se esta viendo; si falla, no pasa nada visible y el sello de
+   procedencia sigue diciendo la verdad sobre de cuando son los datos. Un cero
+   en este tablero nunca puede venir de un fallo de red.
+
+   Se pide datos/ligero.json y no datos/tablero.json: el segundo mide 24,7 MB
+   porque lleva la contratacion ordinaria entera.
+--------------------------------------------------------------------------- */
+(function(){
+  var ORIGEN = "https://jlzmontenegro.github.io/contratacion-urgencia-manifiesta-valle/datos/ligero.json";
+  if (!window.fetch) return;
+  fetch(ORIGEN, { cache: "default" })
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(nuevo){
+      if (!nuevo || !nuevo.ops || !nuevo.ops.length) return;
+      /* Si es la misma recoleccion no se toca nada: repintar sin motivo perderia
+         el filtro, la pagina y el municipio que el lector tuviera elegidos. */
+      if (nuevo.generado === D.generado) return;
+      D.generado = nuevo.generado;
+      D.ops = nuevo.ops;
+      if (nuevo.grupos) D.grupos = nuevo.grupos;
+      if (nuevo.evento) D.evento = nuevo.evento;
+      if (nuevo.desde) D.desde = nuevo.desde;
+      /* OPS es la lista con la que trabaja todo el guion, y se saco de D.ops al
+         arrancar: cambiar solo D.ops dejaria la tabla pintando las viejas. */
+      OPS = D.ops;
+      /* El mapa no viaja en el refresco -los contornos del DANE no cambian- y
+         por eso D.mapa se conserva tal cual. */
+      pagina = 1;
+      /* llenar() rehace los desplegables Y reescribe el sello de procedencia con
+         la fecha nueva, asi que no hay que tocarlo aparte. */
+      llenar(); pintarTabla(); pintarMapas(); pintarChip(); pintarOrden();
+    })
+    .catch(function(){ /* sin red o sin permiso: se queda lo incrustado */ });
+})();
+
+/* ---------------------------------------------------------------------------
+   ALTO AUTOMATICO CUANDO VA INCRUSTADA EN OTRO SITIO
+
+   Un iframe de otro dominio no puede medirse desde fuera: la pagina que aloja
+   no ve el contenido y tiene que fijar un alto a mano. Si se queda corto, el
+   tablero sale con su propia barra de desplazamiento dentro del marco; si se
+   pasa, deja un hueco en blanco. Asi que la medida la manda quien si la sabe,
+   que es esta pagina.
+
+   Se avisa en cada cambio real de alto: al cargar, al cambiar de tamaño la
+   ventana, al abrir la guia, al filtrar, al pasar de pagina. ResizeObserver
+   sobre el body los coge todos; el intervalo es la red de seguridad para
+   navegadores sin ResizeObserver y para cambios que no toquen la caja.
+
+   targetOrigin va en "*" A PROPOSITO: esta pagina esta pensada para incrustarse
+   en cualquier sitio y no sabe de antemano cual es el de arriba. Es seguro
+   porque lo unico que se manda es un numero -el alto- y nada mas; no viaja
+   ningun dato. La comprobacion de origen le toca a quien recibe, y por eso el
+   fragmento que se le pasa al que incrusta la trae escrita.
+--------------------------------------------------------------------------- */
+(function(){
+  if (window.parent === window) return;      // no esta incrustada: no hay a quien avisar
+  var ultimo = 0, pendiente = null;
+  function medir(){
+    var alto = Math.max(
+      document.documentElement.scrollHeight,
+      document.body ? document.body.scrollHeight : 0);
+    /* Un umbral pequeño evita el bucle: la pagina avisa, el de arriba cambia el
+       alto del marco, el contenido refluye y volveria a avisar. Con 8px se corta
+       el rebote y no se pierde ningun cambio que se note. */
+    if (Math.abs(alto - ultimo) < 8) return;
+    ultimo = alto;
+    window.parent.postMessage({ tipo: "tablero-sismo:alto", alto: alto }, "*");
+  }
+  function avisar(){
+    if (pendiente) cancelAnimationFrame(pendiente);
+    pendiente = requestAnimationFrame(medir);
+  }
+  window.addEventListener("load", avisar);
+  window.addEventListener("resize", avisar);
+  if (window.ResizeObserver && document.body) new ResizeObserver(avisar).observe(document.body);
+  setInterval(medir, 1500);
+  avisar();
+})();
 </script>
 </body>
 </html>
