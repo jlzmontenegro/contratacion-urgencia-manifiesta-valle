@@ -25,6 +25,7 @@ archivo.
 import io
 import json
 import os
+import re
 
 # Los seis grupos que pidio el usuario, en el orden en que se muestran. La llave
 # es la que viaja en el dato; el rotulo es lo que se lee en pantalla.
@@ -86,6 +87,22 @@ def _grupo_ligero(reg):
     return "otros"
 
 
+# Las url de descarga de SECOP son 140 caracteres de los que solo cambia el
+# DocumentId. Guardarlas enteras cuesta 14 KB en crudo para nada: aqui viaja solo
+# el numero y el guion rearma la direccion. Si alguna no encaja en el patron
+# -otro dominio, otro formato- se guarda tal cual y el guion la usa entera, asi
+# que el dia que SECOP cambie la forma esto no se rompe, solo pesa un poco mas.
+_EP_PATRON = re.compile(
+    r"^https://community\.secop\.gov\.co/Public/Archive/RetrieveFile/Index"
+    r"\?DocumentId=(\d+)&InCommunity=False&InPaymentGateway=False"
+    r"&DocUniqueIdentifier=$")
+
+
+def _ep_corto(url):
+    m = _EP_PATRON.match(url or "")
+    return m.group(1) if m else (url or "")
+
+
 def _operaciones(registros):
     """Junta proceso y contrato en una sola operacion, como el tablero grande.
 
@@ -129,6 +146,12 @@ def _operaciones(registros):
             "rp": (proceso or {}).get("referencia") or "",
             "uc": (contrato or {}).get("url") or "",
             "up": (proceso or {}).get("url") or "",
+            # Expediente. El contrato y su proceso comparten el mismo, asi que da
+            # igual de cual de los dos se tome; se coge el primero que lo traiga
+            # porque en una operacion suelta solo hay uno.
+            "dn": next((int(r.get("docs_n") or 0) for r in regs if r.get("docs_n")), 0),
+            "ep": _ep_corto(next((r.get("docs_ep") or "" for r in regs
+                                  if r.get("docs_ep")), "")),
         })
     # De mayor a menor valor, como el tablero grande.
     ops.sort(key=lambda o: -o["v"])
@@ -362,6 +385,11 @@ tbody tr:hover{background:var(--panel-2)}
      border:1px solid var(--borde);text-decoration:none;color:var(--texto);
      white-space:nowrap;margin:0 4px 4px 0}
 .enl:hover{border-color:var(--acento);color:var(--acento-tinta)}
+/* Los estudios previos van destacados: de los tres enlaces de la fila es el
+   unico que explica POR QUE se contrato, y es el que menos gente sabe que
+   existe. Los otros dos llevan a la ficha; este, al documento. */
+.enl-ep{border-color:var(--acento);color:var(--acento-tinta);font-weight:600}
+.enl-ep:hover{background:var(--acento);color:#fff;border-color:var(--acento)}
 /* Compartir */
 .compartir{display:flex;flex-wrap:wrap;gap:4px;margin-top:7px}
 .compartir button{font-size:11px;padding:3px 8px;border-radius:3px;line-height:1.5;
@@ -578,6 +606,14 @@ figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
       <dd>Lo que se contrató, con las palabras de la entidad. SECOP II lo recorta a 500
       caracteres; cuando llega en ese tope la fila lo advierte y el texto entero está en
       el expediente.</dd>
+
+      <dt>Estudios previos</dt>
+      <dd>El documento en el que la entidad explica <b>por qué</b> contrata esto, qué
+      necesita y cómo calculó el precio. Es lo que permite juzgar si la contratación tiene
+      sentido, y no solo si existe. El botón lleva directo al archivo en SECOP.
+      <b>Solo aparece cuando la entidad lo publicó con ese nombre</b>: si no está, la fila
+      dice cuántos documentos tiene el expediente. Que falte no significa que no se hayan
+      hecho —significa que ahí no están—, y eso también se puede preguntar.</dd>
 
       <dt>Contratista</dt>
       <dd>Quién es el encargado de ejecutar el objeto contratado. En un proceso abierto
@@ -805,6 +841,17 @@ function esc(s){
 function pesos(v){
   if (!v) return "$ 0";
   return "$ " + Math.round(v).toLocaleString("es-CO");
+}
+/* El enlace a los estudios previos viaja como el DocumentId a secas, porque la
+   direccion completa son 140 caracteres de los que solo cambia ese numero y en
+   el payload van cien. Si lo que llega no son solo digitos, es una direccion
+   entera que no encajaba en el patron y se usa tal cual. */
+function urlEp(v){
+  if (!v) return "";
+  if (!/^[0-9]+$/.test(v)) return v;
+  return "https://community.secop.gov.co/Public/Archive/RetrieveFile/Index" +
+         "?DocumentId=" + v + "&InCommunity=False&InPaymentGateway=False" +
+         "&DocUniqueIdentifier=";
 }
 /* Cifras redondas para los titulos del mapa y el resumen: "$ 1.321,9 M" se lee
    de un vistazo y "$ 1.321.917.014" no. */
@@ -1036,6 +1083,14 @@ function fila(o, i){
   var enl = "";
   if (o.uc) enl += '<a class="enl" href="' + esc(o.uc) + '" target="_blank" rel="noopener">Contrato</a>';
   if (o.up) enl += '<a class="enl" href="' + esc(o.up) + '" target="_blank" rel="noopener">Proceso</a>';
+  // Los estudios previos son el documento donde la entidad explica POR QUE
+  // contrata esto y por cuanto. Solo aparece el boton si el archivo existe de
+  // verdad: uno que estuviera vacio en la mitad de las filas enseñaria a no
+  // pulsarlo. Cuando no esta, se dice cuantos documentos tiene el expediente,
+  // que es informacion y no un hueco.
+  if (o.ep) enl += '<a class="enl enl-ep" href="' + esc(urlEp(o.ep)) + '" target="_blank" ' +
+      'rel="noopener" title="Documento con que la entidad justifica la contratación">' +
+      'Estudios previos</a>';
   var fechas = "";
   if (o.di || o.df) fechas = '<div class="menor">' +
       (o.di ? "inicia " + esc(o.di) : "") + (o.di && o.df ? " · " : "") +
@@ -1057,7 +1112,10 @@ function fila(o, i){
       '<div class="pie">' + esc(NOMBRE_GRUPO[o.g] || "") +
         (o.mn ? " · " + esc(o.mn) : "") + (o.tc ? " · " + esc(o.tc) : "") +
         (o.m ? " · " + esc(o.m) : "") + "</div>" +
-      '<div class="refs">' + refs.join("") + "</div></td>" +
+      '<div class="refs">' + refs.join("") + "</div>" +
+      (o.dn && !o.ep ? '<div class="menor">' + o.dn + ' documento' +
+          (o.dn === 1 ? "" : "s") + ' en el expediente; ninguno publicado como ' +
+          'estudios previos.</div>' : "") + "</td>" +
     '<td class="num" data-etq="Valor">' + esc(pesos(o.v)) +
       '<div class="menor">' + (o.f ? "valor firmado" : "precio base") + "</div></td>" +
     '<td data-etq="Contratista">' +
@@ -1456,6 +1514,7 @@ function imprimirInforme(){
     var enl = [];
     if (o.uc) enl.push('<a class="ir" href="' + esc(o.uc) + '">Contrato ↗</a>');
     if (o.up) enl.push('<a class="ir" href="' + esc(o.up) + '">Proceso ↗</a>');
+    if (o.ep) enl.push('<a class="ir" href="' + esc(urlEp(o.ep)) + '">Estudios previos ↗</a>');
     var fechas = [];
     if (o.d) fechas.push((o.f ? "Firma " : "Publicado ") + esc(o.d));
     if (o.di) fechas.push("Inicia " + esc(o.di));

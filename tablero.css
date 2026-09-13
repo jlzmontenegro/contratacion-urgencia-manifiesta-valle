@@ -133,6 +133,10 @@
   .boton-secop{padding:5px 11px;font-size:12px;border-radius:7px;background:var(--acento);
                color:#fff;border:1px solid var(--acento)}
   .boton-secop:hover{opacity:.88}
+  /* Los estudios previos van en hueco y no en relleno: llevan a un PDF y no a la
+     ficha de SECOP, y dos botones macizos seguidos compiten entre si. */
+  .boton-ep{background:transparent;color:var(--acento);border:1px solid var(--acento)}
+  .boton-ep:hover{background:var(--acento);color:#fff;opacity:1}
 
   /* ---- Portada: lo primero que ve alguien que llega sin contexto ---- */
   .portada{background:var(--panel);border:1px solid var(--borde);border-radius:12px;

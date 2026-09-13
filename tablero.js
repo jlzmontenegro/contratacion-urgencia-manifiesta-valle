@@ -1136,8 +1136,18 @@ function filaOperacion(o){
      puede llegar por cualquiera de las dos. */
   const refs = [o.proceso, o.contrato].filter(Boolean)
     .map(r => `<span class="ref" title="Número de ${r.tipo.toLowerCase()} en SECOP">${esc(r.referencia || r.id)}</span>`).join("");
-  const enlaces = [o.contrato, o.proceso].filter(r => r && r.url)
+  let enlaces = [o.contrato, o.proceso].filter(r => r && r.url)
     .map(r => `<a class="boton boton-secop" href="${esc(r.url)}" target="_blank" rel="noopener">${r.tipo === "Contrato" ? "Contrato" : "Proceso"}</a>`).join("");
+  /* Estudios previos: el documento donde la entidad explica por que contrata
+     esto. Aqui vale mas que en la version ligera, porque es donde se decide si
+     una fila de "Por revisar" tiene que ver con el sismo: la respuesta suele
+     estar ahi y no en el objeto, que viene en terminos administrativos.
+     El contrato y su proceso comparten expediente, asi que basta con el primero
+     de los dos que traiga el enlace. */
+  const ep = [o.contrato, o.proceso].find(r => r && r.docs_ep);
+  if (ep) enlaces += `<a class="boton boton-secop boton-ep" href="${esc(ep.docs_ep)}"
+      target="_blank" rel="noopener"
+      title="Documento con que la entidad justifica la contratación">Estudios previos</a>`;
   return `
   <tr>
     <td class="col-est" data-etq="Estado">${est}

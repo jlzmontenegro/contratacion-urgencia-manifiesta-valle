@@ -24,6 +24,7 @@ tablero.js             render           ┘
 ligero.py              genera ligero.html: un HTML autónomo, solo lo confirmado
 correo.py              avisa por correo de lo nuevo. Dos correos, dos públicos.
 resumen.py             informe semanal de los lunes, con el mapa dibujado en PNG
+documentos.py          enlaza cada fila con los estudios previos de su expediente
 datos/tablero.json     lo que la página carga
 datos/avisados.csv     de qué ya salió correo. Lo escribe correo.py
 datos/*.csv            estado y trazas; los mantiene GitHub Actions
@@ -705,6 +706,61 @@ corrida. Va con `or`.
 previsualizadores— que abren el HTML por su cuenta y sin esa línea leen el archivo en la
 codificación del sistema: «contratación» sale como «contrataciÃ³n» en todas las tildes.
 
+## Los estudios previos (`documentos.py`)
+
+Estaba en *Lo que quedó sin construir* desde agosto. Se construyó el 13-sep-2026.
+
+**Se cruza por EXPEDIENTE (`CO1.BDOS.*`), no por contrato, y esa es toda la historia.**
+Los estudios previos son un documento **precontractual**: cuelgan del expediente, no del
+contrato. Medido sobre las 218 operaciones confirmadas que cruzan:
+
+| cruce | documentos | con estudios previos |
+|---|---|---|
+| `n_mero_de_contrato` | 2.374 | 26 de 218 — **11%** |
+| `proceso` (`CO1.BDOS.*`) | 3.504 | 100 de 218 — **45%** |
+
+El convenio `4163.001.27.1.5-2026` lo resume: por contrato no aparece ninguno; por expediente
+aparece *«2. ESTUDIOS PREVIOS FUNDACION.pdf»*. Cruzar por contrato habría dejado el botón
+vacío en 9 de cada 10 filas, que es peor que no ponerlo: enseña a no pulsarlo.
+
+**La llave se llama distinto en cada dataset y es el mismo número.** `proceso_de_compra` en
+contratos, `id_del_portafolio` en procesos. El colector la guarda en `portafolio`, y como el
+contrato y su proceso **comparten expediente**, una consulta sirve para los dos y los
+**procesos que aún no tienen contrato quedan cubiertos** — que era justo el agujero de cruzar
+por contrato. SECOP I no participa: no tiene expediente electrónico y su `portafolio` va vacío.
+
+**Solo se consulta lo que se mira: `Alta` y `Media`.** La ordinaria son doce mil registros y
+multiplicaría por veinte el tiempo de corrida para un atajo que ahí no le sirve a nadie. En
+`Media` es donde más rinde: la respuesta a si una fila tiene que ver con el sismo suele estar
+en los estudios previos y no en el objeto, que viene en términos administrativos.
+
+**Es best effort, como `ligero.html`.** Si el dataset no responde, el tablero sale igual sin
+los enlaces. De aquí no cuelga ninguna cifra: un expediente es un atajo.
+
+**`url_descarga_documento` llega como objeto `{'url': ...}`, no como cadena.** Es una columna
+de tipo URL de Socrata. Tratarla como texto deja el `repr` del diccionario en el `href` y el
+botón lleva a ninguna parte.
+
+**El documento elegido se ordena para que sea estable.** Cuando hay varios candidatos se toma
+el primero por nombre e id. Si la elección cambiara de una corrida a otra, el diff se llenaría
+de ruido y el enlace bailaría sin que nadie hubiera publicado nada.
+
+**La fuente publica el mismo documento repetido** —aparece en la fase del proceso y otra vez
+en la del contrato—, así que se deduplica por `id_documento` antes de contar. Sin eso, la fila
+anunciaría el doble de documentos de los que hay.
+
+**Cuando no hay estudios previos, la fila dice cuántos documentos tiene el expediente.** Un
+hueco mudo se lee como un fallo del tablero; el número es información, y la guía añade la
+frase que importa: que falte **no significa que no se hayan hecho**, significa que ahí no
+están, y eso también se puede preguntar.
+
+**En el payload de `ligero.html` viaja solo el `DocumentId`,** no la URL entera: son 140
+caracteres de los que únicamente cambia ese número, y en el payload van cien. `urlEp()` la
+rearma, y lo que no encaje en el patrón se guarda entero y se usa tal cual, así que el día que
+SECOP cambie la forma esto no se rompe. **Ahorra 13 KB en crudo y CERO servidos**: gzip ya
+deduplicaba el prefijo. Se conserva por el coste de parseo, no por el peso. La versión ligera
+pasó de 87 KB a **102 KB servidos**.
+
 ## El resumen semanal (`resumen.py`)
 
 **Sale los lunes a las 9:30 de Colombia, y a las 9:30 a propósito.** La recolección diaria
@@ -840,14 +896,11 @@ elementos de emergencia, alquiler de carpas, obra— porque ahí sí puede haber
 
 ### Lo que quedó sin construir
 
-**El conjunto `dmgg-8hin`** trae los archivos del expediente y **cruza limpio**: por
-`n_mero_de_contrato` = `id_contrato` para contratos, y por `proceso` = `id_del_portafolio`
-para procesos. Medido sobre 30 contratos en duda y sobre el expediente de Yotoco (17
-archivos): **ningún nombre de archivo menciona el sismo** — son nombres administrativos
-("06. ESTUDIOS PREVIOS.pdf", "14. RESOLUCION DE JUSTIFICACION.pdf"). **No sirve para
-clasificar.** Sí serviría como atajo: trae `url_descarga_documento`, así que la fila podría
-llevar enlace directo a los estudios previos, que es donde está la respuesta. Con eso, revisar
-una duda pasa de abrir SECOP y buscar, a un clic. **Propuesto y no construido.**
+**El conjunto `dmgg-8hin` ya está construido** (13-sep-2026), en `documentos.py`. Sigue
+valiendo lo que se midió en agosto: **ningún nombre de archivo menciona el sismo** —son
+nombres administrativos— así que **no sirve para clasificar**, solo como atajo. Lo que
+cambió al construirlo es el cruce: se hace por expediente y no por contrato, y eso sube los
+estudios previos del 11% al 45%. La sección **Los estudios previos** lo explica entero.
 
 ## Trampas del entorno, ya pagadas
 

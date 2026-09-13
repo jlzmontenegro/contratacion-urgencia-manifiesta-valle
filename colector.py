@@ -61,6 +61,11 @@ FUENTES = {
         "url": "urlproceso",
         "dataset": "jbjy-vk9h",
         "id": "id_contrato",
+        # El CO1.BDOS.* del expediente. Es la llave con la que el dataset de
+        # documentos (dmgg-8hin) indexa los archivos, y la misma que empareja
+        # contrato y proceso. En contratos se llama proceso_de_compra y en
+        # procesos id_del_portafolio: es el mismo numero con dos nombres.
+        "portafolio": "proceso_de_compra",
         "fecha": "fecha_de_firma",
         "entidad": "nombre_entidad",
         "departamento": "departamento",
@@ -96,6 +101,7 @@ FUENTES = {
         "url": "urlproceso",
         "dataset": "p6dx-8zbt",
         "id": "id_del_proceso",
+        "portafolio": "id_del_portafolio",
         "fecha": "fecha_de_publicacion_del",
         "entidad": "entidad",
         "departamento": "departamento_entidad",
@@ -1819,6 +1825,17 @@ def aplanar(df, nombre_fuente):
             "plataforma": f["plataforma"],
             "fuente": nombre_fuente,
             "id": r.get(f["id"], ""),
+            # Llave del expediente (CO1.BDOS.*). Vacia en SECOP I, que no tiene
+            # expediente electronico. Es lo que permite enlazar los documentos
+            # tambien en los procesos que aun no tienen contrato.
+            "portafolio": (str(r.get(f["portafolio"], "") or "")
+                           if f.get("portafolio") else ""),
+            # Los rellena documentos.anotar() despues de emparejar. Van con valor
+            # por defecto para que la pagina no tenga que distinguir entre "sin
+            # expediente" y "el campo no viaja en este JSON".
+            "docs_n": 0,
+            "docs_ep": "",
+            "docs_ep_nombre": "",
             "referencia": referencia_registro(r, f),
             "fecha": fecha,
             "etiqueta_fecha": etiqueta,
@@ -2079,6 +2096,26 @@ def exportar_tablero(hoy, resultados, alertas, cfg, resumen_corrida=None):
     for nombre in fuentes_activas(cfg):
         registros.extend(aplanar(resultados.get(nombre, pd.DataFrame()), nombre))
     emparejar_operaciones(registros, resultados)
+
+    # Expediente de cada registro: cuantos documentos tiene y el enlace directo a
+    # los estudios previos cuando existen. Solo para lo que se mira -Alta y
+    # Media-: la ordinaria son doce mil registros y consultarlos multiplicaria
+    # por veinte el tiempo de corrida para un atajo que ahi no sirve a nadie.
+    #
+    # BEST EFFORT, como ligero.html: si el dataset no responde, el tablero sale
+    # igual sin los enlaces. De aqui no cuelga ninguna cifra.
+    try:
+        import documentos
+        llaves = {r.get("portafolio") for r in registros
+                  if r.get("nivel") in ("Alta", "Media")}
+        indice = documentos.consultar(
+            llaves,
+            lambda ds, where: consultar(ds, where, cfg.get("app_token", "")))
+        tocados, con_ep = documentos.anotar(registros, indice)
+        print(f"  documentos: {len(indice)} expedientes, {tocados} registros "
+              f"enlazados, {con_ep} con estudios previos")
+    except Exception as e:
+        print(f"  ! no se pudieron consultar los documentos del expediente: {e}")
 
     ruta_cambios = os.path.join(DIR_DATOS, "cambios.csv")
     historial_cambios = []
