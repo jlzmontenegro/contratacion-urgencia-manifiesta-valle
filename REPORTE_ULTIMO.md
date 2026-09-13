@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-09-12 19:40  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-09-13 01:22  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -9,9 +9,9 @@
 | Contratos relacionados (alta + media) | 138 |
 | Valor de esos contratos | $ 49.946.927.264 |
 | Procesos relacionados (alta + media) | 386 |
-| Contratos nuevos en esta ejecucion | 2 |
-| Procesos nuevos en esta ejecucion | 325 |
-| Modificaciones detectadas | 92 |
+| Contratos nuevos en esta ejecucion | 0 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 24895 |
 
 ### Desglose por nivel de gobierno
@@ -123,101 +123,6 @@ _Se revisaron 315 registros de contratacion de estas dos entidades en la ventana
 | MUNICIPIO DE BUGALAGRANDE | 9 | $ 919.920.512 |
 | MUNICIPIO DE SEVILLA | 5 | $ 852.182.324 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI | 1 | $ 700.000.000 |
-
-## Contratos nuevos (2 relacionados de 2 publicados)
-
-| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
-|---|---|---|---:|---|---|
-| 2026-08-25 | MINISTERIO DE EDUCACION NACIONAL (MEN) | PRESTAR SERVICIOS PROFESIONALES PARA BRINDAR ASESORÍA ESTRATÉGICA AL DESPACHO DE LA MINISTRA DE EDUCACIÓN NACI | $ 17.927.978 | MARIBEL CRISTINA CASTRO FLOREZ | Alta |
-| 2026-08-27 | MINISTERIO DE EDUCACION NACIONAL (MEN) | Prestar servicios profesionales para brindar asesoría estratégica y legal al despacho de la ministra de educac | $ 17.927.978 | CLAUDIA PATRICIA TORRES SIBAJA | Alta |
-
-## Procesos nuevos (18 relacionados de 325 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-09-11 | SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI | CONTRATAR LA PRESTACIÓN DEL SERVICIO DE TRANSPORTE TERRESTRE AUTOMOTOR, REQUERIDO POR LOS ORGANISMOS DEL DISTR | $ 700.000.000 | Contratación directa | Alta |
-| 2026-09-10 | ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA | ADECUACIONES LOCATIVAS DE LA CUBIERTA DE LA INSTITUCIÓN EDUCATIVA AGRÍCOLA CAMPOALEGRE SEDE CENTRAL DE LA ZONA | $ 149.526.599 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-09-10 | EMPRESAS MUNICIPALES DE TULUA E.S.P. | REPARACION, ADECUACION Y RECUPERACION- FASE I - DE LA INFRAESTRUCTURA FISICA INTERNA Y EXTERNA DE EMPRESAS MUN | $ 140.000.000 | Contratación régimen especial | Alta |
-| 2026-09-10 | ALCALDÍA MUNICIPIO DE CÓRDOBA - QUINDIO | SUMINISTRO DE ELEMENTOS DE FERRETERIA DESTINADOS A LA ATENCION DE LA EMERGENCIA DEL PASADO 10 DE AGOSTO DE 202 | $ 50.000.000 | Contratación directa | Alta |
-| 2026-09-10 | BANCO DE LA REPUBLICA | Realizar las reparaciones de emergencia post sismo (Nivelación con mortero de reparación para llenar vacío de  | $ 19.875.000 | Contratación régimen especial | Alta |
-| 2026-09-10 | VALLECAUCANA DE AGUAS S.A. E.S.P | PRESTACION DE SERVICIOS PROFESIONALES PARA APOYAR Y FORTALECER EL MANEJO EMPRESARIAL DE LOS SERVICIOS DE ACUED | $ 18.694.500 | Contratación directa | Media |
-| 2026-08-25 | MINISTERIO DE EDUCACION NACIONAL (MEN) | PRESTAR SERVICIOS PROFESIONALES PARA BRINDAR ASESORÍA ESTRATÉGICA AL DESPACHO DE LA MINISTRA DE EDUCACIÓN NACI | $ 17.927.978 | Contratación directa | Alta |
-| 2026-08-27 | MINISTERIO DE EDUCACION NACIONAL (MEN) | PRESTAR SERVICIOS PROFESIONALES PARA BRINDAR ASESORÍA ESTRATÉGICA AL DESPACHO DE LA MINISTRA DE EDUCACIÓN NACI | $ 17.927.978 | Contratación directa | Alta |
-| 2026-08-27 | MINISTERIO DE EDUCACION NACIONAL (MEN) | Prestar servicios profesionales para brindar asesoría estratégica y legal al despacho de la ministra de educac | $ 17.927.978 | Contratación directa | Alta |
-| 2026-09-10 | ALCALDÍA MUNICIPAL DE ROLDANILLO | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN DEL DEPARTAMENTO ADMINISTRATIVO DE DESARROLLO INSTITUCIONAL DEL  | $ 12.500.000 | Contratación directa | Alta |
-| 2026-09-10 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA LA DIFUSIÓN Y SOCIALIZACIÓN DE LAS ACTIVIDADES CULTURALES DE LA EMI | $ 11.400.000 | Contratación directa | Alta |
-| 2026-09-10 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS PROFESIONALES PARA REALIZAR TALLERES DE LENGUA DE SEÑAS COLOMBIANA, ATENCION A PERSONA | $ 11.400.000 | Contratación directa | Alta |
-| 2026-09-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 7.894.000 | Contratación directa | Media |
-| 2026-09-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 7.894.000 | Contratación directa | Media |
-| 2026-09-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión en las actividades requeridas por la Secretaría de Gestión de Ri | $ 7.102.000 | Contratación directa | Media |
-| 2026-09-10 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA EL DESARROLLO DE ACTIVIDADES DE ARCHIVO Y GESTIÓN DOCUMENTA | $ 6.600.000 | Contratación directa | Alta |
-| 2026-09-11 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | PRESTAR SUS SERVICIOS PROFESIONALES BRINDANDO APOYO EN LA OFICINA DE ATENCION PREVENCION DE DESASTRES DE LA AL | $ 3.713.150 | Contratación directa | Media |
-| 2026-09-11 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | PRESTAR SUS SERVICIOS COMO TECNICO APOYANDO LA GESTION EN LOS PROCESOS MISIONALES, ADMINISTRATIVOS U OPERATIVO | $ 2.121.800 | Contratación directa | Media |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| procesos | CO1.REQ.10921959 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11013816 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.10943739 | estado_del_procedimiento | Evaluación | Publicado |
-| procesos | CO1.REQ.10895194 | valor_total_adjudicacion | 0 | 2568577795 |
-| procesos | CO1.REQ.10895194 | adjudicado | No | Si |
-| procesos | CO1.REQ.10895194 | fecha_adjudicacion |  | 2026-09-11T00:00:00.000 |
-| procesos | CO1.REQ.10936936 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.10940560 | valor_total_adjudicacion | 0 | 9710400 |
-| procesos | CO1.REQ.10940560 | adjudicado | No | Si |
-| procesos | CO1.REQ.10940560 | fecha_adjudicacion |  | 2026-09-11T00:00:00.000 |
-| procesos | CO1.REQ.10904005 | valor_total_adjudicacion | 0 | 283668853 |
-| procesos | CO1.REQ.10904005 | adjudicado | No | Si |
-| procesos | CO1.REQ.10947325 | valor_total_adjudicacion | 0 | 217164850 |
-| procesos | CO1.REQ.10947325 | adjudicado | No | Si |
-| procesos | CO1.REQ.10947325 | fecha_adjudicacion |  | 2026-09-11T00:00:00.000 |
-| procesos | CO1.REQ.11013536 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.10952231 | valor_total_adjudicacion | 0 | 4704241406 |
-| procesos | CO1.REQ.10952231 | adjudicado | No | Si |
-| procesos | CO1.REQ.11013363 | nombre_del_proveedor | No Definido | AQUALAB SAS |
-| procesos | CO1.REQ.11013363 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.10976159 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11004650 | valor_total_adjudicacion | 0 | 10981667 |
-| procesos | CO1.REQ.11004650 | adjudicado | No | Si |
-| procesos | CO1.REQ.11004650 | nombre_del_proveedor | No Definido | MC SERVISUMINISTROS |
-| procesos | CO1.REQ.10990710 | nombre_del_proveedor | No Definido | COOPERATIVA DE TRANSPORTADORES LA VICTOR |
-| procesos | CO1.REQ.10990710 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.10910733 | valor_total_adjudicacion | 0 | 33320000 |
-| procesos | CO1.REQ.10910733 | adjudicado | No | Si |
-| procesos | CO1.REQ.10944814 | valor_total_adjudicacion | 0 | 249250000 |
-| procesos | CO1.REQ.10944814 | adjudicado | No | Si |
-| procesos | CO1.REQ.10944814 | fecha_adjudicacion |  | 2026-09-11T00:00:00.000 |
-| procesos | CO1.REQ.10907512 | valor_total_adjudicacion | 0 | 36400000 |
-| procesos | CO1.REQ.10907512 | adjudicado | No | Si |
-| procesos | CO1.REQ.10907512 | fecha_adjudicacion |  | 2026-09-11T00:00:00.000 |
-| procesos | CO1.REQ.10905566 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.10954282 | valor_total_adjudicacion | 0 | 50025398 |
-| procesos | CO1.REQ.10954282 | adjudicado | No | Si |
-| procesos | CO1.REQ.10954282 | fecha_adjudicacion |  | 2026-09-11T00:00:00.000 |
-| procesos | CO1.REQ.10863976 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.10535759 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.10943169 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.10994772 | estado_del_procedimiento | Evaluación | Cancelado |
-| procesos | CO1.REQ.10971114 | valor_total_adjudicacion | 0 | 83499179 |
-| procesos | CO1.REQ.10971114 | adjudicado | No | Si |
-| procesos | CO1.REQ.10971114 | fecha_adjudicacion |  | 2026-09-11T00:00:00.000 |
-| procesos | CO1.REQ.10917702 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.10997614 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.10997614 | valor_total_adjudicacion | 0 | 15000000 |
-| procesos | CO1.REQ.10997614 | adjudicado | No | Si |
-| procesos | CO1.REQ.10997614 | nombre_del_proveedor | No Definido | PAOLA ALEXANDRA DOMINGUEZ GUERRERO |
-| procesos | CO1.REQ.10995847 | estado_del_procedimiento | Evaluación | Abierto |
-| procesos | CO1.REQ.11009457 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.10924418 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.10924418 | nombre_del_proveedor | No Definido | LA ESCENA |
-| procesos | CO1.REQ.10924418 | fecha_adjudicacion |  | 2026-09-11T00:00:00.000 |
-| procesos | CO1.REQ.10836312 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.10923027 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.10923027 | fecha_adjudicacion |  | 2026-09-11T00:00:00.000 |
-| procesos | CO1.REQ.10923027 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11006693 | estado_del_procedimiento | Abierto | Seleccionado |
 
 ## Alertas
 
