@@ -12048,3 +12048,111 @@
 2026-09-13 10:38:14,contratos,CO1.PCCNTR.9855052,MUNICIPIO SAN RAFAEL ANTIOQUIA,valor_pagado,0,119995182,Otra urgencia
 2026-09-13 10:38:14,contratos,CO1.PCCNTR.9855052,MUNICIPIO SAN RAFAEL ANTIOQUIA,valor_pendiente_de_pago,119995182,0,Otra urgencia
 2026-09-13 10:38:14,contratos,CO1.PCCNTR.9902932,AGENCIA ITRC,estado_contrato,Aprobado,En ejecución,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11020246,GOBERNACIÓN VALLE DEL CAUCA -SECRETARIA DE SALUD,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11020246,GOBERNACIÓN VALLE DEL CAUCA -SECRETARIA DE SALUD,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11023929,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10949352,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,estado_del_procedimiento,Publicado,Evaluación,Media
+2026-09-13 13:46:30,procesos,CO1.REQ.11011185,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11018639,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10947325,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10947325,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,nombre_del_proveedor,No Definido,CORPORACION EDUCATIVA BARTOLOME MITRE,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11024114,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11025991,SECRETARIA DE EDUCACION DE CALI,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11012741,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11024024,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11000813,SECRETARIA DE EDUCACION DE CALI,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10859357,GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARIA DE LAS TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10859357,GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARIA DE LAS TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES,fecha_adjudicacion,,2026-09-11T00:00:00.000,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11023870,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10949416,SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11023874,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10940560,SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10940560,SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI,nombre_del_proveedor,No Definido,CERTIFIK S.A.S,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10940560,SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10956215,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE CONTRATACION PUBLICA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10953272,SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10904005,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10904005,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,nombre_del_proveedor,No Definido,UT FUNBISOC NNA,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10904005,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,fecha_adjudicacion,,2026-09-12T00:00:00.000,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10943739,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11023927,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10950968,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10952231,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN,nombre_del_proveedor,No Definido,FUNDACIÓN ALFÉREZ REAL,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11014856,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10895194,"GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA",estado_del_procedimiento,Abierto,Seleccionado,Media
+2026-09-13 13:46:30,procesos,CO1.REQ.10895194,"GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA",nombre_del_proveedor,No Definido,FUNDACIÓN AVE FÉNIX,Media
+2026-09-13 13:46:30,procesos,CO1.REQ.10895194,"GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA",estado_resumen,Fase de ofertas,Adjudicado,Media
+2026-09-13 13:46:30,procesos,CO1.REQ.10992620,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10982125,UPRES VALLE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10944814,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10944814,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,nombre_del_proveedor,No Definido,SOLUCIONES EMPRESARIALES OCUPACIONALES SAS,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10944814,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11022157,EMPRESAS MUNICIPALES DE TULUA E.S.P.,estado_del_procedimiento,Publicado,Seleccionado,Alta
+2026-09-13 13:46:30,procesos,CO1.REQ.11023478,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10970542,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11013446,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11006450,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10968907,CVC,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10989327,FISCALÍA GENERAL DE LA NACIÓN REGIONAL PACÍFICO,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11003574,SENA REGIONAL VALLE Grupo Administrativo CNPB,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11023482,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,En aprobación,Seleccionado,Media
+2026-09-13 13:46:30,procesos,CO1.REQ.10941235,MUNICIPIO DE YUMBO VALLE,estado_resumen,Presentación de oferta,Adjudicado,Media
+2026-09-13 13:46:30,procesos,CO1.REQ.11010547,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11023535,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11023535,ALCALDIA MUNICIPIO DE JAMUNDI,fase,,Fase de ofertas,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11023535,ALCALDIA MUNICIPIO DE JAMUNDI,estado_resumen,No Definido,Fase de ofertas,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10995090,ALCALDIA MUNICIPAL DE GINEBRA,nombre_del_proveedor,No Definido,ROMULO REYES SAAVEDRA,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11008088,MUNICIPIO DE EL CERRITO.,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11003036,MUNICIPIO DE EL CERRITO.,estado_del_procedimiento,Publicado,Evaluación,Media
+2026-09-13 13:46:30,procesos,CO1.REQ.10910733,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,nombre_del_proveedor,No Definido,CCV de Colombia S.A.S.,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11000205,CVC,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11014517,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10954282,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10954282,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,nombre_del_proveedor,No Definido,REVOLUCIÓN MOTORS SAS,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10969739,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11010376,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11005282,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11003582,REGIONAL DE ASEGURAMIENTO EN SALUD No. 4,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11014489,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10982322,REGIONAL DE ASEGURAMIENTO EN SALUD No. 4,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10972807,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11021196,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11020721,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11012448,MUNICIPIO DE CARTAGO,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10855458,CVC,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11011120,LOCALIDAD ISLA DEL CASCAJAL,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11019628,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11007853,PERSONERIA MUNICIPAL DE PALMIRA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11018984,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10997537,ALCALDIA LOCAL CONTINENTE EL PAILON DEL DISTRITO DE BUENAVENTURA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10997537,ALCALDIA LOCAL CONTINENTE EL PAILON DEL DISTRITO DE BUENAVENTURA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10998649,CVC,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11023500,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11022938,Secretaria Municipal del Deporte y Recreación - Alcaldia de Tuluá,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11010186,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11004793,PERSONERIA MUNICIPAL DE BUGA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11014564,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE YUMBO,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10907512,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10907512,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,nombre_del_proveedor,No Definido,ALTABASE S.A.S,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10907512,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11003393,MUNICIPIO DE EL CERRITO.,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10970763,MUNICIPIO DE PRADERA,nombre_del_proveedor,No Definido,Fundación Alas de Libertad 23,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10924418,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10996037,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION ZARZALEÑA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10991781,UPRES VALLE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10971114,SENA - CENTRO LATINOAMERICANO DE ESPECIES MENORES TULUA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10971114,SENA - CENTRO LATINOAMERICANO DE ESPECIES MENORES TULUA,nombre_del_proveedor,No Definido,SEGURIDAD INDUSTRIAL SALUD OCUPACIONAL Y MEDIO AMBIENTE SAS,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10926098,MUNICIPIO DE PRADERA,nombre_del_proveedor,No Definido,LA EQUIDAD SEGUROS DE VIDA ORGANISMO COOPERATIVO,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11014541,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10990263,ALCALDIA MUNICIPAL DE BUGA,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11008491,CORPORACION PARA EL DESARROLLO SOCIAL Y CULTURAL DEL VALLE DEL CAUCA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10995545,MUNICIPIO DE DAGUA,estado_del_procedimiento,Evaluación,Abierto,Media
+2026-09-13 13:46:30,procesos,CO1.REQ.11019463,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11009457,MUNICIPIO DE CARTAGO,estado_del_procedimiento,Evaluación,Publicado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11019471,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10961045,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10868076,CVC,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10868076,CVC,nombre_del_proveedor,No Definido,CONSEJO COMUNITARIO DE LOS CORREGIMIENTOS SAN ANTONIO Y EL CASTILLO,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11001105,ALCALDIA  MUNICIPIO DE IBAGUE*,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.11000845,ALCALDIA  MUNICIPIO DE IBAGUE*,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-13 13:46:30,procesos,CO1.REQ.10921118,HOSPITAL SAN VICENTE DE PAÚL,estado_resumen,Presentación de oferta,Adjudicado,Contexto
