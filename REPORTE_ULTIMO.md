@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-09-12 11:26  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-09-12 19:40  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -8,37 +8,37 @@
 |---|---|
 | Contratos relacionados (alta + media) | 138 |
 | Valor de esos contratos | $ 49.946.927.264 |
-| Procesos relacionados (alta + media) | 375 |
-| Contratos nuevos en esta ejecucion | 293 |
-| Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 470 |
-| Registros revisados en total | 24568 |
+| Procesos relacionados (alta + media) | 386 |
+| Contratos nuevos en esta ejecucion | 2 |
+| Procesos nuevos en esta ejecucion | 325 |
+| Modificaciones detectadas | 92 |
+| Registros revisados en total | 24895 |
 
 ### Desglose por nivel de gobierno
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 9 | $ 13.195.950.400 | 133 |
+| Alcaldía de Cali | 9 | $ 13.195.950.400 | 137 |
 | Gobernación del Valle | 4 | $ 997.600.200 | 5 |
-| Otras entidades del Valle | 119 | $ 32.482.080.580 | 189 |
+| Otras entidades del Valle | 119 | $ 32.482.080.580 | 194 |
 | UNGRD y FNGRD | 0 | $ 0 | 12 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 2191 | $ 131.068.817.482 | 1742 |
-| Gobernación del Valle | 1939 | $ 44.883.814.328 | 1824 |
-| Descentralizadas de Cali | 95 | $ 12.344.767.246 | 712 |
-| Descentralizadas de la Gobernación | 1384 | $ 25.046.397.567 | 1771 |
-| UNGRD | 2 | $ 57.866.667 | 298 |
+| Alcaldía de Cali | 2191 | $ 131.068.817.482 | 1845 |
+| Gobernación del Valle | 1939 | $ 44.883.814.328 | 1825 |
+| Descentralizadas de Cali | 95 | $ 12.344.767.246 | 716 |
+| Descentralizadas de la Gobernación | 1384 | $ 25.046.397.567 | 1791 |
+| UNGRD | 2 | $ 57.866.667 | 300 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 129 contratos ($ 19.710.398.089) y 148 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 116 contratos ($ 104.614.080.356) y 185 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 131 contratos ($ 19.746.254.045) y 155 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 116 contratos ($ 104.614.080.356) y 188 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
@@ -102,7 +102,7 @@ _No se listan 71 registros de SECOP I con urgencia manifiesta por otras causas o
 
 Se incluye el Fondo Nacional de Gestion del Riesgo (FNGRD), entidad distinta de la UNGRD pero cuyo ordenador del gasto es su director. Lo que aqui aparece SI suma en los indicadores: es la entidad que coordina y financia la respuesta nacional al desastre. Su contratacion ordinaria, en cambio, no se muestra.
 
-_Se revisaron 313 registros de contratacion de estas dos entidades en la ventana; los que no aluden al sismo no se listan. Quedan en los CSV._
+_Se revisaron 315 registros de contratacion de estas dos entidades en la ventana; los que no aluden al sismo no se listan. Quedan en los CSV._
 
 ## Contratos por entidad
 
@@ -124,84 +124,100 @@ _Se revisaron 313 registros de contratacion de estas dos entidades en la ventana
 | MUNICIPIO DE SEVILLA | 5 | $ 852.182.324 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI | 1 | $ 700.000.000 |
 
-## Contratos nuevos (9 relacionados de 293 publicados)
+## Contratos nuevos (2 relacionados de 2 publicados)
 
 | Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
 |---|---|---|---:|---|---|
-| 2026-09-11 | SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI | CONTRATAR LA PRESTACIÓN DEL SERVICIO DE TRANSPORTE TERRESTRE AUTOMOTOR; REQUERIDO POR LOS ORGANISMOS DEL DISTR | $ 700.000.000 | 2 GROUP SAS | Alta |
-| 2026-09-10 | CORPORACION AUTONOMA REGIONAL DE RISARALDA | Prestar los servicios de apoyo como operador logístico para atender las necesidades derivadas del terremoto de | $ 100.000.000 | COCONI HOTEL CAMPESTRE CENTRO DE CONVENCIONES Y EVENTOS DEL EJE CAFETERO RECREACION SALUD Y DEPORTE SAS | Alta |
-| 2026-09-10 | SERVICIO GEOLOGICO COLOMBIANO** | Prestar servicios profesionales especializados en electrónica y telecomunicaciones para apoyar la operación; m | $ 60.685.350 | NICOLAS ANTONIO OLIVERAS MERCADO | Alta |
-| 2026-09-10 | ALCALDÍA MUNICIPIO DE CÓRDOBA - QUINDIO | SUMINISTRO DE ELEMENTOS DE FERRETERIA DESTINADOS A LA ATENCION DE LA EMERGENCIA DEL PASADO 10 DE AGOSTO DE 202 | $ 50.000.000 | suministros cordoba | Alta |
-| 2026-09-10 | ALCALDÍA MUNICIPAL DE ROLDANILLO | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN DEL DEPARTAMENTO ADMINISTRATIVO DE DESARROLLO INSTITUCIONAL DEL  | $ 12.500.000 | JULIANA HERRERA SOTO | Alta |
-| 2026-09-10 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA LA DIFUSIÓN Y SOCIALIZACIÓN DE LAS ACTIVIDADES CULTURALES DE LA EMI | $ 11.400.000 | Sebastián Montoya Duque | Alta |
-| 2026-09-10 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA LA DIFUSIÓN DE TALLERES; PUESTAS EN ESCENA Y EVENTOS DE LA  | $ 8.400.000 | Maria Alejandra Cortes Rojas | Alta |
-| 2026-09-10 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA LA ATENCIÓN A USUARIOS; LA ORGANIZACIÓN DE LA INFORMACIÓN B | $ 7.200.000 | SILVANA MARIA RAMIREZ VARGAS | Alta |
-| 2026-09-11 | MUNICIPIO DE ZARZAL | PRESTACION DE SERVICIOS PROFESIONALES COMO EVALUADOR(A) PARA APOYAR EL MUNICIPIO DE ZARZAL; VALLE DEL CAUCA EN | $ 4.500.000 | Merly Johana Velasquez Corrales | Alta |
+| 2026-08-25 | MINISTERIO DE EDUCACION NACIONAL (MEN) | PRESTAR SERVICIOS PROFESIONALES PARA BRINDAR ASESORÍA ESTRATÉGICA AL DESPACHO DE LA MINISTRA DE EDUCACIÓN NACI | $ 17.927.978 | MARIBEL CRISTINA CASTRO FLOREZ | Alta |
+| 2026-08-27 | MINISTERIO DE EDUCACION NACIONAL (MEN) | Prestar servicios profesionales para brindar asesoría estratégica y legal al despacho de la ministra de educac | $ 17.927.978 | CLAUDIA PATRICIA TORRES SIBAJA | Alta |
+
+## Procesos nuevos (18 relacionados de 325 publicados)
+
+| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
+|---|---|---|---:|---|---|
+| 2026-09-11 | SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI | CONTRATAR LA PRESTACIÓN DEL SERVICIO DE TRANSPORTE TERRESTRE AUTOMOTOR, REQUERIDO POR LOS ORGANISMOS DEL DISTR | $ 700.000.000 | Contratación directa | Alta |
+| 2026-09-10 | ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA | ADECUACIONES LOCATIVAS DE LA CUBIERTA DE LA INSTITUCIÓN EDUCATIVA AGRÍCOLA CAMPOALEGRE SEDE CENTRAL DE LA ZONA | $ 149.526.599 | Selección Abreviada de Menor Cuantía | Media |
+| 2026-09-10 | EMPRESAS MUNICIPALES DE TULUA E.S.P. | REPARACION, ADECUACION Y RECUPERACION- FASE I - DE LA INFRAESTRUCTURA FISICA INTERNA Y EXTERNA DE EMPRESAS MUN | $ 140.000.000 | Contratación régimen especial | Alta |
+| 2026-09-10 | ALCALDÍA MUNICIPIO DE CÓRDOBA - QUINDIO | SUMINISTRO DE ELEMENTOS DE FERRETERIA DESTINADOS A LA ATENCION DE LA EMERGENCIA DEL PASADO 10 DE AGOSTO DE 202 | $ 50.000.000 | Contratación directa | Alta |
+| 2026-09-10 | BANCO DE LA REPUBLICA | Realizar las reparaciones de emergencia post sismo (Nivelación con mortero de reparación para llenar vacío de  | $ 19.875.000 | Contratación régimen especial | Alta |
+| 2026-09-10 | VALLECAUCANA DE AGUAS S.A. E.S.P | PRESTACION DE SERVICIOS PROFESIONALES PARA APOYAR Y FORTALECER EL MANEJO EMPRESARIAL DE LOS SERVICIOS DE ACUED | $ 18.694.500 | Contratación directa | Media |
+| 2026-08-25 | MINISTERIO DE EDUCACION NACIONAL (MEN) | PRESTAR SERVICIOS PROFESIONALES PARA BRINDAR ASESORÍA ESTRATÉGICA AL DESPACHO DE LA MINISTRA DE EDUCACIÓN NACI | $ 17.927.978 | Contratación directa | Alta |
+| 2026-08-27 | MINISTERIO DE EDUCACION NACIONAL (MEN) | PRESTAR SERVICIOS PROFESIONALES PARA BRINDAR ASESORÍA ESTRATÉGICA AL DESPACHO DE LA MINISTRA DE EDUCACIÓN NACI | $ 17.927.978 | Contratación directa | Alta |
+| 2026-08-27 | MINISTERIO DE EDUCACION NACIONAL (MEN) | Prestar servicios profesionales para brindar asesoría estratégica y legal al despacho de la ministra de educac | $ 17.927.978 | Contratación directa | Alta |
+| 2026-09-10 | ALCALDÍA MUNICIPAL DE ROLDANILLO | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN DEL DEPARTAMENTO ADMINISTRATIVO DE DESARROLLO INSTITUCIONAL DEL  | $ 12.500.000 | Contratación directa | Alta |
+| 2026-09-10 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA LA DIFUSIÓN Y SOCIALIZACIÓN DE LAS ACTIVIDADES CULTURALES DE LA EMI | $ 11.400.000 | Contratación directa | Alta |
+| 2026-09-10 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS PROFESIONALES PARA REALIZAR TALLERES DE LENGUA DE SEÑAS COLOMBIANA, ATENCION A PERSONA | $ 11.400.000 | Contratación directa | Alta |
+| 2026-09-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 7.894.000 | Contratación directa | Media |
+| 2026-09-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 7.894.000 | Contratación directa | Media |
+| 2026-09-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión en las actividades requeridas por la Secretaría de Gestión de Ri | $ 7.102.000 | Contratación directa | Media |
+| 2026-09-10 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA EL DESARROLLO DE ACTIVIDADES DE ARCHIVO Y GESTIÓN DOCUMENTA | $ 6.600.000 | Contratación directa | Alta |
+| 2026-09-11 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | PRESTAR SUS SERVICIOS PROFESIONALES BRINDANDO APOYO EN LA OFICINA DE ATENCION PREVENCION DE DESASTRES DE LA AL | $ 3.713.150 | Contratación directa | Media |
+| 2026-09-11 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | PRESTAR SUS SERVICIOS COMO TECNICO APOYANDO LA GESTION EN LOS PROCESOS MISIONALES, ADMINISTRATIVOS U OPERATIVO | $ 2.121.800 | Contratación directa | Media |
 
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| contratos | CO1.PCCNTR.9899001 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9861428 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9861428 | fecha_de_fin_del_contrato | 2026-10-30T00:00:00.000 | 2026-11-30T00:00:00.000 |
-| contratos | CO1.PCCNTR.9861428 | nombre_supervisor | JENNY TATIANA BARBOSA RESTREPO | Gustavo Adolfo Gallego Aristizabal |
-| contratos | CO1.PCCNTR.9819630 | valor_facturado | 0 | 7700000 |
-| contratos | CO1.PCCNTR.9845447 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9859709 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9859709 | fecha_de_fin_del_contrato | 2026-10-30T00:00:00.000 | 2026-11-30T00:00:00.000 |
-| contratos | CO1.PCCNTR.9859709 | nombre_supervisor | JENNY TATIANA BARBOSA RESTREPO | Gustavo Adolfo Gallego Aristizabal |
-| contratos | CO1.PCCNTR.9914168 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9819414 | nombre_supervisor | ADRIANA LOAIZA GUZMAN | Krysthian David Ramirez Munevar |
-| contratos | CO1.PCCNTR.9895879 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9917993 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9905290 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9910216 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9861388 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9861388 | fecha_de_fin_del_contrato | 2026-10-30T00:00:00.000 | 2026-11-30T00:00:00.000 |
-| contratos | CO1.PCCNTR.9861388 | nombre_supervisor | JENNY TATIANA BARBOSA RESTREPO | Gustavo Adolfo Gallego Aristizabal |
-| contratos | CO1.PCCNTR.9827930 | proveedor_adjudicado | LADY FIORELLA ISSA ABADIA | LADY FIORELA ISSA ABADIA |
-| contratos | CO1.PCCNTR.9911737 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9909511 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9918534 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9913225 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9915214 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9916541 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9864690 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9910067 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9911301 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9863555 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9863555 | fecha_de_fin_del_contrato | 2026-10-30T00:00:00.000 | 2026-11-30T00:00:00.000 |
-| contratos | CO1.PCCNTR.9911503 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9918543 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9904006 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9892541 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9912014 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9910077 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9864733 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9864733 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-11-30T00:00:00.000 |
-| contratos | CO1.PCCNTR.9891211 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9914548 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9898925 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9919406 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9917794 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9916563 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9859788 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9859788 | fecha_de_fin_del_contrato | 2026-10-30T00:00:00.000 | 2026-11-30T00:00:00.000 |
-| contratos | CO1.PCCNTR.9859788 | nombre_supervisor | JENNY TATIANA BARBOSA RESTREPO | Gustavo Adolfo Gallego Aristizabal |
-| contratos | CO1.PCCNTR.9910051 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9863160 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9863160 | fecha_de_fin_del_contrato | 2026-10-30T00:00:00.000 | 2026-11-30T00:00:00.000 |
-| contratos | CO1.PCCNTR.9863160 | nombre_supervisor | No definido | Gustavo Adolfo Gallego Aristizabal |
-| contratos | CO1.PCCNTR.9916471 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9853693 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9853693 | fecha_de_fin_del_contrato | 2026-11-30T00:00:00.000 | 2026-12-31T00:00:00.000 |
-| contratos | CO1.PCCNTR.9853693 | nombre_supervisor | JENNY TATIANA BARBOSA RESTREPO | Gustavo Adolfo Gallego Aristizabal |
-| contratos | CO1.PCCNTR.9920092 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9920092 | valor_pendiente_de_pago | 0 | 7102000 |
-| contratos | CO1.PCCNTR.9863348 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9863348 | fecha_de_fin_del_contrato | 2026-10-30T00:00:00.000 | 2026-11-30T00:00:00.000 |
-| contratos | CO1.PCCNTR.9863348 | nombre_supervisor | JENNY TATIANA BARBOSA RESTREPO | Gustavo Adolfo Gallego Aristizabal |
+| procesos | CO1.REQ.10921959 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11013816 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.10943739 | estado_del_procedimiento | Evaluación | Publicado |
+| procesos | CO1.REQ.10895194 | valor_total_adjudicacion | 0 | 2568577795 |
+| procesos | CO1.REQ.10895194 | adjudicado | No | Si |
+| procesos | CO1.REQ.10895194 | fecha_adjudicacion |  | 2026-09-11T00:00:00.000 |
+| procesos | CO1.REQ.10936936 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.10940560 | valor_total_adjudicacion | 0 | 9710400 |
+| procesos | CO1.REQ.10940560 | adjudicado | No | Si |
+| procesos | CO1.REQ.10940560 | fecha_adjudicacion |  | 2026-09-11T00:00:00.000 |
+| procesos | CO1.REQ.10904005 | valor_total_adjudicacion | 0 | 283668853 |
+| procesos | CO1.REQ.10904005 | adjudicado | No | Si |
+| procesos | CO1.REQ.10947325 | valor_total_adjudicacion | 0 | 217164850 |
+| procesos | CO1.REQ.10947325 | adjudicado | No | Si |
+| procesos | CO1.REQ.10947325 | fecha_adjudicacion |  | 2026-09-11T00:00:00.000 |
+| procesos | CO1.REQ.11013536 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.10952231 | valor_total_adjudicacion | 0 | 4704241406 |
+| procesos | CO1.REQ.10952231 | adjudicado | No | Si |
+| procesos | CO1.REQ.11013363 | nombre_del_proveedor | No Definido | AQUALAB SAS |
+| procesos | CO1.REQ.11013363 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.10976159 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11004650 | valor_total_adjudicacion | 0 | 10981667 |
+| procesos | CO1.REQ.11004650 | adjudicado | No | Si |
+| procesos | CO1.REQ.11004650 | nombre_del_proveedor | No Definido | MC SERVISUMINISTROS |
+| procesos | CO1.REQ.10990710 | nombre_del_proveedor | No Definido | COOPERATIVA DE TRANSPORTADORES LA VICTOR |
+| procesos | CO1.REQ.10990710 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.10910733 | valor_total_adjudicacion | 0 | 33320000 |
+| procesos | CO1.REQ.10910733 | adjudicado | No | Si |
+| procesos | CO1.REQ.10944814 | valor_total_adjudicacion | 0 | 249250000 |
+| procesos | CO1.REQ.10944814 | adjudicado | No | Si |
+| procesos | CO1.REQ.10944814 | fecha_adjudicacion |  | 2026-09-11T00:00:00.000 |
+| procesos | CO1.REQ.10907512 | valor_total_adjudicacion | 0 | 36400000 |
+| procesos | CO1.REQ.10907512 | adjudicado | No | Si |
+| procesos | CO1.REQ.10907512 | fecha_adjudicacion |  | 2026-09-11T00:00:00.000 |
+| procesos | CO1.REQ.10905566 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.10954282 | valor_total_adjudicacion | 0 | 50025398 |
+| procesos | CO1.REQ.10954282 | adjudicado | No | Si |
+| procesos | CO1.REQ.10954282 | fecha_adjudicacion |  | 2026-09-11T00:00:00.000 |
+| procesos | CO1.REQ.10863976 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.10535759 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.10943169 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.10994772 | estado_del_procedimiento | Evaluación | Cancelado |
+| procesos | CO1.REQ.10971114 | valor_total_adjudicacion | 0 | 83499179 |
+| procesos | CO1.REQ.10971114 | adjudicado | No | Si |
+| procesos | CO1.REQ.10971114 | fecha_adjudicacion |  | 2026-09-11T00:00:00.000 |
+| procesos | CO1.REQ.10917702 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.10997614 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.10997614 | valor_total_adjudicacion | 0 | 15000000 |
+| procesos | CO1.REQ.10997614 | adjudicado | No | Si |
+| procesos | CO1.REQ.10997614 | nombre_del_proveedor | No Definido | PAOLA ALEXANDRA DOMINGUEZ GUERRERO |
+| procesos | CO1.REQ.10995847 | estado_del_procedimiento | Evaluación | Abierto |
+| procesos | CO1.REQ.11009457 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.10924418 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.10924418 | nombre_del_proveedor | No Definido | LA ESCENA |
+| procesos | CO1.REQ.10924418 | fecha_adjudicacion |  | 2026-09-11T00:00:00.000 |
+| procesos | CO1.REQ.10836312 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.10923027 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.10923027 | fecha_adjudicacion |  | 2026-09-11T00:00:00.000 |
+| procesos | CO1.REQ.10923027 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11006693 | estado_del_procedimiento | Abierto | Seleccionado |
 
 ## Alertas
 
