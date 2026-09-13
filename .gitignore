@@ -1,0 +1,4 @@
+# Python deja esto al importar ligero.py dentro del runner, y sin ignorarlo se
+# recommitea en cada corrida: ruido en un historial que es la memoria del proyecto.
+__pycache__/
+*.pyc
