@@ -551,7 +551,8 @@ figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
       el expediente.</dd>
 
       <dt>Contratista</dt>
-      <dd>Quién recibe la plata. En un proceso abierto todavía no hay.</dd>
+      <dd>Quién es el encargado de ejecutar el objeto contratado. En un proceso abierto
+      todavía no hay, porque aún no se ha adjudicado.</dd>
 
       <dt>Municipio</dt>
       <dd>El de la <b>entidad que contrata</b>, no el de la obra. El dato que publica SECOP
