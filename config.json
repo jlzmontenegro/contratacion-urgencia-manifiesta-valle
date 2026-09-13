@@ -297,6 +297,14 @@
     "MERCADO"
   ],
   "_nota_secundarias_nuevas": "Las 16 de abajo se anadieron el 15-ago-2026 a partir de 1.521 contratos reales de urgencia manifiesta del pais, midiendo para cada palabra cuanto rescata frente a cuanto ruido mete en la contratacion ordinaria del Valle. AFECTAD era el caso mas notorio: es la palabra mas frecuente del vocabulario de emergencia (13% de los contratos), ya estaba en el archivo pero en palabras_emergencia, que solo califica coincidencias y no las detecta, de modo que una entidad del Valle contratando 'atencion a familias afectadas' caia en contratacion ordinaria. Cobertura del objeto: paso de 45% a 52%. Se descarto MAQUINARIA PESADA, que mete tanto ruido como senal. MERCADO entra porque 'mercados' es como se llaman los kits de alimentos, pero necesita las frases neutralizadas de abajo.",
+  "_nota_propios": "Nombres PROPIOS de entidad que se borran del texto antes de clasificar. Distinto de frases_neutralizadas, que solo limpia el texto de busqueda: estos se quitan tambien del texto integro, porque la palabra 'desastre' del membrete del FNGRD alimentaba hay_emergencia_fuerte. El nombre de una entidad no es evidencia de nada, y el del Fondo Nacional de Gestion del Riesgo de Desastres lleva dentro dos palabras clave; como sus objetos repiten el nombre tres o cuatro veces, el clasificador daba por relacionados comodatos de carrotanques de 2025 a Magdalena, Cesar y Casanare. Medido el 13-sep-2026: saca 6 registros y no mete ninguno.",
+  "nombres_propios_neutros": [
+    "FONDO NACIONAL DE GESTION DEL RIESGO DE DESASTRES",
+    "FONDO NACIONAL PARA LA GESTION DEL RIESGO DE DESASTRES",
+    "UNIDAD NACIONAL PARA LA GESTION DEL RIESGO DE DESASTRES",
+    "SISTEMA NACIONAL DE GESTION DEL RIESGO DE DESASTRES",
+    "SISTEMA NACIONAL DE GESTION DE RIESGOS DE DESASTRES"
+  ],
   "_nota_neutralizadas": "Frases que se BORRAN del texto antes de buscar palabras clave. Distinto de frases_excluidas: aquellas solo anulan la coincidencia si el texto no trae ademas una palabra de emergencia; estas no cuentan nunca. 'Estudio de mercado' es contratacion rutinaria en cualquier entidad y no tiene nada que ver con entregar mercados a damnificados; sin esto, MERCADO seria inservible. Al borrarlas se conserva el resto del texto, asi que un contrato que diga 'estudio de mercado para la compra de mercados' sigue detectandose por el segundo uso.",
   "frases_neutralizadas": [
     "ESTUDIO DE MERCADO",

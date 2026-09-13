@@ -872,6 +872,29 @@ def clasificar(df, nombre_fuente, cfg):
     else:
         texto_busqueda = texto
 
+    # El NOMBRE PROPIO de una entidad no es evidencia de nada. El del FNGRD lleva
+    # dentro "gestion del riesgo de desastres", y ahi hay dos palabras clave a la
+    # vez: una secundaria y una de emergencia fuerte. Como el objeto de sus
+    # contratos repite el nombre tres o cuatro veces, el clasificador acababa
+    # leyendo el membrete en vez del contenido y daba por relacionados comodatos
+    # de carrotanques de 2025 a Magdalena, Cesar y Casanare.
+    #
+    # Se borra de los DOS textos, no solo del de busqueda como hacen
+    # frases_neutralizadas: la palabra "desastre" del membrete tambien alimentaba
+    # hay_emergencia_fuerte, que se evalua sobre el texto integro.
+    #
+    # Medido antes de escribirlo: saca 6 registros y no mete ninguno. Lo que
+    # quede despues es contratacion que nombra ademas un municipio del territorio,
+    # y esa la decide una persona.
+    propios = [normalizar(s) for s in cfg.get("nombres_propios_neutros", [])]
+    if propios:
+        def sin_propios(x):
+            for fr in propios:
+                x = x.replace(fr, " ")
+            return x
+        texto = texto.map(sin_propios)
+        texto_busqueda = texto_busqueda.map(sin_propios)
+
     # Texto con el que se buscan los DECRETOS, y solo ellos. Las entidades
     # intercalan un ordinal entre la palabra y el numero -"Decreto No. 1171",
     # "DECRETO NACIONAL No. 1171", "Decreto N° 0964"- y con el ordinal en medio

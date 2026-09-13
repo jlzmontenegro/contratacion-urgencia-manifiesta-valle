@@ -413,13 +413,23 @@ td.banda .sigue{font-size:11.5px;color:var(--suave);font-style:italic}
   .tablero-sup .panel{margin-bottom:0}
 }
 
-/* ---- Mapas ---- */
-/* Uno debajo del otro, no lado a lado: viven en una columna y el Valle va
-   arriba, que es donde esta el foco del seguimiento. */
-.mapas{display:grid;gap:18px;grid-template-columns:1fr}
-.mapas figure{margin:0;min-width:0}
+/* ---- Mapa ---- */
+/* Un solo lienzo y dos botones que lo cambian. Botones y no un <select>: son dos
+   opciones, se ven las dos a la vez y se sabe cual esta puesta sin abrir nada. */
+.mapa-sel{display:flex;gap:0;margin:4px 0 12px;flex-wrap:wrap}
+.mapa-sel button{font-size:12.5px;padding:6px 13px;border:1px solid var(--borde);
+     background:var(--panel);color:var(--texto-2);border-radius:0;cursor:pointer}
+.mapa-sel button:first-child{border-radius:3px 0 0 3px}
+.mapa-sel button:last-child{border-radius:0 3px 3px 0;border-left:0}
+.mapa-sel button.activo{background:var(--acento);border-color:var(--acento);
+     color:#fff;font-weight:700}
+.mapa-sel button:not(.activo):hover{border-color:var(--acento);color:var(--acento-tinta)}
 figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
      letter-spacing:.09em;text-transform:uppercase;color:var(--suave);margin-bottom:6px}
+/* Contenedor donde se dibuja el mapa que NO se esta viendo, solo el tiempo de
+   medir sus etiquetas y copiarlo al informe impreso. Fuera de la pantalla pero
+   renderizado: getBBox() sobre un elemento con display:none devuelve ceros. */
+#fragua{position:absolute;left:-99999px;top:0;width:700px}
 /* Ancho maximo y centrado, SIN tope de altura. Con max-height el navegador dejaba
    la caja mas ancha que alta y el mapa -que es casi cuadrado- se encajaba dentro
    con franjas vacias a los lados: 722px de caja para 312 de mapa. */
@@ -723,23 +733,26 @@ figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
     <button class="info" type="button" data-para="ay-mapa" aria-expanded="false"
             aria-controls="ay-mapa" aria-label="Cómo funciona el mapa">i</button>
   </div>
-  <p class="ayuda" id="ay-mapa" hidden>Pulse cualquier municipio del Valle o cualquier
-  departamento del país y la tabla de abajo se queda solo con la contratación de ese
-  territorio. El mapa sigue mostrando las cifras de todos los demás, para poder comparar y
-  cambiar de selección; el que está elegido va con borde grueso. Pulse otra vez para
-  quitarlo.</p>
-  <div class="mapas">
-    <figure>
-      <figcaption>Valle del Cauca · por municipio</figcaption>
-      <div class="lienzo" id="mapa-valle"></div>
-      <div class="leyenda" id="ley-valle"></div>
-    </figure>
-    <figure>
-      <figcaption>Colombia · por departamento</figcaption>
-      <div class="lienzo" id="mapa-pais"></div>
-      <div class="leyenda" id="ley-pais"></div>
-    </figure>
+  <p class="ayuda" id="ay-mapa" hidden>Pulse cualquier municipio o departamento y la tabla
+  de abajo se queda solo con la contratación de ese territorio; pulse otra vez para quitarlo.
+  El que está elegido va con borde grueso, y el resto sigue mostrando sus cifras para poder
+  comparar y cambiar de selección. Los dos botones cambian la vista, no los filtros.
+  <b>Son dos mapas y no uno</b> porque el total de un departamento y el de un municipio no
+  caben en la misma escala de color: el Valle saldría pálido al lado de Antioquia aun
+  contratando más. En el PDF salen los dos.</p>
+  <!-- UN solo lienzo con selector, y no los dos mapas fundidos en un dibujo. Un
+       mapa de Colombia con el Valle abierto en municipios obligaría a poner en la
+       misma escala de color el total de un departamento y el de un municipio; el
+       Valle saldría pálido al lado de Antioquia aun contratando más, y el lector
+       concluiría lo contrario de lo que dicen los datos. -->
+  <div class="mapa-sel" role="group" aria-label="Qué mapa se ve">
+    <button type="button" data-mapa="valle" class="activo" aria-pressed="true">
+      Valle · por municipio</button>
+    <button type="button" data-mapa="pais" aria-pressed="false">
+      Colombia · por departamento</button>
   </div>
+  <div class="lienzo" id="mapa-lienzo"></div>
+  <div class="leyenda" id="mapa-leyenda"></div>
   <p class="nota">
     Los mapas pintan el municipio de la <b>entidad que contrata</b>, no dónde se ejecuta:
     el campo de SECOP es el domicilio de la entidad. El color va por el valor ya
@@ -841,7 +854,7 @@ function nivelesElegidos(){ return Object.keys(NIVELES); }
 
 var F = {
   buscar: "", entidad: "", mun: "", dep: "", estado: "", monto: "", tipo: "",
-  agrupar: true, orden: "valor-desc"
+  agrupar: true, orden: "valor-desc", mapa: "valle"
 };
 var PS = "Prestación de servicios";
 
@@ -1290,12 +1303,9 @@ function pintarMapa(idSvg, idLey, def, porPieza, elegido){
   document.getElementById(idLey).innerHTML = ley.join("");
 }
 
-function pintarMapas(){
-  var m = D.mapa || {};
-  if (!m.pais || !m.valle){
-    document.getElementById("sec-mapas").style.display = "none";
-    return;
-  }
+/* Cuenta por municipio y por departamento a la vez: los dos mapas beben de la
+   misma pasada, y el que no se ve se necesita igual para el informe impreso. */
+function datosTerritorio(){
   var v = vistaMapa();
   var porMun = {}, porDep = {}, sinSituar = 0;
   v.forEach(function(o){
@@ -1309,13 +1319,54 @@ function pintarMapas(){
       porDep[o.dp].n++; if (o.f) porDep[o.dp].v += o.v;
     }
   });
-  pintarMapa("mapa-valle", "ley-valle", m.valle, porMun, F.mun);
-  pintarMapa("mapa-pais", "ley-pais", m.pais, porDep, F.dep);
+  return {mun: porMun, dep: porDep, sinSituar: sinSituar};
+}
+
+function pintarMapas(){
+  var m = D.mapa || {};
+  if (!m.pais || !m.valle){
+    document.getElementById("sec-mapas").style.display = "none";
+    return;
+  }
+  var t = datosTerritorio();
+  var enValle = F.mapa === "valle";
+  pintarMapa("mapa-lienzo", "mapa-leyenda",
+             enValle ? m.valle : m.pais,
+             enValle ? t.mun : t.dep,
+             enValle ? F.mun : F.dep);
+  document.querySelectorAll(".mapa-sel button").forEach(function(b){
+    var act = b.getAttribute("data-mapa") === F.mapa;
+    b.classList.toggle("activo", act);
+    b.setAttribute("aria-pressed", act ? "true" : "false");
+  });
   /* Un mapa que se come operaciones en silencio se lee como un censo. */
-  document.getElementById("nota-sitio").textContent = sinSituar
-    ? "De lo que se está viendo, " + sinSituar + " operación" + (sinSituar === 1 ? "" : "es") +
+  document.getElementById("nota-sitio").textContent = t.sinSituar
+    ? "De lo que se está viendo, " + t.sinSituar + " operación" +
+      (t.sinSituar === 1 ? "" : "es") +
       " no se pudo situar en el mapa porque la fuente no dice el municipio."
     : "";
+}
+
+/* Dibuja un mapa fuera de la pantalla solo para copiarlo al informe impreso. El
+   informe lleva los DOS, se esté viendo el que se esté viendo: en papel no hay
+   selector con que cambiar. */
+function mapaParaPapel(def, datos, elegido, titulo){
+  if (!def) return "";
+  var f = document.createElement("div");
+  f.id = "fragua";
+  f.innerHTML = '<div class="lienzo" id="fragua-svg"></div><div id="fragua-ley"></div>';
+  document.body.appendChild(f);
+  var html = "";
+  try {
+    pintarMapa("fragua-svg", "fragua-ley", def, datos, elegido);
+    var svg = f.querySelector("svg");
+    if (svg) html = "<figure><figcaption>" + esc(titulo) + "</figcaption>" +
+      svg.outerHTML + '<div class="ley-papel">' +
+      document.getElementById("fragua-ley").innerHTML + "</div></figure>";
+  } finally {
+    document.body.removeChild(f);
+  }
+  return html;
 }
 
 /* ---- Territorio elegido ------------------------------------------------ */
@@ -1395,19 +1446,11 @@ function descargarCSV(){
    pagina. */
 function imprimirInforme(){
   var v = ULTIMA_VISTA;
-  var svgV = document.querySelector("#mapa-valle svg");
-  var svgP = document.querySelector("#mapa-pais svg");
-  var mapas = "";
-  if (svgV || svgP){
-    mapas = '<div class="mapas-papel">' +
-      (svgV ? "<figure><figcaption>Valle del Cauca · por municipio</figcaption>" +
-              svgV.outerHTML + '<div class="ley-papel">' +
-              document.getElementById("ley-valle").innerHTML + "</div></figure>" : "") +
-      (svgP ? "<figure><figcaption>Colombia · por departamento</figcaption>" +
-              svgP.outerHTML + '<div class="ley-papel">' +
-              document.getElementById("ley-pais").innerHTML + "</div></figure>" : "") +
-      "</div>";
-  }
+  var m = D.mapa || {};
+  var t = datosTerritorio();
+  var mapas = mapaParaPapel(m.valle, t.mun, F.mun, "Valle del Cauca · por municipio") +
+              mapaParaPapel(m.pais, t.dep, F.dep, "Colombia · por departamento");
+  if (mapas) mapas = '<div class="mapas-papel">' + mapas + "</div>";
   /* Los enlaces van como <a href> de verdad, no como texto: al imprimir a PDF el
      navegador conserva el hipervinculo y el boton queda pulsable dentro del
      archivo. Si fueran texto, el PDF traeria el enlace escrito y habria que
@@ -1588,17 +1631,21 @@ function conectar(){
     var bo = e.target.closest("button[data-comp]");
     if (bo) compartir(Number(bo.getAttribute("data-i")), bo.getAttribute("data-comp"));
   });
-  [["mapa-valle", true], ["mapa-pais", false]].forEach(function(par){
-    var caja = document.getElementById(par[0]);
-    if (!caja) return;
-    caja.addEventListener("click", function(e){
-      var p = e.target.closest("path[data-cod]");
-      if (p) elegirTerritorio(p.getAttribute("data-cod"), par[1]);
-    });
-    caja.addEventListener("keydown", function(e){
-      if (e.key !== "Enter" && e.key !== " ") return;
-      var p = e.target.closest("path[data-cod]");
-      if (p){ e.preventDefault(); elegirTerritorio(p.getAttribute("data-cod"), par[1]); }
+  var caja = document.getElementById("mapa-lienzo");
+  caja.addEventListener("click", function(e){
+    var p = e.target.closest("path[data-cod]");
+    if (p) elegirTerritorio(p.getAttribute("data-cod"), F.mapa === "valle");
+  });
+  caja.addEventListener("keydown", function(e){
+    if (e.key !== "Enter" && e.key !== " ") return;
+    var p = e.target.closest("path[data-cod]");
+    if (p){ e.preventDefault(); elegirTerritorio(p.getAttribute("data-cod"), F.mapa === "valle"); }
+  });
+  /* Cambiar de mapa NO toca los filtros: es un cambio de vista, no de pregunta. */
+  document.querySelectorAll(".mapa-sel button").forEach(function(b){
+    b.addEventListener("click", function(){
+      F.mapa = b.getAttribute("data-mapa");
+      pintarMapas();
     });
   });
 
