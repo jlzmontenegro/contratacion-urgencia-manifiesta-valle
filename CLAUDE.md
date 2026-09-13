@@ -833,6 +833,29 @@ dos botones rellenos seguidos compiten entre sí. **Sin aviso cuando falta**, ig
 versión ligera. En el texto plano va como una línea `Estudios previos: <url>`. Aquí viaja la
 URL entera y no el `DocumentId`: en un correo no hay guion que la rearme.
 
+**La misma contratación publicada DOS VECES se junta en una sola ficha**
+(`_sin_repetidas()`, 13-sep-2026). **No era un fallo del emparejado**: son dos expedientes
+distintos de SECOP —otro `CO1.NTC`, otro `CO1.REQ`, otro `CO1.BDOS`— con el mismo número de
+referencia, el mismo objeto y el mismo valor. Manizales publicó dos veces sus obras por $2.000
+millones y solo una llegó a contrato, así que salían dos fichas seguidas, una *Contratada* y
+otra *Abierta*, comiéndose dos de las tres del bloque de fuera del Valle.
+
+**La llave son las tres cosas a la vez: entidad, referencia normalizada y valor.** Ninguna
+sirve sola, y se comprobó por qué: Manizales tiene **seis contratos de $70.000.000 exactos**
+con proveedores distintos —entidad + valor los habría fundido— y **dos contratos distintos que
+comparten la referencia `2608131019`**, por $1.000 y por $540 millones —entidad + referencia
+también—. Normalizar la referencia (quitar puntos, guiones y espacios) es lo que hace coincidir
+`2608201039.` con `2608201039` y `CI-001-2026-` con `CI-001-2026`.
+
+Sobre 382 operaciones confirmadas **colapsa 4**. Los convenios gemelos de Cali
+(`…1.4-2026` y `…1.5-2026`) **no se tocan**: tienen números de referencia distintos y el
+usuario decidió el 12-sep mostrarlos los dos.
+
+**Se dice, no se esconde**, y la ficha enlaza la otra publicación: es un hecho sobre cómo
+publica la entidad, y quien vaya a verificar se va a encontrar los dos expedientes. **Las
+cifras siguen contando lo que la fuente publicó** —son 382 operaciones— porque cuántas veces
+publicó la entidad es un hecho distinto de cuántas contrataciones hay. Solo se junta la lista.
+
 **Una prueba no puede salir hacia afuera: `--solo-a`.** Lanzar el flujo a mano le mandaba el
 resumen a todo `para_resumen`, es decir también a Esteban; pasó **dos veces el 13-sep-2026**
 antes de arreglarlo. Ahora el `workflow_dispatch` tiene una entrada `solo_a`: con dirección,
