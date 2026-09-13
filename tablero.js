@@ -1156,18 +1156,16 @@ function filaOperacion(o){
     return `<a class="boton boton-secop ${clase}" href="${esc(r[clave])}"
       target="_blank" rel="noopener" title="${esc(ayuda)}">${esc(rotulo)}</a>`;
   };
-  enlaces += botonDoc("docs_contrato", "Contrato", "El documento del contrato, en PDF");
+  enlaces += botonDoc("docs_contrato", "Contrato",
+                      "El contrato: objeto, obligaciones, plazos y forma de pago");
   enlaces += botonDoc("docs_ep", "Estudios previos",
                       "Documento con que la entidad justifica la contratación");
-  enlaces += botonDoc("docs_inicio", "Acta de inicio", "Acredita que la ejecución arrancó");
-  /* El unico que habla de lo ENTREGADO. Va macizo porque hoy lo tiene el 2% de
-     los expedientes: cuando aparece, es la noticia. */
   const ej = doc("docs_ejecucion");
   if (ej) {
     const n = +ej.docs_ejecucion_n || 1;
-    enlaces += `<a class="boton boton-secop boton-ejec" href="${esc(ej.docs_ejecucion)}"
-      target="_blank" rel="noopener"
-      title="Acta de supervisión o informe de ejecución: lo más cerca que hay de comprobar que se entregó">Informe de ejecución${n > 1 ? ` (${n})` : ""}</a>`;
+    enlaces += botonDoc("docs_ejecucion",
+      `Informe de ejecución${n > 1 ? ` (${n})` : ""}`,
+      "Acta de supervisión o informe de ejecución: lo más cerca que hay de comprobar que se entregó");
   }
   return `
   <tr>

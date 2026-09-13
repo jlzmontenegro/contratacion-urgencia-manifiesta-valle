@@ -135,12 +135,12 @@
   .boton-secop:hover{opacity:.88}
   /* Los estudios previos van en hueco y no en relleno: llevan a un PDF y no a la
      ficha de SECOP, y dos botones macizos seguidos compiten entre si. */
+  /* Los enlaces a documento van en hueco y los de la ficha de SECOP en macizo,
+     pero TODOS los de documento comparten el mismo peso (peticion del usuario,
+     13-sep-2026): con tres estilos distintos la fila parecia tres cosas en vez
+     de una lista de sitios a los que ir. Cuales existen ya es la informacion. */
   .boton-ep{background:transparent;color:var(--acento);border:1px solid var(--acento)}
   .boton-ep:hover{background:var(--acento);color:#fff;opacity:1}
-  /* El informe de ejecucion es el unico que habla de lo ENTREGADO y hoy lo tiene
-     el 2% de los expedientes: cuando aparece tiene que verse de lejos. */
-  .boton-ejec{background:var(--acento);color:#fff;border:1px solid var(--acento);
-              font-weight:600}
 
   /* ---- Portada: lo primero que ve alguien que llega sin contexto ---- */
   .portada{background:var(--panel);border:1px solid var(--borde);border-radius:12px;

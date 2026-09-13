@@ -51,15 +51,33 @@ TAMANO_LOTE = 40
 # mayusculas-, porque las entidades escriben el mismo archivo de ocho maneras.
 PATRON_EP = re.compile(r"ESTUDIO[S]?\s+(?:PREVIO|Y\s+DOCUMENTO)")
 
-# SECOP genera 'CO1_PCCNTR_<id>_Firmado.pdf' con nombre fijo; por eso el contrato
-# cubre el 86% y no depende de que la entidad acierte con el nombre. Lo demas
-# -clausulado, minuta, 'CONVENIO DE ASOCIACION'- lo pone la entidad y suma.
-PATRON_CONTRATO = re.compile(
-    r"CO1 PCCNTR \d+ (?:FIRMADO|EN EJECUCION|APROBADO|MODIFICADO)"
-    r"|\b(?:CLAUSULADO|MINUTA)\b"
-    r"|^\s*\d*\s*CONTRATO\b|\bCONTRATO DE\b|CONVENIO DE ASOCIACION")
+# EL CONTRATO NO ES 'CO1_PCCNTR_<id>_Firmado.pdf'. Ese formato lo genera SECOP al
+# firmar o aprobar y es una constancia de dos paginas: no trae el articulado. El
+# contrato de verdad -el que tiene el objeto, las obligaciones, la forma de pago
+# y las garantias- lo sube la entidad, y se llama clausulado, minuta o contrato.
+# El usuario abrio uno al azar el 13-sep-2026, le salio la constancia, y de ahi
+# viene esta correccion. Cubrir mas no vale nada si lo que se abre no es lo que
+# el boton promete.
+_FORMATO_SECOP = re.compile(r"CO1 PCCNTR \d+")
 
-PATRON_INICIO = re.compile(r"ACTA DE INIC|ACTA DE INIIC")
+# Documentos que NOMBRAN el contrato sin serlo, y que por orden alfabetico
+# ganaban: 'ANALISIS DEL SECTOR CELEBRO CONTRATO', 'DESIGNACION DE CONTRATO',
+# 'SOLICITUD DE ELABORACION DE CONTRATO', 'MATRIZ DE RIESGOS CONVENIO'.
+_NO_ES_CONTRATO = re.compile(
+    r"ANALISIS|DESIGNACION|PROPUESTA|ESTUDIO|ACTA|MATRIZ|SOLICITUD|INFORME"
+    r"|CERTIFICAD|GARANTIA|POLIZA|SUPERVISION|RIESGO|PUBLICACION|LIQUIDACION"
+    r"|INVITACION|EVALUACION|VERIFICACION|IDONEIDAD|EXPERIENCIA|HOJA DE VIDA"
+    r"|SEGURIDAD SOCIAL|PLANILLA|FACTURA|CDP|PRESUPUESTO|CRONOGRAMA"
+    r"|ANTECEDENTES|CAMARA DE COMERCIO|PRECONTRACTUAL")
+
+# Por orden de preferencia. El clausulado es literalmente el articulado; la
+# minuta es el mismo documento antes de firmar. Los dos ultimos son la red.
+_NIVELES_CONTRATO = [
+    re.compile(r"CLAUSULADO"),
+    re.compile(r"MINUTA"),
+    re.compile(r"^(?:CONTRATO|CONVENIO)(?: |$)"),
+    re.compile(r"CONTRATO|CONVENIO"),
+]
 
 # Lo que PRUEBA que se ejecuto, no lo que la justifica. La distincion costo una
 # medicion: con un patron suelto salian 34 expedientes (12%) y casi todos eran
@@ -140,19 +158,42 @@ def consultar(portafolios, consultar_api, registrar=print):
                                      str(f.get("id_documento") or "")))
         return cand
 
+    def _contrato(filas):
+        """El contrato de verdad, por niveles de preferencia.
+
+        Se descarta primero la constancia de SECOP y todo lo que nombra el
+        contrato sin serlo; luego se baja por los niveles y dentro de cada uno
+        manda el PDF, porque un .zip obliga a descargar y descomprimir para ver
+        lo que se venia a leer.
+        """
+        for patron in _NIVELES_CONTRATO:
+            cand = []
+            for f in filas:
+                n = _normalizar(f.get("nombre_archivo"))
+                if _FORMATO_SECOP.search(n) or _NO_ES_CONTRATO.search(n):
+                    continue
+                if patron.search(n):
+                    cand.append(f)
+            if cand:
+                cand.sort(key=lambda f: (
+                    (f.get("extensi_n") or "").lower() != "pdf",
+                    str(f.get("nombre_archivo") or ""),
+                    str(f.get("id_documento") or "")))
+                return cand[0]
+        return None
+
     salida = {}
     for proc, docs in crudo.items():
         filas = list(docs.values())
         ep = _elegir(filas, PATRON_EP.search)
-        contrato = _elegir(filas, PATRON_CONTRATO.search)
-        inicio = _elegir(filas, PATRON_INICIO.search)
+        contrato = _contrato(filas)
         ejec = _elegir(filas, _es_ejecucion)
         salida[proc] = {
             "n": len(filas),
             "ep": _url(ep[0]) if ep else "",
             "ep_nombre": (ep[0].get("nombre_archivo") or "") if ep else "",
-            "contrato": _url(contrato[0]) if contrato else "",
-            "inicio": _url(inicio[0]) if inicio else "",
+            "contrato": _url(contrato) if contrato else "",
+            "contrato_nombre": (contrato.get("nombre_archivo") or "") if contrato else "",
             # De los informes de ejecucion se enlaza el primero y se dice cuantos
             # hay: van saliendo con el tiempo y la cuenta es la que avisa de que
             # el expediente se esta moviendo.
@@ -169,7 +210,7 @@ def anotar(registros, indice):
     mismo numero y el mismo enlace: son el mismo hecho en dos momentos y tener
     cuentas distintas en la misma operacion se leeria como un fallo.
     """
-    cuenta = {"ep": 0, "contrato": 0, "inicio": 0, "ejecucion": 0}
+    cuenta = {"ep": 0, "contrato": 0, "ejecucion": 0}
     tocados = 0
     for r in registros:
         datos = indice.get(r.get("portafolio") or "")
@@ -179,7 +220,7 @@ def anotar(registros, indice):
         r["docs_ep"] = datos["ep"]
         r["docs_ep_nombre"] = datos["ep_nombre"]
         r["docs_contrato"] = datos["contrato"]
-        r["docs_inicio"] = datos["inicio"]
+        r["docs_contrato_nombre"] = datos["contrato_nombre"]
         r["docs_ejecucion"] = datos["ejecucion"]
         r["docs_ejecucion_n"] = datos["ejecucion_n"]
         tocados += 1

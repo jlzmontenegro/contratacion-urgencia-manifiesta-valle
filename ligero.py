@@ -160,8 +160,6 @@ def _operaciones(registros):
                                   if r.get("docs_ep")), "")),
             "dc": _ep_corto(next((r.get("docs_contrato") or "" for r in regs
                                   if r.get("docs_contrato")), "")),
-            "di2": _ep_corto(next((r.get("docs_inicio") or "" for r in regs
-                                   if r.get("docs_inicio")), "")),
             "dj": _ep_corto(next((r.get("docs_ejecucion") or "" for r in regs
                                   if r.get("docs_ejecucion")), "")),
             "djn": max((int(r.get("docs_ejecucion_n") or 0) for r in regs), default=0),
@@ -403,20 +401,22 @@ tbody tr:hover{background:var(--panel-2)}
      border:1px solid var(--borde);text-decoration:none;color:var(--texto);
      white-space:nowrap;margin:0 4px 4px 0}
 .enl:hover{border-color:var(--acento);color:var(--acento-tinta)}
-/* Los que llevan a un DOCUMENTO van marcados, para distinguirlos de los dos que
-   llevan a la ficha de SECOP: es la diferencia entre abrir el archivo y tener
-   que buscarlo dentro del expediente. */
-.enl-doc{border-color:var(--acento);color:var(--acento-tinta);font-weight:600}
-.enl-doc:hover{background:var(--acento);color:#fff;border-color:var(--acento)}
-/* El informe de ejecucion va aun mas marcado, en macizo: es el unico que habla
-   de lo ENTREGADO y no de lo contratado, y hoy lo tiene el 2% de los
-   expedientes. Cuando aparezca, tiene que verse de lejos. */
-.enl-ejec{background:var(--acento);border-color:var(--acento);color:#fff;font-weight:600}
-.enl-ejec:hover{background:var(--acento-tinta);border-color:var(--acento-tinta);color:#fff}
+/* TODOS los enlaces de la fila comparten estilo (peticion del usuario,
+   13-sep-2026). Se probo con tres pesos -ficha en gris, documento en verde
+   hueco, ejecucion en macizo- y la fila parecia tres cosas distintas en vez de
+   una lista de sitios a los que ir. Cuales existen ya es la informacion; el
+   color no tenia que repetirla. */
 /* Compartir */
-.compartir{display:flex;flex-wrap:wrap;gap:4px;margin-top:7px}
-.compartir button{font-size:11px;padding:3px 8px;border-radius:3px;line-height:1.5;
+/* Redondos y solo con el icono (peticion del usuario, 13-sep-2026): con el
+   nombre escrito, cuatro botones ocupaban dos renglones en cada fila y en una
+   tabla de 375 operaciones eso es media pantalla de texto repetido. El nombre
+   no se pierde: va en aria-label y en title, asi que el lector de pantalla y el
+   raton lo siguen diciendo. */
+.compartir{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px;align-items:center}
+.compartir button{width:26px;height:26px;padding:0;border-radius:50%;
+     display:inline-flex;align-items:center;justify-content:center;
      transition:background-color .12s,color .12s,border-color .12s}
+.compartir button svg{width:13px;height:13px;display:block;fill:currentColor}
 /* Al pasar por encima, cada botón toma el color de su red. Es lo que hace que se
    reconozcan sin leerlos. El color del TEXTO se elige por contraste, no por
    costumbre: blanco sobre el verde de WhatsApp se queda en 1,9:1 y no se lee, así
@@ -635,9 +635,10 @@ figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
       dentro. Los botones verdes de al lado llevan <b>directo al documento</b>.</dd>
 
       <dt>Contrato</dt>
-      <dd>El documento del contrato en PDF, sin pasar por el expediente. Es el que más
-      aparece —en 8 de cada 10 operaciones contratadas— porque <b>lo genera SECOP</b> y no
-      depende de que la entidad acierte con el nombre del archivo.</dd>
+      <dd>El contrato en sí: objeto, <b>obligaciones</b>, plazos, forma de pago y garantías.
+      Es el clausulado o la minuta que sube la entidad, <b>no la constancia de dos páginas
+      que SECOP genera al firmar</b>, que no tiene nada de eso. Está en cerca de 7 de cada 10
+      expedientes.</dd>
 
       <dt>Estudios previos</dt>
       <dd>El documento en el que la entidad explica <b>por qué</b> contrata esto, qué
@@ -646,10 +647,6 @@ figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
       nombre</b>, y hoy es así en una de cada tres operaciones. Que el botón falte no
       significa que los estudios no se hayan hecho —significa que en el expediente no están
       publicados con ese nombre—, y eso también se le puede preguntar a la entidad.</dd>
-
-      <dt>Acta de inicio</dt>
-      <dd>Acredita que la ejecución <b>arrancó</b>, no solo que se firmó. Está en cerca de
-      un tercio de las operaciones contratadas.</dd>
 
       <dt>Informe de ejecución</dt>
       <dd>Actas de supervisión, de recibo, de entrega o de liquidación, e informes de avance.
@@ -896,6 +893,25 @@ function urlEp(v){
          "?DocumentId=" + v + "&InCommunity=False&InPaymentGateway=False" +
          "&DocUniqueIdentifier=";
 }
+
+/* Iconos de las redes, dibujados aqui y no traidos de un CDN: esta pagina no
+   depende de nadie. Van en un solo trazo y heredan el color del boton
+   (fill:currentColor), asi el mismo icono sirve en reposo y sobre el color de
+   la red. El NOMBRE no se pierde: va en aria-label y en title. */
+var ICONO = {
+  wa: {n: "WhatsApp", d: "M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z"},
+  x:  {n: "X", d: "M18.9 2.5h3.3l-7.2 8.24L23.5 21.5h-6.64l-5.2-6.8-5.95 6.8H2.4l7.7-8.8L2 2.5h6.8l4.7 6.22zm-1.16 17.02h1.83L7.34 4.38H5.38z"},
+  fb: {n: "Facebook", d: "M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.52 1.49-3.91 3.78-3.91 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.45 2.91h-2.33V22c4.78-.76 8.43-4.92 8.43-9.94z"},
+  ig: {n: "Instagram", d: "M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.12 1.39C1.35 2.68.93 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.39 2.12.66.66 1.33 1.08 2.12 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.3 1.46-.72 2.12-1.39.66-.66 1.08-1.33 1.39-2.12.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.3-.79-.72-1.46-1.39-2.12C21.32 1.35 20.65.93 19.86.63 19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm7.85-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"}
+};
+
+function botonRed(red, i){
+  var c = ICONO[red];
+  return '<button type="button" data-comp="' + red + '" data-i="' + i + '" ' +
+    'aria-label="Compartir en ' + c.n + '" title="Compartir en ' + c.n + '">' +
+    '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="' +
+    c.d + '"/></svg></button>';
+}
 /* Cifras redondas para los titulos del mapa y el resumen: "$ 1.321,9 M" se lee
    de un vistazo y "$ 1.321.917.014" no. */
 function corto(v){
@@ -1135,17 +1151,12 @@ function fila(o, i){
      filas enseña a no pulsarlos. Cobertura medida el 13-sep-2026 sobre los 272
      expedientes del sismo: contrato 86%, estudios previos 45%, acta de inicio
      30%, prueba de ejecucion 2%. */
-  if (o.dc) enl += '<a class="enl enl-doc" href="' + esc(urlEp(o.dc)) + '" target="_blank" ' +
-      'rel="noopener" title="El documento del contrato, en PDF">Contrato</a>';
-  if (o.ep) enl += '<a class="enl enl-doc" href="' + esc(urlEp(o.ep)) + '" target="_blank" ' +
+  if (o.dc) enl += '<a class="enl" href="' + esc(urlEp(o.dc)) + '" target="_blank" ' +
+      'rel="noopener" title="El contrato: objeto, obligaciones, plazos y forma de pago">Contrato</a>';
+  if (o.ep) enl += '<a class="enl" href="' + esc(urlEp(o.ep)) + '" target="_blank" ' +
       'rel="noopener" title="Documento con que la entidad justifica la contratación">' +
       'Estudios previos</a>';
-  if (o.di2) enl += '<a class="enl enl-doc" href="' + esc(urlEp(o.di2)) + '" target="_blank" ' +
-      'rel="noopener" title="Acredita que la ejecución arrancó">Acta de inicio</a>';
-  /* El unico que habla de lo ENTREGADO y no de lo contratado, y hoy lo tienen 6
-     de 272 expedientes. Va destacado a proposito: cuando aparece, es la
-     noticia. */
-  if (o.dj) enl += '<a class="enl enl-ejec" href="' + esc(urlEp(o.dj)) + '" target="_blank" ' +
+  if (o.dj) enl += '<a class="enl" href="' + esc(urlEp(o.dj)) + '" target="_blank" ' +
       'rel="noopener" title="Acta de supervisión o informe de ejecución: lo más cerca que hay de comprobar que se entregó">' +
       'Informe de ejecución' + (o.djn > 1 ? " (" + o.djn + ")" : "") + '</a>';
   var fechas = "";
@@ -1153,10 +1164,8 @@ function fila(o, i){
       (o.di ? "inicia " + esc(o.di) : "") + (o.di && o.df ? " · " : "") +
       (o.df ? "termina " + esc(o.df) : "") + "</div>";
   var comp = '<div class="compartir"><span class="rot">Compartir</span>' +
-    '<button type="button" data-comp="wa" data-i="' + i + '">WhatsApp</button>' +
-    '<button type="button" data-comp="x"  data-i="' + i + '">X</button>' +
-    '<button type="button" data-comp="fb" data-i="' + i + '">Facebook</button>' +
-    '<button type="button" data-comp="ig" data-i="' + i + '">Instagram</button></div>';
+    botonRed("wa", i) + botonRed("x", i) + botonRed("fb", i) + botonRed("ig", i) +
+    "</div>";
   return '<tr>' +
     '<td data-etq="Estado">' +
       (o.f ? '<span class="est est-f">Contratada</span>'
@@ -1573,7 +1582,6 @@ function imprimirInforme(){
     if (o.up) enl.push('<a class="ir" href="' + esc(o.up) + '">Proceso ↗</a>');
     if (o.dc) enl.push('<a class="ir" href="' + esc(urlEp(o.dc)) + '">Contrato ↗</a>');
     if (o.ep) enl.push('<a class="ir" href="' + esc(urlEp(o.ep)) + '">Estudios previos ↗</a>');
-    if (o.di2) enl.push('<a class="ir" href="' + esc(urlEp(o.di2)) + '">Acta de inicio ↗</a>');
     if (o.dj) enl.push('<a class="ir" href="' + esc(urlEp(o.dj)) + '">Informe de ejecución ↗</a>');
     var fechas = [];
     if (o.d) fechas.push((o.f ? "Firma " : "Publicado ") + esc(o.d));

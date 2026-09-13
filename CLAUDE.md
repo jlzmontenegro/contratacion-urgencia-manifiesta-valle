@@ -654,6 +654,14 @@ largo de sus registros. Cuando el resultado llega justo en el tope, la fila **av
 cortó** y remite al expediente: un texto cortado a mitad de palabra que se presenta como entero
 desinforma.
 
+**Los botones de compartir son REDONDOS y solo con el icono** (13-sep-2026, a petición del
+usuario). Con el nombre escrito ocupaban dos renglones en cada fila, y en una tabla de 375
+operaciones eso es media pantalla de texto repetido. **El nombre no se pierde**: va en
+`aria-label` y en `title`, así que el lector de pantalla y el ratón lo siguen diciendo. Los
+iconos son SVG dibujados dentro de la página, no traídos de un CDN —esta página no depende de
+nadie— y heredan el color con `fill:currentColor`, así el mismo trazo sirve en reposo y sobre
+el color de la red.
+
 **Los botones de compartir: tres funcionan y uno copia, y se dice cuál.** WhatsApp, X y Facebook
 tienen URL de compartir. **Instagram no tiene ninguna** —no existe forma de publicar en Stories
 desde otra página—, así que ese botón **copia el texto al portapapeles y lo explica**, en vez de
@@ -782,24 +790,48 @@ de ruido y el enlace bailaría sin que nadie hubiera publicado nada.
 en la del contrato—, así que se deduplica por `id_documento` antes de contar. Sin eso, la fila
 anunciaría el doble de documentos de los que hay.
 
-**Se enlazan CUATRO documentos, y el que más rinde es el contrato** (13-sep-2026). Medido
-sobre los 272 expedientes de operaciones del sismo, 4.023 documentos:
+**Se enlazan TRES documentos.** Medido sobre los 272 expedientes de operaciones del sismo,
+4.023 documentos:
 
 | documento | expedientes | cobertura |
 |---|---|---|
-| Contrato | 235 | **86%** |
+| Contrato | 195 | **71%** |
 | Estudios previos | 123 | 45% |
-| Acta de inicio | 84 | 30% |
 | Prueba de ejecución | 6 | **2%** |
 
-**El contrato cubre tanto porque lo nombra SECOP, no la entidad**: el PDF sale como
-`CO1_PCCNTR_<id>_Firmado.pdf`, con nombre fijo. Todo lo demás depende de que quien sube el
-archivo acierte con el nombre, y por eso cae al 45% o menos.
+**EL CONTRATO NO ES `CO1_PCCNTR_<id>_Firmado.pdf`.** Ese formato lo genera SECOP al firmar o
+aprobar y es una constancia: **no trae el articulado**. El usuario abrió uno al azar el
+13-sep-2026, le salió eso, y de ahí viene la corrección. El contrato de verdad —objeto,
+**obligaciones**, plazos, forma de pago, garantías— lo sube la entidad y se llama *clausulado*,
+*minuta* o *contrato*. Incluir la constancia daba 86% de cobertura; excluirla deja **71%**, y
+ese 15% de menos está bien pagado: **cubrir más no vale nada si lo que se abre no es lo que el
+botón promete.**
+
+**Se elige por NIVELES, no con un patrón.** Por orden: `CLAUSULADO` → `MINUTA` → el nombre
+empieza por `CONTRATO`/`CONVENIO` → lo contiene. Antes hay que descartar dos cosas: la
+constancia de SECOP y **lo que nombra el contrato sin serlo**, que por orden alfabético ganaba
+—`ANALISIS DEL SECTOR CELEBRO CONTRATO`, `DESIGNACION DE CONTRATO`, `SOLICITUD DE ELABORACION
+DE CONTRATO`, `MATRIZ DE RIESGOS CONVENIO`—. Dentro de un mismo nivel manda el PDF: un `.zip`
+obliga a descargar y descomprimir para ver lo que se venía a leer.
+
+**Se comprobó ABRIENDO los PDF, no por el nombre.** De 12 elegidos al azar, 9 traen entre 14 y
+89 menciones de cláusula u obligación y entre 19.000 y 41.000 caracteres; 2 eran `.zip` y 1 un
+PDF escaneado sin capa de texto. Esa es la prueba que vale: el nombre del archivo no dice lo
+que hay dentro.
 
 **«Contrato» pasó a llamarse «Expediente»** en el botón que lleva a la ficha de SECOP
 (decisión del usuario). Siempre abrió el expediente; con el enlace al contrato de verdad al
-lado, el nombre viejo mentiría. La fila queda: *Expediente · Proceso* (ficha, en gris) y
-*Contrato · Estudios previos · Acta de inicio · Informe de ejecución* (documento, en verde).
+lado, el nombre viejo mentiría. La fila queda: *Expediente · Proceso* (ficha) y *Contrato ·
+Estudios previos · Informe de ejecución* (documento).
+
+**El acta de inicio se quitó** (decisión del usuario, 13-sep-2026), aunque cubría el 30%. Con
+cinco documentos la fila se volvía una lista de trámites; lo que importa es qué se contrató,
+por qué, y si hay prueba de que se ejecutó.
+
+**Todos los botones de la fila comparten estilo** (decisión del usuario). Se probó con tres
+pesos —ficha en gris, documento en verde hueco, ejecución en macizo— y la fila parecía tres
+cosas distintas en vez de una lista de sitios a los que ir. **Cuáles existen ya es la
+información**; el color no tenía que repetirla.
 
 **El patrón de «informe de ejecución» costó una medición y hay que no relajarlo.** Con un
 patrón suelto salían 34 expedientes (12%) y **casi todos eran falsos**: `INFORME REVISION

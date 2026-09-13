@@ -1837,7 +1837,7 @@ def aplanar(df, nombre_fuente):
             "docs_ep": "",
             "docs_ep_nombre": "",
             "docs_contrato": "",
-            "docs_inicio": "",
+            "docs_contrato_nombre": "",
             "docs_ejecucion": "",
             "docs_ejecucion_n": 0,
             # Cuantas veces publico la entidad esta misma contratacion. 0 es lo
@@ -2229,8 +2229,7 @@ def exportar_tablero(hoy, resultados, alertas, cfg, resumen_corrida=None):
         tocados, cuenta = documentos.anotar(registros, indice)
         print(f"  documentos: {len(indice)} expedientes, {tocados} registros "
               f"enlazados | contrato {cuenta['contrato']}, estudios previos "
-              f"{cuenta['ep']}, acta de inicio {cuenta['inicio']}, "
-              f"ejecucion {cuenta['ejecucion']}")
+              f"{cuenta['ep']}, ejecucion {cuenta['ejecucion']}")
     except Exception as e:
         print(f"  ! no se pudieron consultar los documentos del expediente: {e}")
 
