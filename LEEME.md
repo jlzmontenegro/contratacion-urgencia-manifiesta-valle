@@ -15,6 +15,16 @@ Actos administrativos que enmarcan el seguimiento:
 | Decreto 4112.010.20.0963 del 10-ago-2026 | Alcaldía de Cali | Calamidad pública, 6 meses |
 | Decreto 4112.010.20.0964 del 10-ago-2026 | Alcaldía de Cali | Urgencia manifiesta, contratación directa (art. 42 Ley 80 de 1993) |
 | Decreto 1.03.01-1070 del 10-ago-2026 | Gobernación del Valle | Calamidad pública, 6 meses, contratación por art. 66 Ley 1523 de 2012 |
+| **Decreto 1171 del 11-ago-2026** | Presidencia de la República | **Situación de desastre de carácter nacional** por el sismo, 12 meses prorrogables, en Antioquia, Caldas, Cauca, Chocó, Quindío, Cundinamarca, Risaralda, Huila, **Valle del Cauca**, Tolima, Putumayo y Norte de Santander. Aplica el régimen especial del Capítulo VII de la Ley 1523 de 2012 y crea la **Subcuenta SISMO 2026** del FNGRD |
+| **Decreto 1261 del 19-ago-2026** | Presidencia de la República | **Estado de Emergencia Económica, Social y Ecológica** por el mismo sismo, 30 días, con ámbito territorial en los municipios del Reporte Situacional N.º 36 de la UNGRD |
+
+Los dos decretos nacionales se añadieron al seguimiento el **12-sep-2026**. Importan por dos
+razones. La primera es de cobertura: son ellos los que habilitan la contratación de urgencia
+**fuera del Valle**, y explican por qué hay contratación relacionada en Antioquia, Risaralda y
+Chocó. La segunda es de detección: hay entidades que se amparan en el decreto **sin escribir
+«sismo»** —el Ministerio de Educación contrata *«en el marco del estado de emergencia
+económica, social y ecológica declarado mediante el decreto 1261 de 2026»*— y a esas no las
+alcanza ninguna palabra clave. Por eso hay un barrido dedicado a los números de decreto.
 
 ---
 
@@ -63,7 +73,7 @@ Datos abiertos en datos.gov.co, las dos plataformas de contratación:
 | SECOP II | Procesos de contratación | `p6dx-8zbt` | `fecha_de_publicacion_del` | `id_del_proceso` |
 | SECOP I | Procesos de compra pública | `f789-7hwg` | `fecha_de_firma_del_contrato`, con respaldo en `fecha_de_cargue_en_el_secop` | `uid` |
 
-Sobre cada fuente se corren cuatro barridos que luego se deduplican por identificador:
+Sobre cada fuente se corren estos barridos, que luego se deduplican por identificador:
 
 | Barrido | Qué captura | Por qué |
 |---|---|---|
@@ -71,6 +81,9 @@ Sobre cada fuente se corren cuatro barridos que luego se deduplican por identifi
 | `departamento` | Toda entidad con departamento *Valle del Cauca* | Descentralizadas (EMCALI, Metro Cali, ESE) y municipios afectados. El Parágrafo Cuarto del Decreto 0964 obliga a las descentralizadas a declarar **su propia** urgencia manifiesta, con NIT distinto |
 | `nacional_clave` | Todo el país por palabras clave o justificación "Urgencia manifiesta" | Entidades nacionales (ministerios) que contraten para la emergencia |
 | `ungrd` | Toda la contratación de la UNGRD y del FNGRD | Coordinan la respuesta nacional al desastre. Se traen completas, mencionen o no el sismo |
+| `decretos` | Todo el país por el número de los decretos **nacionales** (`DECRETO 1171`, `1171 DEL 11 DE AGOSTO`, `DECRETO 1261`, `1261 DEL 19 DE AGOSTO`) | Contratación que se ampara en el decreto sin escribir «sismo». Ninguna palabra clave la ve. Al estrenarlo aparecieron 5 registros del Ministerio de Educación que ningún otro barrido traía. Solo los nacionales: los de Cali y la Gobernación ya entran por `nit` y por `departamento`, y sus números cortos (`0964 DE 2026`) sí pueden colisionar en el resto del país |
+| `objeto_territorio` | Cualquier entidad cuyo objeto nombre Cali o el Valle | Red para la contratación del gobierno nacional destinada al territorio |
+| `descentralizadas_N` | Las descentralizadas y demás entidades del Valle, por NIT propio | Única red que las atrapa cuando su campo *departamento* viene sin diligenciar |
 
 ## SECOP I y UNGRD
 
@@ -230,6 +243,7 @@ datos/
   procesos.csv               idem para procesos
   secop1.csv                 idem para SECOP I
   cambios.csv                log acumulado de modificaciones (adiciones, prórrogas, estado…)
+  avisados.csv               de qué contratación ya salió correo. Evita avisar dos veces
   estado.json                resumen de la última ejecución
   historial/                 snapshot comprimido de cada día
 reportes/
@@ -239,8 +253,68 @@ datos/tablero.json           lo que la pagina carga y pinta
 index.html                   estructura de la pagina (16 KB)
 tablero.css                  estilos
 tablero.js                   render
+ligero.html                  versión ligera, autónoma, para incrustar (la escribe ligero.py)
 publicar/                    copia del repositorio publicado en GitHub Pages
 ```
+
+## La versión ligera, para incrustar en otra página
+
+`ligero.html` es un tablero de **un solo archivo** pensado para meterse en otra web con un
+`<iframe>` o un enlace. Se publica en la misma dirección de siempre, con `/ligero.html` al
+final, y **se regenera solo en cada recolección**: quien lo incruste no tiene que hacer nada.
+
+```html
+<iframe src="https://jlzmontenegro.github.io/contratacion-urgencia-manifiesta-valle/ligero.html"
+        style="width:100%;height:900px;border:0" title="Contratación del sismo"></iframe>
+```
+
+Qué trae y qué no:
+
+- **Solo lo confirmado como del sismo.** Ni lo que está por revisar, ni la urgencia manifiesta
+  por otras causas, ni la contratación ordinaria. Lo que una persona haya marcado a mano como
+  relacionado sí entra, porque el colector ya lo trata como confirmado.
+- **Filtros**: búsqueda libre, entidad contratante (los seis grupos), entidad, municipio,
+  estado (contratada / abierta) y rango de monto.
+- **La tabla**, con los mismos campos de siempre y el objeto completo sin truncar.
+- **Los dos mapas**, Valle por municipio y Colombia por departamento, que respetan los filtros.
+- **Descarga en CSV** de exactamente lo que se esté viendo.
+- No trae portada, cifras de titular, gráficos, padrón de entidades ni registro de
+  modificaciones. Para eso está el tablero completo, al que enlaza al pie.
+
+Los seis grupos son: Alcaldía de Cali y sus dependencias · Gobernación del Valle y sus
+dependencias · Descentralizadas de Cali · Descentralizadas de la Gobernación · Municipios y
+alcaldías del Valle · Otras entidades y otras regiones. **Aparecen siempre, con su cuenta al
+lado, incluso los que están en cero**, porque que la Gobernación del Valle no tenga
+contratación del sismo es un hallazgo y no un hueco.
+
+Pesa 420 KB, que con la compresión de GitHub Pages son **87 KB**. No pide nada a ningún
+servidor externo, ni siquiera tipografías.
+
+## Los avisos por correo
+
+En cada recolección, `correo.py` manda hasta dos correos **solo si hay algo nuevo**:
+
+| Correo | Qué lleva | A quién |
+|---|---|---|
+| **Relacionada con el sismo** | Contratación ya confirmada. Entidad, número de contrato o de proceso, contratista, valor, objeto completo, fecha de firma, fechas de inicio y fin, y un botón para abrirla en SECOP I o II | A todo el equipo |
+| **Por revisar** | Contratación que el clasificador no puede juzgar solo y hay que leer para decidir | Solo a quien revisa |
+
+Son dos correos y no uno a propósito: mezclarlos haría que lo dudoso se leyera como
+confirmado. De cada contratación se avisa **una sola vez**; si un proceso ya avisado se firma
+después, el contrato vuelve a avisarse, porque la firma es la noticia.
+
+**Para ponerlo a andar** hacen falta dos cosas:
+
+1. Las direcciones, en `config.json` → `correo` → `para_relacionados` y `para_revision`.
+   Se editan en github.com como `revisiones.csv`. Mientras estén vacías no se manda nada y
+   **nada se da por avisado**: en cuanto se llenen, la siguiente corrida manda lo acumulado.
+2. La credencial, en *Settings > Secrets and variables > Actions* del repositorio:
+   `CORREO_USUARIO` (la dirección desde la que sale) y `CORREO_CLAVE` (una **contraseña de
+   aplicación**, no la del correo). Opcionalmente `CORREO_REMITENTE`, y las variables
+   `CORREO_SERVIDOR` y `CORREO_PUERTO` si no es Gmail (por defecto `smtp.gmail.com:465`).
+
+Para ver cómo quedan los correos sin mandarlos: `py -3 correo.py --probar`, que los escribe
+en `reportes/`.
 
 ## El tablero es un archivo autónomo
 

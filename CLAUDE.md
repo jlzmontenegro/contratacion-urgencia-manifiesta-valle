@@ -21,12 +21,16 @@ verificar_cobertura.py auditoría independiente. No importa colector.py, a prop�
 index.html             estructura       ┐
 tablero.css            estilos          ├ la página SOLO pinta
 tablero.js             render           ┘
+ligero.py              genera ligero.html: un HTML autónomo, solo lo confirmado
+correo.py              avisa por correo de lo nuevo. Dos correos, dos públicos.
 datos/tablero.json     lo que la página carga
+datos/avisados.csv     de qué ya salió correo. Lo escribe correo.py
 datos/*.csv            estado y trazas; los mantiene GitHub Actions
 ```
 
-**GitHub Actions corre el colector cada 12 horas, 8:30 y 20:30 (Colombia)**, audita y
-publica. El runner lleva `TZ: America/Bogota`: sin eso la corrida de la noche se archivaba
+**GitHub Actions corre el colector cada 12 horas, 8:30 y 20:30 (Colombia)**, audita, **avisa
+por correo** y publica —en ese orden, que importa y está explicado abajo—. El runner lleva
+`TZ: America/Bogota`: sin eso la corrida de la noche se archivaba
 con la fecha del dia siguiente y el sello de la pagina salia cinco horas adelantado.
 `publicar.bat` sube **solo código**; los datos son de Actions. Los flujos de
 `.github/workflows/` también se editan en esta carpeta y `publicar.bat` los copia: dentro de
@@ -150,6 +154,44 @@ subía **30 registros por corrida** —canchas sintéticas, parques lineales, ac
 sedes educativas—, palabras de obra corriente y no de daño. Con la lista afinada sube **5**, de
 los cuales dos o tres merecen lectura de verdad. `Alta` no se mueve: 485 antes y después.
 
+**El seguimiento cubre CUATRO actos, no dos** (12-sep-2026). A los decretos de Cali
+(`4112.010.20.0963` y `0964`) y de la Gobernación (`1.03.01-1070`) se sumaron los dos
+nacionales: **Decreto 1171 del 11-ago-2026**, que declara la *situación de desastre de
+carácter nacional* por el sismo en doce departamentos —Antioquia, Caldas, Cauca, Chocó,
+Quindío, Cundinamarca, Risaralda, Huila, Valle, Tolima, Putumayo, Norte de Santander— por
+doce meses prorrogables y crea la **Subcuenta SISMO 2026** del FNGRD; y **Decreto 1261 del
+19-ago-2026**, que declara el *Estado de Emergencia Económica, Social y Ecológica* por el
+mismo sismo. Los dos hablan **exclusivamente de este evento**: citarlos es nombrarlo, y por
+eso valen tanto como la palabra «sismo». El 1171 es además lo que habilita la urgencia
+manifiesta fuera del Valle, así que explica por qué hay contratación relacionada en
+Antioquia y Risaralda.
+
+**Citar un decreto basta para dar el registro por relacionado**, sin más pruebas
+(`elif golpes_decreto: nivel = "Alta"`). Por eso **cada patrón se midió contra la API
+antes de escribirlo**, y el número suelto no sirve: `1171` aparece dentro del BPIM
+`202500000011717` de Pueblorrico, de la señalización `63600C1171` de AEROCIVIL y de la
+referencia `RESHT-SOL-TQ00001171-2026` de la Sociedad Tequendama. Con `DECRETO 1171` y
+`1171 DEL 11 DE AGOSTO` son **8 aciertos y cero ruido**. Tampoco sirve `DESASTRE NACIONAL`
+como palabra clave: los tres contratos del FNGRD que la usan son de **otros** desastres
+—Decreto 2113 de 2022 en Santander, 1372 de 2024 en Boyacá— y están bien como ordinaria.
+
+**Hay que BARRER por el decreto, no solo reconocerlo.** Registrarlo en `decretos` solo
+alcanza a lo que otro barrido ya trajo. Un contrato que se ampara en el decreto **sin
+escribir «sismo»** no lo trae ninguna palabra clave ni ningún NIT: el Ministerio de
+Educación dice *«en el marco del estado de emergencia económica, social y ecológica
+declarado mediante el decreto 1261 de 2026»* y nada más. Por eso existe el barrido
+`decretos`, que usa `decretos_barrido` de `config.json`. Al estrenarlo aparecieron **5
+registros que ningún otro barrido veía**, los cinco del MEN. **Solo van los nacionales**:
+Cali y la Gobernación ya se barren enteras por NIT y por departamento, y sus números
+cortos (`0964 DE 2026`) sí tienen con qué colisionar en el resto del país.
+
+**Los decretos se buscan sobre un texto aparte, sin el ordinal.** Las entidades escriben
+lo mismo de cuatro maneras —«Decreto 1171», «Decreto No. 1171», «DECRETO NACIONAL No.
+1171», «Decreto N° 0964»— y con el ordinal en medio el patrón `DECRETO 1171` no coincide.
+`texto_decreto` borra `No.` / `Nro.` / `N°` / `Número` cuando van pegados a un número. Va
+en su propia serie y no en el texto general **porque cambia cómo se leen los números**, y
+el resto del clasificador busca palabras.
+
 **Ningún NIT se inventa.** Todos los de `config.json` se obtuvieron consultando la API.
 
 **Y no se reconstruyen con la fórmula del dígito de verificación.** SECOP publica el mismo NIT
@@ -259,6 +301,16 @@ auditoría fallida pasa por buena.
   que el desglose por nivel de gobierno la contaría como distrital y decidió asumirlo. Entró
   con 14 registros por $1.324 millones, ninguno del sismo. Si algún día se separa, su sitio
   natural es un grupo propio, como el que ya tiene la UNGRD siendo una sola entidad.
+- **La versión ligera muestra solo `Alta`** (12-sep-2026). El usuario lo pidió así con estas
+  palabras: *"solo lo que ya está confirmado que está directamente relacionado con el sismo"*,
+  más lo que él haya clasificado a mano como relacionado. Eso último **no exige nada aparte**:
+  el colector ya sube a `Alta` lo marcado en `revisiones.csv`.
+- **La versión ligera vive en el repo y se regenera sola cada 12 horas** (12-sep-2026), en
+  `ligero.html`, para incrustarla por iframe o enlace desde otra instancia. Se descartó
+  generarla a mano y subirla: dejaría de actualizarse el día que a nadie se le ocurra.
+- **Los correos salen de una cuenta Gmail/Workspace con contraseña de aplicación**
+  (12-sep-2026), no de un servicio transaccional. Si el dominio bloquea las contraseñas de
+  aplicación, la alternativa acordada era Resend o SendGrid.
 - Publicar solo cuando lo pida.
 
 ## Cómo está la página
@@ -460,14 +512,111 @@ como *"Por revisar"*, `Otra urgencia` como *"Otra emergencia"* y `Contexto` como
 cada una con su explicación completa en la leyenda y en el título emergente. Los nombres
 internos siguen vivos en los datos y en `config.json`; solo no se muestran.
 
+## La versión ligera (`ligero.html`)
+
+**Existe para incrustarse en OTRA página**, en una instancia ajena donde no se puede contar
+con que se sirvan cuatro archivos desde el mismo sitio. Por eso todo —datos, estilos, guion
+y contornos del mapa— viaja **dentro del HTML**: 420 KB en crudo, **87 KB servidos con gzip**,
+cero peticiones de red después de la primera y ninguna dependencia externa. Lo escribe
+`ligero.py`, al que llama `colector.py` al final de cada corrida, así que **se actualiza solo
+cada doce horas** con el mismo sello de hora que el tablero grande. No se edita a mano: se
+edita `ligero.py`.
+
+**Ni siquiera las tipografías de Google.** El tablero grande usa Zilla Slab, Public Sans e
+IBM Plex Mono; este usa la pila del sistema. Una página incrustada en otra no puede quedarse
+esperando una fuente remota, y una que no llega deja el texto saltando. Es el único sitio
+donde los dos tableros no se parecen, y es a propósito.
+
+**Muestra UNA sola clase de registro: `Alta`.** El tablero grande existe para dudar en voz
+alta —*Por revisar*, *Otra emergencia*, *Ordinaria*—; este es para publicar hacia afuera, y
+ahí lo que no está confirmado no se muestra. Incluye lo que una persona marcó como
+relacionado en `revisiones.csv`, porque el colector ya lo sube a `Alta` antes de llegar aquí:
+**no hay que filtrar dos veces**.
+
+**Seis grupos, y el sexto no es lo que parece.** `Otras entidades del Valle` del colector
+**no** es lo mismo que "municipios y alcaldías del Valle": ahí caben también hospitales,
+instituciones educativas, cámaras de comercio y personerías. Se separan por el nombre de la
+entidad, que es lo único que lo dice —`orden` y `entidad_centralizada` son autodeclarados—, y
+lo que no es alcaldía ni municipio se va a *Otros*, igual que se hizo en el Excel de agosto a
+petición del usuario. La UAESP se cuenta como la Alcaldía de Cali, misma decisión.
+
+**Los seis grupos van SIEMPRE en el desplegable, con su cuenta al lado, incluidos los que
+están en cero.** La Gobernación del Valle no tiene contratación confirmada del sismo, y esa
+es justamente una de las cosas que hay que poder ver: si la opción desapareciera, la página
+no diría nada y el lector supondría que no se la vigila. Al elegirla, el mensaje de tabla
+vacía lo dice con todas sus letras —*"el cero es un hallazgo, no un dato que falte"*.
+
+**La cifra de cabecera reparte Valle y fuera del Valle.** El título dice "Cali y Valle del
+Cauca" y en la vista sin filtros **más de la mitad de lo firmado es de Antioquia, Risaralda
+y Chocó**, que entran por *Otras entidades y otras regiones*. Una sola cifra grande debajo de
+ese título se leería como si toda fuera del Valle: es la misma trampa que costó el episodio
+de los $14,0 mm contra $10,2 mm. Se separa por el departamento de la entidad, que es lo mismo
+que pinta el mapa.
+
+**El desempate de etiquetas del mapa se mide con `getBBox()` sobre el SVG ya puesto en la
+página.** Estimar el ancho por el número de letras deja solapes; con `getBBox` son **cero en
+los dos mapas**, comprobado. Es el mismo algoritmo de `tablero.js`, copiado a propósito y no
+factorizado: son dos páginas que tienen que poder divergir sin romperse la una a la otra.
+
+## Los avisos por correo (`correo.py`)
+
+**Dos correos, dos públicos, porque son dos decisiones distintas.** El de `Alta` va al
+equipo: es contratación ya dada por atención del sismo, y trae lo necesario para verificarla
+sin abrir el tablero (entidad, número, proveedor, valor, objeto completo, firma, inicio, fin
+y el botón a SECOP). El de `Media` va **solo a quien revisa**. Mezclarlos sería el peor
+resultado posible: lo dudoso acabaría leyéndose como confirmado.
+
+**No se avisa dos veces del mismo registro.** La bitácora es `datos/avisados.csv`, con pares
+`(identificador, aviso)`. Se lleva **por registro y no por operación** a propósito: si un
+proceso ya avisado se firma después, el contrato es un identificador nuevo y **la firma vuelve
+a avisarse**, que es exactamente la noticia.
+
+**El paso va DESPUÉS de la auditoría y ANTES de publicar.** Después de la auditoría porque si
+el candado salta no hay que avisar de datos que no se van a publicar. Antes de publicar porque
+así `avisados.csv` viaja **en el mismo commit que los datos**; al revés, una segunda corrida
+del mismo día encontraría la bitácora vacía y repetiría todos los avisos. Y lleva
+`continue-on-error`: publicar no puede depender de que responda un servidor de correo.
+
+**En la primera corrida no se manda nada**: se siembra la bitácora con lo que ya existe. Sin
+eso, el estreno serían quinientos correos de contratación de hace un mes.
+
+**Sin credenciales o sin destinatarios no se anota nada.** Se avisa por el registro de la
+corrida y los pendientes quedan pendientes: en cuanto se configuren, la siguiente corrida
+manda lo acumulado. Un correo que no salió no puede darse por avisado.
+
+**Las direcciones están en `config.json`, la contraseña en los secretos.** Las direcciones no
+son secretas; la contraseña de aplicación va en *Settings > Secrets and variables > Actions*
+como `CORREO_CLAVE`, junto con `CORREO_USUARIO` y, si hace falta, `CORREO_REMITENTE`.
+`CORREO_SERVIDOR` y `CORREO_PUERTO` son *variables* opcionales (por defecto
+`smtp.gmail.com:465`).
+
+**`os.environ.get(clave, defecto)` no sirve aquí.** GitHub Actions define la variable igual
+cuando no existe, solo que **vacía**: el defecto nunca se usaría y `int("")` reventaría la
+corrida. Va con `or`.
+
+**El correo lleva `<meta charset>` aunque el MIME ya lo diga.** Hay clientes —y
+previsualizadores— que abren el HTML por su cuenta y sin esa línea leen el archivo en la
+codificación del sistema: «contratación» sale como «contrataciÃ³n» en todas las tildes.
+
 ## Cómo probar
 
 **El panel del navegador SÍ abre `localhost`** desde `.claude/launch.json` (comprobado el
 24-ago-2026; la nota anterior decía lo contrario y ya no vale). `preview_start` levanta
 `py -3 -m http.server 8765` y desde ahí se puede leer el DOM y la geometría real que calcula
-el navegador, que es la única forma de cazar las trampas de especificidad del CSS. **Capturas de
-pantalla no hay**: el panel no compone imagen, así que lo visual se comprueba midiendo
-(`getBoundingClientRect`, `getComputedStyle`), no mirando.
+el navegador, que es la única forma de cazar las trampas de especificidad del CSS.
+
+**Capturas de pantalla SÍ hay** (comprobado el 12-sep-2026; la nota anterior decía que no y
+ya no vale). `computer{action:"screenshot"}` compone imagen, y con eso se vieron los mapas de
+`ligero.html` y el correo de muestra. Dos límites reales: **captura el principio de la página,
+no donde se haya desplazado** —para ver algo que queda abajo hay que ocultar lo de arriba con
+`style.display='none'` y recargar después—, y **`zoom` con recorte de región no está
+soportado**: devuelve la captura entera. Para lo fino —solapes de etiquetas, desbordes— sigue
+mandando medir (`getBBox`, `getBoundingClientRect`, `getComputedStyle`): la captura dice que
+algo se ve mal, la medida dice cuánto.
+
+`correo.py --probar` no manda nada y escribe los dos correos en `reportes/`, listos para
+abrirlos en el navegador. Para simular que hay novedades, se borran unas líneas de
+`datos/avisados.csv` y se vuelve a correr.
 
 Para lógica pura sigue sirviendo cargar `tablero.js` en Node con un DOM mínimo simulado y un
 `fetch` que sirva `datos/tablero.json`. Ojo con dos trampas del arnés: `querySelector` debe devolver un

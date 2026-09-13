@@ -85,6 +85,25 @@ jobs:
           set -o pipefail
           python verificar_cobertura.py | tee auditoria.txt
 
+      # Avisa por correo de lo que aparecio. Va DESPUES de la auditoria -si el
+      # candado salta no se avisa de datos que no se van a publicar- y ANTES de
+      # publicar, para que datos/avisados.csv viaje en el mismo commit que los
+      # datos. Al reves, una segunda corrida del mismo dia encontraria la
+      # bitacora vacia y repetiria todos los avisos.
+      #
+      # continue-on-error a proposito: publicar los datos no puede depender de
+      # que el servidor de correo responda. El paso sale en rojo si falla, que
+      # es lo que hace falta para enterarse.
+      - name: Avisar por correo
+        continue-on-error: true
+        env:
+          CORREO_USUARIO: ${{ secrets.CORREO_USUARIO }}
+          CORREO_CLAVE: ${{ secrets.CORREO_CLAVE }}
+          CORREO_REMITENTE: ${{ secrets.CORREO_REMITENTE }}
+          CORREO_SERVIDOR: ${{ vars.CORREO_SERVIDOR }}
+          CORREO_PUERTO: ${{ vars.CORREO_PUERTO }}
+        run: python correo.py
+
       - name: Publicar los cambios
         run: |
           git config user.name  "github-actions[bot]"

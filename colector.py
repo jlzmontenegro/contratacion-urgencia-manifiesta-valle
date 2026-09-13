@@ -500,6 +500,25 @@ def condiciones(nombre_fuente, cfg, hoy):
     if territorio_obj:
         barridos["objeto_territorio"] = f"{ventana} AND ({territorio_obj})"
 
+    # F. Los DECRETOS nacionales, en todo el pais. Sin este barrido, registrar el
+    #    decreto en el clasificador no sirve de nada: solo alcanza a lo que otro
+    #    barrido ya haya traido. Un contrato que se ampara en el decreto sin
+    #    escribir "sismo" -y los hay: el Ministerio de Educacion dice "estado de
+    #    emergencia economica, social y ecologica declarado mediante el decreto
+    #    1261 de 2026"- no lo trae ninguna palabra clave ni ningun NIT.
+    #
+    #    Solo los nacionales. Los de Cali y la Gobernacion no hacen falta aqui
+    #    porque esas entidades se barren enteras por NIT y por departamento, y
+    #    sus numeros cortos ("0964 DE 2026") si tienen con que colisionar en el
+    #    resto del pais.
+    decretos_obj = " OR ".join(
+        f"upper({campo}) like '%{normalizar(d)}%'"
+        for d in cfg.get("decretos_barrido", [])
+        for campo in f["descripcion"]
+    )
+    if decretos_obj:
+        barridos["decretos"] = f"{ventana} AND ({decretos_obj})"
+
     # D. UNGRD completa: es la entidad nacional que coordina la respuesta al
     #    desastre, asi que se trae toda su contratacion de la ventana y no solo
     #    la que menciona el sismo. Su relacion con el evento se evalua despues.
@@ -813,6 +832,18 @@ def clasificar(df, nombre_fuente, cfg):
         texto_busqueda = texto.map(sin_frases)
     else:
         texto_busqueda = texto
+
+    # Texto con el que se buscan los DECRETOS, y solo ellos. Las entidades
+    # intercalan un ordinal entre la palabra y el numero -"Decreto No. 1171",
+    # "DECRETO NACIONAL No. 1171", "Decreto N° 0964"- y con el ordinal en medio
+    # el patron "DECRETO 1171" no coincide. Aqui se borra ese ordinal cuando va
+    # pegado a un numero, de modo que un solo patron cubre las cuatro formas en
+    # que la fuente escribe lo mismo. Se aplica aparte y no al texto general
+    # porque afecta a como se leen los numeros, y el resto del clasificador
+    # busca palabras.
+    texto_decreto = texto.str.replace(r"\bN(?:UMERO|RO|O)?\s*[.°º]?\s*(?=\d)", "",
+                                      regex=True)
+
     justificacion = df.get(f["justificacion"], pd.Series([""] * len(df))).map(normalizar)
     modalidad = df.get(f["modalidad"], pd.Series([""] * len(df))).map(normalizar)
     fecha = pd.to_datetime(df[f["fecha"]], errors="coerce")
@@ -916,9 +947,14 @@ def clasificar(df, nombre_fuente, cfg):
 
         if "URGENCIA MANIFIESTA" in just:
             razones.append("justificacion: urgencia manifiesta")
-        golpes_decreto = [d for d in decretos if d and d in t]
+        golpes_decreto = [d for d in decretos if d and d in texto_decreto.iloc[i]]
         if golpes_decreto:
-            razones.append("cita el decreto " + golpes_decreto[0])
+            # El patron puede venir escrito ya con la palabra ('DECRETO 1171'):
+            # sin quitarla el motivo decia 'cita el decreto DECRETO 1171'.
+            cual = golpes_decreto[0]
+            if cual.startswith('DECRETO '):
+                cual = cual[8:]
+            razones.append('cita el decreto ' + cual.lower())
         golpes_fuertes = [p for p in fuertes if contiene(tb, p)]
         if golpes_fuertes:
             razones.append("menciona " + ", ".join(golpes_fuertes[:3]).lower())
@@ -1988,7 +2024,21 @@ def exportar_tablero(hoy, resultados, alertas, cfg, resumen_corrida=None):
     # cuadrar con la lista de modificaciones que la pagina filtra por fecha.
     payload["totales"]["cambios_hoy"] = cambios_del_dia(hoy.strftime("%Y-%m-%d"))
 
-    return escribir_datos_tablero(payload)
+    ruta = escribir_datos_tablero(payload)
+
+    # Version ligera: un HTML autonomo con SOLO lo confirmado como del sismo,
+    # para incrustar en otra pagina. Se escribe aqui y no en un flujo aparte para
+    # que no pueda quedarse atras: sale de la misma recoleccion que el tablero
+    # grande, con el mismo sello de hora. Si algo falla, se avisa y se sigue: el
+    # tablero principal no puede dejar de publicarse por culpa del derivado.
+    try:
+        import ligero
+        destino = ligero.escribir(payload, BASE)
+        print(f"  ligero  : {destino}")
+    except Exception as e:
+        print(f"  ! no se pudo escribir ligero.html: {e}")
+
+    return ruta
 
 
 def escribir_datos_tablero(payload):
