@@ -137,6 +137,10 @@
      ficha de SECOP, y dos botones macizos seguidos compiten entre si. */
   .boton-ep{background:transparent;color:var(--acento);border:1px solid var(--acento)}
   .boton-ep:hover{background:var(--acento);color:#fff;opacity:1}
+  /* El informe de ejecucion es el unico que habla de lo ENTREGADO y hoy lo tiene
+     el 2% de los expedientes: cuando aparece tiene que verse de lejos. */
+  .boton-ejec{background:var(--acento);color:#fff;border:1px solid var(--acento);
+              font-weight:600}
 
   /* ---- Portada: lo primero que ve alguien que llega sin contexto ---- */
   .portada{background:var(--panel);border:1px solid var(--borde);border-radius:12px;

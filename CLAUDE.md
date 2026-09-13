@@ -782,6 +782,38 @@ de ruido y el enlace bailaría sin que nadie hubiera publicado nada.
 en la del contrato—, así que se deduplica por `id_documento` antes de contar. Sin eso, la fila
 anunciaría el doble de documentos de los que hay.
 
+**Se enlazan CUATRO documentos, y el que más rinde es el contrato** (13-sep-2026). Medido
+sobre los 272 expedientes de operaciones del sismo, 4.023 documentos:
+
+| documento | expedientes | cobertura |
+|---|---|---|
+| Contrato | 235 | **86%** |
+| Estudios previos | 123 | 45% |
+| Acta de inicio | 84 | 30% |
+| Prueba de ejecución | 6 | **2%** |
+
+**El contrato cubre tanto porque lo nombra SECOP, no la entidad**: el PDF sale como
+`CO1_PCCNTR_<id>_Firmado.pdf`, con nombre fijo. Todo lo demás depende de que quien sube el
+archivo acierte con el nombre, y por eso cae al 45% o menos.
+
+**«Contrato» pasó a llamarse «Expediente»** en el botón que lleva a la ficha de SECOP
+(decisión del usuario). Siempre abrió el expediente; con el enlace al contrato de verdad al
+lado, el nombre viejo mentiría. La fila queda: *Expediente · Proceso* (ficha, en gris) y
+*Contrato · Estudios previos · Acta de inicio · Informe de ejecución* (documento, en verde).
+
+**El patrón de «informe de ejecución» costó una medición y hay que no relajarlo.** Con un
+patrón suelto salían 34 expedientes (12%) y **casi todos eran falsos**: `INFORME REVISION
+DOCUMENTOS` e `INFORME REQUISITOS IDONEIDAD` son precontractuales —revisan los papeles del
+proponente—; `INFORME TECNICO PRELIMINAR`, `MALLA VIAL` o `AFECTACIONES` son diagnósticos del
+daño, que **sustentan** la contratación en vez de acreditarla; y `CO1_PCCNTR_*_EN
+EJECUCION.pdf` es el **contrato** en ese estado, no un informe. Con el patrón afinado quedan
+**6 de 272**, y esa es la verdad: casi nadie ha publicado todavía cómo va la ejecución.
+
+**Ese botón va macizo a propósito.** Es el único documento que habla de lo **entregado** y no
+de lo contratado, que es el límite reconocido de la propuesta de valor. El usuario lo pidió
+así —*«apenas vayan saliendo sería buenísimo poderlos ver claro»*—: se encenderá a medida que
+las entidades los publiquen, y mientras tanto **su ausencia es publicable por sí sola**.
+
 **En el tablero grande, cuando no hay estudios previos la fila dice cuántos documentos tiene
 el expediente; en la versión ligera NO** (decisión del usuario, 13-sep-2026). Se probó con el
 aviso en los dos y en el ligero ocupaba dos renglones en dos tercios de las filas para decir

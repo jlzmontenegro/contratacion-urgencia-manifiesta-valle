@@ -158,6 +158,13 @@ def _operaciones(registros):
             # porque alli se revisa fila por fila.
             "ep": _ep_corto(next((r.get("docs_ep") or "" for r in regs
                                   if r.get("docs_ep")), "")),
+            "dc": _ep_corto(next((r.get("docs_contrato") or "" for r in regs
+                                  if r.get("docs_contrato")), "")),
+            "di2": _ep_corto(next((r.get("docs_inicio") or "" for r in regs
+                                   if r.get("docs_inicio")), "")),
+            "dj": _ep_corto(next((r.get("docs_ejecucion") or "" for r in regs
+                                  if r.get("docs_ejecucion")), "")),
+            "djn": max((int(r.get("docs_ejecucion_n") or 0) for r in regs), default=0),
             # Cuantas veces publico la entidad esta misma contratacion. Lo decide
             # el colector; aqui la operacion ya llega unificada y solo se lee,
             # para poder decirlo en vez de que la fila parezca una sola cosa que
@@ -396,11 +403,16 @@ tbody tr:hover{background:var(--panel-2)}
      border:1px solid var(--borde);text-decoration:none;color:var(--texto);
      white-space:nowrap;margin:0 4px 4px 0}
 .enl:hover{border-color:var(--acento);color:var(--acento-tinta)}
-/* Los estudios previos van destacados: de los tres enlaces de la fila es el
-   unico que explica POR QUE se contrato, y es el que menos gente sabe que
-   existe. Los otros dos llevan a la ficha; este, al documento. */
-.enl-ep{border-color:var(--acento);color:var(--acento-tinta);font-weight:600}
-.enl-ep:hover{background:var(--acento);color:#fff;border-color:var(--acento)}
+/* Los que llevan a un DOCUMENTO van marcados, para distinguirlos de los dos que
+   llevan a la ficha de SECOP: es la diferencia entre abrir el archivo y tener
+   que buscarlo dentro del expediente. */
+.enl-doc{border-color:var(--acento);color:var(--acento-tinta);font-weight:600}
+.enl-doc:hover{background:var(--acento);color:#fff;border-color:var(--acento)}
+/* El informe de ejecucion va aun mas marcado, en macizo: es el unico que habla
+   de lo ENTREGADO y no de lo contratado, y hoy lo tiene el 2% de los
+   expedientes. Cuando aparezca, tiene que verse de lejos. */
+.enl-ejec{background:var(--acento);border-color:var(--acento);color:#fff;font-weight:600}
+.enl-ejec:hover{background:var(--acento-tinta);border-color:var(--acento-tinta);color:#fff}
 /* Compartir */
 .compartir{display:flex;flex-wrap:wrap;gap:4px;margin-top:7px}
 .compartir button{font-size:11px;padding:3px 8px;border-radius:3px;line-height:1.5;
@@ -618,14 +630,33 @@ figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
       caracteres; cuando llega en ese tope la fila lo advierte y el texto entero está en
       el expediente.</dd>
 
+      <dt>Expediente y Proceso</dt>
+      <dd>Llevan a la <b>ficha de SECOP</b>, donde está todo el trámite y hay que buscar
+      dentro. Los botones verdes de al lado llevan <b>directo al documento</b>.</dd>
+
+      <dt>Contrato</dt>
+      <dd>El documento del contrato en PDF, sin pasar por el expediente. Es el que más
+      aparece —en 8 de cada 10 operaciones contratadas— porque <b>lo genera SECOP</b> y no
+      depende de que la entidad acierte con el nombre del archivo.</dd>
+
       <dt>Estudios previos</dt>
       <dd>El documento en el que la entidad explica <b>por qué</b> contrata esto, qué
       necesita y cómo calculó el precio. Es lo que permite juzgar si la contratación tiene
-      sentido, y no solo si existe. El botón lleva directo al archivo en SECOP.
-      <b>Solo aparece cuando la entidad lo publicó con ese nombre</b>, y hoy es así en una de
-      cada tres operaciones. Que el botón falte no significa que los estudios no se hayan
-      hecho —significa que en el expediente no están publicados con ese nombre—, y eso
-      también se le puede preguntar a la entidad.</dd>
+      sentido, y no solo si existe. <b>Solo aparece cuando la entidad lo publicó con ese
+      nombre</b>, y hoy es así en una de cada tres operaciones. Que el botón falte no
+      significa que los estudios no se hayan hecho —significa que en el expediente no están
+      publicados con ese nombre—, y eso también se le puede preguntar a la entidad.</dd>
+
+      <dt>Acta de inicio</dt>
+      <dd>Acredita que la ejecución <b>arrancó</b>, no solo que se firmó. Está en cerca de
+      un tercio de las operaciones contratadas.</dd>
+
+      <dt>Informe de ejecución</dt>
+      <dd>Actas de supervisión, de recibo, de entrega o de liquidación, e informes de avance.
+      <b>Es el único documento que habla de lo entregado y no de lo contratado</b>, y por eso
+      va destacado. Hoy lo tienen <b>muy pocas operaciones</b>: los contratos son recientes y
+      estos informes salen después. Aparecerá aquí a medida que las entidades los publiquen,
+      y su ausencia también dice algo.</dd>
 
       <dt>Contratista</dt>
       <dd>Quién es el encargado de ejecutar el objeto contratado. En un proceso abierto
@@ -1093,16 +1124,30 @@ function fila(o, i){
   if (o.rp) refs.push('<span class="ref" title="Número del proceso en SECOP">' + esc(o.rp) + "</span>");
   if (o.rc) refs.push('<span class="ref" title="Número del contrato en SECOP">' + esc(o.rc) + "</span>");
   var enl = "";
-  if (o.uc) enl += '<a class="enl" href="' + esc(o.uc) + '" target="_blank" rel="noopener">Contrato</a>';
+  /* Dos clases de enlace, y no son lo mismo: estos dos llevan a la FICHA de
+     SECOP, donde todavia hay que buscar; los de abajo llevan al DOCUMENTO.
+     Por eso el que antes se llamaba "Contrato" ahora se llama "Expediente":
+     siempre abrio el expediente, y existiendo ya el enlace al contrato de
+     verdad el nombre viejo mentiria (decision del usuario, 13-sep-2026). */
+  if (o.uc) enl += '<a class="enl" href="' + esc(o.uc) + '" target="_blank" rel="noopener">Expediente</a>';
   if (o.up) enl += '<a class="enl" href="' + esc(o.up) + '" target="_blank" rel="noopener">Proceso</a>';
-  // Los estudios previos son el documento donde la entidad explica POR QUE
-  // contrata esto y por cuanto. Solo aparece el boton si el archivo existe de
-  // verdad: uno que estuviera vacio en la mitad de las filas enseñaria a no
-  // pulsarlo. Cuando no esta, se dice cuantos documentos tiene el expediente,
-  // que es informacion y no un hueco.
-  if (o.ep) enl += '<a class="enl enl-ep" href="' + esc(urlEp(o.ep)) + '" target="_blank" ' +
+  /* Cada boton aparece solo si el archivo existe: uno vacio en la mitad de las
+     filas enseña a no pulsarlos. Cobertura medida el 13-sep-2026 sobre los 272
+     expedientes del sismo: contrato 86%, estudios previos 45%, acta de inicio
+     30%, prueba de ejecucion 2%. */
+  if (o.dc) enl += '<a class="enl enl-doc" href="' + esc(urlEp(o.dc)) + '" target="_blank" ' +
+      'rel="noopener" title="El documento del contrato, en PDF">Contrato</a>';
+  if (o.ep) enl += '<a class="enl enl-doc" href="' + esc(urlEp(o.ep)) + '" target="_blank" ' +
       'rel="noopener" title="Documento con que la entidad justifica la contratación">' +
       'Estudios previos</a>';
+  if (o.di2) enl += '<a class="enl enl-doc" href="' + esc(urlEp(o.di2)) + '" target="_blank" ' +
+      'rel="noopener" title="Acredita que la ejecución arrancó">Acta de inicio</a>';
+  /* El unico que habla de lo ENTREGADO y no de lo contratado, y hoy lo tienen 6
+     de 272 expedientes. Va destacado a proposito: cuando aparece, es la
+     noticia. */
+  if (o.dj) enl += '<a class="enl enl-ejec" href="' + esc(urlEp(o.dj)) + '" target="_blank" ' +
+      'rel="noopener" title="Acta de supervisión o informe de ejecución: lo más cerca que hay de comprobar que se entregó">' +
+      'Informe de ejecución' + (o.djn > 1 ? " (" + o.djn + ")" : "") + '</a>';
   var fechas = "";
   if (o.di || o.df) fechas = '<div class="menor">' +
       (o.di ? "inicia " + esc(o.di) : "") + (o.di && o.df ? " · " : "") +
@@ -1524,9 +1569,12 @@ function imprimirInforme(){
      copiarlo a mano. */
   var cuerpo = v.map(function(o){
     var enl = [];
-    if (o.uc) enl.push('<a class="ir" href="' + esc(o.uc) + '">Contrato ↗</a>');
+    if (o.uc) enl.push('<a class="ir" href="' + esc(o.uc) + '">Expediente ↗</a>');
     if (o.up) enl.push('<a class="ir" href="' + esc(o.up) + '">Proceso ↗</a>');
+    if (o.dc) enl.push('<a class="ir" href="' + esc(urlEp(o.dc)) + '">Contrato ↗</a>');
     if (o.ep) enl.push('<a class="ir" href="' + esc(urlEp(o.ep)) + '">Estudios previos ↗</a>');
+    if (o.di2) enl.push('<a class="ir" href="' + esc(urlEp(o.di2)) + '">Acta de inicio ↗</a>');
+    if (o.dj) enl.push('<a class="ir" href="' + esc(urlEp(o.dj)) + '">Informe de ejecución ↗</a>');
     var fechas = [];
     if (o.d) fechas.push((o.f ? "Firma " : "Publicado ") + esc(o.d));
     if (o.di) fechas.push("Inicia " + esc(o.di));

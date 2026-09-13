@@ -1836,6 +1836,10 @@ def aplanar(df, nombre_fuente):
             "docs_n": 0,
             "docs_ep": "",
             "docs_ep_nombre": "",
+            "docs_contrato": "",
+            "docs_inicio": "",
+            "docs_ejecucion": "",
+            "docs_ejecucion_n": 0,
             # Cuantas veces publico la entidad esta misma contratacion. 0 es lo
             # normal; lo pone unificar_publicaciones_repetidas() cuando encuentra
             # el mismo numero, la misma entidad y el mismo valor en expedientes
@@ -2222,9 +2226,11 @@ def exportar_tablero(hoy, resultados, alertas, cfg, resumen_corrida=None):
         indice = documentos.consultar(
             llaves,
             lambda ds, where: consultar(ds, where, cfg.get("app_token", "")))
-        tocados, con_ep = documentos.anotar(registros, indice)
+        tocados, cuenta = documentos.anotar(registros, indice)
         print(f"  documentos: {len(indice)} expedientes, {tocados} registros "
-              f"enlazados, {con_ep} con estudios previos")
+              f"enlazados | contrato {cuenta['contrato']}, estudios previos "
+              f"{cuenta['ep']}, acta de inicio {cuenta['inicio']}, "
+              f"ejecucion {cuenta['ejecucion']}")
     except Exception as e:
         print(f"  ! no se pudieron consultar los documentos del expediente: {e}")
 

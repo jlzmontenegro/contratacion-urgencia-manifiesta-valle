@@ -295,6 +295,10 @@ def operaciones(registros):
             # guion que la rearme.
             "docs_ep": next((r.get("docs_ep") or "" for r in regs
                              if r.get("docs_ep")), ""),
+            "docs_contrato": next((r.get("docs_contrato") or "" for r in regs
+                                   if r.get("docs_contrato")), ""),
+            "docs_ejecucion": next((r.get("docs_ejecucion") or "" for r in regs
+                                    if r.get("docs_ejecucion")), ""),
             # Cuantas veces publico la entidad esta misma contratacion. Lo decide
             # el colector (unificar_publicaciones_repetidas); aqui solo se lee.
             "repetida": max((int(r.get("repetida") or 0) for r in regs), default=0),
@@ -434,12 +438,26 @@ def _fichas(ops, tope):
         # ficha, y dos botones macizos seguidos compiten entre si. Solo aparece
         # cuando el archivo existe; no se pone un aviso cuando falta, misma
         # decision que en la version ligera.
+        def _hueco(url, rotulo):
+            return ('<a href="' + esc(url) + '" '
+                    'style="display:inline-block;background:#fff;color:#0E5C58;'
+                    'text-decoration:none;padding:6px 13px;border-radius:3px;'
+                    'font-size:12.5px;font-weight:600;margin-right:8px;'
+                    'border:1px solid #0E5C58">' + esc(rotulo) + "</a>")
+
+        if o["docs_contrato"]:
+            botones += _hueco(o["docs_contrato"], "Contrato")
         if o["docs_ep"]:
-            botones += ('<a href="' + esc(o["docs_ep"]) + '" '
-                        'style="display:inline-block;background:#fff;color:#0E5C58;'
-                        'text-decoration:none;padding:6px 13px;border-radius:3px;'
-                        'font-size:12.5px;font-weight:600;'
-                        'border:1px solid #0E5C58">Estudios previos</a>')
+            botones += _hueco(o["docs_ep"], "Estudios previos")
+        # El unico que habla de lo ENTREGADO. Va macizo y en ambar porque hoy lo
+        # tiene el 2% de los expedientes: cuando sale, es la noticia de la
+        # semana, no un enlace mas.
+        if o["docs_ejecucion"]:
+            botones += ('<a href="' + esc(o["docs_ejecucion"]) + '" '
+                        'style="display:inline-block;background:#8A6D1F;color:#fff;'
+                        'text-decoration:none;padding:7px 14px;border-radius:3px;'
+                        'font-size:12.5px;font-weight:600;margin-right:8px">'
+                        'Informe de ejecución</a>')
         # La publicacion repetida se dice, no se esconde: es un hecho sobre como
         # la entidad publica y quien verifique va a encontrarse los dos
         # expedientes. Se enlaza el otro para que pueda comprobarlo.

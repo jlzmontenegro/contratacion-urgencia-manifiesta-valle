@@ -1139,18 +1139,36 @@ function filaOperacion(o){
      puede llegar por cualquiera de las dos. */
   const refs = [o.proceso, o.contrato].filter(Boolean)
     .map(r => `<span class="ref" title="Número de ${r.tipo.toLowerCase()} en SECOP">${esc(r.referencia || r.id)}</span>`).join("");
+  /* "Expediente" y no "Contrato": estos llevan a la FICHA de SECOP, donde hay
+     que buscar dentro. Los de abajo llevan al documento directo, y con los dos
+     en la misma fila el nombre viejo mentiria. */
   let enlaces = [o.contrato, o.proceso].filter(r => r && r.url)
-    .map(r => `<a class="boton boton-secop" href="${esc(r.url)}" target="_blank" rel="noopener">${r.tipo === "Contrato" ? "Contrato" : "Proceso"}</a>`).join("");
-  /* Estudios previos: el documento donde la entidad explica por que contrata
-     esto. Aqui vale mas que en la version ligera, porque es donde se decide si
-     una fila de "Por revisar" tiene que ver con el sismo: la respuesta suele
-     estar ahi y no en el objeto, que viene en terminos administrativos.
-     El contrato y su proceso comparten expediente, asi que basta con el primero
-     de los dos que traiga el enlace. */
-  const ep = [o.contrato, o.proceso].find(r => r && r.docs_ep);
-  if (ep) enlaces += `<a class="boton boton-secop boton-ep" href="${esc(ep.docs_ep)}"
+    .map(r => `<a class="boton boton-secop" href="${esc(r.url)}" target="_blank" rel="noopener">${r.tipo === "Contrato" ? "Expediente" : "Proceso"}</a>`).join("");
+  /* Documentos del expediente. Aqui valen mas que en la version ligera, porque
+     es donde se decide si una fila de "Por revisar" tiene que ver con el sismo:
+     la respuesta suele estar en los estudios previos y no en el objeto, que
+     viene en terminos administrativos. El contrato y su proceso comparten
+     expediente, asi que basta el primero de los dos que traiga el enlace. */
+  const doc = clave => [o.contrato, o.proceso].find(r => r && r[clave]);
+  const botonDoc = (clave, rotulo, ayuda, clase = "boton-ep") => {
+    const r = doc(clave);
+    if (!r) return "";
+    return `<a class="boton boton-secop ${clase}" href="${esc(r[clave])}"
+      target="_blank" rel="noopener" title="${esc(ayuda)}">${esc(rotulo)}</a>`;
+  };
+  enlaces += botonDoc("docs_contrato", "Contrato", "El documento del contrato, en PDF");
+  enlaces += botonDoc("docs_ep", "Estudios previos",
+                      "Documento con que la entidad justifica la contratación");
+  enlaces += botonDoc("docs_inicio", "Acta de inicio", "Acredita que la ejecución arrancó");
+  /* El unico que habla de lo ENTREGADO. Va macizo porque hoy lo tiene el 2% de
+     los expedientes: cuando aparece, es la noticia. */
+  const ej = doc("docs_ejecucion");
+  if (ej) {
+    const n = +ej.docs_ejecucion_n || 1;
+    enlaces += `<a class="boton boton-secop boton-ejec" href="${esc(ej.docs_ejecucion)}"
       target="_blank" rel="noopener"
-      title="Documento con que la entidad justifica la contratación">Estudios previos</a>`;
+      title="Acta de supervisión o informe de ejecución: lo más cerca que hay de comprobar que se entregó">Informe de ejecución${n > 1 ? ` (${n})` : ""}</a>`;
+  }
   return `
   <tr>
     <td class="col-est" data-etq="Estado">${est}
