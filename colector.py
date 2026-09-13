@@ -726,6 +726,25 @@ SIN_DILIGENCIAR = {"", "NO DEFINIDO", "NAN", "NONE"}
 
 ID_MAPA = {}
 
+# Entidades que SECOP II publica solo con su sigla. Se sustituye por el nombre
+# completo para que en pantalla se entienda de quien se habla: "UNIAJC" no dice
+# nada a quien llega de fuera.
+#
+# Los nombres NO se escriben de memoria: los publica la propia fuente en SECOP I,
+# que para el mismo NIT trae la razon social entera. Se comprobo uno por uno.
+# La sigla se conserva entre parentesis, porque es como la conoce quien ya la
+# conoce. La llave es la raiz de nueve digitos del NIT, no el nombre: el nombre
+# es justo lo que estamos cambiando.
+ALIAS_ENTIDAD = {}
+
+
+def nombre_entidad(fila, f):
+    """Nombre de la entidad, con la sigla expandida si esta en el padron de alias."""
+    crudo = texto_campo(fila.get(f["entidad"], ""))
+    alias = ALIAS_ENTIDAD.get(raiz_nit(str(fila.get(f["nit"], ""))))
+    return alias or crudo
+
+
 # Como escribe SECOP el departamento frente a como lo llama el DANE. Solo los que
 # no coinciden; el resto casa tal cual. Verificado contra los datos publicados.
 ALIAS_DEPARTAMENTO = {
@@ -1806,7 +1825,7 @@ def aplanar(df, nombre_fuente):
             "fecha_inicio": ini,
             "fecha_fin": fin,
             "duracion": dur,
-            "entidad": r.get(f["entidad"], ""),
+            "entidad": nombre_entidad(r, f),
             "nit": r.get(f["nit"], ""),
             "departamento": r.get(f["departamento"], ""),
             "ciudad": r.get(f["ciudad"], ""),
@@ -2143,6 +2162,9 @@ def main():
     print(f"Ventana: desde {cfg['fecha_inicio']} ({cfg['meses_monitoreo']} meses de seguimiento)")
 
     sembrar_novedades()
+
+    for _nit, _nom in cfg.get("nombres_entidad", {}).items():
+        ALIAS_ENTIDAD[raiz_nit(_nit)] = _nom
 
     revisiones = leer_revisiones()
 
