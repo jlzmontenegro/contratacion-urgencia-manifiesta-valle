@@ -364,7 +364,28 @@ tbody tr:hover{background:var(--panel-2)}
 .enl:hover{border-color:var(--acento);color:var(--acento-tinta)}
 /* Compartir */
 .compartir{display:flex;flex-wrap:wrap;gap:4px;margin-top:7px}
-.compartir button{font-size:11px;padding:3px 8px;border-radius:3px;line-height:1.5}
+.compartir button{font-size:11px;padding:3px 8px;border-radius:3px;line-height:1.5;
+     transition:background-color .12s,color .12s,border-color .12s}
+/* Al pasar por encima, cada botón toma el color de su red. Es lo que hace que se
+   reconozcan sin leerlos. El color del TEXTO se elige por contraste, no por
+   costumbre: blanco sobre el verde de WhatsApp se queda en 1,9:1 y no se lee, así
+   que ahí el texto va oscuro. El foco de teclado recibe lo mismo que el ratón; si
+   no, quien navega con el tabulador no ve dónde está. */
+.compartir button[data-comp="wa"]:hover,
+.compartir button[data-comp="wa"]:focus-visible{
+     background:#25D366;border-color:#1DA851;color:#0A2E1A;font-weight:700}
+.compartir button[data-comp="x"]:hover,
+.compartir button[data-comp="x"]:focus-visible{
+     background:#000000;border-color:#000000;color:#FFFFFF;font-weight:700}
+.compartir button[data-comp="fb"]:hover,
+.compartir button[data-comp="fb"]:focus-visible{
+     background:#1877F2;border-color:#0C5DC4;color:#FFFFFF;font-weight:700}
+/* Instagram no tiene un color, tiene un degradado, y es justo lo que la hace
+   reconocible de un vistazo. */
+.compartir button[data-comp="ig"]:hover,
+.compartir button[data-comp="ig"]:focus-visible{
+     background:linear-gradient(45deg,#F58529 0%,#DD2A7B 55%,#8134AF 100%);
+     border-color:#8134AF;color:#FFFFFF;font-weight:700}
 .compartir .rot{font-size:10px;letter-spacing:.08em;text-transform:uppercase;
      color:var(--suave);width:100%;margin-bottom:1px}
 .vacio{padding:26px 10px;text-align:center;color:var(--suave);line-height:1.6}
