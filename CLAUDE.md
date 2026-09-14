@@ -27,7 +27,7 @@ resumen.py             informe semanal de los lunes, con el mapa dibujado en PNG
 documentos.py          enlaza cada fila con los estudios previos de su expediente
 vigilar.py             avisa si el monitor lleva mas de 14 horas sin recolectar
 nacional.py            genera nacional.html: que ha contratado la Nacion para el Valle
-infraestructura.py     genera infraestructura.html: la Secretaria de Infraestructura, desde 2024
+dependencias.py        una pagina por dependencia (infraestructura.html, salud.html), desde 2024
 datos/tablero.json     lo que la página carga
 datos/avisados.csv     de qué ya salió correo. Lo escribe correo.py
 datos/*.csv            estado y trazas; los mantiene GitHub Actions
@@ -830,7 +830,23 @@ nombre y aparece como contratación municipal. Por eso la página no dice «la N
 nada»: dice qué se buscó, dónde y qué se encontró, con su fecha. **Lo que falta se pregunta por
 derecho de petición, no se deduce de un cero** — y de ahí salió el oficio a la UNGRD.
 
-## La Secretaría de Infraestructura, entera (`infraestructura.html`)
+## Una página por dependencia de la Gobernación (`dependencias.py`)
+
+**UN módulo con una lista de dependencias, no un archivo por cada una** (14-sep-2026).
+Empezó siendo `infraestructura.py` y el usuario pidió enseguida *"haz lo mismo para la
+secretaría de salud"*. Copiar el archivo habría sido más rápido y habría dejado dos copias
+del mismo JavaScript divergiendo: es exactamente lo que un día dejó 477 líneas repitiendo
+el clasificador. Hoy genera `infraestructura.html` y `salud.html`; añadir otra es una
+entrada en `DEPENDENCIAS`.
+
+**Cada dependencia lleva su color, y la de Salud es AZUL** (a petición del usuario). No es
+decoración: son dos páginas casi idénticas y el color es lo que impide confundirlas de un
+vistazo. El tono de tinta es más oscuro que el de acento **a propósito** —el acento pinta
+bordes y la tinta pinta texto sobre blanco, y el mismo tono no sirve para las dos cosas—.
+Medido: la tinta azul da **8,2:1 sobre blanco y 7,3:1 sobre su propio tinte**.
+
+**Cada dependencia va en su propio `try`**: que Salud falle no puede dejar sin publicar a
+Infraestructura.
 
 **Página aparte, y la ventana empieza el 1 de enero de 2024** (14-sep-2026, a petición
 del usuario: *"revisa toda la contratación que haya de la secretaria de infraestructura
@@ -845,13 +861,15 @@ evento, y de esta dependencia no hay **nada** relacionado: sus 148 contratos pos
 al sismo no nombran el sismo. En esta página la contratación ordinaria no es ruido, es la
 respuesta.
 
-**La dependencia se identifica por NIT + NOMBRE, porque SECOP no trae campo de
-dependencia.** La Gobernación publica cada secretaría como un `nombre_entidad` distinto
-bajo el mismo NIT: medido el 14-sep-2026 son **27 nombres** para sus tres NIT, y uno solo
-lleva INFRAESTRUCTURA. **Filtrar solo por `%INFRAESTRUCTURA%` sin el NIT** traería también
-la Secretaría de Infraestructura de Cali (37 contratos) y la de Hábitat e Infraestructura
-de Tuluá (8), que son otras entidades. El campo `orden` no sirve tampoco aquí: marca
-«Nacional» a la propia Gobernación.
+**La dependencia se identifica por NIT + NOMBRE, y las dos cosas hacen falta.** SECOP no
+trae campo de dependencia: la Gobernación publica cada secretaría como un `nombre_entidad`
+distinto bajo el mismo NIT —**27 nombres** para sus tres NIT, medido el 14-sep-2026—. Y el
+nombre solo tampoco basta: `%INFRAESTRUCTURA%` sin el NIT trae la Secretaría de
+Infraestructura de Cali y la de Hábitat e Infraestructura de Tuluá; **`%SALUD%` sin el NIT
+trae la Secretaría Distrital de Salud de Cali con 6.025 contratos**, la Regional de
+Aseguramiento en Salud No. 4, cuatro Redes de Salud ESE y la de Tuluá. Con el NIT de la
+Gobernación al lado, cada patrón deja **exactamente una entidad**. El campo `orden` no
+sirve tampoco aquí: marca «Nacional» a la propia Gobernación.
 
 **Un expediente puede llevar DOS contratos, y por eso la fila se arma sobre los
 contratos.** Los 148 contratos posteriores al sismo cuelgan de 147 expedientes:
@@ -964,6 +982,31 @@ fichas: en fichas, 1.949 filas son un ladrillo inmanejable.
 **Los dos botones dicen cuántas filas se llevan** (`Informe en PDF (434 filas)`). Un informe
 de doscientas páginas no puede salir por sorpresa, y poner la cifra en el botón evita tanto
 la sorpresa como la tentación de recortar en silencio, que sería peor.
+
+**El denominador del perfil es el de SU base, no el de la página.** El perfil se calcula
+solo sobre lo firmado desde el sismo, y durante un rato dijo *«96 de 1.698»* al lado de un
+77% calculado sobre 124. Dos cifras que no cuadran entre sí **en la misma frase** destruyen
+la confianza en todo lo demás. Apareció al ampliar la ventana a 2024 y no existía antes,
+que es como aparecen casi siempre: un cambio correcto en un sitio deja mintiendo a otro.
+
+**Al 14-sep-2026, Salud:** 1.698 contratos por **$447.476 millones** desde 2024, 31
+procesos abiertos, **15 canceladas descartadas**. Desde el sismo, **124 contratos por
+$29.085 millones** y **ninguno nombra el sismo ni usa vocabulario de emergencia**; los dos
+mayores son un convenio con Palmira por $14.400 millones para cofinanciar el centro de
+salud de Rozo y un giro de $10.000 millones al HUV para pagar pasivos de nómina —ninguno es
+atención de la emergencia—. Tiene **3 contratos de obra** en dos años y medio, todos en
+sedes propias (cubiertas del laboratorio, redes eléctricas del complejo Aníbal Patiño,
+bombeo del laboratorio departamental) y **ninguno posterior al sismo**.
+
+**Salud SÍ publica el texto de sus contratos: 75 de 121 expedientes (62%).** Infraestructura
+publica **0 de 148**. No es un fallo de la página ni de la consulta —es el mismo código
+midiendo las dos—: es una diferencia real entre dos dependencias de la misma entidad, y por
+eso la cifra va en pantalla.
+
+**El único proceso en BORRADOR de Salud tiene contrato firmado detrás** ($249.958.393 con la
+ESE Hospital Sagrada Familia, estado *terminado*), así que **no se descarta**: la regla solo
+quita lo que no llegó a contrato. Un borrador con plata comprometida detrás no es un
+borrador, es un expediente mal cerrado.
 
 **`descripcionFiltros()` es la MISMA para el CSV y para el PDF.** Si cada uno describiera lo
 suyo, dos archivos del mismo tablero podrían decir cosas distintas sobre de dónde salen sus

@@ -1,34 +1,36 @@
 # -*- coding: utf-8 -*-
-"""Toda la contratacion de la Secretaria de Infraestructura de la Gobernacion.
+"""Una pagina por DEPENDENCIA de la Gobernacion, con toda su contratacion.
 
-Del sismo y ordinaria, DESDE EL 1 DE ENERO DE 2024. Lo pidio el usuario el
-14-sep-2026: primero "revisa toda la contratacion que haya de la secretaria de
-infraestructura de la Gobernacion del Valle, sismo y no sismo, y saca un html
-solo de ello", y enseguida "que consulte desde 1 de enero de 2024".
+Del sismo y ordinaria, desde el 1 de enero de 2024. Empezo siendo la pagina de
+la Secretaria de Infraestructura (14-sep-2026) y el usuario pidio enseguida "haz
+lo mismo para la secretaria de salud". Es UN modulo con una lista de
+dependencias, no un archivo por cada una: el dia que haya que arreglar algo -y ya
+van tres arreglos en esta pagina- se arregla una vez. Copiar el archivo es lo que
+un dia dejo 477 lineas de JavaScript repitiendo el clasificador.
 
-POR QUE UNA PAGINA APARTE. El tablero principal responde "que se contrato por el
-sismo" y por eso deja fuera casi todo lo de esta Secretaria: de sus 148 contratos
-posteriores al sismo ninguno nombra el evento. Esta pagina responde otra pregunta
--"que hizo la Secretaria que tendria que reconstruir"- y ahi la contratacion
-ordinaria no es ruido: es la respuesta.
+POR QUE UNA PAGINA APARTE DEL TABLERO. El tablero principal responde "que se
+contrato por el sismo" y por eso deja fuera casi todo lo de estas dependencias:
+de los 148 contratos que Infraestructura firmo despues del sismo y de los 124 de
+Salud, NINGUNO nombra el evento. Aqui la contratacion ordinaria no es ruido: es
+la respuesta.
 
 POR QUE LA VENTANA ES MAS LARGA QUE LA DEL MONITOR. El monitor arranca el dia del
 sismo porque su pregunta es que se contrato por el evento. Aqui la pregunta es si
 lo que se ve despues del sismo se sale de lo normal, y eso no se puede contestar
-sin lo normal. Medido el 14-sep-2026 sobre los 1.923 contratos de la ventana: hay
-5 de obra en dos anos y medio, ninguno posterior al sismo, y concentran mas de la
-mitad de todo el dinero. Ese reparto es el que hace legible el cero.
+sin lo normal.
 
-COMO SE IDENTIFICA LA DEPENDENCIA. SECOP II no trae un campo de dependencia: la
-Gobernacion publica cada secretaria como un nombre_entidad distinto bajo el mismo
-NIT. Medido el 14-sep-2026: 27 nombres para los tres NIT de la Gobernacion, y uno
-solo lleva INFRAESTRUCTURA. Por eso el filtro es NIT + nombre, y no una lista de
-nombres escrita a mano: el dia que la entidad cambie la redaccion del nombre,
-esto la sigue encontrando.
+COMO SE IDENTIFICA LA DEPENDENCIA: NIT + NOMBRE, y las dos cosas hacen falta.
+SECOP II no trae campo de dependencia; la Gobernacion publica cada secretaria
+como un nombre_entidad distinto bajo el mismo NIT -27 nombres, medido el
+14-sep-2026-. Y el nombre solo tampoco basta:
 
-  OJO: filtrar solo por '%INFRAESTRUCTURA%' sin el NIT traeria tambien la
-  Secretaria de Infraestructura de Cali y la de Habitat e Infraestructura de
-  Tulua. Son otras entidades.
+  '%INFRAESTRUCTURA%' sin el NIT trae ademas la Secretaria de Infraestructura de
+  Cali y la de Habitat e Infraestructura de Tulua.
+  '%SALUD%' sin el NIT trae la Secretaria Distrital de Salud de Cali con 6.025
+  contratos, la Regional de Aseguramiento en Salud No. 4, cuatro Redes de Salud
+  ESE y la Secretaria de Salud de Tulua. Son otras entidades.
+
+Con el NIT de la Gobernacion, cada patron deja exactamente una entidad.
 
 SE ACTUALIZA SOLA, como ligero.html y nacional.html: la llama el colector al
 final de cada recoleccion. No se edita el HTML, se edita este archivo.
@@ -43,9 +45,37 @@ import unicodedata
 DATASET_CONTRATOS = "jbjy-vk9h"
 DATASET_PROCESOS = "p6dx-8zbt"
 
-# El nombre con que SECOP publica la dependencia, en el filtro de la consulta.
-# Se combina SIEMPRE con el NIT de la Gobernacion.
-PATRON_NOMBRE = "%INFRAESTRUCTURA%"
+# Las dependencias que tienen pagina propia.
+#
+#   clave      nombre del archivo que se genera (<clave>.html y datos/<clave>.json)
+#   patron     como la publica SECOP, para el like. SIEMPRE con el NIT al lado.
+#   titulo     el <title> y el <h1> de la pagina
+#   destacado  el tipo de contrato que se lista aparte, uno por uno. Son pocas
+#              filas entre miles y en la tabla general se pierden; despues de un
+#              sismo, si hubo o no obra es una pregunta por si sola. Si una
+#              dependencia no tiene un tipo asi, se deja en None y la seccion no
+#              sale: una seccion vacia se lee como un fallo de la pagina.
+DEPENDENCIAS = [
+    {
+        "clave": "infraestructura",
+        "patron": "%INFRAESTRUCTURA%",
+        "titulo": "la Secretaría de Infraestructura del Valle",
+        "destacado": "Obra",
+        # Verde de marca de estebanoliveros.com, el mismo de ligero.html.
+        "color": ("#56A800", "#3E7C00", "#F2F8EA"),
+    },
+    {
+        "clave": "salud",
+        "patron": "%SALUD%",
+        "titulo": "la Secretaría de Salud del Valle",
+        "destacado": "Obra",
+        # Azul, a peticion del usuario (14-sep-2026), para que las dos paginas no
+        # se confundan de un vistazo. El tono de tinta es mas oscuro que el de
+        # acento a proposito: el acento pinta bordes y el de tinta pinta TEXTO
+        # sobre blanco, y el mismo tono no sirve para las dos cosas.
+        "color": ("#0B6BB5", "#08518A", "#EAF2FA"),
+    },
+]
 
 # Desde cuando se mira. El usuario lo pidio asi el 14-sep-2026: "que consulte
 # desde 1 de enero de 2024". Es la ventana de esta pagina y NO la del monitor,
@@ -110,7 +140,7 @@ def _clausula(nits, campo):
 # Consulta
 # --------------------------------------------------------------------------
 
-def consultar(cfg, consultar_api, registrar=print):
+def consultar(cfg, consultar_api, dep, registrar=print):
     """Baja y arma el paquete que pinta la pagina.
 
     `consultar_api(dataset, where)` la inyecta el colector para reutilizar sus
@@ -119,9 +149,11 @@ def consultar(cfg, consultar_api, registrar=print):
     """
     evento = cfg.get("fecha_evento", "2026-08-10")
     nits = cfg.get("nits_gobernacion_valle") or ["890399029"]
+    patron = dep["patron"]
+    clave = dep["clave"]
 
-    filtro_c = f"{_clausula(nits, 'nit_entidad')} AND upper(nombre_entidad) like '{PATRON_NOMBRE}'"
-    filtro_p = f"{_clausula(nits, 'nit_entidad')} AND upper(entidad) like '{PATRON_NOMBRE}'"
+    filtro_c = f"{_clausula(nits, 'nit_entidad')} AND upper(nombre_entidad) like '{patron}'"
+    filtro_p = f"{_clausula(nits, 'nit_entidad')} AND upper(entidad) like '{patron}'"
 
     contratos = consultar_api(
         DATASET_CONTRATOS,
@@ -129,7 +161,7 @@ def consultar(cfg, consultar_api, registrar=print):
     procesos = consultar_api(
         DATASET_PROCESOS,
         f"{filtro_p} AND fecha_de_publicacion_del >= '{DESDE}T00:00:00'")
-    registrar(f"    infraestructura: {len(contratos)} contratos y {len(procesos)} "
+    registrar(f"    {clave}: {len(contratos)} contratos y {len(procesos)} "
               f"procesos desde el {DESDE}")
 
     nombre = ""
@@ -148,12 +180,12 @@ def consultar(cfg, consultar_api, registrar=print):
     ops, descartados = _descartar_estados(ops)
     ops, unificadas = _unificar(ops)
     if descartados:
-        registrar(f"    infraestructura: descartadas {sum(descartados.values())} filas "
+        registrar(f"    {clave}: descartadas {sum(descartados.values())} filas "
                   f"por estado ({descartados})")
     if unificadas:
-        registrar(f"    infraestructura: {unificadas} publicacion(es) repetida(s) unificada(s)")
+        registrar(f"    {clave}: {unificadas} publicacion(es) repetida(s) unificada(s)")
 
-    docs = _documentos(ops, consultar_api, registrar)
+    docs = _documentos(ops, consultar_api, registrar, clave)
 
     firmadas = [o for o in ops if o["firmado"]]
     # El corte es el sismo, y se hace sobre la MISMA lista: no se baja dos veces
@@ -161,12 +193,14 @@ def consultar(cfg, consultar_api, registrar=print):
     # salen de los mismos criterios y de las mismas filas.
     desde_sismo = [o for o in firmadas if o["post"]]
     antes_sismo = [o for o in firmadas if not o["post"]]
-    registrar(f"    infraestructura: {len(desde_sismo)} firmados desde el sismo, "
+    registrar(f"    {clave}: {len(desde_sismo)} firmados desde el sismo, "
               f"{len(antes_sismo)} antes")
 
     return {
-        "entidad": nombre or "Secretaría de Infraestructura - Gobernación del Valle",
+        "entidad": nombre or dep["titulo"],
         "nit": (contratos or [{}])[0].get("nit_entidad", ""),
+        "dep": {"clave": clave, "titulo": dep["titulo"],
+                "destacado": dep.get("destacado") or ""},
         "desde": DESDE,
         "evento": evento,
         "ops": ops,
@@ -177,10 +211,10 @@ def consultar(cfg, consultar_api, registrar=print):
             "antes": _por_tipo(antes_sismo),
         },
         "anios": _por_anio(firmadas),
-        # La obra de todo el periodo, contratos y procesos. Es lo que una
-        # secretaria de infraestructura existe para hacer, y por eso va aparte:
-        # son 5 contratos entre 1.923, y en una tabla de 1.923 filas se pierden.
-        "obra": _fichas_obra(ops),
+        # El tipo destacado de todo el periodo, contratos y procesos. Va aparte
+        # porque son unas pocas filas entre miles y en la tabla general se
+        # pierden.
+        "destacadas": _fichas_destacadas(ops, dep.get("destacado")),
         "perfil": _perfil(desde_sismo),
         "docs": docs,
     }
@@ -235,17 +269,20 @@ def _por_tipo(ops):
             for t, d in sorted(agg.items(), key=lambda kv: -kv[1]["v"])]
 
 
-def _fichas_obra(ops):
-    """La obra del periodo entero, contratos y procesos.
+def _fichas_destacadas(ops, tipo):
+    """Las filas del tipo destacado, en el periodo entero.
 
-    Va aparte y no solo dentro de la tabla porque son unas pocas filas entre casi
-    dos mil: en la tabla se pierden, y son justo lo que esta Secretaria existe
-    para hacer. Se listan TODAS -no las N mayores-: un recorte silencioso aqui
-    haria creer que hay mas obra de la que hay.
+    Van aparte y no solo dentro de la tabla porque son unas pocas entre miles: en
+    la tabla se pierden, y despues de un sismo si hubo o no obra es una pregunta
+    por si sola. Infraestructura tiene 5 contratos de obra entre 1.923 y Salud 3
+    entre 1.698. Se listan TODAS -no las N mayores-: un recorte silencioso aqui
+    haria creer que hay mas de las que hay.
     """
-    obra = [o for o in ops if o.get("tc") == "Obra"]
-    obra.sort(key=lambda o: -(o.get("v") or o.get("pb") or 0))
-    return obra
+    if not tipo:
+        return []
+    filas = [o for o in ops if o.get("tc") == tipo]
+    filas.sort(key=lambda o: -(o.get("v") or o.get("pb") or 0))
+    return filas
 
 
 def _perfil(ops):
@@ -520,7 +557,7 @@ def _del_proceso(p):
     }
 
 
-def _documentos(ops, consultar_api, registrar):
+def _documentos(ops, consultar_api, registrar, clave):
     """Enlaza cada fila con los documentos de su expediente. Best effort.
 
     Si el dataset no responde, la pagina sale igual sin los botones: de aqui no
@@ -557,12 +594,12 @@ def _documentos(ops, consultar_api, registrar):
         resumen["ep"] = sum(1 for d in indice.values() if d.get("ep"))
         resumen["ejecucion"] = sum(1 for d in indice.values() if d.get("ejecucion"))
         resumen["ops"] = len(post)
-        registrar(f"    infraestructura: documentos en {resumen['exp']} expedientes "
+        registrar(f"    {clave}: documentos en {resumen['exp']} expedientes "
                   f"(contrato {resumen['contrato']}, estudios previos {resumen['ep']}, "
                   f"ejecucion {resumen['ejecucion']})")
     except Exception as e:
         resumen["fallo"] = True
-        registrar(f"    ! infraestructura: sin documentos del expediente: {e}")
+        registrar(f"    ! {clave}: sin documentos del expediente: {e}")
     return resumen
 
 
@@ -570,22 +607,33 @@ def _documentos(ops, consultar_api, registrar):
 # Escritura
 # --------------------------------------------------------------------------
 
-def escribir(datos, generado, base):
+def escribir(datos, generado, base, dep):
     datos = dict(datos)
     datos["generado"] = generado
-    destino = os.path.join(base, "infraestructura.html")
+    clave = dep["clave"]
+    destino = os.path.join(base, f"{clave}.html")
     crudo = json.dumps(datos, ensure_ascii=False, separators=(",", ":"))
     crudo = crudo.replace("</", "<\\/")
+
+    # El orden importa: __ACENTO__ es prefijo de los otros dos, asi que si se
+    # sustituyera primero dejaria "__ACENTO___TINTA__" sin resolver.
+    acento, tinta, tinte = dep.get("color") or ("#56A800", "#3E7C00", "#F2F8EA")
+    pagina = (PLANTILLA
+              .replace("__ACENTO_TINTA__", tinta)
+              .replace("__ACENTO_T__", tinte)
+              .replace("__ACENTO__", acento)
+              .replace("__TITULO__", dep["titulo"])
+              .replace("__DATOS__", crudo))
     with io.open(destino, "w", encoding="utf-8", newline="") as fh:
-        fh.write(PLANTILLA.replace("__DATOS__", crudo))
+        fh.write(pagina)
 
     try:
-        ruta = os.path.join(base, "datos", "infraestructura.json")
+        ruta = os.path.join(base, "datos", f"{clave}.json")
         os.makedirs(os.path.dirname(ruta), exist_ok=True)
         with io.open(ruta, "w", encoding="utf-8", newline="") as fh:
             fh.write(json.dumps(datos, ensure_ascii=False, separators=(",", ":")))
     except OSError as e:
-        print(f"  ! no se pudo escribir datos/infraestructura.json: {e}")
+        print(f"  ! no se pudo escribir datos/{clave}.json: {e}")
     return destino
 
 
@@ -594,13 +642,13 @@ PLANTILLA = r"""<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Contratación de la Secretaría de Infraestructura del Valle · desde 2024</title>
+<title>Contratación de __TITULO__ · desde 2024</title>
 <style>
 /* Misma piel que la version ligera y la nacional: blanco, verde de marca y la
    pila del sistema. Cero peticiones de red, cero dependencias externas. */
 :root{
   --fondo:#FFFFFF; --texto:#111111; --suave:#5B5B5B; --borde:#E8E6E6;
-  --acento:#56A800; --acento-tinta:#3E7C00; --acento-t:#F2F8EA;
+  --acento:__ACENTO__; --acento-tinta:__ACENTO_TINTA__; --acento-t:__ACENTO_T__;
   --ambar:#8A6D1F; --ambar-t:#FFF9EC; --ambar-b:#E0C070;
   --gris-t:#F6F6F5;
 }
@@ -712,7 +760,7 @@ a.enl:hover{border-color:var(--acento);color:var(--acento-tinta)}
   body{background:#fff;color:#000;font:10pt/1.35 Helvetica,Arial,sans-serif;
        print-color-adjust:exact;-webkit-print-color-adjust:exact}
   #impresion h1{font-size:15pt;margin:0 0 4pt}
-  #impresion .cab-inf{font-size:8.5pt;color:#333;border-bottom:1.5pt solid #56A800;
+  #impresion .cab-inf{font-size:8.5pt;color:#333;border-bottom:1.5pt solid __ACENTO__;
                       padding-bottom:6pt;margin-bottom:10pt;line-height:1.45}
   #impresion .cab-inf b{color:#000}
   #impresion table{width:100%;border-collapse:collapse}
@@ -723,7 +771,7 @@ a.enl:hover{border-color:var(--acento);color:var(--acento-tinta)}
   #impresion tr{break-inside:avoid;page-break-inside:avoid}
   #impresion td.n{text-align:right;white-space:nowrap}
   #impresion .obj{display:block;margin-top:2pt;color:#222}
-  #impresion .enl-inf{font-size:7.5pt;color:#3E7C00;text-decoration:none;
+  #impresion .enl-inf{font-size:7.5pt;color:__ACENTO_TINTA__;text-decoration:none;
                       word-break:break-all}
   #impresion .pie-inf{margin-top:10pt;font-size:8pt;color:#444;
                       border-top:.5pt solid #999;padding-top:6pt}
@@ -739,7 +787,7 @@ a.enl:hover{border-color:var(--acento);color:var(--acento-tinta)}
 <body>
 <div class="hoja">
 
-<h1>La contratación de la Secretaría de Infraestructura del Valle</h1>
+<h1>La contratación de __TITULO__</h1>
 <p class="sub">Desde el 1 de enero de 2024: antes del sismo del 10 de agosto y después,
 a la fecha.</p>
 <div class="sello" id="sello"></div>
@@ -752,8 +800,8 @@ a la fecha.</p>
     <th>Año</th>
     <th class="n">Contratos firmados</th>
     <th class="n">Valor</th>
-    <th class="n">De ellos, de obra</th>
-    <th class="n vcol">Valor de la obra</th>
+    <th class="n" id="th-destacado">De ellos, de obra</th>
+    <th class="n vcol" id="th-destacado-v">Valor de la obra</th>
   </tr></thead>
   <tbody id="anios"></tbody>
 </table></div>
@@ -852,19 +900,19 @@ a la fecha.</p>
 
 <h2>Qué no alcanza a ver esta página</h2>
 <div class="limite">
-  <p><b>Solo mira lo que la Secretaría firma a su nombre.</b> El departamento puede
-  ejecutar obra por otras vías que no aparecen aquí: contratación de otra dependencia
-  de la Gobernación, la concesión vial <i>Malla Vial del Valle del Cauca y del Cauca</i>
-  —que se rige por su propio contrato y no pasa por aquí—, entidades descentralizadas
-  como Vallecaucana de Aguas o INFIVALLE, y transferencias a municipios que después
+  <p><b>Solo mira lo que esta dependencia firma a su nombre.</b> El departamento puede
+  gastar por otras vías que no aparecen aquí: contratación de otra dependencia de la
+  Gobernación, concesiones que se rigen por su propio contrato —como la <i>Malla Vial
+  del Valle del Cauca y del Cauca</i>—, entidades descentralizadas como Vallecaucana de
+  Aguas, INFIVALLE o las ESE hospitalarias, y transferencias a municipios que después
   contratan en su propio nombre.</p>
-  <p><b>El tipo de contrato no mide cuánta obra hay.</b> Buena parte del mantenimiento
-  y el mejoramiento vial de esta Secretaría va por convenios de «aunar esfuerzos» que
-  el SECOP tipifica como <i>Otro</i>, no como <i>Obra</i>. Quien mire solo la fila de
-  obra se llevará una idea equivocada, y por eso esta página muestra las dos cosas.</p>
+  <p><b>El tipo de contrato no mide en qué se gasta.</b> Buena parte del gasto de estas
+  secretarías va por convenios de «aunar esfuerzos» que el SECOP tipifica como
+  <i>Otro</i>. Quien mire solo una fila de la tabla de tipos se llevará una idea
+  equivocada, y por eso esta página muestra también los contratos más grandes.</p>
   <p><b>Un contrato de prestación de servicios no es necesariamente ajeno a la
-  emergencia.</b> Puede ser el equipo de ingenieros que está estructurando la obra que
-  vendrá. Lo que se puede afirmar con el SECOP en la mano es qué se firmó y con qué
+  emergencia.</b> Puede ser el equipo técnico que está estructurando lo que vendrá.
+  Lo que se puede afirmar con el SECOP en la mano es qué se firmó y con qué
   objeto escrito, no qué está haciendo cada persona.</p>
   <p><b>El SECOP publica con rezago.</b> Un contrato firmado ayer puede aparecer
   mañana. La página dice de qué consulta salen sus cifras, y se vuelve a medir con cada
@@ -932,7 +980,9 @@ var TOTAL_V = FIRMADOS.reduce(function(s, o){ return s + (o.v || 0); }, 0);
 var POST = OPS.filter(function(o){ return o.post; });
 var POST_F = POST.filter(function(o){ return o.firmado; });
 var POST_V = POST_F.reduce(function(s, o){ return s + (o.v || 0); }, 0);
-var POST_OBRA = POST_F.filter(function(o){ return o.tc === "Obra"; }).length;
+var DESTACADO = (D.dep && D.dep.destacado) || "Obra";
+var DESTACADO_T = DESTACADO.toLowerCase();
+var POST_OBRA = POST_F.filter(function(o){ return o.tc === DESTACADO; }).length;
 var POST_SISMO = POST.filter(function(o){ return o.sismo; }).length;
 var POST_EMER = POST.filter(function(o){ return o.emer; }).length;
 
@@ -982,7 +1032,7 @@ document.getElementById("desde-sismo").innerHTML =
 
 var CIFRAS = [
   {n: POST_F.length, q: "contratos firmados desde el sismo", cero: false},
-  {n: POST_OBRA, q: "de ellos son contratos de obra", cero: POST_OBRA === 0},
+  {n: POST_OBRA, q: "de ellos son contratos de " + DESTACADO_T, cero: POST_OBRA === 0},
   {n: POST_SISMO, q: "nombran el sismo en su objeto", cero: POST_SISMO === 0},
   {n: POST_EMER, q: "usan vocabulario de emergencia", cero: POST_EMER === 0}
 ];
@@ -1014,12 +1064,14 @@ document.getElementById("nota-cifras").innerHTML =
     '</td><td class="n">' + corto(t.v) + '</td><td class="n">' + t.obra +
     '</td><td class="n vcol">' + corto(t.obra_v) + "</td></tr>";
   document.getElementById("anios").innerHTML = html;
+  document.getElementById("th-destacado").textContent = "De ellos, de " + DESTACADO_T;
+  document.getElementById("th-destacado-v").textContent = "Valor de la " + DESTACADO_T;
 
   var ahora = String(D.generado).slice(0, 4);
   document.getElementById("nota-anios").innerHTML =
     "El año en curso va <b>hasta la fecha de la consulta</b>, así que su cifra no es " +
-    "comparable con la de un año completo. La columna de obra está aparte porque es " +
-    "donde vive casi todo el dinero: <b>" + t.obra + " contratos de obra de " +
+    "comparable con la de un año completo. La columna aparte es la del tipo <b>" +
+    esc(DESTACADO) + "</b>: <b>" + t.obra + " contratos de " + DESTACADO_T + " de " +
     t.n.toLocaleString("es-CO") + "</b> concentran " +
     (t.v ? Math.round(100 * t.obra_v / t.v) : 0) + "% de lo contratado en el periodo.";
 })();
@@ -1062,41 +1114,48 @@ document.getElementById("nota-tipos").innerHTML =
   "aparecen a un lado y cuáles no aparecen al otro. La columna de antes va del " +
   fechaLarga(D.desde) + " al día anterior al sismo.";
 
-/* La obra va en su propia sección, con TODAS sus filas. Son unas pocas entre casi
-   dos mil y en la tabla general se pierden, y es lo que una secretaría de
-   infraestructura existe para hacer: sin verla, el cero de la columna de arriba
-   no se puede juzgar —podría ser que nunca firme obra por su cuenta—. */
+/* El tipo destacado va en su propia sección, con TODAS sus filas. Son unas pocas
+   entre miles y en la tabla general se pierden; después de un sismo, si hubo o no
+   obra es una pregunta por sí sola. Sin verlas, el cero de la columna de arriba no
+   se puede juzgar: podría ser que la dependencia nunca firme de ese tipo. */
 (function(){
-  var obra = D.obra || [];
   var caja = document.getElementById("obra");
-  if (!obra.length) {
-    caja.innerHTML = "<h2>La obra del periodo</h2>" +
-      '<div class="aviso">No hay ningún contrato ni proceso de obra de esta Secretaría ' +
-      "desde el " + fechaLarga(D.desde) + ".</div>";
+  var tipo = (D.dep && D.dep.destacado) || "";
+  if (!tipo) { caja.innerHTML = ""; return; }
+  var t = tipo.toLowerCase();
+  var lista = D.destacadas || [];
+  if (!lista.length) {
+    caja.innerHTML = "<h2>La " + esc(t) + " del periodo</h2>" +
+      '<div class="aviso">No hay ningún contrato ni proceso de ' + esc(t) +
+      " de esta Secretaría desde el " + fechaLarga(D.desde) + ".</div>";
     return;
   }
-  var firm = obra.filter(function(o){ return o.firmado; });
+  var firm = lista.filter(function(o){ return o.firmado; });
   var suma = firm.reduce(function(s, o){ return s + (o.v || 0); }, 0);
-  var post = obra.filter(function(o){ return o.post; }).length;
-  caja.innerHTML = "<h2>La obra del periodo, una por una</h2>" +
+  var post = lista.filter(function(o){ return o.post; }).length;
+  caja.innerHTML = "<h2>La " + esc(t) + " del periodo, una por una</h2>" +
     '<p class="nota">Desde el ' + fechaLarga(D.desde) + " esta Secretaría tiene <b>" +
-    firm.length + " contrato" + (firm.length === 1 ? "" : "s") + " de obra por " +
-    pesos(suma) + "</b>" + (function(n){
-      return n ? " y " + n + (n === 1 ? " proceso de obra sin contrato firmado"
-                                      : " procesos de obra sin contrato firmado") : "";
-    })(obra.length - firm.length) + ". Están todas, sin recortar. " +
-    (post ? "<b>" + post + "</b> de ellas son posteriores al sismo."
+    firm.length + " contrato" + (firm.length === 1 ? "" : "s") + " de " + esc(t) +
+    " por " + pesos(suma) + "</b>" + (function(n){
+      return n ? " y " + n + " proceso" + (n === 1 ? "" : "s") + " de " + esc(t) +
+                 " sin contrato firmado" : "";
+    })(lista.length - firm.length) + ". Están todas, sin recortar. " +
+    (post ? "<b>" + post + "</b> de ellas " + (post === 1 ? "es posterior" : "son posteriores") +
+            " al sismo."
           : "<b>Ninguna es posterior al sismo del " + fechaLarga(D.evento) + ".</b>") +
-    " Ojo: el tipo <i>Obra</i> no es todo lo que se construye —abajo están los contratos " +
-    "más grandes del periodo, y buena parte de la obra vial va por convenios.</p>" +
-    obra.map(ficha).join("");
+    " Ojo: el tipo <i>" + esc(tipo) + "</i> no es todo lo que se construye —abajo están " +
+    "los contratos más grandes del periodo.</p>" +
+    lista.map(ficha).join("");
 })();
 
 /* ---- Dónde está de verdad el dinero ----
-   Mirar solo el tipo «Obra» engañaría: esta Secretaría ejecuta buena parte de la
-   obra vial por convenios de «aunar esfuerzos», que SECOP tipifica como «Otro».
-   Con cinco contratos de obra a la vista, un lector concluiría que casi no
-   construye, y lo que pasa es que construye por otra figura. */
+   Mirar solo el tipo destacado engañaría: estas dependencias ejecutan buena parte
+   de su gasto por convenios de «aunar esfuerzos», que SECOP tipifica como «Otro».
+   Con cinco contratos de obra a la vista, un lector concluiría que la Secretaría
+   casi no construye, y lo que pasa es que construye por otra figura.
+
+   Los contratistas que se nombran salen de los DATOS, no del texto: escribirlos a
+   mano serviría para una dependencia y mentiría en la siguiente. */
 (function(){
   var TOPE = 10;
   var mayores = OPS.filter(function(o){ return o.firmado && o.v > 0; })
@@ -1104,17 +1163,22 @@ document.getElementById("nota-tipos").innerHTML =
   if (!mayores.length) return;
   var total = OPS.reduce(function(s, o){ return s + (o.firmado ? o.v : 0); }, 0);
   var suma = mayores.reduce(function(s, o){ return s + o.v; }, 0);
-  var conv = mayores.filter(function(o){ return o.tc === "Otro"; }).length;
+  var conv = mayores.filter(function(o){ return o.tc === "Otro"; });
+  var nombres = [];
+  conv.forEach(function(o){
+    if (o.p && nombres.indexOf(o.p) < 0 && nombres.length < 3) nombres.push(o.p);
+  });
   document.getElementById("mayores").innerHTML =
     "<h2>Dónde está el dinero: los " + TOPE + " contratos más grandes</h2>" +
     '<p class="nota">Estos ' + TOPE + " contratos concentran <b>" +
     Math.round(100 * suma / total) + "%</b> de todo lo firmado desde el " +
     fechaLarga(D.desde) + "." +
-    (conv ? " <b>" + conv + "</b> de ellos no figuran como obra sino como tipo <i>Otro</i>: " +
-      "son convenios de «aunar esfuerzos» con terceros —la Federación Nacional de " +
-      "Cafeteros, la Fundación Universidad del Valle— por los que pasa buena parte del " +
-      "mantenimiento y el mejoramiento vial. Por eso el tipo de contrato, por sí solo, " +
-      "no dice cuánta obra hay." : "") + "</p>" +
+    (conv.length
+      ? " <b>" + conv.length + "</b> de ellos figuran como tipo <i>Otro</i>: son " +
+        "convenios de «aunar esfuerzos» con terceros" +
+        (nombres.length ? " —" + nombres.map(esc).join(", ") + "—" : "") +
+        ". Por eso el tipo de contrato, por sí solo, no dice en qué se gasta."
+      : "") + "</p>" +
     mayores.map(ficha).join("");
 })();
 
@@ -1124,7 +1188,11 @@ document.getElementById("nota-tipos").innerHTML =
   if (!p.modalidad) { document.getElementById("perfil").innerHTML = ""; return; }
   var items = [];
   items.push("<b>" + p.modalidad.pct + "%</b> de los contratos se celebró por <b>" +
-    esc(p.modalidad.v) + "</b> (" + p.modalidad.n + " de " + FIRMADOS.length + ").");
+    /* POST_F y no FIRMADOS: el perfil se calcula SOLO sobre lo firmado desde el
+       sismo, así que el denominador tiene que ser ese. Con FIRMADOS decía
+       "96 de 1.698" al lado de un 77% calculado sobre 124, y dos cifras que no
+       cuadran entre sí en la misma frase destruyen la confianza en el resto. */
+    esc(p.modalidad.v) + "</b> (" + p.modalidad.n + " de " + POST_F.length + ").");
   if (p.persona && p.persona.total)
     items.push("<b>" + p.persona.n + " de " + p.persona.total +
       "</b> se firmaron con <b>persona natural</b>; el resto, con empresas.");
@@ -1469,7 +1537,7 @@ document.getElementById("b-csv").onclick = function(){
            .map(q).join(";");
   });
   var cabecera = [
-    q("Secretaría de Infraestructura - Gobernación del Valle del Cauca"),
+    q(D.entidad + " — Gobernación del Valle del Cauca"),
     q("Consulta del " + selloLargo(D.generado) + ". Ventana desde el " + fechaLarga(D.desde)),
     q("Filtros: " + descripcionFiltros(lista)),
     q("Fuente: datos.gov.co, SECOP II")
@@ -1477,7 +1545,7 @@ document.getElementById("b-csv").onclick = function(){
   var csv = "﻿" + cabecera + "\n\n" + cab.map(q).join(";") + "\n" + filas.join("\n");
   var a = document.createElement("a");
   a.href = URL.createObjectURL(new Blob([csv], {type: "text/csv;charset=utf-8"}));
-  a.download = "infraestructura-valle-" + String(D.generado).slice(0, 10) + ".csv";
+  a.download = D.dep.clave + "-valle-" + String(D.generado).slice(0, 10) + ".csv";
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
@@ -1530,7 +1598,7 @@ function imprimirInforme(){
   }).join("");
 
   document.getElementById("impresion").innerHTML =
-    "<h1>Contratación de la Secretaría de Infraestructura del Valle del Cauca</h1>" +
+    "<h1>Contratación de " + esc(D.dep.titulo) + " del Cauca</h1>" +
     '<div class="cab-inf">' +
     "<b>" + esc(D.entidad) + "</b> · NIT " + esc(D.nit) + "<br>" +
     "Ventana consultada: del <b>" + fechaLarga(D.desde) + "</b> en adelante · " +

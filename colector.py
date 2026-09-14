@@ -2295,21 +2295,28 @@ def exportar_tablero(hoy, resultados, alertas, cfg, resumen_corrida=None):
     except Exception as e:
         print(f"  ! no se pudo escribir nacional.html: {e}")
 
-    # La Secretaria de Infraestructura de la Gobernacion, entera: del sismo y
-    # ordinaria. Es otra pregunta que el tablero no puede responder, porque el
-    # tablero solo muestra lo relacionado con el evento y de esta dependencia no
-    # hay nada relacionado: la contratacion ordinaria ES la respuesta. Best
-    # effort como los demas derivados.
+    # Una pagina por dependencia de la Gobernacion -Infraestructura, Salud-, con
+    # TODA su contratacion desde 2024: del sismo y ordinaria. Es otra pregunta
+    # que el tablero no puede responder, porque el tablero solo muestra lo
+    # relacionado con el evento y de estas dependencias no hay nada relacionado:
+    # ahi la contratacion ordinaria ES la respuesta.
+    #
+    # Cada una va en su propio try: que Salud falle no puede dejar sin publicar
+    # a Infraestructura. Best effort, como los demas derivados.
     try:
-        import infraestructura
-        datos_inf = infraestructura.consultar(
-            cfg, lambda ds, where: consultar(ds, where, cfg.get("app_token", "")),
-            registrar=print)
-        ruta_inf = infraestructura.escribir(datos_inf, payload.get("generado", ""), BASE)
-        firmados = sum(1 for o in datos_inf["ops"] if o.get("firmado"))
-        print(f"  infraestructura: {ruta_inf} ({firmados} contratos firmados)")
+        import dependencias
+        pedir = lambda ds, where: consultar(ds, where, cfg.get("app_token", ""))
+        for dep in dependencias.DEPENDENCIAS:
+            try:
+                datos_dep = dependencias.consultar(cfg, pedir, dep, registrar=print)
+                ruta_dep = dependencias.escribir(
+                    datos_dep, payload.get("generado", ""), BASE, dep)
+                firmados = sum(1 for o in datos_dep["ops"] if o.get("firmado"))
+                print(f"  {dep['clave']}: {ruta_dep} ({firmados} contratos firmados)")
+            except Exception as e:
+                print(f"  ! no se pudo escribir {dep['clave']}.html: {e}")
     except Exception as e:
-        print(f"  ! no se pudo escribir infraestructura.html: {e}")
+        print(f"  ! no se pudieron generar las paginas por dependencia: {e}")
 
     return ruta
 
