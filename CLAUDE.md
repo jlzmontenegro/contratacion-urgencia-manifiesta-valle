@@ -899,6 +899,51 @@ del periodo son 5 contratos por $311.248 millones, **ninguno posterior al sismo*
 de ellos de septiembre de 2025 se celebraron *al amparo del artículo 66 de la Ley 1523 de
 2012 — calamidad pública*: la vía ya se ha usado antes.
 
+**Se descarta lo CANCELADO y lo que sigue en BORRADOR** (14-sep-2026, a petición del
+usuario). Un proceso cancelado no es contratación y un borrador ni siquiera se publicó;
+contarlos infla lo que la Secretaría hizo. Al 14-sep son **6 filas, todas procesos sin
+contrato**, ninguna con dinero comprometido. La regla se aplica también a los contratos por
+si algún día aparece uno cancelado, y **la página dice cuántas filas se quitaron**: unas
+cifras depuradas en silencio no cuadrarían con quien consulte el SECOP por su cuenta.
+
+**LA LLAVE DE DUPLICADOS DEL COLECTOR NO SIRVE AQUÍ, y se midió por qué.** El colector
+unifica por entidad + referencia normalizada + valor; con la ventana de esta página —dos
+años y medio— **las referencias se reciclan entre vigencias**: hay tres pares con la misma
+referencia y el mismo valor que son **personas distintas** contratadas en enero de 2024 y
+en enero de 2025. Aplicar esa llave borraría contratación real. Lo mismo pasa con
+objeto + valor + contratista: da 295 grupos y casi todos son **renovaciones anuales** de la
+misma persona.
+
+**Van dos reglas estrechas, y cada una caza exactamente un caso.** Medidas sobre las 1.923
+filas firmadas:
+
+- **A. Mismo expediente + misma referencia.** Dentro de un expediente cada contrato lleva su
+  propio número —`CO1.BDOS.7366361` tiene ocho contratos con ocho referencias distintas—,
+  así que repetir el número es republicar. Caza el contrato de **CIDTI 4.0**, publicado el 19
+  y el 20 de marzo de 2025 por **$1.200.000.000 y $1.518.600.000**.
+- **B. Mismo contratista + mismo valor + mismo objeto a menos de 30 días.** Lo que separa
+  una republicación de una renovación es **el tiempo**: la republicación va a días y la
+  renovación a un año. Caza la interventoría de la vía Cañasgordas de la **Fundación
+  Universidad del Valle, $12.599.635.260**, publicada el 14 y el 17 de octubre de 2025 en
+  dos expedientes distintos.
+
+**Las 326 renovaciones anuales quedan intactas**, que es la comprobación que hace utilizable
+la regla B. Sin el corte de 30 días, la página se habría comido un año entero de
+contratación de personal.
+
+**Se conserva la publicación más reciente y se dice que hubo dos.** Cuando los valores
+difieren, la posterior es la corregida; la ficha marca *«publicada 2 veces»*, enlaza la otra
+y, si el valor no coincide, **dice cuál era el otro valor**. Las cifras bajan de
+$594.426.064.574 a **$580.626.429.314**, y la diferencia son exactamente los dos importes
+duplicados.
+
+**TODO sale de la misma lista ya depurada.** Las cuatro cifras, la tabla por año, la tabla
+por tipo, el perfil, el listado, el CSV y el PDF leen las mismas operaciones limpias. Antes
+los agregados se calculaban sobre la descarga cruda y los habría dejado diciendo 1.923
+donde la tabla lista 1.921: dos cifras distintas de lo mismo en la misma pantalla, que es el
+error que más caro sale en este proyecto. Comprobado: la suma de la tabla por año y la de la
+tabla por tipo dan **1.921**, igual que el listado.
+
 **El filtro de años admite VARIOS a la vez** (14-sep-2026, a petición del usuario), con la
 misma solución de los otros dos multiselección del proyecto: un `<details>` con casillas y
 no un `<select multiple>`, que obliga a Ctrl+clic y en el teléfono es inmanejable. **El

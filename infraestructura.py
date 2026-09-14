@@ -138,17 +138,31 @@ def consultar(cfg, consultar_api, registrar=print):
         if nombre:
             break
 
-    # El corte es el sismo. No se baja dos veces: se parte la misma descarga,
-    # que ademas garantiza que las dos columnas de la comparacion salen de los
-    # mismos criterios. Bajarlas por separado deja la puerta abierta a que una
-    # consulta cambie y la otra no.
-    desde_sismo = [c for c in contratos if _fecha(c.get("fecha_de_firma")) >= evento]
-    antes_sismo = [c for c in contratos if _fecha(c.get("fecha_de_firma")) < evento]
-    registrar(f"    infraestructura: {len(desde_sismo)} desde el sismo, "
-              f"{len(antes_sismo)} antes")
-
     ops = _operaciones(contratos, procesos, evento)
+
+    # Se limpia ANTES de contar nada. Todo lo que la pagina muestra -las cifras,
+    # las dos tablas, el perfil y el listado- sale de esta misma lista ya
+    # depurada: si unos numeros contaran la descarga cruda y otros la lista
+    # limpia, serian dos cifras distintas de lo mismo en la misma pantalla, que
+    # es el error que mas caro sale en este proyecto.
+    ops, descartados = _descartar_estados(ops)
+    ops, unificadas = _unificar(ops)
+    if descartados:
+        registrar(f"    infraestructura: descartadas {sum(descartados.values())} filas "
+                  f"por estado ({descartados})")
+    if unificadas:
+        registrar(f"    infraestructura: {unificadas} publicacion(es) repetida(s) unificada(s)")
+
     docs = _documentos(ops, consultar_api, registrar)
+
+    firmadas = [o for o in ops if o["firmado"]]
+    # El corte es el sismo, y se hace sobre la MISMA lista: no se baja dos veces
+    # ni se reparte la descarga cruda. Asi las dos columnas de la comparacion
+    # salen de los mismos criterios y de las mismas filas.
+    desde_sismo = [o for o in firmadas if o["post"]]
+    antes_sismo = [o for o in firmadas if not o["post"]]
+    registrar(f"    infraestructura: {len(desde_sismo)} firmados desde el sismo, "
+              f"{len(antes_sismo)} antes")
 
     return {
         "entidad": nombre or "Secretaría de Infraestructura - Gobernación del Valle",
@@ -156,11 +170,13 @@ def consultar(cfg, consultar_api, registrar=print):
         "desde": DESDE,
         "evento": evento,
         "ops": ops,
+        "descartados": descartados,
+        "unificadas": unificadas,
         "tipos": {
             "desde": _por_tipo(desde_sismo),
             "antes": _por_tipo(antes_sismo),
         },
-        "anios": _por_anio(contratos),
+        "anios": _por_anio(firmadas),
         # La obra de todo el periodo, contratos y procesos. Es lo que una
         # secretaria de infraestructura existe para hacer, y por eso va aparte:
         # son 5 contratos entre 1.923, y en una tabla de 1.923 filas se pierden.
@@ -170,18 +186,18 @@ def consultar(cfg, consultar_api, registrar=print):
     }
 
 
-def _por_anio(contratos):
+def _por_anio(ops):
     agg = {}
-    for c in contratos or []:
-        a = _fecha(c.get("fecha_de_firma"))[:4]
+    for o in ops or []:
+        a = (o["f"] or "")[:4]
         if not a:
             continue
         d = agg.setdefault(a, {"n": 0, "v": 0.0, "obra": 0, "obra_v": 0.0})
         d["n"] += 1
-        d["v"] += _num(c.get("valor_del_contrato"))
-        if _tipo(c) == "Obra":
+        d["v"] += o["v"]
+        if o["tc"] == "Obra":
             d["obra"] += 1
-            d["obra_v"] += _num(c.get("valor_del_contrato"))
+            d["obra_v"] += o["v"]
     return [dict(a=a, **d) for a, d in sorted(agg.items())]
 
 
@@ -209,13 +225,12 @@ def _tipo(fila):
     return fila.get("tipo_de_contrato") or "Otro"
 
 
-def _por_tipo(filas):
+def _por_tipo(ops):
     agg = {}
-    for f in filas or []:
-        t = _tipo(f)
-        d = agg.setdefault(t, {"n": 0, "v": 0.0})
+    for o in ops or []:
+        d = agg.setdefault(o["tc"], {"n": 0, "v": 0.0})
         d["n"] += 1
-        d["v"] += _num(f.get("valor_del_contrato"))
+        d["v"] += o["v"]
     return [{"t": t, "n": d["n"], "v": d["v"]}
             for t, d in sorted(agg.items(), key=lambda kv: -kv[1]["v"])]
 
@@ -233,43 +248,43 @@ def _fichas_obra(ops):
     return obra
 
 
-def _perfil(contratos):
-    """Las cuatro o cinco cosas que se repiten en TODOS los contratos.
+def _perfil(ops):
+    """Las cuatro o cinco cosas que se repiten en TODAS las filas firmadas.
 
     Se calculan y solo se muestran las que de verdad son unanimes o casi: decir
     "el 100% es contratacion directa" cuando es el 60% seria peor que callarlo.
+
+    Recibe OPERACIONES ya depuradas -sin canceladas y sin publicaciones
+    repetidas- y no la descarga cruda: si el perfil contara unas filas y la tabla
+    otras, serian dos cifras distintas de lo mismo en la misma pantalla.
     """
-    n = len(contratos or [])
+    n = len(ops or [])
     if not n:
         return {}
 
-    def manda(campo, transformar=lambda x: x):
+    def manda(campo):
         cuenta = {}
-        for f in contratos:
-            k = transformar(f.get(campo) or "")
+        for o in ops:
+            k = o.get(campo) or ""
             cuenta[k] = cuenta.get(k, 0) + 1
         k, c = max(cuenta.items(), key=lambda kv: kv[1])
         return {"v": k, "n": c, "pct": round(100.0 * c / n)}
 
-    docs = [str(f.get("documento_proveedor") or "") for f in contratos if f.get("documento_proveedor")]
+    docs = [str(o.get("pd") or "") for o in ops if o.get("pd")]
     repetidos = {d for d in docs if docs.count(d) > 1}
 
-    fechas = sorted({_fecha(f.get("fecha_de_firma")) for f in contratos if f.get("fecha_de_firma")})
-    fines = sorted({_fecha(f.get("fecha_de_fin_del_contrato"))
-                    for f in contratos if f.get("fecha_de_fin_del_contrato")})
+    fechas = sorted({o["f"] for o in ops if o.get("f")})
+    fines = sorted({o["ff"] for o in ops if o.get("ff")})
 
     return {
-        "modalidad": manda("modalidad_de_contratacion"),
-        "duracion": manda("duraci_n_del_contrato"),
-        "fin": manda("fecha_de_fin_del_contrato", _fecha),
-        "persona": {
-            "n": sum(1 for f in contratos if "CEDULA" in _norm(f.get("tipodocproveedor"))),
-            "total": n,
-        },
+        "modalidad": manda("mod"),
+        "duracion": manda("dur"),
+        "fin": manda("ff"),
+        "persona": {"n": sum(1 for o in ops if o.get("pn")), "total": n},
         # Cuantos contratistas tienen mas de un contrato. Cero tambien se dice:
         # es una comprobacion hecha, no un dato que falte.
         "repetidos": len(repetidos),
-        "ordenador": manda("nombre_ordenador_del_gasto"),
+        "ordenador": manda("ord"),
         "primera_firma": fechas[0] if fechas else "",
         "ultima_firma": fechas[-1] if fechas else "",
         "ultimo_fin": fines[-1] if fines else "",
@@ -318,6 +333,10 @@ def _operaciones(contratos, procesos, evento):
             "p": c.get("proveedor_adjudicado", ""),
             "pd": str(c.get("documento_proveedor") or ""),
             "sup": c.get("nombre_supervisor", ""),
+            # El perfil se calcula sobre las filas ya depuradas, no sobre la
+            # descarga cruda, asi que lo que necesita tiene que viajar aqui.
+            "ord": c.get("nombre_ordenador_del_gasto", ""),
+            "pn": "CEDULA" in _norm(c.get("tipodocproveedor")),
             "u": _url(c.get("urlproceso")),
             "up": "",
             "pb": 0.0,
@@ -345,7 +364,7 @@ def _operaciones(contratos, procesos, evento):
             "mod": p.get("modalidad_de_contratacion", ""),
             "est": "",
             "f": "", "fi": "", "ff": "", "dur": "", "p": "", "pd": "", "sup": "",
-            "u": "", "firmado": False,
+            "ord": "", "pn": False, "u": "", "firmado": False,
         }
         fila.update(_del_proceso(p))
         ops.append(fila)
@@ -365,8 +384,129 @@ def _operaciones(contratos, procesos, evento):
         o["ep"] = ""
         o["ej"] = ""
         o["dn"] = 0
+        o["repetida"] = 0
+        o["otras"] = []
     ops.sort(key=lambda o: (-(o["v"] or o["pb"]), o["r"]))
     return ops
+
+
+# Estados que sacan una fila de la cuenta. Decision del usuario el 14-sep-2026:
+# "saca los que digan cancelados o borrador". Un proceso cancelado no es
+# contratacion y un borrador ni siquiera se publico; contarlos infla el numero de
+# lo que la Secretaria hizo. Se comparan normalizados -sin tildes y en
+# mayusculas- porque la fuente escribe 'Cancelado' y podria escribir 'CANCELADO'.
+ESTADOS_FUERA = ("CANCELADO", "CANCELADA", "BORRADOR")
+
+
+def _descartar_estados(ops):
+    """Quita lo cancelado y lo que sigue en borrador. Devuelve (vivas, cuenta).
+
+    Solo se descarta lo que NO llego a contrato: si hay contrato firmado, el
+    hecho existe aunque el expediente del proceso quede marcado de cualquier
+    forma, y borrarlo escondería plata comprometida.
+    """
+    cuenta = {}
+    vivas = []
+    for o in ops:
+        estado = _norm(o.get("est") if o.get("firmado") else o.get("estp"))
+        fuera = next((e for e in ESTADOS_FUERA if e in estado), None)
+        if fuera and not o.get("firmado"):
+            cuenta[fuera] = cuenta.get(fuera, 0) + 1
+            continue
+        if fuera and o.get("firmado"):
+            # Un CONTRATO cancelado si se descarta: no es contratacion viva. Hoy
+            # no hay ninguno, pero el dia que aparezca no puede colarse.
+            cuenta[fuera] = cuenta.get(fuera, 0) + 1
+            continue
+        vivas.append(o)
+    return vivas, cuenta
+
+
+def _ref_normalizada(s):
+    s = unicodedata.normalize("NFD", str(s or "")).encode("ascii", "ignore").decode()
+    return re.sub(r"[^A-Z0-9]", "", s.upper())
+
+
+def _dias(a, b):
+    from datetime import date
+    try:
+        x = date(*[int(p) for p in a.split("-")])
+        y = date(*[int(p) for p in b.split("-")])
+        return abs((x - y).days)
+    except Exception:
+        return 99999
+
+
+def _unificar(ops):
+    """La misma contratacion publicada dos veces es UNA. Devuelve (ops, cuantas).
+
+    Es la regla del proyecto, pero la llave del colector -entidad + referencia +
+    valor- NO sirve en esta pagina, y se midio por que: con una ventana de dos
+    anos y medio, las referencias SE RECICLAN entre vigencias. Hay tres pares con
+    la misma referencia y el mismo valor que son personas distintas contratadas
+    en enero de 2024 y en enero de 2025. Fusionarlos borraria contratacion real.
+
+    Por eso van dos reglas estrechas, medidas el 14-sep-2026 sobre las 1.923
+    filas firmadas. Cada una caza exactamente un caso y ninguna toca las 326
+    renovaciones anuales de la misma persona por el mismo valor:
+
+    A. MISMO EXPEDIENTE + MISMA REFERENCIA. Dentro de un expediente cada contrato
+       lleva su propio numero -CO1.BDOS.7366361 tiene ocho contratos con ocho
+       referencias distintas-, asi que repetir el numero es republicar. Caza el
+       contrato de CIDTI 4.0, publicado el 19 y el 20 de marzo de 2025 por
+       $1.200.000.000 y $1.518.600.000.
+
+    B. MISMO CONTRATISTA + MISMO VALOR + MISMO OBJETO A MENOS DE 30 DIAS. Lo que
+       separa una republicacion de una renovacion es el tiempo: la republicacion
+       va a dias y la renovacion a un ano. Caza la interventoria de la via
+       Canasgordas de la Fundacion Universidad del Valle, $12.599.635.260
+       publicada el 14 y el 17 de octubre de 2025 en dos expedientes distintos.
+
+    NO SE ESCONDE: la fila que queda dice cuantas veces se publico y enlaza la
+    otra publicacion, porque es un hecho sobre como publica la entidad y quien
+    vaya a verificar se va a encontrar los dos expedientes.
+    """
+    firmadas = [o for o in ops if o.get("firmado")]
+    grupos = []
+
+    por_exp_ref = {}
+    for o in firmadas:
+        if o["exp"] and o["r"]:
+            por_exp_ref.setdefault((o["exp"], _ref_normalizada(o["r"])), []).append(o)
+    grupos += [v for v in por_exp_ref.values() if len(v) > 1]
+
+    ya = {id(o) for g in grupos for o in g}
+    por_obj = {}
+    for o in firmadas:
+        if id(o) in ya or not o["pd"] or not o["v"]:
+            continue
+        llave = (str(o["pd"]), round(o["v"]), _ref_normalizada(o["o"])[:200])
+        por_obj.setdefault(llave, []).append(o)
+    for v in por_obj.values():
+        if len(v) < 2:
+            continue
+        v = sorted(v, key=lambda x: x["f"])
+        cerca = [v[0]]
+        for x in v[1:]:
+            if _dias(x["f"], cerca[-1]["f"]) <= 30:
+                cerca.append(x)
+        if len(cerca) > 1:
+            grupos.append(cerca)
+
+    fuera = set()
+    for grupo in grupos:
+        # Se conserva la publicacion MAS RECIENTE: cuando los valores difieren,
+        # la posterior es la corregida. Como las dos quedan enlazadas en la
+        # ficha, la eleccion se puede comprobar en la fuente.
+        grupo = sorted(grupo, key=lambda o: (o["f"], o["v"]))
+        queda = grupo[-1]
+        queda["repetida"] = len(grupo)
+        queda["otras"] = [{"r": o["r"], "exp": o["exp"], "v": o["v"],
+                           "f": o["f"], "u": o["u"]} for o in grupo[:-1]]
+        for o in grupo[:-1]:
+            fuera.add(id(o))
+
+    return [o for o in ops if id(o) not in fuera], len(fuera)
 
 
 def _del_proceso(p):
@@ -812,6 +952,26 @@ document.getElementById("titular").innerHTML =
   " que todavía no tiene" + (ABIERTOS.length === 1 ? "" : "n") + " contrato firmado. " +
   "Es toda la contratación de la dependencia, del sismo y ordinaria.</div></div>";
 
+(function(){
+  var d = D.descartados || {}, u = D.unificadas || 0;
+  var fuera = Object.keys(d).reduce(function(s, k){ return s + d[k]; }, 0);
+  if (!fuera && !u) return;
+  var partes = [];
+  if (fuera) partes.push("se descartaron <b>" + fuera + "</b> " +
+    (fuera === 1 ? "fila" : "filas") + " en estado " +
+    Object.keys(d).map(function(k){ return k.toLowerCase(); }).join(" o ") +
+    " (no son contratación)");
+  if (u) partes.push("se unificaron <b>" + u + "</b> " +
+    (u === 1 ? "publicación repetida" : "publicaciones repetidas") +
+    ": la misma contratación publicada dos veces cuenta una");
+  var p = document.createElement("p");
+  p.className = "nota";
+  p.style.marginTop = "-4px";
+  p.innerHTML = "Depuración aplicada a estas cifras: " + partes.join("; ") +
+    ". Las filas afectadas quedan marcadas y enlazan su otra publicación.";
+  document.getElementById("titular").appendChild(p);
+})();
+
 document.getElementById("desde-sismo").innerHTML =
   "<h2>Y desde el sismo del " + fechaLarga(D.evento) + "</h2>" +
   '<p class="nota" style="margin-bottom:12px">' + POST_F.length + " contratos firmados por <b>" +
@@ -1125,6 +1285,7 @@ function ficha(o){
     : '<span class="et ab">Proceso abierto</span>';
   if (o.sismo) etiquetas += '<span class="et ok">nombra el sismo</span>';
   else if (o.emer) etiquetas += '<span class="et">vocabulario de emergencia</span>';
+  if (o.repetida > 1) etiquetas += '<span class="et ab">publicada ' + o.repetida + " veces</span>";
 
   var meta = [];
   if (o.p) meta.push("Contratista: <b>" + esc(o.p) + "</b>" + (o.pd ? " (" + esc(o.pd) + ")" : ""));
@@ -1145,13 +1306,33 @@ function ficha(o){
   if (o.ep) enlaces.push(["Estudios previos", o.ep]);
   if (o.ej) enlaces.push(["Informe de ejecución", o.ej]);
 
+  /* La doble publicación se dice, no se esconde: es un hecho sobre cómo publica
+     la entidad, y quien vaya a verificar se va a encontrar los dos expedientes.
+     Si además los valores no coinciden, se dicen los dos: aquí se cuenta una
+     sola vez y el lector tiene que poder ver cuál se tomó. */
+  var repes = "";
+  if (o.repetida > 1 && o.otras && o.otras.length) {
+    var otros = o.otras.map(function(x){
+      return (x.u ? '<a class="enl" href="' + esc(x.u) + '" target="_blank" ' +
+                    'rel="noopener">' + esc(x.r || "la otra publicación") + "</a>"
+                  : esc(x.r || "sin número")) +
+        (Math.round(x.v) !== Math.round(o.v) ? " (por " + pesos(x.v) + ")" : "");
+    });
+    var distinto = o.otras.some(function(x){ return Math.round(x.v) !== Math.round(o.v); });
+    repes = '<div class="meta" style="margin-top:6px">Esta contratación aparece ' +
+      "publicada <b>" + o.repetida + " veces</b> en el SECOP, en expedientes distintos. " +
+      "Aquí se cuenta <b>una sola vez</b>" +
+      (distinto ? ", por el valor de la publicación más reciente" : "") +
+      ". La otra: " + otros.join(" · ") + "</div>";
+  }
+
   return '<div class="op"><div class="cab"><span><span class="ref">' +
     esc(o.r || o.rp || "sin número") + "</span>" + etiquetas + '</span><span class="val">' +
     pesos(valor) + (o.firmado ? "" : " <span style=\"font-size:11px;font-weight:400\">precio base</span>") +
     "</span></div>" +
     '<div class="obj">' + esc(o.o) +
     (o.cortado ? ' <span class="et ab">SECOP cortó este texto</span>' : "") + "</div>" +
-    '<div class="meta">' + meta.join(" · ") + "</div>" +
+    '<div class="meta">' + meta.join(" · ") + "</div>" + repes +
     (enlaces.length ? '<div class="enls">' + enlaces.map(function(e){
       return '<a class="enl" href="' + esc(e[1]) + '" target="_blank" rel="noopener">' +
         e[0] + "</a>";
