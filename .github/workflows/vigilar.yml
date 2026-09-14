@@ -1,0 +1,79 @@
+name: Vigilar recoleccion
+
+# Avisa por correo cuando el monitor lleva mas de 14 horas sin recolectar.
+#
+# ES UN FLUJO APARTE A PROPOSITO. Si esto viviera dentro de actualizar.yml, el
+# dia que ese flujo no corra tampoco correria el vigilante: no puede avisar de su
+# propia ausencia quien depende de ella. Paso el 14-sep-2026 -GitHub se salto la
+# corrida de las 8:30 y retraso la de las 20:30 cinco horas- y nadie se entero
+# hasta que el usuario pregunto por que no le llegaban los correos.
+#
+# Cadencia distinta a la del colector, y en otro minuto, para que haga falta que
+# fallen dos cosas a la vez y no una. Cada tres horas es barato: la corrida son
+# unos segundos, no consulta la API y no instala nada -vigilar.py y correo.py
+# solo usan la biblioteca estandar-.
+on:
+  schedule:
+    - cron: '23 */3 * * *'   # cada 3 horas, en el minuto 23
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Que no se pisen dos vigilantes ni el vigilante con su propio commit.
+concurrency:
+  group: vigilar
+  cancel-in-progress: false
+
+jobs:
+  vigilar:
+    runs-on: ubuntu-latest
+    env:
+      TZ: America/Bogota      # el colector escribe 'generado' en hora de Colombia
+      PYTHONUNBUFFERED: "1"
+    timeout-minutes: 5
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Comprobar cuando fue la ultima recoleccion
+        env:
+          CORREO_USUARIO: ${{ secrets.CORREO_USUARIO }}
+          CORREO_CLAVE: ${{ secrets.CORREO_CLAVE }}
+          CORREO_REMITENTE: ${{ secrets.CORREO_REMITENTE }}
+          CORREO_SERVIDOR: ${{ vars.CORREO_SERVIDOR }}
+          CORREO_PUERTO: ${{ vars.CORREO_PUERTO }}
+        run: python vigilar.py
+
+      # Solo hay algo que guardar cuando se mando un aviso. Si el monitor esta al
+      # dia, vigilar.py no escribe nada y esto no hace nada.
+      - name: Guardar la bitacora del aviso
+        if: always()
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add datos/vigilancia.csv 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Nada que guardar."
+            exit 0
+          fi
+          git commit -m "Aviso de vigilancia $(date '+%Y-%m-%d %H:%M')"
+          # Mismo patron que el paso de publicar del colector: otra corrida pudo
+          # haber empujado mientras tanto. Aqui el conflicto es improbable por
+          # construccion -si el colector esta caido no hay quien empuje-, pero la
+          # red no cuesta nada.
+          for intento in 1 2 3; do
+            git fetch origin main || true
+            if git rebase -X theirs origin/main && git push; then
+              exit 0
+            fi
+            git rebase --abort || true
+            sleep 5
+          done
+          echo "No se pudo guardar la bitacora; el aviso SI se mando."
+          exit 0

@@ -25,6 +25,7 @@ ligero.py              genera ligero.html: un HTML autónomo, solo lo confirmado
 correo.py              avisa por correo de lo nuevo. Dos correos, dos públicos.
 resumen.py             informe semanal de los lunes, con el mapa dibujado en PNG
 documentos.py          enlaza cada fila con los estudios previos de su expediente
+vigilar.py             avisa si el monitor lleva mas de 14 horas sin recolectar
 datos/tablero.json     lo que la página carga
 datos/avisados.csv     de qué ya salió correo. Lo escribe correo.py
 datos/*.csv            estado y trazas; los mantiene GitHub Actions
@@ -783,13 +784,48 @@ a avisarse**, que es exactamente la noticia.
 con el cambio a 6:07, 13:07 y 20:07 se revisa tres veces en vez de dos. **No hizo falta tocar
 `correo.py`**: ya funcionaba así.
 
+## El vigilante (`vigilar.py`)
+
+**Avisa cuando el monitor lleva más de 14 horas sin recolectar** (14-sep-2026). Con tres
+corridas —6:07, 13:07 y 20:07— el hueco mayor es de diez horas; catorce deja cuatro de margen
+para un retraso normal de GitHub sin gritar por nada.
+
+**Es un flujo APARTE, y ahí está todo el punto.** Si viviera dentro de `actualizar.yml`, el día
+que ese flujo no corra tampoco correría el vigilante: **no puede avisar de su propia ausencia
+quien depende de ella**. Va cada tres horas, en el minuto `:23`, para que haga falta que fallen
+dos cosas a la vez y no una.
+
+**No recolecta, no publica, no consulta la API.** Solo lee `generado` de `datos/tablero.json` y
+compara. Por eso el flujo **no instala nada**: `vigilar.py` y `correo.py` son biblioteca
+estándar. La corrida son segundos.
+
+**Se compara hora local contra hora local.** El colector escribe `generado` con
+`TZ=America/Bogota` y el vigilante corre con la misma zona. Sin eso, la resta daría cinco horas
+de más y el aviso saltaría solo.
+
+**No repite antes de 12 horas.** Una caída de dos días serían dieciséis correos idénticos: el
+primero informa y los quince siguientes solo entrenan a ignorarlos. El estado va en
+`datos/vigilancia.csv`, que el propio flujo confirma con el mismo `rebase -X theirs` del paso
+de publicar. El conflicto es improbable por construcción: si el colector está caído, no hay
+quien empuje.
+
+**Si el correo no sale, NO se anota**, igual que en `correo.py`. Anotarlo en falso dejaría doce
+horas de silencio justo durante una caída, que es cuando más falta hace el aviso.
+
+**El aviso dice que el tablero NO está caído**, porque no lo está: sigue en pie mostrando los
+últimos datos buenos con su fecha a la vista. Lo que falta es la actualización. Sin esa frase,
+el correo se leería como que el sitio se cayó y la reacción sería la equivocada.
+
+**Sale también como `::warning::` en Actions**, que se ve en la pestaña sin abrir el registro,
+pero **no pone el flujo en rojo**: que el monitor esté parado no es un fallo del vigilante, y
+un rojo recurrente durante una caída larga entrena a ignorar la pestaña.
+
 **Un día sin correos NO significa que el correo esté roto.** El 14-sep-2026 el usuario avisó
 de que no le llegaban; el registro decía `relacionado: nada nuevo` y la comprobación contra
 `avisados.csv` dio **cero pendientes** de 599 `Alta` y 181 `Media`. El correo estaba bien: lo
 que faltaba era la recolección. **GitHub retrasó la corrida de las 20:30 cinco horas y se saltó
 la de las 8:30 entera**, y una corrida saltada es invisible —no falla nada, no hay rojo en
-Actions, simplemente no existe—. De ahí el minuto `:07` en los cron. **Detectar una corrida que
-no ocurrió sigue sin estar construido**, y es lo que evitaría que esto se repita en silencio.
+Actions, simplemente no existe—. De ahí el minuto `:07` en los cron, y de ahí `vigilar.py`.
 
 **El paso va DESPUÉS de la auditoría y ANTES de publicar.** Después de la auditoría porque si
 el candado salta no hay que avisar de datos que no se van a publicar. Antes de publicar porque
