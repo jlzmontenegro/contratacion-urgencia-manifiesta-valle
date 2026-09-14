@@ -899,9 +899,34 @@ del periodo son 5 contratos por $311.248 millones, **ninguno posterior al sismo*
 de ellos de septiembre de 2025 se celebraron *al amparo del artículo 66 de la Ley 1523 de
 2012 — calamidad pública*: la vía ya se ha usado antes.
 
+**El filtro de años admite VARIOS a la vez** (14-sep-2026, a petición del usuario), con la
+misma solución de los otros dos multiselección del proyecto: un `<details>` con casillas y
+no un `<select multiple>`, que obliga a Ctrl+clic y en el teléfono es inmanejable. **El
+resumen cerrado dice cuántos hay elegidos** y **marcar no repinta la lista**, o las casillas
+saltarían bajo el cursor al elegir la segunda. Vacío significa *todos*. El panel se ancla al
+**bloque** de filtros —que lleva `position:relative` y `overflow:visible`— y no a su columna
+de 180px: anclado a la columna, las casillas se apilarían de a una. Convive con el
+desplegable de *Periodo* (todo / desde el sismo / antes) y se combinan con Y.
+
+**El PDF es la impresión del navegador con hoja de estilos, no una librería**, igual que en
+el tablero grande. **Imprime TODAS las filas del filtro**, no las 20 de la página: sin
+filtros son 1.949. El informe encabeza con **los filtros aplicados y la recolección de la
+que salen los datos** —un informe que viaja solo y no dice de dónde sale no se puede
+verificar—, lleva las tres fechas de cada fila y **los enlaces como `<a href>` de verdad**,
+que el navegador conserva pulsables dentro del PDF. Va en una tabla compacta y no en
+fichas: en fichas, 1.949 filas son un ladrillo inmanejable.
+
+**Los dos botones dicen cuántas filas se llevan** (`Informe en PDF (434 filas)`). Un informe
+de doscientas páginas no puede salir por sorpresa, y poner la cifra en el botón evita tanto
+la sorpresa como la tentación de recortar en silencio, que sería peor.
+
+**`descripcionFiltros()` es la MISMA para el CSV y para el PDF.** Si cada uno describiera lo
+suyo, dos archivos del mismo tablero podrían decir cosas distintas sobre de dónde salen sus
+filas.
+
 **Se actualiza sola con cada recolección**, como `ligero.html` y `nacional.html`: la llama
 el colector al final, best effort. El HTML no se edita; se edita `infraestructura.py`.
-Pesa 1,9 MB en crudo y **139 KB servidos con gzip**.
+Pesa 1,9 MB en crudo y **149 KB servidos con gzip**.
 
 ## El vigilante (`vigilar.py`)
 

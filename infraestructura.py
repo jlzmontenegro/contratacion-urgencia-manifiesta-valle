@@ -505,14 +505,35 @@ tr.tot td{font-weight:700;border-top:2px solid var(--borde);border-bottom:none}
 .perfil li{padding:9px 0;border-bottom:1px solid var(--borde);font-size:14px}
 .perfil li:last-child{border-bottom:none}
 .perfil b{font-weight:700}
+/* position:relative y overflow visible: el panel de anos se ancla al BLOQUE de
+   filtros y no a su columna, que mide 180px. Es la misma leccion que ya se pago
+   en el tablero grande, donde .plegable llevaba overflow:hidden y cortaba el
+   panel en seco sin que nada lo dijera. */
 .filtros{border:1px solid var(--borde);border-radius:4px;padding:14px 16px;
-         margin:0 0 14px;background:var(--gris-t)}
+         margin:0 0 14px;background:var(--gris-t);position:relative;overflow:visible}
 .filtros .fila{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end}
 .campo{display:flex;flex-direction:column;gap:4px;flex:1 1 180px}
 .campo label{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--suave)}
 .campo input,.campo select{font:14px/1.4 inherit;padding:7px 8px;border:1px solid var(--borde);
                            border-radius:3px;background:#fff;color:var(--texto)}
 .campo input:focus,.campo select:focus{outline:2px solid var(--acento);outline-offset:-1px}
+/* Multiseleccion de anos: un <details> con casillas, no un <select multiple>.
+   El nativo obliga a Ctrl+clic y en el telefono es inmanejable. */
+.multi{position:static}
+.multi>summary{font:14px/1.4 inherit;padding:7px 8px;border:1px solid var(--borde);
+               border-radius:3px;background:#fff;cursor:pointer;list-style:none;
+               display:flex;justify-content:space-between;gap:8px;align-items:center}
+.multi>summary::-webkit-details-marker{display:none}
+.multi>summary::after{content:"▾";color:var(--suave);font-size:11px}
+.multi[open]>summary{border-color:var(--acento)}
+.multi>summary:focus-visible{outline:2px solid var(--acento);outline-offset:-1px}
+.multi .panel{position:absolute;left:14px;right:14px;z-index:20;margin-top:6px;
+              background:#fff;border:1px solid var(--acento);border-radius:4px;
+              padding:12px 14px;box-shadow:0 6px 20px rgba(0,0,0,.10);
+              display:flex;flex-wrap:wrap;gap:6px 18px}
+.multi .panel label{display:flex;gap:7px;align-items:center;font-size:14px;
+                    cursor:pointer;white-space:nowrap}
+.multi .panel small{color:var(--suave)}
 .acciones{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
 button.b{font:13px/1 inherit;padding:8px 12px;border:1px solid var(--borde);
          border-radius:3px;background:#fff;color:var(--texto);cursor:pointer}
@@ -539,6 +560,34 @@ a.enl:hover{border-color:var(--acento);color:var(--acento-tinta)}
        font-size:14px;color:var(--suave)}
 .pie{font-size:12px;color:var(--suave);line-height:1.6;margin-top:30px;
      border-top:1px solid var(--borde);padding-top:14px}
+/* El informe impreso. La pagina entera se oculta y se imprime #impresion, que
+   se arma en el momento con TODAS las filas del filtro y no con las 20 de la
+   pagina. Es la misma solucion del tablero grande: la impresion del navegador
+   con hoja de estilos, no una libreria. */
+#impresion{display:none}
+@media print{
+  .hoja{display:none !important}
+  #impresion{display:block}
+  @page{margin:14mm 12mm}
+  body{background:#fff;color:#000;font:10pt/1.35 Helvetica,Arial,sans-serif;
+       print-color-adjust:exact;-webkit-print-color-adjust:exact}
+  #impresion h1{font-size:15pt;margin:0 0 4pt}
+  #impresion .cab-inf{font-size:8.5pt;color:#333;border-bottom:1.5pt solid #56A800;
+                      padding-bottom:6pt;margin-bottom:10pt;line-height:1.45}
+  #impresion .cab-inf b{color:#000}
+  #impresion table{width:100%;border-collapse:collapse}
+  #impresion th{font-size:7.5pt;text-transform:uppercase;letter-spacing:.05em;
+                text-align:left;border-bottom:1pt solid #000;padding:4pt 4pt}
+  #impresion td{font-size:8.5pt;vertical-align:top;padding:5pt 4pt;
+                border-bottom:.5pt solid #ccc}
+  #impresion tr{break-inside:avoid;page-break-inside:avoid}
+  #impresion td.n{text-align:right;white-space:nowrap}
+  #impresion .obj{display:block;margin-top:2pt;color:#222}
+  #impresion .enl-inf{font-size:7.5pt;color:#3E7C00;text-decoration:none;
+                      word-break:break-all}
+  #impresion .pie-inf{margin-top:10pt;font-size:8pt;color:#444;
+                      border-top:.5pt solid #999;padding-top:6pt}
+}
 @media (max-width:640px){
   h1{font-size:21px}
   .titular .n{font-size:32px}
@@ -612,6 +661,13 @@ a.enl:hover{border-color:var(--acento);color:var(--acento-tinta)}
       </select>
     </div>
     <div class="campo">
+      <label id="lab-anios">Años</label>
+      <details class="multi" id="f-anios">
+        <summary id="res-anios" aria-labelledby="lab-anios">Todos los años</summary>
+        <div class="panel" id="panel-anios"></div>
+      </details>
+    </div>
+    <div class="campo">
       <label for="f-tipo">Tipo de contrato</label>
       <select id="f-tipo"><option value="">Todos</option></select>
     </div>
@@ -646,6 +702,7 @@ a.enl:hover{border-color:var(--acento);color:var(--acento-tinta)}
   <div class="acciones">
     <button class="b" id="b-limpiar" type="button">Quitar filtros</button>
     <button class="b" id="b-csv" type="button">Descargar lo que se ve (CSV)</button>
+    <button class="b" id="b-pdf" type="button">Informe en PDF de lo que se ve</button>
   </div>
 </div>
 
@@ -687,6 +744,8 @@ a.enl:hover{border-color:var(--acento);color:var(--acento-tinta)}
 </div>
 
 </div>
+
+<div id="impresion"></div>
 
 <script id="datos" type="application/json">__DATOS__</script>
 <script>
@@ -967,7 +1026,55 @@ document.getElementById("nota-tipos").innerHTML =
 })();
 
 /* ---- Tabla con filtros ---- */
-var F = {txt: "", per: "", tipo: "", est: "", rel: "", orden: "v-"};
+var F = {txt: "", per: "", anios: new Set(), tipo: "", est: "", rel: "", orden: "v-"};
+
+/* Años: multiselección con casillas. Vacío significa TODOS, no ninguno.
+   El resumen cerrado dice cuántos hay elegidos, porque un filtro puesto que no
+   se ve miente igual que una tabla filtrada en silencio. Y marcar NO repinta la
+   lista de casillas: si repintara, saltarían bajo el cursor al elegir la
+   segunda. */
+var ANIOS = (function(){
+  var cuenta = {};
+  OPS.forEach(function(o){
+    var a = (o.f || o.fp || "").slice(0, 4);
+    o.anio = a;
+    if (a) cuenta[a] = (cuenta[a] || 0) + 1;
+  });
+  return Object.keys(cuenta).sort().map(function(a){ return {a: a, n: cuenta[a]}; });
+})();
+
+function resumenAnios(){
+  var s = document.getElementById("res-anios");
+  var n = F.anios.size;
+  s.innerHTML = n === 0
+    ? "Todos los años"
+    : (n === 1 ? "<b>" + Array.from(F.anios)[0] + "</b>"
+               : "<b>" + n + " años</b> elegidos");
+}
+
+(function(){
+  var panel = document.getElementById("panel-anios");
+  panel.innerHTML = ANIOS.map(function(x){
+    return '<label><input type="checkbox" value="' + x.a + '"> ' + x.a +
+      " <small>(" + x.n + ")</small></label>";
+  }).join("");
+  panel.addEventListener("change", function(e){
+    if (e.target.tagName !== "INPUT") return;
+    if (e.target.checked) F.anios.add(e.target.value);
+    else F.anios["delete"](e.target.value);
+    pagina = 1;
+    resumenAnios();
+    pintar();
+  });
+  resumenAnios();
+})();
+
+/* Cerrar el panel al pulsar fuera. Sin esto se queda abierto tapando la tabla
+   que se acaba de filtrar, que es justo lo que se quería mirar. */
+document.addEventListener("click", function(e){
+  var d = document.getElementById("f-anios");
+  if (d.open && !d.contains(e.target)) d.open = false;
+});
 
 /* El desplegable de tipo se llena con los tipos que DE VERDAD existen y con su
    cuenta al lado. Ofrecer un tipo que no tiene ninguna fila daría siempre tabla
@@ -990,6 +1097,7 @@ function filtradas(){
   return OPS.filter(function(o){
     if (F.per === "post" && !o.post) return false;
     if (F.per === "pre" && o.post) return false;
+    if (F.anios.size && !F.anios.has(o.anio)) return false;
     if (F.tipo && o.tc !== F.tipo) return false;
     if (F.est === "si" && !o.firmado) return false;
     if (F.est === "no" && o.firmado) return false;
@@ -1074,6 +1182,15 @@ function pintar(){
       " contrataciones de la ventana"
     : "";
 
+  /* Los dos botones dicen CUÁNTAS filas se llevan. Sin filtros son casi dos mil,
+     y un informe de doscientas páginas no puede salir por sorpresa: que la cifra
+     esté en el botón evita tanto la sorpresa como la tentación de recortar en
+     silencio, que sería peor. */
+  document.getElementById("b-csv").textContent =
+    "Descargar CSV (" + lista.length + " filas)";
+  document.getElementById("b-pdf").textContent =
+    "Informe en PDF (" + lista.length + " filas)";
+
   if (!lista.length) {
     /* Un cero tiene que decir por qué: no es lo mismo "esta Secretaría no firmó
        nada de eso" que "ese filtro no deja pasar nada". */
@@ -1122,11 +1239,15 @@ enganchar("f-rel", "rel");
 enganchar("f-ord", "orden");
 
 document.getElementById("b-limpiar").onclick = function(){
-  F = {txt: "", per: "", tipo: "", est: "", rel: "", orden: "v-"};
+  F = {txt: "", per: "", anios: new Set(), tipo: "", est: "", rel: "", orden: "v-"};
   ["f-txt", "f-per", "f-tipo", "f-est", "f-rel"].forEach(function(i){
     document.getElementById(i).value = "";
   });
   document.getElementById("f-ord").value = "v-";
+  [].forEach.call(document.querySelectorAll("#panel-anios input"), function(c){
+    c.checked = false;
+  });
+  resumenAnios();
   pagina = 1;
   pintar();
 };
@@ -1134,6 +1255,25 @@ document.getElementById("b-limpiar").onclick = function(){
 /* El CSV sale de lo que la tabla está mostrando, no de la lista entera: un
    archivo que no cuadra con la pantalla es peor que no tenerlo. Por eso lleva
    también la procedencia y los filtros puestos. */
+/* Los filtros puestos, en una frase. La MISMA para el CSV y para el PDF: si
+   cada uno describiera lo suyo, dos archivos del mismo tablero podrían decir
+   cosas distintas sobre de dónde salen sus filas. */
+function descripcionFiltros(lista){
+  var partes = [];
+  if (F.txt) partes.push('texto "' + F.txt + '"');
+  if (F.per === "post") partes.push("solo desde el sismo del " + fechaLarga(D.evento));
+  if (F.per === "pre") partes.push("solo antes del sismo del " + fechaLarga(D.evento));
+  if (F.anios.size) partes.push("años " + Array.from(F.anios).sort().join(", "));
+  if (F.tipo) partes.push("tipo de contrato " + F.tipo);
+  if (F.est === "si") partes.push("solo contratos firmados");
+  if (F.est === "no") partes.push("solo procesos sin contrato");
+  if (F.rel === "sismo") partes.push("solo lo que nombra el sismo");
+  if (F.rel === "emer") partes.push("solo vocabulario de emergencia");
+  if (F.rel === "ord") partes.push("sin mención del sismo ni de emergencia");
+  return (partes.length ? partes.join("; ") : "ninguno, se muestra todo") +
+    " · " + lista.length + " de " + OPS.length + " contrataciones";
+}
+
 document.getElementById("b-csv").onclick = function(){
   var lista = filtradas();
   var cab = ["Número", "Tipo de vínculo", "Objeto", "Valor", "Precio base",
@@ -1150,9 +1290,7 @@ document.getElementById("b-csv").onclick = function(){
   var cabecera = [
     q("Secretaría de Infraestructura - Gobernación del Valle del Cauca"),
     q("Consulta del " + selloLargo(D.generado) + ". Ventana desde el " + fechaLarga(D.desde)),
-    q("Filtros: " + (F.txt ? 'texto "' + F.txt + '"; ' : "") +
-      (F.est ? "estado " + F.est + "; " : "") + (F.rel ? "relación " + F.rel + "; " : "") +
-      lista.length + " de " + OPS.length + " contrataciones"),
+    q("Filtros: " + descripcionFiltros(lista)),
     q("Fuente: datos.gov.co, SECOP II")
   ].join("\n");
   var csv = "﻿" + cabecera + "\n\n" + cab.map(q).join(";") + "\n" + filas.join("\n");
@@ -1164,6 +1302,78 @@ document.getElementById("b-csv").onclick = function(){
   document.body.removeChild(a);
   URL.revokeObjectURL(a.href);
 };
+
+/* ---- Informe en PDF ----
+   Es la impresión del navegador con hoja de estilos, no una librería. Misma
+   decisión que en el tablero grande (24-ago-2026): una librería obligaría a
+   recortar el objeto para que la tabla cuadre, y el objeto es el texto por el
+   que se juzga de qué va cada contratación.
+
+   Imprime TODAS las filas del filtro, no las 20 de la página, y encabeza con los
+   filtros aplicados y la recolección de la que salen los datos: un informe que
+   viaja solo y no dice de dónde sale no se puede verificar.
+
+   Los enlaces van como <a href> de verdad: al imprimir a PDF el navegador los
+   conserva y quedan pulsables dentro del archivo. */
+function imprimirInforme(){
+  var lista = filtradas();
+  var nf = 0, sf = 0, na = 0, sa = 0;
+  lista.forEach(function(o){
+    if (o.firmado) { nf++; sf += o.v || 0; } else { na++; sa += o.pb || 0; }
+  });
+
+  var filas = lista.map(function(o){
+    var fechas = [];
+    if (o.f) fechas.push("Firma: " + o.f);
+    else if (o.fp) fechas.push("Publicación: " + o.fp);
+    if (o.fi) fechas.push("Inicio: " + o.fi);
+    if (o.ff) fechas.push("Fin: " + o.ff);
+    var enlaces = [];
+    if (o.u) enlaces.push(['Expediente', o.u]);
+    if (o.up && o.up !== o.u) enlaces.push(["Proceso", o.up]);
+    if (o.ce) enlaces.push(["Contrato", o.ce]);
+    if (o.ep) enlaces.push(["Estudios previos", o.ep]);
+    if (o.ej) enlaces.push(["Informe de ejecución", o.ej]);
+    return "<tr>" +
+      "<td>" + esc(o.r || o.rp || "sin número") +
+        '<span class="obj">' + esc(o.o) + "</span>" +
+        (enlaces.length ? '<span class="obj">' + enlaces.map(function(e){
+          return '<a class="enl-inf" href="' + esc(e[1]) + '">' + e[0] + "</a>";
+        }).join(" · ") + "</span>" : "") + "</td>" +
+      "<td>" + esc(o.p || "—") + (o.pd ? "<br>" + esc(o.pd) : "") + "</td>" +
+      "<td>" + esc(o.tc) + "<br>" + esc(o.mod) + "</td>" +
+      "<td>" + esc(fechas.join("<br>")).replace(/&lt;br&gt;/g, "<br>") + "</td>" +
+      "<td>" + esc(o.firmado ? (o.est || "Contratada") : (o.estp || "Proceso abierto")) + "</td>" +
+      '<td class="n">' + pesos(o.firmado ? o.v : o.pb) +
+        (o.firmado ? "" : "<br><small>precio base</small>") + "</td></tr>";
+  }).join("");
+
+  document.getElementById("impresion").innerHTML =
+    "<h1>Contratación de la Secretaría de Infraestructura del Valle del Cauca</h1>" +
+    '<div class="cab-inf">' +
+    "<b>" + esc(D.entidad) + "</b> · NIT " + esc(D.nit) + "<br>" +
+    "Ventana consultada: del <b>" + fechaLarga(D.desde) + "</b> en adelante · " +
+    "Datos de la recolección del <b>" + selloLargo(D.generado) + "</b><br>" +
+    "Filtros aplicados: <b>" + esc(descripcionFiltros(lista)) + "</b><br>" +
+    "En este informe: <b>" + nf + " contratos firmados por " + pesos(sf) + "</b>" +
+    (na ? " y <b>" + na + " proceso" + (na === 1 ? "" : "s") + " sin contrato por " +
+          pesos(sa) + " de precio base</b>" : "") +
+    ". El precio base y el valor firmado no se suman: son la misma plata en dos " +
+    "momentos.<br>Fuente: datos.gov.co — SECOP II." +
+    "</div>" +
+    (lista.length
+      ? "<table><thead><tr><th>Número y objeto</th><th>Contratista</th>" +
+        "<th>Tipo y modalidad</th><th>Fechas</th><th>Estado</th>" +
+        '<th class="n">Valor</th></tr></thead><tbody>' + filas + "</tbody></table>"
+      : "<p>Con esos filtros no hay ninguna contratación que listar.</p>") +
+    '<div class="pie-inf">Informe generado desde el monitor de contratación del sismo ' +
+    "del 10 de agosto de 2026. Las cifras se vuelven a medir contra el SECOP en cada " +
+    "recolección; este informe es la foto del " + selloLargo(D.generado) + ".</div>";
+
+  window.print();
+}
+
+document.getElementById("b-pdf").onclick = imprimirInforme;
 
 pintar();
 
