@@ -600,8 +600,8 @@ a.enl:hover{border-color:var(--acento);color:var(--acento-tinta)}
 <div class="hoja">
 
 <h1>La contratación de la Secretaría de Infraestructura del Valle</h1>
-<p class="sub">Todo lo que firmó y lo que publicó en el SECOP desde el 1 de enero de
-2024 —del sismo del 10 de agosto de 2026 y ordinaria—, y qué cambió después del sismo.</p>
+<p class="sub">Desde el 1 de enero de 2024: antes del sismo del 10 de agosto y después,
+a la fecha.</p>
 <div class="sello" id="sello"></div>
 
 <div id="titular"></div>
