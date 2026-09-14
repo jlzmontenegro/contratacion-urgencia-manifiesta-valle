@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Qué ha contratado la Nación para el Valle · Sismo del 10 de agosto de 2026</title>
+<style>
+/* Misma piel que la version ligera: blanco, verde de marca y la pila del
+   sistema. Cero peticiones de red, cero dependencias. */
+:root{
+  --fondo:#FFFFFF; --texto:#111111; --suave:#5B5B5B; --borde:#E8E6E6;
+  --acento:#56A800; --acento-tinta:#3E7C00; --acento-t:#F2F8EA;
+  --ambar:#8A6D1F; --ambar-t:#FFF9EC;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fondo);color:var(--texto);
+     font:15px/1.55 Helvetica,Arial,system-ui,sans-serif}
+.hoja{max-width:860px;margin:0 auto;padding:26px 18px 60px}
+h1{font-size:25px;line-height:1.25;margin:0 0 6px;font-weight:700}
+h2{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--suave);
+   margin:32px 0 12px;font-weight:700}
+p{margin:0 0 12px}
+.sub{font-size:15px;color:var(--suave);margin:0 0 4px}
+.sello{font-size:12px;color:var(--suave);margin:0 0 24px}
+/* El titular: el cero es el mensaje, no un hueco. */
+.titular{border:2px solid var(--acento);border-radius:4px;padding:22px 24px;
+         margin:0 0 10px;background:var(--acento-t)}
+.titular .n{font-size:46px;font-weight:700;line-height:1;color:var(--acento-tinta)}
+.titular .q{font-size:17px;margin-top:8px;font-weight:700}
+.titular .x{font-size:14px;color:var(--suave);margin-top:6px}
+table{width:100%;border-collapse:collapse;margin:0 0 10px}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--borde);
+      vertical-align:top;font-size:14px}
+th{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--suave)}
+td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.canal{font-weight:700}
+.canal small{display:block;font-weight:400;font-size:12.5px;color:var(--suave);
+             margin-top:3px;max-width:52ch}
+.cero{color:var(--acento-tinta);font-weight:700}
+.aviso{border:1px solid #E0C070;background:var(--ambar-t);border-radius:4px;
+       padding:16px 18px;margin:0 0 14px;font-size:14px;line-height:1.55;
+       color:#5C4708}
+.limite{border:1px solid var(--borde);border-radius:4px;padding:16px 18px;
+        font-size:14px;line-height:1.6}
+.limite b{color:var(--texto)}
+.pie{font-size:12px;color:var(--suave);line-height:1.6;margin-top:28px;
+     border-top:1px solid var(--borde);padding-top:14px}
+.ficha{border:1px solid var(--borde);border-radius:4px;padding:14px 16px;
+       margin-bottom:10px}
+.ficha .e{font-weight:700}
+.ficha .o{font-size:13.5px;margin-top:6px}
+.ficha .m{font-size:12px;color:var(--suave);margin-top:6px}
+a.enl{display:inline-block;font-size:11.5px;padding:4px 8px;border-radius:3px;
+      border:1px solid var(--borde);text-decoration:none;color:var(--texto);
+      margin-top:8px}
+a.enl:hover{border-color:var(--acento);color:var(--acento-tinta)}
+@media (max-width:560px){
+  h1{font-size:21px}
+  .titular .n{font-size:38px}
+  th:nth-child(3),td:nth-child(3){display:none}
+}
+</style>
+</head>
+<body>
+<div class="hoja">
+
+<h1>Qué ha contratado la Nación para el Valle</h1>
+<p class="sub">Contratación del gobierno nacional relacionada con el sismo del 10 de
+agosto de 2026 en beneficio del Valle del Cauca.</p>
+<div class="sello" id="sello"></div>
+
+<div id="titular"></div>
+
+<h2>Dónde se buscó</h2>
+<table>
+  <thead><tr>
+    <th>Canal</th>
+    <th class="n">Contratos firmados</th>
+    <th class="n">Nombran el sismo</th>
+    <th class="n">Nombran el Valle</th>
+    <th class="n">Para el Valle por el sismo</th>
+  </tr></thead>
+  <tbody id="canales"></tbody>
+</table>
+<p style="font-size:13px;color:#5B5B5B">Las tres primeras columnas están para que la
+última se pueda juzgar: <b>cero de cero sería no haber mirado; cero de varios cientos
+es haber mirado</b>.</p>
+<p id="territoriales" style="font-size:13px;color:#5B5B5B"></p>
+
+<div id="hallazgos"></div>
+
+<h2>Qué no alcanza a ver esta página</h2>
+<div class="limite">
+  <p><b>El FNGRD es un patrimonio autónomo administrado por una fiduciaria.</b> Parte
+  de su ejecución puede no aparecer como contrato propio del Fondo en el SECOP, y la
+  Subcuenta SISMO 2026 que creó el Decreto 1171 es justamente donde estaría la plata
+  nacional de este sismo.</p>
+  <p><b>La plata nacional llega muchas veces como transferencia al municipio</b>, que
+  después contrata en su propio nombre. Ese gasto existe y es nacional en su origen,
+  pero aparece en los registros como contratación municipal, no como contratación de
+  la Nación.</p>
+  <p style="margin-bottom:0">Por eso esta página no dice «la Nación no ha hecho
+  nada». Dice <b>qué se buscó, dónde, y qué se encontró</b>, con su fecha. Lo que
+  falta se pregunta por derecho de petición, no se deduce de un cero.</p>
+</div>
+
+<div class="pie">
+  Fuente: datos.gov.co, SECOP II, contratos firmados desde el 10 de agosto de 2026.
+  Los canales se definen por el <b>nombre de la entidad</b> y no por el campo
+  <i>orden</i> de SECOP, que es autodeclarado y marca «Nacional» a alcaldías
+  municipales. Esta página se actualiza sola con cada recolección.
+</div>
+
+</div>
+
+<script id="datos" type="application/json">{"generado":"2026-09-14 13:10:31","canales":[{"k":"presidencia","n":"Presidencia y DAPRE","explica":"La Presidencia de la República y su departamento administrativo.","total":0,"sismo":0,"valle":0,"ops":[]},{"k":"ministerios","n":"Ministerios","explica":"Los ministerios del despacho, incluidos Educación, Vivienda, Transporte y Salud.","total":115,"sismo":0,"valle":0,"ops":[]},{"k":"fngrd","n":"UNGRD y FNGRD","explica":"La Unidad Nacional para la Gestión del Riesgo y el Fondo Nacional, donde vive la Subcuenta SISMO 2026 que creó el Decreto 1171.","total":98,"sismo":0,"valle":31,"ops":[]},{"k":"otras","n":"Otras entidades nacionales","explica":"Cualquier otra entidad nacional cuyo objeto nombre a la vez el sismo y el Valle. Es la red: no depende de ninguna lista, así que cubre también a la que aparezca mañana. No se cuentan aquí las alcaldías, municipios y demás entidades territoriales, que son el asunto del tablero principal.","total":1,"sismo":1,"valle":1,"ops":[{"e":"Rama Judicial  Dirección Seccional de Administración Judicial de Cali","o":"CONTRATAR EN NOMBRE DE LA NACIÓN - CONSEJO SUPERIOR DE LA JUDICATURA - DIRECCIÓN SECCIONAL DE ADMINISTRACIÓN JUDICIAL DE CALI - VALLE DEL CAUCA; LA PRESTACIÓN DEL SERVICIO PARA EL RETIRO; LIMPIEZA; DESMONTE; EMBALAJE Y ORGANIZACIÓN DE ELEMENTOS Y BIENES UBICADOS EN SEDES JUDICIALES Y DEPENDENCIAS ADMINISTRATIVAS AFECTADAS POR EL SISMO DEL 10 DE AGOSTO DE 2026; EN EL MARCO DE LAS MEDIDAS ADOPTADAS MEDIANTE ACUERDO PCSJA26-12569 DE FECHA 14 DE AGOSTO DEL 2026.","v":157999000.0,"d":"2026-08-28","r":"049 DE 2026 -CD-22-2026","p":"MUDEXITO LTDA","u":{"url":"https://community.secop.gov.co/Public/Tendering/OpportunityDetail/Index?noticeUID=CO1.NTC.10798335&isFromPublicArea=True&isModal=true&asPopupView=true"},"dep":"Valle del Cauca"}],"territoriales":54}]}</script>
+<script>
+var D = JSON.parse(document.getElementById("datos").textContent);
+
+function esc(s){
+  return String(s == null ? "" : s).replace(/[&<>"']/g, function(c){
+    return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
+  });
+}
+function pesos(v){ return v ? "$ " + Math.round(v).toLocaleString("es-CO") : "$ 0"; }
+function selloLargo(s){
+  if (!s) return "";
+  var p = String(s).split(/[- :]/);
+  var meses = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto",
+               "septiembre","octubre","noviembre","diciembre"];
+  var d = new Date(+p[0], +p[1] - 1, +p[2], +(p[3]||0), +(p[4]||0));
+  var h = d.getHours(), ap = h >= 12 ? "p. m." : "a. m.";
+  var h12 = h % 12 || 12;
+  return (+p[2]) + " de " + meses[+p[1] - 1] + " de " + p[0] + ", " +
+         h12 + ":" + String(d.getMinutes()).padStart(2, "0") + " " + ap;
+}
+
+var TOTAL = D.canales.reduce(function(s, c){ return s + c.ops.length; }, 0);
+var MIRADOS = D.canales.reduce(function(s, c){ return s + c.total; }, 0);
+
+document.getElementById("sello").textContent =
+  "Consulta del " + selloLargo(D.generado) + " · ventana desde el 10 de agosto de 2026";
+
+/* El titular cambia de cara segun haya o no hallazgos. Un cero anunciado con el
+   mismo tono que un hallazgo se lee como que el dato falta. */
+document.getElementById("titular").innerHTML = TOTAL === 0
+  ? '<div class="titular"><div class="n">0</div>' +
+    '<div class="q">contratos del gobierno nacional para el Valle por el sismo</div>' +
+    '<div class="x">Se revisaron ' + MIRADOS.toLocaleString("es-CO") +
+    ' contratos firmados por entidades nacionales desde el 10 de agosto. ' +
+    'Ninguno nombra a la vez el sismo y el Valle del Cauca.</div></div>'
+  : '<div class="titular"><div class="n">' + TOTAL + '</div>' +
+    '<div class="q">contrato' + (TOTAL === 1 ? "" : "s") +
+    ' del gobierno nacional para el Valle por el sismo</div>' +
+    '<div class="x">De ' + MIRADOS.toLocaleString("es-CO") +
+    ' contratos firmados por entidades nacionales desde el 10 de agosto.</div></div>';
+
+document.getElementById("canales").innerHTML = D.canales.map(function(c){
+  return "<tr>" +
+    '<td class="canal">' + esc(c.n) + "<small>" + esc(c.explica) + "</small></td>" +
+    '<td class="n">' + c.total.toLocaleString("es-CO") + "</td>" +
+    '<td class="n">' + c.sismo.toLocaleString("es-CO") + "</td>" +
+    '<td class="n">' + c.valle.toLocaleString("es-CO") + "</td>" +
+    '<td class="n' + (c.ops.length ? '' : ' cero') + '">' + c.ops.length + "</td></tr>";
+}).join("");
+
+/* Los territoriales descartados se dicen, no se callan: son 54 contratos que
+   nombran el sismo y el Valle y que alguien podria echar en falta aqui. Decir
+   donde estan es lo que evita que la cifra de esta pagina parezca incompleta. */
+var TERR = D.canales.reduce(function(s, c){ return s + (c.territoriales || 0); }, 0);
+document.getElementById("territoriales").innerHTML = TERR
+  ? "Además, <b>" + TERR + " contratos</b> nombran el sismo y el Valle pero los firmaron " +
+    "alcaldías, municipios y otras entidades territoriales. No son contratación de la " +
+    "Nación y no se cuentan aquí: son el asunto del tablero principal."
+  : "";
+
+var conOps = D.canales.filter(function(c){ return c.ops.length; });
+document.getElementById("hallazgos").innerHTML = conOps.length
+  ? "<h2>Lo que se encontró</h2>" + conOps.map(function(c){
+      return c.ops.map(function(o){
+        return '<div class="ficha"><div class="e">' + esc(o.e) + "</div>" +
+          '<div class="o">' + esc(o.o) + "</div>" +
+          '<div class="m">' + esc(pesos(o.v)) + " · firmado " + esc(o.d) +
+          (o.p ? " · " + esc(o.p) : "") + (o.r ? " · " + esc(o.r) : "") + "</div>" +
+          (o.u ? '<a class="enl" href="' + esc(o.u) +
+                 '" target="_blank" rel="noopener">Ver en SECOP</a>' : "") +
+          "</div>";
+      }).join("");
+    }).join("")
+  : '<div class="aviso" style="margin-top:28px"><b>No hay nada que listar, y eso ' +
+    'es el hallazgo.</b> A un mes del sismo, ninguna entidad del gobierno nacional ' +
+    'registra en el SECOP un contrato que atienda la emergencia en el Valle del ' +
+    'Cauca. El cero está medido, no supuesto: abajo está dónde se buscó.</div>';
+
+/* Alto automatico para cuando va incrustada, igual que la version ligera. */
+(function(){
+  if (window.parent === window) return;
+  var ultimo = 0, pend = null;
+  function medir(){
+    var a = Math.max(document.documentElement.scrollHeight,
+                     document.body ? document.body.scrollHeight : 0);
+    if (Math.abs(a - ultimo) < 8) return;
+    ultimo = a;
+    window.parent.postMessage({ tipo: "tablero-sismo:alto", alto: a }, "*");
+  }
+  function avisar(){ if (pend) cancelAnimationFrame(pend); pend = requestAnimationFrame(medir); }
+  window.addEventListener("load", avisar);
+  window.addEventListener("resize", avisar);
+  if (window.ResizeObserver && document.body) new ResizeObserver(avisar).observe(document.body);
+  setInterval(medir, 1500);
+  avisar();
+})();
+</script>
+</body>
+</html>

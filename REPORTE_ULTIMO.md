@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-09-14 10:56  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-09-14 13:10  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -9,9 +9,9 @@
 | Contratos relacionados (alta + media) | 143 |
 | Valor de esos contratos | $ 49.202.385.110 |
 | Procesos relacionados (alta + media) | 392 |
-| Contratos nuevos en esta ejecucion | 73 |
+| Contratos nuevos en esta ejecucion | 0 |
 | Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 60 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 25641 |
 
 ### Desglose por nivel de gobierno
@@ -106,79 +106,6 @@ _Se revisaron 317 registros de contratacion de estas dos entidades en la ventana
 | HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E | 1 | $ 1.150.889.534 |
 | MUNICIPIO DE BUGALAGRANDE | 9 | $ 919.920.512 |
 | MUNICIPIO DE SEVILLA | 5 | $ 852.182.324 |
-
-## Contratos nuevos (3 relacionados de 73 publicados)
-
-| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
-|---|---|---|---:|---|---|
-| 2026-09-12 | ALCALDIA DE NEIRA | Ejecutar actividades de demolición técnica y controlada; cargue; transporte y disposición final de escombros p | $ 80.000.000 | CDC CONSTRUCCIONES Y PROYECTOS SAS | Alta |
-| 2026-09-13 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA  IMPLEMENTAR ESTRATEGIAS DE INCLUSIÓN Y PARTICIPACIÓN QUE FORTALEZC | $ 11.400.000 | DIEGO ANDRES CASTRILLON RIVERA | Alta |
-| 2026-09-13 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS PROFESIONALES PARA REALIZAR TALLERES DE LENGUA DE SEÑAS COLOMBIANA; ATENCION A PERSONA | $ 11.400.000 | Katherine Castañeda Medina | Alta |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| contratos | CO1.PCCNTR.9932415 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9922814 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9932670 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9921348 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9910014 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9929352 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9929721 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9921245 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9932174 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9922639 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9912589 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9911008 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9921304 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9911319 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9922633 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9932620 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9929988 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9929988 | valor_pendiente_de_pago | 0 | 11326000 |
-| contratos | CO1.PCCNTR.9921310 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9932749 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9921059 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9872149 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9930619 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9911417 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9921307 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9930163 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9930163 | valor_pendiente_de_pago | 0 | 11326000 |
-| contratos | CO1.PCCNTR.9909918 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9930606 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9930606 | valor_pendiente_de_pago | 0 | 5584000 |
-| contratos | CO1.PCCNTR.9932060 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9932746 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9911019 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9911025 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9932615 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9863297 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9863297 | nombre_supervisor | No definido | DIANA MONTEHERMOSO TULANDE |
-| contratos | CO1.PCCNTR.9858368 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9862100 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9853745 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9858778 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9854213 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9854213 | nombre_supervisor | No definido | DIANA MONTEHERMOSO TULANDE |
-| contratos | CO1.PCCNTR.9852885 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9852885 | valor_pendiente_de_pago | 0 | 16400000 |
-| contratos | CO1.PCCNTR.9851864 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9851864 | valor_pendiente_de_pago | 0 | 8800000 |
-| contratos | CO1.PCCNTR.9772925 | valor_pagado | 0 | 3316250 |
-| contratos | CO1.PCCNTR.9772925 | valor_facturado | 3316250 | 8053750 |
-| contratos | CO1.PCCNTR.9772925 | valor_pendiente_de_pago | 18634167 | 15317917 |
-| contratos | CO1.PCCNTR.9854129 | nombre_supervisor | No definido | DIANA MONTEHERMOSO TULANDE |
-| contratos | CO1.PCCNTR.9858452 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9863802 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9863802 | nombre_supervisor | No definido | DIANA MONTEHERMOSO TULANDE |
-| contratos | CO1.PCCNTR.9893289 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9851587 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9851587 | valor_pendiente_de_pago | 0 | 10000000 |
-| contratos | CO1.PCCNTR.9855194 | nombre_supervisor | No definido | DIANA MONTEHERMOSO TULANDE |
-| contratos | CO1.PCCNTR.9817119 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9854034 | estado_contrato | Aprobado | En ejecución |
 
 ## Alertas
 
