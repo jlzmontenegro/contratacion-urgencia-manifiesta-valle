@@ -1408,7 +1408,7 @@ def leer_novedades(cfg, dias=30):
     # Si un identificador aparece varias veces se conserva la primera deteccion
     d = d.sort_values("fecha_deteccion").drop_duplicates("identificador", keep="first")
     # Viaja la hora, no solo el dia: el tablero filtra por "ultimas 24 horas" y
-    # hay dos recolecciones diarias, asi que recortar a la fecha convertia esa
+    # hay tres recolecciones diarias, asi que recortar a la fecha convertia esa
     # ventana en "lo de hoy" y dejaba fuera la corrida de anoche.
     return dict(zip(d["identificador"], d["fecha_deteccion"].str[:19]))
 
@@ -1731,9 +1731,9 @@ def escribir_reporte(hoy, contratos, procesos, nuevos_c, nuevos_p, cambios, aler
       "Los registros de SECOP se corrigen despues de publicados; el archivo `datos/cambios.csv` "
       "conserva la traza de cada modificacion.")
 
-    # Con la hora en el nombre: el colector corre dos veces al dia y el reporte
+    # Con la hora en el nombre: el colector corre tres veces al dia y el reporte
     # lista lo nuevo DE ESA EJECUCION. Con el nombre solo por fecha, la corrida de
-    # las 20:30 pisaba el reporte de la manana y lo aparecido temprano desaparecia
+    # la noche pisaba el reporte de la manana y lo aparecido temprano desaparecia
     # del historial escrito (la bitacora datos/novedades.csv si lo conserva).
     ruta = os.path.join(DIR_REPORTES, f"reporte_{hoy:%Y-%m-%d_%H%M}.md")
     with open(ruta, "w", encoding="utf-8") as fh:
@@ -2257,7 +2257,7 @@ def exportar_tablero(hoy, resultados, alertas, cfg, resumen_corrida=None):
             for nombre in fuentes_activas(cfg)
         },
     }
-    # Por dia y no por corrida: con dos recolecciones diarias esta cifra tiene que
+    # Por dia y no por corrida: con tres recolecciones diarias esta cifra tiene que
     # cuadrar con la lista de modificaciones que la pagina filtra por fecha.
     payload["totales"]["cambios_hoy"] = cambios_del_dia(hoy.strftime("%Y-%m-%d"))
 

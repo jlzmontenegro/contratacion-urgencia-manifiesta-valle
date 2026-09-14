@@ -1,19 +1,23 @@
 name: Resumen semanal
 
-# Los lunes a las 9:30 de Colombia, un informe de la semana que acaba de
+# Los lunes a las 9:37 de Colombia, un informe de la semana que acaba de
 # terminar: cuanto se contrato, en que municipios, lo mas grande, y el mapa
 # dibujado como PNG.
 #
-# A las 9:30 y no a las 8:30 A PROPOSITO: la recoleccion diaria arranca a las
-# 8:30 y tarda unos seis minutos. Si el resumen saliera a la misma hora, leeria
-# el tablero.json de la noche anterior y contaria una semana incompleta sin que
-# nadie lo notara.
+# DESPUES de la primera recoleccion del dia, A PROPOSITO: esa arranca a las 6:07
+# y tarda unos seis minutos. Si el resumen saliera antes, leeria el tablero.json
+# de la noche anterior y contaria una semana incompleta sin que nadie lo notara.
+# Van tres horas de margen por si GitHub retrasa la recoleccion, que lo hace.
+#
+# El minuto :37 y no :30 por lo mismo que en actualizar.yml: los minutos
+# redondos son los mas congestionados y GitHub descarta corridas cuando va
+# cargado. Paso el 14-sep-2026.
 #
 # No recolecta y no toca datos/avisados.csv: es un informe, no un aviso. De cada
 # contrato ya se avisa el dia que aparece.
 on:
   schedule:
-    - cron: '30 14 * * 1'   # lunes 9:30 en Colombia (UTC-5)
+    - cron: '37 14 * * 1'   # lunes 9:37 en Colombia (UTC-5)
   workflow_dispatch:
     inputs:
       solo_a:

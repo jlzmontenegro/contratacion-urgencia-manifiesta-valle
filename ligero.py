@@ -695,8 +695,8 @@ figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
       los municipios del Valle, o el resto del país. Se pueden marcar varios a la vez.</dd>
 
       <dt>Recolección</dt>
-      <dd>Fecha y hora en que se consultó la fuente por última vez. Se actualiza dos veces
-      al día.</dd>
+      <dd>Fecha y hora en que se consultó la fuente por última vez. Se actualiza <b>tres veces
+      al día</b>: a las 6 de la mañana, a la 1 de la tarde y a las 8 de la noche.</dd>
     </dl>
 
   </div>

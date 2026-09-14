@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Resumen semanal por correo, con el mapa dibujado.
 
-Sale los lunes a las 8:30. Es un INFORME, no un aviso: cuenta lo que paso en la
+Sale los lunes a las 9:37. Es un INFORME, no un aviso: cuenta lo que paso en la
 semana que acaba de terminar, aunque de cada contrato ya se haya avisado el dia
 que aparecio. Por eso no toca datos/avisados.csv.
 
@@ -535,7 +535,7 @@ def cuerpo(ops_semana, nuevos_ids, ini, fin, generado, hay_mapa):
                 '<div style="border:1px solid #E0C070;background:#FFF9EC;padding:16px 18px;'
                 'border-radius:3px;font-size:14px;color:#5C4708;line-height:1.55">'
                 '<b>Esta semana no apareció contratación nueva relacionada con el sismo.</b>'
-                '<br>No es un fallo del monitor: las dos recolecciones diarias corrieron y '
+                '<br>No es un fallo del monitor: las tres recolecciones diarias corrieron y '
                 'no encontraron nada con fecha en este rango. El acumulado sigue completo '
                 f'en el tablero.</div>{pie(generado)}')
 
@@ -576,7 +576,7 @@ def cuerpo(ops_semana, nuevos_ids, ini, fin, generado, hay_mapa):
         # Un cero aqui es un hallazgo, no un hueco: hay que decir por que.
         bloque1 += _aviso(
             "<b>Ninguna entidad del Valle del Cauca contrató esta semana.</b><br>"
-            "Las dos recolecciones diarias corrieron y no encontraron nada con fecha "
+            "Las tres recolecciones diarias corrieron y no encontraron nada con fecha "
             "en este rango para el departamento. Lo de abajo es de otras regiones.")
 
     # ---------------- Fuera del Valle ----------------

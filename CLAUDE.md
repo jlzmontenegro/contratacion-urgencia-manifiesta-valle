@@ -30,7 +30,7 @@ datos/avisados.csv     de qué ya salió correo. Lo escribe correo.py
 datos/*.csv            estado y trazas; los mantiene GitHub Actions
 ```
 
-**GitHub Actions corre el colector cada 12 horas, 8:30 y 20:30 (Colombia)**, audita, **avisa
+**GitHub Actions corre el colector TRES veces al dia: 6:07, 13:07 y 20:07 (Colombia)**, audita, **avisa
 por correo** y publica —en ese orden, que importa y está explicado abajo—. El runner lleva
 `TZ: America/Bogota`: sin eso la corrida de la noche se archivaba
 con la fecha del dia siguiente y el sello de la pagina salia cinco horas adelantado.
@@ -269,7 +269,7 @@ y cuándo, el motivo conserva el criterio automático debajo, y lo revisado **vi
 JSON aunque se haya descartado a ordinaria de un municipio: si no, la decisión desaparece de la
 vista y no hay forma de comprobarla ni de deshacerla. Para deshacer se borra la línea.
 
-**Lo del día se cuenta por día, no por corrida.** Hay dos recolecciones diarias y la portada
+**Lo del día se cuenta por día, no por corrida.** Hay tres recolecciones diarias y la portada
 titula *"Novedades del DD/MM"* listando por nombre todo lo detectado en la fecha. Los totales
 que la acompañan salen de `nuevos_del_dia()` y `cambios_del_dia()`, que leen las bitácoras
 acumulativas; si vinieran de una sola corrida, la frase diría "2 registros nuevos" encima de
@@ -277,8 +277,8 @@ una lista de cinco.
 
 **El mapa `novedades` del JSON lleva fecha Y hora** (`2026-08-12 20:06:54`) desde el
 22-ago-2026, porque las opciones *Cuándo apareció → últimas 24 / 48 / 72 horas* son ventanas
-rodantes y hay dos recolecciones diarias: recortando a la fecha, "24 horas" se degradaba a "lo
-de hoy" y dejaba fuera la corrida de las 20:30. `tablero.js` admite las dos formas —sin hora se toma
+rodantes y hay tres recolecciones diarias: recortando a la fecha, "24 horas" se degradaba a "lo
+de hoy" y dejaba fuera las corridas de la tarde y la noche. `tablero.js` admite las dos formas —sin hora se toma
 medianoche—, así que un JSON viejo no rompe nada; solo que hasta la siguiente recolección esa
 opción se comporta como "hoy" (y las de 48 y 72, como "hoy y ayer" y "los tres días").
 **El sufijo `h` del valor es lo que distingue una ventana de horas de una de días** en
@@ -362,7 +362,7 @@ auditoría fallida pasa por buena.
   palabras: *"solo lo que ya está confirmado que está directamente relacionado con el sismo"*,
   más lo que él haya clasificado a mano como relacionado. Eso último **no exige nada aparte**:
   el colector ya sube a `Alta` lo marcado en `revisiones.csv`.
-- **La versión ligera vive en el repo y se regenera sola cada 12 horas** (12-sep-2026), en
+- **La versión ligera vive en el repo y se regenera sola en cada recolección** (12-sep-2026), en
   `ligero.html`, para incrustarla por iframe o enlace desde otra instancia. Se descartó
   generarla a mano y subirla: dejaría de actualizarse el día que a nadie se le ocurra.
 - **La versión ligera se incrusta en `estebanoliveros.com`** (12-sep-2026), y por eso lleva la
@@ -591,7 +591,7 @@ con que se sirvan cuatro archivos desde el mismo sitio. Por eso todo —datos, e
 y contornos del mapa— viaja **dentro del HTML**: 420 KB en crudo, **87 KB servidos con gzip**,
 cero peticiones de red después de la primera y ninguna dependencia externa. Lo escribe
 `ligero.py`, al que llama `colector.py` al final de cada corrida, así que **se actualiza solo
-cada doce horas** con el mismo sello de hora que el tablero grande. No se edita a mano: se
+tres veces al día** con el mismo sello de hora que el tablero grande. No se edita a mano: se
 edita `ligero.py`.
 
 **Una COPIA del archivo también se actualiza sola** (13-sep-2026). Los datos siguen viajando
@@ -778,6 +778,19 @@ resultado posible: lo dudoso acabaría leyéndose como confirmado.
 proceso ya avisado se firma después, el contrato es un identificador nuevo y **la firma vuelve
 a avisarse**, que es exactamente la noticia.
 
+**Los avisos salen solo cuando hay novedades, y ahora hay TRES oportunidades al día**
+(14-sep-2026). El correo no tiene horario propio: va enganchado a cada recolección, así que
+con el cambio a 6:07, 13:07 y 20:07 se revisa tres veces en vez de dos. **No hizo falta tocar
+`correo.py`**: ya funcionaba así.
+
+**Un día sin correos NO significa que el correo esté roto.** El 14-sep-2026 el usuario avisó
+de que no le llegaban; el registro decía `relacionado: nada nuevo` y la comprobación contra
+`avisados.csv` dio **cero pendientes** de 599 `Alta` y 181 `Media`. El correo estaba bien: lo
+que faltaba era la recolección. **GitHub retrasó la corrida de las 20:30 cinco horas y se saltó
+la de las 8:30 entera**, y una corrida saltada es invisible —no falla nada, no hay rojo en
+Actions, simplemente no existe—. De ahí el minuto `:07` en los cron. **Detectar una corrida que
+no ocurrió sigue sin estar construido**, y es lo que evitaría que esto se repita en silencio.
+
 **El paso va DESPUÉS de la auditoría y ANTES de publicar.** Después de la auditoría porque si
 el candado salta no hay que avisar de datos que no se van a publicar. Antes de publicar porque
 así `avisados.csv` viaja **en el mismo commit que los datos**; al revés, una segunda corrida
@@ -926,8 +939,8 @@ pasó de 87 KB a **101 KB servidos**.
 
 ## El resumen semanal (`resumen.py`)
 
-**Sale los lunes a las 9:30 de Colombia, y a las 9:30 a propósito.** La recolección diaria
-arranca a las 8:30 y tarda unos seis minutos: a la misma hora, el resumen leería el
+**Sale los lunes a las 9:37 de Colombia, después de la primera recolección.** Esa arranca
+a las 6:07 y tarda unos seis minutos: a la misma hora, el resumen leería el
 `tablero.json` de la noche anterior y contaría una semana incompleta sin que nadie lo notara.
 La ventana es de **ayer menos seis a ayer**, contada hacia atrás desde ayer y no desde hoy,
 porque lo de hoy todavía no ha pasado. No toca `datos/avisados.csv`: es un informe, no un
@@ -1064,7 +1077,7 @@ modificaciones, con los relacionados listados por nombre y valor. El acumulado v
 
 ## Estado al 22 de agosto de 2026
 
-Siete días corriendo solo, dos recolecciones diarias. **Las cifras cambian en cada corrida:
+Siete días corriendo solo, dos recolecciones diarias (entonces; hoy son tres). **Las cifras cambian en cada corrida:
 lo de abajo es una foto, no una constante.** Para el dato vivo, mirar la página.
 
 **53 operaciones relacionadas en Cali y el Valle por $9.642 millones.** El reparto es el

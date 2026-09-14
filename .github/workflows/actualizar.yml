@@ -4,14 +4,24 @@ name: Actualizar monitoreo
 # programada de Windows, que exigia tener el computador encendido a esa hora.
 on:
   schedule:
-    # Cada 12 horas: 08:30 y 20:30 hora de Colombia. GitHub programa en UTC y
-    # Colombia es UTC-5, sin horario de verano. Dos corridas porque SECOP publica
-    # a lo largo del dia y una urgencia manifiesta firmada por la manana se veia
-    # hasta el dia siguiente.
-    # GitHub puede retrasar las ejecuciones programadas cuando hay mucha carga;
-    # a esta cadencia eso es irrelevante.
-    - cron: '30 13 * * *'   # 08:30 Colombia
-    - cron: '30 1  * * *'   # 20:30 Colombia (del dia anterior en UTC)
+    # TRES corridas al dia: 6 a.m., 1 p.m. y 8 p.m. hora de Colombia (peticion
+    # del usuario, 14-sep-2026). GitHub programa en UTC y Colombia es UTC-5, sin
+    # horario de verano. Eran dos, a las 8:30 y 20:30; con tres, el hueco mayor
+    # baja de doce a diez horas y la contratacion firmada por la manana se ve el
+    # mismo dia al mediodia.
+    #
+    # EL MINUTO :07 NO ES CAPRICHO. GitHub retrasa y a veces DESCARTA las
+    # ejecuciones programadas cuando sus servidores van cargados, y los minutos
+    # redondos -en punto y a y media- son los mas congestionados porque es cuando
+    # programa todo el mundo. Paso el 14-sep-2026: la corrida de las 20:30 salio
+    # cinco horas tarde y la de las 8:30 no salio nunca. Un minuto raro no lo
+    # elimina, pero reduce mucho la cola.
+    #
+    # OJO: una corrida saltada es INVISIBLE. No falla nada, no hay rojo en
+    # Actions, simplemente no existe. Detectarlo sigue sin estar construido.
+    - cron: '7 11 * * *'   # 06:07 Colombia
+    - cron: '7 18 * * *'   # 13:07 Colombia
+    - cron: '7 1  * * *'   # 20:07 Colombia (del dia anterior en UTC)
   # Revisar una operacion en github.com debe verse en la pagina enseguida, no en la
   # corrida de dentro de doce horas: quien edita el archivo espera que su decision
   # llegue a los demas. Solo dispara con ESE archivo, asi que los commits de datos

@@ -31,7 +31,7 @@ alcanza ninguna palabra clave. Por eso hay un barrido dedicado a los números de
 ## Uso diario
 
 **No hay que hacer nada.** Desde el 15 de agosto de 2026 el monitoreo se actualiza solo:
-GitHub Actions corre el colector **cada 12 horas, a las 8:30 y a las 20:30 hora de
+GitHub Actions corre el colector **tres veces al día, a las 6:07, 13:07 y 20:07 hora de
 Colombia**, verifica la cobertura y publica. No depende de que ningún computador esté
 encendido.
 

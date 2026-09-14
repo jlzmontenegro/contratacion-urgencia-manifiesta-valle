@@ -7,7 +7,7 @@
 <!--
   La pagina solo pinta. Los datos llegan ya consultados y clasificados en
   datos/tablero.json, que produce colector.py y GitHub Actions regenera cada
-  12 horas (8:30 y 20:30 de Colombia). Por eso hay que abrirla servida por HTTP, no con doble
+  dia (6, 13 y 20 de Colombia). Por eso hay que abrirla servida por HTTP, no con doble
   clic: el navegador bloquea la lectura de archivos locales desde file://.
 -->
 <!-- El ?v= lo reescribe publicar.bat en cada publicacion. GitHub Pages sirve estos
@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600&family=Public+Sans:wght@300..700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="tablero.css?v=202609131814rep1">
+<link rel="stylesheet" href="tablero.css?v=202609141223rep1">
 </head>
 <body>
 <div class="envoltura">
@@ -421,6 +421,6 @@
 <!-- Solo se ve al imprimir. Se arma en el momento con lo que hay en pantalla:
      la tabla va paginada de a 20 y en papel hacen falta todas las filas. -->
 <div id="impresion" aria-hidden="true"></div>
-<script src="tablero.js?v=202609131814rep1"></script>
+<script src="tablero.js?v=202609141223rep1"></script>
 </body>
 </html>

@@ -345,20 +345,22 @@ function pintarFuente(){
     return;
   }
 
-  /* El colector corre en la nube cada 12 horas —8:30 y 20:30— y publica. El
-     umbral va atado a esa cadencia: si pasan 26 horas es que se saltaron dos
-     recolecciones seguidas, y hay que decirlo, porque una cifra vieja presentada
-     sin fecha se lee como si fuera de hoy. */
+  /* El colector corre en la nube tres veces al día —6, 13 y 20 de Colombia— y
+     publica. El umbral va atado a esa cadencia: el hueco mayor es de 10 horas,
+     así que pasadas 22 se saltaron al menos dos recolecciones seguidas, y hay
+     que decirlo: una cifra vieja presentada sin fecha se lee como si fuera de
+     hoy. Antes eran 26 horas, atadas a las dos corridas de 8:30 y 20:30. */
   const horas = PROCEDENCIA.horas;
-  const vieja = horas !== null && horas > 26;
+  const vieja = horas !== null && horas > 22;
   luz.className = "luz " + (vieja ? "vieja" : "viva");
   txt.innerHTML = `<b>Datos de la recolección del ${esc(LOCAL.generado)}</b>`
     + (horas === null ? ""
         : horas < 1 ? " · recién recogidos"
         : horas < 24 ? ` · hace ${frasePlural(horas, "hora", "horas")}`
         : ` · hace ${frasePlural(Math.round(horas / 24), "día", "días")}`)
-    + `. El colector consulta SECOP I y SECOP II dos veces al día, a las 8:30 y a las `
-    + `20:30, y verifica la cobertura antes de publicar.`
+    + `. El colector consulta SECOP I y SECOP II tres veces al día, a las 6 de la `
+    + `mañana, a la 1 de la tarde y a las 8 de la noche, y verifica la cobertura `
+    + `antes de publicar.`
     + (vieja ? ` <b>Se saltó al menos una recolección:</b> revise la pestaña Actions `
              + `del repositorio, es probable que una corrida haya fallado.` : "");
 }
