@@ -27,6 +27,7 @@ resumen.py             informe semanal de los lunes, con el mapa dibujado en PNG
 documentos.py          enlaza cada fila con los estudios previos de su expediente
 vigilar.py             avisa si el monitor lleva mas de 14 horas sin recolectar
 nacional.py            genera nacional.html: que ha contratado la Nacion para el Valle
+infraestructura.py     genera infraestructura.html: la Secretaria de Infraestructura, desde 2024
 datos/tablero.json     lo que la página carga
 datos/avisados.csv     de qué ya salió correo. Lo escribe correo.py
 datos/*.csv            estado y trazas; los mantiene GitHub Actions
@@ -153,7 +154,7 @@ padrón. **`GRUPOS_ORDINARIA` está en `colector.py` y en `tablero.js`: si se de
 los registros llegan pero `listable()` los descarta y el filtro da cero sin explicación.**
 Así estuvo la UNGRD hasta el 19-ago-2026.
 
-**El patrón de palabra clave se ancla al INICIO de palabra** (`SISMO`), no a cualquier
+**El patrón de palabra clave se ancla al INICIO de palabra** (`\bSISMO`), no a cualquier
 fragmento —si no, `EDAN` coincidiría dentro de "puEDAN"—. La consecuencia es que **`SISMO` no
 coincide con `SISMICO`**: "evento sísmico", que es como lo escribe media Colombia, no contaba
 como nombrar el sismo. Se añadió `SISMIC` el 20-ago-2026 y rescató 11 registros, ninguno falso.
@@ -828,6 +829,79 @@ nacional llega muchas veces como **transferencia al municipio**, que luego contr
 nombre y aparece como contratación municipal. Por eso la página no dice «la Nación no ha hecho
 nada»: dice qué se buscó, dónde y qué se encontró, con su fecha. **Lo que falta se pregunta por
 derecho de petición, no se deduce de un cero** — y de ahí salió el oficio a la UNGRD.
+
+## La Secretaría de Infraestructura, entera (`infraestructura.html`)
+
+**Página aparte, y la ventana empieza el 1 de enero de 2024** (14-sep-2026, a petición
+del usuario: *"revisa toda la contratación que haya de la secretaria de infraestructura
+de la Gobernacion del Valle, sismo y no sismo"* y enseguida *"que consulte desde 1 de
+enero de 2024"*). Es la única página del proyecto que mira **antes del sismo**, y a
+propósito: el monitor arranca el 10 de agosto porque su pregunta es qué se contrató por
+el evento; aquí la pregunta es **si lo de después del sismo se sale de lo normal**, y eso
+no se contesta sin lo normal.
+
+**El tablero principal no puede responder esto.** Solo muestra lo relacionado con el
+evento, y de esta dependencia no hay **nada** relacionado: sus 148 contratos posteriores
+al sismo no nombran el sismo. En esta página la contratación ordinaria no es ruido, es la
+respuesta.
+
+**La dependencia se identifica por NIT + NOMBRE, porque SECOP no trae campo de
+dependencia.** La Gobernación publica cada secretaría como un `nombre_entidad` distinto
+bajo el mismo NIT: medido el 14-sep-2026 son **27 nombres** para sus tres NIT, y uno solo
+lleva INFRAESTRUCTURA. **Filtrar solo por `%INFRAESTRUCTURA%` sin el NIT** traería también
+la Secretaría de Infraestructura de Cali (37 contratos) y la de Hábitat e Infraestructura
+de Tuluá (8), que son otras entidades. El campo `orden` no sirve tampoco aquí: marca
+«Nacional» a la propia Gobernación.
+
+**Un expediente puede llevar DOS contratos, y por eso la fila se arma sobre los
+contratos.** Los 148 contratos posteriores al sismo cuelgan de 147 expedientes:
+`CO1.BDOS.10681604` lleva dos contratos con dos personas distintas por $24.000.000 cada
+uno. Indexando por expediente, uno de los dos desaparecía sin que nada fallara y la página
+decía 147 donde hay 148. Se cazó comparando el conteo con el de la fuente, no leyendo el
+código.
+
+**EL TIPO DE CONTRATO NO MIDE CUÁNTA OBRA HAY, y esta es la trampa que más caro sale
+aquí.** En el periodo hay **5 contratos de tipo Obra** y **75 de tipo `Otro` por $217.825
+millones**, que son convenios de «aunar esfuerzos»: $100.177 millones con la Federación
+Nacional de Cafeteros para mantenimiento vial, $33.072 millones para las huellas
+vallecaucanas, las interventorías con la Fundación Universidad del Valle. Una página que
+solo mostrara la fila de *Obra* haría creer que esta Secretaría casi no construye. Por eso
+lleva la sección **«Dónde está el dinero: los 10 contratos más grandes»**, que sale del
+valor y no del tipo, y por eso los límites lo dicen con esas palabras.
+
+**Las dos ventanas de la comparación salen de UNA sola descarga**, partida por la fecha
+del sismo. Bajarlas por separado dejaría la puerta abierta a que una consulta cambie y la
+otra no, y las dos columnas dirían cosas que no se pueden comparar. La página avisa además
+de que **no son comparables en duración** —dos años y medio contra un mes— y que lo que se
+compara es la **clase** de contratación, no el volumen.
+
+**Los documentos del expediente se consultan SOLO de lo posterior al sismo.** Los 1.900
+expedientes del periodo entero serían 48 consultas al dataset `dmgg-8hin` en cada corrida,
+tres veces al día, para un atajo que en la contratación de 2024 no le sirve a nadie. Las
+filas viejas conservan sus enlaces al expediente y al proceso, que vienen en el propio
+registro. **La página dice que la cobertura es solo de esa parte**, o el lector la leería
+como del total.
+
+**Que el texto del contrato no esté publicado es un HALLAZGO, no un hueco de la página.**
+En los 148 expedientes posteriores al sismo: estudios previos **148 de 148**, informe o
+acta de ejecución 11, y **texto del contrato 0**. Lo que sí está es el
+`CO1_PCCNTR…_Firmado.pdf` que genera el SECOP, que es una constancia y no trae articulado.
+Se comprobó abriendo los expedientes. Si eso se callara, los botones ausentes parecerían
+un fallo del tablero.
+
+**Al 14-sep-2026:** 1.923 contratos por **$594.426 millones** desde 2024 y 26 procesos
+abiertos. Desde el sismo, **148 contratos por $3.371 millones, todos de contratación
+directa y todos de prestación de servicios**: cero de obra, cero convenios, cero que
+nombren el sismo, cero que usen vocabulario de emergencia. Firmados entre el 16 y el 21 de
+agosto, a cuatro meses, terminando el 30 de noviembre, con recursos propios y **ningún
+contratista con más de un contrato** —eso también se comprobó, y el cero se dice—. La obra
+del periodo son 5 contratos por $311.248 millones, **ninguno posterior al sismo**, y dos
+de ellos de septiembre de 2025 se celebraron *al amparo del artículo 66 de la Ley 1523 de
+2012 — calamidad pública*: la vía ya se ha usado antes.
+
+**Se actualiza sola con cada recolección**, como `ligero.html` y `nacional.html`: la llama
+el colector al final, best effort. El HTML no se edita; se edita `infraestructura.py`.
+Pesa 1,9 MB en crudo y **139 KB servidos con gzip**.
 
 ## El vigilante (`vigilar.py`)
 
