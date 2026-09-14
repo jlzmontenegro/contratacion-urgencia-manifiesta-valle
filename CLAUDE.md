@@ -26,6 +26,7 @@ correo.py              avisa por correo de lo nuevo. Dos correos, dos públicos.
 resumen.py             informe semanal de los lunes, con el mapa dibujado en PNG
 documentos.py          enlaza cada fila con los estudios previos de su expediente
 vigilar.py             avisa si el monitor lleva mas de 14 horas sin recolectar
+nacional.py            genera nacional.html: que ha contratado la Nacion para el Valle
 datos/tablero.json     lo que la página carga
 datos/avisados.csv     de qué ya salió correo. Lo escribe correo.py
 datos/*.csv            estado y trazas; los mantiene GitHub Actions
@@ -783,6 +784,50 @@ a avisarse**, que es exactamente la noticia.
 (14-sep-2026). El correo no tiene horario propio: va enganchado a cada recolección, así que
 con el cambio a 6:07, 13:07 y 20:07 se revisa tres veces en vez de dos. **No hizo falta tocar
 `correo.py`**: ya funcionaba así.
+
+## La vigilancia del nivel nacional (`nacional.html`)
+
+**Página aparte, y no una sección de la ligera** (14-sep-2026, a petición del usuario). Son dos
+preguntas distintas: la ligera responde *qué se contrató para el Valle* y esta responde *qué
+puso la Nación*. Mezclarlas pondría un 1 al lado de 375 en la misma pantalla, y se leería como
+que falta un dato en vez de como un hallazgo.
+
+**Cuatro canales, medidos contra la API en cada corrida**: Presidencia y DAPRE; ministerios;
+UNGRD y FNGRD; y una red abierta para cualquier otra entidad nacional cuyo objeto nombre a la
+vez el sismo y el Valle. De cada canal se muestran **cuatro cifras**: contratos firmados,
+cuántos nombran el sismo, cuántos nombran el Valle y cuántos son ambas cosas. Las tres
+primeras están para que la última se pueda juzgar: **cero de cero sería no haber mirado; cero
+de varios cientos es haber mirado.**
+
+**El campo `orden` de SECOP no sirve tampoco aquí**: marca «Nacional» a la Alcaldía de Ciudad
+Bolívar y a la de Roldanillo. Los canales se definen por el **nombre de la entidad**.
+
+**Hay que excluir lo TERRITORIAL del canal abierto, y costó una medición.** La primera versión
+traía **55 contratos** que nombran el sismo y el Valle; los 55 tenían `departamento = Valle del
+Cauca` y eran, uno por uno, alcaldías y municipios —los mismos que ya muestra el tablero
+principal—. Una página que titula *qué puso la Nación* y lista el contrato de Zarzal no se
+equivoca en un detalle: se equivoca en todo. Se excluye **por el tipo de entidad y no por dónde
+está**, porque filtrar por departamento dejaría fuera a la Rama Judicial Seccional Valle, que
+es nacional con sede en el territorio y es justo lo que hay que mostrar.
+
+**Las cuentas del canal abierto son solo las nacionales.** Dejar las 55 inflaba el titular
+—«de 268 contratos revisados»— contando como nacionales 54 que no lo son. Quedan en 214
+revisados, y **los 54 territoriales se dicen aparte**: son información, no relleno, y decir
+dónde están evita que la cifra parezca incompleta.
+
+**Al 14-sep-2026 el resultado es 1**: la Rama Judicial, Dirección Seccional de Cali,
+$157.999.000 con MUDEXITO LTDA, para retirar y embalar bienes de sedes judiciales afectadas por
+el sismo. Presidencia y DAPRE: **cero contratos firmados** desde el 10 de agosto. Ministerios:
+115, ninguno menciona el sismo. UNGRD y FNGRD: 98, ninguno menciona el sismo; los 31 que
+nombran el Valle son prestación de servicios profesionales por $539.300.000.
+
+**La página dice lo que NO alcanza a ver**, y sin eso no se puede publicar: el FNGRD es un
+patrimonio autónomo administrado por fiduciaria y parte de su ejecución no aparece como
+contrato propio del Fondo —la Subcuenta SISMO 2026 del Decreto 1171 vive ahí—; y la plata
+nacional llega muchas veces como **transferencia al municipio**, que luego contrata en su
+nombre y aparece como contratación municipal. Por eso la página no dice «la Nación no ha hecho
+nada»: dice qué se buscó, dónde y qué se encontró, con su fecha. **Lo que falta se pregunta por
+derecho de petición, no se deduce de un cero** — y de ahí salió el oficio a la UNGRD.
 
 ## El vigilante (`vigilar.py`)
 

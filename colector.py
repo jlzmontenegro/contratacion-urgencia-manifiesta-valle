@@ -2280,6 +2280,21 @@ def exportar_tablero(hoy, resultados, alertas, cfg, resumen_corrida=None):
     except Exception as e:
         print(f"  ! no se pudo escribir ligero.html: {e}")
 
+    # La vigilancia del nivel nacional va en su propia pagina: es otra pregunta
+    # -"que puso la Nacion"- y hoy la respuesta es un cero que solo vale si se
+    # ve donde se busco. Best effort, como todo lo que cuelga de aqui.
+    try:
+        import nacional
+        canales = nacional.consultar(
+            cfg, lambda ds, where, select: consultar(
+                ds, where, cfg.get("app_token", ""), limite_pagina=1000),
+            registrar=print)
+        ruta_nac = nacional.escribir(canales, payload.get("generado", ""), BASE)
+        hallados = sum(len(c["ops"]) for c in canales)
+        print(f"  nacional: {ruta_nac} ({hallados} para el Valle por el sismo)")
+    except Exception as e:
+        print(f"  ! no se pudo escribir nacional.html: {e}")
+
     return ruta
 
 
