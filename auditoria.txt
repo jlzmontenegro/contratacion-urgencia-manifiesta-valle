@@ -1,4 +1,4 @@
-Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-09-16T00:00:00
+Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-09-17T00:00:00
 Entidades auditadas: 53  (2 centrales + 2 UNGRD/FNGRD + 12 descentralizadas de Cali + 18 de la Gobernacion + 19 otras del Valle)
 Comprobaciones: 53 entidades x 3 fuentes = 159, cada una por tres caminos independientes
 
@@ -57,8 +57,8 @@ contratos  Otras     IE Paulo VI - Palmira815004730            0           0    
 contratos  Otras     IE Ginebra La Salle891380108            0           0      0   OK
 contratos  Otras     IE Zaragoza - Cartago800034326            0           0      0   OK
 contratos  Otras     IE Camilo Torres - Dagua805015675            0           0      0   OK
-procesos   Alcaldia de Cali       890399011         2087        2126   2126   OK
-procesos   Gobernacion del Valle  890399029          901        1840   1840   OK
+procesos   Alcaldia de Cali       890399011         2113        2152   2152   OK
+procesos   Gobernacion del Valle  890399029          901        1841   1841   OK
 procesos   UNGRD / FNGRD          900478966            1           1      1   OK
 procesos   UNGRD / FNGRD          900978341          314         314    314   OK
 procesos   Desc.Cali EMCALI - Empresas Munici890399003          268         268    268   OK
@@ -104,7 +104,7 @@ procesos   Otras     Personeria Municipal de 891900493           46          48 
 procesos   Otras     Personeria Municipal de 901159063            0           0      0   OK
 procesos   Otras     Personeria Municipal de 900085817            0           0      0   OK
 procesos   Otras     Personeria Municipal de 800100524           22          22     22   OK
-procesos   Otras     Concejo Municipal de Jam890399046          498         498    498   OK
+procesos   Otras     Concejo Municipal de Jam890399046          500         500    500   OK
 procesos   Otras     IE Alfonso Lopez Pumarej805000057            2           2      2   OK
 procesos   Otras     IE Paulo VI - Palmira815004730            2           2      2   OK
 procesos   Otras     IE Ginebra La Salle891380108            0           0      0   OK

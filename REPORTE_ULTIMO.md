@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-09-14 16:51  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-09-15 01:06  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -8,26 +8,26 @@
 |---|---|
 | Contratos relacionados (alta + media) | 143 |
 | Valor de esos contratos | $ 49.202.385.110 |
-| Procesos relacionados (alta + media) | 392 |
+| Procesos relacionados (alta + media) | 395 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 0 |
-| Registros revisados en total | 25641 |
+| Procesos nuevos en esta ejecucion | 37 |
+| Modificaciones detectadas | 8 |
+| Registros revisados en total | 25678 |
 
 ### Desglose por nivel de gobierno
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
 | Alcaldía de Cali | 7 | $ 9.138.056.400 | 137 |
-| Gobernación del Valle | 5 | $ 3.566.177.995 | 14 |
-| Otras entidades del Valle | 125 | $ 33.226.854.631 | 201 |
+| Gobernación del Valle | 5 | $ 3.566.177.995 | 15 |
+| Otras entidades del Valle | 125 | $ 33.226.854.631 | 203 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 2385 | $ 141.536.602.556 | 1989 |
+| Alcaldía de Cali | 2385 | $ 141.536.602.556 | 2015 |
 | Gobernación del Valle | 1947 | $ 65.467.613.810 | 1826 |
 | Descentralizadas de Cali | 96 | $ 12.352.867.246 | 731 |
 | Descentralizadas de la Gobernación | 1382 | $ 36.998.594.685 | 1804 |
@@ -37,7 +37,7 @@ No tiene relación con el sismo y no suma en los indicadores de arriba. Se inclu
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 137 contratos ($ 25.823.654.045) y 164 procesos de otras regiones del país.
+- **Relacionados con el sismo:** 137 contratos ($ 25.823.654.045) y 165 procesos de otras regiones del país.
 - **Urgencia manifiesta por otras causas:** 118 contratos ($ 104.860.897.230) y 194 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
@@ -106,6 +106,28 @@ _Se revisaron 317 registros de contratacion de estas dos entidades en la ventana
 | HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E | 1 | $ 1.150.889.534 |
 | MUNICIPIO DE BUGALAGRANDE | 9 | $ 919.920.512 |
 | MUNICIPIO DE SEVILLA | 5 | $ 852.182.324 |
+
+## Procesos nuevos (4 relacionados de 37 publicados)
+
+| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
+|---|---|---|---:|---|---|
+| 2026-09-13 | MUNICIPIO DE PEREIRA- OFICIAL | ALQUILER DE MAQUINARIA, EQUIPOS O VEHÍCULOS PARA EL DESARROLLO DE ACTIVIDADES DE DEMOLICIÓN, REMOCIÓN Y TRANSP | $ 15.000.000.000 | Contratación directa | Alta |
+| 2026-09-13 | ALCALDIA DE CAICEDONIA | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN COMO SOPORTE PARA LA RESPUESTA A EMERGENCIAS, ACTIVACIÓN DE LOS  | $ 12.660.000 | Contratación directa | Alta |
+| 2026-09-13 | ALCALDIA DE CAICEDONIA | Prestación de servicios profesionales de Ingeniería Civil, orientados a brindar apoyo técnico al Municipio de  | $ 11.077.500 | Contratación directa | Alta |
+| 2026-09-13 | GOBVALLE - HACIENDA | SUPERGIROS se compromente a prestar al DEPARTAMENTO DEL VALLE DEL CAUCA el servicio de dispersion y pago del a | $ 0 | Contratación régimen especial | Alta |
+
+## Modificaciones sobre registros ya conocidos
+
+| Fuente | Identificador | Campo | Antes | Ahora |
+|---|---|---|---|---|
+| procesos | CO1.REQ.11031410 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11030985 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.10926098 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.10926098 | fecha_adjudicacion |  | 2026-09-13T00:00:00.000 |
+| procesos | CO1.REQ.11031411 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11031088 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11023527 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11031089 | estado_del_procedimiento | Publicado | Seleccionado |
 
 ## Alertas
 

@@ -12216,3 +12216,11 @@
 2026-09-14 10:56:05,contratos,CO1.PCCNTR.9855194,MUNICIPIO DE YUMBO VALLE,nombre_supervisor,No definido,DIANA MONTEHERMOSO TULANDE,Contexto
 2026-09-14 10:56:05,contratos,CO1.PCCNTR.9817119,MUNICIPIO DE YUMBO VALLE,estado_contrato,Aprobado,En ejecución,Contexto
 2026-09-14 10:56:05,contratos,CO1.PCCNTR.9854034,MUNICIPIO DE YUMBO VALLE,estado_contrato,Aprobado,En ejecución,Contexto
+2026-09-15 01:06:38,procesos,CO1.REQ.11031410,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-15 01:06:38,procesos,CO1.REQ.11030985,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-15 01:06:38,procesos,CO1.REQ.10926098,MUNICIPIO DE PRADERA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-15 01:06:38,procesos,CO1.REQ.10926098,MUNICIPIO DE PRADERA,fecha_adjudicacion,,2026-09-13T00:00:00.000,Contexto
+2026-09-15 01:06:38,procesos,CO1.REQ.11031411,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-15 01:06:38,procesos,CO1.REQ.11031088,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-15 01:06:38,procesos,CO1.REQ.11023527,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-15 01:06:38,procesos,CO1.REQ.11031089,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
