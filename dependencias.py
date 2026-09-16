@@ -113,6 +113,26 @@ def _fecha(v):
     return str(v or "")[:10]
 
 
+# Lo que SECOP escribe cuando la entidad no diligencia un campo. No es un dato:
+# es el hueco. Puesto en pantalla se lee como si alguien se llamara asi. Medido
+# el 16-sep-2026: 55 supervisores y 32 ordenadores del gasto de Salud, y 17 y 4
+# de Infraestructura. En el perfil era peor todavia, porque el relleno podia
+# ganar el recuento y la pagina habria escrito "el ordenador del gasto de N de
+# ellos es No definido".
+_RELLENOS = ("NO DEFINIDO", "NO DEFINIDA", "SIN DESCRIPCION", "NO APLICA", "NULL")
+
+
+def _texto(valor):
+    """El texto util, o vacio si lo que hay es el relleno de la fuente.
+
+    Vacio y relleno NO son lo mismo para quien lee: un hueco se pinta como hueco
+    y se entiende como "la fuente no lo trae"; el relleno escrito se entiende
+    como un nombre.
+    """
+    t = str(valor or "").strip()
+    return "" if t.upper() in _RELLENOS else t
+
+
 def _url(v):
     # urlproceso es una columna de tipo URL de Socrata: llega como {'url': ...}.
     # Tratarla como cadena deja el repr del diccionario en el href.
@@ -300,10 +320,22 @@ def _perfil(ops):
         return {}
 
     def manda(campo):
+        """El valor mas repetido, sin contar los huecos.
+
+        El hueco no puede ganar: si 32 filas no traen ordenador del gasto y 30
+        traen el mismo nombre, lo que hay que decir es el nombre. El DENOMINADOR
+        sigue siendo el total de filas -no las que tienen dato-, porque el perfil
+        describe el conjunto entero y cambiar la base por campo es justo el fallo
+        que ya costo un "96 de 1.698".
+        """
         cuenta = {}
         for o in ops:
             k = o.get(campo) or ""
+            if not k:
+                continue
             cuenta[k] = cuenta.get(k, 0) + 1
+        if not cuenta:
+            return {"v": "", "n": 0, "pct": 0}
         k, c = max(cuenta.items(), key=lambda kv: kv[1])
         return {"v": k, "n": c, "pct": round(100.0 * c / n)}
 
@@ -367,12 +399,12 @@ def _operaciones(contratos, procesos, evento):
             "fi": _fecha(c.get("fecha_de_inicio_del_contrato")),
             "ff": _fecha(c.get("fecha_de_fin_del_contrato")),
             "dur": c.get("duraci_n_del_contrato", ""),
-            "p": c.get("proveedor_adjudicado", ""),
+            "p": _texto(c.get("proveedor_adjudicado")),
             "pd": str(c.get("documento_proveedor") or ""),
-            "sup": c.get("nombre_supervisor", ""),
+            "sup": _texto(c.get("nombre_supervisor")),
             # El perfil se calcula sobre las filas ya depuradas, no sobre la
             # descarga cruda, asi que lo que necesita tiene que viajar aqui.
-            "ord": c.get("nombre_ordenador_del_gasto", ""),
+            "ord": _texto(c.get("nombre_ordenador_del_gasto")),
             "pn": "CEDULA" in _norm(c.get("tipodocproveedor")),
             "u": _url(c.get("urlproceso")),
             "up": "",

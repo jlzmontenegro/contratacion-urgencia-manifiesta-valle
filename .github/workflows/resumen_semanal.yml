@@ -17,7 +17,16 @@ name: Resumen semanal
 # contrato ya se avisa el dia que aparece.
 on:
   schedule:
-    - cron: '37 14 * * 1'   # lunes 9:37 en Colombia (UTC-5)
+    # Adelantado cuatro horas igual que los del colector (16-sep-2026): GitHub
+    # retrasa TODAS las corridas entre tres y cinco horas, asi que pedir las
+    # 05:37 es lo que hace que el correo salga cerca de las 09:37.
+    #
+    # Lo que hay que conservar no es la hora sino el ORDEN: el resumen tiene que
+    # correr DESPUES de la primera recoleccion del dia o leeria el tablero.json
+    # de anoche y contaria una semana incompleta sin que nadie lo notara. Se
+    # adelantaron los dos por igual, asi que la distancia entre ellos sigue
+    # siendo de tres horas y media, la misma de antes.
+    - cron: '37 10 * * 1'   # lunes 05:37 Colombia -> con el retraso real, ~09:37
   workflow_dispatch:
     inputs:
       solo_a:

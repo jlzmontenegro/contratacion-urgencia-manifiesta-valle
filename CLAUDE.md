@@ -33,6 +33,19 @@ datos/avisados.csv     de qué ya salió correo. Lo escribe correo.py
 datos/*.csv            estado y trazas; los mantiene GitHub Actions
 ```
 
+**Los cron van ADELANTADOS CUATRO HORAS a proposito** (16-sep-2026). GitHub no retrasa las
+corridas de vez en cuando: las retrasa **todas**. Medido sobre cinco corridas programadas
+seguidas: **+4h59, +4h24, +3h07 y +4h48**. Los cron piden 02:07, 09:07 y 16:07 para que la
+corrida real caiga cerca de 06:07, 13:07 y 20:07, que es cuando el usuario espera datos
+frescos. El resumen semanal se adelanto igual, de 09:37 a 05:37, **para conservar la distancia
+de tres horas y media entre los dos**: lo que no puede romperse no es la hora sino el ORDEN —el
+resumen tiene que correr despues de la primera recoleccion o cuenta una semana incompleta—.
+
+Es una **compensacion, no un arreglo**: el retraso es de GitHub y puede desaparecer sin avisar.
+Si eso pasa, las corridas saldran a las horas que piden los cron, que siguen siendo tres al dia
+bien repartidas; el hueco mayor sigue siendo de diez horas, por debajo de las catorce del
+vigilante.
+
 **GitHub Actions corre el colector TRES veces al dia: 6:07, 13:07 y 20:07 (Colombia)**, audita, **avisa
 por correo** y publica —en ese orden, que importa y está explicado abajo—. El runner lleva
 `TZ: America/Bogota`: sin eso la corrida de la noche se archivaba
@@ -757,13 +770,20 @@ elegidos**. Marcar no repinta la lista, solo el resumen y la tabla, o las casill
 el cursor. Se llamaba *Entidad contratante* y se renombró porque se confundía con el filtro
 *Entidad*, que es otra cosa: uno es el nivel, el otro la entidad concreta.
 
-**Con VARIOS niveles elegidos, la tabla, el CSV y el PDF salen en SECCIONES** (16-sep-2026,
-a petición del usuario). Una sección por nivel de gobierno, con su banda, su cuenta de
-operaciones, cuántas entidades tiene y cuánto lleva contratado.
+**La tabla, el CSV y el PDF salen SIEMPRE en SECCIONES por nivel de gobierno** (16-sep-2026,
+a petición del usuario). Una sección por nivel, con su banda, su cuenta de operaciones, cuántas
+entidades tiene y cuánto lleva contratado.
 
-**Con un solo nivel NO hay secciones, y con ninguno tampoco.** Con uno, la tabla entera ya es
-ese nivel y una banda que lo repite es ruido; con ninguno serían los seis grupos de golpe, que
-es justo la vista sin filtrar. El umbral es `nivelesElegidos().length > 1`.
+**Primero se hizo solo con varios niveles elegidos y el usuario pidió que fuera siempre.** El
+argumento para el umbral era que con un solo nivel la banda repite lo que ya dice el filtro; el
+argumento en contra, que ganó, es que **la banda no solo nombra el nivel: lleva su cuenta, sus
+entidades y lo que suma**, y eso vale igual cuando la sección es única. Sin filtro son los seis
+grupos, que es el desglose que antes había que ir a buscar al detalle por nivel. `haySecciones()`
+devuelve `true` y se conserva como función por si algún día vuelve a haber umbral.
+
+**Consecuencia que hay que tener presente: ordenar por valor ya no pone arriba la operación más
+grande de todas**, sino la más grande *de cada sección*. El orden de las secciones es fijo. Es
+la misma mecánica que ya tenía *agrupar por entidad*, ahora una escala más arriba.
 
 **El orden de las secciones es el de `D.grupos`, no el de lo que suma cada una ni el de las
 casillas marcadas.** Si el orden cambiara con los datos, el informe de un lunes y el del
@@ -793,6 +813,23 @@ mismo *«está vigilado y no ha contratado nada del sismo»* —eso es un hallaz
 del Valle estuvo meses así— que *«sí tiene, pero los demás filtros no dejan pasar ninguna»*, que
 es consecuencia de lo que el lector acaba de pedir. Presentarlos igual convierte un hallazgo en
 ruido y un filtro en una acusación. El aviso va en pantalla **y en el PDF**.
+
+**`No Definido` NO se pinta como si fuera un dato** (16-sep-2026). Es lo que escribe SECOP
+cuando la entidad no diligencia un campo, y puesto en la columna de contratista se lee como si
+se hubiera contratado con alguien que se llama así. Medido: **52 de 391 operaciones** lo
+mostraban en la versión ligera. Ahora `_texto()` lo convierte en vacío y la fila pinta el hueco
+como hueco —*«aún sin contratista»* en pantalla, `—` en el PDF, celda vacía en el CSV—.
+
+**La misma regla está en `dependencias.py`, donde el daño era mayor.** Ahí el relleno aparecía
+en **supervisor** (55 filas en Salud, 17 en Infraestructura) y en **ordenador del gasto** (32 y
+4), y el ordenador alimenta el perfil: sin la regla, `manda()` podía coronar el hueco como valor
+dominante y la página habría escrito *«el ordenador del gasto de N de ellos es No definido»*.
+Por eso `manda()` **ignora los vacíos al elegir el ganador pero conserva el total como
+denominador**: cambiar la base por campo es justo el fallo que ya costó un «96 de 1.698».
+
+**La lista de rellenos es corta y literal** —`NO DEFINIDO`, `NO DEFINIDA`, `SIN DESCRIPCION`,
+`NO APLICA`, `NULL`— y se compara sobre el texto entero, no por subcadena: una entidad podría
+llamarse legítimamente algo que contenga una de esas palabras.
 
 **En el CSV las secciones son una fila de encabezado por nivel, y la columna `Grupo` se
 conserva en cada fila.** Así el archivo se puede seguir filtrando y tabular dinámicamente pese

@@ -19,9 +19,22 @@ on:
     #
     # OJO: una corrida saltada es INVISIBLE. No falla nada, no hay rojo en
     # Actions, simplemente no existe. Detectarlo sigue sin estar construido.
-    - cron: '7 11 * * *'   # 06:07 Colombia
-    - cron: '7 18 * * *'   # 13:07 Colombia
-    - cron: '7 1  * * *'   # 20:07 Colombia (del dia anterior en UTC)
+    #
+    # LOS CRON VAN ADELANTADOS CUATRO HORAS A PROPOSITO (16-sep-2026). GitHub no
+    # esta retrasando las corridas de vez en cuando: las retrasa TODAS. Medido
+    # sobre cinco corridas programadas seguidas: +4h59, +4h24, +3h07, +4h48. La
+    # peticion es a las 02:07 para que la corrida real caiga cerca de las 06:07,
+    # que es la hora a la que el usuario espera ver datos frescos.
+    #
+    # Es una COMPENSACION, no un arreglo: el retraso es de GitHub y puede
+    # desaparecer sin avisar. Si eso pasa, las corridas saldran cuatro horas
+    # antes de lo que dicen los comentarios -02:07, 09:07 y 16:07-, que sigue
+    # siendo tres veces al dia bien repartidas y no rompe nada. El hueco mayor
+    # entre corridas sigue siendo de diez horas, por debajo de las catorce del
+    # vigilante.
+    - cron: '7 7  * * *'   # 02:07 Colombia -> con el retraso real, ~06:07
+    - cron: '7 14 * * *'   # 09:07 Colombia -> con el retraso real, ~13:07
+    - cron: '7 21 * * *'   # 16:07 Colombia -> con el retraso real, ~20:07
   # Revisar una operacion en github.com debe verse en la pagina enseguida, no en la
   # corrida de dentro de doce horas: quien edita el archivo espera que su decision
   # llegue a los demas. Solo dispara con ESE archivo, asi que los commits de datos

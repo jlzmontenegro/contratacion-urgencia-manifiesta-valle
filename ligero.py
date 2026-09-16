@@ -103,6 +103,25 @@ def _ep_corto(url):
     return m.group(1) if m else (url or "")
 
 
+# Lo que SECOP escribe cuando la entidad no diligencia un campo. No es un dato:
+# es el hueco. Puesto en la columna de contratista se lee como si la entidad
+# hubiera contratado con alguien llamado asi, y en 52 de 391 operaciones del
+# 16-sep-2026 eso era justo lo que salia en pantalla. Es la misma regla que ya
+# aplica el resumen semanal a los departamentos sin diligenciar.
+_RELLENOS = ("NO DEFINIDO", "NO DEFINIDA", "SIN DESCRIPCION", "NO APLICA", "NULL")
+
+
+def _texto(valor):
+    """Devuelve el texto util, o vacio si lo que hay es el relleno de la fuente.
+
+    Vacio y relleno NO son lo mismo para quien lee: un hueco se pinta como hueco
+    -con su guion- y se entiende como "la fuente no lo trae"; el relleno escrito
+    se entiende como un nombre. Aqui se convierte lo segundo en lo primero.
+    """
+    t = (valor or "").strip()
+    return "" if t.upper() in _RELLENOS else t
+
+
 def _operaciones(registros):
     """Junta proceso y contrato en una sola operacion, como el tablero grande.
 
@@ -136,7 +155,7 @@ def _operaciones(registros):
             "d": principal.get("fecha") or "",
             "di": principal.get("fecha_inicio") or "",
             "df": principal.get("fecha_fin") or "",
-            "p": (contrato or principal).get("proveedor") or "",
+            "p": _texto((contrato or principal).get("proveedor")),
             "m": principal.get("modalidad") or "",
             "tc": principal.get("tipo_contrato") or "Otro",
             "mu": principal.get("municipio") or "",
@@ -1081,11 +1100,13 @@ function comparador(){
 }
 
 /* ---- Secciones por nivel de gobierno ----------------------------------
-   Cuando el lector elige VARIOS niveles, la tabla, el CSV y el PDF salen
-   partidos en una sección por nivel (petición del usuario, 16-sep-2026). Con
-   uno solo NO hay secciones: la tabla entera ya es ese nivel y una banda que lo
-   repite es ruido. Con ninguno tampoco: serían los seis grupos de golpe, que es
-   justo la vista sin filtrar.
+   La tabla, el CSV y el PDF salen SIEMPRE partidos en una sección por nivel de
+   gobierno (petición del usuario, 16-sep-2026). Primero se hizo solo con varios
+   niveles elegidos —con uno la banda parecía repetir lo que ya decía el filtro—
+   y el usuario pidió que saliera también con uno y con ninguno: la banda no solo
+   nombra el nivel, lleva su cuenta de operaciones, sus entidades y lo que suma,
+   y eso vale igual cuando la sección es única. Sin filtro son los seis grupos,
+   que es el desglose que antes había que ir a buscar al detalle por nivel.
 
    El orden de las secciones es el de `D.grupos` —el mismo del desplegable— y no
    el de lo que sume cada una: si el orden cambiara con los datos, el informe de
@@ -1093,7 +1114,7 @@ function comparador(){
 var ORDEN_GRUPO = Object.create(null);
 (D.grupos || []).forEach(function(g, i){ ORDEN_GRUPO[g.k] = i; });
 
-function haySecciones(){ return nivelesElegidos().length > 1; }
+function haySecciones(){ return true; }
 
 function porSeccion(v){
   var cajas = Object.create(null), llaves = [];
