@@ -441,6 +441,10 @@ tbody tr:hover{background:var(--panel-2)}
      display:inline-block;white-space:nowrap}
 .est-f{background:var(--alta);color:#fff}
 .est-a{background:transparent;color:var(--abierta);border:1px solid var(--abierta)}
+/* El tercer estado se parece a Abierta -que es lo que es- pero con el borde
+   macizo, para que no se confunda con Contratada ni pase por una Abierta mas. */
+.est-c{background:transparent;color:var(--abierta);border:2px solid var(--abierta);
+      font-weight:700}
 .menor{font-size:11.5px;color:var(--suave);margin-top:4px}
 .enl{display:inline-block;font-size:11.5px;padding:4px 8px;border-radius:3px;
      border:1px solid var(--borde);text-decoration:none;color:var(--texto);
@@ -697,6 +701,14 @@ figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
       <b>precio base</b>, que es un estimado y no lo que se pagará. Precio base y valor
       firmado <b>nunca se suman</b>: son la misma plata en dos momentos.</dd>
 
+      <dt>Abierta, con contratista</dt>
+      <dd>El SECOP no ha registrado el contrato, pero <b>el expediente ya trae el documento
+      del contrato o convenio y el proceso ya nombra un contratista</b>. Pasa sobre todo en
+      contratación de régimen especial, donde la entidad sube el convenio firmado como
+      documento y no se genera el registro electrónico. <b>No cuenta como contratada</b> y su
+      plata no entra en lo ya contratado: esta página no puede afirmar más que la fuente. El
+      botón <i>Contrato</i> de la fila abre ese documento para que usted lo compruebe.</dd>
+
       <dt>Objeto</dt>
       <dd>Lo que se contrató, con las palabras de la entidad. SECOP II lo recorta a 500
       caracteres; cuando llega en ese tope la fila lo advierte y el texto entero está en
@@ -806,7 +818,9 @@ figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
       </select>
       <p class="ayuda" id="ay-estado" hidden><b>Contratada</b>: ya hay contrato firmado y la
       cifra es el valor firmado. <b>Abierta</b>: el proceso está publicado y la cifra es el
-      precio base, un estimado que puede cambiar.</p>
+      precio base, un estimado que puede cambiar. <b>Abierta, con contratista</b>: el SECOP no
+      registró el contrato pero el expediente ya trae el documento y el proceso ya nombra
+      contratista; cuenta como abierta, y el botón <i>Contrato</i> abre el documento.</p>
     </div>
     <div class="campo">
       <div class="rotulo"><label for="f-monto">Rango de monto</label>
@@ -1116,6 +1130,32 @@ var ORDEN_GRUPO = Object.create(null);
 
 function haySecciones(){ return true; }
 
+/* ---- El estado de la operacion ----------------------------------------
+   Tres estados, no dos (16-sep-2026, decision del usuario). El tercero existe
+   porque la pagina se contradecia: mostraba "Abierta" en filas que al lado ya
+   ofrecian el boton del contrato firmado.
+
+   Pasa en la contratacion de REGIMEN ESPECIAL: la entidad sube el convenio
+   firmado como documento del expediente y SECOP no genera el registro
+   electronico de contrato, asi que el dato abierto se queda en el proceso con
+   `adjudicado: No`. El caso que lo destapo fue el convenio DAHFP-CDBIS-CONVENIO
+   001-2026 de GOBVALLE - HACIENDA con Supergiros, cuyo expediente trae
+   "CONVENIO ... FIRMADO.pdf".
+
+   HACEN FALTA LAS DOS COSAS: el documento del contrato en el expediente Y un
+   contratista con nombre. Con el documento solo no basta -de los 26 que lo
+   tienen, la mayoria son "CLAUSULADO DEL CONTRATO.pdf", que tanto puede ser el
+   texto ya firmado como el que se adjunto antes de firmar, y uno es literalmente
+   una minuta-. Es la regla que pidio el usuario, y es la prudente.
+
+   NO cuenta como contratada: su plata NO entra en "ya contratado". SECOP no ha
+   registrado el contrato y esta pagina no puede afirmar mas que la fuente. Lo
+   que hace el estado es quitar la contradiccion y mandar al lector al PDF. */
+function conContratista(o){ return !o.f && !!o.dc && !!o.p; }
+function estadoTexto(o){
+  return o.f ? "Contratada" : (conContratista(o) ? "Abierta, con contratista" : "Abierta");
+}
+
 function porSeccion(v){
   var cajas = Object.create(null), llaves = [];
   v.forEach(function(o){
@@ -1345,7 +1385,9 @@ function fila(o, i){
   return '<tr>' +
     '<td data-etq="Estado">' +
       (o.f ? '<span class="est est-f">Contratada</span>'
-           : '<span class="est est-a">Abierta</span>') +
+           : conContratista(o)
+             ? '<span class="est est-c">Abierta, con contratista</span>'
+             : '<span class="est est-a">Abierta</span>') +
       '<div class="menor">' + esc(o.d) + "</div>" + fechas + "</td>" +
     '<td data-etq="Qué y quién"><div class="ent">' + esc(o.e) + "</div>" +
       '<div class="obj">' + esc(o.o) + "</div>" +
@@ -1722,7 +1764,7 @@ var COLS = ["Grupo", "Entidad contratante", "Estado", "Fecha", "Numero de proces
             "Tipo de contrato", "Modalidad", "Fecha inicio", "Fecha fin", "Objeto",
             "Enlace contrato", "Enlace proceso"];
 function filaDatos(o){
-  return [NOMBRE_GRUPO[o.g] || "", o.e, o.f ? "Contratada" : "Abierta", o.d, o.rp, o.rc,
+  return [NOMBRE_GRUPO[o.g] || "", o.e, estadoTexto(o), o.d, o.rp, o.rc,
           o.v, o.f ? "valor firmado" : "precio base", o.p, o.mn, o.tc, o.m, o.di, o.df,
           o.o, o.uc, o.up];
 }
@@ -1831,7 +1873,7 @@ function imprimirInforme(){
       (o.mn ? " · " + esc(o.mn) : "") + "</small></td>" +
       "<td>" + esc(o.o) + "<br><small>" + esc(o.rp || "") +
       (o.rp && o.rc ? " · " : "") + esc(o.rc || "") + "</small></td>" +
-      "<td>" + esc(o.f ? "Contratada" : "Abierta") +
+      "<td>" + esc(estadoTexto(o)) +
       '<br><small class="fechas">' + fechas.join("<br>") + "</small></td>" +
       '<td style="text-align:right;white-space:nowrap">' + esc(pesos(o.v)) +
       "<br><small>" + (o.f ? "firmado" : "precio base") + "</small></td>" +

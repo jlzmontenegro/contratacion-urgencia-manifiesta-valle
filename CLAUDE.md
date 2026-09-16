@@ -814,6 +814,34 @@ del Valle estuvo meses así— que *«sí tiene, pero los demás filtros no deja
 es consecuencia de lo que el lector acaba de pedir. Presentarlos igual convierte un hallazgo en
 ruido y un filtro en una acusación. El aviso va en pantalla **y en el PDF**.
 
+**TRES estados, no dos: existe «Abierta, con contratista»** (16-sep-2026, decisión del
+usuario). La página se contradecía: mostraba *Abierta* en filas que al lado ya ofrecían el
+botón del contrato firmado. Lo destapó el usuario preguntando por el convenio
+`DAHFP-CDBIS-CONVENIO 001-2026` de GOBVALLE - HACIENDA con Supergiros.
+
+**La causa es la contratación de RÉGIMEN ESPECIAL:** la entidad sube el convenio firmado como
+documento del expediente —ahí está *«CONVENIO … FIRMADO.pdf»*— y **SECOP no genera el registro
+electrónico de contrato**, así que el dato abierto se queda en el proceso con `adjudicado: No`,
+`valor_total_adjudicacion: 0` y cero contratos colgando del expediente. Verificado contra la
+API, y el dataset de contratos estaba al día.
+
+**Hacen falta LAS DOS COSAS: documento de contrato en el expediente Y contratista con nombre.**
+Con el documento solo no basta: de las 63 operaciones abiertas, **26 tienen el documento** pero
+la mayoría son `CLAUSULADO DEL CONTRATO.pdf`, que tanto puede ser el texto ya firmado como el
+que se adjuntó antes de firmar —uno es literalmente `Minuta_Contrato_.pdf`—. Con las dos
+condiciones son **2**. Es la regla que pidió el usuario y es la prudente.
+
+**NO cuenta como contratada y su plata NO entra en «ya contratado».** SECOP no registró el
+contrato y esta página no puede afirmar más que la fuente: entre las 26 con documento hay una
+de **$15.000 millones** de precio base, y moverla a contratado por el nombre de un archivo sería
+inventar. Lo que hace el estado es **quitar la contradicción y mandar al lector al PDF**, que ya
+estaba enlazado.
+
+**El estado se calcula en UN sitio —`estadoTexto()`— y lo usan la tabla, el CSV y el PDF.** Los
+tres decían `o.f ? "Contratada" : "Abierta"` por su cuenta; con un tercer estado, tres copias es
+una que se olvida. Va explicado en las convenciones y en la ayuda del filtro de estado: nada de
+jerga sin glosario.
+
 **`No Definido` NO se pinta como si fuera un dato** (16-sep-2026). Es lo que escribe SECOP
 cuando la entidad no diligencia un campo, y puesto en la columna de contratista se lee como si
 se hubiera contratado con alguien que se llama así. Medido: **52 de 391 operaciones** lo
