@@ -879,7 +879,15 @@ function operaciones(filas){
       /* Cuantas veces publico la entidad esta misma contratacion. Lo decide el
          colector al unificar la llave de operacion; aqui solo se lee. */
       repetida: Math.max(0, ...[c, pr].filter(Boolean).map(r => +r.repetida || 0)),
-      proveedor: c ? c.proveedor : "",
+      /* Con contrato, el contratista. SIN contrato, el proveedor que la entidad
+         escribio en el proceso: no es necesariamente el adjudicado -medido el
+         16-sep-2026, 1.965 de 2.000 procesos del Valle con nombre de proveedor
+         tienen adjudicado=No- pero es informacion publica que estaba oculta.
+         Lo que impide leerlo como "ya contratado" es el estado de la fila. */
+      proveedor: c ? c.proveedor : (pr ? pr.proveedor : ""),
+      /* El expediente ya trae el documento del contrato. Se mira en los dos
+         registros porque proceso y contrato comparten expediente. */
+      docContrato: [c, pr].filter(Boolean).some(r => !!(r.docs_contrato || "")),
       fecha: jefe.fecha,
       /* Del registro que manda: el contrato si existe. Proceso y contrato son el
          mismo hecho, asi que comparten municipio. */
@@ -1132,9 +1140,41 @@ function pintarTabla(){
   }).join("");
 }
 
+/* TRES estados, no dos (16-sep-2026). La pagina se contradecia: marcaba
+   "Abierta" en filas que al lado ya ofrecian el boton del contrato. Pasa en la
+   contratacion de REGIMEN ESPECIAL, donde la entidad sube el convenio firmado
+   como documento y SECOP no genera el registro electronico de contrato, asi que
+   el dato abierto se queda en el proceso con adjudicado=No.
+
+   Hacen falta LAS DOS COSAS -documento de contrato en el expediente Y un
+   contratista con nombre-, porque con el documento solo no basta: la mayoria se
+   llaman "CLAUSULADO DEL CONTRATO.pdf", que tanto puede ser el texto ya firmado
+   como el que se adjunto antes de firmar.
+
+   NO cuenta como contratada y su plata NO entra en lo firmado: SECOP no registro
+   el contrato y esta pagina no puede afirmar mas que la fuente. Es la misma
+   regla y el mismo rotulo que en ligero.html. */
+/* El relleno de la fuente NO cuenta como contratista, y se comprueba tambien
+   AQUI aunque el colector ya lo limpie. Motivo: el JSON y el codigo se publican
+   por separado, y entre el despliegue y la siguiente recoleccion la pagina sirve
+   datos viejos. Probado con el tablero.json del 14-sep: sin esta guarda, 70
+   operaciones salian rotuladas "Abierta, con contratista" mostrando
+   "No Definido" en la columna del contratista. */
+function nombreUtil(v){
+  const t = String(v || "").trim().toUpperCase();
+  return t && !["NO DEFINIDO", "NO DEFINIDA", "SIN DESCRIPCION", "NO APLICA", "NULL"].includes(t);
+}
+function conContratista(o){ return o.abierta && o.docContrato && nombreUtil(o.proveedor); }
+function estadoTexto(o){
+  return o.abierta ? (conContratista(o) ? "Abierta, con contratista" : "Abierta")
+                   : "Contratada";
+}
+
 function filaOperacion(o){
   const est = o.abierta
-    ? `<span class="est est-abierta">Abierta</span>`
+    ? (conContratista(o)
+        ? `<span class="est est-abierta est-concontratista">Abierta, con contratista</span>`
+        : `<span class="est est-abierta">Abierta</span>`)
     : `<span class="est est-firmada">Contratada</span>`;
   /* Las dos referencias cuando existen: la entidad numera distinto el proceso
      y el contrato (…010.32.1.653 contra …010.26.1.653) y quien busca en SECOP
@@ -1768,7 +1808,7 @@ const COLS_REGISTRO = ["plataforma","tipo","operacion","id","referencia","fecha"
 /* Las operaciones, una por fila, tal como se leen en la tabla. Los rotulos van en
    castellano y sin jerga del clasificador, igual que en pantalla. */
 const COLS_OPERACION = [
-  ["Estado", o => o.firmado ? "Contratada" : "Abierta"],
+  ["Estado", o => estadoTexto(o)],
   ["Fecha", o => o.fecha],
   ["Entidad", o => o.entidad],
   ["Grupo", o => o.grupo],
@@ -2272,7 +2312,7 @@ function imprimirInforme(){
     const refs = [o.proceso, o.contrato].filter(Boolean)
       .map(r => esc(r.referencia || r.id)).join(" · ");
     return banda + `<tr>
-      <td>${o.firmado ? "Contratada" : "Abierta"}<div class="menor">${esc(o.fecha)}</div></td>
+      <td>${esc(estadoTexto(o))}<div class="menor">${esc(o.fecha)}</div></td>
       <td>${porEntidad ? "" : `<b>${esc(o.entidad)}</b>`}
         <div class="obj">${esc(o.objeto)}</div>
         <div class="menor">${esc(o.grupo)}${o.modalidad ? " · " + esc(o.modalidad) : ""}${

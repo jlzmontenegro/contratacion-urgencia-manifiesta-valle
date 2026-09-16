@@ -289,6 +289,25 @@ def solo_fecha(valor):
     return s[:10] if len(s) >= 10 else ""
 
 
+# Lo que SECOP escribe cuando la entidad no diligencia un campo. No es un dato:
+# es el hueco. Medido el 16-sep-2026: 286 de 628 registros Alta traian
+# 'No Definido' en proveedor, y la version ligera lo pintaba en la columna de
+# contratista como si alguien se llamara asi.
+RELLENOS_FUENTE = ("NO DEFINIDO", "NO DEFINIDA", "SIN DESCRIPCION", "NO APLICA", "NULL")
+
+
+def texto_util(valor):
+    """El texto, o vacio si lo que hay es el relleno de la fuente.
+
+    Se compara el texto ENTERO y no por subcadena: una entidad podria llamarse
+    legitimamente algo que contenga una de esas palabras. Vacio y relleno no son
+    lo mismo para quien lee -un hueco se pinta como hueco y se entiende como "la
+    fuente no lo trae"; el relleno escrito se entiende como un nombre-.
+    """
+    t = str(valor or "").strip()
+    return "" if t.upper() in RELLENOS_FUENTE else t
+
+
 def referencia_registro(fila, f):
     """Numero con que la entidad nombra el proceso o contrato ('SETIC-LP-001-2026').
 
@@ -1868,7 +1887,13 @@ def aplanar(df, nombre_fuente):
             "modalidad": r.get(f["modalidad"], ""),
             "justificacion": r.get(f["justificacion"], ""),
             "valor": float(r["_v"]),
-            "proveedor": r.get(f["proveedor"], ""),
+            # Sin el relleno de la fuente: 'No Definido' es lo que escribe SECOP
+            # cuando la entidad no diligencia el campo, y puesto en la columna de
+            # contratista se lee como si se hubiera contratado con alguien que se
+            # llama asi. Se limpia AQUI, que es lo unico que ven las cinco vistas
+            # -tablero, ligera, dependencias, correo y resumen-: hacerlo en cada
+            # una serian cinco copias de la misma lista y una que se olvida.
+            "proveedor": texto_util(r.get(f["proveedor"], "")),
             "documento_proveedor": r.get(f["doc_proveedor"], ""),
             "estado": r.get(f["estado"], ""),
             "url": r.get(f["url"], ""),

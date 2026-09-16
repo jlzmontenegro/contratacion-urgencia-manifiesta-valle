@@ -319,6 +319,69 @@ publicado desde la ultima vez que alguien corrio el colector aqui. Ademas no imp
 `colector.py` a proposito, asi que tampoco prueba los cambios al colector. Para eso esta
 `py -3 colector.py --sin-red` sobre una copia de la carpeta.
 
+## El estado de una operación, y lo que dice el nombre del proveedor
+
+**`nombre_del_proveedor` de un PROCESO no es el contratista adjudicado.** Es un campo que la
+entidad diligencia, y lo llena con la contraparte prevista mucho antes de adjudicar. Medido el
+16-sep-2026 sobre los procesos del Valle desde el sismo: de **2.000 con nombre de proveedor,
+1.965 tienen `adjudicado = No`**. Mostrarlo bajo el rótulo «Contratista» sin más induce a leer
+como cerrado algo que sigue abierto, y por eso las dos páginas que lo muestran lo explican en
+sus convenciones.
+
+**No es «un oferente cualquiera», y conviene no repetir ese error.** Al investigarlo pareció
+que el dataset traía una fila por oferente —la referencia `RE-13-2026` devolvía ocho filas con
+ocho proveedores distintos—. **Era falso:** las referencias NO son únicas entre entidades, y
+esas ocho filas eran ocho procesos de ocho entidades distintas del país (Bucaramanga, el
+Ministerio del Deporte, la Rama Judicial…). Consultando por `id_del_proceso` cada proceso trae
+**una sola fila**. Al comparar, cruzar por id y nunca por número de referencia.
+
+**TRES estados, no dos: existe «Abierta, con contratista»** (16-sep-2026, decisión del usuario).
+Las páginas se contradecían: marcaban *Abierta* en filas que al lado ya ofrecían el botón del
+contrato. La causa es la contratación de **régimen especial**: la entidad sube el convenio
+firmado como documento del expediente y **SECOP no genera el registro electrónico de
+contrato**, así que el dato abierto se queda en el proceso con `adjudicado: No` y cero
+contratos colgando del expediente.
+
+**Hacen falta LAS DOS COSAS: documento de contrato en el expediente Y contratista con nombre.**
+Con el documento solo no basta: de las 63 operaciones abiertas de `Alta`, **26 tienen el
+documento**, pero la mayoría se llaman `CLAUSULADO DEL CONTRATO.pdf`, que tanto puede ser el
+texto ya firmado como el que se adjuntó antes de firmar —uno es literalmente
+`Minuta_Contrato_.pdf`—. Con las dos condiciones son **2** en la ligera y **9** en el tablero
+grande (2 `Alta` y 7 `Media`).
+
+**NO cuenta como contratada y su plata NO entra en lo firmado.** SECOP no registró el contrato
+y la página no puede afirmar más que la fuente: entre las 26 con documento hay una de **$15.000
+millones** de precio base, y moverla a contratado por el nombre de un archivo sería inventar. El
+estado solo quita la contradicción y manda al lector al PDF, que ya estaba enlazado.
+
+**Dónde estaba y dónde no.** Se auditaron las cinco vistas: la ligera y el tablero grande **sí**
+tenían la contradicción y llevan el tercer estado; `infraestructura.html` y `salud.html` **no**
+—cero filas abiertas con documento o con proveedor—; `nacional.html` tampoco, porque solo lista
+contratos firmados.
+
+**El tablero grande no mostraba el proveedor de un proceso abierto** (`proveedor: c ? c.proveedor
+: ""`). Ahora lo muestra, porque es información pública que estaba oculta y porque sin ella el
+tercer estado no se puede evaluar. Lo que impide leerlo mal es el estado de la fila más la
+entrada del glosario.
+
+**`estadoTexto()` vive en UN sitio por página** y lo usan la tabla, la descarga y el informe
+impreso. Los tres decían `o.firmado ? "Contratada" : "Abierta"` por su cuenta; con un tercer
+estado, tres copias es una que se olvida.
+
+**El relleno de la fuente se limpia en el COLECTOR** (`texto_util()`), no en cada vista. `No
+Definido` es lo que escribe SECOP cuando la entidad no diligencia el campo; puesto en la columna
+de contratista se lee como si alguien se llamara así. Medido: **286 de 628 registros `Alta`** lo
+traían en `proveedor`, y la ligera lo pintaba. Se limpia en `aplanar()`, que es lo único que ven
+las cinco vistas: hacerlo en cada una serían cinco copias de la misma lista y una que se olvida.
+Se compara el texto **entero** y no por subcadena, para no comerse una entidad que legítimamente
+contenga esas palabras.
+
+**Y aun así `tablero.js` lo vuelve a comprobar, a propósito.** El JSON y el código se publican
+por separado, y entre el despliegue y la siguiente recolección la página sirve datos viejos.
+Probado con el `tablero.json` del 14-sep: **sin esa guarda, 70 operaciones salían rotuladas
+«Abierta, con contratista» mostrando "No Definido" como contratista**. Con la guarda quedan 8,
+todas con nombre real.
+
 ## Trampas de la fuente, ya pagadas
 
 **El NIT se escribe distinto en cada dataset.** En contratos de SECOP II `nit_entidad` es

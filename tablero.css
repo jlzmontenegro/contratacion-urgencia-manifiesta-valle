@@ -320,6 +320,9 @@
        font-weight:600;letter-spacing:.02em;white-space:nowrap}
   .est-firmada{background:rgba(34,139,84,.14);color:#1c7a49}
   .est-abierta{background:rgba(58,120,200,.14);color:#2c62a8}
+  /* El tercer estado se parece a Abierta -que es lo que es- pero con borde,
+     para que no pase por una Abierta mas ni se confunda con Contratada. */
+  .est-concontratista{box-shadow:inset 0 0 0 1.5px #2c62a8;font-weight:700}
   .col-est{white-space:nowrap;vertical-align:top}
   .col-enl{white-space:nowrap;vertical-align:top}
   .menor.aviso{color:#a8761b}

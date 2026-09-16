@@ -701,6 +701,13 @@ figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
       <b>precio base</b>, que es un estimado y no lo que se pagará. Precio base y valor
       firmado <b>nunca se suman</b>: son la misma plata en dos momentos.</dd>
 
+      <dt>El contratista de una operación abierta</dt>
+      <dd>Cuando todavía no hay contrato, el nombre que aparece es el <b>proveedor que la
+      entidad escribió en el proceso</b>, y eso <em>no</em> quiere decir que se le haya
+      adjudicado: medido el 16 de septiembre de 2026, de 2.000 procesos del Valle con nombre
+      de proveedor, <b>1.965 tenían «adjudicado: No»</b>. Se muestra porque es información
+      pública, y el estado de la fila es lo que impide leerlo como algo ya cerrado.</dd>
+
       <dt>Abierta, con contratista</dt>
       <dd>El SECOP no ha registrado el contrato, pero <b>el expediente ya trae el documento
       del contrato o convenio y el proceso ya nombra un contratista</b>. Pasa sobre todo en
