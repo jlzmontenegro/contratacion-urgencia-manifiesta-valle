@@ -475,6 +475,21 @@ td.banda .quien{font-weight:700;font-size:13px}
 td.banda .cuanto{font-family:ui-monospace,Consolas,monospace;font-size:11.5px;
       color:var(--texto-2);margin-top:2px}
 td.banda .sigue{font-size:11.5px;color:var(--suave);font-style:italic}
+/* Banda de SECCION: un nivel de gobierno entero. Tiene que pesar MAS que la de
+   entidad o las dos se leen como lo mismo y la jerarquia se pierde: la seccion
+   contiene entidades, no al reves. */
+/* El fondo es el verde OSCURECIDO, no el de marca. Medido: blanco sobre
+   #56A800 da 3,0:1 y el titulo de la banda son 14px —no cuenta como texto
+   grande—, asi que no llega a AA. Sobre --acento-tinta pasa de 4,5:1. */
+td.seccion{background:var(--acento-tinta);color:#fff;padding:11px 10px;
+      border-bottom:1px solid var(--borde)}
+tbody tr.seccion:hover td.seccion{background:var(--acento-tinta)}
+td.seccion .quien{font-weight:700;font-size:14px;letter-spacing:.01em}
+td.seccion .cuanto{font-family:ui-monospace,Consolas,monospace;font-size:11.5px;
+      opacity:.92;margin-top:2px}
+td.seccion .sigue{font-size:11.5px;opacity:.85;font-style:italic}
+.sin-seccion{margin-top:6px;font-size:12.5px;color:var(--texto-2);
+      border-left:3px solid var(--acento);padding:5px 9px;line-height:1.5}
 
 /* ---- Filtros a la izquierda, mapas a la derecha ----------------------- *
  * En el DOM van primero los filtros: asi en el telefono se leen antes que el
@@ -556,6 +571,13 @@ figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
       padding:4pt 5pt;font-size:7.5pt;text-transform:uppercase;letter-spacing:.06em}
   #impresion td{border-bottom:.5pt solid #ddd;padding:5pt;vertical-align:top}
   #impresion tr{break-inside:avoid}
+  /* La seccion de nivel de gobierno, en papel. break-after:avoid impide que el
+     encabezado se quede solo al pie de una hoja con sus filas en la siguiente,
+     que es el unico modo en que una seccion puede mentir sobre lo que contiene. */
+  #impresion tr.seccion-papel{break-inside:avoid;break-after:avoid}
+  #impresion tr.seccion-papel td{background:#eee;border-top:1.2pt solid #000;
+      border-bottom:.5pt solid #999;padding:6pt 5pt;font-size:9pt;
+      print-color-adjust:exact;-webkit-print-color-adjust:exact}
   #impresion .mapas-papel{display:flex;gap:10mm;margin:6pt 0 12pt;break-inside:avoid}
   #impresion .mapas-papel figure{flex:1;margin:0}
   #impresion .mapas-papel svg{width:100%;height:auto;max-height:95mm}
@@ -605,6 +627,11 @@ figcaption{font-family:ui-monospace,Consolas,monospace;font-size:10.5px;
      de las que vienen debajo, o se confunde con una operacion. */
   tbody tr.banda{border:0;background:none;margin:16px 0 6px}
   tbody tr.banda td.banda{border-bottom:2px solid var(--acento);padding:6px 2px}
+  /* La seccion conserva su fondo macizo tambien en el telefono: es lo unico que
+     distingue el encabezado de un nivel del de una entidad cuando todo se
+     apila en una columna. */
+  tbody tr.seccion{border:0;background:none;margin:22px 0 8px}
+  tbody tr.seccion td.seccion{padding:9px 10px;border-radius:4px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
@@ -1053,11 +1080,113 @@ function comparador(){
   };
 }
 
+/* ---- Secciones por nivel de gobierno ----------------------------------
+   Cuando el lector elige VARIOS niveles, la tabla, el CSV y el PDF salen
+   partidos en una sección por nivel (petición del usuario, 16-sep-2026). Con
+   uno solo NO hay secciones: la tabla entera ya es ese nivel y una banda que lo
+   repite es ruido. Con ninguno tampoco: serían los seis grupos de golpe, que es
+   justo la vista sin filtrar.
+
+   El orden de las secciones es el de `D.grupos` —el mismo del desplegable— y no
+   el de lo que sume cada una: si el orden cambiara con los datos, el informe de
+   un lunes y el del siguiente no se podrían comparar. */
+var ORDEN_GRUPO = Object.create(null);
+(D.grupos || []).forEach(function(g, i){ ORDEN_GRUPO[g.k] = i; });
+
+function haySecciones(){ return nivelesElegidos().length > 1; }
+
+function porSeccion(v){
+  var cajas = Object.create(null), llaves = [];
+  v.forEach(function(o){
+    if (!cajas[o.g]){ cajas[o.g] = []; llaves.push(o.g); }
+    cajas[o.g].push(o);
+  });
+  llaves.sort(function(a, b){
+    var x = ORDEN_GRUPO[a], y = ORDEN_GRUPO[b];
+    return (x === undefined ? 99 : x) - (y === undefined ? 99 : y);
+  });
+  var fuera = [];
+  llaves.forEach(function(k){
+    /* Dentro de cada sección se conserva todo lo de siempre: el orden elegido y,
+       si está marcado, la agrupación por entidad. La sección solo decide QUÉ va
+       con qué, no cómo se ordena dentro. */
+    fuera = fuera.concat(F.agrupar ? agrupar(cajas[k]) : cajas[k]);
+  });
+  return fuera;
+}
+
 function vista(){
   /* Se ordena SIEMPRE primero y se agrupa después. Al revés, la agrupación
      mandaría sobre el orden y pulsar una columna no se notaría. */
   var v = OPS.filter(pasa).sort(comparador());
+  if (haySecciones()) return porSeccion(v);
   return F.agrupar ? agrupar(v) : v;
+}
+
+/* Un nivel elegido que no tiene NADA no genera sección, porque no tiene filas, y
+   entonces desaparecería sin dejar rastro: el lector marcó cinco casillas y ve
+   cuatro secciones. Se dice por escrito. Es la misma regla por la que los seis
+   grupos siguen en el desplegable aunque estén en cero: ahí el cero es un
+   hallazgo —la Gobernación del Valle estuvo meses sin contratación confirmada—
+   y no un dato que falte. */
+function seccionesVacias(v){
+  if (!haySecciones()) return {nada: [], filtradas: []};
+  var con = Object.create(null), total = Object.create(null);
+  v.forEach(function(o){ con[o.g] = 1; });
+  OPS.forEach(function(o){ total[o.g] = 1; });
+  var orden = function(a, b){
+    var x = ORDEN_GRUPO[a], y = ORDEN_GRUPO[b];
+    return (x === undefined ? 99 : x) - (y === undefined ? 99 : y);
+  };
+  var nombre = function(k){ return NOMBRE_GRUPO[k] || k; };
+  var faltan = nivelesElegidos().filter(function(k){ return !con[k]; }).sort(orden);
+  return {
+    /* Un cero tiene que decir POR QUE: no es lo mismo "este nivel está vigilado y
+       no ha contratado nada del sismo" —que es un hallazgo— que "sí tiene, pero
+       los demás filtros no dejan pasar ninguna" —que es una consecuencia de lo
+       que el lector acaba de pedir—. Presentarlos igual convierte un hallazgo en
+       ruido y un filtro en una acusación. */
+    nada: faltan.filter(function(k){ return !total[k]; }).map(nombre),
+    filtradas: faltan.filter(function(k){ return total[k]; }).map(nombre)
+  };
+}
+
+function avisoSeccionesVacias(v){
+  var f = seccionesVacias(v), partes = [];
+  if (f.nada.length) partes.push(
+    (f.nada.length === 1
+      ? "<b>" + esc(f.nada[0]) + "</b> está entre los niveles elegidos y no tiene"
+      : "<b>" + f.nada.map(esc).join("</b>, <b>") + "</b> están entre los niveles " +
+        "elegidos y no tienen") +
+    " ninguna operación confirmada del sismo. <b>El cero es un hallazgo</b>, no un dato " +
+    "que falte.");
+  if (f.filtradas.length) partes.push(
+    (f.filtradas.length === 1
+      ? "<b>" + esc(f.filtradas[0]) + "</b> sí tiene contratación confirmada, pero ninguna"
+      : "<b>" + f.filtradas.map(esc).join("</b>, <b>") + "</b> sí tienen contratación " +
+        "confirmada, pero ninguna") +
+    " pasa los demás filtros, así que no aparece" +
+    (f.filtradas.length === 1 ? "" : "n") + " abajo.");
+  return partes.join(" ");
+}
+
+/* Lo que dice la banda de una sección. Se calcula sobre la vista ENTERA y no
+   sobre la página: si contara solo lo visible, la cuenta no cuadraría con las
+   filas que el lector tiene delante en cuanto pasara de página. */
+function resumenSeccion(v, clave){
+  var suyas = v.filter(function(x){ return x.g === clave; });
+  var firm = suyas.filter(function(x){ return x.f; });
+  var ent = Object.create(null), n = 0;
+  suyas.forEach(function(x){ if (!ent[x.e]){ ent[x.e] = 1; n++; } });
+  return {
+    n: suyas.length,
+    entidades: n,
+    texto: suyas.length + " operacion" + (suyas.length === 1 ? "" : "es") +
+      " · " + n + " entidad" + (n === 1 ? "" : "es") + " · " +
+      corto(firm.reduce(function(s, x){ return s + x.v; }, 0)) + " ya contratado" +
+      (suyas.length - firm.length
+        ? " · " + (suyas.length - firm.length) + " sin contratar" : "")
+  };
 }
 /* Los mapas respetan todos los filtros MENOS el territorio que ellos mismos
    ponen. Si respetaran tambien ese, al elegir un municipio los demas quedarian
@@ -1275,16 +1404,38 @@ function resumen(v){
 function pintarTabla(){
   var v = vista();
   ULTIMA_VISTA = v;
-  document.getElementById("cuenta").innerHTML = resumen(v);
+  var vacias = avisoSeccionesVacias(v);
+  document.getElementById("cuenta").innerHTML = resumen(v) +
+    (vacias ? '<div class="sin-seccion">' + vacias + "</div>" : "");
 
   var paginas = Math.max(1, Math.ceil(v.length / POR_PAGINA));
   if (pagina > paginas) pagina = paginas;
   var desde = (pagina - 1) * POR_PAGINA;
   var trozo = v.slice(desde, pagina * POR_PAGINA);
   var filas = "";
+  var seccionar = haySecciones();
+  var seccionAnterior = null;
+
+  /* La banda de sección se intercala ANTES que la de entidad, porque la sección
+     contiene entidades. Va también cuando no se agrupa por entidad: partir por
+     nivel es lo que el lector pidió, y no depende de la otra opción. */
+  function bandaSeccion(o, i){
+    if (!seccionar || o.g === seccionAnterior) return "";
+    seccionAnterior = o.g;
+    var r = resumenSeccion(v, o.g);
+    var viene = (i === 0 && desde > 0 && v[desde - 1].g === o.g);
+    return '<tr class="seccion"><td class="seccion" colspan="5">' +
+      '<div class="quien">' + esc(NOMBRE_GRUPO[o.g] || o.g) + "</div>" +
+      '<div class="cuanto">' + esc(r.texto) + "</div>" +
+      (viene ? '<div class="sigue">viene de la página anterior</div>' : "") +
+      "</td></tr>";
+  }
+
   if (F.agrupar){
     var anterior = null;
     trozo.forEach(function(o, i){
+      var bs = bandaSeccion(o, i);
+      if (bs){ filas += bs; anterior = null; }
       if (o.e !== anterior){
         /* Si el grupo empieza antes de esta pagina, la banda lo dice. Sin eso,
            media docena de filas quedan bajo un encabezado cuya cuenta no cuadra
@@ -1308,7 +1459,9 @@ function pintarTabla(){
       filas += fila(o, desde + i);
     });
   } else {
-    filas = trozo.map(function(o, i){ return fila(o, desde + i); }).join("");
+    trozo.forEach(function(o, i){
+      filas += bandaSeccion(o, i) + fila(o, desde + i);
+    });
   }
   document.getElementById("cuerpo").innerHTML = trozo.length
     ? filas
@@ -1556,8 +1709,14 @@ function textoFiltros(){
   var p = [];
   if (F.buscar) p.push("búsqueda: “" + F.buscar.toLowerCase() + "”");
   var ns = nivelesElegidos();
+  /* En el MISMO orden en que salen las secciones, no en el que se marcaron las
+     casillas: si la cabecera los enumera de una forma y el cuerpo los presenta
+     de otra, el lector cree que falta uno o que sobra. */
   if (ns.length) p.push("nivel de gobierno: " +
-    ns.map(function(k){ return NOMBRE_GRUPO[k] || k; }).join(", "));
+    ns.slice().sort(function(a, b){
+      var x = ORDEN_GRUPO[a], y = ORDEN_GRUPO[b];
+      return (x === undefined ? 99 : x) - (y === undefined ? 99 : y);
+    }).map(function(k){ return NOMBRE_GRUPO[k] || k; }).join(", "));
   if (F.entidad) p.push("entidad: " + F.entidad);
   if (F.mun) p.push("municipio: " + (NOMBRE_PIEZA[F.mun] || F.mun));
   if (F.dep) p.push("departamento: " + (NOMBRE_PIEZA[F.dep] || F.dep));
@@ -1573,7 +1732,30 @@ function textoFiltros(){
 }
 
 function descargarCSV(){
-  var filas = ULTIMA_VISTA.map(filaDatos);
+  /* Con varios niveles elegidos el archivo sale en secciones, como la pantalla:
+     una fila de encabezado por nivel y debajo las suyas. La columna "Grupo"
+     sigue estando en CADA fila, así que el archivo se puede seguir filtrando y
+     tabular dinámicamente aunque lleve los separadores: quien quiera la tabla
+     plana solo tiene que borrar las filas de encabezado, y quien la lea a ojo
+     ve las mismas secciones que vio en el tablero. */
+  var v = ULTIMA_VISTA, filas = [];
+  if (haySecciones()){
+    var actual = null;
+    v.forEach(function(o){
+      if (o.g !== actual){
+        actual = o.g;
+        var r = resumenSeccion(v, o.g);
+        var cab = [];
+        for (var c = 0; c < COLS.length; c++) cab.push("");
+        cab[0] = "== " + (NOMBRE_GRUPO[o.g] || o.g) + " ==";
+        cab[1] = r.texto;
+        filas.push(cab);
+      }
+      filas.push(filaDatos(o));
+    });
+  } else {
+    filas = v.map(filaDatos);
+  }
   var txt = [COLS].concat(filas).map(function(f){
     return f.map(function(c){ return '"' + String(c == null ? "" : c).replace(/"/g, '""') + '"'; })
             .join(";");
@@ -1602,7 +1784,18 @@ function imprimirInforme(){
      navegador conserva el hipervinculo y el boton queda pulsable dentro del
      archivo. Si fueran texto, el PDF traeria el enlace escrito y habria que
      copiarlo a mano. */
+  /* En papel las secciones van como una fila propia que ocupa el ancho de la
+     tabla. Se marca con break-inside para que una sección no arranque en el pie
+     de una hoja dejando su encabezado solo. */
+  var seccionar = haySecciones(), seccionActual = null;
   var cuerpo = v.map(function(o){
+    var cabSec = "";
+    if (seccionar && o.g !== seccionActual){
+      seccionActual = o.g;
+      var r = resumenSeccion(v, o.g);
+      cabSec = '<tr class="seccion-papel"><td colspan="5">' +
+        "<b>" + esc(NOMBRE_GRUPO[o.g] || o.g) + "</b> · " + esc(r.texto) + "</td></tr>";
+    }
     var enl = [];
     if (o.uc) enl.push('<a class="ir" href="' + esc(o.uc) + '">Expediente ↗</a>');
     if (o.up) enl.push('<a class="ir" href="' + esc(o.up) + '">Proceso ↗</a>');
@@ -1613,7 +1806,7 @@ function imprimirInforme(){
     if (o.d) fechas.push((o.f ? "Firma " : "Publicado ") + esc(o.d));
     if (o.di) fechas.push("Inicia " + esc(o.di));
     if (o.df) fechas.push("Termina " + esc(o.df));
-    return "<tr><td>" + esc(o.e) + "<br><small>" + esc(NOMBRE_GRUPO[o.g] || "") +
+    return cabSec + "<tr><td>" + esc(o.e) + "<br><small>" + esc(NOMBRE_GRUPO[o.g] || "") +
       (o.mn ? " · " + esc(o.mn) : "") + "</small></td>" +
       "<td>" + esc(o.o) + "<br><small>" + esc(o.rp || "") +
       (o.rp && o.rc ? " · " : "") + esc(o.rc || "") + "</small></td>" +
@@ -1630,7 +1823,8 @@ function imprimirInforme(){
     '<div class="sub">Cali, Valle del Cauca y nacional · datos.gov.co, SECOP I y SECOP II</div>' +
     '<div class="sello">Recolección del ' + esc(selloLargo(D.generado)) + "</div>" +
     '<div class="aplicados"><b>Lo que muestra este informe:</b> ' + esc(textoFiltros()) +
-    "<br>" + resumen(v).replace(/<[^>]+>/g, "") + "</div>" + mapas +
+    "<br>" + resumen(v).replace(/<[^>]+>/g, "") +
+    (avisoSeccionesVacias(v) ? "<br>" + avisoSeccionesVacias(v) : "") + "</div>" + mapas +
     "<table><thead><tr><th>Entidad</th><th>Objeto y números</th><th>Estado</th>" +
     "<th>Valor</th><th>Contratista</th></tr></thead><tbody>" + cuerpo + "</tbody></table>";
   window.print();

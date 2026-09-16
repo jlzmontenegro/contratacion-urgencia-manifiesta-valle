@@ -757,6 +757,53 @@ elegidos**. Marcar no repinta la lista, solo el resumen y la tabla, o las casill
 el cursor. Se llamaba *Entidad contratante* y se renombró porque se confundía con el filtro
 *Entidad*, que es otra cosa: uno es el nivel, el otro la entidad concreta.
 
+**Con VARIOS niveles elegidos, la tabla, el CSV y el PDF salen en SECCIONES** (16-sep-2026,
+a petición del usuario). Una sección por nivel de gobierno, con su banda, su cuenta de
+operaciones, cuántas entidades tiene y cuánto lleva contratado.
+
+**Con un solo nivel NO hay secciones, y con ninguno tampoco.** Con uno, la tabla entera ya es
+ese nivel y una banda que lo repite es ruido; con ninguno serían los seis grupos de golpe, que
+es justo la vista sin filtrar. El umbral es `nivelesElegidos().length > 1`.
+
+**El orden de las secciones es el de `D.grupos`, no el de lo que suma cada una ni el de las
+casillas marcadas.** Si el orden cambiara con los datos, el informe de un lunes y el del
+siguiente no se podrían comparar. Y por lo mismo **`textoFiltros()` enumera los niveles en ese
+mismo orden**: la cabecera del PDF los listaba como se habían marcado mientras el cuerpo los
+presentaba en el orden canónico, y el lector cree que falta uno o que sobra.
+
+**La sección no reemplaza a la agrupación por entidad, la contiene.** Dentro de cada sección se
+conserva el orden elegido y, si está marcado *agrupar por entidad*, sus bandas. Por eso
+`porSeccion()` parte la lista ya ordenada y llama a `agrupar()` dentro de cada trozo, en vez de
+agrupar primero. Las secciones salen **también sin agrupar por entidad**: partir por nivel es lo
+que se pidió y no depende de la otra opción.
+
+**La banda de sección pesa más que la de entidad, y por eso el fondo es `--acento-tinta` y no
+`--acento`.** Medido: blanco sobre el verde de marca `#56A800` da **3,0:1** y el título de la
+banda son 14px —no cuenta como texto grande—, así que no llega a AA. Sobre el verde oscurecido
+da **5,1:1**. En el teléfono la sección conserva el fondo macizo: es lo único que la distingue
+del encabezado de una entidad cuando todo se apila en una columna.
+
+**Una sección partida por la paginación lo dice** —*«viene de la página anterior»*—, igual que
+la banda de entidad. Sus cuentas salen de la vista ENTERA y no de la página: si contaran lo
+visible, no cuadrarían con las filas que el lector tiene delante en cuanto pasara de página.
+
+**Un nivel elegido que se queda sin filas NO desaparece en silencio, y el aviso distingue DOS
+casos.** El lector marcó cinco casillas y ve cuatro secciones: hay que decir por qué. Y no es lo
+mismo *«está vigilado y no ha contratado nada del sismo»* —eso es un hallazgo, y la Gobernación
+del Valle estuvo meses así— que *«sí tiene, pero los demás filtros no dejan pasar ninguna»*, que
+es consecuencia de lo que el lector acaba de pedir. Presentarlos igual convierte un hallazgo en
+ruido y un filtro en una acusación. El aviso va en pantalla **y en el PDF**.
+
+**En el CSV las secciones son una fila de encabezado por nivel, y la columna `Grupo` se
+conserva en cada fila.** Así el archivo se puede seguir filtrando y tabular dinámicamente pese
+a los separadores —quien quiera la tabla plana borra las filas de encabezado—, y quien lo lea a
+ojo ve las mismas secciones que vio en el tablero. La fila de encabezado se rellena hasta las
+17 columnas para que el archivo siga siendo rectangular.
+
+**En el PDF #impresion tr.seccion-papel lleva `break-after:avoid`**, o el encabezado de una
+sección se queda solo al pie de una hoja con sus filas en la siguiente, que es el único modo en
+que una sección puede mentir sobre lo que contiene.
+
 **En el PDF los enlaces van como `<a href>` de verdad.** Al imprimir a PDF el navegador conserva
 el hipervínculo y el botón queda pulsable dentro del archivo; escritos como texto, habría que
 copiar la URL a mano. El informe lleva además las tres fechas —firma, inicio y terminación— que
