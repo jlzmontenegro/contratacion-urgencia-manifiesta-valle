@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-09-16 18:37  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-09-17 07:34  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -10,8 +10,8 @@
 | Valor de esos contratos | $ 50.513.900.206 |
 | Procesos relacionados (alta + media) | 429 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 959 |
-| Modificaciones detectadas | 2069 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 27330 |
 
 ### Desglose por nivel de gobierno
@@ -106,116 +106,6 @@ _Se revisaron 325 registros de contratacion de estas dos entidades en la ventana
 | HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E | 1 | $ 1.150.889.534 |
 | ALCALDIA DE ALCALA | 6 | $ 1.018.784.465 |
 | MUNICIPIO DE BUGALAGRANDE | 9 | $ 919.920.512 |
-
-## Procesos nuevos (50 relacionados de 959 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-09-15 | MUNICIPIO DE PEREIRA- OFICIAL | ADQUISICION DE  TEJAS PARA LA ATENCIÓN DE LAS CUBIERTAS DE LAS VIVIENDAS CARACTERIZADAS Y PRIORIZADAS QUE RESU | $ 6.300.000.000 | Contratación directa | Alta |
-| 2026-09-15 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | ALQUILER DE MAQUINARIA Y EQUIPOS PARA REHABILITACIÓN, RECOLECCION DE ESCOMBROS, TRANSPORTE Y ATENCION DEL SISM | $ 1.300.000.000 | Contratación directa | Alta |
-| 2026-09-14 | CORPORACION AUTONOMA REGIONAL DE RISARALDA | ADECUACIÓN, REHABILITACIÓN Y PUESTA EN FUNCIONAMIENTO DE LAS SEDES ADMINISTRATIVAS PROPIEDAD DE LA CARDER, COM | $ 722.210.684 | Contratación directa | Alta |
-| 2026-09-10 | Desarrollo Institucional - Alcaldía de Tuluá | REALIZAR LAS OBRAS DE ADECUACIÓN Y REPARACIÓN DE DAÑOS NO ESTRUCTURALES, CUBIERTAS Y ACABADOS EN LAS DIFERENTE | $ 470.980.530 | Contratación directa | Alta |
-| 2026-09-15 | MUNICIPIO DE HISPANIA | CONTRATO DE OBRA PÚBLICA PARA LA EJECUCIÓN DE ACTIVIDADES DE MANO DE OBRA CALIFICADA Y NO CALIFICADA, CON EL F | $ 120.000.000 | Contratación directa | Alta |
-| 2026-09-11 | Secretaría de Hábitat e Infraestructura - Alcaldía de Tuluá | PRESTACIÓN DE SERVICIOS PROFESIONALES DE CONSULTORÍA Y ASESORÍA TÉCNICA PARA LA REALIZACIÓN DE ESTUDIOS Y EVAL | $ 100.000.000 | Contratación directa | Alta |
-| 2026-09-15 | MUNICIPIO DE ZARZAL | PRESTAR EL SERVICIO DE ALQUILER Y DISPONIBILIDAD DE MAQUINARIA, INCLUYENDO SU OPERACIÓN Y MOVILIZACIÓN CUANDO  | $ 79.730.000 | Contratación directa | Alta |
-| 2026-09-15 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | ALQUILER DE CARPAS PARA LA UNIDAD DE ALOJAMIENTO TEMPORAL DE LAS PERSONAS DAMNIFICADAS POR EL SISMO DE MAGNITU | $ 33.040.000 | Contratación directa | Alta |
-| 2026-09-09 | VALLECAUCANA DE AGUAS S.A. E.S.P | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA APOYAR Y FORTALECER EL MANEJO EMPRESARIAL DE LOS SERVICIOS DE ACUED | $ 25.410.000 | Contratación directa | Media |
-| 2026-09-15 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICA Y ADMINISTRATIVAMENTE EN LAS INSPECCI | $ 21.000.000 | Contratación directa | Alta |
-| 2026-09-11 | MUNICIPIO DE CARTAGO | PRESTACIÓN DE SERVICIOS PROFESIONALES COMO INGENIERA CIVIL PARA BRINDAR APOYO A LAS DIFERENTES FUNCIONES Y COM | $ 21.000.000 | Contratación directa | Media |
-| 2026-09-14 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 19.800.000 | Contratación directa | Alta |
-| 2026-09-14 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 19.800.000 | Contratación directa | Alta |
-| 2026-09-14 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 19.800.000 | Contratación directa | Alta |
-| 2026-09-14 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 19.800.000 | Contratación directa | Alta |
-| 2026-09-14 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 19.800.000 | Contratación directa | Alta |
-| 2026-09-14 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 19.800.000 | Contratación directa | Alta |
-| 2026-09-15 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 19.800.000 | Contratación directa | Alta |
-| 2026-09-09 | VALLECAUCANA DE AGUAS S.A. E.S.P | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA APOYAR Y FORTALECER EL MANEJO EMPRESARIAL DE LOS SERVICIOS DE ACUED | $ 18.694.500 | Contratación directa | Media |
-| 2026-09-10 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES ESPECIALIZADOS EN LA SUBSECRETARÍA DE PLANEACIÓN Y CALIDAD EDUCATIVA, REALIZAN | $ 15.000.000 | Contratación directa | Alta |
-| 2026-09-11 | VALLECAUCANA DE AGUAS S.A. E.S.P | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA APOYAR Y FORTALECER EL MANEJO EMPRESARIAL DE LOS SERVICIOS DE ACUED | $ 14.955.600 | Contratación directa | Media |
-| 2026-09-15 | MUNICIPIO DE PRADERA | PRESTACIÓN DE SERVICIOS APOYO A LA GESTIÓN INSTITUCIONAL EN EL FORTALECIMIENTO DE LAS LINEAS DE PREVENCION, RE | $ 14.300.000 | Contratación directa | Media |
-| 2026-09-14 | INSTITUCIÓN EDUCATIVA BOYACÁ | No definido | $ 13.000.000 | Contratación régimen especial | Alta |
-| 2026-09-15 | INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE PALMIRA | PRESTACION DE SERVICIOS PROFESIONALES COMO APOYO A LA DIRECCION OPERATIVA DEPORTIVA EN LAS DIFERENTES ACTIVIDA | $ 12.000.000 | Contratación directa | Media |
-| 2026-09-15 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS PROFESIONALES PARA REALIZAR TALLERES DE LENGUA DE SEÑAS COLOMBIANA, ATENCION A PERSONA | $ 11.400.000 | Contratación directa | Alta |
-| 2026-09-11 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA LA CLASIFICACIÓN DE LOS MATERIALES BIBLIOGRAFICOS FISICOS Y DIGITAL | $ 11.400.000 | Contratación directa | Alta |
-| 2026-09-11 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA LA  EJECUCIÓN DE LOS PLANES, PROGRAMAS Y PROYECTOS CULTURALES Y ART | $ 11.400.000 | Contratación directa | Alta |
-| 2026-09-15 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 9.610.000 | Contratación directa | Media |
-| 2026-09-14 | MUNICIPIO DE SEVILLA | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA REALIZAR ACTIVIDADES DE MEJORAMIENTO DE LA SALUD FORTALECIENDO DE L | $ 8.800.000 | Contratación directa | Media |
-| 2026-09-14 | GOBERNACIÓN DE RISARALDA** | PRESTACIÓN DE SERVICIOS PROFESIONALES COMO INGENIERO CIVIL ESPECIALISTA EN ESTRUCTURAS, PARA REALIZAR VISITAS  | $ 8.730.000 | Contratación directa | Alta |
-| 2026-09-09 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS DE APOYO A LA SUBSECRETARÍA DE PLANEACIÓN Y CALIDAD EDUCATIVA PARA APOYAR LOS PROCESOS ADMIN | $ 8.400.000 | Contratación directa | Alta |
-| 2026-09-14 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS DE APOYO A LA GESTION BRINDANDO ATENCION, INFORMACION Y SERVICIO AL USUARIO Y APOYO EN | $ 8.400.000 | Contratación directa | Alta |
-| 2026-09-14 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTION ACOMPAÑANDO EN LOS PROYECTOS CULTURALES Y ARTÍSTICOS ADELANTADOS | $ 8.400.000 | Contratación directa | Alta |
-| 2026-09-14 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | PRESTAR SUS SERVICIOS PROFESIONALES BRINDANDO APOYO EN LA OFICINA DE ATENCION Y PREVENCION DE DESASTRES DE LA  | $ 7.426.300 | Contratación directa | Media |
-| 2026-09-15 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | PRESTAR SUS SERVICIOS PROFESIONALES BRINDANDO APOYO EN LA OFICINA DE ATENCION Y PREVENCION DE DESASTRES DE LA  | $ 7.426.300 | Contratación directa | Media |
-| 2026-09-11 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN EN LOS PROCESOS DE LA OFICINA DE ESCENARIOS CULTURALES INCLUYEND | $ 7.200.000 | Contratación directa | Alta |
-| 2026-09-15 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | PRESTAR SUS SERVICIOS COMO TECNOLOGO APOYANDO LA GESTION EN LOS PROCESOS MISIONALES, ADMINISTRATIVOS U OPERATI | $ 5.304.500 | Contratación directa | Media |
-| 2026-09-14 | MUNICIPIO DE SEVILLA | PRESTAR SERVICIOS PROFESIONALES PARA REALIZAR LA EVALUACIÓN DE EDIFICACIONES E INFRAESTRUCTURA AFECTADA POR EL | $ 5.000.000 | Contratación directa | Alta |
-| 2026-09-14 | MUNICIPIO DE SEVILLA | PRESTAR SERVICIOS PROFESIONALES PARA REALIZAR LA EVALUACIÓN DE EDIFICACIONES E INFRAESTRUCTURA AFECTADA POR EL | $ 5.000.000 | Contratación directa | Alta |
-| 2026-09-09 | VALLECAUCANA DE AGUAS S.A. E.S.P | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA APOYAR Y FORTALECER EL MANEJO EMPRESARIAL DE LOS SERVICIOS DE ACUED | $ 4.985.200 | Contratación directa | Media |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| procesos | CO1.REQ.11035772 | estado_del_procedimiento | Borrador | Publicado |
-| procesos | CO1.REQ.11035772 | fase |  | Manifestación de interés (Menor Cuantía) |
-| procesos | CO1.REQ.11035772 | estado_resumen | No Definido | Manifestación de interés (Menor Cuantía) |
-| procesos | CO1.REQ.11014856 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11014856 | nombre_del_proveedor | No Definido | SAMARITANOS DE LA CALLE |
-| procesos | CO1.REQ.11032727 | nombre_del_proveedor | RED EMPRESARIAL DE SERVICIOS S.A. | No Definido |
-| procesos | CO1.REQ.10928936 | valor_total_adjudicacion | 0 | 1409316232 |
-| procesos | CO1.REQ.10928936 | adjudicado | No | Si |
-| procesos | CO1.REQ.10928936 | nombre_del_proveedor | No Definido | TELCOBRAS SAS |
-| procesos | CO1.REQ.10968136 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.10913995 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11005436 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11034030 | estado_del_procedimiento | Borrador | Publicado |
-| procesos | CO1.REQ.11034030 | fase |  | Manifestación de interés (Menor Cuantía) |
-| procesos | CO1.REQ.11034030 | estado_resumen | No Definido | Manifestación de interés (Menor Cuantía) |
-| procesos | CO1.REQ.10859357 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11035837 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11035837 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11031829 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11031829 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11034624 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11034624 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11031581 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11031581 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11027496 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.10964977 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.10947325 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11035590 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11035590 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11034200 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11034200 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11034200 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11031941 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11031941 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11030489 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11030489 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11035411 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11035411 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11031980 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11031980 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.10962837 | nombre_del_proveedor | RAQUEL MORALES MEDINA | No Definido |
-| procesos | CO1.REQ.10945202 | nombre_del_proveedor | CATALINA GARCIA VARELA | No Definido |
-| procesos | CO1.REQ.10826878 | nombre_del_proveedor | DISEÑOS Y CONFECCIONES GUIMAR S.A.S. | No Definido |
-| procesos | CO1.REQ.10891436 | nombre_del_proveedor | MAGALY CAÑON BARANDICA | No Definido |
-| procesos | CO1.REQ.10913766 | nombre_del_proveedor | LILIAM  MERCEDES ERASO ROSERO | No Definido |
-| procesos | CO1.REQ.10849149 | nombre_del_proveedor | ASOCIACION NACIONAL DE FUTUROS AGROINDUS | No Definido |
-| procesos | CO1.REQ.10978811 | nombre_del_proveedor | NILSON MINOTA MARTINEZ | No Definido |
-| procesos | CO1.REQ.11005417 | nombre_del_proveedor | DAVID ALEJANDRO ROJAS RIVERA | No Definido |
-| procesos | CO1.REQ.10988412 | nombre_del_proveedor | LUCELLY PARDO MUÑOZ | No Definido |
-| procesos | CO1.REQ.10914279 | nombre_del_proveedor | OSCAR ARLEY BUENO RENTERIA | No Definido |
-| procesos | CO1.REQ.10996937 | nombre_del_proveedor | SOSTING INGENIERIA SAS | No Definido |
-| procesos | CO1.REQ.10949789 | nombre_del_proveedor | CARLOS EDUARDO ISAZA VALENCIA | No Definido |
-| procesos | CO1.REQ.11034733 | estado_del_procedimiento | Borrador | Publicado |
-| procesos | CO1.REQ.11034733 | nombre_del_proveedor | MILCIADES ROJAS OSPINA | No Definido |
-| procesos | CO1.REQ.11034733 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11034733 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.10916684 | nombre_del_proveedor | William Echeverry Trejos | No Definido |
-| procesos | CO1.REQ.10910690 | nombre_del_proveedor | JANETH PATRICIA GOMEZ BEJARANO | No Definido |
-| procesos | CO1.REQ.10976495 | nombre_del_proveedor | VALENTINA MESA LOZANO | No Definido |
-| procesos | CO1.REQ.10976900 | nombre_del_proveedor | VICTORIA EUGENIA SAA MONTILLA | No Definido |
 
 ## Alertas
 
