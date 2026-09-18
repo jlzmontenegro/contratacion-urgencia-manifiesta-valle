@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-09-17 18:29  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-09-18 07:12  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -8,11 +8,11 @@
 |---|---|
 | Contratos relacionados (alta + media) | 170 |
 | Valor de esos contratos | $ 54.728.007.026 |
-| Procesos relacionados (alta + media) | 429 |
+| Procesos relacionados (alta + media) | 432 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 0 |
-| Registros revisados en total | 27789 |
+| Procesos nuevos en esta ejecucion | 266 |
+| Modificaciones detectadas | 225 |
+| Registros revisados en total | 28055 |
 
 ### Desglose por nivel de gobierno
 
@@ -20,31 +20,31 @@
 |---|---:|---:|---:|
 | Alcaldía de Cali | 7 | $ 9.138.056.400 | 138 |
 | Gobernación del Valle | 5 | $ 3.566.177.995 | 15 |
-| Otras entidades del Valle | 146 | $ 38.567.676.546 | 228 |
+| Otras entidades del Valle | 146 | $ 38.567.676.546 | 231 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 2637 | $ 160.401.589.086 | 2172 |
-| Gobernación del Valle | 1996 | $ 65.835.213.810 | 1828 |
-| Descentralizadas de Cali | 102 | $ 12.826.967.632 | 792 |
-| Descentralizadas de la Gobernación | 1441 | $ 37.387.652.085 | 1906 |
-| UNGRD | 2 | $ 57.866.667 | 321 |
+| Alcaldía de Cali | 2637 | $ 160.401.589.086 | 2196 |
+| Gobernación del Valle | 1996 | $ 65.835.213.810 | 1881 |
+| Descentralizadas de Cali | 102 | $ 12.826.967.632 | 797 |
+| Descentralizadas de la Gobernación | 1441 | $ 37.387.652.085 | 1964 |
+| UNGRD | 2 | $ 57.866.667 | 328 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 160 contratos ($ 27.073.770.230) y 191 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 125 contratos ($ 115.705.380.943) y 210 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 160 contratos ($ 27.073.770.230) y 195 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 125 contratos ($ 115.705.380.943) y 213 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 98** (50 que suman en los indicadores, por $ 2.453.504.876).
+- **Relacionados con el sismo: 104** (53 que suman en los indicadores, por $ 2.473.379.876).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -64,6 +64,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-08-24 | CHOCÓ - ALCALDÍA MUNICIPIO DE RIO QUITO | PRESTACIoN DE SERVICIOS DE APOYO LOGiSTICO PARA LA ATENCIoN Y MITIGACIoN DE LOS EFECTOS GENERADOS POR EL SISMO | $ 113.958.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-13 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE EL CAIRO | TRANSFERENCIA DE LOS RECURSOS DISPONIBLES POR CONCEPTO DE SOBRETASA BOMBERIL AL BENEMeRITO CUERPO DE BOMBEROS  | $ 108.306.058 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-19 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE BOLÍVAR | AUNAR ESFUERZOS ENTRE EL MUNICIPIO DE BOLiVAR VALLE DEL CAUCA Y LA JUNTA DE ACCIoN COMUNAL DEL CORREGIMIENTO D | $ 97.074.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Media |
+| 2026-09-15 | ESCUELA NACIONAL DEL DEPORTE | SUMINISTRO E INSTALACIoN DE LOS ELEMENTOS DE CARPINTERiA EN VIDRIO TEMPLADO; ALUMINIO Y/O ACERO AFECTADOS POR  | $ 96.767.944 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 | 2026-09-15 | RISARALDA - CÁMARA DE COMERCIO DE PEREIRA | OBJETO / JUSTIFICACIoN SOLICITUD PARA LA ADQUISICIoN; PARAMETRIZACIoN; PUBLICACIoN; PUESTA EN FUNCIONAMIENTO Y | $ 90.000.000 | Régimen Especial · No Definido | Alta |
 | 2026-08-24 | RISARALDA - CÁMARA DE COMERCIO DE PEREIRA | SERVICIO DE ALIMENTACIoN IMPLEMENTADO TRAS EL SISMO DEL 10 DE AGOSTO FUE VITAL PARA GARANTIZAR NUESTRA CONTINU | $ 85.905.000 | Régimen Especial · No Definido | Alta |
 | 2026-09-01 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE EL CAIRO | SUMINISTRO DE COMBUSTIBLES; ACEITES; LUBRICANTES Y DEMaS PRODUCTOS RELACIONADOS PARA EL PARQUE AUTOMOTOR; LA M | $ 80.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
@@ -76,16 +77,15 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-09-10 | RISARALDA - ALCALDÍA MUNICIPIO DE MISTRATÓ | SUMINISTRO DE AYUDA HUMANITARIA A TRAVeS DE KITS PARA LA ATENCIoN DE LAS FAMILIAS VULNERABLES Y EN CONDICIoN D | $ 52.774.250 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-09-10 | RISARALDA - ALCALDÍA MUNICIPIO DE QUINCHIA | PRESTAR AL MUNICIPIO DE QUINCHiA; LOS SERVICIOS DE APOYO A LA GESTIoN EN LA SECRETARiA DE GOBIERNO Y SERVICIOS | $ 50.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-09-09 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE RIOFRÍO | SUMINISTRO E INSTALACIoN DE REPUESTOS PARA VOLQUETA INTERNACIONAL 2012  PLACA OOI 277; RETROEXCAVADORA CATERPI | $ 48.997.393 | Contratación Mínima Cuantía · No Definido | Media |
-| 2026-09-04 | RISARALDA - CÁMARA DE COMERCIO DE PEREIRA | SOLICITUD DE SERVICIO 1. DESCRIPCIoN DE LA NECESIDAD EN EL MARCO DE LA ATENCIoN DE LA CONTINGENCIA GENERADA PO | $ 43.375.500 | Régimen Especial · No Definido | Alta |
-| 2026-09-05 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE EL CAIRO | SUMINISTRO DE REPUESTOS PARA LA MAQUINARIA AMARILLA Y EL PARQUE AUTOMOTOR DE PROPIEDAD DEL MUNICIPIO DE EL CAI | $ 40.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
+| 2026-09-15 | RISARALDA - CÁMARA DE COMERCIO DE PEREIRA | SOLICITUD DE SERVICIO SE REQUIERE CONTRATAR EL SERVICIO DE SEGURIDAD Y VIGILANCIA DURANTE EL MES DE SEPTIEMBRE | $ 45.000.000 | Régimen Especial · No Definido | Alta |
 
-_No se listan 75 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
+_No se listan 76 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
 
 ## UNGRD y FNGRD · NIT 900.478.966-6 y 900.978.341
 
 La UNGRD y el FNGRD no registran todavia contratacion relacionada con el sismo, ni en SECOP I ni en SECOP II.
 
-_Se revisaron 325 registros de contratacion de estas dos entidades en la ventana; los que no aluden al sismo no se listan. Quedan en los CSV._
+_Se revisaron 332 registros de contratacion de estas dos entidades en la ventana; los que no aluden al sismo no se listan. Quedan en los CSV._
 
 ## Contratos por entidad
 
@@ -106,6 +106,83 @@ _Se revisaron 325 registros de contratacion de estas dos entidades en la ventana
 | HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E | 1 | $ 1.150.889.534 |
 | ALCALDIA DE ALCALA | 6 | $ 1.018.784.465 |
 | MUNICIPIO DE BUGALAGRANDE | 9 | $ 919.920.512 |
+
+## Procesos nuevos (7 relacionados de 266 publicados)
+
+| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
+|---|---|---|---:|---|---|
+| 2026-09-16 | EMAVI | MANTENIMIENTO, ADECUACIÓN Y REMODELACIÓN CUBIERTA E INFRAESTRUCTURA DEL CAMPO DE PARADAS DE LA EMAVI, DE ACUER | $ 1.300.000.000 | Selección Abreviada de Menor Cuantía | Media |
+| 2026-09-16 | ALCALDIA MUNICIPAL DE CHINCHINA | CONTRATAR EL SUMINISTRO DE MATERIALES DE CONSTRUCCIÓN, HERRAMIENTAS DE FERRETERÍA Y ELEMENTOS COMPLEMENTARIOS  | $ 300.000.000 | Contratación directa | Alta |
+| 2026-09-16 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | DISPOSICIÓN FINAL DE LOS RESIDUOS DE CONSTRUCCIÓN Y DEMOLICIÓN RCD GENERADOS POR EL SISMO DEL 10 DE AGOSTO DE  | $ 300.000.000 | Contratación directa | Alta |
+| 2026-09-15 | MUNICIPIO DE DAGUA | PRESTACIÓN DE SERVICIOS DE ALQUILER Y OPERACIÓN DE MAQUINARIA AMARILLA Y EQUIPO PESADO A TODO COSTO, BAJO LA M | $ 168.459.400 | Selección Abreviada de Menor Cuantía | Media |
+| 2026-09-16 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | AUNAR ESFUERZOS TÉCNICOS, ADMINISTRATIVOS, FINANCIEROS Y SOCIALES ENTRE LA EMPRESA DE VIVIENDA DE ANTIOQUIA -  | $ 70.920.211 | Contratación régimen especial | Alta |
+| 2026-09-16 | MUNICIPIO DE PRADERA | ADQUISICIÓN DE PÓLIZA DE SEGURO TODO RIESGO PARA AMPARAR LA MAQUINARIA AMARILLA, LA CAMIONETA CHEVROLET CAPTIV | $ 34.310.394 | Mínima cuantía | Media |
+| 2026-09-16 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 19.800.000 | Contratación directa | Alta |
+
+## Modificaciones sobre registros ya conocidos
+
+| Fuente | Identificador | Campo | Antes | Ahora |
+|---|---|---|---|---|
+| procesos | CO1.REQ.11043467 | estado_del_procedimiento | Borrador | Seleccionado |
+| procesos | CO1.REQ.11018136 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11041954 | estado_del_procedimiento | Borrador | Seleccionado |
+| procesos | CO1.REQ.11038124 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11043025 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.10936541 | valor_total_adjudicacion | 0 | 269299070 |
+| procesos | CO1.REQ.10936541 | adjudicado | No | Si |
+| procesos | CO1.REQ.10936541 | fecha_adjudicacion |  | 2026-09-16T00:00:00.000 |
+| procesos | CO1.REQ.11043543 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11041793 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11042465 | estado_del_procedimiento | Borrador | Seleccionado |
+| procesos | CO1.REQ.11042065 | estado_del_procedimiento | Borrador | Seleccionado |
+| procesos | CO1.REQ.11039139 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11042909 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11041696 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11042622 | estado_del_procedimiento | Borrador | Seleccionado |
+| procesos | CO1.REQ.10928936 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.10928936 | fecha_adjudicacion |  | 2026-09-16T00:00:00.000 |
+| procesos | CO1.REQ.11001435 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11042766 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11042382 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11012497 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11008712 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11003190 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11043178 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11027946 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11043017 | estado_del_procedimiento | Borrador | Seleccionado |
+| procesos | CO1.REQ.11042413 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11043070 | estado_del_procedimiento | Borrador | Seleccionado |
+| procesos | CO1.REQ.11007615 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11005084 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11036479 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.10906038 | valor_total_adjudicacion | 0 | 114954000 |
+| procesos | CO1.REQ.10906038 | adjudicado | No | Si |
+| procesos | CO1.REQ.10906038 | fecha_adjudicacion |  | 2026-09-16T00:00:00.000 |
+| procesos | CO1.REQ.11043286 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11022506 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.10995847 | valor_total_adjudicacion | 0 | 20000000 |
+| procesos | CO1.REQ.10995847 | adjudicado | No | Si |
+| procesos | CO1.REQ.10995847 | fecha_adjudicacion |  | 2026-09-16T00:00:00.000 |
+| procesos | CO1.REQ.10953885 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11042805 | estado_del_procedimiento | Borrador | Publicado |
+| procesos | CO1.REQ.11041341 | estado_del_procedimiento | Publicado | Cancelado |
+| procesos | CO1.REQ.11040723 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11043189 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11039227 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11032974 | estado_del_procedimiento | Borrador | Seleccionado |
+| procesos | CO1.REQ.10969233 | estado_del_procedimiento | Evaluación | Seleccionado |
+| procesos | CO1.REQ.10997614 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.10873806 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.10873806 | fecha_adjudicacion |  | 2026-09-16T00:00:00.000 |
+| procesos | CO1.REQ.10900240 | valor_total_adjudicacion | 0 | 75414000 |
+| procesos | CO1.REQ.10900240 | adjudicado | No | Si |
+| procesos | CO1.REQ.10900240 | nombre_del_proveedor | No Definido | CORPORACION NEBRASK SANDHILL S.A.S |
+| procesos | CO1.REQ.10907591 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.10908202 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11033235 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11043722 | estado_del_procedimiento | Borrador | Publicado |
+| procesos | CO1.REQ.11043722 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11043722 | estado_resumen | No Definido | Presentación de oferta |
 
 ## Alertas
 

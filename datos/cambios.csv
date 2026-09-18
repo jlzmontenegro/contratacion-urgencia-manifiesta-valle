@@ -15739,3 +15739,228 @@
 2026-09-17 13:09:36,contratos,CO1.PCCNTR.9937514,MUNICIPIO DE ANDES,estado_contrato,Aprobado,En ejecución,Contexto
 2026-09-17 13:09:36,contratos,CO1.PCCNTR.9788007,UNGRD,estado_contrato,Aprobado,En ejecución,Contexto
 2026-09-17 13:09:36,contratos,CO1.PCCNTR.9788007,UNGRD,nombre_supervisor,No definido,Paulina Hernandez Aldana,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043467,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11018136,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11041954,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11038124,GOBERNACIÓN VALLE DEL CAUCA -SECRETARIA DE SALUD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043025,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10936541,SANTIAGO DE CALI DISTRITO ESPECIAL- SECRETARIA DE TURISMO,valor_total_adjudicacion,0,269299070,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10936541,SANTIAGO DE CALI DISTRITO ESPECIAL- SECRETARIA DE TURISMO,adjudicado,No,Si,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10936541,SANTIAGO DE CALI DISTRITO ESPECIAL- SECRETARIA DE TURISMO,fecha_adjudicacion,,2026-09-16T00:00:00.000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043543,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11041793,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE VIVIENDA SOCIAL Y HABITAT,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11042465,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11042065,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11039139,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11042909,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11041696,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE VIVIENDA SOCIAL Y HABITAT,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11042622,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10928936,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10928936,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,fecha_adjudicacion,,2026-09-16T00:00:00.000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11001435,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11042766,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11042382,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11012497,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_del_procedimiento,En aprobación,Seleccionado,Media
+2026-09-18 07:12:39,procesos,CO1.REQ.11008712,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11003190,GOBERNACIÓN VALLE DEL CAUCA -SECRETARIA DE SALUD,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043178,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11027946,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043017,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11042413,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE VIVIENDA SOCIAL Y HABITAT,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043070,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11007615,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11005084,DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES,estado_del_procedimiento,Publicado,Evaluación,Media
+2026-09-18 07:12:39,procesos,CO1.REQ.11036479,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10906038,SECRETARIA DE EDUCACION DE CALI,valor_total_adjudicacion,0,114954000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10906038,SECRETARIA DE EDUCACION DE CALI,adjudicado,No,Si,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10906038,SECRETARIA DE EDUCACION DE CALI,fecha_adjudicacion,,2026-09-16T00:00:00.000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043286,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11022506,ALCALDIA LOCAL CONTINENTE EL PAILON DEL DISTRITO DE BUENAVENTURA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10995847,INSTITUTO COLOMBIANO DE BALLET CLÁSICO INCOLBALLET,valor_total_adjudicacion,0,20000000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10995847,INSTITUTO COLOMBIANO DE BALLET CLÁSICO INCOLBALLET,adjudicado,No,Si,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10995847,INSTITUTO COLOMBIANO DE BALLET CLÁSICO INCOLBALLET,fecha_adjudicacion,,2026-09-16T00:00:00.000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10953885,CVC,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11042805,MUNICIPIO DE SAN JUAN BAUTISTA DE GUACARI2,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11041341,HOSPITAL SAN VICENTE FERRER ESE,estado_del_procedimiento,Publicado,Cancelado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11040723,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043189,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE PALMIRA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11039227,PERSONERIA DISTRITAL DE SANTIAGO DE CALI,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11032974,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10969233,CVC,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10997614,CONCEJO MUNICIPAL DE SAN JUAN BAUTISTA DE GUACARI,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10873806,CVC,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10873806,CVC,fecha_adjudicacion,,2026-09-16T00:00:00.000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10900240,UNIAJC,valor_total_adjudicacion,0,75414000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10900240,UNIAJC,adjudicado,No,Si,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10900240,UNIAJC,nombre_del_proveedor,No Definido,CORPORACION NEBRASK SANDHILL S.A.S,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10907591,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10908202,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11033235,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043722,RED DE SALUD DEL ORIENTE ESE,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043722,RED DE SALUD DEL ORIENTE ESE,fase,,Presentación de oferta,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043722,RED DE SALUD DEL ORIENTE ESE,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11018348,UNIDAD CENTRAL DEL VALLE DEL CAUCA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11040685,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043093,CVC,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11042164,ALCALDIA MUNICIPAL DE SAN PEDRO VALLE DEL CAUCA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11042164,ALCALDIA MUNICIPAL DE SAN PEDRO VALLE DEL CAUCA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11017847,CVC,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11032989,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11020224,ALCALDIA MUNICIPAL DE GINEBRA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11033212,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11042390,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11040025,ESTABLECIMIENTO PÚBLICO AMBIENTAL DEL DISTRITO DE BUENAVENTURA,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043181,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11032984,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11032983,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10834746,MUNICIPIO DE YUMBO VALLE,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10877978,EMSIRVA E.S.P. EN LIQUIDACION,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11033066,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043624,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11032980,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11034752,ALCALDIA DE CAICEDONIA,precio_base,20000000,18000000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11039538,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11040921,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,En aprobación,Seleccionado,Media
+2026-09-18 07:12:39,procesos,CO1.REQ.10954826,VALLECAUCANA DE AGUAS S.A. E.S.P,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10908203,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043038,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043715,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10988590,VALLECAUCANA DE AGUAS S.A. E.S.P,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11007117,CVC,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10959264,MUNICIPIO DE CALIMA EL DARIEN VALLE,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10959264,MUNICIPIO DE CALIMA EL DARIEN VALLE,valor_total_adjudicacion,0,40368370,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10959264,MUNICIPIO DE CALIMA EL DARIEN VALLE,adjudicado,No,Si,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10959264,MUNICIPIO DE CALIMA EL DARIEN VALLE,nombre_del_proveedor,No Definido,COMERCIALIZADORA CARDONA ASOCIADOS S.A.S,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10959264,MUNICIPIO DE CALIMA EL DARIEN VALLE,fecha_adjudicacion,,2026-09-16T00:00:00.000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10959264,MUNICIPIO DE CALIMA EL DARIEN VALLE,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11033067,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043709,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE PALMIRA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11041829,ALCALDIA MUNICIPAL DE YOTOCO,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10876084,REGIONAL DE ASEGURAMIENTO EN SALUD No. 4,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11032779,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11042979,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11040374,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,En aprobación,Seleccionado,Media
+2026-09-18 07:12:39,procesos,CO1.REQ.11024542,ALCALDIA MUNICIPAL DE LA VICTORIA VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11042699,UPRES VALLE,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11032982,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11032999,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11040866,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11042748,MUNICIPIO DE BUGALAGRANDE,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11040841,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,En aprobación,Seleccionado,Media
+2026-09-18 07:12:39,procesos,CO1.REQ.11026531,LOCALIDAD ISLA DEL CASCAJAL,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11009818,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10931559,CVC,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043507,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11042842,RED DE SALUD DEL ORIENTE ESE,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10963312,UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11008088,MUNICIPIO DE EL CERRITO.,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11008088,MUNICIPIO DE EL CERRITO.,valor_total_adjudicacion,0,9984800,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11008088,MUNICIPIO DE EL CERRITO.,adjudicado,No,Si,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11008088,MUNICIPIO DE EL CERRITO.,nombre_del_proveedor,No Definido,LA PREVISORA S.A. COMPAÑÍA DE SEGUROS,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11008088,MUNICIPIO DE EL CERRITO.,fecha_adjudicacion,,2026-09-16T00:00:00.000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11008088,MUNICIPIO DE EL CERRITO.,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11042852,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10997032,CVC,estado_del_procedimiento,Publicado,Seleccionado,Media
+2026-09-18 07:12:39,procesos,CO1.REQ.11033231,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11010205,ALCALDIA MUNICIPAL DE SAN PEDRO VALLE DEL CAUCA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10996223,UPRES VALLE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11012251,UNIAJC,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11028978,REGIONAL DE ASEGURAMIENTO EN SALUD No. 4,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11001902,MUNICIPIO DE CARTAGO,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10950113,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,valor_total_adjudicacion,0,402719687,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10950113,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,adjudicado,No,Si,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10950113,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,fecha_adjudicacion,,2026-09-16T00:00:00.000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10988055,CVC,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10789498,MUNICIPIO DE ZARZAL,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10998007,CVC,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11038772,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11008639,INSTITUCION EDUCATIVA GABRIEL GARCIA MARQUEZ//,valor_total_adjudicacion,0,14990000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11008639,INSTITUCION EDUCATIVA GABRIEL GARCIA MARQUEZ//,adjudicado,No,Si,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11008639,INSTITUCION EDUCATIVA GABRIEL GARCIA MARQUEZ//,fecha_adjudicacion,,2026-09-16T00:00:00.000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10908289,MUNICIPIO DE YUMBO VALLE,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043673,MUNICIPIO DE BUGALAGRANDE,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11040827,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,En aprobación,Seleccionado,Media
+2026-09-18 07:12:39,procesos,CO1.REQ.11043621,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE PALMIRA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11019470,CVC,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11033233,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11004793,PERSONERIA MUNICIPAL DE BUGA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11004793,PERSONERIA MUNICIPAL DE BUGA,valor_total_adjudicacion,0,5086400,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11004793,PERSONERIA MUNICIPAL DE BUGA,adjudicado,No,Si,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11004793,PERSONERIA MUNICIPAL DE BUGA,nombre_del_proveedor,No Definido,saz,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11004793,PERSONERIA MUNICIPAL DE BUGA,fecha_adjudicacion,,2026-09-16T00:00:00.000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11004793,PERSONERIA MUNICIPAL DE BUGA,estado_resumen,Fase de ofertas,Adjudicado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11019318,SENA REGIONAL VALLE Grupo Administrativo CTA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10908835,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10971777,CVC,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11032968,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10960325,MUNICIPIO DE ZARZAL,valor_total_adjudicacion,0,53427648,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10960325,MUNICIPIO DE ZARZAL,adjudicado,No,Si,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10960325,MUNICIPIO DE ZARZAL,nombre_del_proveedor,No Definido,MEGA INGENIERIA E INVERSIONES S.A.S. B.I.C.,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043355,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11041945,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10901264,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043190,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11008004,VALLECAUCANA DE AGUAS S.A. E.S.P,estado_del_procedimiento,Publicado,Evaluación,Otra urgencia
+2026-09-18 07:12:39,procesos,CO1.REQ.11006260,CVC,estado_del_procedimiento,Publicado,Evaluación,Media
+2026-09-18 07:12:39,procesos,CO1.REQ.11032990,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11032994,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10958374,HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E,valor_total_adjudicacion,0,1154270000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10958374,HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E,adjudicado,No,Si,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10958374,HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E,fecha_adjudicacion,,2026-09-16T00:00:00.000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11042888,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11032127,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11007319,DIMAR - GRUPO INTENDENCIA REGIONAL PACIFICO,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11032967,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10918163,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11036090,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11039427,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11018067,IMVIYUMBO,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10943544,HIDC,precio_base,686400000,1026400000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10996179,CVC,valor_total_adjudicacion,0,15000000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10996179,CVC,adjudicado,No,Si,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11040763,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11041384,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11032971,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11032975,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11004796,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Abierto,Cancelado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11033216,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11041483,HOSPITAL SAN VICENTE FERRER ESE,estado_del_procedimiento,Publicado,Cancelado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11032970,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043499,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE PALMIRA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11004679,ALCALDIA LOCAL CONTINENTE EL PAILON DEL DISTRITO DE BUENAVENTURA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11032992,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11017437,ESCUELA DE POLICIA SIMON BOLIVAR,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11040764,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10915711,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10935013,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11042860,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10982902,MUNICIPIO DE DAGUA,estado_del_procedimiento,Publicado,Evaluación,Media
+2026-09-18 07:12:39,procesos,CO1.REQ.11032781,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043282,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11038814,ALCALDIA MUNICIPIO DE VIJES,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11014226,FISCALÍA GENERAL DE LA NACIÓN REGIONAL PACÍFICO,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043360,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE PALMIRA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11033211,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11029613,MUNICIPIO DE DAGUA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11029613,MUNICIPIO DE DAGUA,valor_total_adjudicacion,0,52460258,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11029613,MUNICIPIO DE DAGUA,adjudicado,No,Si,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11029613,MUNICIPIO DE DAGUA,nombre_del_proveedor,No Definido,FONPACIFICO,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11029613,MUNICIPIO DE DAGUA,fecha_adjudicacion,,2026-09-16T00:00:00.000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11029613,MUNICIPIO DE DAGUA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10899373,CVC,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10898776,CVC,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11041892,ALCALDIA MUNICIPIO DE DOSQUEBRADAS,estado_del_procedimiento,En aprobación,Seleccionado,Alta
+2026-09-18 07:12:39,procesos,CO1.REQ.11001105,ALCALDIA  MUNICIPIO DE IBAGUE*,valor_total_adjudicacion,0,80000000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11001105,ALCALDIA  MUNICIPIO DE IBAGUE*,adjudicado,No,Si,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11001105,ALCALDIA  MUNICIPIO DE IBAGUE*,fecha_adjudicacion,,2026-09-16T00:00:00.000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.10996900,DEPARTAMENTO DE ANTIOQUIA//,estado_resumen,Fase de ofertas,Adjudicado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11000845,ALCALDIA  MUNICIPIO DE IBAGUE*,valor_total_adjudicacion,0,70000000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11000845,ALCALDIA  MUNICIPIO DE IBAGUE*,adjudicado,No,Si,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11000845,ALCALDIA  MUNICIPIO DE IBAGUE*,fecha_adjudicacion,,2026-09-16T00:00:00.000,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11043351,MUNICIPIO DE HISPANIA,estado_del_procedimiento,Borrador,Seleccionado,Alta
+2026-09-18 07:12:39,procesos,CO1.REQ.11042896,GOBERNACIÓN DE LA GUAJIRA,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11004792,INSTITUTO NACIONAL DE MEDICINA LEGAL Y CIENCIAS FORENSES,estado_del_procedimiento,Evaluación,Cancelado,Contexto
+2026-09-18 07:12:39,procesos,CO1.REQ.11037082,CORPORACION AUTONOMA REGIONAL DE CUNDINAMARCA - CAR.,estado_del_procedimiento,En aprobación,Seleccionado,Alta
+2026-09-18 07:12:39,secop1,26-12-14777386-13702393,VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE RIOFRÍO,nom_razon_social_contratista,EIDER DE JESUS MAVISOY SANCHEZ,EYDER DE JESUS MAVISOY SANCHEZ,Contexto
+2026-09-18 07:12:39,secop1,26-12-14777461-13702433,CASANARE - ALCALDÍA MUNICIPIO DE NUNCHIA,estado_del_proceso,Celebrado,Liquidado,Contexto
+2026-09-18 07:12:39,secop1,26-12-14777461-13702433,CASANARE - ALCALDÍA MUNICIPIO DE NUNCHIA,fecha_liquidacion,,2026-09-03T00:00:00.000,Contexto
