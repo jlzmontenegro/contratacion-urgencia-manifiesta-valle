@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-09-18 18:11  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-09-19 06:54  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -8,11 +8,11 @@
 |---|---|
 | Contratos relacionados (alta + media) | 175 |
 | Valor de esos contratos | $ 56.383.689.386 |
-| Procesos relacionados (alta + media) | 432 |
-| Contratos nuevos en esta ejecucion | 503 |
-| Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 456 |
-| Registros revisados en total | 28558 |
+| Procesos relacionados (alta + media) | 441 |
+| Contratos nuevos en esta ejecucion | 0 |
+| Procesos nuevos en esta ejecucion | 473 |
+| Modificaciones detectadas | 160 |
+| Registros revisados en total | 28993 |
 
 ### Desglose por nivel de gobierno
 
@@ -20,25 +20,25 @@
 |---|---:|---:|---:|
 | Alcaldía de Cali | 7 | $ 10.547.226.400 | 138 |
 | Gobernación del Valle | 5 | $ 3.566.177.995 | 15 |
-| Otras entidades del Valle | 148 | $ 38.772.788.907 | 231 |
+| Otras entidades del Valle | 148 | $ 38.772.788.907 | 237 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 2697 | $ 162.518.812.940 | 2196 |
-| Gobernación del Valle | 2118 | $ 66.830.374.691 | 1881 |
-| Descentralizadas de Cali | 103 | $ 12.991.967.632 | 797 |
-| Descentralizadas de la Gobernación | 1525 | $ 37.763.498.936 | 1964 |
-| UNGRD | 2 | $ 57.866.667 | 328 |
+| Alcaldía de Cali | 2697 | $ 162.518.812.940 | 2234 |
+| Gobernación del Valle | 2118 | $ 66.830.374.691 | 2015 |
+| Descentralizadas de Cali | 103 | $ 12.991.967.632 | 813 |
+| Descentralizadas de la Gobernación | 1525 | $ 37.763.498.936 | 1993 |
+| UNGRD | 2 | $ 57.866.667 | 326 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 166 contratos ($ 33.820.660.230) y 195 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 126 contratos ($ 115.710.880.943) y 213 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 166 contratos ($ 33.820.660.230) y 197 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 126 contratos ($ 115.710.880.943) y 214 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
@@ -85,7 +85,7 @@ _No se listan 76 registros de SECOP I con urgencia manifiesta por otras causas o
 
 La UNGRD y el FNGRD no registran todavia contratacion relacionada con el sismo, ni en SECOP I ni en SECOP II.
 
-_Se revisaron 332 registros de contratacion de estas dos entidades en la ventana; los que no aluden al sismo no se listan. Quedan en los CSV._
+_Se revisaron 330 registros de contratacion de estas dos entidades en la ventana; los que no aluden al sismo no se listan. Quedan en los CSV._
 
 ## Contratos por entidad
 
@@ -107,86 +107,87 @@ _Se revisaron 332 registros de contratacion de estas dos entidades en la ventana
 | ALCALDIA DE ALCALA | 6 | $ 1.018.784.465 |
 | MUNICIPIO DE BUGALAGRANDE | 9 | $ 995.386.883 |
 
-## Contratos nuevos (11 relacionados de 503 publicados)
+## Procesos nuevos (12 relacionados de 473 publicados)
 
-| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
+| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
 |---|---|---|---:|---|---|
-| 2026-09-17 | MUNICIPIO DE PEREIRA- OFICIAL | ADQUISICION DE  TEJAS PARA LA ATENCIÓN DE LAS CUBIERTAS DE LAS VIVIENDAS CARACTERIZADAS Y PRIORIZADAS QUE RESU | $ 4.000.000.000 | SODIMAC COLOMBIA S.A | Alta |
-| 2026-09-17 | MUNICIPIO DE PEREIRA- OFICIAL | ADQUISICION DE  TEJAS PARA LA ATENCIÓN DE LAS CUBIERTAS DE LAS VIVIENDAS CARACTERIZADAS Y PRIORIZADAS QUE RESU | $ 2.300.000.000 | LA GRAN FERRETERIA S.A.S | Alta |
-| 2026-09-17 | ALCALDIA MUNICIPAL DE CHINCHINA | CONTRATAR EL SUMINISTRO DE MATERIALES DE CONSTRUCCIÓN; HERRAMIENTAS DE FERRETERÍA Y ELEMENTOS COMPLEMENTARIOS  | $ 300.000.000 | Marlon Rincon | Alta |
-| 2026-09-17 | MUNICIPIO DE OBANDO VALLE | PRESTACIÓN DE SERVICIOS DE APOYO OPERATIVO Y LOGÍSTICO PARA REALIZAR LAS CAMPAÑAS TURÍSTICAS; LA CANINATA; LOS | $ 123.845.990 | FONDO MIXTO DE CULTURA, DEPORTE Y TURISMO DEL MUNICIPIO DE CARTAGO VALLE DEL CAUCA | Media |
-| 2026-09-17 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | SUMINISTRO E INSTALACIÓN DE LA COCINA INDUSTRIAL PARA EL CORRECTO FUNCIONAMIENTO DE LA ATENCIÓN ALIMENTARIA EN | $ 119.890.000 | ACEROS GRICAR SAS | Alta |
-| 2026-09-16 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 19.800.000 | JUAN MANUEL GIRALDO ARIAS | Alta |
-| 2026-09-16 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES ESPECIALIZADOS EN LA SUBSECRETARIA DE PLANEACION Y CALIDAD EDUCATIVA PARA COOR | $ 15.000.000 | LUISA MARIA GUTIERREZ MARIN | Alta |
-| 2026-09-17 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES ESPECIALIZADOS EN LA SUBSECRETARÍA DE PLANEACIÓN Y CALIDAD EDUCATIVA; REALIZAN | $ 15.000.000 | MANUELA CHALARCA | Alta |
-| 2026-09-17 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES EN LA SUBSECRETARIA DE PLANEACIÓN Y CALIDAD EDUCATIVA; EN EL PROCESO DE FORMAC | $ 11.400.000 | Pablo Alejandro Correa Saldarriaga | Alta |
-| 2026-09-17 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS DE APOYO A LA GESTIÓN PARA EL SOPORTE TÉCNICO Y DEL SUBPORTALWEB; HERRAMIENTAS DE USO  | $ 7.200.000 | OSCAR ALBERTO SANTAMARIA CRUZ | Alta |
-| 2026-09-16 | MUNICIPIO DE LA UNION | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA LA CONSTRUCCIÓN DE LA GEODATA BASE Y EL PROCESAMIENTO DE LA | $ 5.800.000 | JENNY PAOLA AGUIÑO | Alta |
+| 2026-09-16 | Departamento Administrativo de Planeación - Alcaldía de Tuluá | CONTRATO DE PRESTACIÓN DE SERVICIOS PARA EL RETIRO, CARGUE, TRANSPORTE Y DISPOSICIÓN FINAL DE RESIDUOS DE CONS | $ 400.000.000 | Contratación directa | Alta |
+| 2026-09-16 | MUNICIPIO DE OBANDO VALLE | PRESTACIÓN DE SERVICIOS DE APOYO OPERATIVO Y LOGÍSTICO PARA REALIZAR LAS CAMPAÑAS TURÍSTICAS, LA CANINATA, LOS | $ 123.845.990 | Contratación directa | Media |
+| 2026-09-16 | MUNICIPIO DE OBANDO VALLE | PRESTACIÓN DE SERVICIOS DE APOYO OPERATIVO Y LOGÍSTICO PARA REALIZAR LAS CAMPAÑAS TURÍSTICAS, LA CANINATA, LOS | $ 123.845.990 | Contratación directa | Media |
+| 2026-09-16 | INSTITUCION EDUCATIVA GENERAL SANTANDER | SERVICIO DE MANTENIMIENTO Y REPARACIONES LOCATIVAS DE LAS SEDES AFECTADAS POR EL TERREMOTO DE AGOSTO DEL 2026  | $ 15.000.000 | Contratación régimen especial | Alta |
+| 2026-09-16 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES ESPECIALIZADOS EN LA SUBSECRETARÍA DE PLANEACIÓN Y CALIDAD EDUCATIVA, REALIZAN | $ 15.000.000 | Contratación directa | Alta |
+| 2026-09-16 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES EN LA SUBSECRETARIA DE PLANEACIÓN Y CALIDAD EDUCATIVA, EN EL PROCESO DE FORMAC | $ 11.400.000 | Contratación directa | Alta |
+| 2026-09-16 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES EN LA SUBSECRETARIA DE PLANEACIÓN Y CALIDAD EDUCATIVA, EN EL PROCESO DE FORMAC | $ 11.400.000 | Contratación directa | Alta |
+| 2026-09-16 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS PROFESIONALES COMO COMUNICADOR PARA LA PRODUCCIÓN, EDICIÓN Y GESTIÓN DE CONTENIDOS AUD | $ 11.400.000 | Contratación directa | Alta |
+| 2026-09-16 | MUNICIPIO DE CARTAGO | PRESTAR LOS SERVICIOS DE APOYO A LA GESTIÓN PARA APOYAR EN LA IMPLEMENTACIÓN DE ACCIONES ADMINISTRATIVAS Y DE  | $ 10.400.000 | Contratación directa | Media |
+| 2026-09-16 | INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE PALMIRA | PRESTACION DE SERVICIOS PROFESIONALES COMO FISIOTERAPEUTA EN LA DISCIPLINA DEPORTIVA ASIGNADA PARA LA ATENCIÓN | $ 9.000.000 | Contratación directa | Media |
+| 2026-09-16 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS DE APOYO A LA GESTIÓN PARA EL SOPORTE TÉCNICO Y DEL SUBPORTALWEB, HERRAMIENTAS DE USO  | $ 7.200.000 | Contratación directa | Alta |
+| 2026-09-16 | MUNICIPIO DE LA UNION | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA LA CONSTRUCCIÓN DE LA GEODATA BASE Y EL PROCESAMIENTO DE LA | $ 5.800.000 | Contratación directa | Alta |
 
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| contratos | CO1.PCCNTR.9907254 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9918811 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9925389 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9928653 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9936148 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9910055 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9940102 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9938503 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9875906 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9875906 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-11-06T00:00:00.000 |
-| contratos | CO1.PCCNTR.9875906 | dias_adicionados | 0 | 5 |
-| contratos | CO1.PCCNTR.9938246 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9936535 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9934910 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9937535 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9940310 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9932682 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9926803 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
-| contratos | CO1.PCCNTR.9939406 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9937416 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9944982 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9945122 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9918321 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9820255 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9820255 | fecha_de_fin_del_contrato | 2026-09-30T00:00:00.000 | 2026-10-09T00:00:00.000 |
-| contratos | CO1.PCCNTR.9820255 | dias_adicionados | 0 | 9 |
-| contratos | CO1.PCCNTR.9930332 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9940311 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9945199 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9914068 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9893814 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9901351 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9856458 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9856458 | fecha_de_fin_del_contrato | 2026-09-30T00:00:00.000 | 2026-10-31T00:00:00.000 |
-| contratos | CO1.PCCNTR.9856458 | dias_adicionados | 0 | 31 |
-| contratos | CO1.PCCNTR.9863795 | estado_contrato | Modificado | cedido |
-| contratos | CO1.PCCNTR.9863795 | proveedor_adjudicado | PAOLA ANDREA SACOTTO ZUÑIGA | NATALY CEBALLOS SANTOS |
-| contratos | CO1.PCCNTR.9944845 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9938506 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9944696 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9937822 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9911848 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9911848 | valor_pendiente_de_pago | 0 | 15652000 |
-| contratos | CO1.PCCNTR.9930254 | valor_pendiente_de_pago | 0 | 4542000 |
-| contratos | CO1.PCCNTR.9940020 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9932171 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9937917 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9907543 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9943362 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9820439 | valor_del_contrato | 3759980000 | 5169150000 |
-| contratos | CO1.PCCNTR.9820439 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9820439 | nombre_supervisor | No definido | CARLOS ALBERTO PAZ JIMENEZ |
-| contratos | CO1.PCCNTR.9820439 | valor_pendiente_de_pago | 3759980000 | 5169150000 |
-| contratos | CO1.PCCNTR.9945309 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9932036 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9926656 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9921315 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9938177 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9862407 | nombre_supervisor | No definido | LINA MARIA MORENO RESTREPO |
-| contratos | CO1.PCCNTR.9929052 | estado_contrato | Aprobado | En ejecución |
+| procesos | CO1.REQ.11050432 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11050432 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11050432 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.10953157 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.10897065 | valor_total_adjudicacion | 0 | 525651163 |
+| procesos | CO1.REQ.10897065 | adjudicado | No | Si |
+| procesos | CO1.REQ.10897065 | fecha_adjudicacion |  | 2026-09-17T00:00:00.000 |
+| procesos | CO1.REQ.10954821 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.10967811 | valor_total_adjudicacion | 0 | 283862920 |
+| procesos | CO1.REQ.10967811 | adjudicado | No | Si |
+| procesos | CO1.REQ.10967811 | fecha_adjudicacion |  | 2026-09-17T00:00:00.000 |
+| procesos | CO1.REQ.11045938 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.10936541 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.10936541 | nombre_del_proveedor | No Definido | Alvaro Gomez Arias |
+| procesos | CO1.REQ.10992333 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11042363 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.10952231 | fecha_adjudicacion |  | 2026-09-17T00:00:00.000 |
+| procesos | CO1.REQ.11016371 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.10993552 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11016189 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.10906038 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.10906038 | nombre_del_proveedor | No Definido | CONSULTING SDV SAS |
+| procesos | CO1.REQ.10906038 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11016174 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11042721 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11035772 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11014493 | estado_del_procedimiento | Borrador | Seleccionado |
+| procesos | CO1.REQ.11014493 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11014493 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.10930756 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11016328 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11050149 | estado_del_procedimiento | Borrador | Seleccionado |
+| procesos | CO1.REQ.11050149 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11050149 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11048808 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11048808 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11048808 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11048730 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11048730 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11048730 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.10972211 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11051557 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11051557 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11051557 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11049950 | estado_del_procedimiento | En aprobación | Publicado |
+| procesos | CO1.REQ.11049950 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11049950 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11048631 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11048631 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11048631 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11046729 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11048636 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11048636 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11048636 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.10997470 | valor_total_adjudicacion | 0 | 25000000 |
+| procesos | CO1.REQ.10997470 | adjudicado | No | Si |
+| procesos | CO1.REQ.10997470 | fecha_adjudicacion |  | 2026-09-17T00:00:00.000 |
+| procesos | CO1.REQ.11051367 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11051367 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11051367 | estado_resumen | No Definido | Presentación de oferta |
 
 ## Alertas
 
