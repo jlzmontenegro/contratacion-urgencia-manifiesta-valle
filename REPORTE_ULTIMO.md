@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-09-20 18:09  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-09-21 09:01  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -10,8 +10,8 @@
 | Valor de esos contratos | $ 70.443.029.386 |
 | Procesos relacionados (alta + media) | 466 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 344 |
-| Modificaciones detectadas | 127 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 30720 |
 
 ### Desglose por nivel de gobierno
@@ -106,89 +106,6 @@ _Se revisaron 334 registros de contratacion de estas dos entidades en la ventana
 | INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ | 2 | $ 1.440.000.000 |
 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | 1 | $ 1.321.917.014 |
 | HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E | 1 | $ 1.150.889.534 |
-
-## Procesos nuevos (13 relacionados de 344 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-09-18 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO | Prestar servicios de apoyo logístico para el desarrollo y despliegue de las acciones de comunicación instituci | $ 5.000.000.000 | Contratación directa | Alta |
-| 2026-09-19 | MUNICIPIO DE DAGUA | PRESTACIÓN DE SERVICIOS DE ALQUILER Y OPERACIÓN DE MAQUINARIA AMARILLA Y EQUIPO PESADO A TODO COSTO, BAJO LA M | $ 168.459.400 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-09-18 | MUNICIPIO DE OBANDO VALLE | GERENCIA DE RECURSOS, BAJO LA MODALIDAD DE CONTRATO DE MANDATO SIN REPRESENTACIÓN, PARA LA PLANIFICACIÓN, ADMI | $ 67.122.829 | Contratación directa | Media |
-| 2026-09-18 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS PROFESIONALES COMO PROFESIONAL EN FINANZAS Y NEGOCIOS INTERNACIONALES ESPECIALISTA EN GE | $ 28.000.000 | Contratación directa | Media |
-| 2026-09-18 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS PROFESIONALES COMO ECONOMISTA ESPECIALISTA EN FINANZAS EN LA ACTIVIDAD ORIENTAR EN LA FO | $ 28.000.000 | Contratación directa | Media |
-| 2026-09-18 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS PROFESIONALES COMO PROFESIONAL EN CINE Y COMUNICACIÓN DIGITAL EN LA ACTIVIDAD ORIENTAR E | $ 24.000.000 | Contratación directa | Media |
-| 2026-09-18 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 19.220.000 | Contratación directa | Media |
-| 2026-09-18 | INSTITUCION EDUCATIVA ANTONIO NARIÑO | Mantenimiento de infraestructura y reparaciones locativas en las sedes de la Institución, consiste en: Arreglo | $ 19.188.459 | Contratación régimen especial | Media |
-| 2026-09-18 | MUNICIPIO DE OBANDO VALLE | PRESTACIÓN DE SERVICIOS COMO OPERARIO DE MAQUINARIA PESADA RETROEXCAVADORA PARA REALIZAR MANTENIMIENTO CORRECT | $ 16.000.000 | Contratación directa | Media |
-| 2026-09-18 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS DE APOYO A LA GESTIÓN COMO TÉCNICA EN LA ACTIVIDAD ORIENTAR EN LA FORMULACIÓN Y/O ACTUAL | $ 12.000.000 | Contratación directa | Media |
-| 2026-09-18 | INSTITUCIÓN EDUCATIVA TECNICA SAN ANTONIO* | Contratar el servicio de aislamiento de zonas de alto riesgo y mantenimiento correctivo de algunos espacios en | $ 8.500.000 | Contratación régimen especial | Alta |
-| 2026-09-19 | MUNICIPIO DE SEVILLA | PRESTAR SERVICIOS PROFESIONALES PARA REALIZAR LA EVALUACIÓN DE EDIFICACIONES E INFRAESTRUCTURA AFECTADA POR EL | $ 5.000.000 | Contratación directa | Alta |
-| 2026-09-18 | MUNICIPIO DE SEVILLA | PRESTAR SERVICIOS DE APOYO A LAS ACTIVIDADES DE RECOPILACIÓN, REGISTRO, ORGANIZACIÓN Y CONSOLIDACIÓN DE INFORM | $ 2.000.000 | Contratación directa | Alta |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| procesos | CO1.REQ.11060930 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11056184 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11063527 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11064699 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11064298 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11006082 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11037334 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11059655 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11052303 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11064692 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.10949410 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11051440 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11051440 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11051440 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11063532 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11064679 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.10948613 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11054753 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11036448 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11063526 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.10936541 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11063530 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11059961 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11064667 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11064565 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11056220 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11063088 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11059981 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.10943385 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11001780 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11050517 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11041918 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.10909423 | estado_del_procedimiento | Evaluación | Seleccionado |
-| procesos | CO1.REQ.10909423 | nombre_del_proveedor | No Definido | JAVIER GORDILLO GRISALES |
-| procesos | CO1.REQ.11036059 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.10995300 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.10995300 | nombre_del_proveedor | No Definido | FUNDACION AYUDANOS A SEGUIR SONRIENDO |
-| procesos | CO1.REQ.10995300 | estado_resumen | Fase de ofertas | Adjudicado |
-| procesos | CO1.REQ.10901264 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11065412 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11065412 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11065412 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11055133 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11065407 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11038760 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11043285 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11015614 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.10953618 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.10953618 | nombre_del_proveedor | No Definido | FUNDACION SOCIOECONOMICA Y AMBIENTAL ECO |
-| procesos | CO1.REQ.11036254 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.10976674 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.10976674 | nombre_del_proveedor | No Definido | IMCA |
-| procesos | CO1.REQ.10976674 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.10906407 | estado_del_procedimiento | Abierto | Cancelado |
-| procesos | CO1.REQ.11034554 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11034554 | nombre_del_proveedor | No Definido | Lina Jhoanna Palacio Ardila |
-| procesos | CO1.REQ.11034554 | estado_resumen | Fase de ofertas | Adjudicado |
-| procesos | CO1.REQ.10931878 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11055044 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.10895078 | estado_del_procedimiento | Publicado | Seleccionado |
 
 ## Alertas
 
