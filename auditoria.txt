@@ -1,11 +1,11 @@
-Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-09-23T00:00:00
+Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-09-24T00:00:00
 Entidades auditadas: 53  (2 centrales + 2 UNGRD/FNGRD + 12 descentralizadas de Cali + 18 de la Gobernacion + 19 otras del Valle)
 Comprobaciones: 53 entidades x 3 fuentes = 159, cada una por tres caminos independientes
 
 Fuente     Entidad                NIT         API simple  API amplio    CSV   Veredicto
 ------------------------------------------------------------------------------------
-contratos  Alcaldia de Cali       890399011         2802        2847   2847   OK
-contratos  Gobernacion del Valle  890399029         1230        2240   2240   OK
+contratos  Alcaldia de Cali       890399011         2807        2853   2853   OK
+contratos  Gobernacion del Valle  890399029         1231        2247   2247   OK
 contratos  UNGRD / FNGRD          900478966            3           3      3   OK
 contratos  UNGRD / FNGRD          900978341            0           0      0   OK
 contratos  Desc.Cali EMCALI - Empresas Munici890399003            0           0      0   OK
@@ -22,7 +22,7 @@ contratos  Desc.Cali IE Normal Superior Santi800243065            0           0 
 contratos  Desc.Cali Camara de Comercio de Ca890399001            0           0      0   OK
 contratos  Desc.Gob  INDERVALLE - Instituto d805012896         1222        1222   1222   OK
 contratos  Desc.Gob  INFIVALLE - Instituto Fi890308051            3           3      3   OK
-contratos  Desc.Gob  INCIVA       800086201          124         124    124   OK
+contratos  Desc.Gob  INCIVA       800086201          122         122    122   OK
 contratos  Desc.Gob  Universidad del Valle890399010            0           0      0   OK
 contratos  Desc.Gob  Instituto Departamental 890325989           42          42     42   OK
 contratos  Desc.Gob  Biblioteca Departamental890399039           53          53     53   OK
@@ -51,14 +51,14 @@ contratos  Otras     Personeria Municipal de 891900493           53          55 
 contratos  Otras     Personeria Municipal de 901159063            0           0      0   OK
 contratos  Otras     Personeria Municipal de 900085817            0           0      0   OK
 contratos  Otras     Personeria Municipal de 800100524           28          28     28   OK
-contratos  Otras     Concejo Municipal de Jam890399046          683         683    683   OK
+contratos  Otras     Concejo Municipal de Jam890399046          674         674    674   OK
 contratos  Otras     IE Alfonso Lopez Pumarej805000057            0           0      0   OK
 contratos  Otras     IE Paulo VI - Palmira815004730            0           0      0   OK
 contratos  Otras     IE Ginebra La Salle891380108            0           0      0   OK
 contratos  Otras     IE Zaragoza - Cartago800034326            0           0      0   OK
 contratos  Otras     IE Camilo Torres - Dagua805015675            0           0      0   OK
-procesos   Alcaldia de Cali       890399011         2499        2543   2543   OK
-procesos   Gobernacion del Valle  890399029         1149        2161   2161   OK
+procesos   Alcaldia de Cali       890399011         2573        2617   2617   OK
+procesos   Gobernacion del Valle  890399029         1150        2200   2200   OK
 procesos   UNGRD / FNGRD          900478966            2           2      2   OK
 procesos   UNGRD / FNGRD          900978341          329         329    329   OK
 procesos   Desc.Cali EMCALI - Empresas Munici890399003          315         315    315   OK
@@ -76,7 +76,7 @@ procesos   Desc.Cali Camara de Comercio de Ca890399001            0           0 
 procesos   Desc.Gob  INDERVALLE - Instituto d805012896         1230        1230   1230   OK
 procesos   Desc.Gob  INFIVALLE - Instituto Fi890308051            3           3      3   OK
 procesos   Desc.Gob  INCIVA       800086201          116         116    116   OK
-procesos   Desc.Gob  Universidad del Valle890399010          258         258    258   OK
+procesos   Desc.Gob  Universidad del Valle890399010          259         259    259   OK
 procesos   Desc.Gob  Instituto Departamental 890325989           33          33     33   OK
 procesos   Desc.Gob  Biblioteca Departamental890399039           14          14     14   OK
 procesos   Desc.Gob  Vallecaucana de Aguas S.900333452           69          69     69   OK
@@ -125,7 +125,7 @@ secop1     Desc.Cali Instituto Popular de Cul900431928            0           0 
 secop1     Desc.Cali Personeria Distrital de 805003895            0           0      0   OK
 secop1     Desc.Cali Contraloria de Santiago 800217831            0           0      0   OK
 secop1     Desc.Cali IE Normal Superior Santi800243065            0           0      0   OK
-secop1     Desc.Cali Camara de Comercio de Ca890399001           33          33     33   OK
+secop1     Desc.Cali Camara de Comercio de Ca890399001           35          35     35   OK
 secop1     Desc.Gob  INDERVALLE - Instituto d805012896            0           0      0   OK
 secop1     Desc.Gob  INFIVALLE - Instituto Fi890308051            0           0      0   OK
 secop1     Desc.Gob  INCIVA       800086201            0           0      0   OK

@@ -1,36 +1,36 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-09-21 18:59  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-09-22 07:34  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
 | Indicador | Valor |
 |---|---|
-| Contratos relacionados (alta + media) | 184 |
-| Valor de esos contratos | $ 70.443.029.386 |
-| Procesos relacionados (alta + media) | 466 |
-| Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 0 |
-| Registros revisados en total | 30720 |
+| Contratos relacionados (alta + media) | 183 |
+| Valor de esos contratos | $ 69.972.048.856 |
+| Procesos relacionados (alta + media) | 473 |
+| Contratos nuevos en esta ejecucion | 29 |
+| Procesos nuevos en esta ejecucion | 162 |
+| Modificaciones detectadas | 53905 |
+| Registros revisados en total | 30869 |
 
 ### Desglose por nivel de gobierno
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
 | Alcaldía de Cali | 8 | $ 15.547.226.400 | 141 |
-| Gobernación del Valle | 7 | $ 12.182.177.995 | 20 |
-| Otras entidades del Valle | 153 | $ 39.204.728.907 | 252 |
+| Gobernación del Valle | 7 | $ 12.182.177.995 | 27 |
+| Otras entidades del Valle | 152 | $ 38.733.748.377 | 252 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 2839 | $ 174.325.388.266 | 2402 |
-| Gobernación del Valle | 2233 | $ 68.474.941.491 | 2141 |
+| Alcaldía de Cali | 2845 | $ 174.365.115.766 | 2476 |
+| Gobernación del Valle | 2240 | $ 68.580.941.491 | 2173 |
 | Descentralizadas de Cali | 110 | $ 13.429.572.879 | 853 |
-| Descentralizadas de la Gobernación | 1562 | $ 40.899.846.048 | 2037 |
+| Descentralizadas de la Gobernación | 1560 | $ 40.875.046.048 | 2038 |
 | UNGRD | 3 | $ 102.866.667 | 329 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
@@ -44,7 +44,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 113** (61 que suman en los indicadores, por $ 2.533.865.876).
+- **Relacionados con el sismo: 119** (65 que suman en los indicadores, por $ 2.628.638.376).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -76,10 +76,10 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-08-28 | RISARALDA - CÁMARA DE COMERCIO DE PEREIRA | 1. DESCRIPCIoN DE LA NECESIDAD TRAS EL EVENTO SiSMICO REGISTRADO EL PASADO 10 DE AGOSTO; EL TEJIDO COMERCIAL Y | $ 55.186.250 | Régimen Especial · No Definido | Alta |
 | 2026-08-29 | CALDAS - ALCALDÍA MUNICIPIO DE ARANZAZU | ADQUISICIoN Y SUMINISTRO DE MATERIALES DESTINADOS A LA ATENCIoN DE LAS FAMILIAS AFECTADAS POR EL SISMO DE MAGN | $ 53.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-09-10 | RISARALDA - ALCALDÍA MUNICIPIO DE MISTRATÓ | SUMINISTRO DE AYUDA HUMANITARIA A TRAVeS DE KITS PARA LA ATENCIoN DE LAS FAMILIAS VULNERABLES Y EN CONDICIoN D | $ 52.774.250 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
+| 2026-09-21 | RISARALDA - CÁMARA DE COMERCIO DE PEREIRA | OBJETO / JUSTIFICACIoN SOLICITUD PARA LA CONTRATACIoN DEL SERVICIO INTEGRAL DE LOGiSTICA; A CARGO DE TASMANIA  | $ 52.062.500 | Régimen Especial · No Definido | Alta |
 | 2026-09-10 | RISARALDA - ALCALDÍA MUNICIPIO DE QUINCHIA | PRESTAR AL MUNICIPIO DE QUINCHiA; LOS SERVICIOS DE APOYO A LA GESTIoN EN LA SECRETARiA DE GOBIERNO Y SERVICIOS | $ 50.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
-| 2026-09-09 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE RIOFRÍO | SUMINISTRO E INSTALACIoN DE REPUESTOS PARA VOLQUETA INTERNACIONAL 2012  PLACA OOI 277; RETROEXCAVADORA CATERPI | $ 48.997.393 | Contratación Mínima Cuantía · No Definido | Media |
 
-_No se listan 78 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
+_No se listan 83 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
 
 ## UNGRD y FNGRD · NIT 900.478.966-6 y 900.978.341
 
@@ -107,34 +107,113 @@ _Se revisaron 334 registros de contratacion de estas dos entidades en la ventana
 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | 1 | $ 1.321.917.014 |
 | HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E | 1 | $ 1.150.889.534 |
 
+## Contratos nuevos (0 relacionados de 29 publicados)
+
+## Procesos nuevos (7 relacionados de 162 publicados)
+
+| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
+|---|---|---|---:|---|---|
+| 2026-09-19 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS PROFESIONALES COMO PROFESIONAL EN SEGURIDAD Y SALUD MAGISTER EN GESTIÓN DE RIESGOS EN LA | $ 24.000.000 | Contratación directa | Media |
+| 2026-09-20 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS PROFESIONALES COMO INGENIERO AMBIENTAL ESPECIALISTA EN SISTEMAS DE INFORMACIÓN EN LA ACT | $ 24.000.000 | Contratación directa | Media |
+| 2026-09-19 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS PROFESIONALES COMO ARQUITECTO ESPECIALISTA EN GERENCIA DE CONSTRUCCIONES  EN LA ACTIVIDA | $ 20.000.000 | Contratación directa | Media |
+| 2026-09-19 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS PROFESIONALES COMO LICENCIADO EN EDUCACIÓN BÁSICA CON ÉNFASIS EN CIENCIAS NATURALES Y ED | $ 16.000.000 | Contratación directa | Media |
+| 2026-09-19 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS PROFESIONALES COMO ADMINISTRADOR PÚBLICO  EN LA ACTIVIDAD ORIENTAR EN LA FORMULACIÓN Y/O | $ 16.000.000 | Contratación directa | Media |
+| 2026-09-19 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS DE APOYO A LA GESTIÓN COMO TÉCNICO EN ASISTENCIA ADMINISTRATIVA  EN LA ACTIVIDAD ACTUALI | $ 12.000.000 | Contratación directa | Media |
+| 2026-09-19 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS DE APOYO A LA GESTIÓN EN LA ACTIVIDAD ORIENTAR EN LA FORMULACIÓN Y/O ACTUALIZACIÓN DE LO | $ 10.000.000 | Contratación directa | Media |
+
+## Modificaciones sobre registros ya conocidos
+
+| Fuente | Identificador | Campo | Antes | Ahora |
+|---|---|---|---|---|
+| contratos | CO1.PCCNTR.9780906 | valor_del_contrato | 5500000 | 5500000.000000 |
+| contratos | CO1.PCCNTR.9780906 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9780906 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9780906 | valor_pendiente_de_pago | 5500000 | 5500000.000000 |
+| contratos | CO1.PCCNTR.9781347 | valor_del_contrato | 6000000 | 6000000.000000 |
+| contratos | CO1.PCCNTR.9781347 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9781347 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9781347 | valor_pendiente_de_pago | 6000000 | 6000000.000000 |
+| contratos | CO1.PCCNTR.9795853 | valor_del_contrato | 3500000 | 3500000.000000 |
+| contratos | CO1.PCCNTR.9795853 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9795853 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9795853 | valor_pendiente_de_pago | 3500000 | 3500000.000000 |
+| contratos | CO1.PCCNTR.9807400 | valor_del_contrato | 6000000 | 6000000.000000 |
+| contratos | CO1.PCCNTR.9807400 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9807400 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9807400 | valor_pendiente_de_pago | 6000000 | 6000000.000000 |
+| contratos | CO1.PCCNTR.9793771 | valor_del_contrato | 6000000 | 6000000.000000 |
+| contratos | CO1.PCCNTR.9793771 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9793771 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9793771 | valor_pendiente_de_pago | 6000000 | 6000000.000000 |
+| contratos | CO1.PCCNTR.9794369 | valor_del_contrato | 5000000 | 5000000.000000 |
+| contratos | CO1.PCCNTR.9794369 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9794369 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9794369 | valor_pendiente_de_pago | 5000000 | 5000000.000000 |
+| contratos | CO1.PCCNTR.9807939 | valor_del_contrato | 2500000 | 2500000.000000 |
+| contratos | CO1.PCCNTR.9807939 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9807939 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9807939 | valor_pendiente_de_pago | 2500000 | 2500000.000000 |
+| contratos | CO1.PCCNTR.9807965 | valor_del_contrato | 2500000 | 2500000.000000 |
+| contratos | CO1.PCCNTR.9807965 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9807965 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9807965 | valor_pendiente_de_pago | 2500000 | 2500000.000000 |
+| contratos | CO1.PCCNTR.9795587 | valor_del_contrato | 5000000 | 5000000.000000 |
+| contratos | CO1.PCCNTR.9795587 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9795587 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9795587 | valor_pendiente_de_pago | 5000000 | 5000000.000000 |
+| contratos | CO1.PCCNTR.9807617 | valor_del_contrato | 3500000 | 3500000.000000 |
+| contratos | CO1.PCCNTR.9807617 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9807617 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9807617 | valor_pendiente_de_pago | 3500000 | 3500000.000000 |
+| contratos | CO1.PCCNTR.9813984 | valor_del_contrato | 2500000 | 2500000.000000 |
+| contratos | CO1.PCCNTR.9813984 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9813984 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9813984 | valor_pendiente_de_pago | 2500000 | 2500000.000000 |
+| contratos | CO1.PCCNTR.9814301 | valor_del_contrato | 7700000 | 7700000.000000 |
+| contratos | CO1.PCCNTR.9814301 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9814301 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9814301 | valor_pendiente_de_pago | 7700000 | 7700000.000000 |
+| contratos | CO1.PCCNTR.9814418 | valor_del_contrato | 4000000 | 4000000.000000 |
+| contratos | CO1.PCCNTR.9814418 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9814418 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9814418 | valor_pendiente_de_pago | 4000000 | 4000000.000000 |
+| contratos | CO1.PCCNTR.9814500 | valor_del_contrato | 6000000 | 6000000.000000 |
+| contratos | CO1.PCCNTR.9814500 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9814500 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9814500 | valor_pendiente_de_pago | 6000000 | 6000000.000000 |
+| contratos | CO1.PCCNTR.9814532 | valor_del_contrato | 7000000 | 7000000.000000 |
+| contratos | CO1.PCCNTR.9814532 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9814532 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9814532 | valor_pendiente_de_pago | 7000000 | 7000000.000000 |
+
 ## Alertas
 
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI - $ 525.000.000 - RED DE SALUD DEL ORIENTE ESE [SECOP II]
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS - $ 5.169.150.000 - EMPRESA REGIONAL DE SERVICIO PUBLICO DE ASEO DE CANDELARIA [SECOP II]
-- **Contrato de alto valor**: GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA - $ 2.568.577.795 - FUNDACIÓN AVE FÉNIX [SECOP II]
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO - $ 5.000.000.000 - ADD MEDIA S.A.S [SECOP II]
-- **Contrato de alto valor**: GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE VIVIENDA Y HABITAT - $ 8.592.000.000 - COMERCIALIZADORA ORIKUA SAS [SECOP II]
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI - $ 700.000.000 - 2 GROUP SAS [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE - $ 4.050.000.000 - FUNDACION PROSPERIDAD Y FUTURO DEL PACIFICO [SECOP II]
-- **Contrato de alto valor**: CVC - $ 996.015.936 - FUNDACION BALU [SECOP II]
-- **Contrato de alto valor**: Institución Universitaria de Roldanillo - $ 4.284.974.783 - OBRAS CIVILES DE OCCIDENTE S.A.S. [SECOP II]
-- **Contrato de alto valor**: CVC - $ 1.422.879.908 - CORPORACION AMANO NATIVA [SECOP II]
-- **Contrato de alto valor**: HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E - $ 1.150.889.534 - PLANEAMOS SAS [SECOP II]
-- **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 698.878.071 - GG CM [SECOP II]
-- **Contrato de alto valor**: ALCALDIA DE ALCALA - $ 528.784.465 - GRUPO EMPRESARIAL DEL SUR SIGLO XXI S.A.S. E.S.P [SECOP II]
-- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 3.965.080.000 - ACUSTICA INTEGRADA SAS [SECOP II]
-- **Contrato de alto valor**: ALCALDIA MUNICIPAL DE YOTOCO - $ 1.305.627.623 - EMPRESA DE SERVICIO PUBLICO DE ASEO DEL MUNICIPIO DE YOTOCO - VALLE DEL CAUCA S.A.S E.S.P [SECOP II]
-- **Contrato de alto valor**: Secretaría de Hábitat e Infraestructura - Alcaldía de Tuluá - $ 5.199.818.848 - EMPRESAS MUNICIPALES DE TULUA E.S.P. [SECOP II]
-- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 6.976.838.150 - TECH TRANSIT S.A.S. [SECOP II]
-- **Contrato de alto valor**: INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ - $ 1.400.000.000 - CORPORACION ECOPROJECTS [SECOP II]
+- **Contrato de alto valor**: GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA - $ 2.568.577.795 - FUNDACIÓN AVE FÉNIX [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS - $ 5.169.150.000 - EMPRESA REGIONAL DE SERVICIO PUBLICO DE ASEO DE CANDELARIA [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI - $ 525.000.000 - RED DE SALUD DEL ORIENTE ESE [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI - $ 700.000.000 - 2 GROUP SAS [SECOP II]
+- **Contrato de alto valor**: GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE VIVIENDA Y HABITAT - $ 8.592.000.000 - COMERCIALIZADORA ORIKUA SAS [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO - $ 5.000.000.000 - ADD MEDIA S.A.S [SECOP II]
 - **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 1.079.151.183 - PSI SOLUTIONS SAS [SECOP II]
-- **Contrato de alto valor**: UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA - $ 1.321.917.014 - CONSORCIO UES VALLE 2026 [SECOP II]
+- **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 698.878.071 - GG CM [SECOP II]
 - **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 597.455.639 - GG CM [SECOP II]
+- **Contrato de alto valor**: CVC - $ 1.422.879.908 - CORPORACION AMANO NATIVA [SECOP II]
+- **Contrato de alto valor**: UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA - $ 1.321.917.014 - CONSORCIO UES VALLE 2026 [SECOP II]
+- **Contrato de alto valor**: INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ - $ 1.400.000.000 - CORPORACION ECOPROJECTS [SECOP II]
+- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 6.976.838.150 - TECH TRANSIT S.A.S. [SECOP II]
+- **Contrato de alto valor**: CVC - $ 996.015.936 - FUNDACION BALU [SECOP II]
+- **Contrato de alto valor**: Secretaría de Hábitat e Infraestructura - Alcaldía de Tuluá - $ 5.199.818.848 - EMPRESAS MUNICIPALES DE TULUA E.S.P. [SECOP II]
+- **Contrato de alto valor**: ALCALDIA DE ALCALA - $ 528.784.465 - GRUPO EMPRESARIAL DEL SUR SIGLO XXI S.A.S. E.S.P [SECOP II]
+- **Contrato de alto valor**: HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E - $ 1.150.889.534 - PLANEAMOS SAS [SECOP II]
+- **Contrato de alto valor**: Institución Universitaria de Roldanillo - $ 4.284.974.783 - OBRAS CIVILES DE OCCIDENTE S.A.S. [SECOP II]
+- **Contrato de alto valor**: ALCALDIA MUNICIPAL DE YOTOCO - $ 1.305.627.623 - EMPRESA DE SERVICIO PUBLICO DE ASEO DEL MUNICIPIO DE YOTOCO - VALLE DEL CAUCA S.A.S E.S.P [SECOP II]
+- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 3.965.080.000 - ACUSTICA INTEGRADA SAS [SECOP II]
 - **Contrato de alto valor**: GOBERNACIÓN DE RISARALDA** - $ 2.000.000.000 - SIRPAZ [SECOP II]
 - **Contrato de alto valor**: VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE EL CAIRO - $ 720.000.000 - SALUDCAR OPERACIoN COLOMBIA S.A.  SIGLA: SALUDCAR COLOMBIA [SECOP I]
 - **Proveedor con varios contratos**: SERVICIOS Y EMERGENCIAS COLOMBIA  S.A.S: 3 contratos por $ 316.812.224
 - **Proveedor con varios contratos**: RESTAURANTE CGTL SAS BIC: 3 contratos por $ 810.000
-- **Contratos sin proceso publicado**: 130 contratos de relacion alta no tienen proceso visible en el dataset de procesos
+- **Contratos sin proceso publicado**: 129 contratos de relacion alta no tienen proceso visible en el dataset de procesos
 
 ---
 
