@@ -447,7 +447,8 @@
     ],
     "para_resumen": [
       "jlzmontenegro@gmail.com",
-      "estebanoliverosm@gmail.com"
+      "estebanoliverosm@gmail.com",
+      "juancamilorf10@gmail.com"
     ]
   },
   "_nota_token": "Opcional. Un app token de datos.gov.co evita el limite de peticiones anonimas. Se puede poner aqui o en la variable de entorno SOCRATA_APP_TOKEN.",
