@@ -53,7 +53,9 @@ AVISOS = {
         "uno": "contratación nueva relacionada con el sismo",
         "varias": "contrataciones nuevas relacionadas con el sismo",
         "entrada": ("Esto es contratación que ya está dada por atención del sismo del "
-                    "10 de agosto de 2026."),
+                    "10 de agosto de 2026. Cada ficha trae un <b>borrador de copy "
+                    "para Story</b>: son borradores para revisar antes de publicar, "
+                    "no textos aprobados."),
     },
     "revision": {
         "nivel": "Media",
@@ -123,7 +125,48 @@ def esc(s):
             .replace('"', "&quot;"))
 
 
-def ficha(r):
+def bloque_copy(r):
+    """El borrador de Story, dentro de la ficha. Solo en el correo de CONFIRMADAS.
+
+    En el de 'por revisar' no va, y esa es la decision que importa: ese correo
+    trae lo que el clasificador NO pudo juzgar solo. Poner ahi un texto listo
+    para publicar es invitar a publicarlo, y lo dudoso publicado como cierto es
+    el peor resultado posible de todo este monitor.
+
+    Va en monospace y en una caja aparte para que se seleccione de un tiron con
+    el raton. Un boton de copiar seria mejor, pero los clientes de correo no
+    ejecutan JavaScript: no hay forma.
+    """
+    try:
+        import copys
+        s = copys.story(r)
+    except Exception:
+        return ""                      # el correo sale igual; el copy es un extra
+
+    avisos = ""
+    if s["avisos"]:
+        avisos = ('<div style="margin-top:8px;font-size:11.5px;line-height:1.5;'
+                  'color:#8A5A00">'
+                  + "".join("▲ " + esc(a) + "<br>" for a in s["avisos"]) + "</div>")
+    sticker = ""
+    if s["enlace"]:
+        sticker = ('<div style="margin-top:8px;font-size:11px;color:#6B807C;'
+                   'word-break:break-all">Sticker de enlace: '
+                   '<a href="' + esc(s["enlace"]) + '" style="color:#0E5C58">'
+                   + esc(s["enlace"]) + "</a></div>")
+
+    return (
+        '<div style="margin-top:12px;border:1px dashed #B9C8C5;border-radius:3px;'
+        'background:#F7FAF9;padding:11px 12px">'
+        '<div style="font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;'
+        'color:#6B807C;margin-bottom:7px">Borrador para Story · '
+        + str(s["largo"]) + " caracteres</div>"
+        '<div style="font-family:Consolas,monospace;font-size:12.5px;line-height:1.65;'
+        'color:#16211F;white-space:pre-wrap">' + esc(s["texto"]) + "</div>"
+        + avisos + sticker + "</div>")
+
+
+def ficha(r, con_copy=False):
     """Una contratacion, en HTML. Tabla y estilos en linea: los clientes de correo
     no leen hojas de estilo externas y la mitad ignora incluso el <style> del
     documento."""
@@ -169,7 +212,41 @@ def ficha(r):
         '<div style="font-size:14px;line-height:1.5;color:#16211F;margin-bottom:12px">'
         + esc(r.get("objeto")) + "</div>"
         '<table cellpadding="0" cellspacing="0" style="border-collapse:collapse">'
-        + "".join(campos) + "</table>" + boton + "</div>")
+        + "".join(campos) + "</table>" + boton
+        + (bloque_copy(r) if con_copy else "") + "</div>")
+
+
+def resumen_copy(clave, regs):
+    """La Story del conjunto, arriba del todo: es la que se publica primero.
+
+    Solo cuando hay dos o mas y solo en el correo de confirmadas. Con una sola
+    contratacion no hace falta: su propia ficha ya trae el borrador.
+    """
+    if clave != "relacionado":
+        return ""
+    try:
+        import copys
+        s = copys.resumen(regs)
+    except Exception:
+        return ""
+    if not s:
+        return ""
+    avisos = ""
+    if s["avisos"]:
+        avisos = ('<div style="margin-top:8px;font-size:11.5px;line-height:1.5;'
+                  'color:#8A5A00">'
+                  + "".join("▲ " + esc(a) + "<br>" for a in s["avisos"]) + "</div>")
+    return (
+        '<div style="border:1px dashed #B9C8C5;border-radius:3px;background:#F7FAF9;'
+        'padding:11px 12px;margin-bottom:16px">'
+        '<div style="font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;'
+        'color:#6B807C;margin-bottom:7px">Borrador para Story · resumen del día</div>'
+        '<div style="font-family:Consolas,monospace;font-size:12.5px;line-height:1.65;'
+        'color:#16211F;white-space:pre-wrap">' + esc(s["texto"]) + "</div>"
+        + avisos +
+        '<div style="margin-top:8px;font-size:11px;color:#6B807C">Sticker de enlace: '
+        '<a href="' + TABLERO + '" style="color:#0E5C58">el tablero</a></div>'
+        "</div>")
 
 
 def cuerpo_html(clave, regs, generado, nuevas=True):
@@ -203,7 +280,9 @@ def cuerpo_html(clave, regs, generado, nuevas=True):
         '<p style="font-family:Consolas,monospace;font-size:11.5px;color:#6B807C;'
         'margin:0 0 18px">Recolección del ' + esc(generado) + " · suman " + pesos(total)
         + "</p>"
-        + "".join(ficha(r) for r in mostradas) + pie_resto +
+        + resumen_copy(clave, regs)
+        + "".join(ficha(r, con_copy=(clave == "relacionado")) for r in mostradas)
+        + pie_resto +
         '<p style="font-size:12px;color:#6B807C;line-height:1.55;margin-top:22px;'
         'border-top:1px solid #D6DEDC;padding-top:12px">'
         'Monitor de contratación del sismo del 10 de agosto de 2026. '
@@ -219,6 +298,26 @@ def cuerpo_texto(clave, regs, generado, nuevas=True):
     cfg = AVISOS[clave]
     lineas = [rotulo(clave, len(regs), nuevas),
               "Recoleccion del %s" % generado, ""]
+
+    # El texto plano lleva los MISMOS copys. Si no, quien tenga el cliente en
+    # texto -o reenvie el correo a un telefono que lo degrade- estaria leyendo
+    # otro correo, y justamente el que se abre en el telefono es el que se usa
+    # para publicar la Story.
+    con_copy = (clave == "relacionado")
+    if con_copy:
+        try:
+            import copys
+            s = copys.resumen(regs)
+            if s:
+                lineas += ["=" * 66, "BORRADOR PARA STORY - RESUMEN DEL DIA", ""]
+                lineas += s["texto"].splitlines()
+                lineas += ["", "Sticker de enlace: %s" % TABLERO]
+                for a in s["avisos"]:
+                    lineas.append("AVISO: %s" % a)
+                lineas.append("")
+        except Exception:
+            pass
+
     for r in regs[:TOPE_FICHAS]:
         lineas += [
             "-" * 66,
@@ -234,6 +333,19 @@ def cuerpo_texto(clave, regs, generado, nuevas=True):
             "SECOP       : %s" % (r.get("url") or "sin enlace"),
             "",
         ]
+        if con_copy:
+            try:
+                import copys
+                s = copys.story(r)
+                lineas += ["  --- BORRADOR PARA STORY (%d caracteres) ---" % s["largo"]]
+                lineas += ["  " + x for x in s["texto"].splitlines()]
+                if s["enlace"]:
+                    lineas.append("  Sticker de enlace: %s" % s["enlace"])
+                for a in s["avisos"]:
+                    lineas.append("  AVISO: %s" % a)
+                lineas.append("")
+            except Exception:
+                pass
     if len(regs) > TOPE_FICHAS:
         lineas.append("Y %d mas en el tablero: %s" % (len(regs) - TOPE_FICHAS, TABLERO))
     return "\n".join(lineas)

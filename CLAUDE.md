@@ -961,6 +961,60 @@ a avisarse**, que es exactamente la noticia.
 con el cambio a 6:07, 13:07 y 20:07 se revisa tres veces en vez de dos. **No hizo falta tocar
 `correo.py`**: ya funcionaba así.
 
+## Los borradores de copy para Stories (`copys.py`)
+
+**El correo de confirmadas trae listo el texto para publicar** (22-sep-2026, a petición del
+usuario). Cada ficha lleva un borrador de Story, y arriba va uno del conjunto del día cuando
+hay dos o más. **Solo en el correo de `Alta`.** En el de *por revisar* no va, y esa es la
+decisión que importa: ese correo trae lo que el clasificador NO pudo juzgar solo, y poner ahí
+un texto listo para publicar es invitar a publicarlo.
+
+**SE CITA, NO SE PARAFRASEA.** El objeto va tal como lo escribió la entidad, entre comillas y
+recortado en frontera de palabra. Reescribirlo «para que suene mejor» es inventar: lo único que
+hace publicable esto es que se pueda cotejar palabra por palabra contra el SECOP. Cortar a
+mitad de palabra tampoco: una cita partida parece manipulada.
+
+**NI UNA PALABRA DE JUICIO.** Nada de «millonario», «insólito» ni «mientras tanto». Quien firma
+la Story es un diputado, y un adjetivo suyo sobre un contratista con nombre propio es otra
+clase de riesgo. El copy describe; opinar es de quien publica.
+
+**NUNCA se dice «contrató» sobre un proceso abierto.** El nombre que trae un proceso en el
+campo de proveedor no es un adjudicado —de 2.000 procesos del Valle con nombre, 1.965 tienen
+`adjudicado = No`—. En un proceso el copy dice lo único cierto, «Aún sin contrato firmado», y
+el nombre se queda en los avisos con la advertencia de no publicarlo como contratista.
+
+**Los avisos son la mitad del valor.** Van fuera del texto que se pega —el copy se pega en
+Instagram, los avisos no— y dicen lo que hay que saber antes de publicar: que es precio base y
+no lo pagado, que el objeto va recortado, que la contratación no es del Valle, que la entidad
+la publicó dos veces, o que el nombre del proveedor no está adjudicado.
+
+**Las tildes rotas de SECOP I SÍ se reparan, y eso no es parafrasear.** La fuente degrada las
+vocales acentuadas en caja alta: «RECUPERACIoN», «CaMARA», «PuBLICA». Medido el 22-sep-2026
+sobre los 602 registros `Alta`: pasa en **81 objetos (13%)**, 78 de ellos de SECOP I, y la
+secuencia más común es `IoN` con **374 apariciones**. En una Story firmada por un diputado eso
+se lee como un error suyo. La regla es estrecha —solo una vocal minúscula **acorralada entre
+dos mayúsculas**— porque en castellano no hay palabra en caja alta con una vocal minúscula
+legítima en medio. **La ficha del correo sigue mostrando el texto crudo**: es contra lo que se
+coteja.
+
+**El enlace va aparte, como sticker.** En Stories el texto no admite enlaces pulsables. El copy
+termina en «Fuente: SECOP · enlace en el sticker» y la URL se entrega debajo, fuera del bloque
+que se copia.
+
+**El presupuesto de caracteres se mide, no se supone.** 280 es lo que una persona alcanza a
+leer en los dos o tres segundos de una diapositiva. Se arma lo fijo primero —cifra, entidad,
+contratista, fecha, pie—, se mide, y lo que sobra se le da al objeto, que es lo único elástico.
+Si no quedan ni 60 caracteres para el objeto, sale sin cita y el aviso lo dice: mejor sin
+objeto que con un jirón de frase que además cita mal.
+
+**Va en módulo aparte y no dentro de `correo.py`.** `correo.py` se ocupa de entregar y
+`copys.py` de cómo se dice. El día que el resumen del lunes quiera el mismo texto, lo pide y no
+lo reescribe.
+
+**`bloque_copy()` va en try/except a propósito.** Si `copys.py` falla o no está, el correo sale
+igual sin los borradores. El aviso de contratación nueva no puede dejar de enviarse porque un
+extra se rompió.
+
 ## La vigilancia del nivel nacional (`nacional.html`)
 
 **Página aparte, y no una sección de la ligera** (14-sep-2026, a petición del usuario). Son dos
