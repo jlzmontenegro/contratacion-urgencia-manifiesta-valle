@@ -32,6 +32,7 @@ import os
 import smtplib
 import ssl
 import sys
+import unicodedata
 from datetime import datetime
 from email.message import EmailMessage
 
@@ -50,12 +51,21 @@ AVISOS = {
     "relacionado": {
         "nivel": "Alta",
         "para": "para_relacionados",
+        # Este correo cubre SOLO el Valle (decision del usuario, 24-sep-2026). La
+        # lista de grupos vive en config.json > correo > grupos_relacionados, y
+        # vacia o ausente significa "todos", que es como sigue el de revision.
+        "grupos_cfg": "grupos_relacionados",
         "uno": "contratación nueva relacionada con el sismo",
         "varias": "contrataciones nuevas relacionadas con el sismo",
         "entrada": ("Esto es contratación que ya está dada por atención del sismo del "
-                    "10 de agosto de 2026. Cada ficha trae un <b>borrador de copy "
-                    "para Story</b>: son borradores para revisar antes de publicar, "
-                    "no textos aprobados."),
+                    "10 de agosto de 2026, y <b>solo del Valle del Cauca</b>: "
+                    "municipios y alcaldías del Valle, la Gobernación y sus "
+                    "descentralizadas, la Alcaldía de Cali y las suyas, y las demás "
+                    "entidades públicas del departamento. La contratación de otras "
+                    "regiones que también nombra el sismo <b>no entra en este "
+                    "correo</b> y se sigue viendo en el tablero. Cada ficha trae un "
+                    "<b>borrador de copy para Story</b>: son borradores para revisar "
+                    "antes de publicar, no textos aprobados."),
     },
     "revision": {
         "nivel": "Media",
@@ -67,6 +77,38 @@ AVISOS = {
                     "decidir si tienen que ver con la emergencia."),
     },
 }
+
+
+def _sin_tildes(texto):
+    """Mayusculas sin tildes. Los grupos del colector llevan acento -"Alcaldia de
+    Cali", "Gobernacion del Valle"- y compararlos tal cual haria que una tilde de
+    mas o de menos en config.json dejara el correo VACIO sin decir por que, que es
+    la clase de fallo silencioso que este proyecto ya ha pagado varias veces."""
+    s = unicodedata.normalize("NFKD", str(texto or ""))
+    return "".join(c for c in s if not unicodedata.combining(c)).upper().strip()
+
+
+def grupos_permitidos(clave, correo_cfg):
+    """Grupos que entran en ese correo, ya normalizados. Vacio significa TODOS.
+
+    El correo de contratacion confirmada va a tres personas y cubre solo el Valle;
+    el de revision va a una sola y no se filtra, porque quien revisa tiene que ver
+    todo lo que el clasificador no pudo juzgar, venga de donde venga.
+    """
+    llave = AVISOS[clave].get("grupos_cfg")
+    if not llave:
+        return set()
+    return {_sin_tildes(g) for g in ((correo_cfg or {}).get(llave) or [])}
+
+
+def del_alcance(registros, clave, permitidos):
+    """Parte los registros en (los que entran, los que quedan fuera)."""
+    if not permitidos:
+        return list(registros), []
+    dentro, fuera = [], []
+    for r in registros:
+        (dentro if _sin_tildes(r.get("grupo", "")) in permitidos else fuera).append(r)
+    return dentro, fuera
 
 
 def rotulo(clave, n, nuevas=True):
@@ -413,7 +455,12 @@ def enviar_prueba(registros, destinos, generado, solo_a=""):
     """
     hubo = False
     for clave, c in AVISOS.items():
-        muestras = [r for r in registros if r.get("nivel") == c["nivel"]]
+        # El MISMO filtro territorial que el envio de verdad. Si la prueba mostrara
+        # registros que el correo real no manda, estaria mintiendo justo sobre lo
+        # que se quiere comprobar con ella.
+        muestras, _ = del_alcance(
+            [r for r in registros if r.get("nivel") == c["nivel"]],
+            clave, grupos_permitidos(clave, destinos))
         if not muestras:
             print(f"  {clave}: no hay nada en este nivel para mostrar.")
             continue
@@ -519,8 +566,20 @@ def main():
 
     envios = 0
     for clave, c in AVISOS.items():
-        pendientes = [r for r in registros
-                      if r.get("nivel") == c["nivel"] and (r["id"], clave) not in avisados]
+        del_nivel = [r for r in registros if r.get("nivel") == c["nivel"]]
+        dentro, fuera = del_alcance(del_nivel, clave,
+                                   grupos_permitidos(clave, destinos))
+        pendientes = [r for r in dentro if (r["id"], clave) not in avisados]
+
+        # Lo que queda fuera del alcance NO se anota como avisado, porque no se
+        # aviso: es la misma regla de siempre. Tiene una consecuencia que conviene
+        # tener presente: si algun dia se amplia el alcance, todo lo acumulado
+        # saldria de golpe en la primera corrida.
+        fuera_nuevos = [r for r in fuera if (r["id"], clave) not in avisados]
+        if fuera_nuevos:
+            print(f"  {clave}: {len(fuera_nuevos)} registros nuevos quedan fuera "
+                  f"por territorio; este correo es solo del Valle.")
+
         if not pendientes:
             print(f"  {clave}: nada nuevo.")
             continue

@@ -441,6 +441,14 @@
   ],
   "_nota_correo": "A quien avisa correo.py cuando aparece contratacion nueva. Son dos listas a proposito y no una: 'para_relacionados' recibe lo que ya esta dado por del sismo y 'para_revision' recibe lo que hay que leer para decidir. Mezclarlas seria el peor resultado posible, porque lo dudoso acabaria leyendose como confirmado. Las direcciones no son secretas y por eso viven aqui; la contrasena de aplicacion va en Settings > Secrets and variables > Actions, como CORREO_CLAVE, y nunca en este archivo. Con la lista vacia no se envia nada y NO se anota como avisado: en cuanto se llene, la siguiente corrida manda lo acumulado.",
   "correo": {
+    "_nota_grupos_relacionados": "Territorio del correo de contratacion confirmada, que va a las tres personas (decision del usuario, 24-sep-2026): solo el Valle del Cauca. Se filtra por el GRUPO que asigna el colector y no por dep_codigo, porque el grupo ya incorpora el rescate por NIT: hay entidades del Valle -entre ellas tres hospitales departamentales- que publican departamento y ciudad sin diligenciar, y un filtro geografico las dejaria fuera. Quedan fuera 'Fuera del Valle' (otras regiones que nombran el sismo) y 'Nacional para el Valle' (entidades nacionales, que tienen su propia pagina). Medido el 24-sep-2026: de 816 registros Alta entran 306. OJO con 'Otras entidades del Valle': ahi estan los 213 registros de alcaldias y municipios, pero tambien las secretarias de la Alcaldia de Tulua, las camaras de comercio de Tulua y Palmira, instituciones universitarias, INTENALCO, el Concejo de Buga y las Empresas Municipales de Tulua. Recortarlo por el nombre de la entidad seria un error: las secretarias de Tulua son dependencias de una alcaldia del Valle y el nombre no siempre lo dice. Vacio o ausente significa TODOS, que es como sigue el correo de revision.",
+    "grupos_relacionados": [
+      "Alcaldía de Cali",
+      "Descentralizadas de Cali",
+      "Gobernación del Valle",
+      "Descentralizadas de la Gobernación",
+      "Otras entidades del Valle"
+    ],
     "para_relacionados": [
       "jlzmontenegro@gmail.com",
       "estebanoliverosm@gmail.com",

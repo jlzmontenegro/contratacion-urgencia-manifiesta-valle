@@ -1031,6 +1031,39 @@ sin abrir el tablero (entidad, número, proveedor, valor, objeto completo, firma
 y el botón a SECOP). El de `Media` va **solo a quien revisa**. Mezclarlos sería el peor
 resultado posible: lo dudoso acabaría leyéndose como confirmado.
 
+**El correo de confirmadas cubre SOLO el Valle** (24-sep-2026, decisión del usuario, con estas
+palabras: *"el correo que nos llega a los 3 debe ser contratación del Valle solamente"*). Entran
+los cinco grupos del departamento —Alcaldía de Cali y sus descentralizadas, Gobernación y las
+suyas, y *Otras entidades del Valle*—; quedan fuera **`Fuera del Valle`** y **`Nacional para el
+Valle`**, que tiene su propia página. Medido el 24-sep: de **816 registros `Alta` entran 306**,
+y los 510 que salen son 468 de otras regiones y 42 nacionales.
+
+**Se filtra por el GRUPO, no por `dep_codigo`**, aunque el reparto del resumen y del mapa use el
+departamento. El grupo ya incorpora el **rescate por NIT**, y hay entidades del Valle —entre
+ellas tres hospitales departamentales— que publican departamento y ciudad sin diligenciar: un
+filtro geográfico las dejaría fuera en silencio. Y se compara **sin tildes**, porque los grupos
+llevan acento y una tilde de más en `config.json` dejaría el correo vacío sin decir por qué.
+
+**`Otras entidades del Valle` entra ENTERO, y recortarlo por el nombre sería un error.** Ahí
+están los 213 registros de alcaldías y municipios, pero también las secretarías de la Alcaldía
+de Tuluá —que son dependencias de una alcaldía del Valle aunque el nombre empiece por
+«Secretaría»—, las cámaras de comercio de Tuluá y Palmira, dos instituciones universitarias,
+INTENALCO, el Concejo de Buga y las Empresas Municipales de Tuluá. Se midió: un filtro por
+nombre de entidad se comía **74 registros**, varios de ellos municipales.
+
+**El de revisión NO se filtra**, y va solo a quien revisa: tiene que ver todo lo que el
+clasificador no pudo juzgar, venga de donde venga. Medido el mismo día: sus 227 registros
+`Media` **ya eran todos del Valle**, así que hoy el filtro no cambiaría nada allí.
+
+**Lo que queda fuera no se anota como avisado**, porque no se avisó — la misma regla de siempre.
+La consecuencia hay que tenerla presente: **si algún día se amplía el alcance, lo acumulado sale
+de golpe** en la primera corrida. El registro de cada corrida dice cuántos quedaron fuera.
+
+**Y el correo lo dice en su entrada.** Un correo que llega con 65 fichas y no avisa de que hay
+otras 510 fuera se lee como si fuera todo lo que hay: es la regla de no mostrar un conteo parcial
+como si fuera el total. La prueba (`--probar` y `--prueba`) aplica **el mismo filtro**, o estaría
+mintiendo justo sobre lo que se quiere comprobar con ella.
+
 **No se avisa dos veces del mismo registro.** La bitácora es `datos/avisados.csv`, con pares
 `(identificador, aviso)`. Se lleva **por registro y no por operación** a propósito: si un
 proceso ya avisado se firma después, el contrato es un identificador nuevo y **la firma vuelve
