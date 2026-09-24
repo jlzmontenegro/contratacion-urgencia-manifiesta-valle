@@ -1,50 +1,50 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-09-22 18:34  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-09-24 07:42  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
 | Indicador | Valor |
 |---|---|
-| Contratos relacionados (alta + media) | 183 |
-| Valor de esos contratos | $ 69.972.048.856 |
-| Procesos relacionados (alta + media) | 473 |
-| Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 53987 |
-| Registros revisados en total | 30869 |
+| Contratos relacionados (alta + media) | 187 |
+| Valor de esos contratos | $ 70.049.760.856 |
+| Procesos relacionados (alta + media) | 492 |
+| Contratos nuevos en esta ejecucion | 680 |
+| Procesos nuevos en esta ejecucion | 639 |
+| Modificaciones detectadas | 54924 |
+| Registros revisados en total | 32188 |
 
 ### Desglose por nivel de gobierno
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 8 | $ 15.547.226.400 | 141 |
+| Alcaldía de Cali | 8 | $ 15.547.226.400 | 145 |
 | Gobernación del Valle | 7 | $ 12.182.177.995 | 27 |
-| Otras entidades del Valle | 152 | $ 38.733.748.377 | 252 |
+| Otras entidades del Valle | 156 | $ 38.811.460.377 | 262 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 2845 | $ 174.365.115.766 | 2476 |
-| Gobernación del Valle | 2240 | $ 68.580.941.491 | 2173 |
-| Descentralizadas de Cali | 110 | $ 13.429.572.879 | 853 |
-| Descentralizadas de la Gobernación | 1560 | $ 40.875.046.048 | 2038 |
+| Alcaldía de Cali | 2990 | $ 189.231.343.416 | 2549 |
+| Gobernación del Valle | 2445 | $ 74.633.836.492 | 2373 |
+| Descentralizadas de Cali | 112 | $ 13.449.572.879 | 892 |
+| Descentralizadas de la Gobernación | 1569 | $ 41.730.972.650 | 2056 |
 | UNGRD | 3 | $ 102.866.667 | 329 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 179 contratos ($ 52.640.512.230) y 209 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 135 contratos ($ 118.074.464.880) y 227 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 191 contratos ($ 54.338.712.230) y 219 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 144 contratos ($ 121.201.394.880) y 235 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 119** (65 que suman en los indicadores, por $ 2.628.638.376).
+- **Relacionados con el sismo: 124** (66 que suman en los indicadores, por $ 2.629.838.376).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -79,7 +79,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-09-21 | RISARALDA - CÁMARA DE COMERCIO DE PEREIRA | OBJETO / JUSTIFICACIoN SOLICITUD PARA LA CONTRATACIoN DEL SERVICIO INTEGRAL DE LOGiSTICA; A CARGO DE TASMANIA  | $ 52.062.500 | Régimen Especial · No Definido | Alta |
 | 2026-09-10 | RISARALDA - ALCALDÍA MUNICIPIO DE QUINCHIA | PRESTAR AL MUNICIPIO DE QUINCHiA; LOS SERVICIOS DE APOYO A LA GESTIoN EN LA SECRETARiA DE GOBIERNO Y SERVICIOS | $ 50.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 
-_No se listan 83 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
+_No se listan 87 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
 
 ## UNGRD y FNGRD · NIT 900.478.966-6 y 900.978.341
 
@@ -107,99 +107,154 @@ _Se revisaron 334 registros de contratacion de estas dos entidades en la ventana
 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | 1 | $ 1.321.917.014 |
 | HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E | 1 | $ 1.150.889.534 |
 
+## Contratos nuevos (16 relacionados de 680 publicados)
+
+| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
+|---|---|---|---:|---|---|
+| 2026-09-22 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | ALQUILER DE MAQUINARIA Y EQUIPOS PARA REHABILITACIÓN; RECOLECCION DE ESCOMBROS; TRANSPORTE Y ATENCION DEL SISM | $ 1.300.000.000 | MOVITRAM SAS | Alta |
+| 2026-09-22 | MUNICIPIO DE SANTA ROSA DE CABAL | DEMOLICION DE ESTRUCTURAS DE ALTO RIESGO E INHABITABLES PARA LA ATENCIÓN DE LA EMERGENCIA ORIGINADA POR EL SIS | $ 300.000.000 | Grupo Empresarial Mundial de Pinturas SAS | Alta |
+| 2026-09-21 | MUNICIPIO DE YUMBO VALLE | PRESTAR EL SERVICIO PARA EL TRASLADO DE AGUA POTABLE QUE GARANTICE EL ACCESO MEDIANTE MEDIOS ALTERNOS DE SUMIN | $ 29.912.000 | OSCAR DE JESUS VELEZ LOPEZ | Alta |
+| 2026-09-22 | Departamento Administrativo de Planeación - Alcaldía de Tuluá | CONTRATACION DIRECTA PARA LA PRESTACION DE SERVICIOS PROFESIONALES  DE UN INGENIERO TOPOGRÁFICO DE APOYO AL DE | $ 25.000.000 | DHEIBY STHYBENS PAZ HOYOS | Alta |
+| 2026-09-22 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 19.800.000 | martha lucia pedraza peralta | Alta |
+| 2026-09-21 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA LA CONSOLIDACIÓN DE LA INFORMACIÓN ESTADÍSTICA DE LA SECRETARÍA DE  | $ 11.400.000 | GILBERTO ALEJANDRO AREVALO RESTREPO | Alta |
+| 2026-09-21 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA EL FORTALECIMIENTO DE LA GESTIÓN PRESUPUESTAL DEL DESPACHO DE LA SE | $ 11.400.000 | KAREN QUINTERO MARULANDA | Alta |
+| 2026-09-21 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES PARA LA ARTICULACIÓN PEDAGÓGICA Y ACADÉMICA DE LA PROGRAMACIÓN CULTURAL Y LOS  | $ 11.400.000 | LUZ DARY ECHEVERRY | Alta |
+| 2026-09-22 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES PARA LA ARTICULACIÓN PEDAGÓGICA Y ACADÉMICA DE LA PROGRAMACIÓN CULTURAL Y LOS  | $ 11.400.000 | Jhon Jairo Carvajal Bernal | Alta |
+| 2026-09-21 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS PROFESIONALES PARA LA DIFUSION Y SOCIALIZACION DE LAS ACTIVIDADES CULTURALES DESARROLL | $ 11.400.000 | Laura Camila Ahumada Navas | Alta |
+| 2026-09-21 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS DE APOYO A LA GESTION EN DIFERENTES ACTIVIDADES ASISTENCIALES EN LA OFICINA DE LA BIBL | $ 8.400.000 | JESSICA VIVIANA ECHEVERRI OSORIO | Alta |
+| 2026-09-21 | MUNICIPIO DE LA UNION | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA LA CONSTRUCCIÓN DE GEODATA BASE REQUERIDA POR EL DEPARTAMENTO ADMIN | $ 7.000.000 | kevin joan castillo cubillos | Alta |
+| 2026-09-21 | MUNICIPIO DE LA UNION | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA LA CONSTRUCCIÓN DE LA GEODATA BASE Y EL PROCESAMIENTO DE LA | $ 5.800.000 | DANNY ARDILA GARCIA | Alta |
+| 2026-09-22 | ALCALDÍA MUNICIPAL DE LA CELIA | APOYO A LA GESTION DE LA ADMINISTRACIÓN MUNICIPAL EN EL APROVECHAMIENTO Y TRANSFORMACIÓN DEL MATERIAL FORESTAL | $ 3.000.000 | LUIS ALFONSO PULGARIN | Alta |
+| 2026-09-20 | GOBERNACIÓN DE RISARALDA** | PRESTAR EL SERVICIO DE DISPERSIÓN Y PAGO DEL APOYO ECONÓMICO TEMPORAL DESTINADO A CONTRIBUIR A UNA SOLUCIÓN TE | $ 0 | SUPERGIROS | Alta |
+| 2026-09-21 | MUNICIPIO DE MANIZALES | AUNAR ESFUERZOS ENTRE EL MUNICIPIO DE MANIZALES; A TRAVÉS DE LA SECRETARÍA DE EDUCACIÓN; Y LA UNIVERSIDAD DE M | $ 0 | UNIVERSIDAD DE MANIZALES | Alta |
+
+## Procesos nuevos (29 relacionados de 639 publicados)
+
+| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
+|---|---|---|---:|---|---|
+| 2026-09-21 | EMPRESA SOCIAL DEL ESTADO SALUD PEREIRA | REALIZAR JORNADAS INTEGRALES DE MEJORAMIENTO DE ENTORNOS Y CONDICIONES DE SALUD PUBLICA EN LOS ALOJAMIENTOS TE | $ 713.301.015 | Contratación régimen especial | Alta |
+| 2026-09-21 | MUNICIPIO DE SANTA ROSA DE CABAL | DEMOLICION DE ESTRUCTURAS DE ALTO RIESGO E INHABITABLES PARA LA ATENCIÓN DE LA EMERGENCIA ORIGINADA POR EL SIS | $ 300.000.000 | Contratación directa | Alta |
+| 2026-09-21 | ALCALDIA MUNICIPAL DE CHINCHINA | CONTRATAR LAS OBRAS DE DEMOLICIÓN DEL CENTRO ADMINISTRATIVO MUNICIPAL PARA MITIGAR LOS DAÑOS Y ATENDER DE MANE | $ 250.000.000 | Contratación directa | Alta |
+| 2026-09-21 | ALCALDIA MUNICIPIO DE BETANIA | CONTRATO DE OBRA PÚBLICA PARA LA EJECUCIÓN DE ACTIVIDADES DE OBRA, MEDIANTE MANO DE OBRA CALIFICADA Y NO CALIF | $ 150.000.000 | Contratación directa | Alta |
+| 2026-09-22 | Institución Educativa Santa Emilia | Mantenimiento, mejoramiento y reparación de la infraestructura afectadas por el terremoto del 10 de agosto de  | $ 34.996.842 | Contratación régimen especial | Alta |
+| 2026-09-21 | MUNICIPIO DE YUMBO VALLE | PRESTAR EL SERVICIO PARA EL TRASLADO DE AGUA POTABLE QUE GARANTICE EL ACCESO MEDIANTE MEDIOS ALTERNOS DE SUMIN | $ 29.912.000 | Contratación directa | Alta |
+| 2026-09-21 | Departamento Administrativo de Planeación - Alcaldía de Tuluá | CONTRATACION DIRECTA PARA LA PRESTACION DE SERVICIOS PROFESIONALES  DE UN INGENIERO TOPOGRÁFICO DE APOYO AL DE | $ 25.000.000 | Contratación directa | Alta |
+| 2026-09-21 | MUNICIPIO DE CALIMA EL DARIEN VALLE | PRESTACIÓN DE SERVICIOS PROFESIONALES COMO INVESTIGADOR DE MERCADO PARA REALIZAR LA RECONSTRUCCIÓN DE LAS ZHF  | $ 24.660.000 | Contratación directa | Media |
+| 2026-09-21 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 19.800.000 | Contratación directa | Alta |
+| 2026-09-21 | EMPRESAS MUNICIPALES DE CALI | Prestación de servicios profesionales en Ingenieria Electrònica, con formación y experiencia en Ciencia de dat | $ 15.605.991 | Contratación régimen especial | Media |
+| 2026-09-21 | MUNICIPIO DE PEREIRA- OFICIAL | PLANEACIÓN Y CALIDAD EDUCATIVA, PARA EJECUTAR LOS PROCESOS DE MIPG, REALIZAR EL ANÁLISIS Y SEGUIMIENTO A LAS I | $ 15.000.000 | Contratación directa | Alta |
+| 2026-09-21 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR DE SERVICIOS PROFESIONALES ESPECIALIZADOS EN LA SUBSECRETARÍA DE PLANEACIÓN Y CALIDAD EDUCATIVA PARA R | $ 15.000.000 | Contratación directa | Alta |
+| 2026-09-21 | ALCALDIA MUNICIPIO DE JAMUNDI | PRESTACION DE SERVICIOS DE APOYO A LA GESTION EN LA SECRETARÍA DE GOBIERNO, APOYANDO EN EL MARCO DEL PROYECTO  | $ 12.000.000 | Contratación directa | Media |
+| 2026-09-21 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS PROFESIONALES PARA LA DIFUSION Y SOCIALIZACION DE LAS ACTIVIDADES CULTURALES DESARROLL | $ 11.400.000 | Contratación directa | Alta |
+| 2026-09-21 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES PARA LA ARTICULACIÓN PEDAGÓGICA Y ACADÉMICA DE LA PROGRAMACIÓN CULTURAL Y LOS  | $ 11.400.000 | Contratación directa | Alta |
+| 2026-09-21 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA LA CONSOLIDACIÓN DE LA INFORMACIÓN ESTADÍSTICA DE LA SECRETARÍA DE  | $ 11.400.000 | Contratación directa | Alta |
+| 2026-09-21 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA EL FORTALECIMIENTO DE LA GESTIÓN PRESUPUESTAL DEL DESPACHO DE LA SE | $ 11.400.000 | Contratación directa | Alta |
+| 2026-09-21 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES EN LA SUBSECRETARIA DE PLANEACIÓN Y CALIDAD EDUCATIVA PARA REALIZAR ACTIVIDADE | $ 11.400.000 | Contratación directa | Alta |
+| 2026-09-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 11.326.000 | Contratación directa | Media |
+| 2026-09-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 11.326.000 | Contratación directa | Media |
+| 2026-09-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 11.326.000 | Contratación directa | Media |
+| 2026-09-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 11.326.000 | Contratación directa | Media |
+| 2026-09-21 | EMPRESAS MUNICIPALES DE TULUA E.S.P. | PRESTAR SERVICIOS PROFESIONALES PARA APOYAR LA FORMULACION, ESTRUCTURACION, SEGUIMIENTO Y EJECUCION DE LOS PRO | $ 11.115.992 | Contratación régimen especial | Media |
+| 2026-09-21 | INSTITUCION EDUCATIVA LAFREDO GARRIDO TOVAR | Adquisición de dos carpas en lona nacional 100% impermeable, anti hongo, antirreflectora con escudo y nombre d | $ 10.000.000 | Contratación régimen especial | Media |
+| 2026-09-21 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS DE APOYO A LA GESTION EN DIFERENTES ACTIVIDADES ASISTENCIALES EN LA OFICINA DE LA BIBL | $ 8.400.000 | Contratación directa | Alta |
+| 2026-09-21 | INSTITUCION EDUCATIVA BELISARIO PEÑA PIÑEIRO | Contratar la prestación del Servicio de Internet Corporativo Especial, mediante un enlace de Internet de banda | $ 7.500.000 | Contratación régimen especial | Media |
+| 2026-09-21 | MUNICIPIO DE LA UNION | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA LA CONSTRUCCIÓN DE GEODATA BASE REQUERIDA POR EL DEPARTAMENTO ADMIN | $ 7.000.000 | Contratación directa | Alta |
+| 2026-09-21 | MUNICIPIO DE LA UNION | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA LA CONSTRUCCIÓN DE LA GEODATA BASE Y EL PROCESAMIENTO DE LA | $ 5.800.000 | Contratación directa | Alta |
+| 2026-09-21 | institucion educativa antonio  jose  de  sucre . | mantenimiento  y  adecioncion  de  instalaciones  para inicio  de  clases   despues  del  terrremoto 2026 | $ 1.768.950 | Contratación régimen especial | Alta |
+
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| contratos | CO1.PCCNTR.9802925 | valor_del_contrato | 6247000.000000 | 6247000 |
-| contratos | CO1.PCCNTR.9802925 | valor_pagado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9802925 | valor_facturado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9802925 | valor_pendiente_de_pago | 6247000.000000 | 6247000 |
-| contratos | CO1.PCCNTR.9907254 | valor_del_contrato | 5584000.000000 | 5584000 |
-| contratos | CO1.PCCNTR.9907254 | valor_pagado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9907254 | valor_facturado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9907254 | valor_pendiente_de_pago | 5584000.000000 | 5584000 |
-| contratos | CO1.PCCNTR.9839953 | valor_del_contrato | 7894000.000000 | 7894000 |
-| contratos | CO1.PCCNTR.9839953 | valor_pagado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9839953 | valor_facturado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9839953 | valor_pendiente_de_pago | 7894000.000000 | 7894000 |
-| contratos | CO1.PCCNTR.9820218 | valor_del_contrato | 16000000.000000 | 16000000 |
-| contratos | CO1.PCCNTR.9820218 | valor_pagado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9820218 | valor_facturado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9820218 | valor_pendiente_de_pago | 16000000.000000 | 16000000 |
-| contratos | CO1.PCCNTR.9828559 | valor_del_contrato | 7000000.000000 | 7000000 |
-| contratos | CO1.PCCNTR.9828559 | valor_pagado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9828559 | valor_facturado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9828559 | valor_pendiente_de_pago | 7000000.000000 | 7000000 |
-| contratos | CO1.PCCNTR.9835825 | valor_del_contrato | 3947000.000000 | 3947000 |
-| contratos | CO1.PCCNTR.9835825 | valor_pagado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9835825 | valor_facturado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9835825 | valor_pendiente_de_pago | 3947000.000000 | 3947000 |
-| contratos | CO1.PCCNTR.9856079 | valor_del_contrato | 6000000.000000 | 6000000 |
-| contratos | CO1.PCCNTR.9856079 | valor_pagado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9856079 | valor_facturado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9856079 | valor_pendiente_de_pago | 6000000.000000 | 6000000 |
-| contratos | CO1.PCCNTR.9777573 | valor_del_contrato | 11326000.000000 | 11326000 |
-| contratos | CO1.PCCNTR.9777573 | valor_pagado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9777573 | valor_facturado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9777573 | valor_pendiente_de_pago | 11326000.000000 | 11326000 |
-| contratos | CO1.PCCNTR.9880477 | valor_del_contrato | 9610000.000000 | 9610000 |
-| contratos | CO1.PCCNTR.9880477 | valor_pagado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9880477 | valor_facturado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9880477 | valor_pendiente_de_pago | 9610000.000000 | 9610000 |
-| contratos | CO1.PCCNTR.9815677 | valor_del_contrato | 8377800.000000 | 8377800 |
-| contratos | CO1.PCCNTR.9815677 | valor_pagado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9815677 | valor_facturado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9815677 | valor_pendiente_de_pago | 8377800.000000 | 8377800 |
-| contratos | CO1.PCCNTR.9846197 | valor_del_contrato | 2500000.000000 | 2500000 |
-| contratos | CO1.PCCNTR.9846197 | valor_pagado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9846197 | valor_facturado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9846197 | valor_pendiente_de_pago | 2500000.000000 | 2500000 |
-| contratos | CO1.PCCNTR.9842852 | valor_del_contrato | 11841000.000000 | 11841000 |
-| contratos | CO1.PCCNTR.9842852 | valor_pagado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9842852 | valor_facturado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9842852 | valor_pendiente_de_pago | 11841000.000000 | 11841000 |
-| contratos | CO1.PCCNTR.9853972 | valor_del_contrato | 17011566.000000 | 17011566 |
-| contratos | CO1.PCCNTR.9853972 | valor_pagado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9853972 | valor_facturado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9853972 | valor_pendiente_de_pago | 17011566.000000 | 17011566 |
-| contratos | CO1.PCCNTR.9939518 | valor_del_contrato | 12000000.000000 | 12000000 |
-| contratos | CO1.PCCNTR.9939518 | valor_pagado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9939518 | valor_facturado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9939518 | valor_pendiente_de_pago | 12000000.000000 | 12000000 |
-| contratos | CO1.PCCNTR.9918811 | valor_del_contrato | 11168000.000000 | 11168000 |
-| contratos | CO1.PCCNTR.9918811 | valor_pagado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9918811 | valor_facturado | 0.000000 | 0 |
-| contratos | CO1.PCCNTR.9918811 | valor_pendiente_de_pago | 11168000.000000 | 11168000 |
+| contratos | CO1.PCCNTR.9910411 | valor_del_contrato | 14204000 | 14204000.000000 |
+| contratos | CO1.PCCNTR.9910411 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9910411 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9910411 | valor_pendiente_de_pago | 14204000 | 14204000.000000 |
+| contratos | CO1.PCCNTR.9800139 | valor_del_contrato | 7102000 | 7102000.000000 |
+| contratos | CO1.PCCNTR.9800139 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9800139 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9800139 | valor_pendiente_de_pago | 7102000 | 7102000.000000 |
+| contratos | CO1.PCCNTR.9928063 | valor_del_contrato | 9610000 | 9610000.000000 |
+| contratos | CO1.PCCNTR.9928063 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9928063 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9928063 | valor_pendiente_de_pago | 9610000 | 9610000.000000 |
+| contratos | CO1.PCCNTR.9886528 | valor_del_contrato | 5584000 | 5584000.000000 |
+| contratos | CO1.PCCNTR.9886528 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9886528 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9886528 | valor_pendiente_de_pago | 5584000 | 5584000.000000 |
+| contratos | CO1.PCCNTR.9854158 | valor_del_contrato | 15788000 | 15788000.000000 |
+| contratos | CO1.PCCNTR.9854158 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9854158 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9854158 | valor_pendiente_de_pago | 15788000 | 15788000.000000 |
+| contratos | CO1.PCCNTR.9899708 | valor_del_contrato | 11326000 | 11326000.000000 |
+| contratos | CO1.PCCNTR.9899708 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9899708 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9899708 | valor_pendiente_de_pago | 11326000 | 11326000.000000 |
+| contratos | CO1.PCCNTR.9899732 | valor_del_contrato | 7102000 | 7102000.000000 |
+| contratos | CO1.PCCNTR.9899732 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9899732 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9899732 | valor_pendiente_de_pago | 7102000 | 7102000.000000 |
+| contratos | CO1.PCCNTR.9921307 | valor_del_contrato | 7102000 | 7102000.000000 |
+| contratos | CO1.PCCNTR.9921307 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9921307 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9921307 | valor_pendiente_de_pago | 7102000 | 7102000.000000 |
+| contratos | CO1.PCCNTR.9921310 | valor_del_contrato | 7102000 | 7102000.000000 |
+| contratos | CO1.PCCNTR.9921310 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9921310 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9921310 | valor_pendiente_de_pago | 7102000 | 7102000.000000 |
+| contratos | CO1.PCCNTR.9921333 | valor_del_contrato | 4542000 | 4542000.000000 |
+| contratos | CO1.PCCNTR.9921333 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9921333 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9921333 | valor_pendiente_de_pago | 4542000 | 4542000.000000 |
+| contratos | CO1.PCCNTR.9921304 | valor_del_contrato | 7102000 | 7102000.000000 |
+| contratos | CO1.PCCNTR.9921304 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9921304 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9921304 | valor_pendiente_de_pago | 7102000 | 7102000.000000 |
+| contratos | CO1.PCCNTR.9901733 | valor_del_contrato | 5584000 | 5584000.000000 |
+| contratos | CO1.PCCNTR.9901733 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9901733 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9901733 | valor_pendiente_de_pago | 5584000 | 5584000.000000 |
+| contratos | CO1.PCCNTR.9901790 | valor_del_contrato | 11326000 | 11326000.000000 |
+| contratos | CO1.PCCNTR.9901790 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9901790 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9901790 | valor_pendiente_de_pago | 11326000 | 11326000.000000 |
+| contratos | CO1.PCCNTR.9922512 | valor_del_contrato | 11841000 | 11841000.000000 |
+| contratos | CO1.PCCNTR.9922512 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9922512 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9922512 | valor_pendiente_de_pago | 11841000 | 11841000.000000 |
+| contratos | CO1.PCCNTR.9921315 | valor_del_contrato | 7102000 | 7102000.000000 |
+| contratos | CO1.PCCNTR.9921315 | valor_pagado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9921315 | valor_facturado | 0 | 0.000000 |
+| contratos | CO1.PCCNTR.9921315 | valor_pendiente_de_pago | 7102000 | 7102000.000000 |
 
 ## Alertas
 
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI - $ 525.000.000 - RED DE SALUD DEL ORIENTE ESE [SECOP II]
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS - $ 5.169.150.000 - EMPRESA REGIONAL DE SERVICIO PUBLICO DE ASEO DE CANDELARIA [SECOP II]
-- **Contrato de alto valor**: GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA - $ 2.568.577.795 - FUNDACIÓN AVE FÉNIX [SECOP II]
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE - $ 4.050.000.000 - FUNDACION PROSPERIDAD Y FUTURO DEL PACIFICO [SECOP II]
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO - $ 5.000.000.000 - ADD MEDIA S.A.S [SECOP II]
-- **Contrato de alto valor**: GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE VIVIENDA Y HABITAT - $ 8.592.000.000 - COMERCIALIZADORA ORIKUA SAS [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI - $ 700.000.000 - 2 GROUP SAS [SECOP II]
-- **Contrato de alto valor**: INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ - $ 1.400.000.000 - CORPORACION ECOPROJECTS [SECOP II]
+- **Contrato de alto valor**: GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA - $ 2.568.577.795 - FUNDACIÓN AVE FÉNIX [SECOP II]
+- **Contrato de alto valor**: GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE VIVIENDA Y HABITAT - $ 8.592.000.000 - COMERCIALIZADORA ORIKUA SAS [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI - $ 525.000.000 - RED DE SALUD DEL ORIENTE ESE [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO - $ 5.000.000.000 - ADD MEDIA S.A.S [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS - $ 5.169.150.000 - EMPRESA REGIONAL DE SERVICIO PUBLICO DE ASEO DE CANDELARIA [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE - $ 4.050.000.000 - FUNDACION PROSPERIDAD Y FUTURO DEL PACIFICO [SECOP II]
+- **Contrato de alto valor**: Secretaría de Hábitat e Infraestructura - Alcaldía de Tuluá - $ 5.199.818.848 - EMPRESAS MUNICIPALES DE TULUA E.S.P. [SECOP II]
 - **Contrato de alto valor**: Institución Universitaria de Roldanillo - $ 4.284.974.783 - OBRAS CIVILES DE OCCIDENTE S.A.S. [SECOP II]
-- **Contrato de alto valor**: CVC - $ 1.422.879.908 - CORPORACION AMANO NATIVA [SECOP II]
+- **Contrato de alto valor**: ALCALDIA MUNICIPAL DE YOTOCO - $ 1.305.627.623 - EMPRESA DE SERVICIO PUBLICO DE ASEO DEL MUNICIPIO DE YOTOCO - VALLE DEL CAUCA S.A.S E.S.P [SECOP II]
 - **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 1.079.151.183 - PSI SOLUTIONS SAS [SECOP II]
-- **Contrato de alto valor**: HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E - $ 1.150.889.534 - PLANEAMOS SAS [SECOP II]
-- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 6.976.838.150 - TECH TRANSIT S.A.S. [SECOP II]
-- **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 698.878.071 - GG CM [SECOP II]
+- **Contrato de alto valor**: INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ - $ 1.400.000.000 - CORPORACION ECOPROJECTS [SECOP II]
+- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 3.965.080.000 - ACUSTICA INTEGRADA SAS [SECOP II]
 - **Contrato de alto valor**: ALCALDIA DE ALCALA - $ 528.784.465 - GRUPO EMPRESARIAL DEL SUR SIGLO XXI S.A.S. E.S.P [SECOP II]
 - **Contrato de alto valor**: CVC - $ 996.015.936 - FUNDACION BALU [SECOP II]
-- **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 597.455.639 - GG CM [SECOP II]
-- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 3.965.080.000 - ACUSTICA INTEGRADA SAS [SECOP II]
-- **Contrato de alto valor**: ALCALDIA MUNICIPAL DE YOTOCO - $ 1.305.627.623 - EMPRESA DE SERVICIO PUBLICO DE ASEO DEL MUNICIPIO DE YOTOCO - VALLE DEL CAUCA S.A.S E.S.P [SECOP II]
-- **Contrato de alto valor**: Secretaría de Hábitat e Infraestructura - Alcaldía de Tuluá - $ 5.199.818.848 - EMPRESAS MUNICIPALES DE TULUA E.S.P. [SECOP II]
+- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 6.976.838.150 - TECH TRANSIT S.A.S. [SECOP II]
 - **Contrato de alto valor**: UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA - $ 1.321.917.014 - CONSORCIO UES VALLE 2026 [SECOP II]
+- **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 698.878.071 - GG CM [SECOP II]
+- **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 597.455.639 - GG CM [SECOP II]
+- **Contrato de alto valor**: CVC - $ 1.422.879.908 - CORPORACION AMANO NATIVA [SECOP II]
+- **Contrato de alto valor**: HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E - $ 1.150.889.534 - PLANEAMOS SAS [SECOP II]
 - **Contrato de alto valor**: GOBERNACIÓN DE RISARALDA** - $ 2.000.000.000 - SIRPAZ [SECOP II]
 - **Contrato de alto valor**: VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE EL CAIRO - $ 720.000.000 - SALUDCAR OPERACIoN COLOMBIA S.A.  SIGLA: SALUDCAR COLOMBIA [SECOP I]
 - **Proveedor con varios contratos**: SERVICIOS Y EMERGENCIAS COLOMBIA  S.A.S: 3 contratos por $ 316.812.224
 - **Proveedor con varios contratos**: RESTAURANTE CGTL SAS BIC: 3 contratos por $ 810.000
-- **Contratos sin proceso publicado**: 129 contratos de relacion alta no tienen proceso visible en el dataset de procesos
+- **Contratos sin proceso publicado**: 133 contratos de relacion alta no tienen proceso visible en el dataset de procesos
 
 ---
 
