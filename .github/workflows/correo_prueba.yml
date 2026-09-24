@@ -9,6 +9,11 @@ name: Enviar correo de prueba
 # notificando en la corrida siguiente.
 on:
   workflow_dispatch:
+    inputs:
+      solo_a:
+        description: "Mandar SOLO a esta direccion (recomendado). En blanco manda a las listas de config.json, es decir a todo el equipo."
+        required: false
+        default: ""
 
 jobs:
   prueba:
@@ -36,4 +41,13 @@ jobs:
         # Sin pip install: correo.py solo usa la biblioteca estandar. Si algun dia
         # dejara de ser asi, este paso falla y se vera aqui, no en la corrida de
         # las 8:30.
-        run: python correo.py --prueba
+        # OJO: en blanco esto manda a TODA la lista de config.json. Es el mismo
+        # fallo que resumen.py ya pago el 13-sep-2026, cuando una prueba lanzada a
+        # mano le llego al equipo entero dos veces. Con solo_a puesto va a una sola
+        # direccion y el asunto lleva [PRUEBA] delante.
+        run: |
+          if [ -n "${{ inputs.solo_a }}" ]; then
+            python correo.py --prueba --solo-a "${{ inputs.solo_a }}"
+          else
+            python correo.py --prueba
+          fi

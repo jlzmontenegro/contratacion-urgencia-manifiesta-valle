@@ -403,7 +403,7 @@ def enviar(asunto, destinatarios, html, texto, imagenes=None):
 EN_PRUEBA = 8
 
 
-def enviar_prueba(registros, destinos, generado):
+def enviar_prueba(registros, destinos, generado, solo_a=""):
     """Manda los dos correos una vez, con lo que hoy esta clasificado.
 
     Sirve para dos cosas a la vez: ver como llega el correo y comprobar que la
@@ -421,10 +421,14 @@ def enviar_prueba(registros, destinos, generado):
         total = len(muestras)
         muestras = muestras[:EN_PRUEBA]
 
-        para = [d for d in destinos.get(c["para"], []) if d and "@" in d]
-        if not para:
-            print(f"  ! {clave}: no hay destinatarios en config.json > correo > {c['para']}.")
-            continue
+        if solo_a:
+            para = [solo_a]
+        else:
+            para = [d for d in destinos.get(c["para"], []) if d and "@" in d]
+            if not para:
+                print(f"  ! {clave}: no hay destinatarios en config.json > correo > "
+                      f"{c['para']}.")
+                continue
 
         aviso = (f"PRUEBA. No es un aviso de novedades: son las {len(muestras)} de mayor "
                  f"valor de las {total} que hoy estan en este nivel, para ver como llega "
@@ -465,7 +469,17 @@ def main():
     ap.add_argument("--prueba", action="store_true",
                     help="envia UNA vez, con lo que hoy esta clasificado, para ver como "
                          "llega. No toca la bitacora: nada se da por avisado.")
+    # Una prueba no puede salir hacia afuera. --prueba mandaba los dos correos a
+    # TODA la lista: al equipo entero, para ver un cambio de formato. Es el mismo
+    # fallo que resumen.py ya pago el 13-sep-2026 mandando el informe del lunes
+    # dos veces a quien no tocaba, y aqui era peor, porque la lista crecio.
+    ap.add_argument("--solo-a", default="", metavar="CORREO",
+                    help="con --prueba, manda solo a esta direccion en vez de a "
+                         "las listas de config.json")
     args = ap.parse_args()
+    if args.solo_a and "@" not in args.solo_a:
+        print(f"  ! --solo-a no parece un correo: {args.solo_a}")
+        return 1
 
     ruta_tablero = os.path.join(DIR_DATOS, "tablero.json")
     if not os.path.exists(ruta_tablero):
@@ -487,7 +501,7 @@ def main():
     # aparezca. Se limita a las mas grandes porque el correo es para ver el
     # formato, no para leerse entero.
     if args.prueba:
-        return enviar_prueba(registros, destinos, generado)
+        return enviar_prueba(registros, destinos, generado, args.solo_a)
 
     avisados = leer_avisados()
 

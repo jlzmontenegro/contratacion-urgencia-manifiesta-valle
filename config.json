@@ -414,9 +414,9 @@
     "GUADALAJARA DE BUGA",
     "SEVILLA"
   ],
-  "_nota_decretos": "Actos que amparan la contratacion del sismo. Citar uno de ellos basta para dar el registro por relacionado (nivel Alta), asi que cada patron tiene que ser INEQUIVOCO: se midio contra la API antes de escribirlo. Los tres primeros son territoriales (Cali y la Gobernacion); los dos ultimos son nacionales y cubren los doce departamentos declarados, no solo el Valle.",
-  "_nota_decretos_nacionales": "1171 del 11-ago-2026 declara la situacion de DESASTRE NACIONAL por el sismo (Antioquia, Caldas, Cauca, Choco, Quindio, Cundinamarca, Risaralda, Huila, Valle, Tolima, Putumayo, Norte de Santander), por doce meses prorrogables, y crea la Subcuenta SISMO 2026 del FNGRD. 1261 del 19-ago-2026 declara el Estado de Emergencia Economica, Social y Ecologica por el mismo sismo. Ambos hablan EXCLUSIVAMENTE de este evento: citarlos es nombrarlo.",
-  "_nota_decretos_patrones": "El numero suelto NO sirve: '1171' aparece en el BPIM 202500000011717 de Pueblorrico, en la senalizacion 63600C1171 de AEROCIVIL y en la referencia TQ00001171 de la Sociedad Tequendama. Con 'DECRETO 1171' y '1171 DEL 11 DE AGOSTO' los aciertos son 5 de 5 y el ruido cero. Tampoco sirve 'DESASTRE NACIONAL' como palabra clave: los tres contratos del FNGRD que la usan son de OTROS desastres (Decreto 2113 de 2022 en Santander, 1372 de 2024 en Boyaca).",
+  "_nota_decretos": "Actos que amparan la contratacion del sismo. Citar uno de ellos basta para dar el registro por relacionado (nivel Alta), asi que cada patron tiene que ser INEQUIVOCO: se midio contra la API antes de escribirlo. Los cinco primeros son territoriales (Cali y la Gobernacion); los demas son nacionales y cubren los doce departamentos declarados, no solo el Valle.",
+  "_nota_decretos_nacionales": "1171 del 11-ago-2026 declara la situacion de DESASTRE NACIONAL por el sismo (Antioquia, Caldas, Cauca, Choco, Quindio, Cundinamarca, Risaralda, Huila, Valle, Tolima, Putumayo, Norte de Santander), por doce meses prorrogables, y crea la Subcuenta SISMO 2026 del FNGRD. 1261 del 19-ago-2026 declara el Estado de Emergencia Economica, Social y Ecologica por el mismo sismo. 1420 del 17-sep-2026 es un decreto LEGISLATIVO dictado al amparo del 1261: fija reglas excepcionales para la contratacion estatal y declara la urgencia manifiesta para contratar directamente en las zonas afectadas, o sea que es el acto que explica por que existe este monitoreo. Los tres hablan EXCLUSIVAMENTE de este evento: citarlos es nombrarlo.",
+  "_nota_decretos_patrones": "El numero suelto NO sirve: '1171' aparece en el BPIM 202500000011717 de Pueblorrico, en la senalizacion 63600C1171 de AEROCIVIL y en la referencia TQ00001171 de la Sociedad Tequendama. Con 'DECRETO 1171' y '1171 DEL 11 DE AGOSTO' los aciertos son 5 de 5 y el ruido cero. Tampoco sirve 'DESASTRE NACIONAL' como palabra clave: los tres contratos del FNGRD que la usan son de OTROS desastres (Decreto 2113 de 2022 en Santander, 1372 de 2024 en Boyaca). Para el 1420 el patron NO puede llevar la palabra sola: 'DECRETO 1420' da 7 aciertos desde 2024 y los 7 son el Decreto 1420 de 1998, el de avaluos comerciales (IGAC, MinTrabajo, EDU de Medellin, Baraya). Va con el ano ('1420 DE 2026') y con la fecha ('1420 DEL 17 DE SEPTIEMBRE'), las dos medidas en cero. El numero con ano tampoco vale para cualquier decreto de la familia: '1419 DE 2026' engancha el contrato de consultoria 1419 de Casanare y '1426 DE 2026' el codigo VAD de la IU Pascual Bravo, asi que un patron por decreto se mide aparte.",
   "decretos": [
     "4112.010.20.0964",
     "4112.010.20.0963",
@@ -426,14 +426,18 @@
     "DECRETO 1171",
     "1171 DEL 11 DE AGOSTO",
     "DECRETO 1261",
-    "1261 DEL 19 DE AGOSTO"
+    "1261 DEL 19 DE AGOSTO",
+    "1420 DE 2026",
+    "1420 DEL 17 DE SEPTIEMBRE"
   ],
-  "_nota_decretos_barrido": "Patrones con los que se BARRE la API a escala nacional, no solo con los que se clasifica lo ya descargado. Hace falta porque un contrato que cita el decreto sin escribir 'sismo' no lo trae ningun otro barrido: los del Ministerio de Educacion dicen 'estado de emergencia economica, social y ecologica declarado mediante el decreto 1261 de 2026' y ninguna palabra clave los alcanza. Solo van los NACIONALES: los decretos de Cali y de la Gobernacion no lo necesitan, porque esas entidades se barren enteras por NIT y por departamento. Medido el 12-sep-2026: 8 aciertos, 0 de ruido.",
+  "_nota_decretos_barrido": "Patrones con los que se BARRE la API a escala nacional, no solo con los que se clasifica lo ya descargado. Hace falta porque un contrato que cita el decreto sin escribir 'sismo' no lo trae ningun otro barrido: los del Ministerio de Educacion dicen 'estado de emergencia economica, social y ecologica declarado mediante el decreto 1261 de 2026' y ninguna palabra clave los alcanza. Solo van los NACIONALES: los decretos de Cali y de la Gobernacion no lo necesitan, porque esas entidades se barren enteras por NIT y por departamento. Medido el 12-sep-2026: 8 aciertos, 0 de ruido. NO se barre con la frase 'emergencia economica, social y ecologica', que parecia la red buena para todo el paquete de decretos legislativos: medido el 23-sep-2026 da 53 aciertos desde el sismo y 50 de ellos son el ICBF citando el Decreto 0150 del 11 de febrero de 2026, que es la emergencia por OLA INVERNAL. Los 3 restantes son del Ministerio de Educacion y ya los trae 'DECRETO 1261'. Es el mismo caso de 'DESASTRE NACIONAL': la frase nombra la figura, no el evento.",
   "decretos_barrido": [
     "DECRETO 1171",
     "1171 DEL 11 DE AGOSTO",
     "DECRETO 1261",
-    "1261 DEL 19 DE AGOSTO"
+    "1261 DEL 19 DE AGOSTO",
+    "1420 DE 2026",
+    "1420 DEL 17 DE SEPTIEMBRE"
   ],
   "_nota_correo": "A quien avisa correo.py cuando aparece contratacion nueva. Son dos listas a proposito y no una: 'para_relacionados' recibe lo que ya esta dado por del sismo y 'para_revision' recibe lo que hay que leer para decidir. Mezclarlas seria el peor resultado posible, porque lo dudoso acabaria leyendose como confirmado. Las direcciones no son secretas y por eso viven aqui; la contrasena de aplicacion va en Settings > Secrets and variables > Actions, como CORREO_CLAVE, y nunca en este archivo. Con la lista vacia no se envia nada y NO se anota como avisado: en cuanto se llene, la siguiente corrida manda lo acumulado.",
   "correo": {

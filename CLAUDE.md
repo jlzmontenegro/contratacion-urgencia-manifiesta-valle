@@ -227,17 +227,50 @@ subía **30 registros por corrida** —canchas sintéticas, parques lineales, ac
 sedes educativas—, palabras de obra corriente y no de daño. Con la lista afinada sube **5**, de
 los cuales dos o tres merecen lectura de verdad. `Alta` no se mueve: 485 antes y después.
 
-**El seguimiento cubre CUATRO actos, no dos** (12-sep-2026). A los decretos de Cali
-(`4112.010.20.0963` y `0964`) y de la Gobernación (`1.03.01-1070`) se sumaron los dos
-nacionales: **Decreto 1171 del 11-ago-2026**, que declara la *situación de desastre de
+**El seguimiento cubre CINCO actos, no dos** (12-sep-2026, ampliado el 23-sep-2026). A los
+decretos de Cali (`4112.010.20.0963` y `0964`) y de la Gobernación (`1.03.01-1070`) se
+sumaron tres nacionales. Los dos primeros: **Decreto 1171 del 11-ago-2026**, que declara la *situación de desastre de
 carácter nacional* por el sismo en doce departamentos —Antioquia, Caldas, Cauca, Chocó,
 Quindío, Cundinamarca, Risaralda, Huila, Valle, Tolima, Putumayo, Norte de Santander— por
 doce meses prorrogables y crea la **Subcuenta SISMO 2026** del FNGRD; y **Decreto 1261 del
 19-ago-2026**, que declara el *Estado de Emergencia Económica, Social y Ecológica* por el
-mismo sismo. Los dos hablan **exclusivamente de este evento**: citarlos es nombrarlo, y por
+mismo sismo. Hablan **exclusivamente de este evento**: citarlos es nombrarlo, y por
 eso valen tanto como la palabra «sismo». El 1171 es además lo que habilita la urgencia
 manifiesta fuera del Valle, así que explica por qué hay contratación relacionada en
 Antioquia y Risaralda.
+
+**El quinto es el Decreto 1420 del 17-sep-2026, y es el que nombra esto** (23-sep-2026, a
+petición del usuario). Es un decreto **legislativo** dictado al amparo del 1261: fija reglas
+excepcionales para la **contratación estatal** y declara la **urgencia manifiesta** para
+contratar directamente en las zonas afectadas. Es decir, el acto que da nombre al monitor.
+No viene solo: el paquete de la emergencia son **el 1348 y los quince del 1412 al 1426**
+—adición presupuestal, regalías, medidas sanitarias, empleo, tributarias, vivienda,
+transporte, ambiental—. **Solo se añadió el 1420**; los otros catorce están medidos y a la
+espera de que el usuario decida, porque cada patrón nuevo mete registros en `Alta`.
+
+**El patrón del 1420 NO puede llevar la palabra sola, y esto costó una medición.**
+`DECRETO 1420` da **7 aciertos desde 2024 y los 7 son el Decreto 1420 de 1998**, el de
+avalúos comerciales: IGAC, MinTrabajo, la EDU de Medellín, el municipio de Baraya. Van
+`1420 DE 2026` y `1420 DEL 17 DE SEPTIEMBRE`, las dos en **cero**. La lección general es
+que **el año no basta por sí solo**: `1419 DE 2026` engancha el *contrato de consultoría
+1419* de Casanare y `1426 DE 2026` el código `VAD 1426` de la IU Pascual Bravo. Cada número
+se mide aparte, y el peor de la familia es `DECRETO 1421`: **705 aciertos desde 2024**, todos
+del Decreto 1421 **de 2017**, el de educación inclusiva y los PIAR.
+
+**La red genérica de la emergencia NO sirve, y parecía la solución elegante.** En vez de un
+patrón por decreto, buscar la frase *«emergencia económica, social y ecológica»* cubriría el
+paquete entero. Medido el 23-sep-2026: **53 aciertos desde el sismo y 50 son el ICBF**
+citando el **Decreto 0150 del 11 de febrero de 2026, que es la emergencia por OLA
+INVERNAL** —otra emergencia, otro evento, nómina de primera infancia—. Los 3 restantes son
+del Ministerio de Educación y ya los trae `DECRETO 1261`. Es el mismo caso que
+`DESASTRE NACIONAL`: **la frase nombra la figura jurídica, no el evento.**
+
+**El «Decreto 2160» que se pidió no existe** (23-sep-2026). Ni en la API, ni en el Diario
+Oficial, ni en el listado de la Presidencia. Y la numeración lo confirma: el 1420 es del
+17 de septiembre, así que el 2160 caería hacia diciembre. Lo único que engancha
+`2160 DE 2026` es `DSG 2160 DE 2026`, un código interno del ITM de Medellín. **No se añadió
+un patrón por un número sin confirmar**: habría quedado en el archivo dando a entender que
+el monitor cubre un acto que nadie ha expedido.
 
 **Citar un decreto basta para dar el registro por relacionado**, sin más pruebas
 (`elif golpes_decreto: nivel = "Alta"`). Por eso **cada patrón se midió contra la API
