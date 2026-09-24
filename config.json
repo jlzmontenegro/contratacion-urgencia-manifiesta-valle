@@ -460,5 +460,12 @@
   "_nota_alertas": "Umbrales para las alertas del reporte y del tablero.",
   "alerta_valor_contrato": 500000000,
   "alerta_contratos_mismo_proveedor": 3,
+  "_nota_suelo": "Suelo de cordura: cuantas filas tiene que traer cada fuente para que la corrida se de por buena. Existe porque el 23-sep-2026 el dataset de contratos de SECOP II se quedo en 1.000 filas para todo el pais y los diez barridos volvieron con CERO sin un solo error: la fuente RESPONDIA, asi que el control de 'todos los barridos fallaron' no salto y el colector armo el tablero sin contratos. suelo_filas es el minimo absoluto por fuente y hace falta para las instancias que no guardan estado entre corridas, como la entrega independiente de la pagina ligera. suelo_caida es la fraccion de la corrida ANTERIOR que hay que conservar, y es la guarda que se calibra sola. Medido sobre seis corridas del 21 y 22-sep-2026: 13.509 y 13.496 contratos, 17.211 y 17.373 procesos, 722 y 756 de SECOP I. La ventana solo crece, asi que las cifras solo suben, y la unica bajada legitima observada fue de trece filas (0,1%): el 70% deja treinta puntos de margen. Los suelos absolutos son en torno a un tercio de esas cifras. Un 0 desactiva la guarda que sea; ojo si algun dia se acerca fecha_inicio a hoy, porque entonces las cifras normales serian pequenas y habria que bajarlos.",
+  "suelo_filas": {
+    "contratos": 4000,
+    "procesos": 5000,
+    "secop1": 200
+  },
+  "suelo_caida": 0.7,
   "origen_ligero": ""
 }

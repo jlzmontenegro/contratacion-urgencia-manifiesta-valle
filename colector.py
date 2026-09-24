@@ -607,6 +607,65 @@ def condiciones(nombre_fuente, cfg, hoy):
     return barridos
 
 
+def comprobar_suelo(nombre_fuente, cuantas, cfg):
+    """Aborta si la fuente RESPONDE pero devuelve implausiblemente poco.
+
+    El control de mas abajo distingue "no se pudo traer" de "no hay nada", y se
+    le escapa el caso de en medio, que es el que paso el 23-sep-2026: el dataset
+    de contratos de SECOP II se quedo en 1.000 filas para todo el pais -la fecha
+    de firma maxima era el 1 de septiembre- y los diez barridos volvieron con
+    CERO filas sin un solo error. Sin esto el colector seguia adelante y armaba
+    el tablero SIN contratos; lo unico que lo detuvo fue la auditoria, y por
+    accidente, porque compara contra un CSV que esa corrida no reescribio.
+
+    Son DOS guardas porque cada una cubre el punto ciego de la otra:
+
+    - La RELATIVA compara contra la corrida anterior, y es la buena porque se
+      calibra sola: la ventana solo crece, asi que las cifras solo suben. Medido
+      sobre seis corridas seguidas del 21 y 22-sep-2026 son estabilisimas
+      -13.509 y luego 13.496 contratos, 17.211 y 17.373 procesos, 722 y 756 de
+      SECOP I- y la unica bajada legitima observada es de TRECE filas, un 0,1%.
+      Con el umbral en el 70% queda un margen de treinta puntos sobre lo que de
+      verdad varia.
+
+    - La ABSOLUTA es para quien no tiene memoria. La entrega independiente de la
+      pagina ligera no confirma los CSV -su .gitignore los excluye y su flujo
+      sube solo index.html y datos/ligero.json-, asi que alli cada corrida
+      empieza en blanco y la guarda relativa no tiene con que comparar. Sin la
+      absoluta, esa instancia publicaria el tablero vacio y su auditoria lo
+      dejaria pasar, porque compararia la API contra los CSV flacos que ella
+      misma acabo de escribir.
+
+    Un cero en este tablero se lee como "no hay contratacion del sismo". No
+    puede venir de que la fuente este a medio recargar.
+    """
+    suelo = int((cfg.get("suelo_filas") or {}).get(nombre_fuente, 0) or 0)
+    if suelo and cuantas < suelo:
+        raise RuntimeError(
+            f"'{nombre_fuente}' devolvio {cuantas} filas y el suelo son {suelo}. "
+            f"La fuente responde pero no trae casi nada: lo normal es que este a "
+            f"medio recargar. No se toca nada."
+        )
+
+    ratio = float(cfg.get("suelo_caida") or 0)
+    if not ratio:
+        return
+    previo = leer_estado(nombre_fuente)
+    if previo.empty:
+        # Primera corrida, o una instancia que no guarda estado: aqui solo puede
+        # hablar el suelo absoluto, y ya hablo.
+        return
+    antes = len(previo)
+    if cuantas < int(antes * ratio):
+        caida = 100 - (cuantas * 100 // max(1, antes))
+        raise RuntimeError(
+            f"'{nombre_fuente}' devolvio {cuantas} filas y la corrida anterior "
+            f"tenia {antes}: una caida del {caida}%, y el umbral es conservar al "
+            f"menos el {int(ratio * 100)}%. La fuente responde pero publica mucho "
+            f"menos que hace unas horas. No se toca nada."
+        )
+
+
 def descargar_fuente(nombre_fuente, cfg, hoy, verbose=True):
     f = FUENTES[nombre_fuente]
     acumulado = {}
@@ -642,6 +701,10 @@ def descargar_fuente(nombre_fuente, cfg, hoy, verbose=True):
         )
     if fallos:
         print(f"  ! atencion: {fallos} de {len(barridos)} barridos fallaron")
+
+    # Va ANTES del return de vacio, porque el caso que lo justifica es justo ese:
+    # cero filas sin ningun error.
+    comprobar_suelo(nombre_fuente, len(acumulado), cfg)
 
     if not acumulado:
         return pd.DataFrame()

@@ -139,7 +139,21 @@ print(f"{'Fuente':<11}{'Entidad':<23}{'NIT':<11}"
       f"{'API simple':>11}{'API amplio':>12}{'CSV':>7}   Veredicto")
 print("-" * 84)
 
-problemas = []
+# Las discrepancias se separan POR DIRECCION, y no es un matiz de redaccion: son
+# dos hechos distintos con dos culpables distintos y dos reacciones distintas.
+#
+#  - faltantes: la API reporta filas que el colector NO capturo. Eso es un fallo
+#    de cobertura nuestro, y es para lo que se escribio esta auditoria. Bloquea.
+#
+#  - encogidos: nosotros tenemos MAS de lo que la API devuelve hoy. Eso no es una
+#    perdida nuestra, es que la fuente publica menos que antes. Paso el
+#    23-sep-2026, cuando el dataset de contratos de SECOP II se quedo en 1.000
+#    filas: la auditoria listo 22 entidades con cifras como (0, 0, 2853) y el
+#    registro se leia como si el monitor hubiera perdido 2.853 contratos de Cali.
+#    No bloquea, porque tener mas que la fuente no es motivo para congelar el
+#    sitio: lo publicado seria mas completo, no menos. Se grita y se explica.
+faltantes = []
+encogidos = []
 sin_verificar = []
 for nombre, dataset, columna, es_texto, campo_id, ventana in FUENTES:
     ruta = os.path.join(BASE, "datos", f"{nombre}.csv")
@@ -171,9 +185,12 @@ for nombre, dataset, columna, es_texto, campo_id, ventana in FUENTES:
             sin_verificar.append((nombre, etiqueta, r))
         elif n_csv == n_amplio:
             veredicto = "OK"
+        elif n_csv < n_amplio:
+            veredicto = "NOS FALTAN"
+            faltantes.append((nombre, etiqueta, r, n_simple, n_amplio, n_csv))
         else:
-            veredicto = "REVISAR"
-            problemas.append((nombre, etiqueta, r, n_simple, n_amplio, n_csv))
+            veredicto = "LA FUENTE BAJO"
+            encogidos.append((nombre, etiqueta, r, n_simple, n_amplio, n_csv))
         print(f"{nombre:<11}{etiqueta:<23}{r:<11}"
               f"{str(n_simple):>11}{str(n_amplio):>12}{n_csv:>7}   {veredicto}")
 
@@ -183,11 +200,41 @@ if sin_verificar:
     for p in sin_verificar[:10]:
         print("  ", p)
     print()
-if problemas:
-    print("HAY DISCREPANCIAS. Revise estas lineas:")
-    for p in problemas:
+if encogidos:
+    # Se dice antes que lo otro y con todas sus letras, porque es lo que un
+    # lector apurado confunde con una perdida nuestra.
+    fuentes_tocadas = sorted({p[0] for p in encogidos})
+    print(f"LA FUENTE PUBLICA MENOS DE LO QUE TENEMOS en {len(encogidos)} "
+          f"comprobaciones ({', '.join(fuentes_tocadas)}).")
+    print("   NO es una perdida del monitor: son filas que la API devolvia y hoy")
+    print("   ya no devuelve. Lo que tenemos guardado es mas completo que la")
+    print("   fuente, no menos, asi que esto NO bloquea la publicacion.")
+    print("   Si son muchas a la vez, lo normal es que el dataset este a medio")
+    print("   recargar; el suelo de cordura del colector aborta antes de llegar")
+    print("   aqui cuando la caida es general.")
+    print("   (fuente, entidad, NIT, API simple, API amplio, nuestro CSV)")
+    for p in encogidos[:15]:
+        print("  ", p)
+    if len(encogidos) > 15:
+        print(f"   ... y {len(encogidos) - 15} mas")
+    print(f"::warning::La fuente publica menos de lo que tenemos en "
+          f"{len(encogidos)} comprobaciones ({', '.join(fuentes_tocadas)}). "
+          f"No es una perdida del monitor.")
+    print()
+
+if faltantes:
+    print("FALTAN DATOS NUESTROS: la API reporta filas que el colector no")
+    print("capturo. Esto si es un fallo de cobertura y no se publica.")
+    print("   (fuente, entidad, NIT, API simple, API amplio, nuestro CSV)")
+    for p in faltantes:
         print("  ", p)
     sys.exit(1)
-print(f"Sin discrepancias: el colector capturo todo lo que la API reporta "
-      f"para las entidades vigiladas "
-      f"({len(ENTIDADES) * len(FUENTES) - len(sin_verificar)} comprobaciones efectivas).")
+
+efectivas = len(ENTIDADES) * len(FUENTES) - len(sin_verificar)
+if encogidos:
+    print(f"No falta nada de lo que la API reporta hoy ({efectivas} "
+          f"comprobaciones efectivas). Se publica.")
+else:
+    print(f"Sin discrepancias: el colector capturo todo lo que la API reporta "
+          f"para las entidades vigiladas "
+          f"({efectivas} comprobaciones efectivas).")

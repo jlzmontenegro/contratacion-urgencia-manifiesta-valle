@@ -159,6 +159,53 @@ colector aborta con código 2 sin tocar nada. Si el navegador no puede cargar el
 Un cero en este tablero se lee como "no hay contratación del sismo": no puede aparecer por un
 fallo técnico.
 
+**Y falta el caso de en medio: la fuente RESPONDE y no trae casi nada** (23-sep-2026,
+`comprobar_suelo()`). El dataset de contratos de SECOP II se quedó en **1.000 filas para todo
+el país** —fecha de firma máxima el 1 de septiembre— y los **diez barridos volvieron con cero
+filas sin un solo error**. El control de «todos los barridos fallaron» no salta, porque ninguno
+falló. Y lo que hacía `colector.py` con eso era seguir adelante: `if df.empty: continue` deja
+`resultados["contratos"]` vacío y **el tablero se habría armado sin un solo contrato**. No pasó
+solo porque la auditoría lo bloqueó, y **por accidente**: la bloqueó porque compara contra un
+CSV que esa corrida no reescribió.
+
+**Son DOS guardas, y cada una cubre el punto ciego de la otra.** La **relativa** (`suelo_caida`,
+70%) compara contra la corrida anterior y es la buena porque se calibra sola: la ventana solo
+crece, así que las cifras solo suben. La **absoluta** (`suelo_filas`) es para quien **no tiene
+memoria**: la entrega independiente de la página ligera no confirma los CSV —su `.gitignore` los
+excluye y su flujo sube solo `index.html` y `datos/ligero.json`—, así que allí cada corrida
+empieza en blanco, la relativa no tiene con qué comparar, y **su auditoría habría dejado pasar
+el tablero vacío** porque compararía la API contra los CSV flacos que ella misma acabó de
+escribir. Sin el suelo absoluto, esa instancia publica el cero.
+
+**Los umbrales se midieron, no se supusieron.** Sobre seis corridas seguidas del 21 y 22-sep
+las cifras son estabilísimas —13.509 y luego 13.496 contratos, 17.211 y 17.373 procesos, 722 y
+756 de SECOP I— y **la única bajada legítima observada es de TRECE filas, un 0,1%**. El 70% deja
+treinta puntos de margen sobre lo que de verdad varía; los suelos absolutos son en torno a un
+tercio de esas cifras (4.000 / 5.000 / 200). Probado con doce casos, y el que importa es que la
+bajada real de trece filas **pasa**. Ojo si algún día se acerca `fecha_inicio` a hoy: entonces
+las cifras normales serían pequeñas y habría que bajarlos.
+
+**Lo que el suelo sí cubre y la auditoría no puede:** si la fuente devolviera 5.000 en vez de
+13.496, el colector reescribiría el CSV con esas 5.000 y **la auditoría pasaría**, porque compara
+nuestro CSV contra la misma API degradada y los dos dirían 5.000. La auditoría no puede cazar una
+degradación parcial de la fuente por construcción. El suelo sí.
+
+**La auditoría distingue QUIÉN perdió las filas, y no es un matiz de redacción** (23-sep-2026).
+Decía *"HAY DISCREPANCIAS"* y listaba `('contratos', 'Alcaldia de Cali', '890399011', 0, 0, 2853)`
+en 22 entidades, que **se lee como si el monitor hubiera perdido 2.853 contratos de Cali**. Son
+dos hechos distintos, con dos culpables y dos reacciones:
+
+- **`NOS FALTAN`** (`csv < api`): la API reporta filas que no capturamos. Es un fallo de cobertura
+  nuestro, es para lo que se escribió la auditoría, y **bloquea** con código 1.
+- **`LA FUENTE BAJO`** (`csv > api`): tenemos más de lo que la fuente devuelve hoy. **No bloquea**,
+  porque congelar el sitio por un problema de la fuente dejaría sin publicar unos datos que son
+  **más completos, no menos** — y eso es justo lo que tuvo el tablero parado 24 horas. Sale con
+  `::warning::` y con la explicación escrita al lado.
+
+Probado en vivo contra la API con la lista recortada: las dos ramas salen, con faltantes da **1**
+y con solo encogidos da **0**. Con el suelo puesto, el caso general ya aborta antes de llegar aquí,
+así que esta rama queda para los encogimientos parciales y para el `--sin-red` con CSV viejos.
+
 **Nunca mostrar un conteo parcial como si fuera el total.** En el JSON viaja alrededor de la
 mitad de lo monitoreado: la contratación ordinaria solo se embebe para los grupos de
 `GRUPOS_ORDINARIA` (Cali, la Gobernación, sus descentralizadas y la UNGRD). Cuando el filtro
