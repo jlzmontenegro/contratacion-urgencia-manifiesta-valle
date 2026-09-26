@@ -57,38 +57,38 @@ contratos  Otras     IE Paulo VI - Palmira815004730            0           0    
 contratos  Otras     IE Ginebra La Salle891380108            0           0      0   OK
 contratos  Otras     IE Zaragoza - Cartago800034326            0           0      0   OK
 contratos  Otras     IE Camilo Torres - Dagua805015675            0           0      0   OK
-procesos   Alcaldia de Cali       890399011         2697        2743   2743   OK
-procesos   Gobernacion del Valle  890399029         1283        2552   2552   OK
+procesos   Alcaldia de Cali       890399011         2774        2822   2822   OK
+procesos   Gobernacion del Valle  890399029         1304        2635   2635   OK
 procesos   UNGRD / FNGRD          900478966            2           2      2   OK
-procesos   UNGRD / FNGRD          900978341          329         329    329   OK
-procesos   Desc.Cali EMCALI - Empresas Munici890399003          353         353    353   OK
+procesos   UNGRD / FNGRD          900978341          330         330    330   OK
+procesos   Desc.Cali EMCALI - Empresas Munici890399003          360         360    360   OK
 procesos   Desc.Cali Metro Cali S.A.805013171           13          13     13   OK
 procesos   Desc.Cali Red de Salud de Ladera E805027289          341         341    341   OK
-procesos   Desc.Cali Red de Salud del Norte E805027287           49          49     49   OK
-procesos   Desc.Cali Red de Salud del Oriente805027337           22          22     22   OK
-procesos   Desc.Cali Red de Salud del Surorie805027338           32          32     32   OK
+procesos   Desc.Cali Red de Salud del Norte E805027287           52          52     52   OK
+procesos   Desc.Cali Red de Salud del Oriente805027337           24          24     24   OK
+procesos   Desc.Cali Red de Salud del Surorie805027338           33          33     33   OK
 procesos   Desc.Cali Fondo Especial de Vivien805013033           36          36     36   OK
 procesos   Desc.Cali Instituto Popular de Cul900431928            0           0      0   OK
 procesos   Desc.Cali Personeria Distrital de 805003895           11          11     11   OK
-procesos   Desc.Cali Contraloria de Santiago 800217831           38          38     38   OK
-procesos   Desc.Cali IE Normal Superior Santi800243065            7           7      7   OK
+procesos   Desc.Cali Contraloria de Santiago 800217831           42          42     42   OK
+procesos   Desc.Cali IE Normal Superior Santi800243065            8           8      8   OK
 procesos   Desc.Cali Camara de Comercio de Ca890399001            0           0      0   OK
-procesos   Desc.Gob  INDERVALLE - Instituto d805012896         1233        1233   1233   OK
+procesos   Desc.Gob  INDERVALLE - Instituto d805012896         1235        1235   1235   OK
 procesos   Desc.Gob  INFIVALLE - Instituto Fi890308051            3           3      3   OK
 procesos   Desc.Gob  INCIVA       800086201          121         121    121   OK
-procesos   Desc.Gob  Universidad del Valle890399010          265         265    265   OK
+procesos   Desc.Gob  Universidad del Valle890399010          274         274    274   OK
 procesos   Desc.Gob  Instituto Departamental 890325989           34          34     34   OK
 procesos   Desc.Gob  Biblioteca Departamental890399039           15          15     15   OK
-procesos   Desc.Gob  Vallecaucana de Aguas S.900333452           69          69     69   OK
+procesos   Desc.Gob  Vallecaucana de Aguas S.900333452           70          70     70   OK
 procesos   Desc.Gob  ACUAVALLE - Acueductos y890399032           30          30     30   OK
 procesos   Desc.Gob  Beneficencia del Valle d890399027           19          19     19   OK
 procesos   Desc.Gob  Industria de Licores del890399012           19          19     19   OK
 procesos   Desc.Gob  HUV - Hospital Universit890303461           55          55     55   OK
 procesos   Desc.Gob  Hospital Departamental P890304155           10          10     10   OK
-procesos   Desc.Gob  Hospital Departamental M890399047          167         167    167   OK
+procesos   Desc.Gob  Hospital Departamental M890399047          168         168    168   OK
 procesos   Desc.Gob  Hospital Departamental T891901158            9           9      9   OK
 procesos   Desc.Gob  Hospital Departamental S891900343            5           5      5   OK
-procesos   Desc.Gob  Hospital Departamental S891900441           20          20     20   OK
+procesos   Desc.Gob  Hospital Departamental S891900441           22          22     22   OK
 procesos   Desc.Gob  Hospital Departamental C821003143           23          23     23   OK
 procesos   Desc.Gob  Contraloria Departamenta800090735            2           2      2   OK
 procesos   Otras     Hospital del Rosario de 891380070            5           5      5   OK
@@ -100,11 +100,11 @@ procesos   Otras     Empresa de Servicio Publ900401903           15          15 
 procesos   Otras     Empresas Publicas Munici891900474            1           1      1   OK
 procesos   Otras     Instituto Municipal del 891900528            0           0      0   OK
 procesos   Otras     Instituto Distrital del 890399992            1           1      1   OK
-procesos   Otras     Personeria Municipal de 891900493           67          69     69   OK
+procesos   Otras     Personeria Municipal de 891900493           74          76     76   OK
 procesos   Otras     Personeria Municipal de 901159063            0           0      0   OK
 procesos   Otras     Personeria Municipal de 900085817            0           0      0   OK
-procesos   Otras     Personeria Municipal de 800100524           28          28     28   OK
-procesos   Otras     Concejo Municipal de Jam890399046          734         734    734   OK
+procesos   Otras     Personeria Municipal de 800100524           30          30     30   OK
+procesos   Otras     Concejo Municipal de Jam890399046          772         772    772   OK
 procesos   Otras     IE Alfonso Lopez Pumarej805000057            2           2      2   OK
 procesos   Otras     IE Paulo VI - Palmira815004730            2           2      2   OK
 procesos   Otras     IE Ginebra La Salle891380108            0           0      0   OK
