@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-09-25 18:55  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-09-26 07:12  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -10,8 +10,8 @@
 | Valor de esos contratos | $ 70.049.760.856 |
 | Procesos relacionados (alta + media) | 523 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 452 |
-| Modificaciones detectadas | 179 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 33031 |
 
 ### Desglose por nivel de gobierno
@@ -106,97 +106,6 @@ _Se revisaron 335 registros de contratacion de estas dos entidades en la ventana
 | INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ | 2 | $ 1.440.000.000 |
 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | 1 | $ 1.321.917.014 |
 | HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E | 1 | $ 1.150.889.534 |
-
-## Procesos nuevos (21 relacionados de 452 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-09-23 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | PRESTAR EL SERVICIO DE ALIMENTACION PARA LAS UNIDADES DE ALOJAMIENTO TEMPORAL DESTINADAS A LA ATENCIÓN DE LAS  | $ 341.250.000 | Contratación directa | Alta |
-| 2026-09-24 | MUNICIPIO DE SANTA ROSA DE CABAL | PRESTACIÓN DEL SERVICIO DE RECOLECCIÓN, TRANSPORTE Y DISPOSICIÓN FINAL DE RESIDUOS SÓLIDOS INSERVIBLES Y VOLUM | $ 200.000.000 | Contratación directa | Alta |
-| 2026-09-24 | ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA | ADECUACIONES LOCATIVAS DE LA CUBIERTA DE LA INSTITUCIÓN EDUCATIVA AGRÍCOLA CAMPOALEGRE SEDE CENTRAL DE LA ZONA | $ 149.526.599 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-09-23 | INSTITUCIÓN EDUCATIVA SANTA ROSALIA DE PALERMO | REPARACIONES A LA INFRAESTRUCTURA DE ALGUNAS SEDES DE LA INSTITUCIÓN EDUCATIVA SANTA ROSALÍA DE PALERMO A RAÍZ | $ 35.000.000 | Contratación régimen especial | Alta |
-| 2026-09-23 | INSTITUCION EDUCATIVA GENERAL SANTANDER MONTENEGRO | REPARACION Y ADECUACIONES DEL AREA DE RECTORIA QUE SE VIO AFECTADA TRAS EL SISMO DEL 10 AGOSTO DE 2026, ADECUA | $ 33.100.000 | Contratación régimen especial | Alta |
-| 2026-09-23 | MUNICIPIO DE EL CERRITO. | PRESTACIÓN DE SERVICIOS LOGÍSTICOS PARA EL FORTALECIMIENTO DEL SECTOR AGROPECUARIO Y RURAL A TRAVÉS DE LA REAL | $ 25.000.000 | Mínima cuantía | Media |
-| 2026-09-23 | INSTITUCION EDUCATIVA NORMAL SUPERIOR SANTIAGO DE CALI | Mantenimiento preventivo/correctivo, reparación, mejoramiento y adecuaciones menores. Intervenciones en cubier | $ 25.000.000 | Contratación régimen especial | Alta |
-| 2026-09-23 | ALCALDIA MUNICIPAL DE RIO QUITO | ADQUISICION DE KITS DE ALIMENTOS Y ELEMENTOS DE ASEO PARA LA ATENCIÓN Y MITIGACION DE LOS EFECTOS GENERADOS PO | $ 24.228.800 | Contratación directa | Alta |
-| 2026-09-24 | INSTITUCION EDUCATIVA SAN JOSE | SUMINISTRO DE MATERIALES DE FERRETERÍA PARA EL CAMBIO DE LA CUBIERTA DEL TERCER PISO DE LA INSTITUCIÓN EDUCATI | $ 22.096.000 | Contratación régimen especial | Alta |
-| 2026-09-23 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 19.800.000 | Contratación directa | Alta |
-| 2026-09-23 | INSTITUCIÓN EDUCATIVA INEM JOSE CELESTINO MUTIS | Servicio de demolicion de paredes averiadas en bloque 13, demolicion de cielorraso averiado en gimnasio y salo | $ 17.250.000 | Contratación régimen especial | Alta |
-| 2026-09-23 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR DE SERVICIOS PROFESIONALES ESPECIALIZADOS EN LA SUBSECRETARÍA DE PLANEACIÓN Y CALIDAD EDUCATIVA PARA R | $ 15.000.000 | Contratación directa | Alta |
-| 2026-09-24 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES ESPECIALIZADOS EN LA SUBSECRETARIA DE PLANEACIÓN Y CALIDAD EDUCATIVA, EN EL PR | $ 15.000.000 | Contratación directa | Alta |
-| 2026-09-24 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS PROFESIONALES PARA REALIZAR TALLERES DE ESCRITURA BRAILLE, ATENCION A PERSONAS CON DIS | $ 11.400.000 | Contratación directa | Alta |
-| 2026-09-23 | INSTITUCIÓN EDUCATIVA SEVILLA | ADECUACIONES LOCATIVAS EN LAS SEDES EDUCATIVAS LICEO MIXTO, JHON F. KENNEDY, PRIMITIVO CRESPO, Y RAFAEL POMBO. | $ 10.091.100 | Contratación régimen especial | Alta |
-| 2026-09-24 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | PRESTAR LOS SERVICIOS DE APOYO A LA GESTIÓN COMO MAESTRO DE OBRAS EN LOS FRENTES DE TRABAJO EN EL MUNICIPIO DE | $ 8.700.000 | Contratación directa | Alta |
-| 2026-09-24 | ALCALDÍA MUNICIPIO DE PALMIRA | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN EN LAS ACTIVIDADES PROPIAS DE LA DIRECCIÓN DE GESTIÓN DEL RIESGO | $ 8.100.000 | Contratación directa | Media |
-| 2026-09-23 | IEACADEMICO | Contratar la ejecución de las obras de adecuación técnica, acondicionamiento de red eléctrica e instalaciones  | $ 8.000.000 | Contratación régimen especial | Alta |
-| 2026-09-23 | MUNICIPIO DE YUMBO VALLE | PRESTAR POR SUS PROPIOS MEDIOS Y AUTONOMÍA ADMINISTRATIVA LOS SERVICIOS DE APOYO A LA GESTIÓN A LA SECRETARÍA  | $ 7.700.000 | Contratación directa | Media |
-| 2026-09-23 | INSTITUCION EDUCATIVA COMUNITARIA LUIS CARLOS VALENCIA | SUMINISTRO DE ELEMENTOS Y ARTICULOS PARA ATENCION DE EMERGENCIAS PARA LA IEC LUIS CARLOS VALENCIA | $ 2.700.000 | Contratación régimen especial (con ofertas) | Media |
-| 2026-09-24 | HOSPITAL LA BUENA ESPERANZA DE YUMBO E.S.E. | PIC 2026- SERVICIO LOGISTICO (ALQUILER E INSTALACION DE CARPA, SILLETERIA, E INSUMOS PARA PREPARACIÓN DE RECET | $ 2.000.000 | Contratación régimen especial | Media |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| procesos | CO1.REQ.11074588 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11074588 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11074588 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11074488 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11074488 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11074488 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11084370 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11082202 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11084751 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11084751 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11084751 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11085276 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11077975 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11077975 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11077975 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.10974286 | valor_total_adjudicacion | 0 | 327226200 |
-| procesos | CO1.REQ.10974286 | adjudicado | No | Si |
-| procesos | CO1.REQ.11062727 | estado_del_procedimiento | Evaluación | Abierto |
-| procesos | CO1.REQ.10882405 | valor_total_adjudicacion | 0 | 735000000 |
-| procesos | CO1.REQ.10882405 | adjudicado | No | Si |
-| procesos | CO1.REQ.11077818 | precio_base | 167167125 | 167183396 |
-| procesos | CO1.REQ.11078149 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11078149 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11078149 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11081653 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11022478 | valor_total_adjudicacion | 0 | 1488426655 |
-| procesos | CO1.REQ.11022478 | adjudicado | No | Si |
-| procesos | CO1.REQ.11022478 | fecha_adjudicacion |  | 2026-09-24T00:00:00.000 |
-| procesos | CO1.REQ.11046630 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11054095 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.10951736 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11025991 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11009724 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11009724 | fecha_adjudicacion |  | 2026-09-24T00:00:00.000 |
-| procesos | CO1.REQ.11084691 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11084691 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11084691 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11006563 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11067491 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11029286 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11037365 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11032727 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11005084 | estado_del_procedimiento | Evaluación | Abierto |
-| procesos | CO1.REQ.11005084 | valor_total_adjudicacion | 0 | 649987520 |
-| procesos | CO1.REQ.11005084 | adjudicado | No | Si |
-| procesos | CO1.REQ.11068361 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.10868175 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11072661 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.10822611 | estado_del_procedimiento | Evaluación | Cancelado |
-| procesos | CO1.REQ.11075540 | valor_total_adjudicacion | 0 | 88194000 |
-| procesos | CO1.REQ.11075540 | adjudicado | No | Si |
-| procesos | CO1.REQ.11014489 | valor_total_adjudicacion | 0 | 996884317 |
-| procesos | CO1.REQ.11014489 | adjudicado | No | Si |
-| procesos | CO1.REQ.10957719 | estado_del_procedimiento | Evaluación | Seleccionado |
-| procesos | CO1.REQ.11072510 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11073126 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11067657 | estado_del_procedimiento | En aprobación | Publicado |
-| procesos | CO1.REQ.11067657 | fase |  | Presentación de observaciones |
-| procesos | CO1.REQ.11067657 | estado_resumen | No Definido | Presentación de observaciones |
-| procesos | CO1.REQ.11085034 | estado_del_procedimiento | Publicado | Evaluación |
 
 ## Alertas
 
