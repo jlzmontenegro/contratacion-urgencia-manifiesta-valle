@@ -153,7 +153,7 @@ secop1     Otras     Empresa de Servicio Publ900401903            0           0 
 secop1     Otras     Empresas Publicas Munici891900474            0           0      0   OK
 secop1     Otras     Instituto Municipal del 891900528            0           0      0   OK
 secop1     Otras     Instituto Distrital del 890399992           63          63     63   OK
-secop1     Otras     Personeria Municipal de 891900493            0          21     21   OK
+secop1     Otras     Personeria Municipal de 891900493            0          22     22   OK
 secop1     Otras     Personeria Municipal de 901159063            0           0      0   OK
 secop1     Otras     Personeria Municipal de 900085817            0           0      0   OK
 secop1     Otras     Personeria Municipal de 800100524            0           0      0   OK
