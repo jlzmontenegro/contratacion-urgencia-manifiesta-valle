@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-09-26 18:29  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-09-27 07:58  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -10,8 +10,8 @@
 | Valor de esos contratos | $ 70.049.760.856 |
 | Procesos relacionados (alta + media) | 541 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 447 |
-| Modificaciones detectadas | 309 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 33478 |
 
 ### Desglose por nivel de gobierno
@@ -106,105 +106,6 @@ _Se revisaron 336 registros de contratacion de estas dos entidades en la ventana
 | INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ | 2 | $ 1.440.000.000 |
 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | 1 | $ 1.321.917.014 |
 | HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E | 1 | $ 1.150.889.534 |
-
-## Procesos nuevos (29 relacionados de 447 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-09-25 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO | Prestar los servicios requeridos para la implementación de la línea de Capital Semilla del Programa Fondo Soli | $ 9.178.570.453 | Contratación directa | Alta |
-| 2026-09-25 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | MANTENIMIENTO, RECUPERACION Y ADECUACION DE ESCENARIOS DEPORTIVOS DEL MUNICIPIO DE DOSQUEBRADAS AFECTADOS POR  | $ 1.382.063.771 | Contratación directa | Alta |
-| 2026-09-22 | ALCALDIA MUNICIPAL DE BUGA | REALIZAR LA OBRA DE RECALCE DE MUROS DE CONTENCIÓN EN LA ACEQUIA LA HONDA Y MANTENIMIENTO DE ACEQUIA LA PACHIT | $ 510.823.582 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-09-24 | EDU ANTIOQUIA | SUMINISTRO DE MATERIALES, ELEMENTOS E INSUMOS DE CONSTRUCCIÓN REQUERIDOS PARA LA ATENCIÓN, MITIGACIÓN, REPARAC | $ 482.765.279 | Contratación régimen especial | Alta |
-| 2026-09-24 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | CONTRATAR LOS SERVICIOS RELACIONADOS CON LA GESTION INTEGRAL (RECOLECCION, TRANSPORTE Y DISPOSICION FINAL) DE  | $ 448.000.000 | Contratación directa | Alta |
-| 2026-09-25 | GOBERNACIÓN DE RISARALDA** | ARRENDAR INMUEBLE PARA LA SALVAGUARDA, PRESERVACIÓN Y CONSERVACIÓN TEMPORAL DE LOS BIENES DEL DEPARTAMENTO AFE | $ 228.480.000 | Contratación directa | Alta |
-| 2026-09-24 | MUNICIPIO DE BELEN DE UMBRIA | SUMINISTRO DE TEJAS GALVANIZADAS PARA LA ATENCIÓN INMEDIATA DE LA EMERGENCIA OCASIONADA POR EL SISMO DEL 10 DE | $ 185.501.484 | Contratación directa | Alta |
-| 2026-09-25 | EMPRESA DE OBRAS SANITARIAS DE CALDAS S.A E.S.P. | REPARACIÓN POR EMERGENCIA POR DAÑOS ESTRUCTURALES EN LA PLANTA DE TRATAMIENTO DE AGUA POTABLE, AFECTANDO LA CO | $ 99.173.519 | Contratación régimen especial | Alta |
-| 2026-09-24 | Institución Universitaria de Roldanillo | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA EJERCER LA SUPERVISIÓN TÉCNICO INDEPENDIENTE AL CONTRATO DE OBRA No | $ 64.637.737 | Contratación directa | Alta |
-| 2026-09-25 | INSTITUCION EDUCATIVA SAN JOSE | REALIZAR OBRAS DE MANTENIMIENTO Y REPARACIÓN DE LA INFRAESTRUCTURA FÍSICA DE LA INSTITUCIÓN EDUCATIVA SAN JOSÉ | $ 27.906.800 | Contratación régimen especial | Alta |
-| 2026-09-25 | MUNICIPIO DE EL CERRITO. | PRESTACIÓN DE SERVICIOS PROFESIONALES COMO INGENIERO SANITARIO Y AMBIENTAL PARA LA EJECUCIÓN, SEGUIMIENTO Y FO | $ 21.856.000 | Contratación directa | Media |
-| 2026-09-25 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS PROFESIONALES PARA LA IDENTIFICACION, VERIFICACIÓN Y ORGANIZACIÓN DE INFORMACIÓN PREDI | $ 18.750.000 | Contratación directa | Alta |
-| 2026-09-24 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES ESPECIALIZADOS BRINDANDO ASESORÍA ESTRATÉGICA AL DESPACHO DE LA SECRETAR | $ 15.000.000 | Contratación directa | Alta |
-| 2026-09-24 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS DE APOYO A LA GESTION PARA LA IDENTIFICACION, VERIFICACIÓN Y ORGANIZACIÓN DE INFORMACI | $ 12.000.000 | Contratación directa | Alta |
-| 2026-09-24 | MUNICIPIO DE SAN JOSE. | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA EL SEGUIMIENTO, ARTICULACIÓN Y FORTALECIMIENTO DE LAS ACCIONES LOGÍ | $ 10.000.000 | Contratación directa | Alta |
-| 2026-09-24 | MUNICIPIO DE SAN JUAN BAUTISTA DE GUACARI2 | PRESTACI N DE SERVICIO DE APOYO A LA GESTIÓN EN SALUD PÚBLICA, MEDIANTE EL DESARROLLO DE ACTIVIDADES EN LA SEC | $ 9.116.000 | Contratación directa | Media |
-| 2026-09-24 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | PRESTACION DE SERVICIOS DE APOYO A LA GESTION COMO OPERADOR DE MAQUINARIA AMARILLA, PARA BRINDAR APOYO EN EL M | $ 7.500.000 | Contratación directa | Media |
-| 2026-09-24 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | PRESTACION DE SERVICIOS DE APOYO A LA GESTION, EN ACTIVIDADES OPERATIVAS EN EL MARCO DEL PROYECTO DENOMINADO   | $ 6.250.000 | Contratación directa | Media |
-| 2026-09-24 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | PRESTACION DE SERVICIOS DE APOYO A LA GESTION EN ACTIVIDADES ADMINISTRATIVAS EN EL MARCO DEL PROYECTO DENOMINA | $ 6.250.000 | Contratación directa | Media |
-| 2026-09-25 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | PRESTACION DE SERVICIOS DE APOYO A LA GESTION, EN ACTIVIDADES OPERATIVAS EN EL MARCO DEL PROYECTO DENOMINADO   | $ 6.250.000 | Contratación directa | Media |
-| 2026-09-24 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | PRESTACION DE SERVICIOS DE APOYO A LA GESTION, EN ACTIVIDADES OPERATIVAS EN EL MARCO DEL PROYECTO DENOMINADO   | $ 6.250.000 | Contratación directa | Media |
-| 2026-09-25 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | PRESTACION DE SERVICIOS DE APOYO A LA GESTION, EN ACTIVIDADES OPERATIVAS EN EL MARCO DEL PROYECTO DENOMINADO   | $ 6.250.000 | Contratación directa | Media |
-| 2026-09-25 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | PRESTACION DE SERVICIOS DE APOYO A LA GESTION, EN ACTIVIDADES OPERATIVAS EN EL MARCO DEL PROYECTO DENOMINADO   | $ 6.250.000 | Contratación directa | Media |
-| 2026-09-25 | MUNICIPIO DE SEVILLA | PRESTAR SERVICIOS PROFESIONALES PARA REALIZAR LA EVALUACIÓN DE EDIFICACIONES E INFRAESTRUCTURA AFECTADA POR EL | $ 5.000.000 | Contratación directa | Alta |
-| 2026-09-24 | INSTITUCION EDUCATIVA JORGE ELICER GAITAN + | REPARACIONES LOCATIVAS POST TERREMOTO DEL 10 DE AGOSTO DE 2026, EN LA SEDE PRINCIPAL DE LA INSTITUCION EDUCATI | $ 3.097.755 | Contratación régimen especial | Alta |
-| 2026-09-24 | INSTITUCION EDUCATIVA NORMAL SUPERIOR SANTIAGO DE CALI | Servicios de mantenimiento de un ventanal de lámina en aluminio con doble nave o doble hoja, reposición de ald | $ 1.451.800 | Contratación régimen especial | Media |
-| 2026-09-24 | INSTITUCION EDUCATIVA LUIS FERNANDO CAICEDO | COMPRA DE INSUMOS PARA EL PROYECTO INSTITUCIONAL GESTION DEL RIESGO | $ 333.100 | Contratación régimen especial | Media |
-| 2026-09-24 | INSTITUCION EDUCATIVA LUIS FERNANDO CAICEDO | SERVICIO DE RECARGA DE EXTINTORES DENTRO DEL MARCO DEL PROYECTO GESTION DEL RIESGO | $ 304.000 | Contratación régimen especial | Media |
-| 2026-09-19 | DISPENSARIO MEDICO DE CALI | EL MANTENIMIENTO POSTERIOR AL EVENTO SISMICO DE 10 DE AGOSTO DEL 2026, CON EL FIN DE DAR CUMPLIMIENTO A LA NOR | $ 0 | Solicitud de información a los Proveedores | Alta |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| procesos | CO1.REQ.10974286 | nombre_del_proveedor | No Definido | GEOSOLUCIONES DAJ |
-| procesos | CO1.REQ.10974286 | fecha_adjudicacion |  | 2026-09-25T00:00:00.000 |
-| procesos | CO1.REQ.10974286 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11022478 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11022478 | nombre_del_proveedor | No Definido | CONCRETAR 2026 |
-| procesos | CO1.REQ.10882405 | nombre_del_proveedor | No Definido | GEOSOLUCIONES DAJ |
-| procesos | CO1.REQ.10882405 | fecha_adjudicacion |  | 2026-09-25T00:00:00.000 |
-| procesos | CO1.REQ.10882405 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11073234 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11073234 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11073234 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11087502 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11096231 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11096231 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11096231 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11087812 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11087812 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11087812 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11095157 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11095157 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11095157 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.10964977 | estado_del_procedimiento | Evaluación | Abierto |
-| procesos | CO1.REQ.11009724 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11095928 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11006563 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11005084 | nombre_del_proveedor | No Definido | FANALCA S.A.S. |
-| procesos | CO1.REQ.11014781 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11069973 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11074490 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11078151 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11005546 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11020055 | estado_del_procedimiento | En aprobación | Publicado |
-| procesos | CO1.REQ.11020055 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11020055 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11095563 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11095969 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11062231 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11095299 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11095299 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11095299 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.10749618 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11074619 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11072821 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11088470 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11088470 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11088470 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.10949416 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11010547 | valor_total_adjudicacion | 0 | 463062359 |
-| procesos | CO1.REQ.11010547 | adjudicado | No | Si |
-| procesos | CO1.REQ.11010547 | nombre_del_proveedor | No Definido | ICONSA S.A.S |
-| procesos | CO1.REQ.11010547 | fecha_adjudicacion |  | 2026-09-25T00:00:00.000 |
-| procesos | CO1.REQ.11022923 | nombre_del_proveedor | No Definido | OR QUINTERO SOLUCIONES |
-| procesos | CO1.REQ.11022923 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11034974 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.10970673 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11093901 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11093901 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11093901 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11040435 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.10996179 | estado_resumen | Presentación de oferta | Adjudicado |
 
 ## Alertas
 
