@@ -57,15 +57,15 @@ contratos  Otras     IE Paulo VI - Palmira815004730            0           0    
 contratos  Otras     IE Ginebra La Salle891380108            0           0      0   OK
 contratos  Otras     IE Zaragoza - Cartago800034326            0           0      0   OK
 contratos  Otras     IE Camilo Torres - Dagua805015675            0           0      0   OK
-procesos   Alcaldia de Cali       890399011         2839        2892   2892   OK
-procesos   Gobernacion del Valle  890399029         1566        2949   2949   OK
+procesos   Alcaldia de Cali       890399011         2853        2906   2906   OK
+procesos   Gobernacion del Valle  890399029         1593        3013   3013   OK
 procesos   UNGRD / FNGRD          900478966            2           2      2   OK
 procesos   UNGRD / FNGRD          900978341          331         331    331   OK
-procesos   Desc.Cali EMCALI - Empresas Munici890399003          369         369    369   OK
+procesos   Desc.Cali EMCALI - Empresas Munici890399003          370         370    370   OK
 procesos   Desc.Cali Metro Cali S.A.805013171           14          14     14   OK
 procesos   Desc.Cali Red de Salud de Ladera E805027289          345         345    345   OK
 procesos   Desc.Cali Red de Salud del Norte E805027287           52          52     52   OK
-procesos   Desc.Cali Red de Salud del Oriente805027337           24          24     24   OK
+procesos   Desc.Cali Red de Salud del Oriente805027337           25          25     25   OK
 procesos   Desc.Cali Red de Salud del Surorie805027338           35          35     35   OK
 procesos   Desc.Cali Fondo Especial de Vivien805013033           37          37     37   OK
 procesos   Desc.Cali Instituto Popular de Cul900431928            0           0      0   OK
@@ -75,8 +75,8 @@ procesos   Desc.Cali IE Normal Superior Santi800243065            9           9 
 procesos   Desc.Cali Camara de Comercio de Ca890399001            0           0      0   OK
 procesos   Desc.Gob  INDERVALLE - Instituto d805012896         1236        1236   1236   OK
 procesos   Desc.Gob  INFIVALLE - Instituto Fi890308051            3           3      3   OK
-procesos   Desc.Gob  INCIVA       800086201          121         121    121   OK
-procesos   Desc.Gob  Universidad del Valle890399010          289         289    289   OK
+procesos   Desc.Gob  INCIVA       800086201          122         122    122   OK
+procesos   Desc.Gob  Universidad del Valle890399010          296         296    296   OK
 procesos   Desc.Gob  Instituto Departamental 890325989           34          34     34   OK
 procesos   Desc.Gob  Biblioteca Departamental890399039           15          15     15   OK
 procesos   Desc.Gob  Vallecaucana de Aguas S.900333452           71          71     71   OK
