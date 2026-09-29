@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-09-29 14:21  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-09-29 17:35  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -10,8 +10,8 @@
 | Valor de esos contratos | $ 81.990.572.143 |
 | Procesos relacionados (alta + media) | 554 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 156 |
-| Modificaciones detectadas | 103 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 35709 |
 
 ### Desglose por nivel de gobierno
@@ -106,87 +106,6 @@ _Se revisaron 336 registros de contratacion de estas dos entidades en la ventana
 | ALCALDIA MUNICIPAL DE YOTOCO | 5 | $ 1.875.627.623 |
 | INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ | 2 | $ 1.440.000.000 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA | 1 | $ 1.361.024.561 |
-
-## Procesos nuevos (11 relacionados de 156 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-09-28 | UNIVERSIDAD TECNOLÓGICA DE PEREIRA | SISMO 2026 - Obras de mitigación, reparación y habilitación de espacios afectados por el sismo del 10 de agost | $ 804.610.178 | Contratación régimen especial | Alta |
-| 2026-09-28 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS PROFESIONALES COMO ABOGADO ESPECIALISTA EN CONTRATACIÓN ESTATAL Y SU GESTIÓN  MAGISTER E | $ 24.000.000 | Contratación directa | Media |
-| 2026-09-28 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS PROFESIONALES COMO ADMINISTRADOR DE EMPRESAS EN LA ACTIVIDAD ORIENTAR EN LA IMPLEMENTACI | $ 20.000.000 | Contratación directa | Media |
-| 2026-09-28 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS DE APOYO A LA GESTIÓN COMO TECNICO EN LA ACTIVIDAD ORIENTAR EN LA ACTUALIZACIÓN Y/O AJUS | $ 12.000.000 | Contratación directa | Media |
-| 2026-09-28 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES EN TRABAJO SOCIAL PARA EL DESARROLLO DE ESTRATEGIAS DE BIENESTAR SOCIAL  | $ 11.400.000 | Contratación directa | Alta |
-| 2026-09-28 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES PARA LA ARTICULACIÓN PEDAGÓGICA Y ACADÉMICA DE LA PROGRAMACIÓN CULTURAL Y LOS  | $ 11.400.000 | Contratación directa | Alta |
-| 2026-09-28 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES EN LA SUBSECRETARIA DE PLANEACION Y CALIDAD EDUCATIVA, REALIZANDO PROCESOS DE  | $ 11.400.000 | Contratación directa | Alta |
-| 2026-09-28 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS DE APOYO A LA GESTIÓN COMO ASISTENCIAL  EN LA ACTIVIDAD ORIENTAR EN LA ACTUALIZACIÓN Y/O | $ 10.000.000 | Contratación directa | Media |
-| 2026-09-28 | CENTRAL DE ABASTECIMIENTOS DEL VALLE DEL CAUCA S.A. CAVASA | Prestar el servicio de atención de Emergencias y Urgencias a toda persona que se encuentre dentro del área pro | $ 9.800.000 | Contratación régimen especial | Media |
-| 2026-09-28 | MUNICIPIO DE SAN JUAN BAUTISTA DE GUACARI2 | PRESTACI N DE SERVICIO DE APOYO A LA GESTIÓN EN SALUD PÚBLICA, MEDIANTE EL DESARROLLO DE ACTIVIDADES EN LA SEC | $ 9.116.000 | Contratación directa | Media |
-| 2026-09-28 | ALCALDIA DE CAICEDONIA | Prestación de servicios para apoyar a gestión del riesgo para el desarrollo de acciones orientadas a la atenci | $ 7.560.000 | Mínima cuantía | Alta |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| procesos | CO1.REQ.11051373 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11039004 | valor_total_adjudicacion | 0 | 173159519 |
-| procesos | CO1.REQ.11039004 | adjudicado | No | Si |
-| procesos | CO1.REQ.11039004 | fecha_adjudicacion |  | 2026-09-28T00:00:00.000 |
-| procesos | CO1.REQ.11029921 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11005436 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11005436 | valor_total_adjudicacion | 0 | 7050000 |
-| procesos | CO1.REQ.11005436 | adjudicado | No | Si |
-| procesos | CO1.REQ.11005436 | nombre_del_proveedor | No Definido | COMERCIALIZADORA RUESAA S.A.S |
-| procesos | CO1.REQ.11005436 | fecha_adjudicacion |  | 2026-09-28T00:00:00.000 |
-| procesos | CO1.REQ.11005436 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11003190 | valor_total_adjudicacion | 0 | 167775000 |
-| procesos | CO1.REQ.11003190 | adjudicado | No | Si |
-| procesos | CO1.REQ.11003190 | nombre_del_proveedor | No Definido | PROVIEMP - PROVISIONES EMPRESARIALES |
-| procesos | CO1.REQ.11003190 | fecha_adjudicacion |  | 2026-09-28T00:00:00.000 |
-| procesos | CO1.REQ.11108506 | estado_del_procedimiento | Evaluación | Seleccionado |
-| procesos | CO1.REQ.11086228 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11086228 | fecha_adjudicacion |  | 2026-09-28T00:00:00.000 |
-| procesos | CO1.REQ.11086228 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11083644 | valor_total_adjudicacion | 0 | 89000000 |
-| procesos | CO1.REQ.11083644 | adjudicado | No | Si |
-| procesos | CO1.REQ.11083644 | fecha_adjudicacion |  | 2026-09-28T00:00:00.000 |
-| procesos | CO1.REQ.11042827 | nombre_del_proveedor | MARCO FIDEL CORTES URREA | No Definido |
-| procesos | CO1.REQ.10948893 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.10948893 | fecha_adjudicacion |  | 2026-09-28T00:00:00.000 |
-| procesos | CO1.REQ.11103488 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11014319 | valor_total_adjudicacion | 0 | 97360300 |
-| procesos | CO1.REQ.11014319 | adjudicado | No | Si |
-| procesos | CO1.REQ.11014319 | fecha_adjudicacion |  | 2026-09-28T00:00:00.000 |
-| procesos | CO1.REQ.11065907 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11065907 | valor_total_adjudicacion | 0 | 19900000 |
-| procesos | CO1.REQ.11065907 | adjudicado | No | Si |
-| procesos | CO1.REQ.11065907 | nombre_del_proveedor | No Definido | GG CM |
-| procesos | CO1.REQ.11065907 | fecha_adjudicacion |  | 2026-09-28T00:00:00.000 |
-| procesos | CO1.REQ.11065907 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11055511 | estado_del_procedimiento | Evaluación | Abierto |
-| procesos | CO1.REQ.10933932 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11089249 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11051934 | valor_total_adjudicacion | 0 | 58308300 |
-| procesos | CO1.REQ.11051934 | adjudicado | No | Si |
-| procesos | CO1.REQ.11051934 | fecha_adjudicacion |  | 2026-09-28T00:00:00.000 |
-| procesos | CO1.REQ.11090353 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11036795 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11036795 | valor_total_adjudicacion | 0 | 27203823 |
-| procesos | CO1.REQ.11036795 | adjudicado | No | Si |
-| procesos | CO1.REQ.11036795 | nombre_del_proveedor | No Definido | SANTHIAGO LOPEZ ARAQUE |
-| procesos | CO1.REQ.11036795 | fecha_adjudicacion |  | 2026-09-28T00:00:00.000 |
-| procesos | CO1.REQ.11036795 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.10960766 | nombre_del_proveedor | RESGUARDO INDIGENA | NAVERA DRUA |
-| procesos | CO1.REQ.11084431 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11084431 | fecha_adjudicacion |  | 2026-09-28T00:00:00.000 |
-| procesos | CO1.REQ.11084431 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11085034 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11085034 | fecha_adjudicacion |  | 2026-09-28T00:00:00.000 |
-| procesos | CO1.REQ.11085034 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11097302 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11097302 | valor_total_adjudicacion | 0 | 12550000 |
-| procesos | CO1.REQ.11097302 | adjudicado | No | Si |
-| procesos | CO1.REQ.11088963 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11086519 | estado_del_procedimiento | Publicado | Evaluación |
 
 ## Alertas
 
