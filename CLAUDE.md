@@ -1358,6 +1358,57 @@ filas.
 el colector al final, best effort. El HTML no se edita; se edita `infraestructura.py`.
 Pesa 1,9 MB en crudo y **149 KB servidos con gzip**.
 
+### El HUV, que no es una dependencia y no contrata igual (29-sep-2026)
+
+**Entra en el mismo módulo aunque no sea una dependencia de la Gobernación**: es una ESE con
+NIT propio, y la pregunta es la misma. Lo que cambia es **cómo contrata**, y eso lo cambia todo.
+
+**Contrata por RÉGIMEN ESPECIAL, y ahí SECOP no genera el registro electrónico del contrato.**
+Medido: **2.247 procesos desde 2024 y solo CUATRO contratos electrónicos**; los 55 procesos
+posteriores al sismo son los 55 de régimen especial y los 55 figuran con `adjudicado = No`. En
+SECOP I no tiene nada. **Cero contratos firmados desde el sismo.** Por eso casi toda la página
+son **procesos** y su cifra es **precio base**, nunca sumado con valor firmado.
+
+**No hizo falta tocar `_operaciones()`**: ya armaba fila para el proceso sin contrato, con `pb`
+y `firmado=False`. Lo que sí hizo falta fue un `nits` propio en la entrada —las secretarías
+comparten el de la Gobernación y se separan por el nombre; una ESE no— y con NIT propio el
+patrón puede ser `%`, porque **bajo `890303461` hay un único nombre de entidad**.
+
+**Buscarlo por nombre habría sido un error medido:** `%UNIVERSITARIO DEL VALLE%` trae **539
+contratos del Hospital Departamental Psiquiátrico**, que es otra entidad. El mismo caso que
+`%SALUD%` trayendo la Secretaría de Cali.
+
+**El contrato SÍ está, como PDF en el expediente: 18 de 55 (32%).** Se llaman `7. CONTRATO.pdf`,
+`C26-129 CONTRATO.pdf`. Y valen mucho más aquí que en las otras dos páginas: como el HUV **no
+tiene contratos electrónicos**, ese PDF es el **único sitio** donde consta qué se contrató. Se
+abrió uno para comprobarlo —regla de la casa, no fiarse del nombre—: `C26-134`, con ASSTRACUD,
+por **$7.246.841.674**, quince páginas con partes, objeto, plazo, valor y articulado. El dato
+estructurado de ese proceso dice `adjudicado: No`; el PDF dice que sí, con nombre y cifra.
+
+**Son PDF ESCANEADOS, sin capa de texto** —quince páginas devuelven catorce caracteres—. Se
+**enlazan**, no se leen: la cifra la lee una persona al abrirlo. No prometer lo segundo.
+
+**Los cinco procesos del sismo NO tienen contrato adjunto**, y son los que más importan: los
+$10.400 millones de obras de reparación de cubiertas e infraestructura. El botón está apagado
+justo ahí, y **eso es publicable por sí solo**. Estudios previos 20 de 55; ejecución **0 de 55**.
+
+**Tres cosas que la página decía mal y solo se vieron mirándola**, no leyendo el código:
+*«Contratación de el Hospital»* —concatenar `"de " + titulo` no contrae—, *«esta Secretaría»*
+sobre un hospital, y el `<h1>` del informe que añadía `" del Cauca"* dando por hecho que todos
+los títulos acabaran en «del Valle». Se arreglaron **escribiendo** `de_titulo` y `sujeto` en
+cada entrada, no con más concatenación. Y los campos **tienen que viajar en el `dep` del JSON**:
+se quedaron fuera al principio y el guion caía al `"esta Secretaría"` por defecto sin que nada
+fallara.
+
+**La fila de cifras del sismo mezclaba unidades.** Decía *«0 contratos firmados»* al lado de
+*«5 nombran el sismo»*, y esos 5 son **procesos**. Ahora la **primera cifra es la base** —las
+contrataciones del periodo, contratos y procesos— y las demás cuelgan de ella. Afecta también a
+Infraestructura y Salud, donde el fallo existía pero no se veía porque casi todo eran contratos.
+
+**Consecuencia para las otras dos:** su `<title>` pasó a decir «del Valle del Cauca» en vez de
+«del Valle», que es lo que el informe impreso ya decía. Sus cifras no se movieron —comprobado:
+Infraestructura sigue en 1.921 contratos por $583.795 millones—.
+
 ## El vigilante (`vigilar.py`)
 
 **Avisa cuando el monitor lleva más de 14 horas sin recolectar** (14-sep-2026). Con tres

@@ -49,7 +49,22 @@ DATASET_PROCESOS = "p6dx-8zbt"
 #
 #   clave      nombre del archivo que se genera (<clave>.html y datos/<clave>.json)
 #   patron     como la publica SECOP, para el like. SIEMPRE con el NIT al lado.
+#   nits       OPCIONAL. Si falta se usan los de la Gobernacion, que es el caso
+#              de sus secretarias: ahi el NIT es comun y el nombre es lo unico
+#              que las separa. Una entidad con NIT PROPIO -como el HUV, que es
+#              una ESE y no una dependencia- lo trae aqui, y entonces el patron
+#              puede ser '%' porque el NIT ya la identifica sola. Se comprobo
+#              el 29-sep-2026: bajo 890303461 hay un unico nombre de entidad.
+#              Buscar el HUV solo por nombre seria un error medido:
+#              '%UNIVERSITARIO DEL VALLE%' trae 539 contratos del Hospital
+#              Departamental Psiquiatrico, que es otra entidad.
 #   titulo     el <title> y el <h1> de la pagina
+#   de_titulo  el mismo nombre en genitivo, ya escrito. NO se deriva del titulo:
+#              "de " + "el Hospital" daria "de el Hospital", y la plantilla le
+#              sumaba " del Cauca" dando por hecho que todos acababan en "del
+#              Valle". Se escribe y se acabo.
+#   sujeto     como se nombra a la entidad en el cuerpo del texto. Era "esta
+#              Secretaria" a secas, que sobre un hospital es falso.
 #   destacado  el tipo de contrato que se lista aparte, uno por uno. Son pocas
 #              filas entre miles y en la tabla general se pierden; despues de un
 #              sismo, si hubo o no obra es una pregunta por si sola. Si una
@@ -60,6 +75,8 @@ DEPENDENCIAS = [
         "clave": "infraestructura",
         "patron": "%INFRAESTRUCTURA%",
         "titulo": "la Secretaría de Infraestructura del Valle",
+        "de_titulo": "de la Secretaría de Infraestructura del Valle del Cauca",
+        "sujeto": "esta Secretaría",
         "destacado": "Obra",
         # Verde de marca de estebanoliveros.com, el mismo de ligero.html.
         "color": ("#56A800", "#3E7C00", "#F2F8EA"),
@@ -68,12 +85,55 @@ DEPENDENCIAS = [
         "clave": "salud",
         "patron": "%SALUD%",
         "titulo": "la Secretaría de Salud del Valle",
+        "de_titulo": "de la Secretaría de Salud del Valle del Cauca",
+        "sujeto": "esta Secretaría",
         "destacado": "Obra",
         # Azul, a peticion del usuario (14-sep-2026), para que las dos paginas no
         # se confundan de un vistazo. El tono de tinta es mas oscuro que el de
         # acento a proposito: el acento pinta bordes y el de tinta pinta TEXTO
         # sobre blanco, y el mismo tono no sirve para las dos cosas.
         "color": ("#0B6BB5", "#08518A", "#EAF2FA"),
+    },
+    {
+        # El HUV NO es una dependencia de la Gobernacion: es una ESE con NIT
+        # propio. Entra aqui porque la pregunta es la misma -si lo de despues del
+        # sismo se sale de lo normal- y el molde ya sirve.
+        #
+        # Y CONTRATA POR REGIMEN ESPECIAL, que lo cambia todo. Medido el
+        # 29-sep-2026: 2.247 procesos desde 2024 y solo CUATRO contratos
+        # electronicos; los 55 procesos posteriores al sismo son los 55 de
+        # regimen especial y los 55 figuran con adjudicado = No. En SECOP I no
+        # tiene nada. No es un fallo de la consulta: en esa figura SECOP no
+        # genera el registro electronico del contrato, asi que casi toda la
+        # pagina son PROCESOS y su cifra es PRECIO BASE, no valor firmado.
+        # _operaciones ya arma fila para el proceso sin contrato, con pb y
+        # firmado=False, asi que no hizo falta tocarla.
+        "clave": "huv",
+        "patron": "%",
+        "nits": ["890303461"],
+        "titulo": "el Hospital Universitario del Valle (HUV)",
+        "de_titulo": "del Hospital Universitario del Valle (HUV)",
+        "sujeto": "este hospital",
+        # Lo que hace distinta a esta pagina, y va dicho arriba del todo: la
+        # entidad contrata por regimen especial y SECOP no le genera el registro
+        # electronico del contrato. Sin esta frase, las cuatro cifras de arriba
+        # se leerian como si el HUV hubiera contratado $29,7 mm desde 2024,
+        # cuando eso son CUATRO contratos y lo demas son 2.231 procesos.
+        "advertencia": (
+            "El HUV contrata por <b>régimen especial</b>, y en esa figura el SECOP "
+            "<b>no genera el registro electrónico del contrato</b>. Medido el "
+            "29-sep-2026: 2.247 procesos publicados desde 2024 y solo <b>cuatro</b> "
+            "contratos electrónicos. Por eso casi todo lo que hay aquí abajo son "
+            "<b>procesos</b>, y su cifra es <b>precio base</b> —lo que la entidad "
+            "presupuestó— y no lo que acabó pagando. Donde la entidad subió el "
+            "contrato firmado al expediente, la fila lleva el botón para abrirlo."),
+        "destacado": "Obra",
+        # Naranja, a peticion del usuario (29-sep-2026): tercera pagina casi
+        # identica a las otras dos, y el color es lo que impide confundirlas.
+        # Misma regla que en Salud: la tinta es mas oscura que el acento porque
+        # pinta texto sobre blanco. Medido: la tinta naranja da 7,3:1 sobre
+        # blanco y 6,6:1 sobre su propio tinte, por encima del 4,5:1 de AA.
+        "color": ("#E06B00", "#8A4200", "#FDF0E3"),
     },
 ]
 
@@ -168,7 +228,10 @@ def consultar(cfg, consultar_api, dep, registrar=print):
     importarla para no crear un import circular.
     """
     evento = cfg.get("fecha_evento", "2026-08-10")
-    nits = cfg.get("nits_gobernacion_valle") or ["890399029"]
+    # El NIT propio de la entidad manda sobre el de la Gobernacion. Las
+    # secretarias no lo traen -comparten el de la Gobernacion y se separan por el
+    # nombre-; una ESE como el HUV si.
+    nits = dep.get("nits") or cfg.get("nits_gobernacion_valle") or ["890399029"]
     patron = dep["patron"]
     clave = dep["clave"]
 
@@ -219,7 +282,13 @@ def consultar(cfg, consultar_api, dep, registrar=print):
     return {
         "entidad": nombre or dep["titulo"],
         "nit": (contratos or [{}])[0].get("nit_entidad", ""),
+        # Viaja todo lo que la pagina necesita para NOMBRAR a la entidad. Se
+        # quedaba en tres claves y el guion caia al "esta Secretaria" por
+        # defecto: sobre un hospital, falso, y sin que nada fallara.
         "dep": {"clave": clave, "titulo": dep["titulo"],
+                "de_titulo": dep.get("de_titulo") or ("de " + dep["titulo"]),
+                "sujeto": dep.get("sujeto") or "esta Secretaría",
+                "advertencia": dep.get("advertencia") or "",
                 "destacado": dep.get("destacado") or ""},
         "desde": DESDE,
         "evento": evento,
@@ -655,6 +724,7 @@ def escribir(datos, generado, base, dep):
               .replace("__ACENTO_T__", tinte)
               .replace("__ACENTO__", acento)
               .replace("__TITULO__", dep["titulo"])
+              .replace("__DE_TITULO__", dep.get("de_titulo") or ("de " + dep["titulo"]))
               .replace("__DATOS__", crudo))
     with io.open(destino, "w", encoding="utf-8", newline="") as fh:
         fh.write(pagina)
@@ -674,7 +744,7 @@ PLANTILLA = r"""<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Contratación de __TITULO__ · desde 2024</title>
+<title>Contratación __DE_TITULO__ · desde 2024</title>
 <style>
 /* Misma piel que la version ligera y la nacional: blanco, verde de marca y la
    pila del sistema. Cero peticiones de red, cero dependencias externas. */
@@ -719,6 +789,9 @@ tr.tot td{font-weight:700;border-top:2px solid var(--borde);border-bottom:none}
 .nota{font-size:13px;color:var(--suave);line-height:1.6}
 .aviso{border:1px solid var(--ambar-b);background:var(--ambar-t);border-radius:4px;
        padding:16px 18px;margin:0 0 14px;font-size:14px;line-height:1.55;color:#5C4708}
+/* La advertencia de regimen especial va pegada bajo las cifras, no al pie: es lo
+   que impide leerlas mal. Margen de arriba para que no se pegue al titular. */
+.aviso-regimen{margin:14px 0 0}
 .limite{border:1px solid var(--borde);border-radius:4px;padding:16px 18px;
         font-size:14px;line-height:1.6}
 .perfil{list-style:none;padding:0;margin:0}
@@ -819,7 +892,7 @@ a.enl:hover{border-color:var(--acento);color:var(--acento-tinta)}
 <body>
 <div class="hoja">
 
-<h1>La contratación de __TITULO__</h1>
+<h1>La contratación __DE_TITULO__</h1>
 <p class="sub">Desde el 1 de enero de 2024: antes del sismo del 10 de agosto y después,
 a la fecha.</p>
 <div class="sello" id="sello"></div>
@@ -1004,6 +1077,9 @@ function norm(s){
 }
 
 /* ---- Cabecera ---- */
+// Como se nombra a la entidad en el texto. Decia "esta Secretaria" a secas, que
+// sobre un hospital es sencillamente falso.
+var SUJETO = D.dep.sujeto || "esta Secretaría";
 var FIRMADOS = OPS.filter(function(o){ return o.firmado; });
 var ABIERTOS = OPS.filter(function(o){ return !o.firmado; });
 var TOTAL_V = FIRMADOS.reduce(function(s, o){ return s + (o.v || 0); }, 0);
@@ -1032,7 +1108,11 @@ document.getElementById("titular").innerHTML =
   '<div class="x">Más ' + ABIERTOS.length.toLocaleString("es-CO") + " proceso" +
   (ABIERTOS.length === 1 ? "" : "s") + " publicado" + (ABIERTOS.length === 1 ? "" : "s") +
   " que todavía no tiene" + (ABIERTOS.length === 1 ? "" : "n") + " contrato firmado. " +
-  "Es toda la contratación de la dependencia, del sismo y ordinaria.</div></div>";
+  "Es toda la contratación de " + SUJETO + ", del sismo y ordinaria.</div></div>" +
+  /* La advertencia va PEGADA a las cifras y no en una nota al pie, porque es lo
+     que impide leerlas mal. En una entidad de regimen especial los contratos
+     electronicos son una astilla del total y la cifra grande, sola, miente. */
+  (D.dep.advertencia ? '<div class="aviso aviso-regimen">' + D.dep.advertencia + "</div>" : "");
 
 (function(){
   var d = D.descartados || {}, u = D.unificadas || 0;
@@ -1062,9 +1142,16 @@ document.getElementById("desde-sismo").innerHTML =
                                     : " procesos publicados que aún no tienen contrato") : "";
   })(POST.length - POST_F.length) + ".</p>";
 
+/* La PRIMERA cifra es la base, y antes no lo era. Decia "N contratos firmados"
+   y las tres siguientes contaban sobre POST -contratos Y procesos-, asi que en
+   una entidad de regimen especial salia "0 contratos firmados" al lado de
+   "5 nombran el sismo", donde esos 5 son procesos. Dos unidades distintas en la
+   misma fila de cifras. Ahora la base se dice primero y las demas cuelgan de
+   ella. */
 var CIFRAS = [
-  {n: POST_F.length, q: "contratos firmados desde el sismo", cero: false},
-  {n: POST_OBRA, q: "de ellos son contratos de " + DESTACADO_T, cero: POST_OBRA === 0},
+  {n: POST.length, q: "contrataciones desde el sismo (contratos y procesos)", cero: false},
+  {n: POST_F.length, q: "de ellas ya tienen contrato firmado", cero: POST_F.length === 0},
+  {n: POST_OBRA, q: "son de tipo " + DESTACADO_T, cero: POST_OBRA === 0},
   {n: POST_SISMO, q: "nombran el sismo en su objeto", cero: POST_SISMO === 0},
   {n: POST_EMER, q: "usan vocabulario de emergencia", cero: POST_EMER === 0}
 ];
@@ -1074,10 +1161,12 @@ document.getElementById("cifras").innerHTML = CIFRAS.map(function(c){
 }).join("");
 
 document.getElementById("nota-cifras").innerHTML =
-  "Las tres últimas cifras están para que la primera se pueda leer: <b>un cero sobre " +
-  POST_F.length + " contratos revisados es un hallazgo; un cero sobre cero sería no " +
-  "haber mirado</b>. El vocabulario de emergencia incluye palabras como urgencia " +
-  "manifiesta, calamidad, damnificados, albergue o escombros.";
+  "Las cuatro últimas cuelgan de la primera, que es la base: <b>un cero sobre " +
+  POST.length + " contrataciones revisadas es un hallazgo; un cero sobre cero sería " +
+  "no haber mirado</b>. Todas cuentan contratos y procesos juntos, que es lo que hay " +
+  "que mirar cuando la entidad publica el proceso y el contrato no queda registrado. " +
+  "El vocabulario de emergencia incluye palabras como urgencia manifiesta, calamidad, " +
+  "damnificados, albergue o escombros.";
 
 /* ---- Año por año ---- */
 (function(){
@@ -1103,7 +1192,8 @@ document.getElementById("nota-cifras").innerHTML =
   document.getElementById("nota-anios").innerHTML =
     "El año en curso va <b>hasta la fecha de la consulta</b>, así que su cifra no es " +
     "comparable con la de un año completo. La columna aparte es la del tipo <b>" +
-    esc(DESTACADO) + "</b>: <b>" + t.obra + " contratos de " + DESTACADO_T + " de " +
+    esc(DESTACADO) + "</b>: <b>" + t.obra + " contrato" + (t.obra === 1 ? "" : "s") +
+    " de " + DESTACADO_T + " de " +
     t.n.toLocaleString("es-CO") + "</b> concentran " +
     (t.v ? Math.round(100 * t.obra_v / t.v) : 0) + "% de lo contratado en el periodo.";
 })();
@@ -1159,14 +1249,14 @@ document.getElementById("nota-tipos").innerHTML =
   if (!lista.length) {
     caja.innerHTML = "<h2>La " + esc(t) + " del periodo</h2>" +
       '<div class="aviso">No hay ningún contrato ni proceso de ' + esc(t) +
-      " de esta Secretaría desde el " + fechaLarga(D.desde) + ".</div>";
+      " de " + SUJETO + " desde el " + fechaLarga(D.desde) + ".</div>";
     return;
   }
   var firm = lista.filter(function(o){ return o.firmado; });
   var suma = firm.reduce(function(s, o){ return s + (o.v || 0); }, 0);
   var post = lista.filter(function(o){ return o.post; }).length;
   caja.innerHTML = "<h2>La " + esc(t) + " del periodo, una por una</h2>" +
-    '<p class="nota">Desde el ' + fechaLarga(D.desde) + " esta Secretaría tiene <b>" +
+    '<p class="nota">Desde el ' + fechaLarga(D.desde) + " " + SUJETO + " tiene <b>" +
     firm.length + " contrato" + (firm.length === 1 ? "" : "s") + " de " + esc(t) +
     " por " + pesos(suma) + "</b>" + (function(n){
       return n ? " y " + n + " proceso" + (n === 1 ? "" : "s") + " de " + esc(t) +
@@ -1476,7 +1566,7 @@ function pintar(){
     /* Un cero tiene que decir por qué: no es lo mismo "esta Secretaría no firmó
        nada de eso" que "ese filtro no deja pasar nada". */
     var razon = F.rel === "sismo"
-      ? "Ningún contrato ni proceso de esta Secretaría nombra el sismo en su objeto. " +
+      ? "Ningún contrato ni proceso de " + SUJETO + " nombra el sismo en su objeto. " +
         "<b>El cero es el hallazgo, no un dato que falte.</b>"
       : F.rel === "emer"
       ? "Ningún objeto usa vocabulario de emergencia —urgencia manifiesta, calamidad, " +
@@ -1630,7 +1720,7 @@ function imprimirInforme(){
   }).join("");
 
   document.getElementById("impresion").innerHTML =
-    "<h1>Contratación de " + esc(D.dep.titulo) + " del Cauca</h1>" +
+    "<h1>Contratación " + esc(D.dep.de_titulo) + "</h1>" +
     '<div class="cab-inf">' +
     "<b>" + esc(D.entidad) + "</b> · NIT " + esc(D.nit) + "<br>" +
     "Ventana consultada: del <b>" + fechaLarga(D.desde) + "</b> en adelante · " +
