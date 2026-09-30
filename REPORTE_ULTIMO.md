@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-09-29 19:18  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-09-30 08:38  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -11,7 +11,7 @@
 | Procesos relacionados (alta + media) | 554 |
 | Contratos nuevos en esta ejecucion | 0 |
 | Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 0 |
+| Modificaciones detectadas | 5 |
 | Registros revisados en total | 35709 |
 
 ### Desglose por nivel de gobierno
@@ -44,7 +44,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 138** (74 que suman en los indicadores, por $ 16.729.634.740).
+- **Relacionados con el sismo: 146** (76 que suman en los indicadores, por $ 16.732.021.871).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -61,6 +61,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-09-17 | NARIÑO - ALCALDÍA MUNICIPIO DE OLAYA HERRERA | CONSTRUCCION DE TRES AULAS EN LA INSTITUCION EDUCATIVA CALABAZAL;  PARA SUSTITUIR LAS AULAS AFECTADAS POR EL T | $ 269.983.604 | Selección Abreviada de Menor Cuantía (Ley 1150 de 2007) · La contratación de menor cuantía (Literal B) | Alta |
 | 2026-08-20 | TOLIMA - ALCALDÍA MUNICIPIO DE ROVIRA | CONTRATAR EL SUMINISTRO A MONTO AGOTABLE DE MATERIALES DE CONSTRUCCIoN PARA LA REHABILITACIoN; REPARACIoN Y RE | $ 250.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-09-08 | RISARALDA - ALCALDÍA MUNICIPIO DE MISTRATÓ | SUMINISTRO DE MATERIALES DE CONSTRUCCIoN PARA LA ATENCIoN DE LA EMERGENCIA Y APOYO A LAS FAMILIAS DAMNIFICADAS | $ 193.765.800 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
+| 2026-08-13 | CHOCÓ - ALCALDÍA MUNICIPIO DE ATRATO | ATENCION PSICOSOCIAL PARA LA RECUPERACION EMOCIONAL; EL FORTALECIMIENTO COMUNITARIO Y LA PROMOCION DE LA RESIL | $ 181.676.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 | 2026-08-21 | RISARALDA - CÁMARA DE COMERCIO DE PEREIRA | SOLICITUD DE SERVICIO DE TECHOS Y PANELERIAS PARA DIVISIONES UTILIZADOS PARA ADECUAR LOS ESPACIOS Y PODER GUAR | $ 163.506.000 | Régimen Especial · No Definido | Alta |
 | 2026-09-10 | CALDAS - ALCALDÍA MUNICIPIO DE MARULANDA | EJECUCIoN; A TODO COSTO Y POR EL SISTEMA DE PRECIOS UNITARIOS FIJOS; DE LAS OBRAS NECESARIAS PARA LA REPARACIo | $ 132.052.041 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-24 | CHOCÓ - ALCALDÍA MUNICIPIO DE RIO QUITO | PRESTACIoN DE SERVICIOS DE APOYO LOGiSTICO PARA LA ATENCIoN Y MITIGACIoN DE LOS EFECTOS GENERADOS POR EL SISMO | $ 113.958.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
@@ -73,13 +74,12 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-08-13 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE RIOFRÍO | CONVENIO INTERINSTITUCIONAL BOMBERIL ENTRE EL MUNICIPIO DE RIOFRiO Y EL CUERPO DE BOMBEROS VOLUNTARIOS DE SALO | $ 75.000.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 | 2026-08-13 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE RIOFRÍO | CONVENIO INTERINSTITUCIONAL BOMBERIL ENTRE EL MUNICIPIO DE RIOFRiO Y EL CUERPO DE BOMBEROS VOLUNTARIOS DE RIOF | $ 75.000.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 | 2026-08-21 | CHOCÓ - ALCALDÍA MUNICIPIO DE SAN JOSÉ DEL PALMAR | COMPRAVENTA DE MATERIALES DE CONSTRUCCIoN; DESTINADOS A LA ATENCIoN; REHABILITACIoN Y RECUPERACIoN INICIAL DE  | $ 74.998.035 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
+| 2026-08-13 | CHOCÓ - ALCALDÍA MUNICIPIO DE ATRATO | APOYO TECNICO EN INGENIERIA CIVIL; ARQUITECTURA Y COMUNICACIONES PARA LA EVALUACION; INSPECCION Y DIAGNOSTICO  | $ 70.000.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 | 2026-08-28 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE ARGELIA | PRESTACIoN DE SERVICIOS LOGiSTICOS DE APOYO A LAS JORNADAS DE INSPECCIoN; EVALUACIoN Y CARACTERIZACIoN DEL NIV | $ 60.000.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 | 2026-08-28 | RISARALDA - CÁMARA DE COMERCIO DE PEREIRA | 1. DESCRIPCIoN DE LA NECESIDAD TRAS EL EVENTO SiSMICO REGISTRADO EL PASADO 10 DE AGOSTO; EL TEJIDO COMERCIAL Y | $ 55.186.250 | Régimen Especial · No Definido | Alta |
 | 2026-08-29 | CALDAS - ALCALDÍA MUNICIPIO DE ARANZAZU | ADQUISICIoN Y SUMINISTRO DE MATERIALES DESTINADOS A LA ATENCIoN DE LAS FAMILIAS AFECTADAS POR EL SISMO DE MAGN | $ 53.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
-| 2026-09-10 | RISARALDA - ALCALDÍA MUNICIPIO DE MISTRATÓ | SUMINISTRO DE AYUDA HUMANITARIA A TRAVeS DE KITS PARA LA ATENCIoN DE LAS FAMILIAS VULNERABLES Y EN CONDICIoN D | $ 52.774.250 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
-| 2026-09-21 | RISARALDA - CÁMARA DE COMERCIO DE PEREIRA | OBJETO / JUSTIFICACIoN SOLICITUD PARA LA CONTRATACIoN DEL SERVICIO INTEGRAL DE LOGiSTICA; A CARGO DE TASMANIA  | $ 52.062.500 | Régimen Especial · No Definido | Alta |
 
-_No se listan 92 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
+_No se listan 94 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
 
 ## UNGRD y FNGRD · NIT 900.478.966-6 y 900.978.341
 
@@ -106,6 +106,16 @@ _Se revisaron 336 registros de contratacion de estas dos entidades en la ventana
 | ALCALDIA MUNICIPAL DE YOTOCO | 5 | $ 1.875.627.623 |
 | INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ | 2 | $ 1.440.000.000 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA | 1 | $ 1.361.024.561 |
+
+## Modificaciones sobre registros ya conocidos
+
+| Fuente | Identificador | Campo | Antes | Ahora |
+|---|---|---|---|---|
+| secop1 | 26-4-14786808-13712018 | estado_del_proceso | Celebrado | Liquidado |
+| secop1 | 26-4-14786808-13712018 | fecha_liquidacion |  | 2026-09-28T00:00:00.000 |
+| secop1 | 26-11-14803372 | estado_del_proceso | Borrador | Convocado |
+| secop1 | 26-12-14779951-13704989 | fecha_fin_ejec_contrato | 2026-08-25T00:00:00.000 | 2026-10-24T00:00:00.000 |
+| secop1 | 26-12-14782283-13707724 | fecha_fin_ejec_contrato | 2026-08-26T00:00:00.000 | 2026-09-05T00:00:00.000 |
 
 ## Alertas
 
