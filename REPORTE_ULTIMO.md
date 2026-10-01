@@ -1,54 +1,55 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-09-30 19:29  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-01 09:25  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
 | Indicador | Valor |
 |---|---|
-| Contratos relacionados (alta + media) | 215 |
-| Valor de esos contratos | $ 82.859.067.663 |
+| Contratos relacionados (alta + media) | 222 |
+| Valor de esos contratos | $ 86.348.236.576 |
 | Procesos relacionados (alta + media) | 545 |
-| Contratos nuevos en esta ejecucion | 472 |
-| Procesos nuevos en esta ejecucion | 391 |
-| Modificaciones detectadas | 593 |
-| Registros revisados en total | 34680 |
+| Contratos nuevos en esta ejecucion | 654 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 626 |
+| Registros revisados en total | 35334 |
 
 ### Desglose por nivel de gobierno
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 11 | $ 26.097.989.414 | 170 |
+| Alcaldía de Cali | 13 | $ 27.600.620.069 | 170 |
 | Gobernación del Valle | 9 | $ 12.842.165.515 | 28 |
-| Otras entidades del Valle | 169 | $ 40.143.016.650 | 283 |
+| Otras entidades del Valle | 172 | $ 41.604.554.908 | 283 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 3413 | $ 227.224.787.612 | 2535 |
-| Gobernación del Valle | 3332 | $ 84.270.428.303 | 2703 |
-| Descentralizadas de Cali | 123 | $ 14.776.727.159 | 870 |
-| Descentralizadas de la Gobernación | 1582 | $ 43.837.976.082 | 2030 |
+| Alcaldía de Cali | 3481 | $ 229.608.176.795 | 2535 |
+| Gobernación del Valle | 3739 | $ 89.159.701.347 | 2703 |
+| Descentralizadas de Cali | 126 | $ 14.902.227.159 | 870 |
+| Descentralizadas de la Gobernación | 1585 | $ 43.905.336.083 | 2030 |
 | UNGRD | 3 | $ 102.866.667 | 325 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 211 contratos ($ 57.478.336.808) y 230 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 162 contratos ($ 161.430.865.881) y 244 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 220 contratos ($ 59.151.134.707) y 230 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 165 contratos ($ 163.632.067.628) y 244 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 146** (76 que suman en los indicadores, por $ 16.732.021.871).
+- **Relacionados con el sismo: 151** (77 que suman en los indicadores, por $ 16.732.765.621).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
 | 2026-09-25 | VALLE DEL CAUCA - CÁMARA DE COMERCIO DE CALI | EL PRESENTE CONVENIO TIENE POR OBJETO ESTABLECER LOS TeRMINOS DE LA COOPERACIoN ENTRE BANCoLDEX Y LA CaMARA PA | $ 14.000.000.000 | Régimen Especial · No Definido | Alta |
+| 2026-09-30 | CHOCÓ - ALCALDÍA MUNICIPIO DE UNION PANAMERICANA | OBRAS DE REHABILITACIoN DE LA INFRAESTRUCTURA DE LA SEDE ANTIGUA DE LA ALCALDiA MUNICIPAL AFECTADA POR EL EVEN | $ 1.259.292.986 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-09-02 | ESCUELA NACIONAL DEL DEPORTE | EJECUTAR LAS OBRAS Y ACTIVIDADES NECESARIAS PARA LA RECUPERACIoN Y RESTABLECIMIENTO DE LOS ESPACIOS Y DE LA IN | $ 1.061.129.603 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 | 2026-08-26 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE EL CAIRO | ADQUISICIoN DE UNA (1) RETROEXCAVADORA PARA LA REMOCIoN DE ESCOMBROS; LA HABILITACIoN Y REHABILITACIoN DE ViAS | $ 720.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-28 | CAUCA - FONDO DE VIVIENDA MUNICIPAL Y REFORMA URBANA DEL MUNICIPIO DE PUERTO TEJADA | EJECUCIoN DE OBRAS DE ADECUACIoN; MEJORAMIENTO Y REFORZAMIENTO DE LAS VIVIENDAS AFECTADAS POR EL EVENTO SiSMIC | $ 550.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
@@ -64,6 +65,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-08-13 | CHOCÓ - ALCALDÍA MUNICIPIO DE ATRATO | ATENCION PSICOSOCIAL PARA LA RECUPERACION EMOCIONAL; EL FORTALECIMIENTO COMUNITARIO Y LA PROMOCION DE LA RESIL | $ 181.676.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 | 2026-08-21 | RISARALDA - CÁMARA DE COMERCIO DE PEREIRA | SOLICITUD DE SERVICIO DE TECHOS Y PANELERIAS PARA DIVISIONES UTILIZADOS PARA ADECUAR LOS ESPACIOS Y PODER GUAR | $ 163.506.000 | Régimen Especial · No Definido | Alta |
 | 2026-09-10 | CALDAS - ALCALDÍA MUNICIPIO DE MARULANDA | EJECUCIoN; A TODO COSTO Y POR EL SISTEMA DE PRECIOS UNITARIOS FIJOS; DE LAS OBRAS NECESARIAS PARA LA REPARACIo | $ 132.052.041 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
+| 2026-09-30 | CHOCÓ - ALCALDÍA MUNICIPIO DE UNION PANAMERICANA | INTERVENTORIA TECNICA; ADMINISTRATIVA Y FINANCIERA PARA LAS OBRAS DE REHABILITACIoN DE LA INFRAESTRUCTURA DE L | $ 120.181.894 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-24 | CHOCÓ - ALCALDÍA MUNICIPIO DE RIO QUITO | PRESTACIoN DE SERVICIOS DE APOYO LOGiSTICO PARA LA ATENCIoN Y MITIGACIoN DE LOS EFECTOS GENERADOS POR EL SISMO | $ 113.958.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-13 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE EL CAIRO | TRANSFERENCIA DE LOS RECURSOS DISPONIBLES POR CONCEPTO DE SOBRETASA BOMBERIL AL BENEMeRITO CUERPO DE BOMBEROS  | $ 108.306.058 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-19 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE BOLÍVAR | AUNAR ESFUERZOS ENTRE EL MUNICIPIO DE BOLiVAR VALLE DEL CAUCA Y LA JUNTA DE ACCIoN COMUNAL DEL CORREGIMIENTO D | $ 97.074.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Media |
@@ -76,10 +78,8 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-08-21 | CHOCÓ - ALCALDÍA MUNICIPIO DE SAN JOSÉ DEL PALMAR | COMPRAVENTA DE MATERIALES DE CONSTRUCCIoN; DESTINADOS A LA ATENCIoN; REHABILITACIoN Y RECUPERACIoN INICIAL DE  | $ 74.998.035 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-13 | CHOCÓ - ALCALDÍA MUNICIPIO DE ATRATO | APOYO TECNICO EN INGENIERIA CIVIL; ARQUITECTURA Y COMUNICACIONES PARA LA EVALUACION; INSPECCION Y DIAGNOSTICO  | $ 70.000.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 | 2026-08-28 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE ARGELIA | PRESTACIoN DE SERVICIOS LOGiSTICOS DE APOYO A LAS JORNADAS DE INSPECCIoN; EVALUACIoN Y CARACTERIZACIoN DEL NIV | $ 60.000.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
-| 2026-08-28 | RISARALDA - CÁMARA DE COMERCIO DE PEREIRA | 1. DESCRIPCIoN DE LA NECESIDAD TRAS EL EVENTO SiSMICO REGISTRADO EL PASADO 10 DE AGOSTO; EL TEJIDO COMERCIAL Y | $ 55.186.250 | Régimen Especial · No Definido | Alta |
-| 2026-08-29 | CALDAS - ALCALDÍA MUNICIPIO DE ARANZAZU | ADQUISICIoN Y SUMINISTRO DE MATERIALES DESTINADOS A LA ATENCIoN DE LAS FAMILIAS AFECTADAS POR EL SISMO DE MAGN | $ 53.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 
-_No se listan 94 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
+_No se listan 97 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
 
 ## UNGRD y FNGRD · NIT 900.478.966-6 y 900.978.341
 
@@ -98,146 +98,106 @@ _Se revisaron 330 registros de contratacion de estas dos entidades en la ventana
 | SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS | 1 | $ 5.169.150.000 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO | 1 | $ 5.000.000.000 |
 | Institución Universitaria de Roldanillo | 4 | $ 4.650.571.701 |
-| SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | 4 | $ 4.094.117.000 |
-| CVC | 9 | $ 3.924.619.970 |
+| SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | 5 | $ 4.108.321.000 |
+| CVC | 10 | $ 3.958.438.150 |
+| SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA | 2 | $ 2.849.451.216 |
 | MUNICIPIO DE CALIMA EL DARIEN VALLE | 6 | $ 2.734.502.517 |
 | GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA | 1 | $ 2.568.577.795 |
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 | ALCALDIA MUNICIPAL DE YOTOCO | 5 | $ 1.875.627.623 |
-| INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ | 2 | $ 1.440.000.000 |
-| SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA | 1 | $ 1.361.024.561 |
+| MUNICIPIO DE YUMBO VALLE | 8 | $ 1.511.682.078 |
 
-## Contratos nuevos (12 relacionados de 472 publicados)
+## Contratos nuevos (16 relacionados de 654 publicados)
 
 | Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
 |---|---|---|---:|---|---|
-| 2026-09-29 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | ADQUISICIÓN DE MOTOCICLETAS PARA LA ATENCIÓN DE LAS EMERGENCIAS Y DESASTRES FORTALECIENDO LA CAPACIDAD DE RESP | $ 649.987.520 | FANALCA S.A.S. | Media |
-| 2026-09-28 | ALCALDIA MUNICIPIO DE BETANIA | CONTRATO DE OBRA PÚBLICA PARA LA EJECUCIÓN DE ACTIVIDADES DE OBRA; MEDIANTE MANO DE OBRA CALIFICADA Y NO CALIF | $ 150.000.000 | loar sas | Alta |
-| 2026-09-28 | ALCALDIA MUNICIPIO DE VIJES | SERVICIO DE ALBERGUE A LOS ADULTOS MAYORES QUE LO REQUIERAN; (LUNES-DOMINGO) Y QUE SE ENCUENTREN EN SITUACION  | $ 18.000.000 | MARIELA CORDOBA RIVAS | Media |
-| 2026-09-28 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES EN LA SUBSECRETARIA DE PLANEACION Y CALIDAD EDUCATIVA; REALIZANDO PROCESOS DE  | $ 11.400.000 | LEIDY ARENAS | Alta |
-| 2026-09-28 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES PARA LA ARTICULACIÓN PEDAGÓGICA Y ACADÉMICA DE LA PROGRAMACIÓN CULTURAL Y LOS  | $ 11.400.000 | Claudia Milena Ochoa Zuluaga | Alta |
-| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión en las actividades requeridas por la Secretaría de Gestión de Ri | $ 11.168.000 | Juan Carlos Gallego Matallana | Alta |
-| 2026-09-29 | ALCALDIA MUNICIPAL DE LA VICTORIA VALLE | PRESTACIÓN DE SERVICIOS DE APOYO LOGÍSTICO PARA LA ATENCIÓN Y MITIGACIÓN DE LOS EFECTOS GENERADOS POR EL SISMO | $ 10.000.000 | QBX MANTENIMIENTO DISEÑO Y CONTRUCCION SAS | Alta |
-| 2026-09-28 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS DE APOYO A LA GESTIÓN COMO ASISTENCIAL  EN LA ACTIVIDAD ORIENTAR EN LA ACTUALIZACIÓN Y/O | $ 10.000.000 | JUAN CAMILO VARGAS | Media |
-| 2026-09-28 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA LA DIFUSIÓN Y SOCIALIZACIÓN DE LAS ACTIVIDADES CULTURALES D | $ 8.400.000 | Miguel Hernando Marín Vélez | Alta |
-| 2026-09-28 | Secretaría de Educación - Alcaldía de Tuluá | REALIZAR VISITAS TECNICAS A LAS INSTITUCIONES EDUCATIVAS OFICIALES Y SEDES ASIGNADAS; CON EL FIN DE INSPECCION | $ 7.940.000 | DANIEL GUSTAVO LOZANO VALENCIA | Alta |
-| 2026-09-28 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS DE APOYO A LA GESTION EN EL DISENO GRAFICO DE PIEZAS ARTISTICAS Y CULTURALES PARA LA D | $ 7.200.000 | CARLOS EDUARDO RODRIGUEZ CARDONA | Alta |
-| 2026-09-29 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA REALIZAR ACTIVIDADES RELACIONADAS CON LA ORGANIZACIÓN DEL A | $ 6.600.000 | LUISA FERNANDA MAUSA JIMENEZ | Alta |
-
-## Procesos nuevos (50 relacionados de 391 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-09-28 | GOBERNACION DEL QUINDIO ARMENIA | Mediante el presente convenio, SUPERGIROS se compromete a prestar a EL DEPARTAMENTO el servicio de dispersión  | $ 1.282.713.003 | Contratación directa | Alta |
-| 2026-09-28 | ALCALDIA MUNICIPIO DE VIJES | CONSTRUCCION CUBIERTA CANCHA MULTIPLE CORREGIMIENTO DE OCACHE, MUNICIPIO DE VIJES VALLE DEL CAUCA. | $ 400.113.712 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-09-28 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | PRESTACIÓN DEL SERVICIO DE ALQUILER DE MAQUINARIA AMARILLA, PARA LA EJECUCIÓN DE ACTIVIDADES DE MANTENIMIENTO  | $ 301.546.333 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-09-28 | ALCALDIA MUNICIPIO DE BETANIA | CONTRATO DE OBRA PÚBLICA PARA LA EJECUCIÓN DE ACTIVIDADES DE OBRA, MEDIANTE MANO DE OBRA CALIFICADA Y NO CALIF | $ 150.000.000 | Contratación directa | Alta |
-| 2026-09-29 | MUNICIPIO DE YUMBO VALLE | CONSTRUCCIÓN DE OBRA DE MITIGACIÓN, PREVENCIÓN Y CONTROL DEL RIESGO EN EL BARRIO BUENO AIRES COMUNA 3 DEL MUNI | $ 139.655.027 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-09-29 | MUNICIPIO DE YUMBO VALLE | MEJORAMIENTO DE OBRA DE MITIGACIÓN, PREVENCIÓN Y CONTROL DEL RIESGO DEL ALCANTARILLADO EN LA ZONA RURAL DE XIB | $ 131.817.929 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-09-28 | MUNICIPIO DE ZARZAL | CONSULTORÍA ESPECIALIZADA ORIENTADA A LA EVALUACIÓN TÉCNICA DE VIVIENDAS, EQUIPAMIENTOS MUNICIPALES Y DEMÁS ED | $ 52.955.000 | Contratación directa | Alta |
-| 2026-09-28 | ALCALDÍA MUNICIPIO DE PALMIRA | ADQUISICIÓN DE ELEMENTOS PARA LA REPARACIÓN DE TEJADOS DE LA POBLACIÓN AFECTADA POR LA OCURRENCIA DE FENÓMENOS | $ 40.000.000 | Mínima cuantía | Media |
-| 2026-09-28 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS PROFESIONALES COMO ABOGADO ESPECIALISTA EN DERECHO ADMINISTRATIVO ESPECIALISTA EN DERECH | $ 33.200.000 | Contratación directa | Media |
-| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 31.304.000 | Contratación directa | Media |
-| 2026-09-28 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS PROFESIONALES COMO ECONOMISTA ESPECIALISTA EN CULTURA DE PAZ Y DERECHO INTERNACIONAL HUM | $ 30.800.000 | Contratación directa | Media |
-| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 22.652.000 | Contratación directa | Media |
-| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 22.652.000 | Contratación directa | Media |
-| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 22.652.000 | Contratación directa | Media |
-| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 22.652.000 | Contratación directa | Media |
-| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 22.652.000 | Contratación directa | Media |
-| 2026-09-28 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS PROFESIONALES PARA LA IDENTIFICACION, VERIFICACIÓN Y ORGANIZACIÓN DE INFORMACIÓN PREDI | $ 18.750.000 | Contratación directa | Alta |
-| 2026-09-28 | ALCALDIA MUNICIPIO DE VIJES | SERVICIO DE ALBERGUE A LOS ADULTOS MAYORES QUE LO REQUIERAN, (LUNES-DOMINGO) Y QUE SE ENCUENTREN EN SITUACION  | $ 18.000.000 | Contratación directa | Media |
-| 2026-09-28 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS PROFESIONALES COMO ADMINISTRADOR DE EMPRESAS EN LA ACTIVIDAD ORIENTAR A LAS ENTIDADES TE | $ 16.000.000 | Contratación directa | Media |
-| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 15.788.000 | Contratación directa | Media |
-| 2026-09-28 | Institución Educativa Nueva Granada | Reconstrucción de espacios afectados por el sismo del 10 de agosto 2026 en la Institución Educativa Nueva Gran | $ 13.080.000 | Contratación régimen especial | Alta |
-| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión en las actividades requeridas por la Secretaría de Gestión de Ri | $ 11.168.000 | Contratación directa | Media |
-| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión en las actividades requeridas por la Secretaría de Gestión de Ri | $ 11.168.000 | Contratación directa | Media |
-| 2026-09-28 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS DE APOYO A LA GESTIÓN EN LA ACTIVIDAD ORIENTAR EN LA FORMULACIÓN Y/O ACTUALIZACIÓN DE LA | $ 10.000.000 | Contratación directa | Media |
-| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión en las actividades requeridas por la Secretaría de Gestión de Ri | $ 8.436.000 | Contratación directa | Media |
-| 2026-09-28 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA LA DIFUSIÓN Y SOCIALIZACIÓN DE LAS ACTIVIDADES CULTURALES D | $ 8.400.000 | Contratación directa | Alta |
-| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 7.826.000 | Contratación directa | Media |
-| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 7.036.000 | Contratación directa | Media |
-| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 6.247.000 | Contratación directa | Media |
-| 2026-09-28 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS PROFESIONALES COMO ABOGADA ESPECIALISTA Y MAGISTER EN DERECHO ADMINISTRATIVO EN LA ACTIV | $ 6.000.000 | Contratación directa | Media |
-| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 5.663.000 | Contratación directa | Media |
-| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 5.663.000 | Contratación directa | Media |
-| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 5.663.000 | Contratación directa | Media |
-| 2026-09-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 5.663.000 | Contratación directa | Media |
-| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 5.663.000 | Contratación directa | Media |
-| 2026-09-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 5.663.000 | Contratación directa | Media |
-| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 5.663.000 | Contratación directa | Media |
-| 2026-09-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 5.663.000 | Contratación directa | Media |
-| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 5.663.000 | Contratación directa | Media |
-| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 5.663.000 | Contratación directa | Media |
+| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA | REALIZAR LAS OBRAS DE CONSTRUCCIÓN DE LA VÍA DE ACCESO AL SECTOR ALTOS DE SANTA ELENA; EN LA COMUNA 18 DEL DIS | $ 1.488.426.655 | CONCRETAR 2026 | Media |
+| 2026-09-29 | MUNICIPIO DE YUMBO VALLE | CONSTRUCCIÓN DE OBRA DE MITIGACIÓN; PREVENCIÓN Y CONTROL DEL RIESGO EN EL BARRIO DIONISIO COMUNA 4 DEL MUNICIP | $ 1.413.020.078 | JAVIER GORDILLO GRISALES | Media |
+| 2026-09-30 | RED DE SALUD DEL ORIENTE ESE | PRESTACIÓN DE SERVICIOS DE APOYO SINDICAL PARA EL FORTALECIMIENTO DE LA GESTIÓN DEL RIESGO EN SALUD DE LA POBL | $ 525.000.000 | ASOCIACION GREMIAL ESPECIALIZADA EN SALUD DEL OCCIDENTE | Media |
+| 2026-09-29 | GOBERNACION DEL CHOCÓ. | CONTRATAR EL OPERADOR LOGÍSTICO QUE SE ENCARGUE DEL SUMINISTRO DE AYUDAS HUMANITARIAS PARA LAS PERSONAS AFECTA | $ 499.994.000 | FUNDACION VIVIR MEJOR | Alta |
+| 2026-09-29 | ALCALDIA MUNICIPIO DE JARDÍN | Convenio solidario para la ejecución de obras y acciones de reparación; rehabilitación y adecuación de viviend | $ 485.766.569 | ASOCIACION DE JUNTAS DE ACCION COMUNAL Y VIVIENDA COMUNITARIA DE JARDIN | Alta |
+| 2026-09-29 | GOBERNACION DEL CHOCÓ. | CONTRATAR UN OPERADOR QUE SE ENCARGUE DE BRINDAR APOYO LOGÍSTICO A LA SECRETARIA DEL INTERIOR Y DE GOBIERNO PA | $ 366.874.330 | INVERSIONES I.C DE COLOMBIA | Alta |
+| 2026-09-30 | GOBERNACIÓN DE RISARALDA** | ARRENDAR INMUEBLE PARA LA SALVAGUARDA; PRESERVACIÓN Y CONSERVACIÓN TEMPORAL DE LOS BIENES DEL DEPARTAMENTO AFE | $ 228.480.000 | VANESA ESTEFANIA DELGADO SANJUAN | Alta |
+| 2026-09-29 | CVC | Brindar apoyo al Grupo de Gestión del Riesgo y Cambio Climático de la Direccion Tecnica Ambiental ; mediante l | $ 33.818.180 | HERNAN RAMIRO VIRACACHA | Media |
+| 2026-09-30 | LOTERÍA DEL RISARALDA | ARRENDAMIENTO DE UN INMUEBLE DESTINADO AL FUNCIONAMIENTO DE LA SEDE ADMINISTRATIVA TEMPORAL DE LA LOTERÍA DEL  | $ 26.283.000 | ESTIRPE NEGOCIOS INMOBILIARIOS SAS | Alta |
+| 2026-09-29 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS PROFESIONALES PARA LA IDENTIFICACION; VERIFICACIÓN Y ORGANIZACIÓN DE INFORMACIÓN PREDI | $ 18.750.000 | JOHN KEVIN ARENAS MARTINEZ | Alta |
+| 2026-09-29 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS PROFESIONALES PARA LA IDENTIFICACION; VERIFICACIÓN Y ORGANIZACIÓN DE INFORMACIÓN PREDI | $ 18.750.000 | HAMILTON URIEL CARMONA PEREZ | Alta |
+| 2026-09-30 | SENA REGIONAL QUINDIO Grupo de Apoyo Administrativo Mixto | Prestar los servicios personales como profesional psicosocial para aprendices y comunidad en Sena en general p | $ 16.500.000 | ALEJANDRA RINCON BERMUDEZ | Alta |
+| 2026-09-30 | MUNICIPIO DE TORO | ALQUILER DE UNIDADES SANITARIAS; BAÑO Y DUCHA; DESTINADAS A GARANTIZAR LAS CONDICIONES BÁSICAS DE HIGIENE; SAN | $ 14.700.000 | RENTABAÑOS LTDA. | Alta |
+| 2026-09-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión en las actividades requeridas por la Secretaría de Gestión de Ri | $ 14.204.000 | jennifer bedoya gonzalez | Alta |
+| 2026-09-30 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES EN TRABAJO SOCIAL PARA EL DESARROLLO DE ESTRATEGIAS DE BIENESTAR SOCIAL  | $ 11.400.000 | Valentina Castaño Quintero | Alta |
+| 2026-09-30 | DIRECCIÓN TERRITORIAL DE SALUD DE CALDAS | LA DIRECCIÓN TERRITORIAL DE SALUD DE CALDAS; EN CALIDAD DE COMODANTE; ENTREGA A TÍTULO DE COMODATO PRECARIO; T | $ 0 | HOSPITAL SAN JOSE | Alta |
 
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| contratos | CO1.PCCNTR.9975340 | nombre_supervisor | KAREN YESSENIA ESPINOZA MENA | ELVI FERNANDO PORTOCARRERO QUIÑONES |
-| contratos | CO1.PCCNTR.9979275 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9997720 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9898909 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9997314 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9997417 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9978247 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9978247 | nombre_supervisor | No definido | AMPARO MILENA RUBIO BUENO |
-| contratos | CO1.PCCNTR.9966501 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9991679 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9992276 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9997802 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9991415 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9976520 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9980891 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9729148 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9729148 | fecha_de_fin_del_contrato | 2026-09-30T00:00:00.000 | 2026-10-15T00:00:00.000 |
-| contratos | CO1.PCCNTR.9729148 | dias_adicionados | 0 | 14 |
-| contratos | CO1.PCCNTR.9998402 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9888604 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9998031 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9975502 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9925337 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9997418 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9862314 | nombre_supervisor | No definido | DANIEL |
-| contratos | CO1.PCCNTR.9997221 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9989472 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9989472 | nombre_supervisor | No definido | ALVARO VALENCIA CHAMARRA |
-| contratos | CO1.PCCNTR.9987214 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9938259 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9975969 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9985240 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9966335 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9986292 | nombre_supervisor | No definido | María Isabel Ortega Solano |
-| contratos | CO1.PCCNTR.9983135 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9981440 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9981440 | valor_pendiente_de_pago | 0 | 10653000 |
-| contratos | CO1.PCCNTR.9972257 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9986709 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9986709 | nombre_supervisor | No definido | Henry Cabanzo Rengifo |
-| contratos | CO1.PCCNTR.9971157 | nombre_supervisor | KAREN RADA RAMIREZ | KAREN YESSENIA ESPINOZA MENA |
-| contratos | CO1.PCCNTR.9997613 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9997727 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9862341 | nombre_supervisor | No definido | JUAN CARLOS CARMONA |
-| contratos | CO1.PCCNTR.9956804 | estado_contrato | Aprobado | Modificado |
-| contratos | CO1.PCCNTR.9956804 | fecha_de_fin_del_contrato | 2026-09-20T00:00:00.000 | 2026-11-17T00:00:00.000 |
-| contratos | CO1.PCCNTR.9956804 | dias_adicionados | 0 | 58 |
-| contratos | CO1.PCCNTR.9997821 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9997850 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9987260 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9998032 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9997512 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9989460 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9989460 | nombre_supervisor | No definido | ALVARO VALENCIA CHAMARRA |
-| contratos | CO1.PCCNTR.9986861 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9997712 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9997701 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9976618 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9997714 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9986436 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9984076 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9998207 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9998590 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9999976 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9992942 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9992942 | valor_pendiente_de_pago | 0 | 14072000 |
+| contratos | CO1.PCCNTR.9991315 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9988064 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9995928 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9997435 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9997407 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9980898 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9996550 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9984113 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9982046 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9971961 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9997743 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9982119 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9997323 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9991513 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9968714 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9998404 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9997535 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9999483 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9999483 | valor_pendiente_de_pago | 0 | 5326500 |
+| contratos | CO1.PCCNTR.9991343 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9941974 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9986266 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9998104 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9998014 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9985276 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9997522 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9997204 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10000709 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9996209 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10001628 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9998206 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9996103 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9998304 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9996920 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9989110 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10003834 | valor_pendiente_de_pago | 0 | 3947000 |
+| contratos | CO1.PCCNTR.9998782 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9998409 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9976632 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9976632 | valor_pendiente_de_pago | 0 | 24626000 |
+| contratos | CO1.PCCNTR.9996544 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10002787 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10002775 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9996429 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9985255 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9999573 | valor_pendiente_de_pago | 0 | 5000000 |
+| contratos | CO1.PCCNTR.9997846 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10000097 | valor_pendiente_de_pago | 0 | 12000000 |
+| contratos | CO1.PCCNTR.9987808 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9995474 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9999886 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9991551 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9997733 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10000250 | valor_pendiente_de_pago | 0 | 5326500 |
 
 ## Alertas
 
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO - $ 5.000.000.000 - ADD MEDIA S.A.S [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI - $ 525.000.000 - RED DE SALUD DEL ORIENTE ESE [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA - $ 1.488.426.655 - CONCRETAR 2026 [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA - $ 1.361.024.561 - FENIX ASFALTOS Y CONCRETOS SAS [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE - $ 4.050.000.000 - FUNDACION PROSPERIDAD Y FUTURO DEL PACIFICO [SECOP II]
 - **Contrato de alto valor**: GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE VIVIENDA Y HABITAT - $ 8.592.000.000 - COMERCIALIZADORA ORIKUA SAS [SECOP II]
@@ -251,9 +211,11 @@ _Se revisaron 330 registros de contratacion de estas dos entidades en la ventana
 - **Contrato de alto valor**: CVC - $ 948.000.000 - Q C [SECOP II]
 - **Contrato de alto valor**: HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E - $ 1.150.889.534 - PLANEAMOS SAS [SECOP II]
 - **Contrato de alto valor**: ALCALDIA MUNICIPAL DE YOTOCO - $ 1.305.627.623 - EMPRESA DE SERVICIO PUBLICO DE ASEO DEL MUNICIPIO DE YOTOCO - VALLE DEL CAUCA S.A.S E.S.P [SECOP II]
+- **Contrato de alto valor**: MUNICIPIO DE YUMBO VALLE - $ 1.413.020.078 - JAVIER GORDILLO GRISALES [SECOP II]
 - **Contrato de alto valor**: Secretaría de Hábitat e Infraestructura - Alcaldía de Tuluá - $ 5.199.818.848 - EMPRESAS MUNICIPALES DE TULUA E.S.P. [SECOP II]
 - **Contrato de alto valor**: UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA - $ 1.321.917.014 - CONSORCIO UES VALLE 2026 [SECOP II]
 - **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 698.878.071 - GG CM [SECOP II]
+- **Contrato de alto valor**: RED DE SALUD DEL ORIENTE ESE - $ 525.000.000 - ASOCIACION GREMIAL ESPECIALIZADA EN SALUD DEL OCCIDENTE [SECOP II]
 - **Contrato de alto valor**: CVC - $ 1.422.879.908 - CORPORACION AMANO NATIVA [SECOP II]
 - **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 1.079.151.183 - PSI SOLUTIONS SAS [SECOP II]
 - **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 597.455.639 - GG CM [SECOP II]
@@ -266,7 +228,7 @@ _Se revisaron 330 registros de contratacion de estas dos entidades en la ventana
 - **Contrato de alto valor**: VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE EL CAIRO - $ 720.000.000 - SALUDCAR OPERACIoN COLOMBIA S.A.  SIGLA: SALUDCAR COLOMBIA [SECOP I]
 - **Proveedor con varios contratos**: SERVICIOS Y EMERGENCIAS COLOMBIA  S.A.S: 3 contratos por $ 316.812.224
 - **Proveedor con varios contratos**: RESTAURANTE CGTL SAS BIC: 3 contratos por $ 810.000
-- **Contratos sin proceso publicado**: 154 contratos de relacion alta no tienen proceso visible en el dataset de procesos
+- **Contratos sin proceso publicado**: 157 contratos de relacion alta no tienen proceso visible en el dataset de procesos
 
 ---
 
