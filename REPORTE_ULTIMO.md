@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-01 19:39  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-02 08:49  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -10,8 +10,8 @@
 | Valor de esos contratos | $ 86.348.236.576 |
 | Procesos relacionados (alta + media) | 645 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 2948 |
-| Modificaciones detectadas | 225 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 4 |
 | Registros revisados en total | 38282 |
 
 ### Desglose por nivel de gobierno
@@ -44,7 +44,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 151** (77 que suman en los indicadores, por $ 16.732.765.621).
+- **Relacionados con el sismo: 154** (80 que suman en los indicadores, por $ 16.767.413.121).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -79,7 +79,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-08-13 | CHOCÓ - ALCALDÍA MUNICIPIO DE ATRATO | APOYO TECNICO EN INGENIERIA CIVIL; ARQUITECTURA Y COMUNICACIONES PARA LA EVALUACION; INSPECCION Y DIAGNOSTICO  | $ 70.000.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 | 2026-08-28 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE ARGELIA | PRESTACIoN DE SERVICIOS LOGiSTICOS DE APOYO A LAS JORNADAS DE INSPECCIoN; EVALUACIoN Y CARACTERIZACIoN DEL NIV | $ 60.000.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 
-_No se listan 97 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
+_No se listan 99 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
 
 ## UNGRD y FNGRD · NIT 900.478.966-6 y 900.978.341
 
@@ -107,115 +107,14 @@ _Se revisaron 337 registros de contratacion de estas dos entidades en la ventana
 | ALCALDIA MUNICIPAL DE YOTOCO | 5 | $ 1.875.627.623 |
 | MUNICIPIO DE YUMBO VALLE | 8 | $ 1.511.682.078 |
 
-## Procesos nuevos (131 relacionados de 2948 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-09-25 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO | Prestar los servicios requeridos para la implementación de la línea de Capital Semilla del Programa Fondo Soli | $ 9.178.570.453 | Contratación directa | Alta |
-| 2026-09-17 | GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE VIVIENDA Y HABITAT | REALIZAR LA GESTIÓN INTEGRAL PARA EL SUMINISTRO Y DISTRIBUCIÓN DE MATERIALES DE CONSTRUCCIÓN PARA LA EJECUCIÓN | $ 8.592.000.000 | Contratación directa | Alta |
-| 2026-09-18 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO | Prestar servicios de apoyo logístico para el desarrollo y despliegue de las acciones de comunicación instituci | $ 5.000.000.000 | Contratación directa | Alta |
-| 2026-09-30 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DEL SERVICIO PÚBLICO DE GESTIÓN CATASTRAL PARA LA EJECUCIÓN DEL PROCESO DE CONSERVACIÓN Y DIFUSIÓN  | $ 3.000.000.000 | Contratación directa | Alta |
-| 2026-09-30 | UNIAJC | Obras de reparación y/o recuperación de la infraestructura física con el fin de puesta a punto de los diferent | $ 2.389.605.620 | Contratación directa | Alta |
-| 2026-09-30 | UNIAJC | Obras de demolición de elementos estructurales y no estructurales que generan alto riesgo en los diferentes pr | $ 1.976.130.044 | Contratación directa | Alta |
-| 2026-09-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD | CONSTRUCCIÓN, INSTALACIÓN, DEMOLICIÓN Y REPOSICIÓN DE REDUCTORES DE VELOCIDAD Y SUMINISTRO E INSTALACIÓN DE SE | $ 1.749.635.845 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-09-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA | REALIZAR LAS OBRAS DE CONSTRUCCIÓN DE LA VÍA DE ACCESO AL SECTOR ALTOS DE SANTA ELENA, EN LA COMUNA 18 DEL DIS | $ 1.581.425.810 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-09-30 | UNIAJC | Obras de desmonte, recuperación y construcción de cubierta en los diferentes predios de la INSTITUCIÓN UNIVERS | $ 1.483.070.607 | Contratación directa | Alta |
-| 2026-09-30 | UNIAJC | CONTRATAR LOS SERVICIOS DE CONSULTORIA PARA REALIZAR EL ESTUDIO ESTRUCTURAL DIAGNOSTICO Y EVALUACION DE RIESGO | $ 1.125.264.000 | Contratación directa | Alta |
-| 2026-09-17 | CVC | Prestación de servicios de apoyo a la gestión, dirigidos a la elaboración y puesta en marcha de una estrategia | $ 948.000.000 | Contratación directa | Media |
-| 2026-09-21 | EMPRESA SOCIAL DEL ESTADO SALUD PEREIRA | REALIZAR JORNADAS INTEGRALES DE MEJORAMIENTO DE ENTORNOS Y CONDICIONES DE SALUD PUBLICA EN LOS ALOJAMIENTOS TE | $ 713.301.015 | Contratación régimen especial | Alta |
-| 2026-09-22 | EDUNA (COMPRADOR) | CONSTRUCCIÓN DE 20 VIVIENDAS NUEVAS RURALES PARA LAS FAMILIAS AFECTADAS POR EL SISMO DEL 14 DE SEPTIEMBRE DE 2 | $ 713.133.443 | Contratación régimen especial | Alta |
-| 2026-09-17 | METRO CALI S.A ACUERDO DE REESTRUCTURACION | REALIZAR LAS OBRAS DE MANTENIMIENTO, ADECUACIÓN, REPARACIÓN Y MEJORAMIENTO DE LA INFRAESTRUCTURA FÍSICA DE LA  | $ 557.346.148 | Contratación régimen especial (con ofertas) | Media |
-| 2026-09-29 | RED DE SALUD DEL ORIENTE ESE | PRESTACIÓN DE SERVICIOS DE APOYO SINDICAL PARA EL FORTALECIMIENTO DE LA GESTIÓN DEL RIESGO EN SALUD DE LA POBL | $ 525.000.000 | Contratación régimen especial | Media |
-| 2026-09-23 | ALCALDÍA MUNICIPIO DE PALMIRA | REALIZAR OBRAS DE MANTENIMIENTO Y LIMPIEZA MECÁNICA Y MANUAL DE CAUCES NATURALES COMO ACCIONES PARA LA REDUCCI | $ 510.000.000 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-09-29 | ALCALDIA MUNICIPIO DE JARDÍN | Convenio solidario para la ejecución de obras y acciones de reparación, rehabilitación y adecuación de viviend | $ 485.766.569 | Contratación directa | Alta |
-| 2026-09-24 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | CONTRATAR LOS SERVICIOS RELACIONADOS CON LA GESTION INTEGRAL (RECOLECCION, TRANSPORTE Y DISPOSICION FINAL) DE  | $ 448.000.000 | Contratación directa | Alta |
-| 2026-09-22 | ALCALDIA MUNICIPIO DE VIJES | CONSTRUCCION CUBIERTA CANCHA MULTIPLE CORREGIMIENTO DE OCACHE, MUNICIPIO DE VIJES VALLE DEL CAUCA. | $ 400.113.712 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-09-16 | Departamento Administrativo de Planeación - Alcaldía de Tuluá | CONTRATO DE PRESTACIÓN DE SERVICIOS PARA EL RETIRO, CARGUE, TRANSPORTE Y DISPOSICIÓN FINAL DE RESIDUOS DE CONS | $ 400.000.000 | Contratación directa | Alta |
-| 2026-09-23 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | PRESTAR EL SERVICIO DE ALIMENTACION PARA LAS UNIDADES DE ALOJAMIENTO TEMPORAL DESTINADAS A LA ATENCIÓN DE LAS  | $ 341.250.000 | Contratación directa | Alta |
-| 2026-09-29 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | PRESTACIÓN DEL SERVICIO DE ALQUILER DE MAQUINARIA AMARILLA, PARA LA EJECUCIÓN DE ACTIVIDADES DE MANTENIMIENTO  | $ 301.546.333 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-09-16 | ALCALDIA MUNICIPAL DE CHINCHINA | CONTRATAR EL SUMINISTRO DE MATERIALES DE CONSTRUCCIÓN, HERRAMIENTAS DE FERRETERÍA Y ELEMENTOS COMPLEMENTARIOS  | $ 300.000.000 | Contratación directa | Alta |
-| 2026-09-21 | ALCALDIA MUNICIPAL DE CHINCHINA | CONTRATAR LAS OBRAS DE DEMOLICIÓN DEL CENTRO ADMINISTRATIVO MUNICIPAL PARA MITIGAR LOS DAÑOS Y ATENDER DE MANE | $ 250.000.000 | Contratación directa | Alta |
-| 2026-09-29 | ALCALDIA MUNICIPAL DE CHINCHINA | CONTRATAR LAS OBRAS DE DEMOLICIÓN DEL CENTRO ADMINISTRATIVO MUNICIPAL PARA MITIGAR LOS DAÑOS Y ATENDER DE MANE | $ 250.000.000 | Contratación directa | Alta |
-| 2026-09-25 | GOBERNACIÓN DE RISARALDA** | ARRENDAR INMUEBLE PARA LA SALVAGUARDA, PRESERVACIÓN Y CONSERVACIÓN TEMPORAL DE LOS BIENES DEL DEPARTAMENTO AFE | $ 228.480.000 | Contratación directa | Alta |
-| 2026-09-09 | ALCALDIA MUNICIPAL DE SAN PEDRO VALLE DEL CAUCA | MANTENIMIENTO PREVENTIVO Y CORRECTIVO CON SUMINISTRO DE REPUESTOS Y MANO DE OBRA, INSUMOS Y OTROS SERVICIOS PA | $ 206.506.769 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-09-11 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | AUNAR ESFUERZOS TÉCNICOS, ADMINISTRATIVOS, FINANCIEROS Y SOCIALES ENTRE LA EMPRESA DE VIVIENDA DE ANTIOQUIA -  | $ 193.939.640 | Contratación régimen especial | Alta |
-| 2026-09-24 | MUNICIPIO DE BELEN DE UMBRIA | SUMINISTRO DE TEJAS GALVANIZADAS PARA LA ATENCIÓN INMEDIATA DE LA EMERGENCIA OCASIONADA POR EL SISMO DEL 10 DE | $ 185.501.484 | Contratación directa | Alta |
-| 2026-09-15 | MUNICIPIO DE DAGUA | PRESTACIÓN DE SERVICIOS DE ALQUILER Y OPERACIÓN DE MAQUINARIA AMARILLA Y EQUIPO PESADO A TODO COSTO, BAJO LA M | $ 168.459.400 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-09-19 | MUNICIPIO DE DAGUA | PRESTACIÓN DE SERVICIOS DE ALQUILER Y OPERACIÓN DE MAQUINARIA AMARILLA Y EQUIPO PESADO A TODO COSTO, BAJO LA M | $ 168.459.400 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-09-10 | ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA | ADECUACIONES LOCATIVAS DE LA CUBIERTA DE LA INSTITUCIÓN EDUCATIVA AGRÍCOLA CAMPOALEGRE SEDE CENTRAL DE LA ZONA | $ 149.526.599 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-09-16 | MUNICIPIO DE OBANDO VALLE | PRESTACIÓN DE SERVICIOS DE APOYO OPERATIVO Y LOGÍSTICO PARA REALIZAR LAS CAMPAÑAS TURÍSTICAS, LA CANINATA, LOS | $ 123.845.990 | Contratación directa | Media |
-| 2026-09-22 | MUNICIPIO DE SEVILLA | REALIZAR LOS ESTUDIOS DE PATOLOGÍA ESTRUCTURAL Y DIAGNÓSTICO ESTRUCTURAL DEL EDIFICIO DE EMPRESAS PÚBLICAS MUN | $ 120.000.000 | Contratación directa | Alta |
-| 2026-09-29 | SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto | CONTRATAR EL MANTENIMIENTO PREVENTIVO Y CORRECTIVO DE MAQUINARIA AMARILLA Y/O SUS ADITAMENTOS DEL CENTRO DE LA | $ 118.902.921 | Mínima cuantía | Media |
-| 2026-09-28 | HUV - HOSPITAL UNIVERSITARIO DEL VALLE EVARISTO GARCIA E.S.E. | ADQUISICION DE UNA UNIDAD CONDENSADORA DE 25 TONELADAs Y UNA UNIDAD CONDENSADORA DE 15 TONELADAS PARA EL SERVI | $ 96.124.035 | Contratación régimen especial | Alta |
-| 2026-09-29 | ALCALDIA MUNICIPIO DE RIOSUCIO CALDAS | CONTRATISTA SE OBLIGA PARA CON EL MUNICIPIO A REALIZAR LA ENTREGA A TITULO DE COMPRAVENTA DE VIVERES, PARA ATE | $ 84.818.800 | Contratación directa | Alta |
-| 2026-09-28 | MUNICIPIO DE MARSELLA | SUMINISTRO DE INSUMOS Y ELEMENTOS PARA LA ASISTENCIA HUMANITARIA Y LA RESPUESTA A LA EMERGENCIA, EN EL MARCO D | $ 80.000.000 | Contratación directa | Alta |
-| 2026-09-18 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | AUNAR ESFUERZOS TÉCNICOS, ADMINISTRATIVOS, FINANCIEROS Y SOCIALES ENTRE LA EMPRESA DE VIVIENDA DE ANTIOQUIA -  | $ 69.528.052 | Contratación régimen especial | Alta |
-| 2026-08-31 | SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS | REALIZAR INTERVENTORIA AL ESTUDIO DE FACTIBILIDAD TECNICA ASOCIADO A LA MITIGACION DE RIESGOS PARA LA CONSTRUC | $ 67.886.696 | Mínima cuantía | Media |
-
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| procesos | CO1.REQ.11118023 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11118023 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11118111 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11118111 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.10964977 | nombre_del_proveedor | No Definido | MULTITINTAS.INK S.A.S |
-| procesos | CO1.REQ.11117947 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11117947 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11114731 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11114731 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11114731 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11040311 | valor_total_adjudicacion | 0 | 14803272969 |
-| procesos | CO1.REQ.11040311 | adjudicado | No | Si |
-| procesos | CO1.REQ.11117799 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11117799 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11117874 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11117874 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11114229 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11114229 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.10953272 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.10953272 | nombre_del_proveedor | No Definido | GLOBAL TRAINING GROUP SAS |
-| procesos | CO1.REQ.10953272 | fecha_adjudicacion |  | 2026-09-30T00:00:00.000 |
-| procesos | CO1.REQ.11117494 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11117494 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11115457 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11115457 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11114148 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11114148 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11118093 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11118093 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11118208 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11118208 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11074638 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11118245 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11118245 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11115592 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11115592 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11118337 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11118337 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11118337 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11059581 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11113870 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11113870 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11117319 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11117319 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11117319 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11114548 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11114548 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11114548 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11114707 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11114707 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11114707 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11117835 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11117835 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11118272 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11118272 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11117145 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11117145 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11117145 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11117884 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11117884 | estado_resumen | No Definido | Presentación de oferta |
+| secop1 | 26-4-14789787-13714629 | estado_del_proceso | Celebrado | Liquidado |
+| secop1 | 26-4-14789787-13714629 | fecha_liquidacion |  | 2026-09-18T00:00:00.000 |
+| secop1 | 26-13-14771378-13708996 | fecha_fin_ejec_contrato | 2026-09-24T00:00:00.000 | 2026-10-09T00:00:00.000 |
+| secop1 | 26-13-14771378-13708996 | tiempo_adiciones_en_dias | 0 | 15 |
 
 ## Alertas
 
