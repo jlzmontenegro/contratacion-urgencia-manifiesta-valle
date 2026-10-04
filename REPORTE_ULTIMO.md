@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-03 18:43  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-04 08:10  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -8,11 +8,11 @@
 |---|---|
 | Contratos relacionados (alta + media) | 245 |
 | Valor de esos contratos | $ 107.531.362.609 |
-| Procesos relacionados (alta + media) | 665 |
+| Procesos relacionados (alta + media) | 685 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 0 |
-| Registros revisados en total | 39925 |
+| Procesos nuevos en esta ejecucion | 690 |
+| Modificaciones detectadas | 240 |
+| Registros revisados en total | 40615 |
 
 ### Desglose por nivel de gobierno
 
@@ -20,25 +20,25 @@
 |---|---:|---:|---:|
 | Alcaldía de Cali | 15 | $ 28.503.412.069 | 199 |
 | Gobernación del Valle | 9 | $ 12.842.165.515 | 43 |
-| Otras entidades del Valle | 190 | $ 61.857.275.607 | 348 |
+| Otras entidades del Valle | 190 | $ 61.857.275.607 | 363 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 3648 | $ 241.079.469.366 | 2947 |
-| Gobernación del Valle | 4122 | $ 96.933.737.623 | 3857 |
-| Descentralizadas de Cali | 145 | $ 153.200.381.735 | 1007 |
-| Descentralizadas de la Gobernación | 1605 | $ 46.375.679.642 | 2201 |
+| Alcaldía de Cali | 3648 | $ 241.079.469.366 | 3102 |
+| Gobernación del Valle | 4122 | $ 96.933.737.623 | 3941 |
+| Descentralizadas de Cali | 145 | $ 153.200.381.735 | 1046 |
+| Descentralizadas de la Gobernación | 1605 | $ 46.375.679.642 | 2248 |
 | UNGRD | 3 | $ 102.866.667 | 332 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 226 contratos ($ 63.564.056.237) y 261 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 169 contratos ($ 169.522.112.306) y 278 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 226 contratos ($ 63.564.056.237) y 277 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 169 contratos ($ 169.522.112.306) y 286 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
@@ -106,6 +106,112 @@ _Se revisaron 337 registros de contratacion de estas dos entidades en la ventana
 | ALCALDIA MUNICIPAL DE YOTOCO | 6 | $ 2.055.627.623 |
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 | MUNICIPIO DE YUMBO VALLE | 8 | $ 1.511.682.078 |
+
+## Procesos nuevos (36 relacionados de 690 publicados)
+
+| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
+|---|---|---|---:|---|---|
+| 2026-10-01 | UNIAJC | EJECUTAR LAS OBRAS DE ADECUACION Y HABILITACION DE INFRAESTRUCTURA FISICA PROPIA DE LA INSTITUCION UNIVERSITAR | $ 5.227.550.751 | Contratación directa | Alta |
+| 2026-10-01 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DEL SERVICIO PÚBLICO DE GESTIÓN CATASTRAL PARA LA EJECUCIÓN DEL PROCESO DE CONSERVACIÓN Y DIFUSIÓN  | $ 3.000.000.000 | Contratación directa | Alta |
+| 2026-10-01 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | ADQUISICIÓN DE MAQUINARIA AMARILLA Y VEHÍCULOS, PARA EL MUNICIPIO DE CANDELARIA VALLE DEL CAUCA, EN EL MARCO D | $ 2.378.325.087 | Selección abreviada subasta inversa | Media |
+| 2026-10-01 | MUNICIPIO DE ANSERMA CALDAS | REALIZAR OBRAS PARA ADELANTAR LAS ACCIONES DE ATENCIÓN, MITIGACIÓN Y RECONSTRUCCIÓN DE LAS ZONAS AFECTADAS POR | $ 490.000.000 | Contratación directa | Alta |
+| 2026-10-01 | ALCALDIA MUNICIPIO DE VIJES | CONSTRUCCION CUBIERTA CANCHA MULTIPLE CORREGIMIENTO DE OCACHE, MUNICIPIO DE VIJES VALLE DEL CAUCA. | $ 400.113.712 | Selección Abreviada de Menor Cuantía | Media |
+| 2026-10-01 | MUNICIPIO DE ANSERMA CALDAS | Alquiler de Maquinaria Amarilla para remoción de escombros para adelantar las acciones de atención, mitigación | $ 200.000.000 | Contratación directa | Alta |
+| 2026-10-01 | MUNICIPIO DE PIENDAMO | SUMINISTRO A MONTO AGOTABLE DE BIENES DEL GRUPO DE MATERIALES DE CONSTRUCCIÓN, COMO APOYO COMPLEMENTARIO A LA  | $ 134.000.000 | Contratación directa | Alta |
+| 2026-10-01 | MUNICIPIO DE APIA | SUMINISTRO DE KITS DE AYUDA HUMANITARIA PARA LA ATENCIÓN DE LAS NECESIDADES BÁSICAS DE LA POBLACIÓN AFECTADA P | $ 108.228.295 | Contratación directa | Alta |
+| 2026-10-01 | CORPORACION AUTONOMA REGIONAL DE RISARALDA | INTERVENTORIA TECNICA ADMINISTRATIVA Y FINANCIERA DE LA ADECUACIÓN, REHABILITACIÓN Y PUESTA EN FUNCIONAMIENTO  | $ 100.237.270 | Contratación directa | Alta |
+| 2026-10-01 | HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E | Realizar Interventoría administrativa, técnica y financiera del contrato cuyo objeto es: Obras de cambio de cu | $ 85.415.980 | Contratación régimen especial | Media |
+| 2026-10-01 | MUNICIPIO DE MARSELLA | SUMINISTRO DE INSUMOS Y ELEMENTOS PARA LA ASISTENCIA HUMANITARIA Y LA RESPUESTA A LA EMERGENCIA, EN EL MARCO D | $ 80.000.000 | Contratación directa | Alta |
+| 2026-10-01 | MUNICIPIO DE MARSELLA | SUMINISTRO DE INSUMOS Y ELEMENTOS PARA LA ASISTENCIA HUMANITARIA Y LA RESPUESTA A LA EMERGENCIA, EN EL MARCO D | $ 80.000.000 | Contratación directa | Alta |
+| 2026-10-02 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | AUNAR ESFUERZOS TÉCNICOS, ADMINISTRATIVOS, FINANCIEROS Y SOCIALES ENTRE LA EMPRESA DE VIVIENDA DE ANTIOQUIA VI | $ 58.379.602 | Contratación régimen especial | Alta |
+| 2026-10-01 | MUNICIPIO DE DAGUA | PRESTACIÓN DE SERVICIOS PROFESIONALES Y DE APOYO A LA GESTIÓN PARA EL DESARROLLO DE LA ESTRATEGIA  FOMENTO DE  | $ 53.333.333 | Contratación directa | Media |
+| 2026-10-01 | MUNICIPIO DE DAGUA | PRESTACIÓN DE SERVICIOS PROFESIONALES Y DE APOYO A LA GESTIÓN PARA EL DESARROLLO DE LA ESTRATEGIA  FOMENTO DE  | $ 53.333.333 | Contratación directa | Media |
+| 2026-10-01 | MUNICIPIO DE DAGUA | PRESTACIÓN DE SERVICIOS PROFESIONALES Y DE APOYO A LA GESTIÓN PARA EL DESARROLLO DE LA ESTRATEGIA  FOMENTO DE  | $ 53.333.333 | Contratación directa | Media |
+| 2026-10-02 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | AUNAR ESFUERZOS TÉCNICOS, ADMINISTRATIVOS, FINANCIEROS Y SOCIALES ENTRE LA EMPRESA DE VIVIENDA DE ANTIOQUIA  V | $ 37.748.098 | Contratación régimen especial | Alta |
+| 2026-10-02 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | AUNAR ESFUERZOS TÉCNICOS, ADMINISTRATIVOS, FINANCIEROS Y SOCIALES ENTRE LA EMPRESA DE VIVIENDA DE ANTIOQUIA VI | $ 37.229.255 | Contratación régimen especial | Alta |
+| 2026-10-02 | Institución Educativa Normal Superior Jorge Isaacs | Ejecutar las obras de adecuación, reparación y mantenimiento de la Infraestructura física correspondiente al b | $ 34.500.000 | Contratación régimen especial | Alta |
+| 2026-10-02 | ESE CENTRO | PRESTAR SERVICIOS PROFESIONALES COMO MÉDICO GENERAL EN APOYO AL PROCESO DE GESTIÓN DEL RIESGO EN SALUD SUBACTI | $ 26.850.000 | Contratación régimen especial | Media |
+| 2026-10-01 | MUNICIPIO DE BUENAVISTA (QUINDIO) | Contrato de suministro de materiales y elementos de ferretería (herramientas, insumos de construcción, fijació | $ 26.324.645 | Contratación directa | Alta |
+| 2026-10-02 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS PROFESIONALES PARA LA IDENTIFICACION, VERIFICACIÓN Y ORGANIZACIÓN DE INFORMACIÓN PREDI | $ 18.750.000 | Contratación directa | Alta |
+| 2026-10-01 | UNIVERSIDAD DEL VALLE | ADQUIRIR Y SUMINISTRAR INSUMOS DE FERRETERIA, COMPONENTES ELECTRÓNICOS, INSTRUMENTOS DE MEDICIÓN ESPECIALIZADO | $ 13.509.451 | Contratación régimen especial | Alta |
+| 2026-10-01 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES EN LA SUBSECRETARÍA DE PLANEACIÓN Y CALIDAD EDUCATIVA, REALIZANDO ACTIVIDADES  | $ 11.400.000 | Contratación directa | Alta |
+| 2026-10-01 | MUNICIPIO DE ARMENIA QUINDIO | PRESTAR SERVICIOS PROFESIONALES EN PSICOLOGÍA PARA  APOYAR A LA SECRETARÍA DE SALUD DEL MUNICIPIO DE ARMENIA E | $ 9.333.333 | Contratación directa | Alta |
+| 2026-10-01 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONAL EN LA SUBSECRETARIA DE PLANEACIÓN Y CALIDAD EDUCATIVA DESARROLLANDO ACTIVIDADES  | $ 8.106.667 | Contratación directa | Alta |
+| 2026-10-01 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES EN LA SUBSECRETARIA DE PLANEACIÓN Y CALIDAD EDUCATIVA PARA REALIZAR LA VALORAC | $ 8.106.667 | Contratación directa | Alta |
+| 2026-10-01 | MUNICIPIO DE MIRANDA | PRESTAR SERVICIOS PROFESIONALES EN EL MUNICIPIO DE MIRANDA (CAUCA) REALIZANDO ACTIVIDADES INHERENTES A LOS PRO | $ 8.000.000 | Contratación directa | Alta |
+| 2026-10-01 | INSTITUCION EDUCATIVA MONTEBELLO | CONTRATAR LA ADQUISICIÓN DE KITS, MATERIAL FUNGIBLE, RECURSOS DIDÁCTICOS Y DE PAPELERÍA PARA LA EJECUCIÓN DE L | $ 7.928.819 | Contratación régimen especial | Media |
+| 2026-10-01 | MUNICIPIO DE CARTAGO | PRESTAR LOS SERVICIOS DE APOYO A LA GESTIÓN PARA IMPLEMENTACIÓN ADMINISTRATIVAS APOYAR EN LA ACCIONES DE Y DE  | $ 7.000.000 | Contratación directa | Media |
+| 2026-10-01 | MUNICIPIO DE PACORA | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA EL DESARROLLO DE ACTIVIDADES OPERATIVAS RELACIONADAS CON: I | $ 6.300.000 | Contratación directa | Alta |
+| 2026-10-02 | MUNICIPIO DE SEVILLA | PRESTAR SERVICIOS PROFESIONALES PARA REALIZAR LA EVALUACIÓN DE EDIFICACIONES E INFRAESTRUCTURA AFECTADA POR EL | $ 5.000.000 | Contratación directa | Alta |
+| 2026-10-02 | MUNICIPIO DE SEVILLA | PRESTAR SERVICIOS PROFESIONALES PARA REALIZAR LA EVALUACIÓN DE EDIFICACIONES E INFRAESTRUCTURA AFECTADA POR EL | $ 5.000.000 | Contratación directa | Alta |
+| 2026-10-02 | INSTITUCION EDUCATIVA SIETE DE AGOSTO | SUMINISTRO Y MANTENIMIENTO PREVENTIVO Y CORRECTIVO DE EQUIPOS CONTRA INCENDIOS Y DE ATENCIÓN DE EMERGENCIAS, Q | $ 2.213.400 | Contratación régimen especial | Media |
+| 2026-10-02 | MUNICIPIO DE SEVILLA | PRESTAR SERVICIOS DE APOYO A LAS ACTIVIDADES DE RECOPILACIÓN, REGISTRO, ORGANIZACIÓN Y CONSOLIDACIÓN DE INFORM | $ 2.000.000 | Contratación directa | Alta |
+| 2026-10-02 | DISPENSARIO MEDICO DE CALI | EL MANTENIMIENTO POSTERIOR AL EVENTO SISMICO DE 10 DE AGOSTO DEL 2026, CON EL FIN DE DAR CUMPLIMIENTO A LA NOR | $ 0 | Solicitud de información a los Proveedores | Alta |
+
+## Modificaciones sobre registros ya conocidos
+
+| Fuente | Identificador | Campo | Antes | Ahora |
+|---|---|---|---|---|
+| procesos | CO1.REQ.11135534 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11135534 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11051373 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.10964977 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.10925876 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11097809 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11134778 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11044028 | estado_del_procedimiento | Abierto | Cancelado |
+| procesos | CO1.REQ.11135350 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11135350 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11083406 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.10968136 | fecha_adjudicacion |  | 2026-10-02T00:00:00.000 |
+| procesos | CO1.REQ.11135527 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11135527 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11001435 | valor_total_adjudicacion | 0 | 883772546 |
+| procesos | CO1.REQ.11001435 | adjudicado | No | Si |
+| procesos | CO1.REQ.11001435 | fecha_adjudicacion |  | 2026-10-02T00:00:00.000 |
+| procesos | CO1.REQ.11135541 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11135541 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11022817 | valor_total_adjudicacion | 0 | 136222500 |
+| procesos | CO1.REQ.11022817 | adjudicado | No | Si |
+| procesos | CO1.REQ.11022817 | nombre_del_proveedor | No Definido | MCAD TRAINING & CONSULTING S.A.S. |
+| procesos | CO1.REQ.11022817 | fecha_adjudicacion |  | 2026-10-02T00:00:00.000 |
+| procesos | CO1.REQ.11125764 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11134981 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11134981 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11130484 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11130484 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11127665 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11127665 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11127665 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11025991 | estado_del_procedimiento | Evaluación | Abierto |
+| procesos | CO1.REQ.11072293 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11113776 | valor_total_adjudicacion | 0 | 2915500 |
+| procesos | CO1.REQ.11113776 | adjudicado | No | Si |
+| procesos | CO1.REQ.11113776 | fecha_adjudicacion |  | 2026-10-02T00:00:00.000 |
+| procesos | CO1.REQ.11105720 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11106988 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11019318 | estado_del_procedimiento | Evaluación | Seleccionado |
+| procesos | CO1.REQ.11019318 | fecha_adjudicacion |  | 2026-10-02T00:00:00.000 |
+| procesos | CO1.REQ.11019318 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11060296 | estado_del_procedimiento | Evaluación | Abierto |
+| procesos | CO1.REQ.11060296 | valor_total_adjudicacion | 0 | 799941016 |
+| procesos | CO1.REQ.11060296 | adjudicado | No | Si |
+| procesos | CO1.REQ.11060296 | nombre_del_proveedor | No Definido | COMERCIALIZADORA ORIKUA SAS |
+| procesos | CO1.REQ.11060296 | fecha_adjudicacion |  | 2026-10-02T00:00:00.000 |
+| procesos | CO1.REQ.11138055 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11138055 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11095203 | valor_total_adjudicacion | 0 | 40000000 |
+| procesos | CO1.REQ.11095203 | adjudicado | No | Si |
+| procesos | CO1.REQ.11095203 | fecha_adjudicacion |  | 2026-10-02T00:00:00.000 |
+| procesos | CO1.REQ.11115517 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11115517 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11094894 | fecha_adjudicacion |  | 2026-10-02T00:00:00.000 |
+| procesos | CO1.REQ.11131725 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11131725 | valor_total_adjudicacion | 0 | 6996500 |
+| procesos | CO1.REQ.11131725 | adjudicado | No | Si |
+| procesos | CO1.REQ.11120200 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11091241 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.11091241 | valor_total_adjudicacion | 0 | 4000000 |
 
 ## Alertas
 
