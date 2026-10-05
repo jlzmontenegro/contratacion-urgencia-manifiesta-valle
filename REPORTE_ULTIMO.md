@@ -1,18 +1,18 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-04 18:55  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-05 16:28  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
 | Indicador | Valor |
 |---|---|
-| Contratos relacionados (alta + media) | 245 |
-| Valor de esos contratos | $ 107.531.362.609 |
+| Contratos relacionados (alta + media) | 250 |
+| Valor de esos contratos | $ 108.306.462.609 |
 | Procesos relacionados (alta + media) | 685 |
-| Contratos nuevos en esta ejecucion | 0 |
+| Contratos nuevos en esta ejecucion | 411 |
 | Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 2 |
-| Registros revisados en total | 40615 |
+| Modificaciones detectadas | 273 |
+| Registros revisados en total | 41026 |
 
 ### Desglose por nivel de gobierno
 
@@ -20,25 +20,25 @@
 |---|---:|---:|---:|
 | Alcaldía de Cali | 15 | $ 28.503.412.069 | 199 |
 | Gobernación del Valle | 9 | $ 12.842.165.515 | 43 |
-| Otras entidades del Valle | 190 | $ 61.857.275.607 | 363 |
+| Otras entidades del Valle | 195 | $ 62.632.375.607 | 363 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 3648 | $ 241.079.469.366 | 3102 |
-| Gobernación del Valle | 4122 | $ 96.933.737.623 | 3941 |
-| Descentralizadas de Cali | 145 | $ 153.200.381.735 | 1046 |
-| Descentralizadas de la Gobernación | 1605 | $ 46.375.679.642 | 2248 |
+| Alcaldía de Cali | 3818 | $ 259.444.067.303 | 3102 |
+| Gobernación del Valle | 4202 | $ 98.548.237.623 | 3941 |
+| Descentralizadas de Cali | 156 | $ 153.357.043.655 | 1046 |
+| Descentralizadas de la Gobernación | 1608 | $ 46.595.599.642 | 2248 |
 | UNGRD | 3 | $ 102.866.667 | 332 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 226 contratos ($ 63.564.056.237) y 277 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 169 contratos ($ 169.522.112.306) y 286 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 232 contratos ($ 67.834.175.037) y 277 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 172 contratos ($ 169.781.457.033) y 286 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
@@ -107,27 +107,101 @@ _Se revisaron 337 registros de contratacion de estas dos entidades en la ventana
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 | MUNICIPIO DE YUMBO VALLE | 8 | $ 1.511.682.078 |
 
+## Contratos nuevos (11 relacionados de 411 publicados)
+
+| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
+|---|---|---|---:|---|---|
+| 2026-10-02 | INSTITUTO DE CULTURA Y PATRIMONIO  DE ANTIOQUIA | Mandato sin representación para la administración delegada de recursos destinados a la gestión contractual; té | $ 3.600.000.000 | EMPRESA DE DESARROLLO TERRITORIAL DE DON MATIAS | Alta |
+| 2026-10-03 | ARMADA NACIONAL BASE NAVAL ARC MALAGA | CONTRATAR LA ADQUISICIÓN Y PUESTA EN FUNCIONAMIENTO DE  MAQUINARIA AMARILLA PARA LA BASE NAVAL No. 2 ARC MÁLAG | $ 761.600.000 | LONA GROUP SAS | Media |
+| 2026-10-02 | MUNICIPIO DE ANSERMA CALDAS | REALIZAR OBRAS PARA ADELANTAR LAS ACCIONES DE ATENCIÓN; MITIGACIÓN Y RECONSTRUCCIÓN DE LAS ZONAS AFECTADAS POR | $ 490.000.000 | Fexsa Ingenieria y Servicios S.A.S | Alta |
+| 2026-09-29 | ALCALDIA MUNICIPIO DE RIOSUCIO CALDAS | CONTRATISTA SE OBLIGA PARA CON EL MUNICIPIO A REALIZAR LA ENTREGA A TITULO DE COMPRAVENTA DE VIVERES; PARA ATE | $ 84.818.800 | GRANCAFE SUPERMERCADO | Alta |
+| 2026-10-02 | MUNICIPIO DE MARSELLA | SUMINISTRO DE INSUMOS Y ELEMENTOS PARA LA ASISTENCIAHUMANITARIA Y LA RESPUESTA A LA EMERGENCIA; EN EL MARCO DE | $ 80.000.000 | CONSIVIL - CONSULTORIA INTEGRAL EN GESTION EMPRESARIAL E INGENIERIA CIVIL S.A.S | Alta |
+| 2026-10-02 | MUNICIPIO DE BELALCAZAR | PRESTAR LOS SERVICIOS DE APOYO A LA GESTIÓN EN EL ACOMPAÑAMIENTO TÉCNICO A LOS PROYECTOS DE INVERSIÓN EN VÍAS; | $ 9.000.000 | BRAYAN ALEXIS CANO MORALES | Alta |
+| 2026-10-03 | MUNICIPIO DE PACORA | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA EL DESARROLLO DE ACTIVIDADES OPERATIVAS RELACIONADAS CON: I | $ 6.300.000 | Gustavo Adolfo Restrepo Pulgarin | Alta |
+| 2026-10-02 | MUNICIPIO DE SEVILLA | PRESTAR SERVICIOS PROFESIONALES PARA REALIZAR LA EVALUACIÓN DE EDIFICACIONES E INFRAESTRUCTURA AFECTADA POR EL | $ 5.000.000 | Gloria Patricia Alvarez Facundo | Alta |
+| 2026-10-02 | ALCALDIA MUNICIPAL DE BUGA | PRESTAR SERVICIOS DE APOYO A LA GESTIÓN PARA EL ACOMPAÑAMIENTO EN RECORRIDOS DE INSPECCIÓN Y CONTROL DE OBRAS; | $ 4.500.000 | BRAYLLAN ROLDAN VILLADA | Media |
+| 2026-10-02 | ALCALDIA LA CUMBRE | PRESTACIÓN DE SERVICIOS PROFESIONALES EN MEDICINA VETERINARIA PARA FORTALECER LAS JORNADAS DE ATENCIÓN INTEGRA | $ 2.000.000 | TATIANA OSPINA ARCILA | Alta |
+| 2026-10-02 | MUNICIPIO DE SEVILLA | PRESTAR SERVICIOS PROFESIONALES PARA REALIZAR LA EVALUACIÓN DE EDIFICACIONES E INFRAESTRUCTURA AFECTADA POR EL | $ 2.000.000 | MARISOL OLAYA OSORIO | Alta |
+
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| procesos | CO1.REQ.11140741 | fecha_adjudicacion |  | 2026-10-03T00:00:00.000 |
-| procesos | CO1.REQ.11124118 | fecha_adjudicacion |  | 2026-10-03T00:00:00.000 |
+| contratos | CO1.PCCNTR.10019359 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9996329 | nombre_supervisor | LIA PATRICIA PEREZ CARMONA | IVONNE BEATRIZ CHAVERRA CARDONA |
+| contratos | CO1.PCCNTR.9998605 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10027331 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10002895 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9996109 | nombre_supervisor | LIA PATRICIA PEREZ CARMONA | WILMOT DAVID RUANO IBARRA |
+| contratos | CO1.PCCNTR.9995836 | nombre_supervisor | LIA PATRICIA PEREZ CARMONA | Francia Milena Zuluaga Tangarife |
+| contratos | CO1.PCCNTR.10027501 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10021245 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10021245 | valor_pendiente_de_pago | 0 | 9765000 |
+| contratos | CO1.PCCNTR.10002859 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9981184 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10008415 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10005555 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9996017 | nombre_supervisor | LIA PATRICIA PEREZ CARMONA | Francia Milena Zuluaga Tangarife |
+| contratos | CO1.PCCNTR.10027171 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10021708 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10021708 | valor_pendiente_de_pago | 0 | 9765000 |
+| contratos | CO1.PCCNTR.10027524 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10000515 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9996030 | nombre_supervisor | LIA PATRICIA PEREZ CARMONA | TITO LENIN NARVAEZ ECHEVERRY |
+| contratos | CO1.PCCNTR.10003416 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9997133 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9997750 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10012822 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10010078 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9996029 | nombre_supervisor | LIA PATRICIA PEREZ CARMONA | ZULENY ORTIZ GARCIA |
+| contratos | CO1.PCCNTR.10003098 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10027061 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9974230 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10027336 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10014708 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10014708 | valor_pendiente_de_pago | 0 | 15400000 |
+| contratos | CO1.PCCNTR.9974721 | valor_facturado | 0 | 3000000 |
+| contratos | CO1.PCCNTR.10009335 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10006221 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9995929 | nombre_supervisor | LIA PATRICIA PEREZ CARMONA | Francia Milena Zuluaga Tangarife |
+| contratos | CO1.PCCNTR.9999915 | valor_pendiente_de_pago | 0 | 10000000 |
+| contratos | CO1.PCCNTR.10018998 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10000309 | valor_pendiente_de_pago | 0 | 10000000 |
+| contratos | CO1.PCCNTR.9998503 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10027238 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10006874 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10017500 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10020671 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10020671 | valor_pendiente_de_pago | 0 | 9765000 |
+| contratos | CO1.PCCNTR.10020697 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10020697 | valor_pendiente_de_pago | 0 | 9765000 |
+| contratos | CO1.PCCNTR.10016798 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10000074 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10019162 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10019162 | valor_pendiente_de_pago | 0 | 9765000 |
+| contratos | CO1.PCCNTR.10017484 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9996110 | nombre_supervisor | LIA PATRICIA PEREZ CARMONA | IVONNE BEATRIZ CHAVERRA CARDONA |
+| contratos | CO1.PCCNTR.10027540 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10006394 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10027206 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10016952 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10009361 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10027181 | estado_contrato | Aprobado | En ejecución |
 
 ## Alertas
 
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE - $ 4.050.000.000 - FUNDACION PROSPERIDAD Y FUTURO DEL PACIFICO [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO - $ 5.000.000.000 - ADD MEDIA S.A.S [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI - $ 525.000.000 - RED DE SALUD DEL ORIENTE ESE [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA - $ 900.000.000 - UNION TEMPORAL LOGISTICA ALIMENTARIA INTEGRAL [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA - $ 1.488.426.655 - CONCRETAR 2026 [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA - $ 1.361.024.561 - FENIX ASFALTOS Y CONCRETOS SAS [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO - $ 9.178.570.453 - FUNDACION WWB COLOMBIA [SECOP II]
 - **Contrato de alto valor**: GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE VIVIENDA Y HABITAT - $ 8.592.000.000 - COMERCIALIZADORA ORIKUA SAS [SECOP II]
 - **Contrato de alto valor**: GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA - $ 2.568.577.795 - FUNDACIÓN AVE FÉNIX [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS - $ 5.169.150.000 - EMPRESA REGIONAL DE SERVICIO PUBLICO DE ASEO DE CANDELARIA [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI - $ 700.000.000 - 2 GROUP SAS [SECOP II]
 - **Contrato de alto valor**: DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES - $ 649.987.520 - FANALCA S.A.S. [SECOP II]
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO - $ 9.178.570.453 - FUNDACION WWB COLOMBIA [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE - $ 4.050.000.000 - FUNDACION PROSPERIDAD Y FUTURO DEL PACIFICO [SECOP II]
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.125.264.000 - NOVATECH INGENIERIA Y CONSTRUCCION SAS [SECOP II]
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.976.130.044 - Prodecon S.A.S [SECOP II]
 - **Contrato de alto valor**: CVC - $ 996.015.936 - FUNDACION BALU [SECOP II]
@@ -142,6 +216,7 @@ _Se revisaron 337 registros de contratacion de estas dos entidades en la ventana
 - **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 698.878.071 - GG CM [SECOP II]
 - **Contrato de alto valor**: CVC - $ 1.422.879.908 - CORPORACION AMANO NATIVA [SECOP II]
 - **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 1.079.151.183 - PSI SOLUTIONS SAS [SECOP II]
+- **Contrato de alto valor**: ARMADA NACIONAL BASE NAVAL ARC MALAGA - $ 761.600.000 - LONA GROUP SAS [SECOP II]
 - **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 597.455.639 - GG CM [SECOP II]
 - **Contrato de alto valor**: Institución Universitaria de Roldanillo - $ 4.284.974.783 - OBRAS CIVILES DE OCCIDENTE S.A.S. [SECOP II]
 - **Contrato de alto valor**: ALCALDIA DE ALCALA - $ 528.784.465 - GRUPO EMPRESARIAL DEL SUR SIGLO XXI S.A.S. E.S.P [SECOP II]
@@ -155,7 +230,6 @@ _Se revisaron 337 registros de contratacion de estas dos entidades en la ventana
 - **Contrato de alto valor**: VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE EL CAIRO - $ 720.000.000 - SALUDCAR OPERACIoN COLOMBIA S.A.  SIGLA: SALUDCAR COLOMBIA [SECOP I]
 - **Proveedor con varios contratos**: SERVICIOS Y EMERGENCIAS COLOMBIA  S.A.S: 3 contratos por $ 316.812.224
 - **Proveedor con varios contratos**: RESTAURANTE CGTL SAS BIC: 3 contratos por $ 810.000
-- **Contratos sin proceso publicado**: 173 contratos de relacion alta no tienen proceso visible en el dataset de procesos
 
 ---
 
