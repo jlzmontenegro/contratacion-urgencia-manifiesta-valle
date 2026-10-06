@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-05 20:43  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-06 09:08  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -8,37 +8,37 @@
 |---|---|
 | Contratos relacionados (alta + media) | 250 |
 | Valor de esos contratos | $ 108.306.462.609 |
-| Procesos relacionados (alta + media) | 685 |
+| Procesos relacionados (alta + media) | 715 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 0 |
-| Registros revisados en total | 41026 |
+| Procesos nuevos en esta ejecucion | 791 |
+| Modificaciones detectadas | 279 |
+| Registros revisados en total | 41817 |
 
 ### Desglose por nivel de gobierno
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 15 | $ 28.503.412.069 | 199 |
-| Gobernación del Valle | 9 | $ 12.842.165.515 | 43 |
-| Otras entidades del Valle | 195 | $ 62.632.375.607 | 363 |
+| Alcaldía de Cali | 15 | $ 28.503.412.069 | 204 |
+| Gobernación del Valle | 9 | $ 12.842.165.515 | 63 |
+| Otras entidades del Valle | 195 | $ 62.632.375.607 | 367 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 3818 | $ 259.444.067.303 | 3102 |
-| Gobernación del Valle | 4202 | $ 98.548.237.623 | 3941 |
-| Descentralizadas de Cali | 156 | $ 153.357.043.655 | 1046 |
-| Descentralizadas de la Gobernación | 1608 | $ 46.595.599.642 | 2248 |
+| Alcaldía de Cali | 3818 | $ 259.444.067.303 | 3366 |
+| Gobernación del Valle | 4202 | $ 98.548.237.623 | 4196 |
+| Descentralizadas de Cali | 156 | $ 153.357.043.655 | 1070 |
+| Descentralizadas de la Gobernación | 1608 | $ 46.595.599.642 | 2266 |
 | UNGRD | 3 | $ 102.866.667 | 332 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 232 contratos ($ 67.834.175.037) y 277 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 172 contratos ($ 169.781.457.033) y 286 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 232 contratos ($ 67.834.175.037) y 279 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 172 contratos ($ 169.781.457.033) y 290 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
@@ -106,6 +106,108 @@ _Se revisaron 337 registros de contratacion de estas dos entidades en la ventana
 | ALCALDIA MUNICIPAL DE YOTOCO | 6 | $ 2.055.627.623 |
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 | MUNICIPIO DE YUMBO VALLE | 8 | $ 1.511.682.078 |
+
+## Procesos nuevos (32 relacionados de 791 publicados)
+
+| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
+|---|---|---|---:|---|---|
+| 2026-10-02 | GOBERNACION DEL VALLE DEL CAUCA - DADI | PRESTACIÓN DE SERVICIOS LOGÍSTICOS DE LOS CENTROS DE ACOPIO, PUNTOS DE DISTRIBUCION Y ENTREGA DE LAS AYUDAS HU | $ 1.300.000.000 | Contratación directa | Alta |
+| 2026-10-02 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | EJECUTAR ACTIVIDADES DE DEMOLICIÓN, CARGUE Y TRANSPORTE DE LOS RCD PARA EDIFICACIONES COLAPSADAS, EN EL MARCO  | $ 515.216.559 | Contratación directa | Alta |
+| 2026-10-02 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | EJECUTAR ACTIVIDADES DE DEMOLICIÓN, CARGUE Y TRANSPORTE DE LOS RCD PARA EDIFICACIONES COLAPSADAS, EN EL MARCO  | $ 515.216.559 | Contratación directa | Alta |
+| 2026-10-02 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | EJECUTAR ACTIVIDADES DE DEMOLICIÓN, CARGUE Y TRANSPORTE DE LOS RCD PARA EDIFICACIONES COLAPSADAS, EN EL MARCO  | $ 515.216.559 | Contratación directa | Alta |
+| 2026-10-02 | EMPRESAS MUNICIPALES DE TULUA E.S.P. | INTERVENTORÍA INTEGRAL DEL CONVENIO INTERADMINISTRATIVO 330.21.1.55-2026 DEL AÑO 2026 AUNAR ESFUERZOS TÉCNICOS | $ 409.585.507 | Contratación régimen especial | Media |
+| 2026-10-02 | Departamento Administrativo de Planeación - Alcaldía de Tuluá | CONTRATACIÓN DE SERVICIOS PROFESIONALES PARA EL DESARROLLO DE ACTIVIDADES TÉCNICAS DE IDENTIFICACIÓN, CARACTER | $ 100.132.000 | Contratación directa | Alta |
+| 2026-10-02 | HUV - HOSPITAL UNIVERSITARIO DEL VALLE EVARISTO GARCIA E.S.E. | ADQUISICION DE CABLES Y ACCESORIOS ELECTRICOS PARA LA REALIZACION DE ARREGLOS DE LAS AFECTACION GENERADAS POR  | $ 95.626.591 | Contratación régimen especial | Alta |
+| 2026-10-02 | MUNICIPIO DE MARSELLA | SUMINISTRO DE INSUMOS Y ELEMENTOS PARA LA ASISTENCIA HUMANITARIA Y LA RESPUESTA A LA EMERGENCIA, EN EL MARCO D | $ 80.000.000 | Contratación directa | Alta |
+| 2026-10-02 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | Prestar los servicios profesionales como abogado especialista en derecho administrativo y derecho constitucion | $ 23.100.000 | Contratación directa | Media |
+| 2026-10-02 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | Prestar los servicios profesionales como ingeniero de alimentos con maestria en cambios globales y riesgos de  | $ 23.100.000 | Contratación directa | Media |
+| 2026-10-02 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | Prestar los servicios profesionales como abogada especialista en derecho administrativo en la actividad atende | $ 18.000.000 | Contratación directa | Media |
+| 2026-10-02 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | Prestar los servicios profesionales como abogada en la actividad orientar a las entidades territoriales en la  | $ 15.000.000 | Contratación directa | Media |
+| 2026-10-02 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | Prestar los servicios profesionales como abogado especialista en derecho administrativo en la actividad realiz | $ 15.000.000 | Contratación directa | Media |
+| 2026-10-02 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | Prestar los servicios profesionales como abogada especialista en derecho familiar en la actividad orientar a l | $ 15.000.000 | Contratación directa | Media |
+| 2026-10-03 | INSTITUCION EDUCATIVA FRANCISCO DE PAULA SANTANDER | SUMINISTRO DE MATERIALES DIDÁCTICOS, DE PAPELERÍA, HERRAMIENTAS MENORES Y EQUIPOS ATENCIÓN DE EMERGENCIAS PARA | $ 14.794.462 | Contratación régimen especial (con ofertas) | Media |
+| 2026-10-02 | INSTITUCION EDUCATIVA LAS PAVAS | Contratar el suministro de materiales necesarios para el mantenimiento integral de las zonas comunes de la sed | $ 12.924.975 | Contratación régimen especial | Alta |
+| 2026-10-02 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | Prestar los servicios profesionales como abogado en la actividad atender las emergencias y desastres en el dep | $ 12.000.000 | Contratación directa | Media |
+| 2026-10-02 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | Prestar los servicios profesionales como administradora de empresas en la actividad divulgar contenidos temati | $ 12.000.000 | Contratación directa | Media |
+| 2026-10-03 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | Prestar los servicios profesionales como administradora en salud ocupacional en la actividad realizar el plan  | $ 12.000.000 | Contratación directa | Media |
+| 2026-10-03 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | Prestar los servicios profesionales como administrador de empresas en la actividad realizar el plan del servic | $ 12.000.000 | Contratación directa | Media |
+| 2026-10-02 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | Prestar los servicios profesionales como trabajadora social en la actividad orientar en la actualización y/o a | $ 12.000.000 | Contratación directa | Media |
+| 2026-10-02 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 11.841.000 | Contratación directa | Media |
+| 2026-10-03 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | Prestar los servicios de apoyo a la gestión como técnica en obras civiles en la actividad realizar encuentros  | $ 9.000.000 | Contratación directa | Media |
+| 2026-10-02 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | Prestar los servicios de apoyo a la gestión como técnico en criminalistica y auxiliar judicial en la actividad | $ 9.000.000 | Contratación directa | Media |
+| 2026-10-02 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | Prestar los servicios de apoyo a la gestión como técnica en la actividad orientar a las entidades territoriale | $ 9.000.000 | Contratación directa | Media |
+| 2026-10-02 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | Prestar los servicios de apoyo a la gestión como técnica en educación para el trabajo y desarrollo humano en l | $ 9.000.000 | Contratación directa | Media |
+| 2026-10-02 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | Prestar los servicios de apoyo a la gestión como técnico en ciencias militares en la actividad orientar en la  | $ 9.000.000 | Contratación directa | Media |
+| 2026-10-02 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | Prestar los servicios de apoyo a la gestión como asistencial en la actividad orientar a las entidades territor | $ 7.500.000 | Contratación directa | Media |
+| 2026-10-02 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | Prestar los servicios de apoyo a la gestión como asistencial en la actividad atender las emergencias y desastr | $ 7.500.000 | Contratación directa | Media |
+| 2026-10-03 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | Prestar los servicios de apoyo a la gestión como asistencial en la actividad atender las emergencias y desastr | $ 7.500.000 | Contratación directa | Media |
+| 2026-10-03 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 4.805.000 | Contratación directa | Media |
+| 2026-10-02 | ALCALDIA MUNICIPAL DE BUGA | PRESTAR SERVICIOS DE APOYO A LA GESTIÓN PARA EL ACOMPAÑAMIENTO EN RECORRIDOS DE INSPECCIÓN Y CONTROL DE OBRAS, | $ 4.500.000 | Contratación directa | Media |
+
+## Modificaciones sobre registros ya conocidos
+
+| Fuente | Identificador | Campo | Antes | Ahora |
+|---|---|---|---|---|
+| procesos | CO1.REQ.11146176 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11143776 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11143776 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11143776 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11145837 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11145860 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11145692 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11144696 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11144696 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11144696 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11144931 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11144931 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11144931 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11144101 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11144101 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11144101 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11144132 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11144132 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11144132 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11145689 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11135734 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11143656 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11143656 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11143656 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11146650 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11145209 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11145209 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11145209 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11146374 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11144771 | estado_del_procedimiento | Borrador | Publicado |
+| procesos | CO1.REQ.11144771 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11144771 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11144896 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11144896 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11144896 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11135787 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11144109 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11144109 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11144109 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11146653 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11135942 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11145403 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11145403 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11145403 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11062525 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11146256 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11022817 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.11145282 | estado_del_procedimiento | Evaluación | Seleccionado |
+| procesos | CO1.REQ.11143885 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11143885 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11143885 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11135746 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11145331 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11145331 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11145331 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.10954208 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11068581 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11040311 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11144740 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11144740 | fase |  | Presentación de oferta |
 
 ## Alertas
 
