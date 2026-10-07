@@ -4,12 +4,12 @@ Comprobaciones: 53 entidades x 3 fuentes = 159, cada una por tres caminos indepe
 
 Fuente     Entidad                NIT         API simple  API amplio    CSV   Veredicto
 ------------------------------------------------------------------------------------
-contratos  Alcaldia de Cali       890399011         3776        3833   3833   OK
-contratos  Gobernacion del Valle  890399029         1967        4211   4211   OK
+contratos  Alcaldia de Cali       890399011         3793        3850   3850   OK
+contratos  Gobernacion del Valle  890399029         1967        4213   4213   OK
 contratos  UNGRD / FNGRD          900478966            3           3      3   OK
 contratos  UNGRD / FNGRD          900978341            0           0      0   OK
 contratos  Desc.Cali EMCALI - Empresas Munici890399003            0           0      0   OK
-contratos  Desc.Cali Metro Cali S.A.805013171           10          10     10   OK
+contratos  Desc.Cali Metro Cali S.A.805013171           11          11     11   OK
 contratos  Desc.Cali Red de Salud de Ladera E805027289            0           0      0   OK
 contratos  Desc.Cali Red de Salud del Norte E805027287            0           0      0   OK
 contratos  Desc.Cali Red de Salud del Oriente805027337           29          29     29   OK
@@ -153,7 +153,7 @@ secop1     Otras     Empresa de Servicio Publ900401903            0           0 
 secop1     Otras     Empresas Publicas Munici891900474            0           0      0   OK
 secop1     Otras     Instituto Municipal del 891900528            0           0      0   OK
 secop1     Otras     Instituto Distrital del 890399992           63          63     63   OK
-secop1     Otras     Personeria Municipal de 891900493            0          23     23   OK
+secop1     Otras     Personeria Municipal de 891900493            0          24     24   OK
 secop1     Otras     Personeria Municipal de 901159063            0           0      0   OK
 secop1     Otras     Personeria Municipal de 900085817            0           0      0   OK
 secop1     Otras     Personeria Municipal de 800100524            0           0      0   OK
