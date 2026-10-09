@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-08 20:09  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-09 09:20  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -8,11 +8,11 @@
 |---|---|
 | Contratos relacionados (alta + media) | 254 |
 | Valor de esos contratos | $ 106.850.594.533 |
-| Procesos relacionados (alta + media) | 736 |
-| Contratos nuevos en esta ejecucion | 1 |
-| Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 2 |
-| Registros revisados en total | 43406 |
+| Procesos relacionados (alta + media) | 748 |
+| Contratos nuevos en esta ejecucion | 0 |
+| Procesos nuevos en esta ejecucion | 742 |
+| Modificaciones detectadas | 1120 |
+| Registros revisados en total | 44148 |
 
 ### Desglose por nivel de gobierno
 
@@ -20,31 +20,31 @@
 |---|---:|---:|---:|
 | Alcaldía de Cali | 17 | $ 30.093.698.428 | 205 |
 | Gobernación del Valle | 9 | $ 12.842.165.515 | 63 |
-| Otras entidades del Valle | 195 | $ 59.566.887.839 | 382 |
+| Otras entidades del Valle | 195 | $ 59.566.887.839 | 392 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 4085 | $ 265.252.506.605 | 3687 |
-| Gobernación del Valle | 4508 | $ 103.590.158.065 | 4278 |
-| Descentralizadas de Cali | 177 | $ 153.694.741.113 | 1151 |
-| Descentralizadas de la Gobernación | 1566 | $ 45.915.332.919 | 2489 |
+| Alcaldía de Cali | 4085 | $ 265.252.506.605 | 3816 |
+| Gobernación del Valle | 4508 | $ 103.590.158.065 | 4340 |
+| Descentralizadas de Cali | 177 | $ 153.694.741.113 | 1191 |
+| Descentralizadas de la Gobernación | 1566 | $ 45.915.332.919 | 2606 |
 | UNGRD | 3 | $ 102.866.667 | 332 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 224 contratos ($ 62.704.083.803) y 289 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 175 contratos ($ 168.357.280.118) y 307 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 224 contratos ($ 62.704.083.803) y 291 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 175 contratos ($ 168.357.280.118) y 314 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 174** (89 que suman en los indicadores, por $ 20.909.750.043).
+- **Relacionados con el sismo: 176** (90 que suman en los indicadores, por $ 20.909.750.043).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -79,7 +79,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-08-13 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE RIOFRÍO | CONVENIO INTERINSTITUCIONAL BOMBERIL ENTRE EL MUNICIPIO DE RIOFRiO Y EL CUERPO DE BOMBEROS VOLUNTARIOS DE SALO | $ 75.000.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 | 2026-08-13 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE RIOFRÍO | CONVENIO INTERINSTITUCIONAL BOMBERIL ENTRE EL MUNICIPIO DE RIOFRiO Y EL CUERPO DE BOMBEROS VOLUNTARIOS DE RIOF | $ 75.000.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 
-_No se listan 109 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
+_No se listan 110 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
 
 ## UNGRD y FNGRD · NIT 900.478.966-6 y 900.978.341
 
@@ -107,14 +107,89 @@ _Se revisaron 337 registros de contratacion de estas dos entidades en la ventana
 | MUNICIPIO DE YUMBO VALLE | 9 | $ 1.653.036.283 |
 | INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ | 2 | $ 1.440.000.000 |
 
-## Contratos nuevos (0 relacionados de 1 publicados)
+## Procesos nuevos (14 relacionados de 742 publicados)
+
+| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
+|---|---|---|---:|---|---|
+| 2026-10-07 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | ADQUISICIÓN DE MAQUINARIA AMARILLA Y VEHÍCULOS, PARA EL MUNICIPIO DE CANDELARIA VALLE DEL CAUCA, EN EL MARCO D | $ 2.378.325.087 | Selección abreviada subasta inversa | Media |
+| 2026-10-07 | COMPRADOR - EMPRESA CARTAGUEÑA DE DESARROLLO - EMCADE | EJECUCION  DE LAS OBRAS NECESARIAS PARA EL MEJORAMIENTO VIAL MEDIANTE LA IMPLEMENTACIÓN DE ESTABILIZACIÓN DE S | $ 1.904.210.464 | Contratación régimen especial | Media |
+| 2026-10-07 | Secretaría de Educación - Alcaldía de Tuluá | CONTRATACION DIRECTA DE OBRA PUBLICA PARA REALIZAR INTERVENCIONES A LAS INSTITUCIONES EDUCATIVAS OFICIALES AFE | $ 1.583.549.971 | Contratación directa | Alta |
+| 2026-10-07 | ALCALDÍA MUNICIPIO DE PALMIRA | REALIZAR OBRAS DE MANTENIMIENTO Y LIMPIEZA MECÁNICA Y MANUAL DE CAUCES NATURALES COMO ACCIONES PARA LA REDUCCI | $ 510.000.000 | Selección Abreviada de Menor Cuantía | Media |
+| 2026-10-07 | RED DE SALUD DEL ORIENTE ESE | SUMINISTRO DE BIOLÓGICOS NO INCLUIDOS EN EL ESQUEMA NACIONAL GRATUITO DEL PROGRAMA AMPLIADO DE INMUNIZACIONES  | $ 294.875.426 | Contratación régimen especial | Media |
+| 2026-10-07 | ALCALDIA MUNICIPAL DE CHINCHINA | CONTRATAR LOS SERVICIOS PARA LA EJECUCIÓN DE LAS ACTIVIDADES DE LIMPIEZA, RECOLECCIÓN, CARGUE, TRANSPORTE, REM | $ 150.000.000 | Contratación directa | Alta |
+| 2026-10-07 | COMPRADOR - EMPRESA CARTAGUEÑA DE DESARROLLO - EMCADE | EJECUCIÓN DE LAS OBRAS PARA REALIZAR MANTENIMIENTO MEDIANTE ROCERÍA Y LIMPIEZA DE VIAS Y PUNTOS CRÍTICOS DE LA | $ 100.000.000 | Contratación régimen especial | Media |
+| 2026-10-07 | SENA REGIONAL VALLE Grupo Administrativo CTA | 76_9593_254_CONTRATAR A TITULO COMPRAVENTA DE MENAJE Y ENSERES PARA LA ESTRATEGIA DE CAFETERÍAS COMO AMBIENTES | $ 77.844.235 | Mínima cuantía | Media |
+| 2026-10-07 | ALCALDIA MUNICIPIO DE VIJES | APOYO A LA ATENCION INTEGRAL DE EMERGENCIAS, DESASTRES, CONTINGENCIAS Y MEJORAMIENTO DE VIVIENDA EN EL MUNICIP | $ 41.482.530 | Mínima cuantía | Media |
+| 2026-10-07 | INSTITUCION EDUCATIVA NUESTRA SEÑORA DE LA CANDELARIA | SUMINISTRO DE MUEBLES Y ENSERES (31ventiladores, 100 SILLAS PLASTICAS CON BRAZOS, MESAS TRAPEZOIDALES, SILLAS  | $ 34.285.067 | Contratación régimen especial | Media |
+| 2026-10-07 | MUNICIPIO DE SEVILLA | PRESTAR EL SERVICIO DE ALQUILER DE VOLQUETA CON CONDUCTOR PARA EL TRANSPORTE Y DESCARGUE DE ESCOMBROS Y MATERI | $ 30.000.000 | Contratación directa | Alta |
+| 2026-10-07 | MUNICIPIO DE SEVILLA | PRESTAR EL SERVICIO DE HOSPEDAJE A LOS ORGANISMOS DE SOCORRO Y PERSONAL DE APOYO DE LA FUERZA PÚBLICA REQUERID | $ 15.000.000 | Contratación directa | Alta |
+| 2026-10-07 | MUNICIPIO DE ARMENIA QUINDIO | PRESTAR SERVICIOS PROFESIONALES EN PSICOLOGÍA PARA APOYAR A LA SECRETARÍA DE SALUD DEL MUNICIPIO DE ARMENIA EN | $ 8.633.333 | Contratación directa | Alta |
+| 2026-10-07 | BANCO DE LA REPUBLICA | Realizar las reparaciones de equipos de ascensores área público y gerencia de la sucursal de Cali, afectados p | $ 3.657.600 | Contratación régimen especial | Alta |
 
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| secop1 | 26-11-14786005-13734784 | fecha_fin_ejec_contrato | 2026-10-28T00:00:00.000 | 2026-11-05T00:00:00.000 |
-| secop1 | 26-17-14810215 | estado_del_proceso | Borrador | Convocado |
+| procesos | CO1.REQ.11014781 | valor_total_adjudicacion | 0 | 492603480 |
+| procesos | CO1.REQ.11014781 | adjudicado | No | Si |
+| procesos | CO1.REQ.11014781 | nombre_del_proveedor | No Definido | CONSORCIO AGUAS DEL SUR |
+| procesos | CO1.REQ.11168928 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11168928 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11168073 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11168073 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11165199 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11165199 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11168650 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11168650 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11167994 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11167994 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11155964 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11155964 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11156756 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11156756 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11165386 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11165386 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11165757 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11165757 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11168334 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11168334 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11168819 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11168819 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11167227 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11167227 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11165079 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11165079 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11008712 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.11008712 | valor_total_adjudicacion | 0 | 2365567694 |
+| procesos | CO1.REQ.11008712 | adjudicado | No | Si |
+| procesos | CO1.REQ.11008712 | nombre_del_proveedor | No Definido | FENIX ASFALTOS Y CONCRETOS SAS |
+| procesos | CO1.REQ.11008712 | fecha_adjudicacion |  | 2026-10-07T00:00:00.000 |
+| procesos | CO1.REQ.11166167 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11166167 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11154584 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11154584 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11154584 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11168936 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11168936 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11168743 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11168743 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11168972 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11168972 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11097809 | nombre_del_proveedor | No Definido | Henet S.A.S |
+| procesos | CO1.REQ.11168301 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11168301 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11093524 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11169807 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11169807 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11156184 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11161125 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11161125 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11169426 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11169426 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11169572 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11169572 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11166694 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11166694 | estado_resumen | No Definido | Presentación de oferta |
 
 ## Alertas
 
