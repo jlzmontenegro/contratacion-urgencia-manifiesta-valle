@@ -4,8 +4,8 @@ Comprobaciones: 53 entidades x 3 fuentes = 159, cada una por tres caminos indepe
 
 Fuente     Entidad                NIT         API simple  API amplio    CSV   Veredicto
 ------------------------------------------------------------------------------------
-contratos  Alcaldia de Cali       890399011         4065        4122   4122   OK
-contratos  Gobernacion del Valle  890399029         2019        4526   4526   OK
+contratos  Alcaldia de Cali       890399011         4045        4102   4102   OK
+contratos  Gobernacion del Valle  890399029         2016        4517   4517   OK
 contratos  UNGRD / FNGRD          900478966            3           3      3   OK
 contratos  UNGRD / FNGRD          900978341            0           0      0   OK
 contratos  Desc.Cali EMCALI - Empresas Munici890399003            0           0      0   OK
@@ -20,12 +20,12 @@ contratos  Desc.Cali Personeria Distrital de 805003895           46          46 
 contratos  Desc.Cali Contraloria de Santiago 800217831           45          45     45   OK
 contratos  Desc.Cali IE Normal Superior Santi800243065            0           0      0   OK
 contratos  Desc.Cali Camara de Comercio de Ca890399001            0           0      0   OK
-contratos  Desc.Gob  INDERVALLE - Instituto d805012896         1238        1238   1238   OK
+contratos  Desc.Gob  INDERVALLE - Instituto d805012896         1234        1234   1234   OK
 contratos  Desc.Gob  INFIVALLE - Instituto Fi890308051            8           8      8   OK
 contratos  Desc.Gob  INCIVA       800086201          137         137    137   OK
 contratos  Desc.Gob  Universidad del Valle890399010            0           0      0   OK
-contratos  Desc.Gob  Instituto Departamental 890325989           49          49     49   OK
-contratos  Desc.Gob  Biblioteca Departamental890399039           55          55     55   OK
+contratos  Desc.Gob  Instituto Departamental 890325989           41          41     41   OK
+contratos  Desc.Gob  Biblioteca Departamental890399039           16          16     16   OK
 contratos  Desc.Gob  Vallecaucana de Aguas S.900333452           67          67     67   OK
 contratos  Desc.Gob  ACUAVALLE - Acueductos y890399032            0           0      0   OK
 contratos  Desc.Gob  Beneficencia del Valle d890399027           21          21     21   OK
@@ -47,11 +47,11 @@ contratos  Otras     Empresa de Servicio Publ900401903            0           0 
 contratos  Otras     Empresas Publicas Munici891900474            0           0      0   OK
 contratos  Otras     Instituto Municipal del 891900528            0           0      0   OK
 contratos  Otras     Instituto Distrital del 890399992            0           0      0   OK
-contratos  Otras     Personeria Municipal de 891900493           87          89     89   OK
+contratos  Otras     Personeria Municipal de 891900493           86          88     88   OK
 contratos  Otras     Personeria Municipal de 901159063            0           0      0   OK
 contratos  Otras     Personeria Municipal de 900085817            0           0      0   OK
-contratos  Otras     Personeria Municipal de 800100524           58          58     58   OK
-contratos  Otras     Concejo Municipal de Jam890399046          823         823    823   OK
+contratos  Otras     Personeria Municipal de 800100524           57          57     57   OK
+contratos  Otras     Concejo Municipal de Jam890399046          805         805    805   OK
 contratos  Otras     IE Alfonso Lopez Pumarej805000057            0           0      0   OK
 contratos  Otras     IE Paulo VI - Palmira815004730            0           0      0   OK
 contratos  Otras     IE Ginebra La Salle891380108            0           0      0   OK
@@ -125,7 +125,7 @@ secop1     Desc.Cali Instituto Popular de Cul900431928            0           0 
 secop1     Desc.Cali Personeria Distrital de 805003895            0           0      0   OK
 secop1     Desc.Cali Contraloria de Santiago 800217831            0           0      0   OK
 secop1     Desc.Cali IE Normal Superior Santi800243065            0           0      0   OK
-secop1     Desc.Cali Camara de Comercio de Ca890399001           47          47     47   OK
+secop1     Desc.Cali Camara de Comercio de Ca890399001           50          50     50   OK
 secop1     Desc.Gob  INDERVALLE - Instituto d805012896            0           0      0   OK
 secop1     Desc.Gob  INFIVALLE - Instituto Fi890308051            0           0      0   OK
 secop1     Desc.Gob  INCIVA       800086201            0           0      0   OK
@@ -152,8 +152,8 @@ secop1     Otras     Hospital Local Jose Rufi890305496            0           0 
 secop1     Otras     Empresa de Servicio Publ900401903            0           0      0   OK
 secop1     Otras     Empresas Publicas Munici891900474            0           0      0   OK
 secop1     Otras     Instituto Municipal del 891900528            0           0      0   OK
-secop1     Otras     Instituto Distrital del 890399992           63          63     63   OK
-secop1     Otras     Personeria Municipal de 891900493            0          25     25   OK
+secop1     Otras     Instituto Distrital del 890399992           65          65     65   OK
+secop1     Otras     Personeria Municipal de 891900493            0          26     26   OK
 secop1     Otras     Personeria Municipal de 901159063            0           0      0   OK
 secop1     Otras     Personeria Municipal de 900085817            0           0      0   OK
 secop1     Otras     Personeria Municipal de 800100524            0           0      0   OK
