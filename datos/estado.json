@@ -1,12 +1,12 @@
 {
-  "ultima_ejecucion": "2026-10-09 09:20:25",
-  "contratos": 18760,
+  "ultima_ejecucion": "2026-10-09 14:30:12",
+  "contratos": 19668,
   "procesos": 25388,
   "secop1": 1034,
-  "nuevos_contratos": 0,
+  "nuevos_contratos": 908,
   "nuevos_procesos": 742,
   "nuevos_secop1": 25,
-  "nuevos_en_esta_corrida": 767,
-  "cambios": 1120,
-  "alertas": 44
+  "nuevos_en_esta_corrida": 908,
+  "cambios": 2372,
+  "alertas": 48
 }
