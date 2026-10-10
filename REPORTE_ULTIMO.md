@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-09 19:41  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-10 08:36  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -10,8 +10,8 @@
 | Valor de esos contratos | $ 118.769.877.718 |
 | Procesos relacionados (alta + media) | 750 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 292 |
-| Modificaciones detectadas | 152 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 45348 |
 
 ### Desglose por nivel de gobierno
@@ -106,83 +106,6 @@ _Se revisaron 337 registros de contratacion de estas dos entidades en la ventana
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 | MUNICIPIO DE YUMBO VALLE | 9 | $ 1.653.036.283 |
 | Secretaría de Educación - Alcaldía de Tuluá | 1 | $ 1.583.549.971 |
-
-## Procesos nuevos (7 relacionados de 292 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-10-08 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | EJECUTAR ACTIVIDADES DE REPIQUE, DEMOLICIÓN Y GESTIÓN INTEGRAL DEL RCD PARA EDIFICACIONES CON RIESGO DE COLAPS | $ 294.799.207 | Contratación directa | Alta |
-| 2026-10-08 | ALCALDIA MUNICIPAL DE CHINCHINA | CONTRATAR LAS OBRAS DE DEMOLICIÓN DEL CENTRO ADMINISTRATIVO MUNICIPAL PARA MITIGAR LOS DAÑOS Y ATENDER DE MANE | $ 250.000.000 | Contratación directa | Alta |
-| 2026-10-08 | Secretaría de Educación - Alcaldía de Tuluá | CONTRATACION DIRECTA PARA REALIZAR INTERVENCIONES DE OBRA PUBLICA A LA INSTITUCION EDUCATIVA AGUACLARA EN LA S | $ 60.574.134 | Contratación directa | Alta |
-| 2026-10-08 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES PARA LA ARTICULACIÓN PEDAGÓGICA Y ACADÉMICA DE LA PROGRAMACIÓN CULTURAL Y LOS  | $ 8.486.666 | Contratación directa | Alta |
-| 2026-10-08 | MUNICIPIO DE VITERBO | PRESTACIÓN DE SERVICIOS PROFESIONALES ESPECIALIZADOS EN DERECHO PARA BRINDAR ASESORÍA Y ACOMPAÑAMIENTO JURÍDIC | $ 6.000.000 | Contratación directa | Alta |
-| 2026-10-08 | MUNICIPIO DE VITERBO | PRESTACIÓN DE SERVICIOS PROFESIONALES ESPECIALIZADOS DE ASESORÍA Y ACOMPAÑAMIENTO JURÍDICO PARA LA ESTRUCTURAC | $ 6.000.000 | Contratación directa | Alta |
-| 2026-10-08 | GOBERNACION DE CALDAS | Desarrollar el mecanismo de dispersión y pago del apoyo económico temporal destinado a contribuir a una soluci | $ 0 | Contratación directa | Alta |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| procesos | CO1.REQ.11173521 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11177796 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11177796 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11177761 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11177761 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11173792 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11008712 | valor_total_adjudicacion | 2365567694 | 2914537697 |
-| procesos | CO1.REQ.11097809 | valor_total_adjudicacion | 22580714 | 30387228 |
-| procesos | CO1.REQ.11178003 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11178003 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11177754 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11177754 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11125293 | estado_del_procedimiento | Evaluación | Abierto |
-| procesos | CO1.REQ.10925297 | valor_total_adjudicacion | 0 | 209008873 |
-| procesos | CO1.REQ.10925297 | adjudicado | No | Si |
-| procesos | CO1.REQ.10925297 | fecha_adjudicacion |  | 2026-10-08T00:00:00.000 |
-| procesos | CO1.REQ.10950968 | valor_total_adjudicacion | 0 | 150536444 |
-| procesos | CO1.REQ.10950968 | adjudicado | No | Si |
-| procesos | CO1.REQ.10950968 | nombre_del_proveedor | No Definido | CONSORCIO INTER-AGUAS 2026 |
-| procesos | CO1.REQ.10950968 | fecha_adjudicacion |  | 2026-10-08T00:00:00.000 |
-| procesos | CO1.REQ.11075231 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11075231 | fecha_adjudicacion |  | 2026-10-08T00:00:00.000 |
-| procesos | CO1.REQ.11171228 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11177468 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11177468 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11005546 | valor_total_adjudicacion | 0 | 218461131 |
-| procesos | CO1.REQ.11005546 | adjudicado | No | Si |
-| procesos | CO1.REQ.11005546 | fecha_adjudicacion |  | 2026-10-08T00:00:00.000 |
-| procesos | CO1.REQ.11177512 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11177512 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11171715 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11172665 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11177574 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11177574 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11067491 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11171433 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11177594 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11177594 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11177906 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11177906 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11177724 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11177724 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11124389 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11087944 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11087944 | valor_total_adjudicacion | 0 | 3488000 |
-| procesos | CO1.REQ.11087944 | adjudicado | No | Si |
-| procesos | CO1.REQ.11087944 | nombre_del_proveedor | No Definido | GRUPOTNK |
-| procesos | CO1.REQ.11087944 | fecha_adjudicacion |  | 2026-10-08T00:00:00.000 |
-| procesos | CO1.REQ.11128352 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11155890 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11155890 | valor_total_adjudicacion | 0 | 22386875 |
-| procesos | CO1.REQ.11155890 | adjudicado | No | Si |
-| procesos | CO1.REQ.11089506 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11089506 | fecha_adjudicacion |  | 2026-10-08T00:00:00.000 |
-| procesos | CO1.REQ.10874526 | valor_total_adjudicacion | 74163656 | 124417831 |
-| procesos | CO1.REQ.11099498 | estado_del_procedimiento | Evaluación | Abierto |
-| procesos | CO1.REQ.11174729 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11174729 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11120363 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.10477831 | fecha_adjudicacion | 2026-09-30T00:00:00.000 |  |
 
 ## Alertas
 
