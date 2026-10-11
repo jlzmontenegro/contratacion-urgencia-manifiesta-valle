@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-10 19:11  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-11 08:58  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -9,9 +9,9 @@
 | Contratos relacionados (alta + media) | 266 |
 | Valor de esos contratos | $ 127.720.195.001 |
 | Procesos relacionados (alta + media) | 765 |
-| Contratos nuevos en esta ejecucion | 446 |
-| Procesos nuevos en esta ejecucion | 842 |
-| Modificaciones detectadas | 998 |
+| Contratos nuevos en esta ejecucion | 0 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 46636 |
 
 ### Desglose por nivel de gobierno
@@ -44,7 +44,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 177** (91 que suman en los indicadores, por $ 20.924.750.043).
+- **Relacionados con el sismo: 179** (93 que suman en los indicadores, por $ 20.927.250.043).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -106,111 +106,6 @@ _Se revisaron 337 registros de contratacion de estas dos entidades en la ventana
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 | MUNICIPIO DE YUMBO VALLE | 9 | $ 1.653.036.283 |
 | Secretaría de Educación - Alcaldía de Tuluá | 2 | $ 1.644.124.105 |
-
-## Contratos nuevos (8 relacionados de 446 publicados)
-
-| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
-|---|---|---|---:|---|---|
-| 2026-10-08 | SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS | REALIZAR EL CARGUE; TRANSPORTE Y DISPOSICIÓN FINAL DE RESIDUOS DE CONSTRUCCIÓN Y DEMOLICIÓN -RCD EN EL DISTRIT | $ 7.999.950.000 | EMPRESA REGIONAL DE SERVICIO PUBLICO DE ASEO DE CANDELARIA | Alta |
-| 2026-10-08 | Departamento Administrativo de Planeación - Alcaldía de Tuluá | CONTRATO INTERADMINISTRATIVO DE GERENCIA DE RECURSOS PARA LA GESTIÓN; ADMINISTRACIÓN Y EJECUCIÓN TÉCNICA; ADMI | $ 760.000.000 | INFITULUA E.I.C.E | Media |
-| 2026-10-09 | ALCALDIA MUNICIPAL DE CHINCHINA | CONTRATAR LAS OBRAS DE DEMOLICIÓN DEL CENTRO ADMINISTRATIVO MUNICIPAL PARA MITIGAR LOS DAÑOS Y ATENDER DE MANE | $ 250.000.000 | LADINO | Alta |
-| 2026-10-09 | Secretaría de Educación - Alcaldía de Tuluá | CONTRATACION DIRECTA PARA REALIZAR INTERVENCIONES DE OBRA PUBLICA A LA INSTITUCION EDUCATIVA AGUACLARA EN LA S | $ 60.574.134 | JCV JARAMILLO CONSTRUCCIONES DEL VALLE | Alta |
-| 2026-10-09 | alcaldía municipal filadelfia caldas* | EJECUTAR LAS OBRAS DE REPARACIÓN; ADECUACIÓN; REFORZAMIENTO Y RECUPERACIÓN DE LAS VIVIENDAS AFECTADAS POR EL S | $ 36.000.000 | GERMÁN DE JESÚS GIRALDO ALZATE | Alta |
-| 2026-10-09 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES ESPECIALIZADOS EN LA SUBSECRETARÍA DE PLANEACIÓN Y CALIDAD; COORDINANDO ACTIVI | $ 13.333.333 | Yessica Yulieth Renteria Mena | Alta |
-| 2026-10-09 | INSTITUCION EDUCATIVA FRANCISCO DE PAULA SANTANDER | SUMINISTRO DE MATERIALES DIDÁCTICOS; DE PAPELERÍA; HERRAMIENTAS MENORES Y EQUIPOS ATENCIÓN DE EMERGENCIAS PARA | $ 12.551.200 | HECTOR VIRGILIO MARTINEZ LIZARAZO | Media |
-| 2026-10-08 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES PARA LA ARTICULACIÓN PEDAGÓGICA Y ACADÉMICA DE LA PROGRAMACIÓN CULTURAL Y LOS  | $ 8.486.666 | SONIA FERNANDA TOVAR DUQUE | Alta |
-
-## Procesos nuevos (22 relacionados de 842 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-10-08 | SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS | REALIZAR EL CARGUE, TRANSPORTE Y DISPOSICIÓN FINAL DE RESIDUOS DE CONSTRUCCIÓN Y DEMOLICIÓN -RCD EN EL DISTRIT | $ 7.999.950.000 | Contratación directa | Alta |
-| 2026-10-09 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | MANTENIMIENTO, RECUPERACION Y ADECUACION DE ESCENARIOS DEPORTIVOS DEL MUNICIPIO DE DOSQUEBRADAS AFECTADOS POR  | $ 1.382.063.771 | Contratación directa | Alta |
-| 2026-10-09 | EMAVI | MANTENIMIENTO, ADECUACIÓN Y REMODELACIÓN CUBIERTA E INFRAESTRUCTURA DEL CAMPO DE PARADAS DE LA EMAVI, DE ACUER | $ 1.300.000.000 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-10-08 | Departamento Administrativo de Planeación - Alcaldía de Tuluá | CONTRATO INTERADMINISTRATIVO DE GERENCIA DE RECURSOS PARA LA GESTIÓN, ADMINISTRACIÓN Y EJECUCIÓN TÉCNICA, ADMI | $ 760.000.000 | Contratación directa | Media |
-| 2026-10-08 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | PRESTAR LOS SERVICIOS PARA LA ORGANIZACIÓN Y EJECUCIÓN DE UNA FERIA EMPRESARIAL Y COMERCIAL EN EL MUNICIPIO DE | $ 200.000.000 | Contratación directa | Alta |
-| 2026-10-08 | EMPRESA DE DESARROLLO TERRITORIAL DE DON MATIAS | ESTUDIOS Y DISEÑOS NECESARIOS PARA LAS INTERVENCIONES REQUERIDAS PARA LA RECUPERACIÓN DE LA INFRAESTRUCTURA CU | $ 160.000.000 | Contratación régimen especial | Alta |
-| 2026-10-08 | Secretaría de Educación - Alcaldía de Tuluá | CONTRATACION DIRECTA PARA REALIZAR INTERVENCIONES DE OBRA PUBLICA A LA INSTITUCION EDUCATIVA AGUACLARA EN LA S | $ 60.574.134 | Contratación directa | Alta |
-| 2026-10-08 | alcaldía municipal filadelfia caldas* | EJECUTAR LAS OBRAS DE REPARACIÓN, ADECUACIÓN, REFORZAMIENTO Y RECUPERACIÓN DE LAS VIVIENDAS AFECTADAS POR EL S | $ 36.000.000 | Contratación directa | Alta |
-| 2026-10-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 21.108.000 | Contratación directa | Media |
-| 2026-10-08 | INSTITUCION EDUCATIVA AGRICOLA DE GUADALAJARA DE BUGA | ADQUIRIR MEDIANTE MONTO AGOTABLE ELEMENTOS DE FERRETERIA EN GENERAL PARA EL MANTENIMIENTO PREVENTIVO Y CORRECT | $ 16.600.000 | Contratación régimen especial | Alta |
-| 2026-10-09 | HOSPITAL GONZALO CONTRERAS E.S.E | LLEVAR A CABO EL MANTENIMIENTO LOCATIVO DE ALGUNAS AREAS DEL HOSPITAL GONZALO CONTRERAS AFECTADAS POR EL SISMO | $ 14.600.000 | Contratación régimen especial | Alta |
-| 2026-10-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 14.415.000 | Contratación directa | Media |
-| 2026-10-09 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES ESPECIALIZADOS EN LA SUBSECRETARÍA DE PLANEACIÓN Y CALIDAD, COORDINANDO ACTIVI | $ 13.333.333 | Contratación directa | Alta |
-| 2026-10-08 | MUNICIPIO DE ZARZAL | PRESTACIÓN DE SERVICIOS COMO OPERARIO DE MAQUINARIA AMARILLA (MOTONIVELADORA) PARA REALIZAR MANTENIMIENTO CORR | $ 13.072.500 | Contratación directa | Media |
-| 2026-10-08 | MUNICIPIO DE ZARZAL | PRESTACION DE SERVICIOS COMO OPERARIO DE MAQUINARIA AMARILLA (RETROEXCAVADORA Y VIBROCOMPACTADOR) PARA REALIZA | $ 9.922.500 | Contratación directa | Media |
-| 2026-10-09 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN COMO OPERADOR DE AUDIO PARA LA EMISIÓN AL AIRE DE LA EMISORA CUL | $ 8.400.000 | Contratación directa | Alta |
-| 2026-10-09 | MUNICIPIO DE PIENDAMO | SERVICIO DE MANTENIMIENTO Y REPARACIÓN DE LA MÁQUINA BLOQUERA DE PROPIEDAD DEL MUNICIPIO, COMO APOYO A LA PROD | $ 8.000.000 | Contratación directa | Alta |
-| 2026-10-09 | ALCALDIA MUNICIPAL DE RESTREPO VALLE DEL CAUCA | PRESTAR SERVICIOS DE APOYO A LA GESTIÓN COMO ENLACE DE GESTIÓN DEL RIESGO PARA FORTALECER LA COORDINACIÓN, ART | $ 6.900.000 | Contratación directa | Media |
-| 2026-10-08 | GOBERNACION DEL VALLE DEL CAUCA - DADI | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN DENTRO DEL PROYECTO DE CONSOLIDACION DE LA CAPACIDAD OPERATIVA T | $ 6.000.000 | Contratación directa | Alta |
-| 2026-10-08 | INSTITUCION EDUCATIVA CARTAGENA* | adquisición de pintura para exteriores, interiores y pintura de tráfico, destinadas a la recuperación y manten | $ 2.897.941 | Contratación régimen especial | Alta |
-| 2026-10-08 | INDUSTRIA DE LICORES DEL VALLE | Contratar la distribución, comercialización y posicionamiento de los productos que produce y llegaré a produci | $ 1 | Contratación régimen especial | Media |
-| 2026-10-08 | DISPENSARIO MEDICO DE CALI | EL MANTENIMIENTO POSTERIOR AL EVENTO SISMICO DE 10 DE AGOSTO DEL 2026, CON EL FIN DE DAR CUMPLIMIENTO A LA NOR | $ 0 | Solicitud de información a los Proveedores | Alta |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| contratos | CO1.PCCNTR.10034034 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
-| contratos | CO1.PCCNTR.9999968 | valor_pendiente_de_pago | 0 | 14000000 |
-| contratos | CO1.PCCNTR.10019879 | nombre_supervisor | JOSE ELNER GONZALEZ AZCARATE | GABRIEL FONTAL GRISALES |
-| contratos | CO1.PCCNTR.10039236 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9974427 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.10045138 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10012881 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10012881 | nombre_supervisor | Lizeth Johana Parra González | NASLY FERNANDA VIDALES GONZALEZ |
-| contratos | CO1.PCCNTR.10020715 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10043114 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9999592 | valor_facturado | 0 | 4000000 |
-| contratos | CO1.PCCNTR.10039623 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
-| contratos | CO1.PCCNTR.10038285 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10010500 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10018538 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10002482 | valor_facturado | 0 | 2500000 |
-| contratos | CO1.PCCNTR.10017230 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10031520 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10032746 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10043008 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10048959 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10002251 | valor_facturado | 0 | 6000000 |
-| contratos | CO1.PCCNTR.10033012 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10001308 | valor_facturado | 0 | 5000000 |
-| contratos | CO1.PCCNTR.10049105 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10018417 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10010594 | nombre_supervisor | JOSE ELNER GONZALEZ AZCARATE | GABRIEL FONTAL GRISALES |
-| contratos | CO1.PCCNTR.10018406 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10039963 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10027313 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10034561 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
-| contratos | CO1.PCCNTR.10047849 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10033040 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10001149 | valor_facturado | 0 | 4000000 |
-| contratos | CO1.PCCNTR.10000547 | valor_facturado | 0 | 6000000 |
-| contratos | CO1.PCCNTR.10035908 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
-| contratos | CO1.PCCNTR.10031813 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
-| contratos | CO1.PCCNTR.10032511 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10049104 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10009299 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10017806 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10017779 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10031204 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10011202 | nombre_supervisor | No definido | Álvaro José Zuluaga Cardona |
-| contratos | CO1.PCCNTR.10031768 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
-| contratos | CO1.PCCNTR.10000225 | valor_pendiente_de_pago | 0 | 12000000 |
-| contratos | CO1.PCCNTR.10034930 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
-| contratos | CO1.PCCNTR.10019153 | nombre_supervisor | JOSE ELNER GONZALEZ AZCARATE | GABRIEL FONTAL GRISALES |
-| contratos | CO1.PCCNTR.10035961 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
-| contratos | CO1.PCCNTR.10018387 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10026553 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10038029 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10035044 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
-| contratos | CO1.PCCNTR.10009604 | nombre_supervisor | Lizeth Johana Parra González | NASLY FERNANDA VIDALES GONZALEZ |
-| contratos | CO1.PCCNTR.10031410 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10038580 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
-| contratos | CO1.PCCNTR.10037313 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
-| contratos | CO1.PCCNTR.10017720 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10026626 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10035019 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
 
 ## Alertas
 
