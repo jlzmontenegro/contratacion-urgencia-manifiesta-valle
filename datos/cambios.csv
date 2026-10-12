@@ -248775,3 +248775,289 @@
 2026-10-12 11:41:58,contratos,CO1.PCCNTR.10041266,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_contrato,Aprobado,En ejecución,Contexto
 2026-10-12 11:41:58,contratos,CO1.PCCNTR.10041266,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,valor_pendiente_de_pago,0,24546050,Contexto
 2026-10-12 11:41:58,contratos,CO1.PCCNTR.9988262,MUNICIPIO DE BELEN DE UMBRIA,estado_contrato,Aprobado,En ejecución,Alta
+2026-10-12 17:06:46,procesos,CO1.REQ.11097809,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11097809,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,valor_total_adjudicacion,22580714,30387228,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11097809,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,fecha_adjudicacion,,2026-10-09T00:00:00.000,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11170352,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11184219,GOBERNACIÓN VALLE DEL CAUCA -SECRETARIA DE SALUD,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11133810,DEPARTAMENTO DEL VALLE DEL CAUCA - UNIDAD ADMINISTRATIVA ESPECIAL DE IMPUESTOS RENTAS Y GESTION TRIBUTARIA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11048498,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11048498,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,fecha_adjudicacion,,2026-10-11T00:00:00.000,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11165139,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11181398,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11180779,"GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA",estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11169110,GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE EDUCACION,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11080178,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11179036,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11179036,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,fase,,Presentación de oferta,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11179036,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185930,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_del_procedimiento,Publicado,Seleccionado,Media
+2026-10-12 17:06:46,procesos,CO1.REQ.11185792,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185792,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,fase,,Presentación de oferta,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185792,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11181737,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11183455,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE VIVIENDA SOCIAL Y HABITAT,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11174229,"GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187882,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE PAZ Y CULTURA CIUDADANA,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187230,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE VIVIENDA SOCIAL Y HABITAT,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11182138,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11183963,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE VIVIENDA SOCIAL Y HABITAT,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11182238,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11182238,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,fase,,Presentación de oferta,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11182238,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11177090,"GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186959,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE VIVIENDA SOCIAL Y HABITAT,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11129229,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE TECNOLOGIAS DE LA INFORMACION Y LAS COMUNICACIONES,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186233,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE PAZ Y CULTURA CIUDADANA,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11181516,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11181516,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,fase,,Presentación de oferta,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11181516,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187448,PLANEACIÓN MUNICIPAL CALI**,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11181224,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11170712,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11184649,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11184649,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,fase,,Presentación de oferta,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11184649,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11188064,GOBERNACIÓN VALLE DEL CAUCA -SECRETARIA DE SALUD,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11022817,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA,valor_total_adjudicacion,269880000,136222500,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11022817,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA,fecha_adjudicacion,,2026-10-02T00:00:00.000,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11022817,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11062727,SECRETARIA DE MOVILIDAD Y TRANSPORTE,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11125382,SANTIAGO DE CALI DISTRITO ESPECIAL- SECRETARIA DE TURISMO,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185970,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE PAZ Y CULTURA CIUDADANA,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11181936,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11181534,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11177414,"GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186527,SECRETARIA DE EDUCACION DE CALI,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11181318,"GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA",estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187895,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE VIVIENDA SOCIAL Y HABITAT,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11188047,SECRETARIA GENERAL- GOBERNACION DEL VALLE,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186880,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11097038,GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE EDUCACION,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186198,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO,estado_del_procedimiento,Publicado,Cancelado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187460,PLANEACIÓN MUNICIPAL CALI**,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11177081,"GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11179351,"GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11176886,"GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11188007,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE PAZ Y CULTURA CIUDADANA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11130300,SANTIAGO DE CALI  DISTRITO ESPECIAL - SECRETARIA DE CULTURA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11181949,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11183964,"GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11188061,SECRETARIA GENERAL- GOBERNACION DEL VALLE,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11180746,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11188336,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE PAZ Y CULTURA CIUDADANA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11179462,"GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11072515,SANTIAGO DE CALI  DISTRITO ESPECIAL - SECRETARIA DE CULTURA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11179770,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11179801,"GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11170342,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186840,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186179,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186179,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,fase,,Presentación de oferta,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186179,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11181238,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11180041,"GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.10950968,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,estado_resumen,Adjudicado,Presentación de oferta,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11188302,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE PAZ Y CULTURA CIUDADANA,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11183884,"GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA",estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11183992,"GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185013,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11177146,"GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11188301,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE PAZ Y CULTURA CIUDADANA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11188344,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE PAZ Y CULTURA CIUDADANA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11177341,"GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11183247,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE VIVIENDA SOCIAL Y HABITAT,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11188073,SECRETARIA GENERAL- GOBERNACION DEL VALLE,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11164584,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187675,SECRETARIA GENERAL- GOBERNACION DEL VALLE,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11159672,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186933,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11163642,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11154104,EMPRESAS MUNICIPALES DE CALI,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11182892,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187618,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11182949,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185925,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11188010,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11181932,IPS DEL MUNICIPIO DE CARTAGO E.S.E.,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.10477831,ALCALDIA MUNICIPIO DE JAMUNDI,fecha_adjudicacion,2026-09-30T00:00:00.000,,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.10477831,ALCALDIA MUNICIPIO DE JAMUNDI,estado_resumen,Adjudicado,Presentación de oferta,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187798,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185527,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11091554,CENACCALI,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185512,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185346,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187508,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11176001,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DEL MUNICPIO DE GUADALAJARA BUGA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187547,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185864,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185207,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187935,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185278,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185330,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11006260,CVC,estado_del_procedimiento,Evaluación,Seleccionado,Media
+2026-10-12 17:06:46,procesos,CO1.REQ.11187704,PERSONERIA DISTRITAL DE SANTIAGO DE CALI,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.10993327,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11177375,MUNICIPIO DE EL CERRITO.,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11173165,RED DE SALUD DE LADERA EMPRESA SOCIAL DEL ESTADO,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.10874526,CVC,nombre_del_proveedor,Scientific Products SAS,REDES AMBIENTALES LTDA.,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11184875,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185281,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11151400,INSTITUCION EDUCATIVA FRANCISCO DE PAULA SANTANDER,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186460,IPS DEL MUNICIPIO DE CARTAGO E.S.E.,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185901,CDB,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187698,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185530,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185238,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11173119,MUNICIPIO DE FLORIDA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185279,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11128966,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11162344,MUNICIPIO DE EL CERRITO.,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187582,IPS DEL MUNICIPIO DE CARTAGO E.S.E.,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11165076,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186266,IPS DEL MUNICIPIO DE CARTAGO E.S.E.,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187560,ALCALDIA MUNICIPAL DE BUGA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185435,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11157909,"Secretaría de Gobierno, Convivencia y Seguridad - Alcaldía de Tuluá",estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11172332,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,Publicado,Abierto,Media
+2026-10-12 17:06:46,procesos,CO1.REQ.11182982,MUNICIPIO DE YUMBO VALLE,estado_del_procedimiento,Aprobado,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185061,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185786,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185359,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187818,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186060,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11184383,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.10926380,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,valor_total_adjudicacion,90728694,72738869,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.10926380,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,fecha_adjudicacion,2026-10-01T00:00:00.000,,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185276,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187519,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185728,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185863,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185420,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185427,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187925,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11005484,CVC,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11188345,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11188345,METRO CALI S.A ACUERDO DE REESTRUCTURACION,fase,,Presentación de oferta,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11188345,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11171827,REGION ADMINISTRATIVA DE PLANIFICACION RAP PACIFICO,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185521,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11180946,CVC,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11173386,IMDERCAI,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185167,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187303,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185262,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11175451,CVC,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186334,IPS DEL MUNICIPIO DE CARTAGO E.S.E.,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185173,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11160950,MUNICIPIO DE CALIMA EL DARIEN VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11188037,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11161032,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185411,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185368,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186252,IPS DEL MUNICIPIO DE CARTAGO E.S.E.,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186740,SISTEMA INTEGRADO DE TRANSPORTE REGIONAL EN EL GRAN VALLE SOCIEDAD POR ACCIONES SIMPLIFICADA,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185273,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185169,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187328,ALCALDIA MUNICIPAL DE BUGA,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185416,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186986,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187537,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185178,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187511,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187681,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186064,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185746,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11173290,CVC,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186062,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11154393,ALCALDIA MUNICIPAL DE BUGA,estado_del_procedimiento,Evaluación,Abierto,Media
+2026-10-12 17:06:46,procesos,CO1.REQ.11187732,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11183743,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11177710,ALCALDIA MUNICIPAL DE RESTREPO VALLE DEL CAUCA,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185272,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11169273,MUNICIPIO DE EL CERRITO.,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186630,IPS DEL MUNICIPIO DE CARTAGO E.S.E.,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11163177,MUNICIPIO DE ZARZAL,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187177,IPS DEL MUNICIPIO DE CARTAGO E.S.E.,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11179103,ALCALDIA MUNICIPAL DE BUGA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11166570,INSTITUTO DEPARTAMENTAL DE BELLAS ARTES,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11184995,ALCALDIA MUNICIPAL DE RESTREPO VALLE DEL CAUCA,estado_del_procedimiento,En aprobación,Seleccionado,Media
+2026-10-12 17:06:46,procesos,CO1.REQ.11185179,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185355,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185166,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11164492,BUGA ABASTOS DE GUADALAJARA DE BUGA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185516,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11184541,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187471,IPS DEL MUNICIPIO DE CARTAGO E.S.E.,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11183164,ALCALDIA MUNICIPAL DE RESTREPO VALLE DEL CAUCA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11064292,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185292,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187967,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186325,IPS DEL MUNICIPIO DE CARTAGO E.S.E.,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186690,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187614,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185856,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11124283,MUNICIPIO DE YUMBO VALLE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11061655,MUNICIPIO DE YUMBO VALLE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187682,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187398,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187695,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185277,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186149,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11164175,MUNICIPIO DE CALIMA EL DARIEN VALLE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11165861,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187920,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11170811,UNIVERSIDAD DEL VALLE,precio_base,135499350,137000000,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11183675,MUNICIPIO DE ZARZAL,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11179557,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11117396,MUNICIPIO DE CARTAGO,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11151288,INSTITUCION EDUCATIVA FRANCISCO DE PAULA SANTANDER,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186211,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185365,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187374,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11127806,UNIAJC,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186960,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11184983,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11151276,INSTITUCION EDUCATIVA FRANCISCO DE PAULA SANTANDER,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186701,IPS DEL MUNICIPIO DE CARTAGO E.S.E.,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11183708,CVC,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11184865,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185433,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11184229,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187634,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186783,IPS DEL MUNICIPIO DE CARTAGO E.S.E.,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11064754,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186851,IPS DEL MUNICIPIO DE CARTAGO E.S.E.,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11188107,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11139114,PERSONERIA DISTRITAL DE SANTIAGO DE CALI,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186414,INSTITUTO MUNICIPAL PARA EL DESARROLLO SOCIAL Y ECONÓMICO DE PALMIRA,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185186,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187260,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11125272,REGIONAL DE ASEGURAMIENTO EN SALUD No. 4,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185172,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11182952,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187751,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187338,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11157701,SENA REGIONAL VALLE Grupo Administrativo CTA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11173091,RED DE SALUD DE LADERA EMPRESA SOCIAL DEL ESTADO,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187761,ALCALDIA MUNICIPAL DE BUGA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11177250,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187884,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185940,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187351,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186904,RED DE SALUD DEL NORTE EMPRESA SOCIAL DEL ESTADO,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186736,IPS DEL MUNICIPIO DE CARTAGO E.S.E.,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186341,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185849,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187719,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11186489,IPS DEL MUNICIPIO DE CARTAGO E.S.E.,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11171060,MUNICIPIO DE FLORIDA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11185803,CDB,estado_del_procedimiento,Borrador,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11187758,"INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE)",estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11136726,Departamento Administrativo de Arte y Cultura - Alcaldía de Tuluá,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11096479,UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11188117,COMPRADOR - EMPRESA CARTAGUEÑA DE DESARROLLO - EMCADE,estado_del_procedimiento,Aprobado,Publicado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11160808,ALCALDIA MUNICIPIO DE DOSQUEBRADAS,estado_del_procedimiento,Evaluación,Seleccionado,Otra urgencia
+2026-10-12 17:06:46,procesos,CO1.REQ.11184860,ALCALDIA MUNICIPIO DE DOSQUEBRADAS,estado_del_procedimiento,Borrador,Seleccionado,Alta
+2026-10-12 17:06:46,procesos,CO1.REQ.11148832,MUNICIPIO DE TAME,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-10-12 17:06:46,procesos,CO1.REQ.11188156,SERVICIO GEOLOGICO COLOMBIANO**,estado_del_procedimiento,Borrador,Seleccionado,Otra urgencia
