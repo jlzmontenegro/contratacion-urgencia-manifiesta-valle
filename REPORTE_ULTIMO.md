@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-11 13:49  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-11 19:25  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -9,9 +9,9 @@
 | Contratos relacionados (alta + media) | 269 |
 | Valor de esos contratos | $ 128.053.678.427 |
 | Procesos relacionados (alta + media) | 765 |
-| Contratos nuevos en esta ejecucion | 352 |
+| Contratos nuevos en esta ejecucion | 0 |
 | Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 248 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 46988 |
 
 ### Desglose por nivel de gobierno
@@ -106,81 +106,6 @@ _Se revisaron 338 registros de contratacion de estas dos entidades en la ventana
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 | MUNICIPIO DE YUMBO VALLE | 9 | $ 1.653.036.283 |
 | Secretaría de Educación - Alcaldía de Tuluá | 2 | $ 1.644.124.105 |
-
-## Contratos nuevos (5 relacionados de 352 publicados)
-
-| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
-|---|---|---|---:|---|---|
-| 2026-10-09 | RED DE SALUD DEL ORIENTE ESE | SUMINISTRO DE BIOLÓGICOS NO INCLUIDOS EN EL ESQUEMA NACIONAL GRATUITO DEL PROGRAMA AMPLIADO DE INMUNIZACIONES  | $ 294.875.426 | IPS PREVENTIVA FARALLONES SAS | Media |
-| 2026-10-09 | ALCALDÍA MUNICIPIO DE PALMIRA | ADQUISICIÓN DE ELEMENTOS PARA LA REPARACIÓN DE TEJADOS DE LA POBLACIÓN AFECTADA POR LA OCURRENCIA DE FENÓMENOS | $ 32.608.000 | FERRELLANOS H Y C S.A.S. | Media |
-| 2026-10-09 | MUNICIPIO DE PIENDAMO | SERVICIO DE MANTENIMIENTO Y REPARACIÓN DE LA MÁQUINA BLOQUERA DE PROPIEDAD DEL MUNICIPIO; COMO APOYO A LA PROD | $ 8.000.000 | EDWIN NORBERTO RIVERA SARRIA | Alta |
-| 2026-10-09 | GOBERNACION DEL VALLE DEL CAUCA - DADI | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN DENTRO DEL PROYECTO DE CONSOLIDACION DE LA CAPACIDAD OPERATIVA T | $ 6.000.000 | Daniel fernando torres cortes | Alta |
-| 2026-10-09 | MUNICIPIO DE VITERBO | PRESTACIÓN DE SERVICIOS PROFESIONALES ESPECIALIZADOS DE ASESORÍA Y ACOMPAÑAMIENTO JURÍDICO PARA LA ESTRUCTURAC | $ 6.000.000 | JUAN DAVID | Alta |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| contratos | CO1.PCCNTR.10051227 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10051227 | valor_pendiente_de_pago | 0 | 19820500 |
-| contratos | CO1.PCCNTR.10032859 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10047887 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10034046 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10033839 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10041691 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10041691 | valor_pendiente_de_pago | 0 | 5584000 |
-| contratos | CO1.PCCNTR.10001155 | valor_facturado | 0 | 4000000 |
-| contratos | CO1.PCCNTR.10037150 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10031868 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10042749 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10049225 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10049225 | fecha_de_fin_del_contrato | 2025-12-31T00:00:00.000 | 2026-12-31T00:00:00.000 |
-| contratos | CO1.PCCNTR.10040774 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10040774 | valor_pendiente_de_pago | 0 | 5810000 |
-| contratos | CO1.PCCNTR.10040267 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10040267 | valor_pendiente_de_pago | 0 | 12494000 |
-| contratos | CO1.PCCNTR.10040763 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10040763 | valor_pendiente_de_pago | 0 | 11326000 |
-| contratos | CO1.PCCNTR.10017785 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.10031863 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10049545 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10033647 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10001377 | valor_facturado | 0 | 4000000 |
-| contratos | CO1.PCCNTR.10001925 | valor_facturado | 0 | 4000000 |
-| contratos | CO1.PCCNTR.10014513 | estado_contrato | En ejecución | terminado |
-| contratos | CO1.PCCNTR.10034307 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10031921 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10034348 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10038261 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10040851 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10040851 | valor_pendiente_de_pago | 0 | 5584000 |
-| contratos | CO1.PCCNTR.10034041 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10042248 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10032943 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10042390 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10031656 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10039367 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10028435 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10049618 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10036898 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10041683 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9975951 | estado_contrato | En ejecución | terminado |
-| contratos | CO1.PCCNTR.9915860 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10032819 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10049400 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10045120 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10049616 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10033010 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10032608 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10041327 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10041327 | valor_pendiente_de_pago | 0 | 11326000 |
-| contratos | CO1.PCCNTR.10049835 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10031320 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10033946 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10033990 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10033877 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10034207 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10031806 | estado_contrato | Aprobado | En ejecución |
 
 ## Alertas
 
