@@ -1,11 +1,11 @@
-Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-10-14T00:00:00
+Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-10-15T00:00:00
 Entidades auditadas: 53  (2 centrales + 2 UNGRD/FNGRD + 12 descentralizadas de Cali + 18 de la Gobernacion + 19 otras del Valle)
 Comprobaciones: 53 entidades x 3 fuentes = 159, cada una por tres caminos independientes
 
 Fuente     Entidad                NIT         API simple  API amplio    CSV   Veredicto
 ------------------------------------------------------------------------------------
-contratos  Alcaldia de Cali       890399011         4689        4747   4747   OK
-contratos  Gobernacion del Valle  890399029         2183        4884   4884   OK
+contratos  Alcaldia de Cali       890399011         4722        4780   4780   OK
+contratos  Gobernacion del Valle  890399029         2235        4956   4956   OK
 contratos  UNGRD / FNGRD          900478966            3           3      3   OK
 contratos  UNGRD / FNGRD          900978341            1           1      1   OK
 contratos  Desc.Cali EMCALI - Empresas Munici890399003            0           0      0   OK
