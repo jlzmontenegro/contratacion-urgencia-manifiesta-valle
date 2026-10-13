@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-12 17:06  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-12 21:31  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -10,8 +10,8 @@
 | Valor de esos contratos | $ 128.244.469.777 |
 | Procesos relacionados (alta + media) | 770 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 741 |
-| Modificaciones detectadas | 286 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 48022 |
 
 ### Desglose por nivel de gobierno
@@ -106,88 +106,6 @@ _Se revisaron 338 registros de contratacion de estas dos entidades en la ventana
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 | Secretaría de Educación - Alcaldía de Tuluá | 3 | $ 1.834.915.455 |
 | MUNICIPIO DE YUMBO VALLE | 9 | $ 1.653.036.283 |
-
-## Procesos nuevos (12 relacionados de 741 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-10-09 | Secretaría de Educación - Alcaldía de Tuluá | CONTRATACION DIRECTA DE ADQUISICIÓN DE MATERIALES DE CONSTRUCCIÓN CON DESTINO A LA INTERVENCION, REPARACIÓN Y  | $ 190.791.350 | Contratación directa | Alta |
-| 2026-10-09 | ALCALDIA MUNICIPAL DE CHINCHINA | CONTRATAR LA EJECUCIÓN DE LAS OBRAS DE MITIGACIÓN Y EMERGENCIA PARA LA REMOCIÓN, CARGUE, TRANSPORTE Y DISPOSIC | $ 115.000.000 | Contratación directa | Alta |
-| 2026-10-09 | ALCALDIA DE CAICEDONIA | Suministro de combustible (ACPM y gasolina corriente) destinado a garantizar la operación de la maquinaria pes | $ 59.999.850 | Contratación directa | Alta |
-| 2026-10-10 | CORPORACION AUTONOMA REGIONAL DE RISARALDA | PROVEER SOLUCIONES TECNOLÓGICAS PARA EL FORTALECIMIENTO TEMPORAL DE LA CAPACIDAD INSTITUCIONAL, EN ATENCIÓN A  | $ 51.607.920 | Contratación directa | Alta |
-| 2026-10-09 | ALCALDIA MUNICIPIO DE CALARCA | ELABORACIÓN DE INFORMES TÉCNICOS ESPECIALIZADOS O PERICIALES PARA LA JUSTIFICACIÓN DE DEMOLICIÓN DE INMUEBLES  | $ 42.347.142 | Mínima cuantía | Alta |
-| 2026-10-10 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS PROFESIONALES PARA LA IDENTIFICACION, VERIFICACIÓN Y ORGANIZACIÓN DE INFORMACIÓN PREDI | $ 18.750.000 | Contratación directa | Alta |
-| 2026-10-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 14.415.000 | Contratación directa | Media |
-| 2026-10-09 | ALCALDIA MUNICIPIO DE MANZANARES | BRINDAR APOYO EN LA EJECUCIÓN DE CONSTRUCCIÓN Y/O MEJORAMIENTO DE VIVIENDA AFECTADAS POR EL SISMO EN ZONAS URB | $ 11.100.000 | Contratación directa | Alta |
-| 2026-10-09 | SOCIEDAD DE ACUEDUCTOS Y ALCANTARILLADOS DEL VALLE DEL CAUCA S.A. - E.S.P. | SUMINISTRO DE TUBERIA EN POLIETILENO (PE) DE  4  DE ALTA DENSIDAD, PARA REUBICACION Y REHABILITACION ADUCCION  | $ 9.826.068 | Contratación régimen especial | Media |
-| 2026-10-09 | MUNICIPIO DE FLORIDA | PRESTACIÓN DE SERVICIOS Y APOYO A LA GESTIÓN COMO CONDUCTOR DE LA RETROEXCAVADORA DEL PARQUE AUTOMOTOR DEL MUN | $ 9.000.000 | Contratación directa | Media |
-| 2026-10-09 | GOBERNACIÓN DE RISARALDA** | PRESTACIÓN DE SERVICIOS PROFESIONALES COMO INGENIERO CIVIL ESPECIALISTA EN ESTRUCTURAS, PARA REALIZAR VISITAS  | $ 8.730.000 | Contratación directa | Alta |
-| 2026-10-10 | ALCALDÍA DEL MUNICIPIO DE SANTUARIO RISARALDA | PRESTACION DE SERVICIOS DE APOYO AL CONSEJO MUNICIPAL PARA LA GESTION DEL RIESGO DE DESASTRES EN ACTIVIDADES A | $ 6.000.000 | Contratación directa | Alta |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| procesos | CO1.REQ.11097809 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11097809 | valor_total_adjudicacion | 22580714 | 30387228 |
-| procesos | CO1.REQ.11097809 | fecha_adjudicacion |  | 2026-10-09T00:00:00.000 |
-| procesos | CO1.REQ.11170352 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11184219 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11133810 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11048498 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11048498 | fecha_adjudicacion |  | 2026-10-11T00:00:00.000 |
-| procesos | CO1.REQ.11165139 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11181398 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11180779 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11169110 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11080178 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11179036 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11179036 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11179036 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11185930 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11185792 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11185792 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11185792 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11181737 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11183455 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11174229 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11187882 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11187230 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11182138 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11183963 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11182238 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11182238 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11182238 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11177090 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11186959 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11129229 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11186233 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11181516 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11181516 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11181516 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11187448 | estado_del_procedimiento | En aprobación | Publicado |
-| procesos | CO1.REQ.11181224 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11170712 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11184649 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11184649 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11184649 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11188064 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11022817 | valor_total_adjudicacion | 269880000 | 136222500 |
-| procesos | CO1.REQ.11022817 | fecha_adjudicacion |  | 2026-10-02T00:00:00.000 |
-| procesos | CO1.REQ.11022817 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11062727 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11125382 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11185970 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11181936 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11181534 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11177414 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11186527 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11181318 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11187895 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11188047 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11186880 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11097038 | estado_del_procedimiento | Evaluación | Abierto |
-| procesos | CO1.REQ.11186198 | estado_del_procedimiento | Publicado | Cancelado |
 
 ## Alertas
 
