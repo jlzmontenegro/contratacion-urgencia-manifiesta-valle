@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-13 09:59  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-13 15:13  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -9,9 +9,9 @@
 | Contratos relacionados (alta + media) | 270 |
 | Valor de esos contratos | $ 128.244.469.777 |
 | Procesos relacionados (alta + media) | 770 |
-| Contratos nuevos en esta ejecucion | 106 |
+| Contratos nuevos en esta ejecucion | 0 |
 | Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 20 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 48128 |
 
 ### Desglose por nivel de gobierno
@@ -106,33 +106,6 @@ _Se revisaron 338 registros de contratacion de estas dos entidades en la ventana
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 | Secretaría de Educación - Alcaldía de Tuluá | 3 | $ 1.834.915.455 |
 | MUNICIPIO DE YUMBO VALLE | 9 | $ 1.653.036.283 |
-
-## Contratos nuevos (0 relacionados de 106 publicados)
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| contratos | CO1.PCCNTR.10038075 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10039490 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10043666 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10044115 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10053289 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10037466 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10050951 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10050951 | valor_pendiente_de_pago | 0 | 11168000 |
-| contratos | CO1.PCCNTR.10050981 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10050981 | valor_pendiente_de_pago | 0 | 11841000 |
-| contratos | CO1.PCCNTR.10040105 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10055099 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10039651 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10013853 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10018060 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10037551 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10040188 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10053176 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10042709 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10025325 | estado_contrato | Aprobado | En ejecución |
 
 ## Alertas
 
