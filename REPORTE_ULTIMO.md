@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-13 19:14  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-14 07:51  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -8,11 +8,11 @@
 |---|---|
 | Contratos relacionados (alta + media) | 270 |
 | Valor de esos contratos | $ 128.244.469.777 |
-| Procesos relacionados (alta + media) | 770 |
+| Procesos relacionados (alta + media) | 771 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 0 |
-| Registros revisados en total | 48128 |
+| Procesos nuevos en esta ejecucion | 149 |
+| Modificaciones detectadas | 39 |
+| Registros revisados en total | 48277 |
 
 ### Desglose por nivel de gobierno
 
@@ -27,10 +27,10 @@
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 4761 | $ 286.546.983.787 | 4246 |
-| Gobernación del Valle | 4945 | $ 109.806.574.816 | 4846 |
-| Descentralizadas de Cali | 239 | $ 154.725.172.972 | 1295 |
-| Descentralizadas de la Gobernación | 1740 | $ 53.934.386.306 | 2928 |
+| Alcaldía de Cali | 4761 | $ 286.546.983.787 | 4279 |
+| Gobernación del Valle | 4945 | $ 109.806.574.816 | 4933 |
+| Descentralizadas de Cali | 239 | $ 154.725.172.972 | 1299 |
+| Descentralizadas de la Gobernación | 1740 | $ 53.934.386.306 | 2945 |
 | UNGRD | 4 | $ 146.817.067 | 332 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
@@ -44,7 +44,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 179** (93 que suman en los indicadores, por $ 20.927.250.043).
+- **Relacionados con el sismo: 182** (95 que suman en los indicadores, por $ 20.929.750.043).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -79,7 +79,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-08-13 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE RIOFRÍO | CONVENIO INTERINSTITUCIONAL BOMBERIL ENTRE EL MUNICIPIO DE RIOFRiO Y EL CUERPO DE BOMBEROS VOLUNTARIOS DE SALO | $ 75.000.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 | 2026-08-13 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE RIOFRÍO | CONVENIO INTERINSTITUCIONAL BOMBERIL ENTRE EL MUNICIPIO DE RIOFRiO Y EL CUERPO DE BOMBEROS VOLUNTARIOS DE RIOF | $ 75.000.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 
-_No se listan 113 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
+_No se listan 117 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
 
 ## UNGRD y FNGRD · NIT 900.478.966-6 y 900.978.341
 
@@ -106,6 +106,56 @@ _Se revisaron 338 registros de contratacion de estas dos entidades en la ventana
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 | Secretaría de Educación - Alcaldía de Tuluá | 3 | $ 1.834.915.455 |
 | MUNICIPIO DE YUMBO VALLE | 9 | $ 1.653.036.283 |
+
+## Procesos nuevos (1 relacionados de 149 publicados)
+
+| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
+|---|---|---|---:|---|---|
+| 2026-10-12 | Hospital Departamental Tomas Uribe Uribe ESE | Compra de 30 colchones antiescara 89 x 89 x 15 forro econoflex azul y 15 colchonetas 60 x 180 x 10 D26 poly fo | $ 38.222.800 | Contratación régimen especial | Media |
+
+## Modificaciones sobre registros ya conocidos
+
+| Fuente | Identificador | Campo | Antes | Ahora |
+|---|---|---|---|---|
+| procesos | CO1.REQ.11194212 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11194151 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11186306 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11193845 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11194150 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11194169 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11194126 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11194023 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11194017 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11194030 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11194024 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11193865 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11194018 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11194210 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11193868 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11193946 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11194133 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11194045 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11193871 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11194167 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11194046 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11194043 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11193725 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11193738 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11194175 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11194042 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11194204 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11194142 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11193863 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11194173 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11179215 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.10874526 | nombre_del_proveedor | REDES AMBIENTALES LTDA. | Scientific Products SAS |
+| procesos | CO1.REQ.11124283 | estado_del_procedimiento | Evaluación | Abierto |
+| procesos | CO1.REQ.10926380 | valor_total_adjudicacion | 72738869 | 90728694 |
+| procesos | CO1.REQ.10926380 | fecha_adjudicacion |  | 2026-10-01T00:00:00.000 |
+| procesos | CO1.REQ.11191905 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11169273 | estado_del_procedimiento | Evaluación | Abierto |
+| procesos | CO1.REQ.11191498 | estado_del_procedimiento | Publicado | Seleccionado |
+| secop1 | 26-12-14816295-13740499 | fecha_fin_ejec_contrato | 2026-12-05T00:00:00.000 | 2026-12-07T00:00:00.000 |
 
 ## Alertas
 

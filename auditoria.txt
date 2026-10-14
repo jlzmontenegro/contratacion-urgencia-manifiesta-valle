@@ -1,4 +1,4 @@
-Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-10-15T00:00:00
+Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-10-16T00:00:00
 Entidades auditadas: 53  (2 centrales + 2 UNGRD/FNGRD + 12 descentralizadas de Cali + 18 de la Gobernacion + 19 otras del Valle)
 Comprobaciones: 53 entidades x 3 fuentes = 159, cada una por tres caminos independientes
 
@@ -57,11 +57,11 @@ contratos  Otras     IE Paulo VI - Palmira815004730            0           0    
 contratos  Otras     IE Ginebra La Salle891380108            0           0      0   OK
 contratos  Otras     IE Zaragoza - Cartago800034326            0           0      0   OK
 contratos  Otras     IE Camilo Torres - Dagua805015675            0           0      0   OK
-procesos   Alcaldia de Cali       890399011         4402        4456   4456   OK
-procesos   Gobernacion del Valle  890399029         2290        4910   4910   OK
+procesos   Alcaldia de Cali       890399011         4435        4489   4489   OK
+procesos   Gobernacion del Valle  890399029         2363        4997   4997   OK
 procesos   UNGRD / FNGRD          900478966            2           2      2   OK
 procesos   UNGRD / FNGRD          900978341          332         332    332   OK
-procesos   Desc.Cali EMCALI - Empresas Munici890399003          513         513    513   OK
+procesos   Desc.Cali EMCALI - Empresas Munici890399003          517         517    517   OK
 procesos   Desc.Cali Metro Cali S.A.805013171           52          52     52   OK
 procesos   Desc.Cali Red de Salud de Ladera E805027289          406         406    406   OK
 procesos   Desc.Cali Red de Salud del Norte E805027287           70          70     70   OK
@@ -73,7 +73,7 @@ procesos   Desc.Cali Personeria Distrital de 805003895           88          88 
 procesos   Desc.Cali Contraloria de Santiago 800217831           45          45     45   OK
 procesos   Desc.Cali IE Normal Superior Santi800243065           11          11     11   OK
 procesos   Desc.Cali Camara de Comercio de Ca890399001            0           0      0   OK
-procesos   Desc.Gob  INDERVALLE - Instituto d805012896         1510        1510   1510   OK
+procesos   Desc.Gob  INDERVALLE - Instituto d805012896         1514        1514   1514   OK
 procesos   Desc.Gob  INFIVALLE - Instituto Fi890308051            8           8      8   OK
 procesos   Desc.Gob  INCIVA       800086201          134         134    134   OK
 procesos   Desc.Gob  Universidad del Valle890399010          404         404    404   OK
@@ -86,10 +86,10 @@ procesos   Desc.Gob  Industria de Licores del890399012           33          33 
 procesos   Desc.Gob  HUV - Hospital Universit890303461           81          81     81   OK
 procesos   Desc.Gob  Hospital Departamental P890304155           16          16     16   OK
 procesos   Desc.Gob  Hospital Departamental M890399047          344         344    344   OK
-procesos   Desc.Gob  Hospital Departamental T891901158           20          20     20   OK
+procesos   Desc.Gob  Hospital Departamental T891901158           29          29     29   OK
 procesos   Desc.Gob  Hospital Departamental S891900343            7           7      7   OK
 procesos   Desc.Gob  Hospital Departamental S891900441          133         133    133   OK
-procesos   Desc.Gob  Hospital Departamental C821003143           63          63     63   OK
+procesos   Desc.Gob  Hospital Departamental C821003143           68          68     68   OK
 procesos   Desc.Gob  Contraloria Departamenta800090735            3           3      3   OK
 procesos   Otras     Hospital del Rosario de 891380070           10          10     10   OK
 procesos   Otras     ESE Hospital San Jorge d890312380           99          99     99   OK
