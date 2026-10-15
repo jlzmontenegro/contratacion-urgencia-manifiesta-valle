@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-14 18:51  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-15 07:37  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -9,9 +9,9 @@
 | Contratos relacionados (alta + media) | 270 |
 | Valor de esos contratos | $ 128.244.469.777 |
 | Procesos relacionados (alta + media) | 771 |
-| Contratos nuevos en esta ejecucion | 117 |
+| Contratos nuevos en esta ejecucion | 0 |
 | Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 5 |
+| Modificaciones detectadas | 47 |
 | Registros revisados en total | 48394 |
 
 ### Desglose por nivel de gobierno
@@ -44,7 +44,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 182** (95 que suman en los indicadores, por $ 20.929.750.043).
+- **Relacionados con el sismo: 187** (98 que suman en los indicadores, por $ 21.215.750.043).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -61,6 +61,8 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-08-18 | RISARALDA - ALCALDÍA MUNICIPIO DE PUEBLO RICO | SUMINISTRO DE ELEMENTOS DE FERRETERiA DESTINADOS A LA ATENCIoN DE LA EMERGENCIA; REHABILITACIoN Y RECONSTRUCCI | $ 400.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-09-09 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE EL CAIRO | SUMINISTRO DE MATERIALES DE CONSTRUCCIoN DESTINADOS A LA EJECUCIoN DE LOS MEJORAMIENTOS Y ADECUACIONES DE LAS  | $ 380.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-28 | RISARALDA - ALCALDÍA MUNICIPIO DE MISTRATÓ | SUMINISTRO DE MATERIALES DE CONSTRUCCIoN PARA LA ATENCIoN DE LA EMERGENCIA Y APOYO A LAS FAMILIAS DAMNIFICADAS | $ 345.274.867 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
+| 2026-10-09 | ANTIOQUIA - ALCALDÍA MUNICIPIO DE VIGÍA DEL FUERTE | SUMINISTRO DE MATERIALES DE CONSTRUCCIoN DESTINADOS AL APOYO Y ATENCIoN DE LAS VIVIENDAS QUE PRESENTARON PeRDI | $ 289.095.625 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
+| 2026-10-09 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE ARGELIA | SUMINISTRO DE MATERIALES DE CONSTRUCCIoN PARA APOYAR EL MEJORAMIENTO DE LAS VIVIENDAS URBANAS Y RURALES DEL MU | $ 270.600.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-09-17 | NARIÑO - ALCALDÍA MUNICIPIO DE OLAYA HERRERA | CONSTRUCCION DE TRES AULAS EN LA INSTITUCION EDUCATIVA CALABAZAL;  PARA SUSTITUIR LAS AULAS AFECTADAS POR EL T | $ 269.983.604 | Selección Abreviada de Menor Cuantía (Ley 1150 de 2007) · La contratación de menor cuantía (Literal B) | Alta |
 | 2026-08-20 | TOLIMA - ALCALDÍA MUNICIPIO DE ROVIRA | CONTRATAR EL SUMINISTRO A MONTO AGOTABLE DE MATERIALES DE CONSTRUCCIoN PARA LA REHABILITACIoN; REPARACIoN Y RE | $ 250.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-09-08 | RISARALDA - ALCALDÍA MUNICIPIO DE MISTRATÓ | SUMINISTRO DE MATERIALES DE CONSTRUCCIoN PARA LA ATENCIoN DE LA EMERGENCIA Y APOYO A LAS FAMILIAS DAMNIFICADAS | $ 193.765.800 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
@@ -76,10 +78,8 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-08-24 | RISARALDA - CÁMARA DE COMERCIO DE PEREIRA | SERVICIO DE ALIMENTACIoN IMPLEMENTADO TRAS EL SISMO DEL 10 DE AGOSTO FUE VITAL PARA GARANTIZAR NUESTRA CONTINU | $ 85.905.000 | Régimen Especial · No Definido | Alta |
 | 2026-09-01 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE EL CAIRO | SUMINISTRO DE COMBUSTIBLES; ACEITES; LUBRICANTES Y DEMaS PRODUCTOS RELACIONADOS PARA EL PARQUE AUTOMOTOR; LA M | $ 80.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-09-29 | CHOCÓ - ALCALDÍA MUNICIPIO DE SAN JOSÉ DEL PALMAR | ADQUISICIoN; A TiTULO DE COMPRAVENTA; DE MATERIALES PARA LA RECONSTRUCCIoN; REHABILITACIoN Y RECUPERACIoN DE L | $ 80.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
-| 2026-08-13 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE RIOFRÍO | CONVENIO INTERINSTITUCIONAL BOMBERIL ENTRE EL MUNICIPIO DE RIOFRiO Y EL CUERPO DE BOMBEROS VOLUNTARIOS DE SALO | $ 75.000.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
-| 2026-08-13 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE RIOFRÍO | CONVENIO INTERINSTITUCIONAL BOMBERIL ENTRE EL MUNICIPIO DE RIOFRiO Y EL CUERPO DE BOMBEROS VOLUNTARIOS DE RIOF | $ 75.000.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 
-_No se listan 117 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
+_No se listan 123 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
 
 ## UNGRD y FNGRD · NIT 900.478.966-6 y 900.978.341
 
@@ -107,17 +107,57 @@ _Se revisaron 338 registros de contratacion de estas dos entidades en la ventana
 | Secretaría de Educación - Alcaldía de Tuluá | 3 | $ 1.834.915.455 |
 | MUNICIPIO DE YUMBO VALLE | 9 | $ 1.653.036.283 |
 
-## Contratos nuevos (0 relacionados de 117 publicados)
-
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| contratos | CO1.PCCNTR.9826065 | estado_contrato | En ejecución | Cerrado |
-| contratos | CO1.PCCNTR.10053225 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9854257 | proveedor_adjudicado | Pamela Riascos Romero | Pamela Riascos romero |
-| contratos | CO1.PCCNTR.10020906 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9996018 | estado_contrato | En ejecución | Modificado |
+| procesos | CO1.REQ.11063036 | valor_total_adjudicacion | 0 | 1579746154 |
+| procesos | CO1.REQ.11063036 | adjudicado | No | Si |
+| procesos | CO1.REQ.11063036 | fecha_adjudicacion |  | 2026-10-13T00:00:00.000 |
+| procesos | CO1.REQ.11135787 | valor_total_adjudicacion | 401029477 | 0 |
+| procesos | CO1.REQ.11135787 | adjudicado | Si | No |
+| procesos | CO1.REQ.11135787 | nombre_del_proveedor | METRO CALI S.A ACUERDO DE REESTRUCTURACI | No Definido |
+| procesos | CO1.REQ.10925295 | valor_total_adjudicacion | 0 | 395705665 |
+| procesos | CO1.REQ.10925295 | adjudicado | No | Si |
+| procesos | CO1.REQ.10925295 | fecha_adjudicacion |  | 2026-10-13T00:00:00.000 |
+| procesos | CO1.REQ.11014781 | fecha_adjudicacion |  | 2026-10-13T00:00:00.000 |
+| procesos | CO1.REQ.11112845 | valor_total_adjudicacion | 0 | 9186375 |
+| procesos | CO1.REQ.11112845 | adjudicado | No | Si |
+| procesos | CO1.REQ.11155890 | fecha_adjudicacion |  | 2026-10-13T00:00:00.000 |
+| procesos | CO1.REQ.11075848 | valor_total_adjudicacion | 0 | 95574850 |
+| procesos | CO1.REQ.11075848 | adjudicado | No | Si |
+| procesos | CO1.REQ.11077046 | valor_total_adjudicacion | 0 | 71955000 |
+| procesos | CO1.REQ.11077046 | adjudicado | No | Si |
+| procesos | CO1.REQ.11128218 | valor_total_adjudicacion | 0 | 42999720 |
+| procesos | CO1.REQ.11128218 | adjudicado | No | Si |
+| procesos | CO1.REQ.11128218 | fecha_adjudicacion |  | 2026-10-13T00:00:00.000 |
+| procesos | CO1.REQ.11099498 | fecha_adjudicacion |  | 2026-10-13T00:00:00.000 |
+| procesos | CO1.REQ.11120343 | valor_total_adjudicacion | 0 | 131549973 |
+| procesos | CO1.REQ.11120343 | adjudicado | No | Si |
+| procesos | CO1.REQ.11120343 | fecha_adjudicacion |  | 2026-10-13T00:00:00.000 |
+| procesos | CO1.REQ.11131588 | valor_total_adjudicacion | 0 | 120000000 |
+| procesos | CO1.REQ.11131588 | adjudicado | No | Si |
+| procesos | CO1.REQ.11131588 | fecha_adjudicacion |  | 2026-10-13T00:00:00.000 |
+| procesos | CO1.REQ.11118156 | valor_total_adjudicacion | 0 | 13505600 |
+| procesos | CO1.REQ.11118156 | adjudicado | No | Si |
+| procesos | CO1.REQ.11118156 | fecha_adjudicacion |  | 2026-10-13T00:00:00.000 |
+| procesos | CO1.REQ.11137974 | valor_total_adjudicacion | 0 | 5747562 |
+| procesos | CO1.REQ.11137974 | adjudicado | No | Si |
+| procesos | CO1.REQ.11137974 | fecha_adjudicacion |  | 2026-10-13T00:00:00.000 |
+| procesos | CO1.REQ.11094506 | valor_total_adjudicacion | 0 | 149526597 |
+| procesos | CO1.REQ.11094506 | adjudicado | No | Si |
+| procesos | CO1.REQ.11094506 | fecha_adjudicacion |  | 2026-10-13T00:00:00.000 |
+| procesos | CO1.REQ.11125250 | valor_total_adjudicacion | 0 | 301545333 |
+| procesos | CO1.REQ.11125250 | adjudicado | No | Si |
+| procesos | CO1.REQ.11125250 | fecha_adjudicacion |  | 2026-10-13T00:00:00.000 |
+| procesos | CO1.REQ.11045567 | adjudicado | No | Si |
+| procesos | CO1.REQ.11170866 | valor_total_adjudicacion | 0 | 10000000 |
+| procesos | CO1.REQ.11170866 | adjudicado | No | Si |
+| procesos | CO1.REQ.11174277 | fecha_adjudicacion |  | 2026-10-13T00:00:00.000 |
+| secop1 | 26-12-14779896-13704916 | valor_total_de_adiciones | 0 | 3500000 |
+| secop1 | 26-12-14779896-13704916 | valor_contrato_con_adiciones | 7000000 | 10500000 |
+| secop1 | 26-13-14798353-13733762 | fecha_fin_ejec_contrato | 2026-10-15T00:00:00.000 | 2026-10-27T00:00:00.000 |
+| secop1 | 26-11-14815446 | estado_del_proceso | Borrador | Convocado |
 
 ## Alertas
 
