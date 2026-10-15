@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-14 13:32  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-14 18:51  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -9,10 +9,10 @@
 | Contratos relacionados (alta + media) | 270 |
 | Valor de esos contratos | $ 128.244.469.777 |
 | Procesos relacionados (alta + media) | 771 |
-| Contratos nuevos en esta ejecucion | 0 |
+| Contratos nuevos en esta ejecucion | 117 |
 | Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 0 |
-| Registros revisados en total | 48277 |
+| Modificaciones detectadas | 5 |
+| Registros revisados en total | 48394 |
 
 ### Desglose por nivel de gobierno
 
@@ -27,8 +27,8 @@
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 4761 | $ 286.546.983.787 | 4279 |
-| Gobernación del Valle | 4945 | $ 109.806.574.816 | 4933 |
+| Alcaldía de Cali | 4819 | $ 287.374.534.287 | 4279 |
+| Gobernación del Valle | 5003 | $ 112.056.674.816 | 4933 |
 | Descentralizadas de Cali | 239 | $ 154.725.172.972 | 1299 |
 | Descentralizadas de la Gobernación | 1740 | $ 53.934.386.306 | 2945 |
 | UNGRD | 4 | $ 146.817.067 | 332 |
@@ -106,6 +106,18 @@ _Se revisaron 338 registros de contratacion de estas dos entidades en la ventana
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 | Secretaría de Educación - Alcaldía de Tuluá | 3 | $ 1.834.915.455 |
 | MUNICIPIO DE YUMBO VALLE | 9 | $ 1.653.036.283 |
+
+## Contratos nuevos (0 relacionados de 117 publicados)
+
+## Modificaciones sobre registros ya conocidos
+
+| Fuente | Identificador | Campo | Antes | Ahora |
+|---|---|---|---|---|
+| contratos | CO1.PCCNTR.9826065 | estado_contrato | En ejecución | Cerrado |
+| contratos | CO1.PCCNTR.10053225 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9854257 | proveedor_adjudicado | Pamela Riascos Romero | Pamela Riascos romero |
+| contratos | CO1.PCCNTR.10020906 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9996018 | estado_contrato | En ejecución | Modificado |
 
 ## Alertas
 

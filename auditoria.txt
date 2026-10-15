@@ -4,8 +4,8 @@ Comprobaciones: 53 entidades x 3 fuentes = 159, cada una por tres caminos indepe
 
 Fuente     Entidad                NIT         API simple  API amplio    CSV   Veredicto
 ------------------------------------------------------------------------------------
-contratos  Alcaldia de Cali       890399011         4722        4780   4780   OK
-contratos  Gobernacion del Valle  890399029         2235        4956   4956   OK
+contratos  Alcaldia de Cali       890399011         4780        4838   4838   OK
+contratos  Gobernacion del Valle  890399029         2291        5014   5014   OK
 contratos  UNGRD / FNGRD          900478966            3           3      3   OK
 contratos  UNGRD / FNGRD          900978341            1           1      1   OK
 contratos  Desc.Cali EMCALI - Empresas Munici890399003            0           0      0   OK
