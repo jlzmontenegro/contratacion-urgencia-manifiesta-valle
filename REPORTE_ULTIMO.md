@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-16 07:21  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-16 12:59  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -10,8 +10,8 @@
 | Valor de esos contratos | $ 129.294.946.111 |
 | Procesos relacionados (alta + media) | 795 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 1112 |
-| Modificaciones detectadas | 221 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 50347 |
 
 ### Desglose por nivel de gobierno
@@ -106,105 +106,6 @@ _Se revisaron 339 registros de contratacion de estas dos entidades en la ventana
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 | Secretaría de Educación - Alcaldía de Tuluá | 3 | $ 1.834.915.455 |
 | MUNICIPIO DE YUMBO VALLE | 9 | $ 1.653.036.283 |
-
-## Procesos nuevos (29 relacionados de 1112 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-10-13 | E.S.E HOSPITAL UNIVERSITARIO SAN JORGE DE PEREIRA | Ejecutar las obras de preservación, mitigación del riesgo, reparación, rehabilitación y recuperación de la inf | $ 2.711.270.601 | Contratación régimen especial | Alta |
-| 2026-10-13 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | OBRAS CIVILES DE ATENCIÓN Y MITIGACIÓN DE RIESGOS CON OCASIÓN DEL SISMO DE GRAN MAGNITUD PARA LA PROTECCIÓN DE | $ 825.561.012 | Contratación directa | Alta |
-| 2026-10-14 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | PRESTAR EL SERVICIO DE ALIMENTACION, ATENCIÓN INTEGRAL Y DEMÁS SERVICIOS DE APOYO PARA LA OPERACIÓN DE LA UNID | $ 346.833.034 | Contratación directa | Alta |
-| 2026-10-14 | INCIVA | Ejecutar Bajo la Modalidad de Precios Unitarios las ADECUACIONES CARPINTERÍA EN MADERA, CUBIERTA Y MUROS CENTR | $ 326.218.162 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-10-13 | RED DE SALUD DEL ORIENTE ESE | PRESTACIÓN DE SERVICIOS DE APOYO TÉCNICO Y OPERATIVO PARA LA EJECUCIÓN E IMPLEMENTACIÓN DE ACCIONES, INTERVENC | $ 266.011.766 | Contratación régimen especial | Media |
-| 2026-10-14 | CAJA PROMOTORA DE VIVIENDA MILITAR Y DE POLICIA | PRESTAR LOS SERVICIOS DE MANTENIMIENTO CORRECTIVO Y ADECUACIONES PARA ATENDER LAS AFECTACIONES OCASIONADAS POR | $ 128.348.689 | Contratación régimen especial | Alta |
-| 2026-10-13 | DIMAR - GRUPO INTENDENCIA REGIONAL PACIFICO | CONTRATAR LOS ESTUDIOS ESPECIALIZADOS DE PATOLOGÍA, EVALUACIÓN DE VULNERABILIDAD SÍSMICA Y DIAGNÓSTICO DEL SIS | $ 95.630.383 | Mínima cuantía | Alta |
-| 2026-10-13 | ALCALDIA MUNICIPAL DE GINEBRA | ADQUISICIÓN DE EQUIPOS TECNOLÓGICOS, MUEBLES Y ENSERES EN EL MUNICIPIO DE GINEBRA | $ 49.025.000 | Mínima cuantía | Media |
-| 2026-10-13 | MUNICIPIO DE DAGUA | COMPRA VENTA DE TRES GENERADORES ELÉCTRICOS A GASOLINA, ORIENTADOS A FORTALECER EL GRADO DE RESPUESTA A EMERGE | $ 39.261.350 | Mínima cuantía | Media |
-| 2026-10-14 | BANCO DE LA REPUBLICA | Realizar trabajos para la puesta en marcha de los ascensores Otis # 7360 y 7361 de la sucursal de Cali, afecta | $ 16.582.685 | Contratación régimen especial | Alta |
-| 2026-10-13 | ALCALDIA MUNICIPAL DE LA VICTORIA VALLE | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA EL DESARROLLO DEL SEMINARIO TALLER SOBRE CONTRATACIÓN ESTATAL, EN E | $ 15.000.000 | Contratación directa | Alta |
-| 2026-10-13 | ALCALDIA MUNICIPAL DE GINEBRA | ADQUISICIÓN DE EQUIPOS TECNOLÓGICOS, MUEBLES Y ENSERES EN EL MUNICIPIO DE GINEBRA | $ 15.000.000 | Mínima cuantía | Media |
-| 2026-10-14 | MUNICIPIO DE YUMBO VALLE | REALIZAR LA INTERVENTORÍA TÉCNICA, ADMINISTRATIVA, FINANCIERA, AMBIENTAL Y JURÍDICA AL CONTRATO SUSCRITO DEL M | $ 13.181.690 | Mínima cuantía | Media |
-| 2026-10-13 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA REALIZAR LA GESTIÓN, ADMINISTRACIÓN, CONSOLIDACIÓN, VALIDACIÓN Y PR | $ 10.500.000 | Contratación directa | Alta |
-| 2026-10-13 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES EN LA SUBSECRETARIA DE PLANEACIÓN Y CALIDAD EDUCATIVA, EN EL PROCESO DE FORMAC | $ 10.133.333 | Contratación directa | Alta |
-| 2026-10-13 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS DE APOYO A LA GESTIÓN COMO TÉCNICA EN GESTIÓN AMBIENTAL EN LA ACTIVIDAD ORIENTAR EN LA A | $ 9.000.000 | Contratación directa | Media |
-| 2026-10-13 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS DE APOYO A LA GESTIÓN COMO TÉCNICO EN SISTEMAS EN LA ACTIVIDAD ORIENTAR EN LA ACTUALIZAC | $ 9.000.000 | Contratación directa | Media |
-| 2026-10-13 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS DE APOYO A LA GESTIÓN EN LA ACTIVIDAD ORIENTAR EN LA FORMULACIÓN Y/O ACTUALIZACIÓN DE LA | $ 7.500.000 | Contratación directa | Media |
-| 2026-10-13 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS DE APOYO A LA GESTIÓN EN LA ACTIVIDAD ATENDER LAS EMERGENCIAS Y DESASTRES EN EL DEPARTAM | $ 7.500.000 | Contratación directa | Media |
-| 2026-10-13 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS DE APOYO A LA GESTIÓN EN LA ACTIVIDAD REALIZAR EL MONITOREO CIENTÍFICO DE AMENAZAS CON I | $ 7.500.000 | Contratación directa | Media |
-| 2026-10-13 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS DE APOYO A LA GESTIÓN EN LA ACTIVIDAD ORIENTAR A LAS ENTIDADES TERRITORIALES EN LA IMPLE | $ 7.500.000 | Contratación directa | Media |
-| 2026-10-13 | MUNICIPIO DE VERSALLES | PRESTAR LOS SERVICIOS DE APOYO A LA GESTIÓN COMO AUXILIAR ADMINISTRATIVO PARA APOYAR AL MUNICIPIO DE VERSALLES | $ 7.500.000 | Contratación directa | Alta |
-| 2026-10-13 | INSTITUCION EDUCATIVA JULIO CAICEDO Y TELLEZ | Contratar la mano de obra para la adecuación y reparación de las baterías sanitarias de las sedes de la Instit | $ 7.426.000 | Contratación régimen especial | Alta |
-| 2026-10-14 | INSTITUCION EDUCATIVA HUMBERTO JORDAN MAZUERA | PRESTACION DE SERVICIO EN ACTIVIDADES PEDAGOGICAS Y DIDACTICAS EN LOS PROCESOS DE FORTALECIMIENTO DE LA CULTUR | $ 7.180.000 | Contratación régimen especial | Media |
-| 2026-10-13 | INSTITUCION EDUCATIVA JULIO CAICEDO Y TELLEZ | Contratar Suministro de los materiales e insumos requeridos para la adecuación y reparación de las baterías sa | $ 6.707.400 | Contratación régimen especial | Alta |
-| 2026-10-13 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA LA ATENCIÓN A USUARIOS EN LAS BIBLIOTECAS SATELITES, LA ORG | $ 5.360.000 | Contratación directa | Alta |
-| 2026-10-13 | MUNICIPIO DE TORO | PRESTAR SERVICIOS DE APOYO A LA GESTIÓN PARA EL ACOMPAÑAMIENTO TÉCNICO Y OPERATIVO A LA ADMINISTRACIÓN MUNICIP | $ 5.200.000 | Contratación directa | Alta |
-| 2026-10-13 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL | AUNAR ESFUERZOS TÉCNICOS, HUMANOS, ADMINISTRATIVOS Y FINANCIEROS PARA EL MEJORAMIENTO DE LAS CONDICIONES DE SE | $ 0 | Solicitud de información a los Proveedores | Alta |
-| 2026-10-13 | SANTIAGO DE CALI  DISTRITO ESPECIAL - SECRETARIA DE CULTURA | contratar  LAS OBRAS CIVILES DE MEJORAMIENTO Y RESTAURACION DE LOS EQUIPAMIENTOS CULTURALES PRIORIZADOS POR AF | $ 0 | Solicitud de información a los Proveedores | Alta |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| procesos | CO1.REQ.11014781 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11014781 | estado_resumen | Proceso de ofertas | Adjudicado |
-| procesos | CO1.REQ.11194888 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11195501 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11022817 | valor_total_adjudicacion | 136222500 | 269880000 |
-| procesos | CO1.REQ.11022817 | fecha_adjudicacion | 2026-10-02T00:00:00.000 |  |
-| procesos | CO1.REQ.11022817 | estado_resumen | Adjudicado | Presentación de oferta |
-| procesos | CO1.REQ.11129229 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11097038 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11097038 | fecha_adjudicacion |  | 2026-10-13T00:00:00.000 |
-| procesos | CO1.REQ.11097038 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11185704 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11194219 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11189510 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11173983 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11195077 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11194221 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11046630 | estado_del_procedimiento | Evaluación | Seleccionado |
-| procesos | CO1.REQ.11080178 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11194194 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11194317 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11194523 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11184963 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11194849 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11185124 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11080874 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11168913 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11194238 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.10925295 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.10925295 | nombre_del_proveedor | No Definido | R&M DISEN~OS Y CONSTRUCCIONES S.A.S. |
-| procesos | CO1.REQ.10925295 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11069009 | valor_total_adjudicacion | 0 | 562994224 |
-| procesos | CO1.REQ.11069009 | adjudicado | No | Si |
-| procesos | CO1.REQ.11069009 | fecha_adjudicacion |  | 2026-10-14T00:00:00.000 |
-| procesos | CO1.REQ.11195138 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11180114 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11126526 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11112094 | valor_total_adjudicacion | 0 | 51625221 |
-| procesos | CO1.REQ.11112094 | adjudicado | No | Si |
-| procesos | CO1.REQ.11112094 | fecha_adjudicacion |  | 2026-10-14T00:00:00.000 |
-| procesos | CO1.REQ.11187448 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.10956349 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11195029 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11194787 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11194224 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11194418 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.10950968 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11063036 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11063036 | nombre_del_proveedor | No Definido | GV INGENIERIA INTEGRAL SAS |
-| procesos | CO1.REQ.11109389 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11194214 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11194733 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11191765 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11187460 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11188014 | estado_del_procedimiento | Borrador | Publicado |
-| procesos | CO1.REQ.11188014 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11188014 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11194189 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11194526 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11135787 | estado_del_procedimiento | Evaluación | Abierto |
 
 ## Alertas
 
