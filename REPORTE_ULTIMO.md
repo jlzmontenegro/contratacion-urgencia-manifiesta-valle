@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-17 06:34  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-17 12:05  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -9,9 +9,9 @@
 | Contratos relacionados (alta + media) | 287 |
 | Valor de esos contratos | $ 131.745.684.555 |
 | Procesos relacionados (alta + media) | 805 |
-| Contratos nuevos en esta ejecucion | 960 |
+| Contratos nuevos en esta ejecucion | 0 |
 | Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 1391 |
+| Modificaciones detectadas | 5 |
 | Registros revisados en total | 52358 |
 
 ### Desglose por nivel de gobierno
@@ -44,7 +44,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 193** (100 que suman en los indicadores, por $ 21.218.617.391).
+- **Relacionados con el sismo: 203** (105 que suman en los indicadores, por $ 21.527.111.795).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -61,23 +61,23 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-08-18 | RISARALDA - ALCALDÍA MUNICIPIO DE PUEBLO RICO | SUMINISTRO DE ELEMENTOS DE FERRETERiA DESTINADOS A LA ATENCIoN DE LA EMERGENCIA; REHABILITACIoN Y RECONSTRUCCI | $ 400.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-09-09 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE EL CAIRO | SUMINISTRO DE MATERIALES DE CONSTRUCCIoN DESTINADOS A LA EJECUCIoN DE LOS MEJORAMIENTOS Y ADECUACIONES DE LAS  | $ 380.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-28 | RISARALDA - ALCALDÍA MUNICIPIO DE MISTRATÓ | SUMINISTRO DE MATERIALES DE CONSTRUCCIoN PARA LA ATENCIoN DE LA EMERGENCIA Y APOYO A LAS FAMILIAS DAMNIFICADAS | $ 345.274.867 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
+| 2026-10-15 | RISARALDA - ALCALDÍA MUNICIPIO DE QUINCHIA | SUMINISTRAR AL MUNICIPIO DE QUINCHiA; MATERIALES DE CONSTRUCCIoN EN EL MARCO DE LA ATENCIoN A LOS DAMNIFICADOS | $ 290.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-10-09 | ANTIOQUIA - ALCALDÍA MUNICIPIO DE VIGÍA DEL FUERTE | SUMINISTRO DE MATERIALES DE CONSTRUCCIoN DESTINADOS AL APOYO Y ATENCIoN DE LAS VIVIENDAS QUE PRESENTARON PeRDI | $ 289.095.625 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-10-09 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE ARGELIA | SUMINISTRO DE MATERIALES DE CONSTRUCCIoN PARA APOYAR EL MEJORAMIENTO DE LAS VIVIENDAS URBANAS Y RURALES DEL MU | $ 270.600.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-09-17 | NARIÑO - ALCALDÍA MUNICIPIO DE OLAYA HERRERA | CONSTRUCCION DE TRES AULAS EN LA INSTITUCION EDUCATIVA CALABAZAL;  PARA SUSTITUIR LAS AULAS AFECTADAS POR EL T | $ 269.983.604 | Selección Abreviada de Menor Cuantía (Ley 1150 de 2007) · La contratación de menor cuantía (Literal B) | Alta |
+| 2026-10-16 | CHOCÓ - ALCALDÍA MUNICIPIO DE UNION PANAMERICANA | SUMINISTRO DE MERCADOS; KITS DE ASEO; COLCHONES; COLCHONETAS; ZINC Y OTROS MATERIALES Y ELEMENTOS; NECESARIOS  | $ 261.697.250 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-20 | TOLIMA - ALCALDÍA MUNICIPIO DE ROVIRA | CONTRATAR EL SUMINISTRO A MONTO AGOTABLE DE MATERIALES DE CONSTRUCCIoN PARA LA REHABILITACIoN; REPARACIoN Y RE | $ 250.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-09-08 | RISARALDA - ALCALDÍA MUNICIPIO DE MISTRATÓ | SUMINISTRO DE MATERIALES DE CONSTRUCCIoN PARA LA ATENCIoN DE LA EMERGENCIA Y APOYO A LAS FAMILIAS DAMNIFICADAS | $ 193.765.800 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-13 | CHOCÓ - ALCALDÍA MUNICIPIO DE ATRATO | ATENCION PSICOSOCIAL PARA LA RECUPERACION EMOCIONAL; EL FORTALECIMIENTO COMUNITARIO Y LA PROMOCION DE LA RESIL | $ 181.676.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 | 2026-08-21 | RISARALDA - CÁMARA DE COMERCIO DE PEREIRA | SOLICITUD DE SERVICIO DE TECHOS Y PANELERIAS PARA DIVISIONES UTILIZADOS PARA ADECUAR LOS ESPACIOS Y PODER GUAR | $ 163.506.000 | Régimen Especial · No Definido | Alta |
+| 2026-08-12 | CHOCÓ - ALCALDÍA MUNICIPIO DE UNION PANAMERICANA | ARRENDAMIENTO DE MAQUINARIA PESADA (RETROEXCAVADORA Y PAJARITA) Y VOLQUETAS; NECESARIOS PARA LA REMOCIoN DE ES | $ 161.400.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 | 2026-10-15 | UNIDAD TÉCNICA PARA EL DESARROLLO PROFESIONAL - UTEDÉ | REALIZAR ARREGLOS Y REPARACIONES DE LOS DAÑOS OCASIONADOS EN LA INFRAESTRUCTURA INSTITUCIONAL POR EL SISMO OCU | $ 150.659.181 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 | 2026-09-10 | CALDAS - ALCALDÍA MUNICIPIO DE MARULANDA | EJECUCIoN; A TODO COSTO Y POR EL SISTEMA DE PRECIOS UNITARIOS FIJOS; DE LAS OBRAS NECESARIAS PARA LA REPARACIo | $ 132.052.041 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-09-30 | CHOCÓ - ALCALDÍA MUNICIPIO DE UNION PANAMERICANA | INTERVENTORIA TECNICA; ADMINISTRATIVA Y FINANCIERA PARA LAS OBRAS DE REHABILITACIoN DE LA INFRAESTRUCTURA DE L | $ 120.181.894 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
+| 2026-10-15 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE TRUJILLO | ALQUILER DE DOS (2) VOLQUETAS TIPO DOBLE TROQUE PARA APOYAR LAS ACTIVIDADES DE REMOCIoN; CARGUE; TRANSPORTE Y  | $ 114.907.435 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-24 | CHOCÓ - ALCALDÍA MUNICIPIO DE RIO QUITO | PRESTACIoN DE SERVICIOS DE APOYO LOGiSTICO PARA LA ATENCIoN Y MITIGACIoN DE LOS EFECTOS GENERADOS POR EL SISMO | $ 113.958.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-13 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE EL CAIRO | TRANSFERENCIA DE LOS RECURSOS DISPONIBLES POR CONCEPTO DE SOBRETASA BOMBERIL AL BENEMeRITO CUERPO DE BOMBEROS  | $ 108.306.058 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-19 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE BOLÍVAR | AUNAR ESFUERZOS ENTRE EL MUNICIPIO DE BOLiVAR VALLE DEL CAUCA Y LA JUNTA DE ACCIoN COMUNAL DEL CORREGIMIENTO D | $ 97.074.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Media |
-| 2026-09-15 | ESCUELA NACIONAL DEL DEPORTE | SUMINISTRO E INSTALACIoN DE LOS ELEMENTOS DE CARPINTERiA EN VIDRIO TEMPLADO; ALUMINIO Y/O ACERO AFECTADOS POR  | $ 96.767.944 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
-| 2026-09-15 | RISARALDA - CÁMARA DE COMERCIO DE PEREIRA | OBJETO / JUSTIFICACIoN SOLICITUD PARA LA ADQUISICIoN; PARAMETRIZACIoN; PUBLICACIoN; PUESTA EN FUNCIONAMIENTO Y | $ 90.000.000 | Régimen Especial · No Definido | Alta |
-| 2026-08-24 | RISARALDA - CÁMARA DE COMERCIO DE PEREIRA | SERVICIO DE ALIMENTACIoN IMPLEMENTADO TRAS EL SISMO DEL 10 DE AGOSTO FUE VITAL PARA GARANTIZAR NUESTRA CONTINU | $ 85.905.000 | Régimen Especial · No Definido | Alta |
-| 2026-09-01 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE EL CAIRO | SUMINISTRO DE COMBUSTIBLES; ACEITES; LUBRICANTES Y DEMaS PRODUCTOS RELACIONADOS PARA EL PARQUE AUTOMOTOR; LA M | $ 80.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 
 _No se listan 123 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
 
@@ -107,96 +107,15 @@ _Se revisaron 340 registros de contratacion de estas dos entidades en la ventana
 | MUNICIPIO DE YUMBO VALLE | 10 | $ 1.913.036.283 |
 | Secretaría de Educación - Alcaldía de Tuluá | 3 | $ 1.834.915.455 |
 
-## Contratos nuevos (21 relacionados de 960 publicados)
-
-| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
-|---|---|---|---:|---|---|
-| 2026-10-15 | DIRECCIÓN TERRITORIAL DE SALUD DE CALDAS | ADQUIRIR Y SUMINISTRAR EQUIPOS BIOMÉDICOS; MEDICAMENTOS; INSUMOS; MATERIAL MÉDICO-QUIRÚRGICO; ELEMENTOS DE PRO | $ 3.000.542.150 | CALDAS MEDICAS SAS | Alta |
-| 2026-10-14 | E.S.E HOSPITAL UNIVERSITARIO SAN JORGE DE PEREIRA | Ejecutar las obras de preservación; mitigación del riesgo; reparación; rehabilitación y recuperación de la inf | $ 2.711.270.601 | JAVIER EDUARDO ROSERO LONDOÑO | Alta |
-| 2026-10-14 | GOBERNACION DEL CHOCÓ. | EJECUTAR OBRAS DE REHABILITACIÓN DE LA INFRAESTRUCTURA FÍSICA DE INSTITUCIONES EDUCATIVAS OFICIALES AFECTADAS  | $ 2.399.922.730 | INGENCYS | Alta |
-| 2026-10-15 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD | CONSTRUCCIÓN; INSTALACIÓN; DEMOLICIÓN Y REPOSICIÓN DE REDUCTORES DE VELOCIDAD Y SUMINISTRO E INSTALACIÓN DE SE | $ 1.579.746.154 | GV INGENIERIA INTEGRAL SAS | Media |
-| 2026-10-14 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | PRESTACIÓN DEL SERVICIO DE ALQUILER DE MAQUINARIA AMARILLA; PARA LA EJECUCIÓN DE ACTIVIDADES DE MANTENIMIENTO  | $ 301.545.333 | CASA AGRARIA DEL PACIFICO SAS | Media |
-| 2026-10-14 | MUNICIPIO DE QUIMBAYA | CONSULTORIA ESPECIALIZADA EN GEOTECNIA PARA LA REALIZACION DE VISITAS TECNICAS DE CONOCIMIENTO; EVALUACION; DI | $ 277.703.641 | Andres felipe aguis vivas | Alta |
-| 2026-10-15 | MUNICIPIO DE YUMBO VALLE | PRESTACIÓN EL SERVICIO DE CATERING PARA EL SUMINISTRO DE RACIONES DE COMIDA PREPARADA Y REFRIGERIOS DESTINADOS | $ 260.000.000 | JMJ INNOVA S.A.S | Alta |
-| 2026-10-15 | SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto | CONTRATAR EL MANTENIMIENTO PREVENTIVO Y CORRECTIVO DE MAQUINARIA AMARILLA Y/O SUS ADITAMENTOS DEL CENTRO DE LA | $ 118.902.922 | FERROAGRO | Media |
-| 2026-10-15 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR; CON AUTONOMÍA TÉCNICA Y ADMINISTRATIVA; EL SERVICIO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL DE LOS | $ 90.000.000 | TRANSPORTES CITYCAR S.A.S. | Alta |
-| 2026-10-15 | SENA REGIONAL VALLE Grupo Administrativo CTA | 76_9593_254_CONTRATAR A TITULO COMPRAVENTA DE MENAJE Y ENSERES PARA LA ESTRATEGIA DE CAFETERÍAS COMO AMBIENTES | $ 77.844.036 | VERGARA GONZALEZ REFORESTA SAS | Media |
-| 2026-10-15 | EMAVI | SERVICIO DE MANTENIMIENTO PREVENTIVO Y/O CORRECTIVO A TODO COSTO; CON REPUESTOS NUEVOS; INSUMOS Y MANO DE OBRA | $ 50.000.000 | UT EMAVI 2026 | Media |
-| 2026-10-15 | ALCALDIA MUNICIPAL DE LA VICTORIA VALLE | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA EL DESARROLLO DEL SEMINARIO TALLER SOBRE CONTRATACIÓN ESTATAL; EN E | $ 15.000.000 | LUIS GILBERTO RODRIGUEZ ROMAN | Alta |
-| 2026-10-15 | SENA REGIONAL QUINDIO Grupo de Apoyo Administrativo Mixto | Contratar los servicios profesionales de apoyo psicosocial para atender las necesidades de la comunidad educat | $ 14.023.872 | GHERALDYNE PAOLA AMADOR ARANGO | Alta |
-| 2026-10-15 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 13.200.000 | Fergie Tayrin Arenas Gallego | Alta |
-| 2026-10-15 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 13.200.000 | Juan Diego Serna Marquez | Alta |
-| 2026-10-15 | ALCALDIA MUNICIPIO DE MANZANARES | BRINDAR APOYO EN LA EJECUCIÓN DE CONSTRUCCIÓN Y/O MEJORAMIENTO DE VIVIENDA AFECTADAS POR EL SISMO EN ZONAS URB | $ 11.100.000 | RAUL MORALES QUINTERO | Alta |
-| 2026-10-15 | ALCALDIA MUNICIPAL DE SAN PEDRO VALLE DEL CAUCA | PRESTACIÓN DE SERVICIOS PARA GARANTIZAR LA ATENCIÓN DE EMERGENCIAS Y DESASTRES EN EL MUNICIPIO DE SAN PEDRO VA | $ 10.000.000 | BENEMERITO CUERPO DE BOMBEROS VOLUNTARIOS, SAN PEDRO, VALLE DEL CAUCA | Media |
-| 2026-10-14 | MUNICIPIO DE VERSALLES | PRESTAR LOS SERVICIOS DE APOYO A LA GESTIÓN COMO AUXILIAR ADMINISTRATIVO PARA APOYAR AL MUNICIPIO DE VERSALLES | $ 7.500.000 | CLAUDIA MILENA BUITRAGO | Alta |
-| 2026-10-15 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA LA ATENCIÓN A USUARIOS EN LAS BIBLIOTECAS SATELITES; LA ORG | $ 5.360.000 | jackeline idarraga | Alta |
-| 2026-10-14 | MUNICIPIO DE TORO | PRESTAR SERVICIOS DE APOYO A LA GESTION PARA EL ACOMPANAMIENTO TECNICO Y OPERATIVO A LA ADMINISTRACION MUNICIP | $ 5.200.000 | CRISTIAN CAMILO ROJAS MURILLO | Alta |
-| 2026-10-15 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA LA ATENCIÓN A USUARIOS EN LAS BIBLIOTECAS SATELITES; LA ORG | $ 4.800.000 | ANDREA CAROLINA GUEVARA EALO | Alta |
-
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| contratos | CO1.PCCNTR.10044321 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10044321 | nombre_supervisor | No definido | CINDY CATALINA OIDOR GARCIA |
-| contratos | CO1.PCCNTR.10059960 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10030298 | nombre_supervisor | Lizeth Johana Parra González | NASLY FERNANDA VIDALES GONZALEZ |
-| contratos | CO1.PCCNTR.10041279 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
-| contratos | CO1.PCCNTR.10057139 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10061307 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10050092 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10061018 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10056421 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10029605 | nombre_supervisor | Lizeth Johana Parra González | NASLY FERNANDA VIDALES GONZALEZ |
-| contratos | CO1.PCCNTR.10053721 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10054660 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10033112 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10034367 | nombre_supervisor | No definido | VERGEL TORRADO |
-| contratos | CO1.PCCNTR.10053348 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10058637 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10030859 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10030859 | nombre_supervisor | Lizeth Johana Parra González | NASLY FERNANDA VIDALES GONZALEZ |
-| contratos | CO1.PCCNTR.10033829 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
-| contratos | CO1.PCCNTR.10036898 | nombre_supervisor | No definido | Jorge Alberto Buitrago Trujillo |
-| contratos | CO1.PCCNTR.10031017 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10052769 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10066469 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10032741 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9964644 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.10030952 | nombre_supervisor | No definido | VERGEL TORRADO |
-| contratos | CO1.PCCNTR.10030669 | nombre_supervisor | Lizeth Johana Parra González | NASLY FERNANDA VIDALES GONZALEZ |
-| contratos | CO1.PCCNTR.10049907 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10049907 | nombre_supervisor | No definido | JUAN CARLOS BORRERO LOPEZ |
-| contratos | CO1.PCCNTR.10030938 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10028732 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10041454 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10029984 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10031583 | nombre_supervisor | Lizeth Johana Parra González | NASLY FERNANDA VIDALES GONZALEZ |
-| contratos | CO1.PCCNTR.10055215 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10060528 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10054932 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10046178 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10046178 | nombre_supervisor | No definido | JUAN CARLOS BORRERO LOPEZ |
-| contratos | CO1.PCCNTR.10057656 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10035027 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10035027 | nombre_supervisor | No definido | RODRIGO ARCE ALVAREZ |
-| contratos | CO1.PCCNTR.10035027 | valor_pendiente_de_pago | 0 | 21000000 |
-| contratos | CO1.PCCNTR.10043964 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10043964 | nombre_supervisor | No definido | MERCEDES PAREDES BRAVO |
-| contratos | CO1.PCCNTR.10031414 | nombre_supervisor | Lizeth Johana Parra González | NASLY FERNANDA VIDALES GONZALEZ |
-| contratos | CO1.PCCNTR.10040667 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10049233 | estado_contrato | Aprobado | terminado |
-| contratos | CO1.PCCNTR.10052848 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10055947 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10030188 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10056031 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10035094 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10028979 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10061114 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10060009 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10058634 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10037195 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10037195 | nombre_supervisor | No definido | JUAN CARLOS BORRERO LOPEZ |
+| secop1 | 26-12-14810122-13734893 | fecha_fin_ejec_contrato | 2026-12-30T00:00:00.000 | 2027-01-01T00:00:00.000 |
+| secop1 | 26-12-14782474 | cuantia_proceso | 3000000 | 5000000 |
+| secop1 | 26-12-14820126-13744011 | estado_del_proceso | Celebrado | Liquidado |
+| secop1 | 26-12-14820126-13744011 | fecha_liquidacion |  | 2026-08-25T00:00:00.000 |
+| secop1 | 26-11-14800939 | estado_del_proceso | Convocado | Adjudicado |
 
 ## Alertas
 
