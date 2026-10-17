@@ -1,44 +1,44 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-16 18:27  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-17 06:34  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
 | Indicador | Valor |
 |---|---|
-| Contratos relacionados (alta + media) | 277 |
-| Valor de esos contratos | $ 129.294.946.111 |
+| Contratos relacionados (alta + media) | 287 |
+| Valor de esos contratos | $ 131.745.684.555 |
 | Procesos relacionados (alta + media) | 805 |
-| Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 1051 |
-| Modificaciones detectadas | 157 |
-| Registros revisados en total | 51398 |
+| Contratos nuevos en esta ejecucion | 960 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 1391 |
+| Registros revisados en total | 52358 |
 
 ### Desglose por nivel de gobierno
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 19 | $ 40.388.447.635 | 212 |
+| Alcaldía de Cali | 20 | $ 41.968.193.789 | 212 |
 | Gobernación del Valle | 11 | $ 14.148.165.515 | 70 |
-| Otras entidades del Valle | 209 | $ 69.819.336.351 | 425 |
+| Otras entidades del Valle | 218 | $ 70.690.328.642 | 425 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 4937 | $ 289.010.614.809 | 4528 |
-| Gobernación del Valle | 5348 | $ 118.412.812.649 | 5257 |
-| Descentralizadas de Cali | 260 | $ 155.609.567.112 | 1367 |
-| Descentralizadas de la Gobernación | 1892 | $ 55.316.814.806 | 3505 |
+| Alcaldía de Cali | 5073 | $ 295.219.304.882 | 4528 |
+| Gobernación del Valle | 5569 | $ 125.727.933.581 | 5257 |
+| Descentralizadas de Cali | 289 | $ 157.478.351.421 | 1367 |
+| Descentralizadas de la Gobernación | 2168 | $ 58.016.450.843 | 3505 |
 | UNGRD | 4 | $ 146.817.067 | 334 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 243 contratos ($ 64.504.864.603) y 342 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 199 contratos ($ 180.141.785.223) y 338 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 254 contratos ($ 73.385.887.597) y 342 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 205 contratos ($ 184.275.962.093) y 338 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
@@ -104,126 +104,110 @@ _Se revisaron 340 registros de contratacion de estas dos entidades en la ventana
 | GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA | 1 | $ 2.568.577.795 |
 | ALCALDIA MUNICIPAL DE YOTOCO | 6 | $ 2.155.627.623 |
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
+| MUNICIPIO DE YUMBO VALLE | 10 | $ 1.913.036.283 |
 | Secretaría de Educación - Alcaldía de Tuluá | 3 | $ 1.834.915.455 |
-| MUNICIPIO DE YUMBO VALLE | 9 | $ 1.653.036.283 |
 
-## Procesos nuevos (37 relacionados de 1051 publicados)
+## Contratos nuevos (21 relacionados de 960 publicados)
 
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
+| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
 |---|---|---|---:|---|---|
-| 2026-10-15 | DIRECCIÓN TERRITORIAL DE SALUD DE CALDAS | ADQUIRIR Y SUMINISTRAR EQUIPOS BIOMÉDICOS, MEDICAMENTOS,  INSUMOS, MATERIAL MÉDICO-QUIRÚRGICO, ELEMENTOS DE PR | $ 3.000.542.150 | Contratación directa | Alta |
-| 2026-10-14 | GOBERNACION DEL CHOCÓ. | EJECUTAR OBRAS DE REHABILITACIÓN DE LA INFRAESTRUCTURA FÍSICA DE INSTITUCIONES EDUCATIVAS OFICIALES AFECTADAS  | $ 2.399.922.730 | Contratación directa | Alta |
-| 2026-10-15 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | CONVENIO INTERADMINISTRATIVO PARA LA FORMULACIÓN, ESTRUCTURACIÓN Y CONSTRUCCIÓN DE VIVIENDA NUEVA RURAL EN EL  | $ 794.065.106 | Contratación régimen especial | Alta |
-| 2026-10-15 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | CONVENIO INTERADMINISTRATIVO PARA LA FORMULACIÓN, ESTRUCTURACIÓN Y CONSTRUCCIÓN DE VIVIENDA NUEVA RURAL EN EL  | $ 669.374.327 | Contratación régimen especial | Alta |
-| 2026-10-15 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | CONVENIO INTERADMINISTRATIVO PARA LA FORMULACIÓN, ESTRUCTURACIÓN Y CONSTRUCCIÓN DE VIVIENDA NUEVA RURAL EN EL  | $ 482.338.159 | Contratación régimen especial | Alta |
-| 2026-10-15 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | CONVENIO INTERADMINISTRATIVO PARA LA FORMULACIÓN, ESTRUCTURACIÓN Y CONSTRUCCIÓN DE VIVIENDA NUEVA RURAL EN EL  | $ 482.338.159 | Contratación régimen especial | Alta |
-| 2026-10-15 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | CONVENIO INTERADMINISTRATIVO PARA LA FORMULACIÓN, ESTRUCTURACIÓN Y CONSTRUCCIÓN DE VIVIENDA NUEVA RURAL EN EL  | $ 482.338.159 | Contratación régimen especial | Alta |
-| 2026-10-14 | MUNICIPIO DE QUIMBAYA | CONSULTORIA ESPECIALIZADA EN GEOTECNIA PARA LA REALIZACION DE VISITAS TECNICAS DE CONOCIMIENTO, EVALUACION, DI | $ 277.703.641 | Contratación directa | Alta |
-| 2026-10-14 | MUNICIPIO DE YUMBO VALLE | PRESTACIÓN EL SERVICIO DE CATERING PARA EL SUMINISTRO DE RACIONES DE COMIDA PREPARADA Y REFRIGERIOS DESTINADOS | $ 260.000.000 | Contratación directa | Alta |
-| 2026-10-15 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | CONVENIO INTERADMINISTRATIVO PARA LA FORMULACIÓN, ESTRUCTURACIÓN Y CONSTRUCCIÓN DE VIVIENDA NUEVA RURAL EN EL  | $ 232.956.602 | Contratación régimen especial | Alta |
-| 2026-10-15 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | CONVENIO INTERADMINISTRATIVO PARA LA FORMULACIÓN, ESTRUCTURACIÓN Y CONSTRUCCIÓN DE VIVIENDA NUEVA RURAL EN EL  | $ 232.956.602 | Contratación régimen especial | Alta |
-| 2026-10-15 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | CONVENIO INTERADMINISTRATIVO PARA LA FORMULACIÓN, ESTRUCTURACIÓN Y CONSTRUCCIÓN DE VIVIENDA NUEVA RURAL EN EL  | $ 232.956.602 | Contratación régimen especial | Alta |
-| 2026-10-15 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | CONVENIO INTERADMINISTRATIVO PARA LA FORMULACIÓN, ESTRUCTURACIÓN Y CONSTRUCCIÓN DE VIVIENDA NUEVA RURAL EN EL  | $ 232.956.602 | Contratación régimen especial | Alta |
-| 2026-10-15 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | CONVENIO INTERADMINISTRATIVO PARA LA FORMULACIÓN, ESTRUCTURACIÓN Y CONSTRUCCIÓN DE VIVIENDA NUEVA RURAL EN EL  | $ 170.611.213 | Contratación régimen especial | Alta |
-| 2026-10-15 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | CONVENIO INTERADMINISTRATIVO PARA LA FORMULACIÓN, ESTRUCTURACIÓN Y CONSTRUCCIÓN DE VIVIENDA NUEVA RURAL EN EL  | $ 170.611.213 | Contratación régimen especial | Alta |
-| 2026-10-15 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | CONVENIO INTERADMINISTRATIVO PARA LA FORMULACIÓN, ESTRUCTURACIÓN Y CONSTRUCCIÓN DE VIVIENDA NUEVA RURAL EN EL  | $ 112.612.544 | Contratación régimen especial | Alta |
-| 2026-10-14 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR, CON AUTONOMÍA TÉCNICA Y ADMINISTRATIVA, EL SERVICIO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL DE LOS | $ 90.000.000 | Contratación directa | Alta |
-| 2026-10-15 | MUNICIPIO DE DAGUA | REALIZAR LAS OBRAS DE INTERVENCIÓN ESTRUCTURAL Y ADECUACIÓN DEL PUENTE VEHICULAR DEL BARRIO LA GRAN COLOMBIA D | $ 63.642.182 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-10-15 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | AUNAR ESFUERZOS TÉCNICOS, ADMINISTRATIVOS, FINANCIEROS Y SOCIALES ENTRE LA EMPRESA DE VIVIENDA DE ANTIOQUIA -  | $ 56.509.887 | Contratación régimen especial | Alta |
-| 2026-10-14 | ALCALDIA MUNICIPIO DE MANZANARES | CONTRATAR, BAJO LA MODALIDAD DE MONTO AGOTABLE, EL SUMINISTRO DE MATERIALES DE CONSTRUCCIÓN DESTINADOS A LA AT | $ 49.025.340 | Mínima cuantía | Alta |
-| 2026-09-18 | NUESTRA SEÑORA DE CHIQUINQUIRA | MANTENIMIENTO PREVENTIVO Y CORRECTIVO DE LA INFRAESTRUCTURA FÍSICA DE LAS SEDES PRINCIPAL, TOMÁS IGNACIO ESQUI | $ 30.050.000 | Contratación régimen especial | Media |
-| 2026-10-14 | BANCO DE LA REPUBLICA | Servicio reparaciones post sismo en la culata derecha del centro cultural de Buenaventura, las intervenciones  | $ 19.282.500 | Contratación régimen especial | Alta |
-| 2026-10-15 | INSTITUCION EDUCATIVA RODRIGO LLOREDA CAICEDO* | CONTRATAR LOS SERVICIOS DE MANTENIMIENTO, REPARACIÓN E INTERVENCIÓN DE LA INFRAESTRUCTURA FÍSICA DE LA SEDE SI | $ 14.830.000 | Contratación régimen especial | Alta |
-| 2026-10-15 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO ARQUITECTO CON POSGRADO EN TEMAS RELACIONADOS CON PATRIMONIO PARA APOYAR  | $ 14.000.000 | Contratación directa | Alta |
-| 2026-10-15 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO ARQUITECTO CON POSGRADO EN TEMAS RELACIONADOS CON PATRIMONIO PARA APOYAR  | $ 14.000.000 | Contratación directa | Alta |
-| 2026-10-14 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 13.300.000 | Contratación directa | Alta |
-| 2026-10-14 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 13.200.000 | Contratación directa | Alta |
-| 2026-10-15 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 13.200.000 | Contratación directa | Alta |
-| 2026-10-14 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 13.200.000 | Contratación directa | Alta |
-| 2026-10-15 | MUNICIPIO DE DAGUA | PRESTACIÓN DEL SERVICIO DE MANTENIMIENTO FORESTAL PARA LA INTERVENCIÓN DE INDIVIDUOS FORESTALES MEDIANTE ACTIV | $ 12.516.000 | Mínima cuantía | Media |
-| 2026-10-15 | ALCALDIA MUNICIPAL DE SAN PEDRO VALLE DEL CAUCA | PRESTACIÓN DE SERVICIOS PARA GARANTIZAR LA ATENCIÓN DE EMERGENCIAS Y DESASTRES EN EL MUNICIPIO DE SAN PEDRO VA | $ 10.000.000 | Contratación directa | Media |
-| 2026-10-14 | INSTITUCION EDUCATIVA ANTONIO HOLGUIN GARCES | Contratar la ejecución de obras de infraestructura menor, reparaciones locativas y mitigación de riesgos físic | $ 8.600.000 | Contratación régimen especial | Media |
-| 2026-10-15 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTACIÓN DE SERVICIOS PROFESIONALES COMO TRABAJADORA SOCIAL PARA APOYAR A INFIMANIZALES EN LA ATENCIÓN, ORIE | $ 8.000.000 | Contratación directa | Alta |
-| 2026-10-14 | MUNICIPIO DE DAGUA | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN DE LA SECRETARÍA DE PLANEACIÓN Y PROYECTOS, ORIENTADA AL FORTALE | $ 7.200.000 | Contratación directa | Media |
-| 2026-10-15 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA LA ATENCIÓN A USUARIOS EN LAS BIBLIOTECAS SATELITES, LA ORG | $ 4.800.000 | Contratación directa | Alta |
-| 2026-10-14 | INSTITUCION EDUCATIVA SIXTO MARIA ROJAS | SERVICIO DE MANTENIMIENTO LOCATIVO POR AFECTACIÓN DEL SISMO EN AULAS 10A Y 11B SEDE PRINCIPAL DE LA INSTITUCIÓ | $ 3.400.000 | Contratación régimen especial | Alta |
-| 2026-10-15 | MINISTERIO DE EDUCACION NACIONAL (MEN) | AUNAR ESFUERZOS TÉCNICOS, ADMINISTRATIVOS Y FINANCIEROS PARA DESARROLLAR ACTIVIDADES ENCAMINADAS AL MEJORAMIEN | $ 0 | Solicitud de información a los Proveedores | Alta |
+| 2026-10-15 | DIRECCIÓN TERRITORIAL DE SALUD DE CALDAS | ADQUIRIR Y SUMINISTRAR EQUIPOS BIOMÉDICOS; MEDICAMENTOS; INSUMOS; MATERIAL MÉDICO-QUIRÚRGICO; ELEMENTOS DE PRO | $ 3.000.542.150 | CALDAS MEDICAS SAS | Alta |
+| 2026-10-14 | E.S.E HOSPITAL UNIVERSITARIO SAN JORGE DE PEREIRA | Ejecutar las obras de preservación; mitigación del riesgo; reparación; rehabilitación y recuperación de la inf | $ 2.711.270.601 | JAVIER EDUARDO ROSERO LONDOÑO | Alta |
+| 2026-10-14 | GOBERNACION DEL CHOCÓ. | EJECUTAR OBRAS DE REHABILITACIÓN DE LA INFRAESTRUCTURA FÍSICA DE INSTITUCIONES EDUCATIVAS OFICIALES AFECTADAS  | $ 2.399.922.730 | INGENCYS | Alta |
+| 2026-10-15 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD | CONSTRUCCIÓN; INSTALACIÓN; DEMOLICIÓN Y REPOSICIÓN DE REDUCTORES DE VELOCIDAD Y SUMINISTRO E INSTALACIÓN DE SE | $ 1.579.746.154 | GV INGENIERIA INTEGRAL SAS | Media |
+| 2026-10-14 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | PRESTACIÓN DEL SERVICIO DE ALQUILER DE MAQUINARIA AMARILLA; PARA LA EJECUCIÓN DE ACTIVIDADES DE MANTENIMIENTO  | $ 301.545.333 | CASA AGRARIA DEL PACIFICO SAS | Media |
+| 2026-10-14 | MUNICIPIO DE QUIMBAYA | CONSULTORIA ESPECIALIZADA EN GEOTECNIA PARA LA REALIZACION DE VISITAS TECNICAS DE CONOCIMIENTO; EVALUACION; DI | $ 277.703.641 | Andres felipe aguis vivas | Alta |
+| 2026-10-15 | MUNICIPIO DE YUMBO VALLE | PRESTACIÓN EL SERVICIO DE CATERING PARA EL SUMINISTRO DE RACIONES DE COMIDA PREPARADA Y REFRIGERIOS DESTINADOS | $ 260.000.000 | JMJ INNOVA S.A.S | Alta |
+| 2026-10-15 | SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto | CONTRATAR EL MANTENIMIENTO PREVENTIVO Y CORRECTIVO DE MAQUINARIA AMARILLA Y/O SUS ADITAMENTOS DEL CENTRO DE LA | $ 118.902.922 | FERROAGRO | Media |
+| 2026-10-15 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR; CON AUTONOMÍA TÉCNICA Y ADMINISTRATIVA; EL SERVICIO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL DE LOS | $ 90.000.000 | TRANSPORTES CITYCAR S.A.S. | Alta |
+| 2026-10-15 | SENA REGIONAL VALLE Grupo Administrativo CTA | 76_9593_254_CONTRATAR A TITULO COMPRAVENTA DE MENAJE Y ENSERES PARA LA ESTRATEGIA DE CAFETERÍAS COMO AMBIENTES | $ 77.844.036 | VERGARA GONZALEZ REFORESTA SAS | Media |
+| 2026-10-15 | EMAVI | SERVICIO DE MANTENIMIENTO PREVENTIVO Y/O CORRECTIVO A TODO COSTO; CON REPUESTOS NUEVOS; INSUMOS Y MANO DE OBRA | $ 50.000.000 | UT EMAVI 2026 | Media |
+| 2026-10-15 | ALCALDIA MUNICIPAL DE LA VICTORIA VALLE | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA EL DESARROLLO DEL SEMINARIO TALLER SOBRE CONTRATACIÓN ESTATAL; EN E | $ 15.000.000 | LUIS GILBERTO RODRIGUEZ ROMAN | Alta |
+| 2026-10-15 | SENA REGIONAL QUINDIO Grupo de Apoyo Administrativo Mixto | Contratar los servicios profesionales de apoyo psicosocial para atender las necesidades de la comunidad educat | $ 14.023.872 | GHERALDYNE PAOLA AMADOR ARANGO | Alta |
+| 2026-10-15 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 13.200.000 | Fergie Tayrin Arenas Gallego | Alta |
+| 2026-10-15 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 13.200.000 | Juan Diego Serna Marquez | Alta |
+| 2026-10-15 | ALCALDIA MUNICIPIO DE MANZANARES | BRINDAR APOYO EN LA EJECUCIÓN DE CONSTRUCCIÓN Y/O MEJORAMIENTO DE VIVIENDA AFECTADAS POR EL SISMO EN ZONAS URB | $ 11.100.000 | RAUL MORALES QUINTERO | Alta |
+| 2026-10-15 | ALCALDIA MUNICIPAL DE SAN PEDRO VALLE DEL CAUCA | PRESTACIÓN DE SERVICIOS PARA GARANTIZAR LA ATENCIÓN DE EMERGENCIAS Y DESASTRES EN EL MUNICIPIO DE SAN PEDRO VA | $ 10.000.000 | BENEMERITO CUERPO DE BOMBEROS VOLUNTARIOS, SAN PEDRO, VALLE DEL CAUCA | Media |
+| 2026-10-14 | MUNICIPIO DE VERSALLES | PRESTAR LOS SERVICIOS DE APOYO A LA GESTIÓN COMO AUXILIAR ADMINISTRATIVO PARA APOYAR AL MUNICIPIO DE VERSALLES | $ 7.500.000 | CLAUDIA MILENA BUITRAGO | Alta |
+| 2026-10-15 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA LA ATENCIÓN A USUARIOS EN LAS BIBLIOTECAS SATELITES; LA ORG | $ 5.360.000 | jackeline idarraga | Alta |
+| 2026-10-14 | MUNICIPIO DE TORO | PRESTAR SERVICIOS DE APOYO A LA GESTION PARA EL ACOMPANAMIENTO TECNICO Y OPERATIVO A LA ADMINISTRACION MUNICIP | $ 5.200.000 | CRISTIAN CAMILO ROJAS MURILLO | Alta |
+| 2026-10-15 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA LA ATENCIÓN A USUARIOS EN LAS BIBLIOTECAS SATELITES; LA ORG | $ 4.800.000 | ANDREA CAROLINA GUEVARA EALO | Alta |
 
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| procesos | CO1.REQ.11074638 | valor_total_adjudicacion | 0 | 485018000 |
-| procesos | CO1.REQ.11074638 | adjudicado | No | Si |
-| procesos | CO1.REQ.11074638 | fecha_adjudicacion |  | 2026-10-15T00:00:00.000 |
-| procesos | CO1.REQ.11133810 | valor_total_adjudicacion | 0 | 175000000 |
-| procesos | CO1.REQ.11133810 | adjudicado | No | Si |
-| procesos | CO1.REQ.11127994 | valor_total_adjudicacion | 0 | 53606229 |
-| procesos | CO1.REQ.11127994 | adjudicado | No | Si |
-| procesos | CO1.REQ.10948613 | valor_total_adjudicacion | 0 | 65699133 |
-| procesos | CO1.REQ.10948613 | adjudicado | No | Si |
-| procesos | CO1.REQ.11187357 | nombre_del_proveedor | ASTRID CAROLINA MOSQUERA MENA | No Definido |
-| procesos | CO1.REQ.11203424 | nombre_del_proveedor | KAROL LIZETH ANDRADE VILLADA | No Definido |
-| procesos | CO1.REQ.11198473 | nombre_del_proveedor | SEBASTIAN MEZU VILLEGAS | No Definido |
-| procesos | CO1.REQ.11197809 | nombre_del_proveedor | yessica paola hurtado arboleda | No Definido |
-| procesos | CO1.REQ.11067768 | valor_total_adjudicacion | 0 | 192715809 |
-| procesos | CO1.REQ.11067768 | adjudicado | No | Si |
-| procesos | CO1.REQ.11067768 | fecha_adjudicacion |  | 2026-10-15T00:00:00.000 |
-| procesos | CO1.REQ.11138049 | valor_total_adjudicacion | 0 | 141413088 |
-| procesos | CO1.REQ.11138049 | adjudicado | No | Si |
-| procesos | CO1.REQ.11138049 | fecha_adjudicacion |  | 2026-10-15T00:00:00.000 |
-| procesos | CO1.REQ.11187033 | nombre_del_proveedor | ALEXANDRA GIL ARCOS | No Definido |
-| procesos | CO1.REQ.11187340 | nombre_del_proveedor | ANGIEE SELENY CAMACHO OLAYA | No Definido |
-| procesos | CO1.REQ.11189272 | nombre_del_proveedor | DANIELA SOLARTE BERNAL | No Definido |
-| procesos | CO1.REQ.11189774 | valor_total_adjudicacion | 0 | 293904070 |
-| procesos | CO1.REQ.11189774 | adjudicado | No | Si |
-| procesos | CO1.REQ.11160950 | valor_total_adjudicacion | 0 | 48744100 |
-| procesos | CO1.REQ.11160950 | adjudicado | No | Si |
-| procesos | CO1.REQ.11160950 | fecha_adjudicacion |  | 2026-10-15T00:00:00.000 |
-| procesos | CO1.REQ.11203581 | nombre_del_proveedor | luisa yeraldin bravo narvaez | No Definido |
-| procesos | CO1.REQ.11201751 | nombre_del_proveedor | MIGUEL ANGEL CAMAYO GOMEZ | No Definido |
-| procesos | CO1.REQ.11186398 | nombre_del_proveedor | MIRIAM MOSQUERA | No Definido |
-| procesos | CO1.REQ.11189815 | nombre_del_proveedor | Diego Armando Vargas Ceron | No Definido |
-| procesos | CO1.REQ.11198425 | nombre_del_proveedor | Sebastian Rodriguez Perez | No Definido |
-| procesos | CO1.REQ.11203475 | nombre_del_proveedor | albeiro arenas escue | No Definido |
-| procesos | CO1.REQ.11203393 | nombre_del_proveedor | MARIA ARNOVIA PERDOMO TROCHEZ | No Definido |
-| procesos | CO1.REQ.11081164 | fecha_adjudicacion |  | 2026-10-15T00:00:00.000 |
-| procesos | CO1.REQ.11156223 | valor_total_adjudicacion | 0 | 4082800 |
-| procesos | CO1.REQ.11156223 | adjudicado | No | Si |
-| procesos | CO1.REQ.11156223 | fecha_adjudicacion |  | 2026-10-15T00:00:00.000 |
-| procesos | CO1.REQ.11198160 | nombre_del_proveedor | PATRICIA  SULEYMA PACHECO CAÑAS | No Definido |
-| procesos | CO1.REQ.11196874 | nombre_del_proveedor | ISABEL CRISTINA GORDILLO CASTRILLON | No Definido |
-| procesos | CO1.REQ.11187050 | nombre_del_proveedor | ANA LORENA  DIAZ | No Definido |
-| procesos | CO1.REQ.11084778 | valor_total_adjudicacion | 0 | 275000000 |
-| procesos | CO1.REQ.11084778 | adjudicado | No | Si |
-| procesos | CO1.REQ.11203462 | nombre_del_proveedor | LILIANA SINISTERRA OREJUELA | No Definido |
-| procesos | CO1.REQ.11189266 | nombre_del_proveedor | DANIELA RAMIREZ BARONA | No Definido |
-| procesos | CO1.REQ.11189386 | nombre_del_proveedor | DIANA VICTORIA CAICEDO POLO | No Definido |
-| procesos | CO1.REQ.11203640 | nombre_del_proveedor | LEONARDO ANDRES NAVARRETE POLANCO | No Definido |
-| procesos | CO1.REQ.11201295 | nombre_del_proveedor | Nathalia Andrea Rodriguez Lanchero | No Definido |
-| procesos | CO1.REQ.11187039 | nombre_del_proveedor | ALEXANDRA MARCELA FLOREZ MURILLO | No Definido |
-| procesos | CO1.REQ.11173853 | valor_total_adjudicacion | 0 | 77844035 |
-| procesos | CO1.REQ.11173853 | adjudicado | No | Si |
-| procesos | CO1.REQ.11173853 | fecha_adjudicacion |  | 2026-10-15T00:00:00.000 |
-| procesos | CO1.REQ.11201285 | nombre_del_proveedor | Oscar Eduardo Becerra Molina | No Definido |
-| procesos | CO1.REQ.11020308 | valor_total_adjudicacion | 0 | 48195000 |
-| procesos | CO1.REQ.11020308 | adjudicado | No | Si |
-| procesos | CO1.REQ.11020308 | fecha_adjudicacion |  | 2026-10-15T00:00:00.000 |
-| procesos | CO1.REQ.11203805 | nombre_del_proveedor | Laura camila urrea quintero | No Definido |
-| procesos | CO1.REQ.11189731 | nombre_del_proveedor | EDER ANTONIO LOPEZ FLOREZ | No Definido |
-| procesos | CO1.REQ.11006005 | valor_total_adjudicacion | 120401487 | 96332468 |
-| procesos | CO1.REQ.11006005 | fecha_adjudicacion | 2026-09-29T00:00:00.000 |  |
+| contratos | CO1.PCCNTR.10044321 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10044321 | nombre_supervisor | No definido | CINDY CATALINA OIDOR GARCIA |
+| contratos | CO1.PCCNTR.10059960 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10030298 | nombre_supervisor | Lizeth Johana Parra González | NASLY FERNANDA VIDALES GONZALEZ |
+| contratos | CO1.PCCNTR.10041279 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
+| contratos | CO1.PCCNTR.10057139 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10061307 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10050092 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10061018 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10056421 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10029605 | nombre_supervisor | Lizeth Johana Parra González | NASLY FERNANDA VIDALES GONZALEZ |
+| contratos | CO1.PCCNTR.10053721 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10054660 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10033112 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10034367 | nombre_supervisor | No definido | VERGEL TORRADO |
+| contratos | CO1.PCCNTR.10053348 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10058637 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10030859 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10030859 | nombre_supervisor | Lizeth Johana Parra González | NASLY FERNANDA VIDALES GONZALEZ |
+| contratos | CO1.PCCNTR.10033829 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
+| contratos | CO1.PCCNTR.10036898 | nombre_supervisor | No definido | Jorge Alberto Buitrago Trujillo |
+| contratos | CO1.PCCNTR.10031017 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10052769 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10066469 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10032741 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9964644 | estado_contrato | En ejecución | Modificado |
+| contratos | CO1.PCCNTR.10030952 | nombre_supervisor | No definido | VERGEL TORRADO |
+| contratos | CO1.PCCNTR.10030669 | nombre_supervisor | Lizeth Johana Parra González | NASLY FERNANDA VIDALES GONZALEZ |
+| contratos | CO1.PCCNTR.10049907 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10049907 | nombre_supervisor | No definido | JUAN CARLOS BORRERO LOPEZ |
+| contratos | CO1.PCCNTR.10030938 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10028732 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10041454 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10029984 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10031583 | nombre_supervisor | Lizeth Johana Parra González | NASLY FERNANDA VIDALES GONZALEZ |
+| contratos | CO1.PCCNTR.10055215 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10060528 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10054932 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10046178 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10046178 | nombre_supervisor | No definido | JUAN CARLOS BORRERO LOPEZ |
+| contratos | CO1.PCCNTR.10057656 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10035027 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10035027 | nombre_supervisor | No definido | RODRIGO ARCE ALVAREZ |
+| contratos | CO1.PCCNTR.10035027 | valor_pendiente_de_pago | 0 | 21000000 |
+| contratos | CO1.PCCNTR.10043964 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10043964 | nombre_supervisor | No definido | MERCEDES PAREDES BRAVO |
+| contratos | CO1.PCCNTR.10031414 | nombre_supervisor | Lizeth Johana Parra González | NASLY FERNANDA VIDALES GONZALEZ |
+| contratos | CO1.PCCNTR.10040667 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10049233 | estado_contrato | Aprobado | terminado |
+| contratos | CO1.PCCNTR.10052848 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10055947 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10030188 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10056031 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10035094 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10028979 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10061114 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10060009 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10058634 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10037195 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10037195 | nombre_supervisor | No definido | JUAN CARLOS BORRERO LOPEZ |
 
 ## Alertas
 
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO - $ 5.000.000.000 - ADD MEDIA S.A.S [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD - $ 1.579.746.154 - GV INGENIERIA INTEGRAL SAS [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA - $ 900.000.000 - UNION TEMPORAL LOGISTICA ALIMENTARIA INTEGRAL [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE - $ 1.075.069.800 - REHIMAC S.A [SECOP II]
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA - $ 1.488.426.655 - CONCRETAR 2026 [SECOP II]
 - **Contrato de alto valor**: GOBERNACION DEL VALLE DEL CAUCA - DADI - $ 1.300.000.000 - Prensa y Entretenimiento Agencia de Comunicaciones S.A.S [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA - $ 1.361.024.561 - FENIX ASFALTOS Y CONCRETOS SAS [SECOP II]
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO - $ 9.178.570.453 - FUNDACION WWB COLOMBIA [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI - $ 525.000.000 - RED DE SALUD DEL ORIENTE ESE [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO - $ 9.178.570.453 - FUNDACION WWB COLOMBIA [SECOP II]
 - **Contrato de alto valor**: GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA - $ 2.568.577.795 - FUNDACIÓN AVE FÉNIX [SECOP II]
 - **Contrato de alto valor**: GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE VIVIENDA Y HABITAT - $ 8.592.000.000 - COMERCIALIZADORA ORIKUA SAS [SECOP II]
 - **Contrato de alto valor**: DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES - $ 649.987.520 - FANALCA S.A.S. [SECOP II]
@@ -231,6 +215,7 @@ _Se revisaron 340 registros de contratacion de estas dos entidades en la ventana
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI - $ 700.000.000 - 2 GROUP SAS [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS - $ 7.999.950.000 - EMPRESA REGIONAL DE SERVICIO PUBLICO DE ASEO DE CANDELARIA [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE - $ 6.050.000.000 - FUNDACION PROSPERIDAD Y FUTURO DEL PACIFICO [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA - $ 1.488.426.655 - CONCRETAR 2026 [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE - $ 515.216.559 - ROCALES Y CONCRETOS SAS [SECOP II]
 - **Contrato de alto valor**: CVC - $ 996.015.936 - FUNDACION BALU [SECOP II]
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.976.130.044 - Prodecon S.A.S [SECOP II]
@@ -241,21 +226,20 @@ _Se revisaron 340 registros de contratacion de estas dos entidades en la ventana
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 12.221.820.000 - SKYLINE [SECOP II]
 - **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 1.079.131.571 - PSI SOLUTIONS SAS [SECOP II]
 - **Contrato de alto valor**: Secretaría de Educación - Alcaldía de Tuluá - $ 1.583.549.971 - ARQHOSP SAS [SECOP II]
+- **Contrato de alto valor**: UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA - $ 1.321.917.014 - CONSORCIO UES VALLE 2026 [SECOP II]
+- **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 972.449.042 - GG CM [SECOP II]
 - **Contrato de alto valor**: ALCALDIA MUNICIPAL DE YOTOCO - $ 1.305.627.623 - EMPRESA DE SERVICIO PUBLICO DE ASEO DEL MUNICIPIO DE YOTOCO - VALLE DEL CAUCA S.A.S E.S.P [SECOP II]
 - **Contrato de alto valor**: Secretaría de Hábitat e Infraestructura - Alcaldía de Tuluá - $ 5.199.818.848 - EMPRESAS MUNICIPALES DE TULUA E.S.P. [SECOP II]
 - **Contrato de alto valor**: CVC - $ 948.000.000 - Q C [SECOP II]
 - **Contrato de alto valor**: HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E - $ 1.150.889.534 - PLANEAMOS SAS [SECOP II]
-- **Contrato de alto valor**: UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA - $ 1.321.917.014 - CONSORCIO UES VALLE 2026 [SECOP II]
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 2.389.605.620 - Prodecon S.A.S [SECOP II]
-- **Contrato de alto valor**: CVC - $ 1.422.879.908 - CORPORACION AMANO NATIVA [SECOP II]
 - **Contrato de alto valor**: ARMADA NACIONAL BASE NAVAL ARC MALAGA - $ 761.600.000 - LONA GROUP SAS [SECOP II]
+- **Contrato de alto valor**: CVC - $ 1.422.879.908 - CORPORACION AMANO NATIVA [SECOP II]
 - **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 597.455.382 - GG CM [SECOP II]
 - **Contrato de alto valor**: ALCALDIA DE ALCALA - $ 528.784.465 - GRUPO EMPRESARIAL DEL SUR SIGLO XXI S.A.S. E.S.P [SECOP II]
 - **Contrato de alto valor**: MUNICIPIO DE YUMBO VALLE - $ 1.413.020.078 - JAVIER GORDILLO GRISALES [SECOP II]
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.125.264.000 - NOVATECH INGENIERIA Y CONSTRUCCION SAS [SECOP II]
 - **Contrato de alto valor**: Departamento Administrativo de Planeación - Alcaldía de Tuluá - $ 760.000.000 - INFITULUA E.I.C.E [SECOP II]
-- **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 972.449.042 - GG CM [SECOP II]
-- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 5.227.550.751 - AMS INGENIEROS EU [SECOP II]
 
 ---
 
