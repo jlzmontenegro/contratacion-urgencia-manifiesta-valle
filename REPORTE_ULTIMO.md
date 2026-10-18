@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-17 18:00  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-18 07:02  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -10,8 +10,8 @@
 | Valor de esos contratos | $ 131.745.684.555 |
 | Procesos relacionados (alta + media) | 815 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 626 |
-| Modificaciones detectadas | 793 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 52984 |
 
 ### Desglose por nivel de gobierno
@@ -106,91 +106,6 @@ _Se revisaron 340 registros de contratacion de estas dos entidades en la ventana
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 | MUNICIPIO DE YUMBO VALLE | 10 | $ 1.913.036.283 |
 | Secretaría de Educación - Alcaldía de Tuluá | 3 | $ 1.834.915.455 |
-
-## Procesos nuevos (15 relacionados de 626 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-10-16 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | AUNAR ESFUERZOS TÉCNICOS, ECONÓMICOS Y LOGÍSTICOS PARA LA IMPLEMENTACIÓN DE ACCIONES DE MITIGACIÓN Y CONTROL O | $ 1.359.327.824 | Contratación régimen especial (con ofertas) | Media |
-| 2026-10-14 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | SUMINISTRO DE PAQUETES ALIMENTARIOS Y ACOMPAÑAMIENTO NUTRICIONAL PARA PREPARACIÓN EN CASA A LA POBLACIÓN DAMNI | $ 949.983.090 | Contratación directa | Alta |
-| 2026-10-16 | MUNICIPIO DE BUGALAGRANDE | SERVICIO LOGISTICO PARA EL DESARROLLO DE LA CELEBRACIÓN DEL DIA DE LOS DISFRACES HALLOWEEN, CARACTERIZACION DE | $ 209.986.072 | Contratación Directa (con ofertas) | Media |
-| 2026-10-14 | E.S.E HOSPITAL UNIVERSITARIO SAN JORGE DE PEREIRA | REALIZAR LA INTERVENTORÍA TÉCNICA, ADMINISTRATIVA, FINANCIERA, JURÍDICA Y AMBIENTAL AL CONTRATO CUYO OBJETO CO | $ 135.563.530 | Contratación régimen especial | Alta |
-| 2026-10-16 | ALCALDIA MUNICIPAL DE SAN PEDRO VALLE DEL CAUCA | AUNAR ESFUERZOS TÉCNICOS, ADMINISTRATIVOS, HUMANOS Y FINANCIEROS PARA CONTRIBUIR A LA REACTIVACIÓN Y FORTALECI | $ 78.571.429 | Contratación régimen especial | Alta |
-| 2026-10-14 | SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto | Brindar apoyo administrativo y de gestión para la formulación, estructuración, seguimiento y validación técnic | $ 42.000.000 | Contratación directa | Alta |
-| 2026-10-16 | INSTITUCION EDUCATIVA CRSITOBAL COLON | Reforzamiento y adecuación estructural de columnas de la Institución Educativa Cristóbal Colón, por daños caus | $ 23.900.000 | Contratación régimen especial | Alta |
-| 2026-10-16 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS PROFESIONALES COMO ABOGADO ESPECIALISTA EN GERENCIA DE PROYECTOS EN LA ACTIVIDAD REALIZA | $ 23.100.000 | Contratación directa | Media |
-| 2026-10-14 | SENA REGIONAL QUINDIO Grupo de Apoyo Administrativo Mixto | Contratar los servicios profesionales de apoyo psicosocial para atender las necesidades de la comunidad educat | $ 14.023.872 | Contratación directa | Alta |
-| 2026-10-16 | SUPERINTENDENCIA DE NOTARIADO Y REGISTRO | El CONTRATISTA deberá prestar por sus propios medios y con plena autonomía técnica y administrativa, dentro de | $ 13.261.425 | Contratación directa | Alta |
-| 2026-10-16 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS DE APOYO A LA GESTIÓN EN LA ACTIVIDAD ORIENTAR A LAS ENTIDADES TERRITORIALES EN LA IMPLE | $ 9.000.000 | Contratación directa | Media |
-| 2026-10-16 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS DE APOYO A LA GESTIÓN EN LA ACTIVIDAD ACOMPAÑAR A LOS ENTES TERRITORIALES EN LA IDENTIFI | $ 9.000.000 | Contratación directa | Media |
-| 2026-10-16 | ALCALDÍA MUNICIPAL DE ROLDANILLO | PRESTACIÓN DE SERVICIOS DE APOYO TÉCNICO Y ACOMPAÑAMIENTO EN LA INSPECCIÓN OCULAR, EVALUACIÓN DE HABITABILIDAD | $ 7.100.000 | Contratación directa | Alta |
-| 2026-10-16 | INSTITUCIÓN EDUCATIVA NUESTRA SEÑORA DEL CARMEN  LA DORADA | SUMINISTRO DEL SISTEMA DE ALERTAS Y EMERGENCIAS EN ELMARCO DEL PROYECTO DE ATENCION DE DESASTRES CON OCACION D | $ 6.118.000 | Contratación régimen especial | Alta |
-| 2026-10-16 | SECRETARIA DISTRITAL DEL HABITAT- | Aunar esfuerzos técnicos, administrativos e institucionales entre la Secretaría Distrital del Hábitat de Bogot | $ 0 | Contratación directa | Alta |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| procesos | CO1.REQ.11210833 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11210833 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11194311 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11203735 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11203735 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11203735 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11211076 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11211076 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11211076 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11133810 | nombre_del_proveedor | No Definido | Quack de Colombia SAS |
-| procesos | CO1.REQ.11194056 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11193853 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11193734 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11195188 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11194401 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11217015 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11217015 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11069009 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11069009 | valor_total_adjudicacion | 562994224 | 1381033542 |
-| procesos | CO1.REQ.11069009 | nombre_del_proveedor | No Definido | Serintegrales S.I. S.A.S |
-| procesos | CO1.REQ.11203182 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11203182 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11203182 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11211284 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11211284 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11211284 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11203591 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11203591 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11203591 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11112094 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11112094 | nombre_del_proveedor | No Definido | Henet S.A.S |
-| procesos | CO1.REQ.11203921 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11203921 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11203921 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11203811 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11203811 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11203811 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11193344 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11203480 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11203580 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11202386 | estado_del_procedimiento | Aprobado | Publicado |
-| procesos | CO1.REQ.11202386 | fase |  | Fase de Selección (Presentación de ofert |
-| procesos | CO1.REQ.11202386 | estado_resumen | No Definido | Fase de Selección (Presentación de ofert |
-| procesos | CO1.REQ.11180593 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11133391 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11210873 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11210873 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11210873 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11203874 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11211205 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11211205 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11211205 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11203838 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11203838 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11203838 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11204222 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11212115 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11212115 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11212115 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11075231 | estado_resumen | Presentación de oferta | Adjudicado |
 
 ## Alertas
 
