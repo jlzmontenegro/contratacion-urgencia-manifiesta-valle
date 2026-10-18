@@ -1,18 +1,18 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-18 07:02  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-18 12:18  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
 | Indicador | Valor |
 |---|---|
-| Contratos relacionados (alta + media) | 287 |
-| Valor de esos contratos | $ 131.745.684.555 |
+| Contratos relacionados (alta + media) | 290 |
+| Valor de esos contratos | $ 131.997.670.627 |
 | Procesos relacionados (alta + media) | 815 |
-| Contratos nuevos en esta ejecucion | 0 |
+| Contratos nuevos en esta ejecucion | 685 |
 | Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 0 |
-| Registros revisados en total | 52984 |
+| Modificaciones detectadas | 1107 |
+| Registros revisados en total | 53669 |
 
 ### Desglose por nivel de gobierno
 
@@ -20,25 +20,25 @@
 |---|---:|---:|---:|
 | Alcaldía de Cali | 20 | $ 41.968.193.789 | 212 |
 | Gobernación del Valle | 11 | $ 14.148.165.515 | 73 |
-| Otras entidades del Valle | 218 | $ 70.690.328.642 | 431 |
+| Otras entidades del Valle | 221 | $ 70.942.314.714 | 431 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 5073 | $ 295.219.304.882 | 4593 |
-| Gobernación del Valle | 5569 | $ 125.727.933.581 | 5398 |
-| Descentralizadas de Cali | 289 | $ 157.478.351.421 | 1410 |
-| Descentralizadas de la Gobernación | 2168 | $ 58.016.450.843 | 3743 |
+| Alcaldía de Cali | 5159 | $ 298.297.681.146 | 4593 |
+| Gobernación del Valle | 5762 | $ 131.797.916.382 | 5398 |
+| Descentralizadas de Cali | 326 | $ 157.889.742.421 | 1410 |
+| Descentralizadas de la Gobernación | 2364 | $ 59.694.352.488 | 3743 |
 | UNGRD | 4 | $ 146.817.067 | 334 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 254 contratos ($ 73.385.887.597) y 347 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 205 contratos ($ 184.275.962.093) y 338 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 259 contratos ($ 74.816.351.368) y 347 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 212 contratos ($ 198.515.722.283) y 338 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
@@ -106,6 +106,84 @@ _Se revisaron 340 registros de contratacion de estas dos entidades en la ventana
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 | MUNICIPIO DE YUMBO VALLE | 10 | $ 1.913.036.283 |
 | Secretaría de Educación - Alcaldía de Tuluá | 3 | $ 1.834.915.455 |
+
+## Contratos nuevos (8 relacionados de 685 publicados)
+
+| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
+|---|---|---|---:|---|---|
+| 2026-10-16 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | MANTENIMIENTO; RECUPERACION Y ADECUACION DE ESCENARIOS DEPORTIVOS DEL MUNICIPIO DE DOSQUEBRADAS AFECTADOS POR  | $ 1.382.063.771 | JESUS AUGUSTO GALEANO VALENCIA | Alta |
+| 2026-10-16 | MUNICIPIO DE BUGALAGRANDE | SERVICIO LOGISTICO PARA EL DESARROLLO DE LA CELEBRACIÓN DEL DIA DE LOS DISFRACES HALLOWEEN; CARACTERIZACION DE | $ 209.986.072 | FONDO MIXTO CARTAGO | Media |
+| 2026-10-16 | SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto | Brindar apoyo administrativo y de gestión para la formulación; estructuración; seguimiento y validación técnic | $ 21.000.000 | Paula Alejandra Cadena Flor | Alta |
+| 2026-10-16 | SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto | Brindar apoyo administrativo y de gestión para la formulación; estructuración; seguimiento y validación técnic | $ 21.000.000 | BRYAN CASTILLO TORRES | Alta |
+| 2026-10-16 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO ARQUITECTO CON POSGRADO EN TEMAS RELACIONADOS CON PATRIMONIO PARA APOYAR  | $ 14.000.000 | Juan Pablo Martinez Quiceno | Alta |
+| 2026-10-16 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 13.200.000 | Mario Alberto Ramirez Castaño | Alta |
+| 2026-10-16 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 13.200.000 | CARLOS EDUARDO LONDOÑO NARANJO | Alta |
+| 2026-10-16 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTACIÓN DE SERVICIOS PROFESIONALES COMO TRABAJADORA SOCIAL PARA APOYAR A INFIMANIZALES EN LA ATENCIÓN; ORIE | $ 8.000.000 | Paula Andrea Ríos C | Alta |
+
+## Modificaciones sobre registros ya conocidos
+
+| Fuente | Identificador | Campo | Antes | Ahora |
+|---|---|---|---|---|
+| contratos | CO1.PCCNTR.10060041 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10030677 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9819611 | valor_del_contrato | 16000000 | 18000000 |
+| contratos | CO1.PCCNTR.9819611 | estado_contrato | En ejecución | Modificado |
+| contratos | CO1.PCCNTR.9819611 | valor_pendiente_de_pago | 16000000 | 18000000 |
+| contratos | CO1.PCCNTR.10059929 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10059929 | fecha_de_fin_del_contrato | 2026-10-10T00:00:00.000 | 2026-10-31T00:00:00.000 |
+| contratos | CO1.PCCNTR.10017098 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10045552 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10045227 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10055504 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10073950 | valor_pendiente_de_pago | 0 | 2500000 |
+| contratos | CO1.PCCNTR.10052873 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10045233 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10053321 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10059953 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10031869 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10056215 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10059411 | valor_pendiente_de_pago | 0 | 14000000 |
+| contratos | CO1.PCCNTR.10062419 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10053887 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10053887 | nombre_supervisor | No definido | LIBARDO JAIR OSORIO TOVAR |
+| contratos | CO1.PCCNTR.10049549 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10069230 | nombre_supervisor | No definido | CARLOS ALBERTO GARCIA TOBON |
+| contratos | CO1.PCCNTR.10059880 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10069670 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10069670 | valor_pendiente_de_pago | 0 | 22652000 |
+| contratos | CO1.PCCNTR.10069339 | nombre_supervisor | No definido | CARLOS ALBERTO GARCIA TOBON |
+| contratos | CO1.PCCNTR.10069339 | valor_pendiente_de_pago | 0 | 10500000 |
+| contratos | CO1.PCCNTR.10064598 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10057656 | valor_pendiente_de_pago | 0 | 5000000 |
+| contratos | CO1.PCCNTR.10032613 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10059624 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10049433 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10058343 | valor_pendiente_de_pago | 0 | 5000000 |
+| contratos | CO1.PCCNTR.10058236 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10042222 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10058386 | valor_pendiente_de_pago | 0 | 10000000 |
+| contratos | CO1.PCCNTR.10068831 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10055965 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10041514 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
+| contratos | CO1.PCCNTR.10039167 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
+| contratos | CO1.PCCNTR.10045922 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10047591 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10076001 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10076001 | valor_pendiente_de_pago | 0 | 10000000 |
+| contratos | CO1.PCCNTR.10069261 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10069261 | valor_pendiente_de_pago | 0 | 10500000 |
+| contratos | CO1.PCCNTR.10062318 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10053427 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10059904 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10067572 | nombre_supervisor | No definido | CARLOS ALBERTO GARCIA TOBON |
+| contratos | CO1.PCCNTR.10051287 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10073807 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10073807 | valor_pendiente_de_pago | 0 | 4000000 |
+| contratos | CO1.PCCNTR.10069146 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10044897 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10073548 | valor_pendiente_de_pago | 0 | 8000000 |
+| contratos | CO1.PCCNTR.10064489 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10061414 | estado_contrato | Aprobado | En ejecución |
 
 ## Alertas
 
