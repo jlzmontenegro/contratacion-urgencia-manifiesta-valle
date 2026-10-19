@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-18 17:59  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-19 09:38  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -10,8 +10,8 @@
 | Valor de esos contratos | $ 131.997.670.627 |
 | Procesos relacionados (alta + media) | 823 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 410 |
-| Modificaciones detectadas | 532 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 54079 |
 
 ### Desglose por nivel de gobierno
@@ -106,86 +106,6 @@ _Se revisaron 340 registros de contratacion de estas dos entidades en la ventana
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 | MUNICIPIO DE YUMBO VALLE | 10 | $ 1.913.036.283 |
 | Secretaría de Educación - Alcaldía de Tuluá | 3 | $ 1.834.915.455 |
-
-## Procesos nuevos (10 relacionados de 410 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-10-17 | MUNICIPIO DE PEREIRA- OFICIAL | CONTRATACIÓN DE UNA EMPRESA DE SERVICIOS TEMPORALES PARA EL SUMINISTRO DE PERSONAL OPERATIVO EN MISIÓN PARA RE | $ 14.997.215.907 | Contratación directa | Alta |
-| 2026-10-16 | ARMADA NACIONAL BASE NAVAL ARC MALAGA | CONTRATAR LA ADQUISICION Y PUESTA EN FUNCIONAMIENTO DE MAQUINARIA AMARILLA GRUA RT PARA LA BASE NAVAL No 2 ARC | $ 2.990.734.381 | Seleccion Abreviada Menor Cuantia Sin Manifestacion Interes | Media |
-| 2026-10-16 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | ADQUISICIÓN DE ASISTENCIA HUMANITARIA ALIMENTARIA Y NO ALIMENTARIA PARA LA ATENCIÓN DE LA POBLACIÓN DAMNIFICAD | $ 1.110.000.000 | Contratación directa | Alta |
-| 2026-10-16 | INSTITUCION EDUCATIVA JUAN PABLO II.* | PRESTACION DE SERVICIOS DE PARA DEMOLDER 2 MESONES ARREGLO DE PISO AREA QUIMICA EN GRANITO ELABORACION DE UNA  | $ 20.227.905 | Contratación régimen especial | Media |
-| 2026-10-16 | EMPRESAS MUNICIPALES DE CALI | PRESTAR SERVICIO DE APOYO PROFESIONAL COMO MERCADOLOGA  ESPECIALIZADO, EN EL ÁREA FUNCIONAL DE SOPORTE A  LA G | $ 18.000.000 | Contratación régimen especial | Media |
-| 2026-10-16 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 13.200.000 | Contratación directa | Alta |
-| 2026-10-16 | MUNICIPIO DE FLORIDA | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA APOYAR LA GESTIÓN Y CALIDAD DE LA INFORMACIÓN ESTADÍSTICA Y LOS REG | $ 12.000.000 | Contratación directa | Media |
-| 2026-10-16 | MUNICIPIO DE FLORIDA | PRESTACIÓN DE SERVICIOS PROFESIONALES COMO ADMINISTRADOR FINANCIERO PARA APOYAR LA PROGRAMACIÓN Y EL SEGUIMIEN | $ 10.500.000 | Contratación directa | Media |
-| 2026-10-16 | ALCALDIA MUNICIPAL DE SAN PEDRO VALLE DEL CAUCA | PRESTACIÓN DE SERVICIOS PROFESIONALES DE INGENIERIA CIVIL PARA REALIZAR VISITAS TECNICAS DE INSPECCION OCULAR  | $ 8.000.000 | Contratación directa | Alta |
-| 2026-10-16 | INSTITUCION EDUCATIVA DE SANTA LIBRADA | Realizar a todo costo el mantenimiento rutinario de la infraestructura física  de la Institución Educativa De  | $ 2.390.000 | Contratación régimen especial | Media |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| procesos | CO1.REQ.11218065 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11210206 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11191260 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11219175 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11219175 | precio_base | 3947000 | 7894000 |
-| procesos | CO1.REQ.11069009 | valor_total_adjudicacion | 1381033542 | 562994224 |
-| procesos | CO1.REQ.11069009 | nombre_del_proveedor | Serintegrales S.I. S.A.S | UT BRILLA -BRILLA 2026 |
-| procesos | CO1.REQ.11217967 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11216932 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11210113 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11218887 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11210012 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11215180 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11210209 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11211819 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11216556 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11213726 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11216350 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11169110 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11182055 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11184944 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11210116 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11218511 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11210403 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11216187 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11210502 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11210014 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11218433 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11213394 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11210510 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11210211 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11216863 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11210404 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11210107 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11213443 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11217357 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11211681 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11220113 | estado_del_procedimiento | En aprobación | Publicado |
-| procesos | CO1.REQ.11218657 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11210508 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11213803 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11218444 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11216398 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11210212 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11210110 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11210103 | estado_del_procedimiento | Borrador | Publicado |
-| procesos | CO1.REQ.11218062 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11211539 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11211539 | fase |  | Fase de ofertas |
-| procesos | CO1.REQ.11211539 | estado_resumen | No Definido | Fase de ofertas |
-| procesos | CO1.REQ.11210210 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11218783 | estado_del_procedimiento | En aprobación | Publicado |
-| procesos | CO1.REQ.11212213 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11210109 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11219419 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11210504 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11210302 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11213779 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11195104 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11216381 | estado_del_procedimiento | Aprobado | Seleccionado |
 
 ## Alertas
 
