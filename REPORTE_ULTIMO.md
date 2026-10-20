@@ -1,18 +1,18 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-19 09:38  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-20 18:46  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
 | Indicador | Valor |
 |---|---|
-| Contratos relacionados (alta + media) | 290 |
-| Valor de esos contratos | $ 131.997.670.627 |
-| Procesos relacionados (alta + media) | 823 |
-| Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 0 |
-| Registros revisados en total | 54079 |
+| Contratos relacionados (alta + media) | 293 |
+| Valor de esos contratos | $ 132.039.357.002 |
+| Procesos relacionados (alta + media) | 824 |
+| Contratos nuevos en esta ejecucion | 480 |
+| Procesos nuevos en esta ejecucion | 244 |
+| Modificaciones detectadas | 719 |
+| Registros revisados en total | 54802 |
 
 ### Desglose por nivel de gobierno
 
@@ -20,31 +20,31 @@
 |---|---:|---:|---:|
 | Alcaldía de Cali | 20 | $ 41.968.193.789 | 212 |
 | Gobernación del Valle | 11 | $ 14.148.165.515 | 73 |
-| Otras entidades del Valle | 221 | $ 70.942.314.714 | 438 |
+| Otras entidades del Valle | 223 | $ 70.966.501.089 | 438 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 5159 | $ 298.297.681.146 | 4661 |
-| Gobernación del Valle | 5762 | $ 131.797.916.382 | 5464 |
-| Descentralizadas de Cali | 326 | $ 157.889.742.421 | 1423 |
-| Descentralizadas de la Gobernación | 2364 | $ 59.694.352.488 | 3867 |
+| Alcaldía de Cali | 5313 | $ 300.933.282.129 | 4757 |
+| Gobernación del Valle | 5807 | $ 132.973.656.382 | 5473 |
+| Descentralizadas de Cali | 329 | $ 157.940.511.421 | 1427 |
+| Descentralizadas de la Gobernación | 2530 | $ 60.872.390.143 | 3959 |
 | UNGRD | 4 | $ 146.817.067 | 334 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 259 contratos ($ 74.816.351.368) y 349 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 212 contratos ($ 198.515.722.283) y 347 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 261 contratos ($ 89.821.167.275) y 349 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 215 contratos ($ 198.815.354.369) y 350 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 203** (105 que suman en los indicadores, por $ 21.536.961.100).
+- **Relacionados con el sismo: 204** (105 que suman en los indicadores, por $ 21.536.961.100).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -65,7 +65,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-10-09 | ANTIOQUIA - ALCALDÍA MUNICIPIO DE VIGÍA DEL FUERTE | SUMINISTRO DE MATERIALES DE CONSTRUCCIoN DESTINADOS AL APOYO Y ATENCIoN DE LAS VIVIENDAS QUE PRESENTARON PeRDI | $ 289.095.625 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-10-09 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE ARGELIA | SUMINISTRO DE MATERIALES DE CONSTRUCCIoN PARA APOYAR EL MEJORAMIENTO DE LAS VIVIENDAS URBANAS Y RURALES DEL MU | $ 270.600.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-09-17 | NARIÑO - ALCALDÍA MUNICIPIO DE OLAYA HERRERA | CONSTRUCCION DE TRES AULAS EN LA INSTITUCION EDUCATIVA CALABAZAL;  PARA SUSTITUIR LAS AULAS AFECTADAS POR EL T | $ 269.983.604 | Selección Abreviada de Menor Cuantía (Ley 1150 de 2007) · La contratación de menor cuantía (Literal B) | Alta |
-| 2026-10-16 | CHOCÓ - ALCALDÍA MUNICIPIO DE UNION PANAMERICANA | SUMINISTRO DE MERCADOS; KITS DE ASEO; COLCHONES; COLCHONETAS; ZINC Y OTROS MATERIALES Y ELEMENTOS; NECESARIOS  | $ 261.697.250 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
+| 2026-08-11 | CHOCÓ - ALCALDÍA MUNICIPIO DE UNION PANAMERICANA | SUMINISTRO DE MERCADOS; KITS DE ASEO; COLCHONES; COLCHONETAS; ZINC Y OTROS MATERIALES Y ELEMENTOS; NECESARIOS  | $ 261.697.250 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-20 | TOLIMA - ALCALDÍA MUNICIPIO DE ROVIRA | CONTRATAR EL SUMINISTRO A MONTO AGOTABLE DE MATERIALES DE CONSTRUCCIoN PARA LA REHABILITACIoN; REPARACIoN Y RE | $ 250.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-09-08 | RISARALDA - ALCALDÍA MUNICIPIO DE MISTRATÓ | SUMINISTRO DE MATERIALES DE CONSTRUCCIoN PARA LA ATENCIoN DE LA EMERGENCIA Y APOYO A LAS FAMILIAS DAMNIFICADAS | $ 193.765.800 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-13 | CHOCÓ - ALCALDÍA MUNICIPIO DE ATRATO | ATENCION PSICOSOCIAL PARA LA RECUPERACION EMOCIONAL; EL FORTALECIMIENTO COMUNITARIO Y LA PROMOCION DE LA RESIL | $ 181.676.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
@@ -98,7 +98,7 @@ _Se revisaron 340 registros de contratacion de estas dos entidades en la ventana
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | 9 | $ 7.996.198.566 |
 | Secretaría de Hábitat e Infraestructura - Alcaldía de Tuluá | 2 | $ 5.299.818.848 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO | 1 | $ 5.000.000.000 |
-| CVC | 11 | $ 4.196.587.577 |
+| CVC | 12 | $ 4.205.773.952 |
 | MUNICIPIO DE CALIMA EL DARIEN VALLE | 6 | $ 3.008.053.619 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA | 2 | $ 2.849.451.216 |
 | GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA | 1 | $ 2.568.577.795 |
@@ -106,6 +106,87 @@ _Se revisaron 340 registros de contratacion de estas dos entidades en la ventana
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 | MUNICIPIO DE YUMBO VALLE | 10 | $ 1.913.036.283 |
 | Secretaría de Educación - Alcaldía de Tuluá | 3 | $ 1.834.915.455 |
+
+## Contratos nuevos (5 relacionados de 480 publicados)
+
+| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
+|---|---|---|---:|---|---|
+| 2026-10-17 | MUNICIPIO DE PEREIRA- OFICIAL | CONTRATACIÓN DE UNA EMPRESA DE SERVICIOS TEMPORALES PARA EL SUMINISTRO DE PERSONAL OPERATIVO EN MISIÓN PARA RE | $ 14.997.215.907 | SOLUSERVI S.A.S | Alta |
+| 2026-10-17 | AREA METROPOLITANA CENTRO OCCIDENTE | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA LA IMPLEMENTACIÓN DEL PLAN DE ASEGURAMIENTO DE LA CALIDAD INTEGRAL  | $ 17.500.000 | Silvia Abad Hernández | Alta |
+| 2026-10-19 | MUNICIPIO DE SEVILLA | PRESTAR EL SERVICIO DE HOSPEDAJE A LOS ORGANISMOS DE SOCORRO Y PERSONAL DE APOYO DE LA FUERZA PÚBLICA REQUERID | $ 15.000.000 | BLANCA MILENA OSPINA MORALES | Alta |
+| 2026-10-19 | CVC | CONTRATAR EL ERICIO INTEGRAL DE ATENCION DE EMERGENCIAS Y URGENCIAS BAJO LA MODALIDAD DE AREA PROTEGIDA Y TRAN | $ 9.186.375 | COOMEVA EXPERIENCIA MEDICA SAS | Media |
+| 2026-10-19 | AREA METROPOLITANA CENTRO OCCIDENTE | PRESTAR SERVICIOS PROFESIONALES PARA BRINDAR SOPORTE TÉCNICO Y ACOMPAÑAMIENTO A LA SUBDIRECCIÓN DE DESARROLLO  | $ 7.600.000 | Daniel Felipe Lozano Mosquera | Alta |
+
+## Procesos nuevos (1 relacionados de 244 publicados)
+
+| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
+|---|---|---|---:|---|---|
+| 2026-10-17 | AREA METROPOLITANA CENTRO OCCIDENTE | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA LA IMPLEMENTACIÓN DEL PLAN DE ASEGURAMIENTO DE LA CALIDAD INTEGRAL  | $ 17.500.000 | Contratación directa | Alta |
+
+## Modificaciones sobre registros ya conocidos
+
+| Fuente | Identificador | Campo | Antes | Ahora |
+|---|---|---|---|---|
+| contratos | CO1.PCCNTR.9997224 | valor_del_contrato | 12000000 | 18000000 |
+| contratos | CO1.PCCNTR.9997224 | estado_contrato | En ejecución | Modificado |
+| contratos | CO1.PCCNTR.9997224 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-11-30T00:00:00.000 |
+| contratos | CO1.PCCNTR.9997224 | dias_adicionados | 0 | 30 |
+| contratos | CO1.PCCNTR.9997224 | valor_pendiente_de_pago | 12000000 | 18000000 |
+| contratos | CO1.PCCNTR.10067910 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10067539 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10067539 | nombre_supervisor | No definido | CARLOS ALBERTO PEREA MARTINEZ |
+| contratos | CO1.PCCNTR.10053294 | nombre_supervisor | No definido | TRABAJO SOCIAL VITERI YELA |
+| contratos | CO1.PCCNTR.10068764 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
+| contratos | CO1.PCCNTR.10077490 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10077490 | nombre_supervisor | No definido | CARLOS ALBERTO PEREA MARTINEZ |
+| contratos | CO1.PCCNTR.10059426 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10059426 | valor_pendiente_de_pago | 0 | 15400000 |
+| contratos | CO1.PCCNTR.10060237 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10081601 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10081601 | valor_pendiente_de_pago | 0 | 10000000 |
+| contratos | CO1.PCCNTR.10060229 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10060814 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10049317 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10049317 | nombre_supervisor | No definido | Rosa Ana Angarita Rojas |
+| contratos | CO1.PCCNTR.10056016 | nombre_supervisor | No definido | MERCEDES PAREDES BRAVO |
+| contratos | CO1.PCCNTR.9999915 | valor_del_contrato | 10000000 | 15000000 |
+| contratos | CO1.PCCNTR.9999915 | estado_contrato | En ejecución | Modificado |
+| contratos | CO1.PCCNTR.9999915 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-11-30T00:00:00.000 |
+| contratos | CO1.PCCNTR.9999915 | dias_adicionados | 0 | 30 |
+| contratos | CO1.PCCNTR.9999915 | valor_pendiente_de_pago | 10000000 | 15000000 |
+| contratos | CO1.PCCNTR.10049821 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10049821 | nombre_supervisor | No definido | ANGELICA MARIA BETANCUR AYALA |
+| contratos | CO1.PCCNTR.10059616 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9997731 | valor_del_contrato | 12000000 | 18000000 |
+| contratos | CO1.PCCNTR.9997731 | estado_contrato | En ejecución | Modificado |
+| contratos | CO1.PCCNTR.9997731 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-11-30T00:00:00.000 |
+| contratos | CO1.PCCNTR.9997731 | dias_adicionados | 0 | 30 |
+| contratos | CO1.PCCNTR.9997731 | valor_pendiente_de_pago | 12000000 | 18000000 |
+| contratos | CO1.PCCNTR.10053403 | nombre_supervisor | ANA KARINA MINA | Guillermo Adolfo Arango Rodríguez |
+| contratos | CO1.PCCNTR.10056754 | nombre_supervisor | No definido | SANDRA PATRICIA MISNAZA CASTRILLON |
+| contratos | CO1.PCCNTR.10060426 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10056415 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10056415 | nombre_supervisor | No definido | HECTOR ANDRES BETANCUR CANO |
+| contratos | CO1.PCCNTR.10060701 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10066117 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10056098 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10056098 | nombre_supervisor | No definido | Rosa Ana Angarita Rojas |
+| contratos | CO1.PCCNTR.10066766 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10066766 | nombre_supervisor | No definido | CARLOS ALBERTO PEREA MARTINEZ |
+| contratos | CO1.PCCNTR.9984202 | estado_contrato | Modificado | Cerrado |
+| contratos | CO1.PCCNTR.10067728 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10073999 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10059613 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10058236 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
+| contratos | CO1.PCCNTR.10067279 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10067279 | nombre_supervisor | No definido | ALVARO VALENCIA CHAMARRA |
+| contratos | CO1.PCCNTR.10077329 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10077329 | nombre_supervisor | No definido | CARLOS ALBERTO PEREA MARTINEZ |
+| contratos | CO1.PCCNTR.9981470 | valor_pendiente_de_pago | 5000000 | 7500000 |
+| contratos | CO1.PCCNTR.10045606 | nombre_supervisor | JUAN CARLOS BORRERO LOPEZ | Crhistian Mejía Orrego |
+| contratos | CO1.PCCNTR.10060326 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10060073 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10067729 | estado_contrato | Aprobado | En ejecución |
 
 ## Alertas
 
