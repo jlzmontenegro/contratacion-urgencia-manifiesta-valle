@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-21 07:54  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-21 13:34  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -10,8 +10,8 @@
 | Valor de esos contratos | $ 132.039.357.002 |
 | Procesos relacionados (alta + media) | 832 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 234 |
-| Modificaciones detectadas | 79 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 2 |
 | Registros revisados en total | 55035 |
 
 ### Desglose por nivel de gobierno
@@ -44,7 +44,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 204** (105 que suman en los indicadores, por $ 21.536.961.100).
+- **Relacionados con el sismo: 207** (105 que suman en los indicadores, por $ 21.536.961.100).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -79,7 +79,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-08-13 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE EL CAIRO | TRANSFERENCIA DE LOS RECURSOS DISPONIBLES POR CONCEPTO DE SOBRETASA BOMBERIL AL BENEMeRITO CUERPO DE BOMBEROS  | $ 108.306.058 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-19 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE BOLÍVAR | AUNAR ESFUERZOS ENTRE EL MUNICIPIO DE BOLiVAR VALLE DEL CAUCA Y LA JUNTA DE ACCIoN COMUNAL DEL CORREGIMIENTO D | $ 97.074.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Media |
 
-_No se listan 123 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
+_No se listan 129 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
 
 ## UNGRD y FNGRD · NIT 900.478.966-6 y 900.978.341
 
@@ -107,85 +107,12 @@ _Se revisaron 340 registros de contratacion de estas dos entidades en la ventana
 | MUNICIPIO DE YUMBO VALLE | 10 | $ 1.913.036.283 |
 | Secretaría de Educación - Alcaldía de Tuluá | 3 | $ 1.834.915.455 |
 
-## Procesos nuevos (10 relacionados de 234 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-10-19 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | PRESTAR EL SERVICIO INTEGRAL DE TRANSPORTE MARÍTIMO Y FLUVIAL DE PERSONAL Y CARGA PARA LA ATENCIÓN DE LA EMERG | $ 490.000.000 | Contratación directa | Alta |
-| 2026-10-19 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | CONTRATAR EL SERVICIO ESPECIALIZADO DE ALQUILER DE GRÚAS PARA IZAJE DE ELEMENTOS DE ESTRUCTURAS COLAPSADAS  PR | $ 301.264.792 | Contratación directa | Alta |
-| 2026-10-19 | MUNICIPIO DE TORO | ADQUIRIR Y SUMINISTRAR MATERIALES, ELEMENTOS E INSUMOS NECESARIOS PARA LA ATENCION HUMANITARIA DE EMERGENCIA,  | $ 100.000.000 | Contratación directa | Alta |
-| 2026-10-19 | MUNICIPIO DE TORO | DESCOLMATACIÓN Y LIMPIEZA PARA EL MEJORAMIENTO DE LA CAPACIDAD HIDRÁULICA EN TRAMOS CRÍTICOS IDENTIFICADOS EN  | $ 99.190.110 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-10-19 | MUNICIPIO DE TIMBIO | No definido | $ 48.000.000 | Mínima cuantía | Alta |
-| 2026-10-19 | MUNICIPIO DE EL DOVIO | REALIZAR EL ESTUDIO DE VIABILIDAD PARA EL APROVECHAMIENTO Y TRATAMIENTO DE RESIDUOS SÓLIDOS, ASÍ COMO LA ACTUA | $ 35.000.000 | Mínima cuantía | Media |
-| 2026-10-19 | INSTITUCION EDUCATIVA DE SANTA LIBRADA | Ejecutar, a todo costo, las obras de reparación y adecuación de la infraestructura física de la sede principal | $ 27.965.000 | Contratación régimen especial | Alta |
-| 2026-10-19 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestacion de servicios profesionales para brindar apoyo tecnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-19 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión para brindar apoyo técnico en las actividades requeridas por la  | $ 10.653.000 | Contratación directa | Alta |
-| 2026-10-19 | AREA METROPOLITANA CENTRO OCCIDENTE | PRESTAR SERVICIOS PROFESIONALES PARA BRINDAR SOPORTE TÉCNICO Y ACOMPAÑAMIENTO A LA SUBDIRECCIÓN DE DESARROLLO  | $ 7.600.000 | Contratación directa | Alta |
-
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| procesos | CO1.REQ.11133810 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11133810 | fecha_adjudicacion |  | 2026-10-19T00:00:00.000 |
-| procesos | CO1.REQ.11133810 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11125293 | valor_total_adjudicacion | 0 | 50000000 |
-| procesos | CO1.REQ.11125293 | adjudicado | No | Si |
-| procesos | CO1.REQ.11218783 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11184025 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11115719 | valor_total_adjudicacion | 0 | 174951513 |
-| procesos | CO1.REQ.11115719 | adjudicado | No | Si |
-| procesos | CO1.REQ.10948613 | fecha_adjudicacion |  | 2026-10-19T00:00:00.000 |
-| procesos | CO1.REQ.11204119 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11225336 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11225735 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11225734 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11196402 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11225732 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11210850 | valor_total_adjudicacion | 0 | 196003557 |
-| procesos | CO1.REQ.11210850 | adjudicado | No | Si |
-| procesos | CO1.REQ.11210850 | fecha_adjudicacion |  | 2026-10-19T00:00:00.000 |
-| procesos | CO1.REQ.11171772 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11171772 | valor_total_adjudicacion | 0 | 359898245 |
-| procesos | CO1.REQ.11171772 | adjudicado | No | Si |
-| procesos | CO1.REQ.11171772 | nombre_del_proveedor | No Definido | MAJORI |
-| procesos | CO1.REQ.11171772 | fecha_adjudicacion |  | 2026-10-19T00:00:00.000 |
-| procesos | CO1.REQ.11171772 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11128606 | valor_total_adjudicacion | 0 | 12376000 |
-| procesos | CO1.REQ.11128606 | adjudicado | No | Si |
-| procesos | CO1.REQ.11128606 | fecha_adjudicacion |  | 2026-10-19T00:00:00.000 |
-| procesos | CO1.REQ.11139290 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11084778 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11084778 | fecha_adjudicacion |  | 2026-10-19T00:00:00.000 |
-| procesos | CO1.REQ.11084778 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.10874526 | nombre_del_proveedor | Scientific Products SAS | REDES AMBIENTALES LTDA. |
-| procesos | CO1.REQ.11164797 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11148469 | valor_total_adjudicacion | 0 | 4750000 |
-| procesos | CO1.REQ.11148469 | adjudicado | No | Si |
-| procesos | CO1.REQ.11148469 | fecha_adjudicacion |  | 2026-10-19T00:00:00.000 |
-| procesos | CO1.REQ.11204042 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11087902 | valor_total_adjudicacion | 446629886500 | 446629886 |
-| procesos | CO1.REQ.11087902 | fecha_adjudicacion | 2026-10-14T00:00:00.000 | 2026-10-19T00:00:00.000 |
-| procesos | CO1.REQ.11087902 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.10477831 | fecha_adjudicacion |  | 2026-09-30T00:00:00.000 |
-| procesos | CO1.REQ.10477831 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11195985 | estado_del_procedimiento | Abierto | Cancelado |
-| procesos | CO1.REQ.11207691 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11006005 | valor_total_adjudicacion | 120401487 | 96332468 |
-| procesos | CO1.REQ.11006005 | fecha_adjudicacion | 2026-09-29T00:00:00.000 |  |
-| procesos | CO1.REQ.10926380 | valor_total_adjudicacion | 90728694 | 72738869 |
-| procesos | CO1.REQ.10926380 | fecha_adjudicacion | 2026-10-01T00:00:00.000 |  |
-| procesos | CO1.REQ.11198540 | valor_total_adjudicacion | 0 | 168810628 |
-| procesos | CO1.REQ.11198540 | adjudicado | No | Si |
-| procesos | CO1.REQ.11173119 | estado_del_procedimiento | Evaluación | Seleccionado |
-| procesos | CO1.REQ.11173119 | valor_total_adjudicacion | 0 | 1394610564 |
-| procesos | CO1.REQ.11173119 | adjudicado | No | Si |
-| procesos | CO1.REQ.11173119 | nombre_del_proveedor | No Definido | FONDO MIXTO PARA LA PROMOCION DEL DEPORT |
-| procesos | CO1.REQ.11173119 | fecha_adjudicacion |  | 2026-10-19T00:00:00.000 |
-| procesos | CO1.REQ.11209109 | estado_del_procedimiento | Evaluación | Abierto |
-| procesos | CO1.REQ.11207840 | estado_del_procedimiento | Evaluación | Cancelado |
-| procesos | CO1.REQ.11171827 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11171827 | valor_total_adjudicacion | 0 | 43000000 |
+| secop1 | 26-13-14817077 | estado_del_proceso | Convocado | Terminado Anormalmente después de Convoc |
+| secop1 | 26-13-14815775 | estado_del_proceso | Convocado | Terminado Anormalmente después de Convoc |
 
 ## Alertas
 
