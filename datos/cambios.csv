@@ -255263,3 +255263,82 @@
 2026-10-20 18:46:56,secop1,26-11-14782654-13733084,VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE RIOFRÍO,fecha_fin_ejec_contrato,2026-11-24T00:00:00.000,2026-11-28T00:00:00.000,Contexto
 2026-10-20 18:46:56,secop1,26-12-14808134-13733011,VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE RIOFRÍO,fecha_fin_ejec_contrato,2026-12-28T00:00:00.000,2026-12-29T00:00:00.000,Alta
 2026-10-20 18:46:56,secop1,26-13-14816347-13745364,VICHADA - INSTITUTO DEPARTAMENTAL DE LA RECREACIÓN Y EL DEPORTE DE VICHADA - INDEVI,fecha_fin_ejec_contrato,2026-10-29T00:00:00.000,2026-10-26T00:00:00.000,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11133810,DEPARTAMENTO DEL VALLE DEL CAUCA - UNIDAD ADMINISTRATIVA ESPECIAL DE IMPUESTOS RENTAS Y GESTION TRIBUTARIA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11133810,DEPARTAMENTO DEL VALLE DEL CAUCA - UNIDAD ADMINISTRATIVA ESPECIAL DE IMPUESTOS RENTAS Y GESTION TRIBUTARIA,fecha_adjudicacion,,2026-10-19T00:00:00.000,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11133810,DEPARTAMENTO DEL VALLE DEL CAUCA - UNIDAD ADMINISTRATIVA ESPECIAL DE IMPUESTOS RENTAS Y GESTION TRIBUTARIA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11125293,DEPARTAMENTO DEL VALLE DEL CAUCA - UNIDAD ADMINISTRATIVA ESPECIAL DE IMPUESTOS RENTAS Y GESTION TRIBUTARIA,valor_total_adjudicacion,0,50000000,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11125293,DEPARTAMENTO DEL VALLE DEL CAUCA - UNIDAD ADMINISTRATIVA ESPECIAL DE IMPUESTOS RENTAS Y GESTION TRIBUTARIA,adjudicado,No,Si,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11218783,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11184025,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11115719,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA,valor_total_adjudicacion,0,174951513,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11115719,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA,adjudicado,No,Si,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.10948613,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,fecha_adjudicacion,,2026-10-19T00:00:00.000,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11204119,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11225336,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11225735,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11225734,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11196402,SECRETARIA DE EDUCACION DE CALI,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11225732,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11210850,ALCALDIA MUNICIPAL DE YOTOCO,valor_total_adjudicacion,0,196003557,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11210850,ALCALDIA MUNICIPAL DE YOTOCO,adjudicado,No,Si,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11210850,ALCALDIA MUNICIPAL DE YOTOCO,fecha_adjudicacion,,2026-10-19T00:00:00.000,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11171772,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11171772,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,valor_total_adjudicacion,0,359898245,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11171772,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,adjudicado,No,Si,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11171772,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,nombre_del_proveedor,No Definido,MAJORI,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11171772,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,fecha_adjudicacion,,2026-10-19T00:00:00.000,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11171772,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11128606,PERSONERIA MUNICIPAL DE TULUA,valor_total_adjudicacion,0,12376000,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11128606,PERSONERIA MUNICIPAL DE TULUA,adjudicado,No,Si,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11128606,PERSONERIA MUNICIPAL DE TULUA,fecha_adjudicacion,,2026-10-19T00:00:00.000,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11139290,EMAVI,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11084778,CVC,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11084778,CVC,fecha_adjudicacion,,2026-10-19T00:00:00.000,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11084778,CVC,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.10874526,CVC,nombre_del_proveedor,Scientific Products SAS,REDES AMBIENTALES LTDA.,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11164797,MUNICIPIO DE TORO,estado_del_procedimiento,Publicado,Evaluación,Media
+2026-10-21 07:54:28,procesos,CO1.REQ.11148469,PERSONERIA MUNICIPAL DE TULUA,valor_total_adjudicacion,0,4750000,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11148469,PERSONERIA MUNICIPAL DE TULUA,adjudicado,No,Si,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11148469,PERSONERIA MUNICIPAL DE TULUA,fecha_adjudicacion,,2026-10-19T00:00:00.000,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11204042,SENA REGIONAL VALLE Grupo Administrativo CTA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11087902,ALCALDIA MUNICIPAL DE BUGA,valor_total_adjudicacion,446629886500,446629886,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11087902,ALCALDIA MUNICIPAL DE BUGA,fecha_adjudicacion,2026-10-14T00:00:00.000,2026-10-19T00:00:00.000,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11087902,ALCALDIA MUNICIPAL DE BUGA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.10477831,ALCALDIA MUNICIPIO DE JAMUNDI,fecha_adjudicacion,,2026-09-30T00:00:00.000,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.10477831,ALCALDIA MUNICIPIO DE JAMUNDI,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11195985,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Abierto,Cancelado,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11207691,CONTRALORIA DISTRITAL DE BUENAVENTURA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11006005,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,valor_total_adjudicacion,120401487,96332468,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11006005,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,fecha_adjudicacion,2026-09-29T00:00:00.000,,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.10926380,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,valor_total_adjudicacion,90728694,72738869,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.10926380,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,fecha_adjudicacion,2026-10-01T00:00:00.000,,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11198540,MUNICIPIO DE PRADERA,valor_total_adjudicacion,0,168810628,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11198540,MUNICIPIO DE PRADERA,adjudicado,No,Si,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11173119,MUNICIPIO DE FLORIDA,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11173119,MUNICIPIO DE FLORIDA,valor_total_adjudicacion,0,1394610564,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11173119,MUNICIPIO DE FLORIDA,adjudicado,No,Si,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11173119,MUNICIPIO DE FLORIDA,nombre_del_proveedor,No Definido,"FONDO MIXTO PARA LA PROMOCION DEL DEPORTE, LA CULTURA, EL DESARROLLO INTEGRAL Y LA GESTION SOCIAL",Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11173119,MUNICIPIO DE FLORIDA,fecha_adjudicacion,,2026-10-19T00:00:00.000,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11209109,REGION ADMINISTRATIVA DE PLANIFICACION RAP PACIFICO,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11207840,SENA REGIONAL VALLE Grupo Administrativo CTA,estado_del_procedimiento,Evaluación,Cancelado,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11171827,REGION ADMINISTRATIVA DE PLANIFICACION RAP PACIFICO,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11171827,REGION ADMINISTRATIVA DE PLANIFICACION RAP PACIFICO,valor_total_adjudicacion,0,43000000,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11171827,REGION ADMINISTRATIVA DE PLANIFICACION RAP PACIFICO,adjudicado,No,Si,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11171827,REGION ADMINISTRATIVA DE PLANIFICACION RAP PACIFICO,nombre_del_proveedor,No Definido,Paola Andrea Hadad Valencia,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11171827,REGION ADMINISTRATIVA DE PLANIFICACION RAP PACIFICO,fecha_adjudicacion,,2026-10-19T00:00:00.000,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11144453,MUNICIPIO DE SAN JUAN BAUTISTA DE GUACARI2,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11144453,MUNICIPIO DE SAN JUAN BAUTISTA DE GUACARI2,fecha_adjudicacion,,2026-10-19T00:00:00.000,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11221313,MUNICIPIO DE DAGUA,estado_del_procedimiento,En aprobación,Publicado,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11221313,MUNICIPIO DE DAGUA,fase,,Manifestación de interés (Menor Cuantía),Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11221313,MUNICIPIO DE DAGUA,estado_resumen,No Definido,Manifestación de interés (Menor Cuantía),Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11179585,MUNICIPIO DE LA UNION,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11169273,MUNICIPIO DE EL CERRITO.,valor_total_adjudicacion,0,30294000,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11169273,MUNICIPIO DE EL CERRITO.,adjudicado,No,Si,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11169273,MUNICIPIO DE EL CERRITO.,fecha_adjudicacion,,2026-10-19T00:00:00.000,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11222478,ALCALDIA LA CUMBRE,valor_total_adjudicacion,0,23100000,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11222478,ALCALDIA LA CUMBRE,adjudicado,No,Si,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11222478,ALCALDIA LA CUMBRE,fecha_adjudicacion,,2026-10-19T00:00:00.000,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11155536,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Evaluación,Publicado,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11215843,MUNICIPIO DE FLORIDA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11221659,INSTITUCION EDUCATIVA GABRIEL GARCIA MARQUEZ//,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-21 07:54:28,procesos,CO1.REQ.11190281,ALCALDIA MUNICIPIO DE CALARCA,estado_del_procedimiento,Publicado,Evaluación,Alta

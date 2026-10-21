@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-20 18:46  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-21 07:54  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -8,37 +8,37 @@
 |---|---|
 | Contratos relacionados (alta + media) | 293 |
 | Valor de esos contratos | $ 132.039.357.002 |
-| Procesos relacionados (alta + media) | 824 |
-| Contratos nuevos en esta ejecucion | 480 |
-| Procesos nuevos en esta ejecucion | 244 |
-| Modificaciones detectadas | 719 |
-| Registros revisados en total | 54802 |
+| Procesos relacionados (alta + media) | 832 |
+| Contratos nuevos en esta ejecucion | 0 |
+| Procesos nuevos en esta ejecucion | 234 |
+| Modificaciones detectadas | 79 |
+| Registros revisados en total | 55035 |
 
 ### Desglose por nivel de gobierno
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 20 | $ 41.968.193.789 | 212 |
+| Alcaldía de Cali | 20 | $ 41.968.193.789 | 215 |
 | Gobernación del Valle | 11 | $ 14.148.165.515 | 73 |
-| Otras entidades del Valle | 223 | $ 70.966.501.089 | 438 |
+| Otras entidades del Valle | 223 | $ 70.966.501.089 | 443 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 5313 | $ 300.933.282.129 | 4757 |
-| Gobernación del Valle | 5807 | $ 132.973.656.382 | 5473 |
-| Descentralizadas de Cali | 329 | $ 157.940.511.421 | 1427 |
-| Descentralizadas de la Gobernación | 2530 | $ 60.872.390.143 | 3959 |
+| Alcaldía de Cali | 5313 | $ 300.933.282.129 | 4838 |
+| Gobernación del Valle | 5807 | $ 132.973.656.382 | 5496 |
+| Descentralizadas de Cali | 329 | $ 157.940.511.421 | 1429 |
+| Descentralizadas de la Gobernación | 2530 | $ 60.872.390.143 | 4000 |
 | UNGRD | 4 | $ 146.817.067 | 334 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 261 contratos ($ 89.821.167.275) y 349 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 215 contratos ($ 198.815.354.369) y 350 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 261 contratos ($ 89.821.167.275) y 351 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 215 contratos ($ 198.815.354.369) y 354 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
@@ -107,86 +107,85 @@ _Se revisaron 340 registros de contratacion de estas dos entidades en la ventana
 | MUNICIPIO DE YUMBO VALLE | 10 | $ 1.913.036.283 |
 | Secretaría de Educación - Alcaldía de Tuluá | 3 | $ 1.834.915.455 |
 
-## Contratos nuevos (5 relacionados de 480 publicados)
-
-| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
-|---|---|---|---:|---|---|
-| 2026-10-17 | MUNICIPIO DE PEREIRA- OFICIAL | CONTRATACIÓN DE UNA EMPRESA DE SERVICIOS TEMPORALES PARA EL SUMINISTRO DE PERSONAL OPERATIVO EN MISIÓN PARA RE | $ 14.997.215.907 | SOLUSERVI S.A.S | Alta |
-| 2026-10-17 | AREA METROPOLITANA CENTRO OCCIDENTE | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA LA IMPLEMENTACIÓN DEL PLAN DE ASEGURAMIENTO DE LA CALIDAD INTEGRAL  | $ 17.500.000 | Silvia Abad Hernández | Alta |
-| 2026-10-19 | MUNICIPIO DE SEVILLA | PRESTAR EL SERVICIO DE HOSPEDAJE A LOS ORGANISMOS DE SOCORRO Y PERSONAL DE APOYO DE LA FUERZA PÚBLICA REQUERID | $ 15.000.000 | BLANCA MILENA OSPINA MORALES | Alta |
-| 2026-10-19 | CVC | CONTRATAR EL ERICIO INTEGRAL DE ATENCION DE EMERGENCIAS Y URGENCIAS BAJO LA MODALIDAD DE AREA PROTEGIDA Y TRAN | $ 9.186.375 | COOMEVA EXPERIENCIA MEDICA SAS | Media |
-| 2026-10-19 | AREA METROPOLITANA CENTRO OCCIDENTE | PRESTAR SERVICIOS PROFESIONALES PARA BRINDAR SOPORTE TÉCNICO Y ACOMPAÑAMIENTO A LA SUBDIRECCIÓN DE DESARROLLO  | $ 7.600.000 | Daniel Felipe Lozano Mosquera | Alta |
-
-## Procesos nuevos (1 relacionados de 244 publicados)
+## Procesos nuevos (10 relacionados de 234 publicados)
 
 | Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
 |---|---|---|---:|---|---|
-| 2026-10-17 | AREA METROPOLITANA CENTRO OCCIDENTE | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA LA IMPLEMENTACIÓN DEL PLAN DE ASEGURAMIENTO DE LA CALIDAD INTEGRAL  | $ 17.500.000 | Contratación directa | Alta |
+| 2026-10-19 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | PRESTAR EL SERVICIO INTEGRAL DE TRANSPORTE MARÍTIMO Y FLUVIAL DE PERSONAL Y CARGA PARA LA ATENCIÓN DE LA EMERG | $ 490.000.000 | Contratación directa | Alta |
+| 2026-10-19 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | CONTRATAR EL SERVICIO ESPECIALIZADO DE ALQUILER DE GRÚAS PARA IZAJE DE ELEMENTOS DE ESTRUCTURAS COLAPSADAS  PR | $ 301.264.792 | Contratación directa | Alta |
+| 2026-10-19 | MUNICIPIO DE TORO | ADQUIRIR Y SUMINISTRAR MATERIALES, ELEMENTOS E INSUMOS NECESARIOS PARA LA ATENCION HUMANITARIA DE EMERGENCIA,  | $ 100.000.000 | Contratación directa | Alta |
+| 2026-10-19 | MUNICIPIO DE TORO | DESCOLMATACIÓN Y LIMPIEZA PARA EL MEJORAMIENTO DE LA CAPACIDAD HIDRÁULICA EN TRAMOS CRÍTICOS IDENTIFICADOS EN  | $ 99.190.110 | Selección Abreviada de Menor Cuantía | Media |
+| 2026-10-19 | MUNICIPIO DE TIMBIO | No definido | $ 48.000.000 | Mínima cuantía | Alta |
+| 2026-10-19 | MUNICIPIO DE EL DOVIO | REALIZAR EL ESTUDIO DE VIABILIDAD PARA EL APROVECHAMIENTO Y TRATAMIENTO DE RESIDUOS SÓLIDOS, ASÍ COMO LA ACTUA | $ 35.000.000 | Mínima cuantía | Media |
+| 2026-10-19 | INSTITUCION EDUCATIVA DE SANTA LIBRADA | Ejecutar, a todo costo, las obras de reparación y adecuación de la infraestructura física de la sede principal | $ 27.965.000 | Contratación régimen especial | Alta |
+| 2026-10-19 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestacion de servicios profesionales para brindar apoyo tecnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
+| 2026-10-19 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión para brindar apoyo técnico en las actividades requeridas por la  | $ 10.653.000 | Contratación directa | Alta |
+| 2026-10-19 | AREA METROPOLITANA CENTRO OCCIDENTE | PRESTAR SERVICIOS PROFESIONALES PARA BRINDAR SOPORTE TÉCNICO Y ACOMPAÑAMIENTO A LA SUBDIRECCIÓN DE DESARROLLO  | $ 7.600.000 | Contratación directa | Alta |
 
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| contratos | CO1.PCCNTR.9997224 | valor_del_contrato | 12000000 | 18000000 |
-| contratos | CO1.PCCNTR.9997224 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9997224 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-11-30T00:00:00.000 |
-| contratos | CO1.PCCNTR.9997224 | dias_adicionados | 0 | 30 |
-| contratos | CO1.PCCNTR.9997224 | valor_pendiente_de_pago | 12000000 | 18000000 |
-| contratos | CO1.PCCNTR.10067910 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10067539 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10067539 | nombre_supervisor | No definido | CARLOS ALBERTO PEREA MARTINEZ |
-| contratos | CO1.PCCNTR.10053294 | nombre_supervisor | No definido | TRABAJO SOCIAL VITERI YELA |
-| contratos | CO1.PCCNTR.10068764 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
-| contratos | CO1.PCCNTR.10077490 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10077490 | nombre_supervisor | No definido | CARLOS ALBERTO PEREA MARTINEZ |
-| contratos | CO1.PCCNTR.10059426 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10059426 | valor_pendiente_de_pago | 0 | 15400000 |
-| contratos | CO1.PCCNTR.10060237 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10081601 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10081601 | valor_pendiente_de_pago | 0 | 10000000 |
-| contratos | CO1.PCCNTR.10060229 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10060814 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10049317 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10049317 | nombre_supervisor | No definido | Rosa Ana Angarita Rojas |
-| contratos | CO1.PCCNTR.10056016 | nombre_supervisor | No definido | MERCEDES PAREDES BRAVO |
-| contratos | CO1.PCCNTR.9999915 | valor_del_contrato | 10000000 | 15000000 |
-| contratos | CO1.PCCNTR.9999915 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9999915 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-11-30T00:00:00.000 |
-| contratos | CO1.PCCNTR.9999915 | dias_adicionados | 0 | 30 |
-| contratos | CO1.PCCNTR.9999915 | valor_pendiente_de_pago | 10000000 | 15000000 |
-| contratos | CO1.PCCNTR.10049821 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10049821 | nombre_supervisor | No definido | ANGELICA MARIA BETANCUR AYALA |
-| contratos | CO1.PCCNTR.10059616 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9997731 | valor_del_contrato | 12000000 | 18000000 |
-| contratos | CO1.PCCNTR.9997731 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9997731 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-11-30T00:00:00.000 |
-| contratos | CO1.PCCNTR.9997731 | dias_adicionados | 0 | 30 |
-| contratos | CO1.PCCNTR.9997731 | valor_pendiente_de_pago | 12000000 | 18000000 |
-| contratos | CO1.PCCNTR.10053403 | nombre_supervisor | ANA KARINA MINA | Guillermo Adolfo Arango Rodríguez |
-| contratos | CO1.PCCNTR.10056754 | nombre_supervisor | No definido | SANDRA PATRICIA MISNAZA CASTRILLON |
-| contratos | CO1.PCCNTR.10060426 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10056415 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10056415 | nombre_supervisor | No definido | HECTOR ANDRES BETANCUR CANO |
-| contratos | CO1.PCCNTR.10060701 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10066117 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10056098 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10056098 | nombre_supervisor | No definido | Rosa Ana Angarita Rojas |
-| contratos | CO1.PCCNTR.10066766 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10066766 | nombre_supervisor | No definido | CARLOS ALBERTO PEREA MARTINEZ |
-| contratos | CO1.PCCNTR.9984202 | estado_contrato | Modificado | Cerrado |
-| contratos | CO1.PCCNTR.10067728 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10073999 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10059613 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10058236 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
-| contratos | CO1.PCCNTR.10067279 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10067279 | nombre_supervisor | No definido | ALVARO VALENCIA CHAMARRA |
-| contratos | CO1.PCCNTR.10077329 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10077329 | nombre_supervisor | No definido | CARLOS ALBERTO PEREA MARTINEZ |
-| contratos | CO1.PCCNTR.9981470 | valor_pendiente_de_pago | 5000000 | 7500000 |
-| contratos | CO1.PCCNTR.10045606 | nombre_supervisor | JUAN CARLOS BORRERO LOPEZ | Crhistian Mejía Orrego |
-| contratos | CO1.PCCNTR.10060326 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10060073 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10067729 | estado_contrato | Aprobado | En ejecución |
+| procesos | CO1.REQ.11133810 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.11133810 | fecha_adjudicacion |  | 2026-10-19T00:00:00.000 |
+| procesos | CO1.REQ.11133810 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11125293 | valor_total_adjudicacion | 0 | 50000000 |
+| procesos | CO1.REQ.11125293 | adjudicado | No | Si |
+| procesos | CO1.REQ.11218783 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11184025 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11115719 | valor_total_adjudicacion | 0 | 174951513 |
+| procesos | CO1.REQ.11115719 | adjudicado | No | Si |
+| procesos | CO1.REQ.10948613 | fecha_adjudicacion |  | 2026-10-19T00:00:00.000 |
+| procesos | CO1.REQ.11204119 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11225336 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11225735 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11225734 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11196402 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11225732 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11210850 | valor_total_adjudicacion | 0 | 196003557 |
+| procesos | CO1.REQ.11210850 | adjudicado | No | Si |
+| procesos | CO1.REQ.11210850 | fecha_adjudicacion |  | 2026-10-19T00:00:00.000 |
+| procesos | CO1.REQ.11171772 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.11171772 | valor_total_adjudicacion | 0 | 359898245 |
+| procesos | CO1.REQ.11171772 | adjudicado | No | Si |
+| procesos | CO1.REQ.11171772 | nombre_del_proveedor | No Definido | MAJORI |
+| procesos | CO1.REQ.11171772 | fecha_adjudicacion |  | 2026-10-19T00:00:00.000 |
+| procesos | CO1.REQ.11171772 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11128606 | valor_total_adjudicacion | 0 | 12376000 |
+| procesos | CO1.REQ.11128606 | adjudicado | No | Si |
+| procesos | CO1.REQ.11128606 | fecha_adjudicacion |  | 2026-10-19T00:00:00.000 |
+| procesos | CO1.REQ.11139290 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11084778 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.11084778 | fecha_adjudicacion |  | 2026-10-19T00:00:00.000 |
+| procesos | CO1.REQ.11084778 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.10874526 | nombre_del_proveedor | Scientific Products SAS | REDES AMBIENTALES LTDA. |
+| procesos | CO1.REQ.11164797 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11148469 | valor_total_adjudicacion | 0 | 4750000 |
+| procesos | CO1.REQ.11148469 | adjudicado | No | Si |
+| procesos | CO1.REQ.11148469 | fecha_adjudicacion |  | 2026-10-19T00:00:00.000 |
+| procesos | CO1.REQ.11204042 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11087902 | valor_total_adjudicacion | 446629886500 | 446629886 |
+| procesos | CO1.REQ.11087902 | fecha_adjudicacion | 2026-10-14T00:00:00.000 | 2026-10-19T00:00:00.000 |
+| procesos | CO1.REQ.11087902 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.10477831 | fecha_adjudicacion |  | 2026-09-30T00:00:00.000 |
+| procesos | CO1.REQ.10477831 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11195985 | estado_del_procedimiento | Abierto | Cancelado |
+| procesos | CO1.REQ.11207691 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.11006005 | valor_total_adjudicacion | 120401487 | 96332468 |
+| procesos | CO1.REQ.11006005 | fecha_adjudicacion | 2026-09-29T00:00:00.000 |  |
+| procesos | CO1.REQ.10926380 | valor_total_adjudicacion | 90728694 | 72738869 |
+| procesos | CO1.REQ.10926380 | fecha_adjudicacion | 2026-10-01T00:00:00.000 |  |
+| procesos | CO1.REQ.11198540 | valor_total_adjudicacion | 0 | 168810628 |
+| procesos | CO1.REQ.11198540 | adjudicado | No | Si |
+| procesos | CO1.REQ.11173119 | estado_del_procedimiento | Evaluación | Seleccionado |
+| procesos | CO1.REQ.11173119 | valor_total_adjudicacion | 0 | 1394610564 |
+| procesos | CO1.REQ.11173119 | adjudicado | No | Si |
+| procesos | CO1.REQ.11173119 | nombre_del_proveedor | No Definido | FONDO MIXTO PARA LA PROMOCION DEL DEPORT |
+| procesos | CO1.REQ.11173119 | fecha_adjudicacion |  | 2026-10-19T00:00:00.000 |
+| procesos | CO1.REQ.11209109 | estado_del_procedimiento | Evaluación | Abierto |
+| procesos | CO1.REQ.11207840 | estado_del_procedimiento | Evaluación | Cancelado |
+| procesos | CO1.REQ.11171827 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.11171827 | valor_total_adjudicacion | 0 | 43000000 |
 
 ## Alertas
 
