@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-22 07:56  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-22 13:29  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -9,9 +9,9 @@
 | Contratos relacionados (alta + media) | 301 |
 | Valor de esos contratos | $ 133.647.185.098 |
 | Procesos relacionados (alta + media) | 849 |
-| Contratos nuevos en esta ejecucion | 663 |
-| Procesos nuevos en esta ejecucion | 680 |
-| Modificaciones detectadas | 1289 |
+| Contratos nuevos en esta ejecucion | 0 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 56378 |
 
 ### Desglose por nivel de gobierno
@@ -106,123 +106,6 @@ _Se revisaron 341 registros de contratacion de estas dos entidades en la ventana
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 | MUNICIPIO DE YUMBO VALLE | 10 | $ 1.913.036.283 |
 | Secretaría de Educación - Alcaldía de Tuluá | 3 | $ 1.834.915.455 |
-
-## Contratos nuevos (10 relacionados de 663 publicados)
-
-| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
-|---|---|---|---:|---|---|
-| 2026-10-19 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | ADQUISICIÓN Y ENTREGA DE ASISTENCIA HUMANITARIA DE EMERGENCIA PARA ATENDER A LAS COMUNIDADES DAMNIFICADAS Y PO | $ 1.110.000.000 | FUNDETER | Alta |
-| 2026-10-19 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | CONTRATAR EL SERVICIO ESPECIALIZADO DE ALQUILER DE  GRÚAS PARA IZAJE DE ELEMENTOS DE ESTRUCTURAS  COLAPSADAS   | $ 301.264.792 | FERRO SAS | Alta |
-| 2026-10-19 | ALCALDIA MUNICIPAL DE CHINCHINA | CONTRATAR LOS SERVICIOS PARA LA EJECUCIÓN DE LAS ACTIVIDADES DE LIMPIEZA; RECOLECCIÓN; CARGUE; TRANSPORTE; REM | $ 150.000.000 | CONCRESCOR S.A.S | Alta |
-| 2026-10-14 | E.S.E HOSPITAL UNIVERSITARIO SAN JORGE DE PEREIRA | REALIZAR LA INTERVENTORÍA TÉCNICA; ADMINISTRATIVA; FINANCIERA; JURÍDICA Y AMBIENTAL AL CONTRATO CUYO OBJETO CO | $ 135.563.530 | APOLINAR FRANCO GIRALDO | Alta |
-| 2026-10-20 | ALCALDIA MUNICIPIO DE JAMUNDI | Aunar esfuerzos técnicos; humanos; administrativos y financieros para la ejecución de acciones preventivas; de | $ 80.000.000 | CRUZ ROJA COLOMBIANA SECCIONAL VALLE DEL CAUCA | Media |
-| 2026-10-19 | ALCALDIA MUNICIPAL DE SAN PEDRO VALLE DEL CAUCA | AUNAR ESFUERZOS TÉCNICOS; ADMINISTRATIVOS; HUMANOS Y FINANCIEROS PARA CONTRIBUIR A LA REACTIVACIÓN Y FORTALECI | $ 78.571.429 | CAMARA DE COMERCIO DE BUGA | Alta |
-| 2026-10-20 | ALCALDIA MUNICIPAL DE SAN PEDRO VALLE DEL CAUCA | PRESTACIÓN DE SERVICIOS PROFESIONALES DE INGENIERIA CIVIL PARA REALIZAR VISITAS TECNICAS DE INSPECCION OCULAR  | $ 8.000.000 | raul andres rodriguez garcia | Alta |
-| 2026-10-20 | ALCALDIA DE CAICEDONIA | Prestación de servicios para apoyar a gestión del riesgo para el desarrollo de acciones orientadas a la atenci | $ 7.560.000 | DIEGO ALEJANDRO LOPEZ AGUDELO | Alta |
-| 2026-10-20 | ALCALDÍA MUNICIPAL DE ROLDANILLO | PRESTACIÓN DE SERVICIOS DE APOYO TÉCNICO Y ACOMPAÑAMIENTO EN LA INSPECCIÓN OCULAR; EVALUACIÓN DE HABITABILIDAD | $ 7.100.000 | CARLOS ANDRES ZULUAGA CASTILLO | Alta |
-| 2026-10-20 | INSTITUTO COLOMBIANO DE BALLET CLÁSICO INCOLBALLET | ADQUISICIÓN DE KITS DE BAILE (COLCHONETAS DE YOGA Y SETS DE BANDAS ELÁSTICAS) PARA LOS ESTUDIANTES DE LA INSTI | $ 6.331.875 | DEPORTES Y ACCESORIOS S.A.S. | Media |
-
-## Procesos nuevos (32 relacionados de 680 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-10-20 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | CONTRATAR LA LOGÍSTICA INTEGRAL PARA EL DESARROLLO DE LOS CENSOS, EVALUACIONES, CARACTERIZACIÓN, VISITAS, INSP | $ 620.200.000 | Contratación directa | Alta |
-| 2026-10-20 | ALCALDIA MUNICIPAL DE YOTOCO | DESARROLLAR ACTIVIDADES DE MANTENIMIENTO, RECUPERACIÓN, REHABILITACIÓN Y ATENCIÓN DE EMERGENCIA EN LOS LUGARES | $ 443.000.000 | Contratación directa | Alta |
-| 2026-10-19 | ALCALDÍA MUNICIPIO DE PALMIRA | IMPLEMENTACIÓN DE ACCIONES DE MITIGACIÓN Y ADAPTACIÓN AL CAMBIO CLIMÁTICO EN EL MUNICIPIO DE PALMIRA | $ 395.000.000 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-10-20 | MUNICIPIO DE BUGALAGRANDE | PODA DE ÁRBOLES PARA LA MITIGACIÓN DEL RIESGO EN EL MUNICIPIO DE BUGALAGRANDE, VALLE DEL CAUCA | $ 161.999.996 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-10-19 | ALCALDIA MUNICIPIO DE JAMUNDI | Prestar los servicios de mantenimiento preventivo y/o correctivo incluyendo mano de obra, repuestos de los veh | $ 149.999.500 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-10-19 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | AUNAR ESFUERZOS TÉCNICOS, ADMINISTRATIVOS, FINANCIEROS Y SOCIALES ENTRE LA EMPRESA DE VIVIENDA DE ANTIOQUIA -  | $ 119.891.399 | Contratación régimen especial | Alta |
-| 2026-10-19 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | AUNAR ESFUERZOS TÉCNICOS, ADMINISTRATIVOS, FINANCIEROS Y SOCIALES ENTRE LA EMPRESA DE VIVIENDA DE ANTIOQUIA -  | $ 119.767.844 | Contratación régimen especial | Alta |
-| 2026-10-19 | MUNICIPIO DE DAGUA | REALIZAR LAS OBRAS DE INTERVENCIÓN ESTRUCTURAL Y ADECUACIÓN DEL PUENTE VEHICULAR DEL BARRIO LA GRAN COLOMBIA D | $ 63.642.182 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-10-20 | INSTITUCION EDUCATIVA RODRIGO LLOREDA CAICEDO | ACABADOS EN OBRA BLANCA. REINSTALACION VENTANERIA POST SISMO EN LA INSTITUCION ETNOEDUCATIVA RODRIGO LLOREDA C | $ 24.609.947 | Contratación régimen especial | Alta |
-| 2026-10-20 | INSTITUCION EDUCATIVA RODRIGO LLOREDA CAICEDO | DESMONTE, RETIRO DE MATERIALES Y ESCOMBROS ADECUACION DE OBRA GRIS DE LOS ESPACIOS AFECTADOS POR EL SISMO EN L | $ 24.203.743 | Contratación régimen especial | Alta |
-| 2026-10-19 | INSTITUCION EDUCATIVA ABSALON TORRES CAMACHO | SERVICIO DE ADECUACIÓN TECHO; Y PISO DE SALÓN PARA ESTUDIANTES EN LA SEDE PRINCIPAL | $ 22.949.576 | Contratación régimen especial | Media |
-| 2026-10-19 | NUESTRA SEÑORA DE CHIQUINQUIRA | REPARACIÓN Y RECONSTRUCCIÓN DE CULATAS EN DOS SALONES DE CLASE, EL CAMBIO DE CUBIERTA Y LA ADECUACIÓN DEL CIEL | $ 18.800.000 | Contratación régimen especial | Media |
-| 2026-10-20 | ALCALDIA MUNICIPAL DE GINEBRA | PRESTACIÓN DE SERVICIOS PARA EL CUMPLIMIENTO DE LAS ACTIVIDADES DE IMPLEMENTACIÓN Y SEGUIMIENTO AL PLAN DE GES | $ 18.000.000 | Contratación directa | Media |
-| 2026-10-19 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 16.989.000 | Contratación directa | Media |
-| 2026-10-19 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 16.989.000 | Contratación directa | Media |
-| 2026-10-20 | MUNICIPIO DE ARMENIA QUINDIO | Contrato de prestación de servicios profesionales especializados para la ejecución de visitas de inspección vi | $ 8.000.000 | Contratación directa | Alta |
-| 2026-10-20 | MUNICIPIO DE ARMENIA QUINDIO | Contrato de prestación de servicios profesionales especializados para la ejecución de visitas de inspección vi | $ 8.000.000 | Contratación directa | Alta |
-| 2026-10-20 | MUNICIPIO DE ARMENIA QUINDIO | Contrato de prestación de servicios profesionales especializados para la ejecución de visitas de inspección vi | $ 8.000.000 | Contratación directa | Alta |
-| 2026-10-20 | MUNICIPIO DE ARMENIA QUINDIO | Contrato de prestación de servicios profesionales especializados para la ejecución de visitas de inspección vi | $ 8.000.000 | Contratación directa | Alta |
-| 2026-10-20 | MUNICIPIO DE ARMENIA QUINDIO | Contrato de prestación de servicios profesionales para la ejecución de visitas de inspección visual, diagnósti | $ 7.400.000 | Contratación directa | Alta |
-| 2026-10-20 | MUNICIPIO DE ARMENIA QUINDIO | Contrato de prestación de servicios profesionales para la ejecución de visitas de inspección visual, diagnósti | $ 7.400.000 | Contratación directa | Alta |
-| 2026-10-20 | MUNICIPIO DE ARMENIA QUINDIO | Contrato de prestación de servicios profesionales para la ejecución de visitas de inspección visual, diagnósti | $ 7.400.000 | Contratación directa | Alta |
-| 2026-10-20 | MUNICIPIO DE ARMENIA QUINDIO | Contrato de prestación de servicios profesionales para la ejecución de visitas de inspección visual, diagnósti | $ 7.400.000 | Contratación directa | Alta |
-| 2026-10-20 | MUNICIPIO DE ARMENIA QUINDIO | Contrato de prestación de servicios profesionales para la ejecución de visitas de inspección visual, diagnósti | $ 7.400.000 | Contratación directa | Alta |
-| 2026-10-20 | MUNICIPIO DE ARMENIA QUINDIO | Contrato de prestación de servicios profesionales para la ejecución de visitas de inspección visual, diagnósti | $ 7.400.000 | Contratación directa | Alta |
-| 2026-10-20 | MUNICIPIO DE ARMENIA QUINDIO | Contrato de prestación de servicios profesionales para la ejecución de visitas de inspección visual, diagnósti | $ 7.400.000 | Contratación directa | Alta |
-| 2026-10-20 | MUNICIPIO DE ARMENIA QUINDIO | Contrato de prestación de servicios profesionales para la ejecución de visitas de inspección visual, diagnósti | $ 7.400.000 | Contratación directa | Alta |
-| 2026-10-20 | INSTITUCION EDUCATIVA SANTA TERESITA | SERVICIO DE MANTENIMIENTO, CONSERVACIÓN, REPARACIÓN, MEJORAMIENTO Y ADECUACIÓN DE LOS BIENES MUEBLES E INMUEBL | $ 7.000.000 | Contratación régimen especial | Alta |
-| 2026-10-19 | INSTITUTO COLOMBIANO DE BALLET CLÁSICO INCOLBALLET | ADQUISICIÓN DE KITS DE BAILE (COLCHONETAS DE YOGA Y SETS DE BANDAS ELÁSTICAS) PARA LOS ESTUDIANTES DE LA INSTI | $ 6.331.875 | Contratación régimen especial | Media |
-| 2026-10-19 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS APOYO A LA GESTION PARA LA ARTICULACIÓN PEDAGÓGICA Y ACADÉMICA DE LA PROGRAMACIÓN CULTURAL Y | $ 5.600.000 | Contratación directa | Alta |
-| 2026-10-19 | INSTITUCION EDUCATIVA ABSALON TORRES CAMACHO | ADECUACIÓN ANDEN Y MANTENIMIENTO ELECTRICO; DEMOLICION MUROS Y ENCHAPE PISO SEDE ABSALÓN TORRES CAMACHO | $ 4.665.038 | Contratación régimen especial | Media |
-| 2026-10-20 | MUNICIPIO DE SEVILLA | PRESTAR SERVICIOS DE APOYO A LAS ACTIVIDADES DE RECOPILACIÓN, REGISTRO, ORGANIZACIÓN Y CONSOLIDACIÓN DE INFORM | $ 2.000.000 | Contratación directa | Alta |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| contratos | CO1.PCCNTR.10062156 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10069091 | nombre_supervisor | SERGIO NICOLAS GUZMAN RICO | DIEGO FELIPE BUSTAMANTE ARANGO |
-| contratos | CO1.PCCNTR.10058444 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10077738 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10076484 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10061331 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10060044 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10054209 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10058498 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9967832 | nombre_supervisor | NAYUA PATRICIA ALAEDDINE AZBA | AUDREY BAHAMON GOMEZ |
-| contratos | CO1.PCCNTR.9846715 | valor_pagado | 0 | 5000000 |
-| contratos | CO1.PCCNTR.9846715 | valor_facturado | 0 | 5000000 |
-| contratos | CO1.PCCNTR.9846715 | valor_pendiente_de_pago | 5000000 | 0 |
-| contratos | CO1.PCCNTR.10062349 | nombre_supervisor | MARTHA ISABEL RAMIREZ SALAMANCA | Jose Fernando Castaño Campo |
-| contratos | CO1.PCCNTR.9944865 | valor_del_contrato | 16989000 | 22652000 |
-| contratos | CO1.PCCNTR.9944865 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9944865 | fecha_de_fin_del_contrato | 2026-11-30T00:00:00.000 | 2026-12-31T00:00:00.000 |
-| contratos | CO1.PCCNTR.9944865 | dias_adicionados | 0 | 31 |
-| contratos | CO1.PCCNTR.9944865 | valor_pendiente_de_pago | 16989000 | 22652000 |
-| contratos | CO1.PCCNTR.10076210 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10076210 | valor_pendiente_de_pago | 0 | 18000000 |
-| contratos | CO1.PCCNTR.10068543 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10058086 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10058086 | valor_pendiente_de_pago | 0 | 18000000 |
-| contratos | CO1.PCCNTR.10058917 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10040274 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10040274 | nombre_supervisor | ALBERTO | NAZLY ROMERO ZAMORANO |
-| contratos | CO1.PCCNTR.10061224 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10061615 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9967762 | nombre_supervisor | NAYUA PATRICIA ALAEDDINE AZBA | AUDREY BAHAMON GOMEZ |
-| contratos | CO1.PCCNTR.10016934 | valor_del_contrato | 15400000 | 23100000 |
-| contratos | CO1.PCCNTR.10016934 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.10016934 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-11-30T00:00:00.000 |
-| contratos | CO1.PCCNTR.10016934 | dias_adicionados | 0 | 30 |
-| contratos | CO1.PCCNTR.10016934 | valor_pendiente_de_pago | 15400000 | 23100000 |
-| contratos | CO1.PCCNTR.10062807 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10061022 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10069757 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10069757 | valor_pendiente_de_pago | 0 | 14415000 |
-| contratos | CO1.PCCNTR.10061330 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9976671 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-11-30T00:00:00.000 |
-| contratos | CO1.PCCNTR.9976671 | dias_adicionados | 61 | 30 |
-| contratos | CO1.PCCNTR.9976671 | valor_pendiente_de_pago | 11326000 | 16989000 |
-| contratos | CO1.PCCNTR.10057836 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10056092 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10082926 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10082926 | valor_pendiente_de_pago | 0 | 10653000 |
-| contratos | CO1.PCCNTR.10069605 | nombre_supervisor | jesus felipe castro perez | MARTHA ISABEL RAMIREZ SALAMANCA |
-| contratos | CO1.PCCNTR.10069605 | valor_pendiente_de_pago | 0 | 15000000 |
-| contratos | CO1.PCCNTR.10069200 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10069200 | valor_pendiente_de_pago | 0 | 16989000 |
-| contratos | CO1.PCCNTR.10051658 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10051658 | nombre_supervisor | No definido | ANDREA MELISSA PORRAS BELTRAN |
-| contratos | CO1.PCCNTR.10051658 | valor_pendiente_de_pago | 0 | 9000000 |
-| contratos | CO1.PCCNTR.10011027 | valor_del_contrato | 5000000 | 7500000 |
-| contratos | CO1.PCCNTR.10011027 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.10011027 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-11-30T00:00:00.000 |
-| contratos | CO1.PCCNTR.10011027 | dias_adicionados | 0 | 30 |
-| contratos | CO1.PCCNTR.10011027 | valor_pendiente_de_pago | 5000000 | 7500000 |
-| contratos | CO1.PCCNTR.10078155 | estado_contrato | Aprobado | En ejecución |
 
 ## Alertas
 
