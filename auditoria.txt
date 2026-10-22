@@ -1,34 +1,34 @@
-Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-10-23T00:00:00
+Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-10-24T00:00:00
 Entidades auditadas: 53  (2 centrales + 2 UNGRD/FNGRD + 12 descentralizadas de Cali + 18 de la Gobernacion + 19 otras del Valle)
 Comprobaciones: 53 entidades x 3 fuentes = 159, cada una por tres caminos independientes
 
 Fuente     Entidad                NIT         API simple  API amplio    CSV   Veredicto
 ------------------------------------------------------------------------------------
-contratos  Alcaldia de Cali       890399011         5275        5333   5333   OK
-contratos  Gobernacion del Valle  890399029         2913        5818   5818   OK
+contratos  Alcaldia de Cali       890399011         5380        5438   5438   OK
+contratos  Gobernacion del Valle  890399029         2993        5918   5918   OK
 contratos  UNGRD / FNGRD          900478966            3           3      3   OK
 contratos  UNGRD / FNGRD          900978341            1           1      1   OK
 contratos  Desc.Cali EMCALI - Empresas Munici890399003            0           0      0   OK
-contratos  Desc.Cali Metro Cali S.A.805013171          127         127    127   OK
+contratos  Desc.Cali Metro Cali S.A.805013171          134         134    134   OK
 contratos  Desc.Cali Red de Salud de Ladera E805027289            0           0      0   OK
 contratos  Desc.Cali Red de Salud del Norte E805027287            0           0      0   OK
 contratos  Desc.Cali Red de Salud del Oriente805027337           33          33     33   OK
-contratos  Desc.Cali Red de Salud del Surorie805027338            5           5      5   OK
+contratos  Desc.Cali Red de Salud del Surorie805027338            6           6      6   OK
 contratos  Desc.Cali Fondo Especial de Vivien805013033           40          40     40   OK
 contratos  Desc.Cali Instituto Popular de Cul900431928            0           0      0   OK
-contratos  Desc.Cali Personeria Distrital de 805003895           82          82     82   OK
+contratos  Desc.Cali Personeria Distrital de 805003895           84          84     84   OK
 contratos  Desc.Cali Contraloria de Santiago 800217831           45          45     45   OK
 contratos  Desc.Cali IE Normal Superior Santi800243065            0           0      0   OK
 contratos  Desc.Cali Camara de Comercio de Ca890399001            0           0      0   OK
-contratos  Desc.Gob  INDERVALLE - Instituto d805012896         2156        2156   2156   OK
+contratos  Desc.Gob  INDERVALLE - Instituto d805012896         2395        2395   2395   OK
 contratos  Desc.Gob  INFIVALLE - Instituto Fi890308051           25          25     25   OK
 contratos  Desc.Gob  INCIVA       800086201          146         146    146   OK
 contratos  Desc.Gob  Universidad del Valle890399010            0           0      0   OK
-contratos  Desc.Gob  Instituto Departamental 890325989           44          44     44   OK
+contratos  Desc.Gob  Instituto Departamental 890325989           45          45     45   OK
 contratos  Desc.Gob  Biblioteca Departamental890399039           16          16     16   OK
 contratos  Desc.Gob  Vallecaucana de Aguas S.900333452           71          71     71   OK
 contratos  Desc.Gob  ACUAVALLE - Acueductos y890399032            0           0      0   OK
-contratos  Desc.Gob  Beneficencia del Valle d890399027           25          25     25   OK
+contratos  Desc.Gob  Beneficencia del Valle d890399027           26          26     26   OK
 contratos  Desc.Gob  Industria de Licores del890399012            0           0      0   OK
 contratos  Desc.Gob  HUV - Hospital Universit890303461            0           0      0   OK
 contratos  Desc.Gob  Hospital Departamental P890304155           17          17     17   OK
@@ -50,52 +50,52 @@ contratos  Otras     Instituto Distrital del 890399992            0           0 
 contratos  Otras     Personeria Municipal de 891900493          110         113    113   OK
 contratos  Otras     Personeria Municipal de 901159063            0           0      0   OK
 contratos  Otras     Personeria Municipal de 900085817            0           0      0   OK
-contratos  Otras     Personeria Municipal de 800100524           87          87     87   OK
-contratos  Otras     Concejo Municipal de Jam890399046          828         828    828   OK
+contratos  Otras     Personeria Municipal de 800100524           93          93     93   OK
+contratos  Otras     Concejo Municipal de Jam890399046          831         831    831   OK
 contratos  Otras     IE Alfonso Lopez Pumarej805000057            0           0      0   OK
 contratos  Otras     IE Paulo VI - Palmira815004730            0           0      0   OK
 contratos  Otras     IE Ginebra La Salle891380108            0           0      0   OK
 contratos  Otras     IE Zaragoza - Cartago800034326            0           0      0   OK
 contratos  Otras     IE Camilo Torres - Dagua805015675            0           0      0   OK
-procesos   Alcaldia de Cali       890399011         4999        5053   5053   OK
-procesos   Gobernacion del Valle  890399029         2799        5569   5569   OK
+procesos   Alcaldia de Cali       890399011         5186        5240   5240   OK
+procesos   Gobernacion del Valle  890399029         2847        5629   5629   OK
 procesos   UNGRD / FNGRD          900478966            2           2      2   OK
-procesos   UNGRD / FNGRD          900978341          334         334    334   OK
-procesos   Desc.Cali EMCALI - Empresas Munici890399003          541         541    541   OK
-procesos   Desc.Cali Metro Cali S.A.805013171          133         133    133   OK
+procesos   UNGRD / FNGRD          900978341          335         335    335   OK
+procesos   Desc.Cali EMCALI - Empresas Munici890399003          546         546    546   OK
+procesos   Desc.Cali Metro Cali S.A.805013171          147         147    147   OK
 procesos   Desc.Cali Red de Salud de Ladera E805027289          415         415    415   OK
-procesos   Desc.Cali Red de Salud del Norte E805027287           72          72     72   OK
+procesos   Desc.Cali Red de Salud del Norte E805027287           73          73     73   OK
 procesos   Desc.Cali Red de Salud del Oriente805027337           35          35     35   OK
-procesos   Desc.Cali Red de Salud del Surorie805027338           52          52     52   OK
+procesos   Desc.Cali Red de Salud del Surorie805027338           59          59     59   OK
 procesos   Desc.Cali Fondo Especial de Vivien805013033           39          39     39   OK
 procesos   Desc.Cali Instituto Popular de Cul900431928            0           0      0   OK
 procesos   Desc.Cali Personeria Distrital de 805003895           99          99     99   OK
 procesos   Desc.Cali Contraloria de Santiago 800217831           45          45     45   OK
 procesos   Desc.Cali IE Normal Superior Santi800243065           12          12     12   OK
 procesos   Desc.Cali Camara de Comercio de Ca890399001            0           0      0   OK
-procesos   Desc.Gob  INDERVALLE - Instituto d805012896         2456        2456   2456   OK
+procesos   Desc.Gob  INDERVALLE - Instituto d805012896         2479        2479   2479   OK
 procesos   Desc.Gob  INFIVALLE - Instituto Fi890308051           25          25     25   OK
 procesos   Desc.Gob  INCIVA       800086201          141         141    141   OK
-procesos   Desc.Gob  Universidad del Valle890399010          453         453    453   OK
-procesos   Desc.Gob  Instituto Departamental 890325989           44          44     44   OK
+procesos   Desc.Gob  Universidad del Valle890399010          457         457    457   OK
+procesos   Desc.Gob  Instituto Departamental 890325989           46          46     46   OK
 procesos   Desc.Gob  Biblioteca Departamental890399039           15          15     15   OK
 procesos   Desc.Gob  Vallecaucana de Aguas S.900333452           83          83     83   OK
 procesos   Desc.Gob  ACUAVALLE - Acueductos y890399032           54          54     54   OK
 procesos   Desc.Gob  Beneficencia del Valle d890399027           26          26     26   OK
-procesos   Desc.Gob  Industria de Licores del890399012           39          39     39   OK
+procesos   Desc.Gob  Industria de Licores del890399012           46          46     46   OK
 procesos   Desc.Gob  HUV - Hospital Universit890303461           98          98     98   OK
 procesos   Desc.Gob  Hospital Departamental P890304155           18          18     18   OK
 procesos   Desc.Gob  Hospital Departamental M890399047          348         348    348   OK
 procesos   Desc.Gob  Hospital Departamental T891901158           29          29     29   OK
 procesos   Desc.Gob  Hospital Departamental S891900343            8           8      8   OK
 procesos   Desc.Gob  Hospital Departamental S891900441          135         135    135   OK
-procesos   Desc.Gob  Hospital Departamental C821003143           71          71     71   OK
+procesos   Desc.Gob  Hospital Departamental C821003143           76          76     76   OK
 procesos   Desc.Gob  Contraloria Departamenta800090735            3           3      3   OK
-procesos   Otras     Hospital del Rosario de 891380070           10          10     10   OK
-procesos   Otras     ESE Hospital San Jorge d890312380          113         113    113   OK
+procesos   Otras     Hospital del Rosario de 891380070           12          12     12   OK
+procesos   Otras     ESE Hospital San Jorge d890312380          115         115    115   OK
 procesos   Otras     Hospital Santa Lucia ESE891901296            8           8      8   OK
 procesos   Otras     Hospital Local Yotoco890309115            5           5      5   OK
-procesos   Otras     Hospital Local Jose Rufi890305496          225         225    225   OK
+procesos   Otras     Hospital Local Jose Rufi890305496          229         229    229   OK
 procesos   Otras     Empresa de Servicio Publ900401903           19          19     19   OK
 procesos   Otras     Empresas Publicas Munici891900474            1           1      1   OK
 procesos   Otras     Instituto Municipal del 891900528            0           0      0   OK
@@ -103,8 +103,8 @@ procesos   Otras     Instituto Distrital del 890399992            1           1 
 procesos   Otras     Personeria Municipal de 891900493          120         123    123   OK
 procesos   Otras     Personeria Municipal de 901159063            0           0      0   OK
 procesos   Otras     Personeria Municipal de 900085817            0           0      0   OK
-procesos   Otras     Personeria Municipal de 800100524           55          55     55   OK
-procesos   Otras     Concejo Municipal de Jam890399046          844         844    844   OK
+procesos   Otras     Personeria Municipal de 800100524           56          56     56   OK
+procesos   Otras     Concejo Municipal de Jam890399046          850         850    850   OK
 procesos   Otras     IE Alfonso Lopez Pumarej805000057            6           6      6   OK
 procesos   Otras     IE Paulo VI - Palmira815004730            2           2      2   OK
 procesos   Otras     IE Ginebra La Salle891380108            0           0      0   OK
