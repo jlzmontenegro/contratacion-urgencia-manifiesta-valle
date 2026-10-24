@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-24 12:23  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-24 18:05  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -8,37 +8,37 @@
 |---|---|
 | Contratos relacionados (alta + media) | 358 |
 | Valor de esos contratos | $ 136.524.953.053 |
-| Procesos relacionados (alta + media) | 929 |
-| Contratos nuevos en esta ejecucion | 1585 |
-| Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 2542 |
-| Registros revisados en total | 59582 |
+| Procesos relacionados (alta + media) | 935 |
+| Contratos nuevos en esta ejecucion | 0 |
+| Procesos nuevos en esta ejecucion | 717 |
+| Modificaciones detectadas | 3716 |
+| Registros revisados en total | 60299 |
 
 ### Desglose por nivel de gobierno
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
 | Alcaldía de Cali | 70 | $ 43.258.571.941 | 271 |
-| Gobernación del Valle | 11 | $ 14.148.165.515 | 79 |
-| Otras entidades del Valle | 238 | $ 74.136.718.988 | 472 |
+| Gobernación del Valle | 11 | $ 14.148.165.515 | 80 |
+| Otras entidades del Valle | 238 | $ 74.136.718.988 | 476 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 6130 | $ 326.354.952.027 | 5602 |
-| Gobernación del Valle | 6062 | $ 138.121.436.792 | 5657 |
-| Descentralizadas de Cali | 387 | $ 158.900.413.273 | 1527 |
-| Descentralizadas de la Gobernación | 2887 | $ 64.408.168.145 | 4282 |
+| Alcaldía de Cali | 6130 | $ 326.354.952.027 | 5792 |
+| Gobernación del Valle | 6062 | $ 138.121.436.792 | 5670 |
+| Descentralizadas de Cali | 387 | $ 158.900.413.273 | 1605 |
+| Descentralizadas de la Gobernación | 2887 | $ 64.408.168.145 | 4451 |
 | UNGRD | 4 | $ 146.817.067 | 336 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 287 contratos ($ 91.622.655.587) y 373 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 228 contratos ($ 234.591.547.376) y 379 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 287 contratos ($ 91.622.655.587) y 381 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 228 contratos ($ 234.591.547.376) y 384 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
@@ -107,115 +107,89 @@ _Se revisaron 342 registros de contratacion de estas dos entidades en la ventana
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 | MUNICIPIO DE YUMBO VALLE | 10 | $ 1.913.036.283 |
 
-## Contratos nuevos (81 relacionados de 1585 publicados)
+## Procesos nuevos (14 relacionados de 717 publicados)
 
-| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
+| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
 |---|---|---|---:|---|---|
-| 2026-10-20 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | CONTRATAR LA LOGÍSTICA INTEGRAL PARA EL DESARROLLO DE LOS CENSOS; EVALUACIONES; CARACTERIZACIÓN; VISITAS; INSP | $ 620.200.000 | FUNDACION RAFAEL FE Y ESPERANZA | Alta |
-| 2026-10-20 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | PRESTAR EL SERVICIO INTEGRAL DE TRANSPORTE MARÍTIMO Y FLUVIAL DE PERSONAL Y CARGA PARA LA ATENCIÓN DE LA EMERG | $ 490.000.000 | SEGUNDO ALFONSO SOLIS GRUESO | Alta |
-| 2026-10-22 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | CONTRATAR LOS SERVICIOS RELACIONADOS CON LA GESTION INTEGRAL (RECOLECCION; TRANSPORTE Y DISPOSICION FINAL) DE  | $ 447.999.999 | SERVICIUDAD ESP | Alta |
-| 2026-10-20 | ALCALDIA MUNICIPIO DE VIJES | CONSTRUCCION CUBIERTA CANCHA MULTIPLE CORREGIMIENTO DE OCACHE; MUNICIPIO DE VIJES VALLE DEL CAUCA. | $ 398.344.196 | MAVIC S.A.S. | Media |
-| 2026-10-21 | SANTIAGO DE CALI  DISTRITO ESPECIAL - SECRETARIA DE CULTURA | El Distrito de Santiago de Cali - Secretaría de Cultura requiere contratar LAS OBRAS CIVILES DE MEJORAMIENTO Y | $ 378.571.360 | Henet S.A.S | Alta |
-| 2026-10-20 | ALCALDIA MUNICIPAL DE CHINCHINA | CONTRATAR LA EJECUCIÓN DE LAS ACTIVIDADES DE DEMOLICIÓN CONTROLADA; DESMONTE DE ESTRUCTURAS; CARGUE; TRANSPORT | $ 250.000.000 | Marlon Rincon | Alta |
-| 2026-10-22 | ALCALDIA MUNICIPAL LA VIRGINIA RISARALDA | EJECUTAR LA DEMOLICIÓN DE LAS ESTRUCTURAS AFECTADAS Y EL CARGUE; RECOLECCIÓN; TRANSPORTE Y DISPOSICIÓN FINAL D | $ 250.000.000 | CONSTRUCIVILES INGENIERIA SAS | Alta |
-| 2026-10-21 | ALCALDIA MUNICIPAL DE YOTOCO | PRESTAR SERVICIOS PROFESIONALES ESPECIALIZADOS A LA SECRETARÍA DE OBRAS PÚBLICAS DEL MUNICIPIO DE YOTOCO; VALL | $ 180.000.000 | COMPIAO SAS | Alta |
-| 2026-10-22 | ALCALDIA MUNICIPIO DE RIOSUCIO CALDAS | EL CONTRATISTA DE OBLIGA PARA CON EL MUNICIPIO A REALIZAR LAS OBRAS DE REPARACIÓN Y RECUPERACIÓN EN EL ESCENAR | $ 157.891.147 | BAQU INGENIERIA Y CONSTRUCCIONES S.A.S. | Alta |
-| 2026-10-20 | ALCALDIA MUNICIPAL DE CHINCHINA | CONTRATAR LA EJECUCIÓN DE LAS OBRAS DE MITIGACIÓN Y EMERGENCIA PARA LA REMOCIÓN; CARGUE; TRANSPORTE Y DISPOSIC | $ 115.000.000 | CONCRESCOR S.A.S | Alta |
-| 2026-10-20 | MUNICIPIO DE APIA | SUMINISTRO DE KITS DE AYUDA HUMANITARIA PARA LA ATENCIÓN DE LAS NECESIDADES BÁSICAS DE LA POBLACIÓN AFECTADA P | $ 108.228.295 | FUNDACION PARA EL DESARROLLO DEL EJE | Alta |
-| 2026-10-20 | MUNICIPIO DE TORO | ADQUIRIR Y SUMINISTRAR MATERIALES; ELEMENTOS E INSUMOS NECESARIOS PARA LA ATENCION HUMANITARIA DE EMERGENCIA;  | $ 100.000.000 | FULLRECARGAS, CONSTRUCCIONES Y TECNOLOGIA SAS | Alta |
-| 2026-10-21 | ALCALDIA MUNICIPIO DE MANZANARES | CONTRATAR; BAJO LA MODALIDAD DE MONTO AGOTABLE; EL SUMINISTRO DE MATERIALES DE CONSTRUCCIÓN DESTINADOS A LA AT | $ 49.025.340 | FERRETERIA REAL MANZANARES | Alta |
-| 2026-10-21 | MUNICIPIO DE OBANDO VALLE | Prestación del servicio de transporte terrestre; a precios unitarios por viaje y bajo la modalidad de monto ag | $ 38.110.399 | COOPERATIVA ESPECIALIZADA DE TRANSPORTADORES DE ALCALA COOETRANSALCA | Alta |
-| 2026-10-21 | MUNICIPIO DE SEVILLA | PRESTAR SERVICIOS DE APOYO A LA GESTIÓN PARA EL DESARROLLO DE ACCIONES DE SANIDAD AMBIENTAL ORIENTADAS A LA MI | $ 35.000.000 | SERVISAM E.A.T | Alta |
-| 2026-10-20 | MUNICIPIO DE SAN JOSE. | ALQUILER DE MAQUINARIA Y EQUIPOS PARA LA REMOCIÓN; CARGUE Y RETIRO DE ESCOMBROS GENERADOS POR LA EMERGENCIA; E | $ 25.000.000 | CARLOS ARTURO OSORIO PATIÑO | Alta |
-| 2026-10-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 21.108.000 | DARIO ENRIQUE FLOREZ | Alta |
-| 2026-10-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 18.741.000 | Juan Pablo Blandón | Alta |
-| 2026-10-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 18.741.000 | DIEGO FERNANDO GONZALEZ GUEVARA | Alta |
-| 2026-10-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Katiana | Alta |
-| 2026-10-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 16.989.000 | NÉSTOR RAÚL SALINAS COLLAZOS | Alta |
-| 2026-10-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | DIANA MARCELA ZULETA PAREDES | Alta |
-| 2026-10-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Jhon Stevan Gómez Suarez | Alta |
-| 2026-10-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | NATALIA RIASCOS RESTREPO | Alta |
-| 2026-10-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | JUAN MANUEL ARANA RIOS | Alta |
-| 2026-10-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | LEYDI DAYANA TABARES DELGADO | Alta |
-| 2026-10-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | JOHN JAIRO SALGADO MOTOA | Alta |
-| 2026-10-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Lina Beatriz Torres Castro | Alta |
-| 2026-10-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | JUAN PABLO KLINGER QUINTERO | Alta |
-| 2026-10-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 14.418.000 | Jean Paul  Cabezas Lerma | Alta |
-| 2026-10-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 14.415.000 | FREDY HARVEY ORTIZ ANGULO | Alta |
-| 2026-10-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 14.415.000 | FANNY ESCOBAR RIOJA | Alta |
-| 2026-10-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 14.415.000 | ANDRES CAMILO DUQUE LERMA | Alta |
-| 2026-10-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 14.415.000 | PACA | Alta |
-| 2026-10-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 14.415.000 | maria paula pineda marin | Alta |
-| 2026-10-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 14.415.000 | ANA MARIA RODRIGUEZ GARCIA | Alta |
-| 2026-10-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 14.415.000 | JESSE KATHERINE ROSERO CHAVEZ | Alta |
-| 2026-10-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 14.415.000 | DIANA MARCELA MOLINA MERA | Alta |
-| 2026-10-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 14.415.000 | ALEXANDER MARTINEZ NARVAEZ | Alta |
-| 2026-10-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 11.841.000 | Valeria Nieto Olivares | Alta |
+| 2026-10-23 | DEPARTAMENTO DE ANTIOQUIA// | CONTRATO INTERADMINISTRATIVO DE MANDATO SIN REPRESENTACIÓN PARA LA GESTIÓN DEL SUMINISTRO Y TRANSPORTE DE MATE | $ 6.500.000.000 | Contratación directa | Alta |
+| 2026-10-22 | COMPRADOR - EMPRESA CARTAGUEÑA DE DESARROLLO - EMCADE | REHABILITACION Y RECONSTRUCCION DE CANALES REVESTIDOS Y EN CONCRETO PARA LA MITIGACION DEL RIESGO POR INESTABI | $ 1.029.022.573 | Contratación régimen especial | Media |
+| 2026-10-23 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | SUMINISTRO, CONSTRUCCIÓN E INSTALACIÓN DE AULAS MODULARES PREFABRICADAS EN INSTITUCIONES EDUCATIVAS EN ATENCIÓ | $ 1.001.530.269 | Contratación directa | Alta |
+| 2026-10-22 | ALCALDIA MUNICIPAL LA VIRGINIA RISARALDA | EJECUTAR LA DEMOLICIÓN DE LAS ESTRUCTURAS AFECTADAS Y EL CARGUE, RECOLECCIÓN, TRANSPORTE Y DISPOSICIÓN FINAL D | $ 250.000.000 | Contratación directa | Alta |
+| 2026-10-23 | GOBERNACION DE CALDAS | AUNAR ESFUERZOS TECNICOS, ADMINISTRATIVOS Y FINANCIEROS CON LA SECRETARÍA DE CULTURA DEL DEPARTAMENTO DE CALDA | $ 175.683.164 | Contratación directa | Alta |
+| 2026-10-23 | GOBERNACION DE CALDAS | AUNAR ESFUERZOS TÉCNICOS, ADMINISTRATIVOS Y FINANCIEROS CON LA SECRETARÍA DE CULTURA DEL DEPARTAMENTO DE CALDA | $ 80.000.000 | Contratación directa | Alta |
+| 2026-10-22 | COMPRADOR - EMPRESA CARTAGUEÑA DE DESARROLLO - EMCADE | CONTRATAR LA INTERVENTORIA TECNICA ADMINISTRATIVA FINANCIERA, CONTABLE, JURIDICA Y AMBIENTAL DEL CONTRATO DE O | $ 78.434.398 | Contratación régimen especial | Media |
+| 2026-10-22 | INSTITUCION EDUCATIVA CIUDAD DE CARTAGO | Contratar la ejecución de obras de mantenimiento preventivo y correctivo, adecuación de infraestructura física | $ 25.000.000 | Contratación régimen especial | Alta |
+| 2026-10-23 | INSTITUCION EDUCATIVA MAGDALENA ORTEGA | SUMINISTRO DE MATERIALES DE CONSTRUCCIÓN Y FERRETERÍA PARA LA REPARACIÓN Y RECUPERACIÓN DE LA INFRAESTRUCTURA  | $ 21.440.733 | Contratación régimen especial | Alta |
+| 2026-10-22 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS PROFESIONALES COMO FISIOTERAPEUTA EN LA ACTIVIDAD DIVULGAR CONTENIDOS TEMÁTICOS EN GESTI | $ 15.000.000 | Contratación directa | Media |
+| 2026-10-23 | INSTITUCION EDUCATIVA CIUDADELA SAN BERNARDO | Contratar la ejecución de actividades de mantenimiento, adecuación y mejoramiento de la infraestructura física | $ 13.187.839 | Contratación régimen especial | Alta |
+| 2026-10-23 | INSTITUCION EDUCATIVA MAGDALENA ORTEGA | PRESTACIÓN DE SERVICIOS DE MANO DE OBRA PARA LA REPARACIÓN Y RECUPERACIÓN DE LA INFRAESTRUCTURA LOCATIVA DE LA | $ 7.581.683 | Contratación régimen especial | Alta |
+| 2026-10-22 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES EN LA SUBSECRETARIA DE PLANEACION Y CALIDAD EDUCATIVA PARA REALIZAR LA VALORAC | $ 5.573.333 | Contratación directa | Alta |
+| 2026-10-22 | INSTITUCION EDUCATIVA LA PAZ | Contratar la prestación del servicio de recarga y mantenimiento de extintores de la Institución Educativa Ofic | $ 2.076.500 | Contratación régimen especial | Media |
 
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| contratos | CO1.PCCNTR.10079734 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10088952 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10080343 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10080343 | valor_pendiente_de_pago | 0 | 8877500 |
-| contratos | CO1.PCCNTR.10081553 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10063245 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9905971 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9905971 | fecha_de_fin_del_contrato | 2026-11-30T00:00:00.000 | 2026-12-31T00:00:00.000 |
-| contratos | CO1.PCCNTR.9905971 | dias_adicionados | 0 | 31 |
-| contratos | CO1.PCCNTR.10069196 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10069560 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10069560 | valor_pendiente_de_pago | 0 | 14415000 |
-| contratos | CO1.PCCNTR.10072391 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10062440 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10062440 | nombre_supervisor | No definido | TATIANA REYES HOYOS |
-| contratos | CO1.PCCNTR.9985240 | valor_del_contrato | 6000000 | 9000000 |
-| contratos | CO1.PCCNTR.9985240 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9985240 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-11-30T00:00:00.000 |
-| contratos | CO1.PCCNTR.9985240 | dias_adicionados | 0 | 30 |
-| contratos | CO1.PCCNTR.9985240 | valor_pendiente_de_pago | 6000000 | 9000000 |
-| contratos | CO1.PCCNTR.10030790 | nombre_supervisor | NASLY FERNANDA VIDALES GONZALEZ | Lizeth Johana Parra González |
-| contratos | CO1.PCCNTR.10083924 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10085002 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9867433 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9867433 | fecha_de_fin_del_contrato | 2026-11-03T00:00:00.000 | 2026-12-21T00:00:00.000 |
-| contratos | CO1.PCCNTR.9867433 | nombre_supervisor | No definido | Yulian Valencia Buitrago |
-| contratos | CO1.PCCNTR.10061707 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10088914 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10083878 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10062330 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10068285 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10089115 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9835323 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.10072471 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10068643 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10089059 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10062723 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10075955 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10069437 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10062305 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10062333 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10060702 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10072531 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10085877 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10085877 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
-| contratos | CO1.PCCNTR.10083653 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10017001 | estado_contrato | Aprobado | Modificado |
-| contratos | CO1.PCCNTR.10030687 | nombre_supervisor | NASLY FERNANDA VIDALES GONZALEZ | Lizeth Johana Parra González |
-| contratos | CO1.PCCNTR.10067660 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10083628 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10085205 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10067653 | nombre_supervisor | ELVI FERNANDO PORTOCARRERO QUIÑONES | LUZ ADRIANA GOMEZ FORERO |
-| contratos | CO1.PCCNTR.10072093 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10079394 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
-| contratos | CO1.PCCNTR.10023050 | valor_del_contrato | 5000000 | 7500000 |
-| contratos | CO1.PCCNTR.10023050 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.10023050 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-11-30T00:00:00.000 |
-| contratos | CO1.PCCNTR.10023050 | dias_adicionados | 0 | 30 |
-| contratos | CO1.PCCNTR.10023050 | valor_pendiente_de_pago | 5000000 | 7500000 |
-| contratos | CO1.PCCNTR.10083913 | estado_contrato | Aprobado | En ejecución |
+| procesos | CO1.REQ.11238377 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11238377 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11240355 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11240355 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11233582 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11233582 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11250903 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11250903 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11250903 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11237029 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11237029 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11246183 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11246183 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11226016 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11226016 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11236873 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11236873 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11240738 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11240738 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11245404 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11245404 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11240694 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11240694 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11226358 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11226358 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11225851 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11225851 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11237930 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11237930 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11242174 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11242174 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11239515 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11239515 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11247378 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11247378 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11225782 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11225782 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11240746 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11240746 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11241311 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11241311 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11233735 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11233735 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11246542 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11246542 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11237178 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11237178 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11236739 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11236739 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11233690 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11233690 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11245295 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11245295 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11240418 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11240418 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11226356 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11226356 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11069009 | valor_total_adjudicacion | 562994224 | 1381033542 |
+| procesos | CO1.REQ.11069009 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11248515 | fase |  | Presentación de oferta |
 
 ## Alertas
 
