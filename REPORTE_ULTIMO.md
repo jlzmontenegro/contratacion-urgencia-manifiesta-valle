@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-23 13:16  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-23 18:49  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -11,7 +11,7 @@
 | Procesos relacionados (alta + media) | 849 |
 | Contratos nuevos en esta ejecucion | 0 |
 | Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 0 |
+| Modificaciones detectadas | 4 |
 | Registros revisados en total | 56378 |
 
 ### Desglose por nivel de gobierno
@@ -44,7 +44,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 210** (106 que suman en los indicadores, por $ 21.536.961.100).
+- **Relacionados con el sismo: 215** (108 que suman en los indicadores, por $ 21.554.961.100).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -72,12 +72,12 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-08-21 | RISARALDA - CÁMARA DE COMERCIO DE PEREIRA | SOLICITUD DE SERVICIO DE TECHOS Y PANELERIAS PARA DIVISIONES UTILIZADOS PARA ADECUAR LOS ESPACIOS Y PODER GUAR | $ 163.506.000 | Régimen Especial · No Definido | Alta |
 | 2026-08-12 | CHOCÓ - ALCALDÍA MUNICIPIO DE UNION PANAMERICANA | ARRENDAMIENTO DE MAQUINARIA PESADA (RETROEXCAVADORA Y PAJARITA) Y VOLQUETAS; NECESARIOS PARA LA REMOCIoN DE ES | $ 161.400.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 | 2026-10-15 | UNIDAD TÉCNICA PARA EL DESARROLLO PROFESIONAL - UTEDÉ | REALIZAR ARREGLOS Y REPARACIONES DE LOS DAÑOS OCASIONADOS EN LA INFRAESTRUCTURA INSTITUCIONAL POR EL SISMO OCU | $ 150.659.181 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
+| 2026-10-22 | CHOCÓ - ALCALDÍA MUNICIPIO DE SAN JOSÉ DEL PALMAR | EJECUCIoN DE OBRAS DE REPARACIoN Y REHABILITACIoN DE LOS ELEMENTOS FiSICOS AFECTADOS DEL HOGAR DEL ADULTO MAYO | $ 150.000.000 | Selección Abreviada de Menor Cuantía (Ley 1150 de 2007) · La contratación de menor cuantía (Literal B) | Alta |
 | 2026-09-10 | CALDAS - ALCALDÍA MUNICIPIO DE MARULANDA | EJECUCIoN; A TODO COSTO Y POR EL SISTEMA DE PRECIOS UNITARIOS FIJOS; DE LAS OBRAS NECESARIAS PARA LA REPARACIo | $ 132.052.041 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-09-30 | CHOCÓ - ALCALDÍA MUNICIPIO DE UNION PANAMERICANA | INTERVENTORIA TECNICA; ADMINISTRATIVA Y FINANCIERA PARA LAS OBRAS DE REHABILITACIoN DE LA INFRAESTRUCTURA DE L | $ 120.181.894 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-10-15 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE TRUJILLO | ALQUILER DE DOS (2) VOLQUETAS TIPO DOBLE TROQUE PARA APOYAR LAS ACTIVIDADES DE REMOCIoN; CARGUE; TRANSPORTE Y  | $ 114.907.435 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-24 | CHOCÓ - ALCALDÍA MUNICIPIO DE RIO QUITO | PRESTACIoN DE SERVICIOS DE APOYO LOGiSTICO PARA LA ATENCIoN Y MITIGACIoN DE LOS EFECTOS GENERADOS POR EL SISMO | $ 113.958.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-13 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE EL CAIRO | TRANSFERENCIA DE LOS RECURSOS DISPONIBLES POR CONCEPTO DE SOBRETASA BOMBERIL AL BENEMeRITO CUERPO DE BOMBEROS  | $ 108.306.058 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
-| 2026-08-19 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE BOLÍVAR | AUNAR ESFUERZOS ENTRE EL MUNICIPIO DE BOLiVAR VALLE DEL CAUCA Y LA JUNTA DE ACCIoN COMUNAL DEL CORREGIMIENTO D | $ 97.074.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Media |
 
 _No se listan 133 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
 
@@ -106,6 +106,15 @@ _Se revisaron 341 registros de contratacion de estas dos entidades en la ventana
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 | MUNICIPIO DE YUMBO VALLE | 10 | $ 1.913.036.283 |
 | Secretaría de Educación - Alcaldía de Tuluá | 3 | $ 1.834.915.455 |
+
+## Modificaciones sobre registros ya conocidos
+
+| Fuente | Identificador | Campo | Antes | Ahora |
+|---|---|---|---|---|
+| secop1 | 26-13-14812961 | estado_del_proceso | Convocado | Terminado Anormalmente después de Convoc |
+| secop1 | 26-15-14809930 | estado_del_proceso | Convocado | Adjudicado |
+| secop1 | 26-9-511868 | estado_del_proceso | Borrador | Convocado |
+| secop1 | 26-12-14819802-13743564 | fecha_fin_ejec_contrato | 2026-12-30T00:00:00.000 | 2026-12-31T00:00:00.000 |
 
 ## Alertas
 
