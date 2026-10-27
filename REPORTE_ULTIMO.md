@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-26 19:21  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-27 14:25  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -8,11 +8,11 @@
 |---|---|
 | Contratos relacionados (alta + media) | 363 |
 | Valor de esos contratos | $ 136.818.295.753 |
-| Procesos relacionados (alta + media) | 935 |
-| Contratos nuevos en esta ejecucion | 663 |
-| Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 26479 |
-| Registros revisados en total | 60962 |
+| Procesos relacionados (alta + media) | 939 |
+| Contratos nuevos en esta ejecucion | 76 |
+| Procesos nuevos en esta ejecucion | 463 |
+| Modificaciones detectadas | 545 |
+| Registros revisados en total | 61501 |
 
 ### Desglose por nivel de gobierno
 
@@ -20,25 +20,25 @@
 |---|---:|---:|---:|
 | Alcaldía de Cali | 72 | $ 43.281.065.941 | 271 |
 | Gobernación del Valle | 11 | $ 14.148.165.515 | 80 |
-| Otras entidades del Valle | 241 | $ 74.407.567.688 | 476 |
+| Otras entidades del Valle | 241 | $ 74.407.567.688 | 479 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 6378 | $ 332.767.552.828 | 5792 |
-| Gobernación del Valle | 6067 | $ 138.470.936.792 | 5670 |
-| Descentralizadas de Cali | 403 | $ 159.097.972.849 | 1605 |
-| Descentralizadas de la Gobernación | 2995 | $ 66.275.168.145 | 4451 |
+| Alcaldía de Cali | 6453 | $ 333.694.862.828 | 5874 |
+| Gobernación del Valle | 6067 | $ 138.470.936.792 | 5672 |
+| Descentralizadas de Cali | 403 | $ 159.097.972.849 | 1647 |
+| Descentralizadas de la Gobernación | 2995 | $ 66.275.168.145 | 4535 |
 | UNGRD | 4 | $ 146.817.067 | 336 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 291 contratos ($ 98.596.442.653) y 381 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 232 contratos ($ 237.200.521.665) y 384 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 291 contratos ($ 98.596.442.653) y 382 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 232 contratos ($ 237.200.521.665) y 387 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
@@ -107,84 +107,82 @@ _Se revisaron 342 registros de contratacion de estas dos entidades en la ventana
 | MUNICIPIO DE YUMBO VALLE | 11 | $ 2.013.036.283 |
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 
-## Contratos nuevos (9 relacionados de 663 publicados)
+## Contratos nuevos (0 relacionados de 76 publicados)
 
-| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
+## Procesos nuevos (5 relacionados de 463 publicados)
+
+| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
 |---|---|---|---:|---|---|
-| 2026-10-23 | DEPARTAMENTO DE ANTIOQUIA// | CONTRATO INTERADMINISTRATIVO DE MANDATO SIN  REPRESENTACIÓN PARA LA GESTIÓN DEL SUMINISTRO Y  TRANSPORTE DE MA | $ 6.500.000.000 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | Alta |
-| 2026-10-23 | GOBERNACION DE CALDAS | AUNAR ESFUERZOS TECNICOS; ADMINISTRATIVOS Y FINANCIEROS CON LA SECRETARÍA DE CULTURA DEL DEPARTAMENTO DE CALDA | $ 175.683.164 | ALCALDIA MUNICIPIO DE RIOSUCIO CALDAS | Alta |
-| 2026-10-23 | MUNICIPIO DE YUMBO VALLE | PRESTAR EL SERVICIO DE TRANSPORTE TERRESTRE PARA REALIZAR LOS DESPLAZAMIENTOS REQUERIDOS PARA LA AYUDA Y ASIST | $ 100.000.000 | TRANSPORTES ESPECIALES ALIANZA S.A.S. | Alta |
-| 2026-10-23 | GOBERNACION DE CALDAS | AUNAR ESFUERZOS TÉCNICOS; ADMINISTRATIVOS Y FINANCIEROS CON LA SECRETARÍA DE CULTURA DEL DEPARTAMENTO DE CALDA | $ 80.000.000 | MUNICIPIO DE RISARALDA | Alta |
-| 2026-10-24 | MUNICIPIO DE ARMENIA | SUMINISTRO DE MATERIALES DE CONSTRUCCIÓN; ELEMENTOS DE FERRETERÍA E INSUMOS COMPLEMENTARIOS DESTINADOS A LA AT | $ 70.703.901 | DACAFE S.A.S | Alta |
-| 2026-10-23 | ALCALDIA MUNICIPAL DE GINEBRA | ADQUISICIÓN DE EQUIPOS TECNOLÓGICOS; MUEBLES Y ENSERES EN EL MUNICIPIO DE GINEBRA | $ 14.950.700 | IMPORSYSTEM SAS | Media |
-| 2026-10-23 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 11.841.000 | JOSE ALEXANDER GAVIRIA GONZALEZ | Alta |
-| 2026-10-23 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión para brindar apoyo técnico en las actividades requeridas por la  | $ 10.653.000 | FRANK JAYLER BALANTA SANCHEZ | Alta |
-| 2026-10-23 | ALCALDÍA MUNICIPAL DE ROLDANILLO | ARRENDAMIENTO DE BIEN INMUEBLE UBICADO EN LA CALLE 12 (11A) No. 3-11; PISO 2; BARRIO SAN SEBASTIÁN DEL MUNICIP | $ 5.898.000 | EUCARIS DEL SOCORRO VALENCIA ALVAREZ | Alta |
+| 2026-10-23 | MUNICIPIO DE YUMBO VALLE | PRESTAR EL SERVICIO DE TRANSPORTE TERRESTRE PARA REALIZAR LOS DESPLAZAMIENTOS REQUERIDOS PARA LA AYUDA Y ASIST | $ 100.000.000 | Contratación directa | Alta |
+| 2026-10-23 | MUNICIPIO DE ARMENIA | SUMINISTRO DE MATERIALES DE CONSTRUCCIÓN, ELEMENTOS DE FERRETERÍA E INSUMOS COMPLEMENTARIOS DESTINADOS A LA AT | $ 70.703.901 | Contratación directa | Alta |
+| 2026-10-23 | INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE) | PRESTAR LOS SERVICIOS PROFESIONALES ESPECIALIZADOS POR SUS PROPIOS MEDIOS CON PLENA AUTONOMÍA TÉCNICA Y ADMINI | $ 21.000.000 | Contratación directa | Media |
+| 2026-10-23 | ESPY S.A. ESP** | PRESTAR POR SUS PROPIOS MEDIOS Y CON AUTONOMÍA ADMINISTRATIVA LOS SERVICIOS PROFESIONALES DE ASESORÍA EN EL CU | $ 15.609.000 | Contratación régimen especial | Media |
+| 2026-10-23 | ALCALDÍA MUNICIPAL DE ROLDANILLO | ARRENDAMIENTO DE BIEN INMUEBLE UBICADO EN LA CALLE 12 (11A) No. 3-11, PISO 2, BARRIO SAN SEBASTIÁN DEL MUNICIP | $ 5.898.000 | Contratación directa | Alta |
 
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| contratos | CO1.PCCNTR.9842842 | fecha_de_fin_del_contrato | 2026-08-31T00:00:00.000 | 2026-08-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9823611 | fecha_de_fin_del_contrato | 2026-10-30T00:00:00.000 | 2026-10-30T23:59:00.000 |
-| contratos | CO1.PCCNTR.9821845 | fecha_de_fin_del_contrato | 2026-08-31T00:00:00.000 | 2026-08-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.10005543 | fecha_de_fin_del_contrato | 2026-11-30T00:00:00.000 | 2026-11-30T23:59:00.000 |
-| contratos | CO1.PCCNTR.9970434 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T19:00:00.000 |
-| contratos | CO1.PCCNTR.10038174 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.10100027 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T11:59:00.000 |
-| contratos | CO1.PCCNTR.9999968 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T11:59:00.000 |
-| contratos | CO1.PCCNTR.10014571 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9930332 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9802925 | fecha_de_fin_del_contrato | 2026-08-31T00:00:00.000 | 2026-08-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9831461 | fecha_de_fin_del_contrato | 2026-08-31T00:00:00.000 | 2026-08-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9976061 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T19:00:00.000 |
-| contratos | CO1.PCCNTR.9815042 | fecha_de_fin_del_contrato | 2026-08-31T00:00:00.000 | 2026-08-31T22:00:00.000 |
-| contratos | CO1.PCCNTR.9824800 | fecha_de_fin_del_contrato | 2026-08-31T00:00:00.000 | 2026-08-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.10083310 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T19:00:00.000 |
-| contratos | CO1.PCCNTR.9960869 | fecha_de_fin_del_contrato | 2026-09-30T00:00:00.000 | 2026-09-30T23:59:00.000 |
-| contratos | CO1.PCCNTR.9818003 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T12:00:00.000 |
-| contratos | CO1.PCCNTR.9957178 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T12:00:00.000 |
-| contratos | CO1.PCCNTR.9921283 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.10004069 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.10055809 | fecha_de_fin_del_contrato | 2026-12-30T00:00:00.000 | 2026-12-30T23:00:00.000 |
-| contratos | CO1.PCCNTR.9910224 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9929718 | fecha_de_fin_del_contrato | 2026-11-30T00:00:00.000 | 2026-11-30T23:59:00.000 |
-| contratos | CO1.PCCNTR.9798266 | fecha_de_fin_del_contrato | 2026-09-30T00:00:00.000 | 2026-09-30T23:59:00.000 |
-| contratos | CO1.PCCNTR.10088428 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.10101331 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10101331 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.10027519 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9793244 | fecha_de_fin_del_contrato | 2026-11-30T00:00:00.000 | 2026-11-30T11:59:00.000 |
-| contratos | CO1.PCCNTR.10095175 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9997713 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9906121 | fecha_de_fin_del_contrato | 2026-11-10T00:00:00.000 | 2026-11-10T23:59:00.000 |
-| contratos | CO1.PCCNTR.10054512 | fecha_de_fin_del_contrato | 2026-12-30T00:00:00.000 | 2026-12-30T23:59:00.000 |
-| contratos | CO1.PCCNTR.10051020 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T12:00:00.000 |
-| contratos | CO1.PCCNTR.9817185 | fecha_de_fin_del_contrato | 2026-08-31T00:00:00.000 | 2026-08-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.10010184 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T23:00:00.000 |
-| contratos | CO1.PCCNTR.10006874 | fecha_de_fin_del_contrato | 2026-10-30T00:00:00.000 | 2026-10-30T18:00:00.000 |
-| contratos | CO1.PCCNTR.10091250 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.10030845 | fecha_de_fin_del_contrato | 2026-11-30T00:00:00.000 | 2026-11-30T23:59:00.000 |
-| contratos | CO1.PCCNTR.9976122 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T12:00:00.000 |
-| contratos | CO1.PCCNTR.9864069 | fecha_de_fin_del_contrato | 2026-10-15T00:00:00.000 | 2026-10-15T11:59:00.000 |
-| contratos | CO1.PCCNTR.9836374 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T19:00:00.000 |
-| contratos | CO1.PCCNTR.9886222 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9855487 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9872277 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.10002619 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9956331 | fecha_de_fin_del_contrato | 2026-09-30T00:00:00.000 | 2026-09-30T23:59:00.000 |
-| contratos | CO1.PCCNTR.9846447 | fecha_de_fin_del_contrato | 2026-09-30T00:00:00.000 | 2026-09-30T23:00:00.000 |
-| contratos | CO1.PCCNTR.9825826 | fecha_de_fin_del_contrato | 2026-08-31T00:00:00.000 | 2026-08-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9972293 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T17:59:00.000 |
-| contratos | CO1.PCCNTR.9910303 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9998305 | fecha_de_fin_del_contrato | 2026-10-30T00:00:00.000 | 2026-10-30T23:59:00.000 |
-| contratos | CO1.PCCNTR.9964958 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9820918 | fecha_de_fin_del_contrato | 2026-11-30T00:00:00.000 | 2026-11-30T23:59:00.000 |
-| contratos | CO1.PCCNTR.9846111 | fecha_de_fin_del_contrato | 2026-08-31T00:00:00.000 | 2026-08-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.10099026 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T23:00:00.000 |
-| contratos | CO1.PCCNTR.9854273 | fecha_de_fin_del_contrato | 2026-10-10T00:00:00.000 | 2026-10-10T23:59:00.000 |
-| contratos | CO1.PCCNTR.10073375 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.10002259 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T23:00:00.000 |
+| contratos | CO1.PCCNTR.10100054 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10097662 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10096829 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10097162 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10100643 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10101014 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10100836 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10099528 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10100102 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10099583 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10088017 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10083302 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10048837 | estado_contrato | En ejecución | terminado |
+| contratos | CO1.PCCNTR.10081258 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10081258 | valor_pendiente_de_pago | 0 | 3000000 |
+| contratos | CO1.PCCNTR.10100636 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10098285 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10078434 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10099060 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10100745 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10100716 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10091437 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10099657 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10099471 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10100812 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10097902 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10098697 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10086682 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10087761 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10098256 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10100907 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10096613 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10097356 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10086899 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10097078 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10099571 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10095971 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10096746 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10087027 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10098203 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10097271 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10097241 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10097291 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10097059 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10100650 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10096053 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10066469 | nombre_supervisor | ELVI FERNANDO PORTOCARRERO QUIÑONES | LUZ ADRIANA GOMEZ FORERO |
+| contratos | CO1.PCCNTR.9802597 | valor_del_contrato | 31304000 | 46956000 |
+| contratos | CO1.PCCNTR.9802597 | estado_contrato | En ejecución | Modificado |
+| contratos | CO1.PCCNTR.9802597 | fecha_de_fin_del_contrato | 2026-10-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.9802597 | dias_adicionados | 0 | 62 |
+| contratos | CO1.PCCNTR.9802597 | valor_pendiente_de_pago | 31304000 | 46956000 |
+| contratos | CO1.PCCNTR.10100887 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10096125 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10101024 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10077844 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10097639 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10099748 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10096148 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10100105 | estado_contrato | Aprobado | En ejecución |
 
 ## Alertas
 
