@@ -1,44 +1,44 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-24 18:05  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-26 19:21  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
 | Indicador | Valor |
 |---|---|
-| Contratos relacionados (alta + media) | 358 |
-| Valor de esos contratos | $ 136.524.953.053 |
+| Contratos relacionados (alta + media) | 363 |
+| Valor de esos contratos | $ 136.818.295.753 |
 | Procesos relacionados (alta + media) | 935 |
-| Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 717 |
-| Modificaciones detectadas | 3716 |
-| Registros revisados en total | 60299 |
+| Contratos nuevos en esta ejecucion | 663 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 26479 |
+| Registros revisados en total | 60962 |
 
 ### Desglose por nivel de gobierno
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 70 | $ 43.258.571.941 | 271 |
+| Alcaldía de Cali | 72 | $ 43.281.065.941 | 271 |
 | Gobernación del Valle | 11 | $ 14.148.165.515 | 80 |
-| Otras entidades del Valle | 238 | $ 74.136.718.988 | 476 |
+| Otras entidades del Valle | 241 | $ 74.407.567.688 | 476 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 6130 | $ 326.354.952.027 | 5792 |
-| Gobernación del Valle | 6062 | $ 138.121.436.792 | 5670 |
-| Descentralizadas de Cali | 387 | $ 158.900.413.273 | 1605 |
-| Descentralizadas de la Gobernación | 2887 | $ 64.408.168.145 | 4451 |
+| Alcaldía de Cali | 6378 | $ 332.767.552.828 | 5792 |
+| Gobernación del Valle | 6067 | $ 138.470.936.792 | 5670 |
+| Descentralizadas de Cali | 403 | $ 159.097.972.849 | 1605 |
+| Descentralizadas de la Gobernación | 2995 | $ 66.275.168.145 | 4451 |
 | UNGRD | 4 | $ 146.817.067 | 336 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 287 contratos ($ 91.622.655.587) y 381 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 228 contratos ($ 234.591.547.376) y 384 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 291 contratos ($ 98.596.442.653) y 381 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 232 contratos ($ 237.200.521.665) y 384 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
@@ -79,7 +79,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-10-15 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE TRUJILLO | ALQUILER DE DOS (2) VOLQUETAS TIPO DOBLE TROQUE PARA APOYAR LAS ACTIVIDADES DE REMOCIoN; CARGUE; TRANSPORTE Y  | $ 114.907.435 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-24 | CHOCÓ - ALCALDÍA MUNICIPIO DE RIO QUITO | PRESTACIoN DE SERVICIOS DE APOYO LOGiSTICO PARA LA ATENCIoN Y MITIGACIoN DE LOS EFECTOS GENERADOS POR EL SISMO | $ 113.958.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 
-_No se listan 136 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
+_No se listan 137 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
 
 ## UNGRD y FNGRD · NIT 900.478.966-6 y 900.978.341
 
@@ -94,145 +94,140 @@ _Se revisaron 342 registros de contratacion de estas dos entidades en la ventana
 | UNIAJC | 11 | $ 37.153.681.870 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS | 2 | $ 13.169.100.000 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO | 1 | $ 9.178.570.453 |
-| SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | 58 | $ 8.908.005.358 |
+| SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | 60 | $ 8.930.499.358 |
 | GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE VIVIENDA Y HABITAT | 1 | $ 8.592.000.000 |
 | Secretaría de Hábitat e Infraestructura - Alcaldía de Tuluá | 2 | $ 5.299.818.848 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO | 1 | $ 5.000.000.000 |
 | CVC | 12 | $ 4.205.773.952 |
 | MUNICIPIO DE CALIMA EL DARIEN VALLE | 6 | $ 3.008.053.619 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA | 2 | $ 2.849.451.216 |
-| GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA | 1 | $ 2.568.577.795 |
+| GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL; AGRICULTURA Y PESCA | 1 | $ 2.568.577.795 |
 | ALCALDIA MUNICIPAL DE YOTOCO | 7 | $ 2.335.627.623 |
 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | 12 | $ 2.259.433.730 |
+| MUNICIPIO DE YUMBO VALLE | 11 | $ 2.013.036.283 |
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
-| MUNICIPIO DE YUMBO VALLE | 10 | $ 1.913.036.283 |
 
-## Procesos nuevos (14 relacionados de 717 publicados)
+## Contratos nuevos (9 relacionados de 663 publicados)
 
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
+| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
 |---|---|---|---:|---|---|
-| 2026-10-23 | DEPARTAMENTO DE ANTIOQUIA// | CONTRATO INTERADMINISTRATIVO DE MANDATO SIN REPRESENTACIÓN PARA LA GESTIÓN DEL SUMINISTRO Y TRANSPORTE DE MATE | $ 6.500.000.000 | Contratación directa | Alta |
-| 2026-10-22 | COMPRADOR - EMPRESA CARTAGUEÑA DE DESARROLLO - EMCADE | REHABILITACION Y RECONSTRUCCION DE CANALES REVESTIDOS Y EN CONCRETO PARA LA MITIGACION DEL RIESGO POR INESTABI | $ 1.029.022.573 | Contratación régimen especial | Media |
-| 2026-10-23 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | SUMINISTRO, CONSTRUCCIÓN E INSTALACIÓN DE AULAS MODULARES PREFABRICADAS EN INSTITUCIONES EDUCATIVAS EN ATENCIÓ | $ 1.001.530.269 | Contratación directa | Alta |
-| 2026-10-22 | ALCALDIA MUNICIPAL LA VIRGINIA RISARALDA | EJECUTAR LA DEMOLICIÓN DE LAS ESTRUCTURAS AFECTADAS Y EL CARGUE, RECOLECCIÓN, TRANSPORTE Y DISPOSICIÓN FINAL D | $ 250.000.000 | Contratación directa | Alta |
-| 2026-10-23 | GOBERNACION DE CALDAS | AUNAR ESFUERZOS TECNICOS, ADMINISTRATIVOS Y FINANCIEROS CON LA SECRETARÍA DE CULTURA DEL DEPARTAMENTO DE CALDA | $ 175.683.164 | Contratación directa | Alta |
-| 2026-10-23 | GOBERNACION DE CALDAS | AUNAR ESFUERZOS TÉCNICOS, ADMINISTRATIVOS Y FINANCIEROS CON LA SECRETARÍA DE CULTURA DEL DEPARTAMENTO DE CALDA | $ 80.000.000 | Contratación directa | Alta |
-| 2026-10-22 | COMPRADOR - EMPRESA CARTAGUEÑA DE DESARROLLO - EMCADE | CONTRATAR LA INTERVENTORIA TECNICA ADMINISTRATIVA FINANCIERA, CONTABLE, JURIDICA Y AMBIENTAL DEL CONTRATO DE O | $ 78.434.398 | Contratación régimen especial | Media |
-| 2026-10-22 | INSTITUCION EDUCATIVA CIUDAD DE CARTAGO | Contratar la ejecución de obras de mantenimiento preventivo y correctivo, adecuación de infraestructura física | $ 25.000.000 | Contratación régimen especial | Alta |
-| 2026-10-23 | INSTITUCION EDUCATIVA MAGDALENA ORTEGA | SUMINISTRO DE MATERIALES DE CONSTRUCCIÓN Y FERRETERÍA PARA LA REPARACIÓN Y RECUPERACIÓN DE LA INFRAESTRUCTURA  | $ 21.440.733 | Contratación régimen especial | Alta |
-| 2026-10-22 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS PROFESIONALES COMO FISIOTERAPEUTA EN LA ACTIVIDAD DIVULGAR CONTENIDOS TEMÁTICOS EN GESTI | $ 15.000.000 | Contratación directa | Media |
-| 2026-10-23 | INSTITUCION EDUCATIVA CIUDADELA SAN BERNARDO | Contratar la ejecución de actividades de mantenimiento, adecuación y mejoramiento de la infraestructura física | $ 13.187.839 | Contratación régimen especial | Alta |
-| 2026-10-23 | INSTITUCION EDUCATIVA MAGDALENA ORTEGA | PRESTACIÓN DE SERVICIOS DE MANO DE OBRA PARA LA REPARACIÓN Y RECUPERACIÓN DE LA INFRAESTRUCTURA LOCATIVA DE LA | $ 7.581.683 | Contratación régimen especial | Alta |
-| 2026-10-22 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES EN LA SUBSECRETARIA DE PLANEACION Y CALIDAD EDUCATIVA PARA REALIZAR LA VALORAC | $ 5.573.333 | Contratación directa | Alta |
-| 2026-10-22 | INSTITUCION EDUCATIVA LA PAZ | Contratar la prestación del servicio de recarga y mantenimiento de extintores de la Institución Educativa Ofic | $ 2.076.500 | Contratación régimen especial | Media |
+| 2026-10-23 | DEPARTAMENTO DE ANTIOQUIA// | CONTRATO INTERADMINISTRATIVO DE MANDATO SIN  REPRESENTACIÓN PARA LA GESTIÓN DEL SUMINISTRO Y  TRANSPORTE DE MA | $ 6.500.000.000 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | Alta |
+| 2026-10-23 | GOBERNACION DE CALDAS | AUNAR ESFUERZOS TECNICOS; ADMINISTRATIVOS Y FINANCIEROS CON LA SECRETARÍA DE CULTURA DEL DEPARTAMENTO DE CALDA | $ 175.683.164 | ALCALDIA MUNICIPIO DE RIOSUCIO CALDAS | Alta |
+| 2026-10-23 | MUNICIPIO DE YUMBO VALLE | PRESTAR EL SERVICIO DE TRANSPORTE TERRESTRE PARA REALIZAR LOS DESPLAZAMIENTOS REQUERIDOS PARA LA AYUDA Y ASIST | $ 100.000.000 | TRANSPORTES ESPECIALES ALIANZA S.A.S. | Alta |
+| 2026-10-23 | GOBERNACION DE CALDAS | AUNAR ESFUERZOS TÉCNICOS; ADMINISTRATIVOS Y FINANCIEROS CON LA SECRETARÍA DE CULTURA DEL DEPARTAMENTO DE CALDA | $ 80.000.000 | MUNICIPIO DE RISARALDA | Alta |
+| 2026-10-24 | MUNICIPIO DE ARMENIA | SUMINISTRO DE MATERIALES DE CONSTRUCCIÓN; ELEMENTOS DE FERRETERÍA E INSUMOS COMPLEMENTARIOS DESTINADOS A LA AT | $ 70.703.901 | DACAFE S.A.S | Alta |
+| 2026-10-23 | ALCALDIA MUNICIPAL DE GINEBRA | ADQUISICIÓN DE EQUIPOS TECNOLÓGICOS; MUEBLES Y ENSERES EN EL MUNICIPIO DE GINEBRA | $ 14.950.700 | IMPORSYSTEM SAS | Media |
+| 2026-10-23 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 11.841.000 | JOSE ALEXANDER GAVIRIA GONZALEZ | Alta |
+| 2026-10-23 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión para brindar apoyo técnico en las actividades requeridas por la  | $ 10.653.000 | FRANK JAYLER BALANTA SANCHEZ | Alta |
+| 2026-10-23 | ALCALDÍA MUNICIPAL DE ROLDANILLO | ARRENDAMIENTO DE BIEN INMUEBLE UBICADO EN LA CALLE 12 (11A) No. 3-11; PISO 2; BARRIO SAN SEBASTIÁN DEL MUNICIP | $ 5.898.000 | EUCARIS DEL SOCORRO VALENCIA ALVAREZ | Alta |
 
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| procesos | CO1.REQ.11238377 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11238377 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11240355 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11240355 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11233582 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11233582 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11250903 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11250903 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11250903 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11237029 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11237029 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11246183 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11246183 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11226016 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11226016 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11236873 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11236873 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11240738 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11240738 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11245404 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11245404 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11240694 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11240694 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11226358 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11226358 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11225851 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11225851 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11237930 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11237930 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11242174 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11242174 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11239515 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11239515 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11247378 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11247378 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11225782 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11225782 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11240746 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11240746 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11241311 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11241311 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11233735 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11233735 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11246542 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11246542 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11237178 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11237178 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11236739 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11236739 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11233690 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11233690 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11245295 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11245295 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11240418 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11240418 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11226356 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11226356 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11069009 | valor_total_adjudicacion | 562994224 | 1381033542 |
-| procesos | CO1.REQ.11069009 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11248515 | fase |  | Presentación de oferta |
+| contratos | CO1.PCCNTR.9842842 | fecha_de_fin_del_contrato | 2026-08-31T00:00:00.000 | 2026-08-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.9823611 | fecha_de_fin_del_contrato | 2026-10-30T00:00:00.000 | 2026-10-30T23:59:00.000 |
+| contratos | CO1.PCCNTR.9821845 | fecha_de_fin_del_contrato | 2026-08-31T00:00:00.000 | 2026-08-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.10005543 | fecha_de_fin_del_contrato | 2026-11-30T00:00:00.000 | 2026-11-30T23:59:00.000 |
+| contratos | CO1.PCCNTR.9970434 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T19:00:00.000 |
+| contratos | CO1.PCCNTR.10038174 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.10100027 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T11:59:00.000 |
+| contratos | CO1.PCCNTR.9999968 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T11:59:00.000 |
+| contratos | CO1.PCCNTR.10014571 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.9930332 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.9802925 | fecha_de_fin_del_contrato | 2026-08-31T00:00:00.000 | 2026-08-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.9831461 | fecha_de_fin_del_contrato | 2026-08-31T00:00:00.000 | 2026-08-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.9976061 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T19:00:00.000 |
+| contratos | CO1.PCCNTR.9815042 | fecha_de_fin_del_contrato | 2026-08-31T00:00:00.000 | 2026-08-31T22:00:00.000 |
+| contratos | CO1.PCCNTR.9824800 | fecha_de_fin_del_contrato | 2026-08-31T00:00:00.000 | 2026-08-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.10083310 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T19:00:00.000 |
+| contratos | CO1.PCCNTR.9960869 | fecha_de_fin_del_contrato | 2026-09-30T00:00:00.000 | 2026-09-30T23:59:00.000 |
+| contratos | CO1.PCCNTR.9818003 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T12:00:00.000 |
+| contratos | CO1.PCCNTR.9957178 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T12:00:00.000 |
+| contratos | CO1.PCCNTR.9921283 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.10004069 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.10055809 | fecha_de_fin_del_contrato | 2026-12-30T00:00:00.000 | 2026-12-30T23:00:00.000 |
+| contratos | CO1.PCCNTR.9910224 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.9929718 | fecha_de_fin_del_contrato | 2026-11-30T00:00:00.000 | 2026-11-30T23:59:00.000 |
+| contratos | CO1.PCCNTR.9798266 | fecha_de_fin_del_contrato | 2026-09-30T00:00:00.000 | 2026-09-30T23:59:00.000 |
+| contratos | CO1.PCCNTR.10088428 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.10101331 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10101331 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.10027519 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.9793244 | fecha_de_fin_del_contrato | 2026-11-30T00:00:00.000 | 2026-11-30T11:59:00.000 |
+| contratos | CO1.PCCNTR.10095175 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.9997713 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.9906121 | fecha_de_fin_del_contrato | 2026-11-10T00:00:00.000 | 2026-11-10T23:59:00.000 |
+| contratos | CO1.PCCNTR.10054512 | fecha_de_fin_del_contrato | 2026-12-30T00:00:00.000 | 2026-12-30T23:59:00.000 |
+| contratos | CO1.PCCNTR.10051020 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T12:00:00.000 |
+| contratos | CO1.PCCNTR.9817185 | fecha_de_fin_del_contrato | 2026-08-31T00:00:00.000 | 2026-08-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.10010184 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T23:00:00.000 |
+| contratos | CO1.PCCNTR.10006874 | fecha_de_fin_del_contrato | 2026-10-30T00:00:00.000 | 2026-10-30T18:00:00.000 |
+| contratos | CO1.PCCNTR.10091250 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.10030845 | fecha_de_fin_del_contrato | 2026-11-30T00:00:00.000 | 2026-11-30T23:59:00.000 |
+| contratos | CO1.PCCNTR.9976122 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T12:00:00.000 |
+| contratos | CO1.PCCNTR.9864069 | fecha_de_fin_del_contrato | 2026-10-15T00:00:00.000 | 2026-10-15T11:59:00.000 |
+| contratos | CO1.PCCNTR.9836374 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T19:00:00.000 |
+| contratos | CO1.PCCNTR.9886222 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.9855487 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.9872277 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.10002619 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.9956331 | fecha_de_fin_del_contrato | 2026-09-30T00:00:00.000 | 2026-09-30T23:59:00.000 |
+| contratos | CO1.PCCNTR.9846447 | fecha_de_fin_del_contrato | 2026-09-30T00:00:00.000 | 2026-09-30T23:00:00.000 |
+| contratos | CO1.PCCNTR.9825826 | fecha_de_fin_del_contrato | 2026-08-31T00:00:00.000 | 2026-08-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.9972293 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T17:59:00.000 |
+| contratos | CO1.PCCNTR.9910303 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.9998305 | fecha_de_fin_del_contrato | 2026-10-30T00:00:00.000 | 2026-10-30T23:59:00.000 |
+| contratos | CO1.PCCNTR.9964958 | fecha_de_fin_del_contrato | 2026-10-31T00:00:00.000 | 2026-10-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.9820918 | fecha_de_fin_del_contrato | 2026-11-30T00:00:00.000 | 2026-11-30T23:59:00.000 |
+| contratos | CO1.PCCNTR.9846111 | fecha_de_fin_del_contrato | 2026-08-31T00:00:00.000 | 2026-08-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.10099026 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T23:00:00.000 |
+| contratos | CO1.PCCNTR.9854273 | fecha_de_fin_del_contrato | 2026-10-10T00:00:00.000 | 2026-10-10T23:59:00.000 |
+| contratos | CO1.PCCNTR.10073375 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.10002259 | fecha_de_fin_del_contrato | 2026-12-31T00:00:00.000 | 2026-12-31T23:00:00.000 |
 
 ## Alertas
 
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS - $ 7.999.950.000 - EMPRESA REGIONAL DE SERVICIO PUBLICO DE ASEO DE CANDELARIA [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO - $ 5.000.000.000 - ADD MEDIA S.A.S [SECOP II]
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD - $ 1.579.746.154 - GV INGENIERIA INTEGRAL SAS [SECOP II]
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA - $ 900.000.000 - UNION TEMPORAL LOGISTICA ALIMENTARIA INTEGRAL [SECOP II]
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE - $ 1.075.069.800 - REHIMAC S.A [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA - $ 1.488.426.655 - CONCRETAR 2026 [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO - $ 9.178.570.453 - FUNDACION WWB COLOMBIA [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE - $ 1.075.069.800 - REHIMAC S.A [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI - $ 700.000.000 - 2 GROUP SAS [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI - $ 525.000.000 - RED DE SALUD DEL ORIENTE ESE [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE - $ 6.050.000.000 - FUNDACION PROSPERIDAD Y FUTURO DEL PACIFICO [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA - $ 900.000.000 - UNION TEMPORAL LOGISTICA ALIMENTARIA INTEGRAL [SECOP II]
+- **Contrato de alto valor**: DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES - $ 649.987.520 - FANALCA S.A.S. [SECOP II]
+- **Contrato de alto valor**: GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL; AGRICULTURA Y PESCA - $ 2.568.577.795 - FUNDACIÓN AVE FÉNIX [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE - $ 515.216.559 - ROCALES Y CONCRETOS SAS [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD - $ 1.579.746.154 - GV INGENIERIA INTEGRAL SAS [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS - $ 5.169.150.000 - EMPRESA REGIONAL DE SERVICIO PUBLICO DE ASEO DE CANDELARIA [SECOP II]
+- **Contrato de alto valor**: GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE VIVIENDA Y HABITAT - $ 8.592.000.000 - COMERCIALIZADORA ORIKUA SAS [SECOP II]
 - **Contrato de alto valor**: GOBERNACION DEL VALLE DEL CAUCA - DADI - $ 1.300.000.000 - Prensa y Entretenimiento Agencia de Comunicaciones S.A.S [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA - $ 1.361.024.561 - FENIX ASFALTOS Y CONCRETOS SAS [SECOP II]
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI - $ 525.000.000 - RED DE SALUD DEL ORIENTE ESE [SECOP II]
-- **Contrato de alto valor**: GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL, AGRICULTURA Y PESCA - $ 2.568.577.795 - FUNDACIÓN AVE FÉNIX [SECOP II]
-- **Contrato de alto valor**: GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE VIVIENDA Y HABITAT - $ 8.592.000.000 - COMERCIALIZADORA ORIKUA SAS [SECOP II]
-- **Contrato de alto valor**: DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES - $ 649.987.520 - FANALCA S.A.S. [SECOP II]
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS - $ 5.169.150.000 - EMPRESA REGIONAL DE SERVICIO PUBLICO DE ASEO DE CANDELARIA [SECOP II]
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL- UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE BIENES Y SERVICIOS - CALI - $ 700.000.000 - 2 GROUP SAS [SECOP II]
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS - $ 7.999.950.000 - EMPRESA REGIONAL DE SERVICIO PUBLICO DE ASEO DE CANDELARIA [SECOP II]
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE - $ 6.050.000.000 - FUNDACION PROSPERIDAD Y FUTURO DEL PACIFICO [SECOP II]
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA - $ 1.488.426.655 - CONCRETAR 2026 [SECOP II]
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE - $ 515.216.559 - ROCALES Y CONCRETOS SAS [SECOP II]
-- **Contrato de alto valor**: CVC - $ 996.015.936 - FUNDACION BALU [SECOP II]
-- **Contrato de alto valor**: HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E - $ 1.150.889.534 - PLANEAMOS SAS [SECOP II]
-- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.976.130.044 - Prodecon S.A.S [SECOP II]
-- **Contrato de alto valor**: INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ - $ 1.400.000.000 - CORPORACION ECOPROJECTS [SECOP II]
-- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.500.811.562 - ICSIN LTDA [SECOP II]
-- **Contrato de alto valor**: MUNICIPIO DE SEVILLA - $ 599.904.848 - MARTHA LILIANA ALFARO GARCIA [SECOP II]
-- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.483.070.607 - Ingelmeth [SECOP II]
-- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 12.221.820.000 - SKYLINE [SECOP II]
-- **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 1.079.131.571 - PSI SOLUTIONS SAS [SECOP II]
-- **Contrato de alto valor**: Secretaría de Educación - Alcaldía de Tuluá - $ 1.583.549.971 - ARQHOSP SAS [SECOP II]
-- **Contrato de alto valor**: UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA - $ 1.321.917.014 - CONSORCIO UES VALLE 2026 [SECOP II]
-- **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 972.449.042 - GG CM [SECOP II]
-- **Contrato de alto valor**: ALCALDIA MUNICIPAL DE YOTOCO - $ 1.305.627.623 - EMPRESA DE SERVICIO PUBLICO DE ASEO DEL MUNICIPIO DE YOTOCO - VALLE DEL CAUCA S.A.S E.S.P [SECOP II]
-- **Contrato de alto valor**: ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE - $ 620.200.000 - FUNDACION RAFAEL FE Y ESPERANZA [SECOP II]
-- **Contrato de alto valor**: Secretaría de Hábitat e Infraestructura - Alcaldía de Tuluá - $ 5.199.818.848 - EMPRESAS MUNICIPALES DE TULUA E.S.P. [SECOP II]
-- **Contrato de alto valor**: CVC - $ 948.000.000 - Q C [SECOP II]
-- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 2.389.605.620 - Prodecon S.A.S [SECOP II]
-- **Contrato de alto valor**: ARMADA NACIONAL BASE NAVAL ARC MALAGA - $ 761.600.000 - LONA GROUP SAS [SECOP II]
 - **Contrato de alto valor**: CVC - $ 1.422.879.908 - CORPORACION AMANO NATIVA [SECOP II]
-- **Contrato de alto valor**: ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE - $ 1.110.000.000 - FUNDETER [SECOP II]
+- **Contrato de alto valor**: CVC - $ 996.015.936 - FUNDACION BALU [SECOP II]
 - **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 597.455.382 - GG CM [SECOP II]
+- **Contrato de alto valor**: ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE - $ 620.200.000 - FUNDACION RAFAEL FE Y ESPERANZA [SECOP II]
+- **Contrato de alto valor**: ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE - $ 1.110.000.000 - FUNDETER [SECOP II]
+- **Contrato de alto valor**: CVC - $ 948.000.000 - Q C [SECOP II]
+- **Contrato de alto valor**: ARMADA NACIONAL BASE NAVAL ARC MALAGA - $ 761.600.000 - LONA GROUP SAS [SECOP II]
+- **Contrato de alto valor**: UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA - $ 1.321.917.014 - CONSORCIO UES VALLE 2026 [SECOP II]
+- **Contrato de alto valor**: RED DE SALUD DEL ORIENTE ESE - $ 525.000.000 - ASOCIACION GREMIAL ESPECIALIZADA EN SALUD DEL OCCIDENTE [SECOP II]
 - **Contrato de alto valor**: ALCALDIA DE ALCALA - $ 528.784.465 - GRUPO EMPRESARIAL DEL SUR SIGLO XXI S.A.S. E.S.P [SECOP II]
+- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 6.976.838.150 - TECH TRANSIT S.A.S. [SECOP II]
+- **Contrato de alto valor**: Secretaría de Educación - Alcaldía de Tuluá - $ 1.583.549.971 - ARQHOSP SAS [SECOP II]
+- **Contrato de alto valor**: Secretaría de Hábitat e Infraestructura - Alcaldía de Tuluá - $ 5.199.818.848 - EMPRESAS MUNICIPALES DE TULUA E.S.P. [SECOP II]
+- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.500.811.562 - ICSIN LTDA [SECOP II]
+- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.483.070.607 - Ingelmeth [SECOP II]
 - **Contrato de alto valor**: MUNICIPIO DE YUMBO VALLE - $ 1.413.020.078 - JAVIER GORDILLO GRISALES [SECOP II]
+- **Contrato de alto valor**: HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E - $ 1.150.889.534 - PLANEAMOS SAS [SECOP II]
+- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.125.264.000 - NOVATECH INGENIERIA Y CONSTRUCCION SAS [SECOP II]
+- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 12.221.820.000 - SKYLINE [SECOP II]
+- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 2.389.605.620 - Prodecon S.A.S [SECOP II]
+- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.976.130.044 - Prodecon S.A.S [SECOP II]
+- **Contrato de alto valor**: ALCALDIA MUNICIPAL DE YOTOCO - $ 1.305.627.623 - EMPRESA DE SERVICIO PUBLICO DE ASEO DEL MUNICIPIO DE YOTOCO - VALLE DEL CAUCA S.A.S E.S.P [SECOP II]
+- **Contrato de alto valor**: INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ - $ 1.400.000.000 - CORPORACION ECOPROJECTS [SECOP II]
 
 ---
 

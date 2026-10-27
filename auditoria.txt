@@ -1,15 +1,15 @@
-Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-10-26T00:00:00
+Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-10-28T00:00:00
 Entidades auditadas: 53  (2 centrales + 2 UNGRD/FNGRD + 12 descentralizadas de Cali + 18 de la Gobernacion + 19 otras del Valle)
 Comprobaciones: 53 entidades x 3 fuentes = 159, cada una por tres caminos independientes
 
 Fuente     Entidad                NIT         API simple  API amplio    CSV   Veredicto
 ------------------------------------------------------------------------------------
-contratos  Alcaldia de Cali       890399011         6142        6200   6200   OK
-contratos  Gobernacion del Valle  890399029         3126        6073   6073   OK
+contratos  Alcaldia de Cali       890399011         6392        6450   6450   OK
+contratos  Gobernacion del Valle  890399029         3131        6078   6078   OK
 contratos  UNGRD / FNGRD          900478966            3           3      3   OK
 contratos  UNGRD / FNGRD          900978341            1           1      1   OK
 contratos  Desc.Cali EMCALI - Empresas Munici890399003            0           0      0   OK
-contratos  Desc.Cali Metro Cali S.A.805013171          179         179    179   OK
+contratos  Desc.Cali Metro Cali S.A.805013171          195         195    195   OK
 contratos  Desc.Cali Red de Salud de Ladera E805027289            0           0      0   OK
 contratos  Desc.Cali Red de Salud del Norte E805027287            0           0      0   OK
 contratos  Desc.Cali Red de Salud del Oriente805027337           34          34     34   OK
@@ -20,7 +20,7 @@ contratos  Desc.Cali Personeria Distrital de 805003895           86          86 
 contratos  Desc.Cali Contraloria de Santiago 800217831           45          45     45   OK
 contratos  Desc.Cali IE Normal Superior Santi800243065            0           0      0   OK
 contratos  Desc.Cali Camara de Comercio de Ca890399001            0           0      0   OK
-contratos  Desc.Gob  INDERVALLE - Instituto d805012896         2497        2497   2497   OK
+contratos  Desc.Gob  INDERVALLE - Instituto d805012896         2605        2605   2605   OK
 contratos  Desc.Gob  INFIVALLE - Instituto Fi890308051           30          30     30   OK
 contratos  Desc.Gob  INCIVA       800086201          151         151    151   OK
 contratos  Desc.Gob  Universidad del Valle890399010            0           0      0   OK
@@ -47,11 +47,11 @@ contratos  Otras     Empresa de Servicio Publ900401903            0           0 
 contratos  Otras     Empresas Publicas Munici891900474            0           0      0   OK
 contratos  Otras     Instituto Municipal del 891900528            0           0      0   OK
 contratos  Otras     Instituto Distrital del 890399992            0           0      0   OK
-contratos  Otras     Personeria Municipal de 891900493          151         154    154   OK
+contratos  Otras     Personeria Municipal de 891900493          156         159    159   OK
 contratos  Otras     Personeria Municipal de 901159063            0           0      0   OK
 contratos  Otras     Personeria Municipal de 900085817            0           0      0   OK
-contratos  Otras     Personeria Municipal de 800100524          102         102    102   OK
-contratos  Otras     Concejo Municipal de Jam890399046          846         846    846   OK
+contratos  Otras     Personeria Municipal de 800100524          105         105    105   OK
+contratos  Otras     Concejo Municipal de Jam890399046          855         855    855   OK
 contratos  Otras     IE Alfonso Lopez Pumarej805000057            0           0      0   OK
 contratos  Otras     IE Paulo VI - Palmira815004730            0           0      0   OK
 contratos  Otras     IE Ginebra La Salle891380108            0           0      0   OK
