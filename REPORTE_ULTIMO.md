@@ -1,44 +1,44 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-27 19:24  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-28 08:59  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
 | Indicador | Valor |
 |---|---|
-| Contratos relacionados (alta + media) | 365 |
-| Valor de esos contratos | $ 137.120.494.096 |
+| Contratos relacionados (alta + media) | 394 |
+| Valor de esos contratos | $ 138.177.771.535 |
 | Procesos relacionados (alta + media) | 939 |
-| Contratos nuevos en esta ejecucion | 76 |
+| Contratos nuevos en esta ejecucion | 485 |
 | Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 255 |
-| Registros revisados en total | 61577 |
+| Modificaciones detectadas | 898 |
+| Registros revisados en total | 62062 |
 
 ### Desglose por nivel de gobierno
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 72 | $ 43.281.065.941 | 271 |
+| Alcaldía de Cali | 96 | $ 43.681.337.941 | 271 |
 | Gobernación del Valle | 11 | $ 14.148.165.515 | 80 |
-| Otras entidades del Valle | 241 | $ 74.407.567.688 | 479 |
+| Otras entidades del Valle | 245 | $ 75.057.859.794 | 479 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 6505 | $ 334.200.148.328 | 5874 |
-| Gobernación del Valle | 6068 | $ 141.470.886.232 | 5672 |
-| Descentralizadas de Cali | 406 | $ 159.246.180.849 | 1647 |
-| Descentralizadas de la Gobernación | 2997 | $ 66.298.006.026 | 4535 |
+| Alcaldía de Cali | 6609 | $ 336.115.990.369 | 5874 |
+| Gobernación del Valle | 6074 | $ 141.627.886.232 | 5672 |
+| Descentralizadas de Cali | 413 | $ 159.526.897.767 | 1647 |
+| Descentralizadas de la Gobernación | 3174 | $ 68.732.381.034 | 4535 |
 | UNGRD | 4 | $ 146.817.067 | 336 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 291 contratos ($ 98.596.442.653) y 382 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 232 contratos ($ 237.200.521.665) y 387 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 294 contratos ($ 98.727.925.265) y 382 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 234 contratos ($ 240.204.955.063) y 387 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
@@ -93,8 +93,8 @@ _Se revisaron 342 registros de contratacion de estas dos entidades en la ventana
 |---|---:|---:|
 | UNIAJC | 11 | $ 37.153.681.870 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS | 2 | $ 13.169.100.000 |
+| SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | 84 | $ 9.330.771.358 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO | 1 | $ 9.178.570.453 |
-| SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | 60 | $ 8.930.499.358 |
 | GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE VIVIENDA Y HABITAT | 1 | $ 8.592.000.000 |
 | Secretaría de Hábitat e Infraestructura - Alcaldía de Tuluá | 2 | $ 5.299.818.848 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO | 1 | $ 5.000.000.000 |
@@ -107,77 +107,107 @@ _Se revisaron 342 registros de contratacion de estas dos entidades en la ventana
 | MUNICIPIO DE YUMBO VALLE | 11 | $ 2.013.036.283 |
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 
-## Contratos nuevos (2 relacionados de 76 publicados)
+## Contratos nuevos (32 relacionados de 485 publicados)
 
 | Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
 |---|---|---|---:|---|---|
-| 2026-10-26 | MUNICIPIO DE SAN JOSE. | PRESTACIÓN DE SERVICIOS DE APOYO TÉCNICO Y OPERATIVO PARA LA ATENCIÓN Y RECUPERACIÓN DE LAS VIVIENDAS Y EDIFIC | $ 295.991.676 | INGENIERIA & DISEÑOS INTEGRALES S.A.S | Alta |
-| 2026-10-26 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES EN LA SUBSECRETARIA DE PLANEACIÓN Y CALIDAD EDUCATIVA PARA REALIZAR LA VALORAC | $ 6.206.667 | BETANCUR HENAO ALEJANDRO | Alta |
+| 2026-10-26 | ALCALDÍA MUNICIPIO DE PALMIRA | REALIZAR OBRAS DE MANTENIMIENTO Y LIMPIEZA MECÁNICA Y MANUAL DE CAUCES NATURALES COMO ACCIONES PARA LA REDUCCI | $ 486.023.300 | CARLOS ARMANDO PEDROZA ROJAS | Media |
+| 2026-10-27 | GOBERNACION DE CALDAS | Aunar esfuerzos técnicos; administrativos y financieros entre el Departamento de Caldas y el Municipio de Rios | $ 90.792.612 | ALCALDIA MUNICIPIO DE RIOSUCIO CALDAS | Alta |
+| 2026-10-26 | ALCALDIA MUNICIPAL DE BUGA | AUNAR ESFUERZOS TECNICOS; ADMINISTRATIVOS Y ECONOMICOS EN LA IMPLEMENTACION Y/O EJECUCION DE LOS DIFERENTES PL | $ 85.714.286 | CRUZ ROJA COLOMBIANA SECCIONAL VALLE DEL CAUCA | Media |
+| 2026-10-26 | DIMAR - GRUPO INTENDENCIA REGIONAL PACIFICO | CONTRATAR LOS ESTUDIOS ESPECIALIZADOS DE PATOLOGÍA; EVALUACIÓN DE VULNERABILIDAD SÍSMICA Y DIAGNÓSTICO DEL SIS | $ 71.100.000 | SERVICIOS DE  INGENIERIA TECNICA CONSULTORIA Y CONSTRUCCIONES | Alta |
+| 2026-10-26 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL ESPECIALISTA EN INGENIERÍA ESTRUCTURAL PARA APOYAR A LA E | $ 22.500.000 | HUGO ALEJNDRO HURTADO ARIAS | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 21.108.000 | JUAN CARLOS ZEA MATEUS | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 21.108.000 | CRISTAN CAMILO HAMON VASQUEZ | Alta |
+| 2026-10-27 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS PROFESIONALES PARA LA IDENTIFICACION; VERIFICACIÓN Y ORGANIZACIÓN DE INFORMACIÓN PREDI | $ 18.750.000 | CESAR AUGUSTO ARROYAVE GIL | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 18.741.000 | Yeisson Stiven Urazan Muñoz | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 18.741.000 | FERNANDO ALBERTO PADILLA | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | CRISTHIAN CAMILO CERON LOPEZ | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 16.989.000 | JHON JAIRO VALLEJO LOPEZ | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Sussan Valentina Sánchez Ordoñez | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | JORGE HUMBERTO CONTRERAS ARCE | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | PAULA ANDREA ALUMA CABAL | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Tania Guapi Arce | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | LISETH CATHERINE MEJIA MORA | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | JHONATAN ALLEXIS LOZANO BASTIDAS | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | PAOLA AGREDO CRUZ | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | andres fabian rivera lozano | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Natalia Hernandez Viedman | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | JAIME ANDRÉS | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 16.989.000 | LUIS FABIO RAMIREZ CIFUENTES | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Luis Angel Riscos Escaño | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 16.989.000 | JAIME ALBERTO VASQUEZ BERNAL | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Melanie Zeltzin Gordillo Arcos | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 14.415.000 | LINA MARIA TOVAR MURILLO | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 11.841.000 | SHARON MURILLO | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 11.841.000 | EVELING BONILLA SINISTERRA | Alta |
+| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión para brindar apoyo técnico en las actividades requeridas por la  | $ 10.653.000 | MIGUEL ÁNGEL AMÚ MARTÍNEZ | Alta |
+| 2026-10-26 | ALCALDIA DE CAICEDONIA | Mantenimiento y mejoramiento de las vías rurales y urbanas del municipio de Caicedonia; Valle del Cauca Manten | $ 7.454.520 | JULIAN ALBERTO YATE DUQUE | Alta |
+| 2026-10-26 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONAL EN LA SUBSECRETARIA DE PLANEACIÓN Y CALIDAD EDUCATIVA DESARROLLANDO ACTIVIDADES  | $ 6.713.333 | alexander santibañez duque | Alta |
 
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| contratos | CO1.PCCNTR.10071092 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10071092 | valor_pendiente_de_pago | 0 | 10500000 |
-| contratos | CO1.PCCNTR.10059632 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10046583 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10107555 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10107555 | valor_pendiente_de_pago | 0 | 12012500 |
-| contratos | CO1.PCCNTR.10091722 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10086878 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10104391 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10067284 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10092887 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10103390 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10094846 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10080772 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10080772 | valor_pendiente_de_pago | 0 | 8000000 |
-| contratos | CO1.PCCNTR.10092119 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10085876 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10064175 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10073035 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10073035 | valor_pendiente_de_pago | 0 | 8000000 |
-| contratos | CO1.PCCNTR.10104707 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10059210 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10087966 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10098467 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10082445 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10098487 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10087388 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10065034 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10067450 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10089294 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10049423 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10075155 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10094056 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10103539 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10069310 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10073756 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10073756 | valor_pendiente_de_pago | 0 | 15400000 |
-| contratos | CO1.PCCNTR.10091500 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10081263 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10095019 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10100629 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10059402 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10059622 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10068216 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10064284 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10098799 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10104465 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10064623 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10054234 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10067098 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10097365 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10083887 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10083887 | nombre_supervisor | jorge alberto calero martinez | MARTHA LUCIA SALAMACA GONZALEZ |
-| contratos | CO1.PCCNTR.10067457 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10097436 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10093352 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10100321 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10096484 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10073508 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10073508 | valor_pendiente_de_pago | 0 | 6000000 |
+| contratos | CO1.PCCNTR.10089493 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10084923 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10064494 | estado_contrato | En ejecución | Modificado |
+| contratos | CO1.PCCNTR.10093604 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10104199 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10071914 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10094445 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10093408 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10093408 | nombre_supervisor | No definido | ALVARO VALENCIA CHAMARRA |
+| contratos | CO1.PCCNTR.10085966 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10082012 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10093433 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10096113 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10096113 | nombre_supervisor | No definido | ALVARO VALENCIA CHAMARRA |
+| contratos | CO1.PCCNTR.10095430 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10095430 | nombre_supervisor | No definido | CARLOS ALBERTO PEREA MARTINEZ |
+| contratos | CO1.PCCNTR.10020604 | nombre_supervisor | LISBET APONZA VIVEROS | VALENTINA ROJAS CADAVID |
+| contratos | CO1.PCCNTR.10078167 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10101355 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10099695 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10096004 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10096004 | nombre_supervisor | No definido | CARLOS ALBERTO PEREA MARTINEZ |
+| contratos | CO1.PCCNTR.10086968 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10102064 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10096104 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10096104 | nombre_supervisor | No definido | CARLOS ALBERTO PEREA MARTINEZ |
+| contratos | CO1.PCCNTR.10103223 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10060424 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10097683 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10061013 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10100030 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10077337 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10099216 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10096234 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10077825 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10080954 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10080954 | valor_pendiente_de_pago | 0 | 7894000 |
+| contratos | CO1.PCCNTR.10097922 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10085910 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10099300 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10052471 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10089552 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10064819 | estado_contrato | En ejecución | Modificado |
+| contratos | CO1.PCCNTR.10073970 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10073970 | valor_pendiente_de_pago | 0 | 12000000 |
+| contratos | CO1.PCCNTR.10069109 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10105821 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10103848 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10103848 | nombre_supervisor | No definido | ALVARO VALENCIA CHAMARRA |
+| contratos | CO1.PCCNTR.10086840 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10094606 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10094606 | nombre_supervisor | No definido | Isabel Cristina Hurtado Palacios |
+| contratos | CO1.PCCNTR.10100055 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10107485 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10070944 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10061301 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10105839 | nombre_supervisor | MARTHA ISABEL RAMIREZ SALAMANCA | NAILEN ANDREA ARIAS SANCHEZ |
+| contratos | CO1.PCCNTR.10099676 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10080330 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10080330 | valor_pendiente_de_pago | 0 | 6980000 |
 
 ## Alertas
 
