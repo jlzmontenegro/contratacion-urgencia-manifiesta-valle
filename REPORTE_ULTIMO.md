@@ -1,18 +1,18 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-27 14:25  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-27 19:24  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
 | Indicador | Valor |
 |---|---|
-| Contratos relacionados (alta + media) | 363 |
-| Valor de esos contratos | $ 136.818.295.753 |
+| Contratos relacionados (alta + media) | 365 |
+| Valor de esos contratos | $ 137.120.494.096 |
 | Procesos relacionados (alta + media) | 939 |
 | Contratos nuevos en esta ejecucion | 76 |
-| Procesos nuevos en esta ejecucion | 463 |
-| Modificaciones detectadas | 545 |
-| Registros revisados en total | 61501 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 255 |
+| Registros revisados en total | 61577 |
 
 ### Desglose por nivel de gobierno
 
@@ -27,10 +27,10 @@
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 6453 | $ 333.694.862.828 | 5874 |
-| Gobernación del Valle | 6067 | $ 138.470.936.792 | 5672 |
-| Descentralizadas de Cali | 403 | $ 159.097.972.849 | 1647 |
-| Descentralizadas de la Gobernación | 2995 | $ 66.275.168.145 | 4535 |
+| Alcaldía de Cali | 6505 | $ 334.200.148.328 | 5874 |
+| Gobernación del Valle | 6068 | $ 141.470.886.232 | 5672 |
+| Descentralizadas de Cali | 406 | $ 159.246.180.849 | 1647 |
+| Descentralizadas de la Gobernación | 2997 | $ 66.298.006.026 | 4535 |
 | UNGRD | 4 | $ 146.817.067 | 336 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
@@ -44,7 +44,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 218** (110 que suman en los indicadores, por $ 21.578.761.100).
+- **Relacionados con el sismo: 223** (115 que suman en los indicadores, por $ 21.585.073.660).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -79,7 +79,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-10-15 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE TRUJILLO | ALQUILER DE DOS (2) VOLQUETAS TIPO DOBLE TROQUE PARA APOYAR LAS ACTIVIDADES DE REMOCIoN; CARGUE; TRANSPORTE Y  | $ 114.907.435 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-24 | CHOCÓ - ALCALDÍA MUNICIPIO DE RIO QUITO | PRESTACIoN DE SERVICIOS DE APOYO LOGiSTICO PARA LA ATENCIoN Y MITIGACIoN DE LOS EFECTOS GENERADOS POR EL SISMO | $ 113.958.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 
-_No se listan 137 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
+_No se listan 140 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
 
 ## UNGRD y FNGRD · NIT 900.478.966-6 y 900.978.341
 
@@ -107,82 +107,77 @@ _Se revisaron 342 registros de contratacion de estas dos entidades en la ventana
 | MUNICIPIO DE YUMBO VALLE | 11 | $ 2.013.036.283 |
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 
-## Contratos nuevos (0 relacionados de 76 publicados)
+## Contratos nuevos (2 relacionados de 76 publicados)
 
-## Procesos nuevos (5 relacionados de 463 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
+| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
 |---|---|---|---:|---|---|
-| 2026-10-23 | MUNICIPIO DE YUMBO VALLE | PRESTAR EL SERVICIO DE TRANSPORTE TERRESTRE PARA REALIZAR LOS DESPLAZAMIENTOS REQUERIDOS PARA LA AYUDA Y ASIST | $ 100.000.000 | Contratación directa | Alta |
-| 2026-10-23 | MUNICIPIO DE ARMENIA | SUMINISTRO DE MATERIALES DE CONSTRUCCIÓN, ELEMENTOS DE FERRETERÍA E INSUMOS COMPLEMENTARIOS DESTINADOS A LA AT | $ 70.703.901 | Contratación directa | Alta |
-| 2026-10-23 | INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE) | PRESTAR LOS SERVICIOS PROFESIONALES ESPECIALIZADOS POR SUS PROPIOS MEDIOS CON PLENA AUTONOMÍA TÉCNICA Y ADMINI | $ 21.000.000 | Contratación directa | Media |
-| 2026-10-23 | ESPY S.A. ESP** | PRESTAR POR SUS PROPIOS MEDIOS Y CON AUTONOMÍA ADMINISTRATIVA LOS SERVICIOS PROFESIONALES DE ASESORÍA EN EL CU | $ 15.609.000 | Contratación régimen especial | Media |
-| 2026-10-23 | ALCALDÍA MUNICIPAL DE ROLDANILLO | ARRENDAMIENTO DE BIEN INMUEBLE UBICADO EN LA CALLE 12 (11A) No. 3-11, PISO 2, BARRIO SAN SEBASTIÁN DEL MUNICIP | $ 5.898.000 | Contratación directa | Alta |
+| 2026-10-26 | MUNICIPIO DE SAN JOSE. | PRESTACIÓN DE SERVICIOS DE APOYO TÉCNICO Y OPERATIVO PARA LA ATENCIÓN Y RECUPERACIÓN DE LAS VIVIENDAS Y EDIFIC | $ 295.991.676 | INGENIERIA & DISEÑOS INTEGRALES S.A.S | Alta |
+| 2026-10-26 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES EN LA SUBSECRETARIA DE PLANEACIÓN Y CALIDAD EDUCATIVA PARA REALIZAR LA VALORAC | $ 6.206.667 | BETANCUR HENAO ALEJANDRO | Alta |
 
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| contratos | CO1.PCCNTR.10100054 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10097662 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10096829 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10097162 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10100643 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10101014 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10100836 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10099528 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10100102 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10099583 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10088017 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10083302 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10048837 | estado_contrato | En ejecución | terminado |
-| contratos | CO1.PCCNTR.10081258 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10081258 | valor_pendiente_de_pago | 0 | 3000000 |
-| contratos | CO1.PCCNTR.10100636 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10098285 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10078434 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10099060 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10100745 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10100716 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10091437 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10099657 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10099471 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10100812 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10097902 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10098697 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10086682 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10087761 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10098256 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10100907 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10096613 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10097356 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10086899 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10097078 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10099571 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10095971 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10096746 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10087027 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10098203 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10097271 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10097241 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10097291 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10097059 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10100650 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10096053 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10066469 | nombre_supervisor | ELVI FERNANDO PORTOCARRERO QUIÑONES | LUZ ADRIANA GOMEZ FORERO |
-| contratos | CO1.PCCNTR.9802597 | valor_del_contrato | 31304000 | 46956000 |
-| contratos | CO1.PCCNTR.9802597 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9802597 | fecha_de_fin_del_contrato | 2026-10-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9802597 | dias_adicionados | 0 | 62 |
-| contratos | CO1.PCCNTR.9802597 | valor_pendiente_de_pago | 31304000 | 46956000 |
-| contratos | CO1.PCCNTR.10100887 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10096125 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10101024 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10077844 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10097639 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10099748 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10096148 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10100105 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10071092 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10071092 | valor_pendiente_de_pago | 0 | 10500000 |
+| contratos | CO1.PCCNTR.10059632 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10046583 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10107555 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10107555 | valor_pendiente_de_pago | 0 | 12012500 |
+| contratos | CO1.PCCNTR.10091722 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10086878 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10104391 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10067284 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10092887 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10103390 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10094846 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10080772 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10080772 | valor_pendiente_de_pago | 0 | 8000000 |
+| contratos | CO1.PCCNTR.10092119 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10085876 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10064175 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10073035 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10073035 | valor_pendiente_de_pago | 0 | 8000000 |
+| contratos | CO1.PCCNTR.10104707 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10059210 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10087966 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10098467 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10082445 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10098487 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10087388 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10065034 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10067450 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10089294 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10049423 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10075155 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10094056 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10103539 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10069310 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10073756 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10073756 | valor_pendiente_de_pago | 0 | 15400000 |
+| contratos | CO1.PCCNTR.10091500 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10081263 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10095019 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10100629 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10059402 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10059622 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10068216 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10064284 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10098799 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10104465 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10064623 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10054234 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10067098 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10097365 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10083887 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10083887 | nombre_supervisor | jorge alberto calero martinez | MARTHA LUCIA SALAMACA GONZALEZ |
+| contratos | CO1.PCCNTR.10067457 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10097436 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10093352 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10100321 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10096484 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10073508 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10073508 | valor_pendiente_de_pago | 0 | 6000000 |
 
 ## Alertas
 
@@ -225,7 +220,7 @@ _Se revisaron 342 registros de contratacion de estas dos entidades en la ventana
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 2.389.605.620 - Prodecon S.A.S [SECOP II]
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.976.130.044 - Prodecon S.A.S [SECOP II]
 - **Contrato de alto valor**: ALCALDIA MUNICIPAL DE YOTOCO - $ 1.305.627.623 - EMPRESA DE SERVICIO PUBLICO DE ASEO DEL MUNICIPIO DE YOTOCO - VALLE DEL CAUCA S.A.S E.S.P [SECOP II]
-- **Contrato de alto valor**: INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ - $ 1.400.000.000 - CORPORACION ECOPROJECTS [SECOP II]
+- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 5.227.550.751 - AMS INGENIEROS EU [SECOP II]
 
 ---
 
