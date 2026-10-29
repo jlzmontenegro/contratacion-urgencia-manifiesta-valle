@@ -291494,3 +291494,166 @@
 2026-10-28 08:59:27,procesos,CO1.REQ.11164586,VALLECAUCANA DE AGUAS S.A. E.S.P,estado_del_procedimiento,Publicado,Evaluación,Media
 2026-10-28 08:59:27,procesos,CO1.REQ.11248749,RED DE SALUD DE LADERA EMPRESA SOCIAL DEL ESTADO,nombre_del_proveedor,LEIDY YULIANA MAÑUNGA RODRIGUEZ,No Definido,Contexto
 2026-10-28 08:59:27,procesos,CO1.REQ.11250385,RED DE SALUD DE LADERA EMPRESA SOCIAL DEL ESTADO,precio_base,9450000,10350000,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.10926785,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.10926785,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,nombre_del_proveedor,No Definido,INGEVILL S.A.S,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11240309,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11240309,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,valor_total_adjudicacion,0,164000000,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11240309,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,adjudicado,No,Si,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11240309,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,nombre_del_proveedor,No Definido,UNIVERSIDAD DEL VALLE,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11240309,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,fecha_adjudicacion,,2026-10-27T00:00:00.000,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11127994,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11127994,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11258052,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,estado_del_procedimiento,Aprobado,Publicado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11041403,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,valor_total_adjudicacion,0,596467780,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11041403,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,adjudicado,No,Si,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11041403,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,nombre_del_proveedor,No Definido,CORPORACION EDUCATIVA BARTOLOME MITRE,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11022817,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA,valor_total_adjudicacion,269880000,136222500,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11022817,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA,fecha_adjudicacion,,2026-10-02T00:00:00.000,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11022817,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11182592,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11182592,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA,nombre_del_proveedor,No Definido,JORGE ELIECER GAITAN INGENIERIA CONSULTORIA Y VALORACION SAS,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11182592,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA,fecha_adjudicacion,,2026-10-27T00:00:00.000,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11182592,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11243031,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO,estado_del_procedimiento,Publicado,Evaluación,Alta
+2026-10-28 19:46:03,procesos,CO1.REQ.11252106,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11246703,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11213319,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE TECNOLOGIAS DE LA INFORMACION Y LAS COMUNICACIONES,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.10949410,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.10949410,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11131947,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11260359,INSTITUCION EDUCATIVA GABRIELA MISTRAL.,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11191148,MUNICIPIO DE YUMBO VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11159668,ALCALDÍA MUNICIPAL DE ROLDANILLO,estado_del_procedimiento,Abierto,Cancelado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11259810,UNIDAD CENTRAL DEL VALLE DEL CAUCA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11249590,MUNICIPIO DE EL DOVIO,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11242081,MUNICIPIO DE BUGALAGRANDE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11028728,VALLECAUCANA DE AGUAS S.A. E.S.P,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11248576,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11113850,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11113850,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,fecha_adjudicacion,,2026-10-27T00:00:00.000,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11113850,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11184017,MUNICIPIO DE YUMBO VALLE,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11228192,MUNICIPIO DE EL CERRITO.,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11223613,ALCALDIA MUNICIPIO DE JAMUNDI,valor_total_adjudicacion,0,145000000,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11223613,ALCALDIA MUNICIPIO DE JAMUNDI,adjudicado,No,Si,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11223613,ALCALDIA MUNICIPIO DE JAMUNDI,nombre_del_proveedor,No Definido,UNIÓN TEMPORAL LOGÍSTICA JAMUNDÍ 2026,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11244225,INSTITUTO MUNICIPAL DE CULTURA DE YUMBO,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11254957,POLICIA METROPOLITANA SANTIAGO DE CALI,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11261639,INSTITUCION EDUCATIVA GABRIELA MISTRAL.,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11228488,MUNICIPIO DE EL DOVIO,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11228488,MUNICIPIO DE EL DOVIO,valor_total_adjudicacion,0,14760000,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11228488,MUNICIPIO DE EL DOVIO,adjudicado,No,Si,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11228488,MUNICIPIO DE EL DOVIO,nombre_del_proveedor,No Definido,FUNDACION AYUDANOS A SEGUIR SONRIENDO,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11228488,MUNICIPIO DE EL DOVIO,fecha_adjudicacion,,2026-10-27T00:00:00.000,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11228488,MUNICIPIO DE EL DOVIO,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11246521,EMPRESAS MUNICIPALES DE CARTAGO E.S.P.,nombre_del_proveedor,CAMILA ANDREA QUINTERO GIRALDO,No Definido,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11236015,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,Suspendido,Publicado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11179073,MUNICIPIO DE TORO,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11105344,EMAVI,valor_total_adjudicacion,7998350,22386375,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11105344,EMAVI,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.10926380,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,valor_total_adjudicacion,72738869,90728694,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.10926380,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,fecha_adjudicacion,,2026-10-01T00:00:00.000,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11228377,Institución Universitaria de Roldanillo,estado_del_procedimiento,Evaluación,Cancelado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11232209,RED DE SALUD DEL NORTE EMPRESA SOCIAL DEL ESTADO,nombre_del_proveedor,SCUADRA INGENIERIA Y DISEÑO S.A.S,No Definido,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11249276,MUNICIPIO DE EL DOVIO,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11251923,MUNICIPIO DE ZARZAL,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11240917,MUNICIPIO DE DAGUA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11171772,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,valor_total_adjudicacion,359898245,102340000,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.10874526,CVC,valor_total_adjudicacion,74163656,88976300,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.10874526,CVC,nombre_del_proveedor,REDES AMBIENTALES LTDA.,Scientific Products SAS,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.10874526,CVC,estado_resumen,Fase de ofertas,Adjudicado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11216519,UNIAJC,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11202283,"FONDO MIXTO DE CULTURA, DEPORTE Y TURISMO DEL MUNICIPIO DE CARTAGO, VALLE DEL CAUCA",estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11254066,MUNICIPIO DE FLORIDA,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11254066,MUNICIPIO DE FLORIDA,nombre_del_proveedor,No Definido,FONDO MIXTO CARTAGO,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11254066,MUNICIPIO DE FLORIDA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11211618,UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11211618,UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11229071,MUNICIPIO DE EL DOVIO,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11229071,MUNICIPIO DE EL DOVIO,valor_total_adjudicacion,0,16198500,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11229071,MUNICIPIO DE EL DOVIO,adjudicado,No,Si,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11229071,MUNICIPIO DE EL DOVIO,nombre_del_proveedor,No Definido,FUNDACION AYUDANOS A SEGUIR SONRIENDO,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11229071,MUNICIPIO DE EL DOVIO,fecha_adjudicacion,,2026-10-27T00:00:00.000,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11229071,MUNICIPIO DE EL DOVIO,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11113828,UPRES VALLE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11196604,DIMAR - GRUPO INTENDENCIA REGIONAL PACIFICO,estado_del_procedimiento,Abierto,Seleccionado,Alta
+2026-10-28 19:46:03,procesos,CO1.REQ.11196604,DIMAR - GRUPO INTENDENCIA REGIONAL PACIFICO,nombre_del_proveedor,No Definido,SERVICIOS DE  INGENIERIA TECNICA CONSULTORIA Y CONSTRUCCIONES,Alta
+2026-10-28 19:46:03,procesos,CO1.REQ.11196604,DIMAR - GRUPO INTENDENCIA REGIONAL PACIFICO,estado_resumen,Presentación de oferta,Adjudicado,Alta
+2026-10-28 19:46:03,procesos,CO1.REQ.11206247,MUNICIPIO DE TORO,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11215717,CVC,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11244640,Sena - Centro Agropecuario de Buga,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11006005,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,valor_total_adjudicacion,96332468,120401487,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11006005,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,fecha_adjudicacion,,2026-09-29T00:00:00.000,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11187834,UNIAJC,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11223081,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.10477831,ALCALDIA MUNICIPIO DE JAMUNDI,fecha_adjudicacion,2026-09-30T00:00:00.000,,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.10477831,ALCALDIA MUNICIPIO DE JAMUNDI,estado_resumen,Adjudicado,Presentación de oferta,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11258889,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11255441,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11239771,UNIAJC,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11254537,ALCALDIA MUNICIPAL DE LA VICTORIA VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11143291,UNIAJC,nombre_del_proveedor,No Definido,Heimcore SAS,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11216371,REGIONAL DE ASEGURAMIENTO EN SALUD No. 4,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11218110,UNIDAD CENTRAL DEL VALLE DEL CAUCA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11086646,POLICIA METROPOLITANA SANTIAGO DE CALI,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11255651,INSTITUCION EDUCATIVA GABRIEL GARCIA MARQUEZ//,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11242868,MUNICIPIO DE OBANDO VALLE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11212121,ALCALDIA MUNICIPAL DE LA VICTORIA VALLE,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11212121,ALCALDIA MUNICIPAL DE LA VICTORIA VALLE,nombre_del_proveedor,No Definido,FUNDACION SHAMA,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11212121,ALCALDIA MUNICIPAL DE LA VICTORIA VALLE,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11125035,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11125035,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,nombre_del_proveedor,No Definido,UNION TEMPORAL CENTRAL ELECTRICA  2026,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11249550,MUNICIPIO DE EL DOVIO,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11234475,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11261672,INSTITUCION EDUCATIVA GABRIELA MISTRAL.,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11257346,ALCALDIA MUNICIPAL DE BUGA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11247665,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11246258,ALCALDIA MUNICIPAL DE GINEBRA,valor_total_adjudicacion,0,1500000,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11246258,ALCALDIA MUNICIPAL DE GINEBRA,adjudicado,No,Si,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11246258,ALCALDIA MUNICIPAL DE GINEBRA,nombre_del_proveedor,No Definido,ROMULO REYES SAAVEDRA,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11233176,"FONDO MIXTO DE CULTURA, DEPORTE Y TURISMO DEL MUNICIPIO DE CARTAGO, VALLE DEL CAUCA",estado_del_procedimiento,Publicado,Cancelado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11075456,SENA REGIONAL VALLE Grupo Administrativo CNPB,nombre_del_proveedor,No Definido,COMMERCE TEAM S.A.S BIC,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11244067,INSTITUTO MUNICIPAL DE CULTURA DE YUMBO,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11221659,INSTITUCION EDUCATIVA GABRIEL GARCIA MARQUEZ//,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11221659,INSTITUCION EDUCATIVA GABRIEL GARCIA MARQUEZ//,nombre_del_proveedor,No Definido,PRINT COLORS,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11221659,INSTITUCION EDUCATIVA GABRIEL GARCIA MARQUEZ//,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11235657,MUNICIPIO DE YUMBO VALLE,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11235657,MUNICIPIO DE YUMBO VALLE,valor_total_adjudicacion,0,39220248,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11235657,MUNICIPIO DE YUMBO VALLE,adjudicado,No,Si,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11235657,MUNICIPIO DE YUMBO VALLE,nombre_del_proveedor,No Definido,JMJ INNOVA S.A.S,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11235657,MUNICIPIO DE YUMBO VALLE,fecha_adjudicacion,,2026-10-27T00:00:00.000,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11235657,MUNICIPIO DE YUMBO VALLE,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11201473,MUNICIPIO DE LA UNION,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11190147,MUNICIPIO DE CALIMA EL DARIEN VALLE,valor_total_adjudicacion,0,376856798,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11190147,MUNICIPIO DE CALIMA EL DARIEN VALLE,adjudicado,No,Si,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11190147,MUNICIPIO DE CALIMA EL DARIEN VALLE,nombre_del_proveedor,No Definido,GG CM,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11190147,MUNICIPIO DE CALIMA EL DARIEN VALLE,fecha_adjudicacion,,2026-10-27T00:00:00.000,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11190147,MUNICIPIO DE CALIMA EL DARIEN VALLE,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11245513,ALCALDIA MUNICIPAL DE LA VICTORIA VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11195611,ALCALDÍA MUNICIPIO DE PALMIRA,nombre_del_proveedor,No Definido,GEOSERVICIOS AMBIENTALES SAS,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11231698,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11219240,Institución Universitaria de Roldanillo,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11224517,INCIVA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11207565,MUNICIPIO DE LA UNION,estado_del_procedimiento,Evaluación,Cancelado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11231079,SENA REGIONAL VALLE Grupo Administrativo CTA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11231079,SENA REGIONAL VALLE Grupo Administrativo CTA,valor_total_adjudicacion,0,12000000,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11231079,SENA REGIONAL VALLE Grupo Administrativo CTA,adjudicado,No,Si,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11231079,SENA REGIONAL VALLE Grupo Administrativo CTA,nombre_del_proveedor,No Definido,TIENDA CREATIVA G&M S.A.S,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11231079,SENA REGIONAL VALLE Grupo Administrativo CTA,fecha_adjudicacion,,2026-10-27T00:00:00.000,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11231079,SENA REGIONAL VALLE Grupo Administrativo CTA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11248770,MUNICIPIO DE DAGUA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11106085,EMAVI,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11106085,EMAVI,fecha_adjudicacion,,2026-10-27T00:00:00.000,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11106085,EMAVI,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11240571,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11244032,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11235724,MUNICIPIO DE CALIMA EL DARIEN VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11255273,INSTITUCION EDUCATIVA COMUNITARIA LUIS CARLOS VALENCIA,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11204316,STT,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11190627,UNIAJC,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11243650,DEPARTAMENTO DEL ATLANTICO**,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11214059,UNIVERSIDAD NACIONAL DE COLOMBIA,nombre_del_proveedor,Laura Valentina Laguna Valencia,No Definido,Contexto
+2026-10-28 19:46:03,procesos,CO1.REQ.11196910,E.S.E  HOSPITAL SAN JORGE DE CALIMA EL DARIEN,estado_del_procedimiento,Publicado,Cancelado,Contexto
+2026-10-28 19:46:03,secop1,26-13-14816575,VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE RIOFRÍO,estado_del_proceso,Convocado,Terminado Anormalmente después de Convocado,Contexto
+2026-10-28 19:46:03,secop1,26-12-14814912-13739787,UNIDAD TÉCNICA PARA EL DESARROLLO PROFESIONAL - UTEDÉ,estado_del_proceso,Celebrado,Liquidado,Contexto
+2026-10-28 19:46:03,secop1,26-12-14814912-13739787,UNIDAD TÉCNICA PARA EL DESARROLLO PROFESIONAL - UTEDÉ,fecha_liquidacion,,2026-10-22T00:00:00.000,Contexto
