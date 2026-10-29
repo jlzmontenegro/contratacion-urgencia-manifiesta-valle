@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-29 09:12  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-29 14:34  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -9,9 +9,9 @@
 | Contratos relacionados (alta + media) | 396 |
 | Valor de esos contratos | $ 138.199.344.868 |
 | Procesos relacionados (alta + media) | 998 |
-| Contratos nuevos en esta ejecucion | 304 |
+| Contratos nuevos en esta ejecucion | 0 |
 | Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 842 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 63349 |
 
 ### Desglose por nivel de gobierno
@@ -106,82 +106,6 @@ _Se revisaron 343 registros de contratacion de estas dos entidades en la ventana
 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | 12 | $ 2.259.433.730 |
 | MUNICIPIO DE YUMBO VALLE | 11 | $ 2.013.036.283 |
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
-
-## Contratos nuevos (6 relacionados de 304 publicados)
-
-| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
-|---|---|---|---:|---|---|
-| 2026-10-27 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | SUMINISTRO DE PAQUETES ALIMENTARIOS Y ACOMPAÑAMIENTO NUTRICIONAL PARA PREPARACIÓN EN CASA A LA POBLACIÓN DAMNI | $ 949.983.090 | CONSTRUYAMOS COLOMBIA | Alta |
-| 2026-10-28 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | PRESTAR EL SERVICIO DE ALIMENTACION; ATENCIÓN INTEGRAL Y DEMÁS SERVICIOS DE APOYO PARA LA OPERACIÓN DE LA UNID | $ 346.833.034 | ASOCIACION CIUDAD FUTURO | Alta |
-| 2026-10-27 | AREA METROPOLITANA CENTRO OCCIDENTE | Adquirir equipos tecnológicos para el Área Metropolitana Centro Occidente - AMCO; con el fin de recuperar y fo | $ 91.613.340 | TEK SOLUCIONES TECNOLOGICAS S.A.S | Alta |
-| 2026-10-27 | ALCALDIA MUNICIPIO DE RIOSUCIO CALDAS | EL CONTRATISTA SE OBLIGA PARA CON EL MUNICIPIO A REALIZAR LOS ESTUDIOS DE VULNERABILIDAD SÍSMICA A LA ESTRUCTU | $ 90.792.612 | CONGUADUA SAS | Alta |
-| 2026-10-28 | ALCALDIA MUNICIPAL DE LA VICTORIA VALLE | PRESTACIÓN DE SERVICIOS PROFESIONALES PSICOLÓGICOS PARA BRINDAR ATENCIÓN; ORIENTACIÓN Y ACOMPAÑAMIENTO EN PRIM | $ 16.000.000 | DIANA CAMILA CASTRO GARCÍA | Alta |
-| 2026-10-27 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES EN LA SUBSECRETARIA DE PLANEACION Y CALIDAD EDUCATIVA PARA REALIZAR LA VALORAC | $ 5.573.333 | armando lenis aroca | Alta |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| contratos | CO1.PCCNTR.10104314 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10096223 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10082985 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10104321 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10104340 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10096400 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10095443 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10105335 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10100316 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10047641 | nombre_supervisor | Rosa Ana Angarita Rojas | NUBIA ESPERANZA RENGIFO |
-| contratos | CO1.PCCNTR.10072982 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10072982 | valor_pendiente_de_pago | 0 | 6000000 |
-| contratos | CO1.PCCNTR.10069184 | valor_pendiente_de_pago | 0 | 15000000 |
-| contratos | CO1.PCCNTR.10108652 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10049317 | nombre_supervisor | Rosa Ana Angarita Rojas | NUBIA ESPERANZA RENGIFO |
-| contratos | CO1.PCCNTR.10110907 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10083034 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10013166 | valor_facturado | 0 | 7825217.4 |
-| contratos | CO1.PCCNTR.10100609 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10110115 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10109218 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10105569 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10057008 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10086541 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10098741 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10101087 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10109769 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10098359 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10103588 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10102534 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10093163 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10100088 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10105789 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10099026 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10104248 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10096429 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10103948 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10094038 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10110001 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9996618 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10056912 | nombre_supervisor | Rosa Ana Angarita Rojas | NUBIA ESPERANZA RENGIFO |
-| contratos | CO1.PCCNTR.10098650 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10109522 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10096226 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10105579 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10096359 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10097982 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10109083 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10100655 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10114812 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10105629 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10108743 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10105780 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10108655 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10093526 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10087321 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10087903 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10110503 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10109530 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10103616 | estado_contrato | Aprobado | En ejecución |
 
 ## Alertas
 
