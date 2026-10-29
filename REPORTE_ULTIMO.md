@@ -1,18 +1,18 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-28 19:46  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-29 09:12  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
 | Indicador | Valor |
 |---|---|
-| Contratos relacionados (alta + media) | 394 |
-| Valor de esos contratos | $ 138.177.771.535 |
+| Contratos relacionados (alta + media) | 396 |
+| Valor de esos contratos | $ 138.199.344.868 |
 | Procesos relacionados (alta + media) | 998 |
-| Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 983 |
-| Modificaciones detectadas | 163 |
-| Registros revisados en total | 63045 |
+| Contratos nuevos en esta ejecucion | 304 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 842 |
+| Registros revisados en total | 63349 |
 
 ### Desglose por nivel de gobierno
 
@@ -20,25 +20,25 @@
 |---|---:|---:|---:|
 | Alcaldía de Cali | 96 | $ 43.681.337.941 | 301 |
 | Gobernación del Valle | 11 | $ 14.148.165.515 | 80 |
-| Otras entidades del Valle | 245 | $ 75.057.859.794 | 504 |
+| Otras entidades del Valle | 246 | $ 75.073.859.794 | 504 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 6609 | $ 336.115.990.369 | 6210 |
-| Gobernación del Valle | 6074 | $ 141.627.886.232 | 5682 |
-| Descentralizadas de Cali | 413 | $ 159.526.897.767 | 1774 |
-| Descentralizadas de la Gobernación | 3174 | $ 68.732.381.034 | 4579 |
+| Alcaldía de Cali | 6745 | $ 340.863.861.225 | 6210 |
+| Gobernación del Valle | 6076 | $ 141.747.886.232 | 5682 |
+| Descentralizadas de Cali | 415 | $ 159.546.687.423 | 1774 |
+| Descentralizadas de la Gobernación | 3235 | $ 69.494.756.034 | 4579 |
 | UNGRD | 4 | $ 146.817.067 | 337 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 294 contratos ($ 98.727.925.265) y 388 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 234 contratos ($ 240.204.955.063) y 396 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 298 contratos ($ 100.207.147.341) y 388 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 244 contratos ($ 485.030.501.468) y 396 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
@@ -107,115 +107,81 @@ _Se revisaron 343 registros de contratacion de estas dos entidades en la ventana
 | MUNICIPIO DE YUMBO VALLE | 11 | $ 2.013.036.283 |
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 
-## Procesos nuevos (65 relacionados de 983 publicados)
+## Contratos nuevos (6 relacionados de 304 publicados)
 
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
+| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
 |---|---|---|---:|---|---|
-| 2026-10-26 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | OBRAS CIVILES DE ATENCIÓN Y MITIGACIÓN DE RIESGOS CON OCASIÓN DEL SISMO DE GRAN MAGNITUD PARA LA PROTECCIÓN DE | $ 825.561.012 | Contratación directa | Alta |
-| 2026-10-26 | VALLECAUCANA DE AGUAS S.A. E.S.P | REALIZAR LA INTERVENTORÍA TÉCNICA, ADMINISTRATIVA, FINANCIERA Y AMBIENTALES SOBRE EL OBJETO DEL CONTRATO SUSCR | $ 495.864.051 | Concurso de méritos abierto | Media |
-| 2026-10-27 | MUNICIPIO DE SAN JUAN BAUTISTA DE GUACARI2 | CONSTRUCCIÓN DEL ALCANTARILLADO PARA EL CORREGIMIENTO DE CANANGUA, JURISDICCIÓN DEL MUNICIPIO DE GUACARÍ, VALL | $ 361.126.584 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-10-26 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | PRESTAR EL SERVICIO DE ALIMENTACION, ATENCIÓN INTEGRAL Y DEMÁS SERVICIOS DE APOYO PARA LA OPERACIÓN DE LA UNID | $ 346.833.034 | Contratación directa | Alta |
-| 2026-10-26 | MUNICIPIO DE SAN JOSE. | PRESTACIÓN DE SERVICIOS DE APOYO TÉCNICO Y OPERATIVO PARA LA ATENCIÓN Y RECUPERACIÓN DE LAS VIVIENDAS Y EDIFIC | $ 295.991.676 | Contratación directa | Alta |
-| 2026-10-27 | INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ | Contratar el suministro de equipos de cómputo, componentes y accesorios tecnológicos, dispositivos de almacena | $ 248.923.152 | Contratación directa | Alta |
-| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA | Contratar el análisis técnico y metodológico especializado del comportamiento del mercado inmobiliario del Dis | $ 166.500.000 | Mínima cuantía | Alta |
-| 2026-10-26 | GOBERNACION DE CALDAS | Aunar esfuerzos técnicos, administrativos y financieros entre el Departamento de Caldas y el Municipio de Rios | $ 90.792.612 | Contratación directa | Alta |
-| 2026-10-26 | EMPRESAS MUNICIPALES DE CARTAGO E.S.P. | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA EL FORTALECIMIENTO DEL COMITÉ DE CONCILIACIÓN Y DEFENSA JUDICIAL DE | $ 90.000.000 | Contratación régimen especial | Media |
-| 2026-10-26 | ALCALDIA MUNICIPAL DE BUGA | AUNAR ESFUERZOS TECNICOS, ADMINISTRATIVOS Y ECONOMICOS EN LA IMPLEMENTACION Y/O EJECUCION DE LOS DIFERENTES PL | $ 85.714.285 | Contratación régimen especial | Media |
-| 2026-10-26 | Sena - Centro Agropecuario de Buga | Contratar el mantenimiento preventivo y correctivo de las torres de alturas del Centro Agropecuario de Buga (C | $ 78.591.541 | Mínima cuantía | Media |
-| 2026-10-25 | INSTITUCION EDUCATIVA ABSALON TORRES CAMACHO | CONSTRUCCIÓN DE LA CIMENTACIÓN PARA MURO EN BLOQUE ESTRUCTURAL DE LA SEDE CENTRAL DE LA INSTITUCIÓN EDUCATIVA  | $ 35.319.893 | Contratación régimen especial | Media |
-| 2026-10-27 | SENA REGIONAL VALLE Grupo Administrativo CNPB | Contratar la adquisición de mobiliario y enseres para la dotación integral de las aulas móviles fluviales y ma | $ 26.046.000 | Mínima cuantía | Media |
-| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 21.108.000 | Contratación directa | Alta |
-| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 21.108.000 | Contratación directa | Alta |
-| 2026-10-26 | MUNICIPIO DE EL CERRITO. | PRESTACIÓN DE SERVICIOS PROFESIONALES ESPECIALIZADOS PARA EL DESARROLLO DE ACTIVIDADES TÉCNICAS EN LA GESTIÓN, | $ 21.000.000 | Contratación directa | Media |
-| 2026-10-26 | MUNICIPIO DE EL CERRITO. | PRESTACIÓN DE SERVICIOS PROFESIONALES COMO ABOGADO ASESOR PARA APOYAR LOS PROCESOS CONTRACTUALES Y DE MEJORAMI | $ 21.000.000 | Contratación directa | Media |
-| 2026-10-26 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS PROFESIONALES PARA LA IDENTIFICACION, VERIFICACIÓN Y ORGANIZACIÓN DE INFORMACIÓN PREDI | $ 18.750.000 | Contratación directa | Alta |
-| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 18.741.000 | Contratación directa | Alta |
-| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 18.741.000 | Contratación directa | Alta |
-| 2026-10-27 | MUNICIPIO DE EL CERRITO. | PRESTACIÓN DE SERVICIOS PROFESIONALES DE INGENIERÍA CIVIL ESPECIALIZADA EN ESTRUCTURAS PARA LA EVALUACIÓN, DIA | $ 18.000.000 | Contratación directa | Alta |
-| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 16.989.000 | Contratación directa | Media |
-| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-26 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-26 | MUNICIPIO DE EL CERRITO. | PRESTACIÓN DE SERVICIOS PROFESIONALES COMO ABOGADO PARA EL DESARROLLO DEL COMPONENTE JURIDICO Y DE CONTRATACIÓ | $ 16.410.000 | Contratación directa | Media |
-| 2026-10-26 | MUNICIPIO DE EL CERRITO. | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA EL DESARROLLO DE ACTIVIDADES JURÍDICAS, ADMINISTRATIVAS Y CONTRACTU | $ 16.392.000 | Contratación directa | Media |
+| 2026-10-27 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | SUMINISTRO DE PAQUETES ALIMENTARIOS Y ACOMPAÑAMIENTO NUTRICIONAL PARA PREPARACIÓN EN CASA A LA POBLACIÓN DAMNI | $ 949.983.090 | CONSTRUYAMOS COLOMBIA | Alta |
+| 2026-10-28 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | PRESTAR EL SERVICIO DE ALIMENTACION; ATENCIÓN INTEGRAL Y DEMÁS SERVICIOS DE APOYO PARA LA OPERACIÓN DE LA UNID | $ 346.833.034 | ASOCIACION CIUDAD FUTURO | Alta |
+| 2026-10-27 | AREA METROPOLITANA CENTRO OCCIDENTE | Adquirir equipos tecnológicos para el Área Metropolitana Centro Occidente - AMCO; con el fin de recuperar y fo | $ 91.613.340 | TEK SOLUCIONES TECNOLOGICAS S.A.S | Alta |
+| 2026-10-27 | ALCALDIA MUNICIPIO DE RIOSUCIO CALDAS | EL CONTRATISTA SE OBLIGA PARA CON EL MUNICIPIO A REALIZAR LOS ESTUDIOS DE VULNERABILIDAD SÍSMICA A LA ESTRUCTU | $ 90.792.612 | CONGUADUA SAS | Alta |
+| 2026-10-28 | ALCALDIA MUNICIPAL DE LA VICTORIA VALLE | PRESTACIÓN DE SERVICIOS PROFESIONALES PSICOLÓGICOS PARA BRINDAR ATENCIÓN; ORIENTACIÓN Y ACOMPAÑAMIENTO EN PRIM | $ 16.000.000 | DIANA CAMILA CASTRO GARCÍA | Alta |
+| 2026-10-27 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES EN LA SUBSECRETARIA DE PLANEACION Y CALIDAD EDUCATIVA PARA REALIZAR LA VALORAC | $ 5.573.333 | armando lenis aroca | Alta |
 
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| procesos | CO1.REQ.10926785 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.10926785 | nombre_del_proveedor | No Definido | INGEVILL S.A.S |
-| procesos | CO1.REQ.11240309 | estado_del_procedimiento | Evaluación | Seleccionado |
-| procesos | CO1.REQ.11240309 | valor_total_adjudicacion | 0 | 164000000 |
-| procesos | CO1.REQ.11240309 | adjudicado | No | Si |
-| procesos | CO1.REQ.11240309 | nombre_del_proveedor | No Definido | UNIVERSIDAD DEL VALLE |
-| procesos | CO1.REQ.11240309 | fecha_adjudicacion |  | 2026-10-27T00:00:00.000 |
-| procesos | CO1.REQ.11127994 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11127994 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11258052 | estado_del_procedimiento | Aprobado | Publicado |
-| procesos | CO1.REQ.11041403 | valor_total_adjudicacion | 0 | 596467780 |
-| procesos | CO1.REQ.11041403 | adjudicado | No | Si |
-| procesos | CO1.REQ.11041403 | nombre_del_proveedor | No Definido | CORPORACION EDUCATIVA BARTOLOME MITRE |
-| procesos | CO1.REQ.11022817 | valor_total_adjudicacion | 269880000 | 136222500 |
-| procesos | CO1.REQ.11022817 | fecha_adjudicacion |  | 2026-10-02T00:00:00.000 |
-| procesos | CO1.REQ.11022817 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11182592 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11182592 | nombre_del_proveedor | No Definido | JORGE ELIECER GAITAN INGENIERIA CONSULTO |
-| procesos | CO1.REQ.11182592 | fecha_adjudicacion |  | 2026-10-27T00:00:00.000 |
-| procesos | CO1.REQ.11182592 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11243031 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11252106 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11246703 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11213319 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.10949410 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.10949410 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11131947 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11260359 | estado_del_procedimiento | Evaluación | Abierto |
-| procesos | CO1.REQ.11191148 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11159668 | estado_del_procedimiento | Abierto | Cancelado |
-| procesos | CO1.REQ.11259810 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11249590 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11242081 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11028728 | estado_del_procedimiento | Evaluación | Abierto |
-| procesos | CO1.REQ.11248576 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11113850 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11113850 | fecha_adjudicacion |  | 2026-10-27T00:00:00.000 |
-| procesos | CO1.REQ.11113850 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11184017 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11228192 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11223613 | valor_total_adjudicacion | 0 | 145000000 |
-| procesos | CO1.REQ.11223613 | adjudicado | No | Si |
-| procesos | CO1.REQ.11223613 | nombre_del_proveedor | No Definido | UNIÓN TEMPORAL LOGÍSTICA JAMUNDÍ 2026 |
-| procesos | CO1.REQ.11244225 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11254957 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11261639 | estado_del_procedimiento | Evaluación | Abierto |
-| procesos | CO1.REQ.11228488 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11228488 | valor_total_adjudicacion | 0 | 14760000 |
-| procesos | CO1.REQ.11228488 | adjudicado | No | Si |
-| procesos | CO1.REQ.11228488 | nombre_del_proveedor | No Definido | FUNDACION AYUDANOS A SEGUIR SONRIENDO |
-| procesos | CO1.REQ.11228488 | fecha_adjudicacion |  | 2026-10-27T00:00:00.000 |
-| procesos | CO1.REQ.11228488 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11246521 | nombre_del_proveedor | CAMILA ANDREA QUINTERO GIRALDO | No Definido |
-| procesos | CO1.REQ.11236015 | estado_del_procedimiento | Suspendido | Publicado |
-| procesos | CO1.REQ.11179073 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11105344 | valor_total_adjudicacion | 7998350 | 22386375 |
-| procesos | CO1.REQ.11105344 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.10926380 | valor_total_adjudicacion | 72738869 | 90728694 |
-| procesos | CO1.REQ.10926380 | fecha_adjudicacion |  | 2026-10-01T00:00:00.000 |
-| procesos | CO1.REQ.11228377 | estado_del_procedimiento | Evaluación | Cancelado |
+| contratos | CO1.PCCNTR.10104314 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10096223 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10082985 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10104321 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10104340 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10096400 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10095443 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10105335 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10100316 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10047641 | nombre_supervisor | Rosa Ana Angarita Rojas | NUBIA ESPERANZA RENGIFO |
+| contratos | CO1.PCCNTR.10072982 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10072982 | valor_pendiente_de_pago | 0 | 6000000 |
+| contratos | CO1.PCCNTR.10069184 | valor_pendiente_de_pago | 0 | 15000000 |
+| contratos | CO1.PCCNTR.10108652 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10049317 | nombre_supervisor | Rosa Ana Angarita Rojas | NUBIA ESPERANZA RENGIFO |
+| contratos | CO1.PCCNTR.10110907 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10083034 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10013166 | valor_facturado | 0 | 7825217.4 |
+| contratos | CO1.PCCNTR.10100609 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10110115 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10109218 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10105569 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10057008 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10086541 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10098741 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10101087 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10109769 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10098359 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10103588 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10102534 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10093163 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10100088 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10105789 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10099026 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10104248 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10096429 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10103948 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10094038 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10110001 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9996618 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10056912 | nombre_supervisor | Rosa Ana Angarita Rojas | NUBIA ESPERANZA RENGIFO |
+| contratos | CO1.PCCNTR.10098650 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10109522 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10096226 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10105579 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10096359 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10097982 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10109083 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10100655 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10114812 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10105629 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10108743 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10105780 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10108655 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10093526 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10087321 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10087903 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10110503 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10109530 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10103616 | estado_contrato | Aprobado | En ejecución |
 
 ## Alertas
 
@@ -246,12 +212,12 @@ _Se revisaron 343 registros de contratacion de estas dos entidades en la ventana
 - **Contrato de alto valor**: UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA - $ 1.321.917.014 - CONSORCIO UES VALLE 2026 [SECOP II]
 - **Contrato de alto valor**: RED DE SALUD DEL ORIENTE ESE - $ 525.000.000 - ASOCIACION GREMIAL ESPECIALIZADA EN SALUD DEL OCCIDENTE [SECOP II]
 - **Contrato de alto valor**: ALCALDIA DE ALCALA - $ 528.784.465 - GRUPO EMPRESARIAL DEL SUR SIGLO XXI S.A.S. E.S.P [SECOP II]
+- **Contrato de alto valor**: MUNICIPIO DE YUMBO VALLE - $ 1.413.020.078 - JAVIER GORDILLO GRISALES [SECOP II]
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 6.976.838.150 - TECH TRANSIT S.A.S. [SECOP II]
 - **Contrato de alto valor**: Secretaría de Educación - Alcaldía de Tuluá - $ 1.583.549.971 - ARQHOSP SAS [SECOP II]
 - **Contrato de alto valor**: Secretaría de Hábitat e Infraestructura - Alcaldía de Tuluá - $ 5.199.818.848 - EMPRESAS MUNICIPALES DE TULUA E.S.P. [SECOP II]
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.500.811.562 - ICSIN LTDA [SECOP II]
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.483.070.607 - Ingelmeth [SECOP II]
-- **Contrato de alto valor**: MUNICIPIO DE YUMBO VALLE - $ 1.413.020.078 - JAVIER GORDILLO GRISALES [SECOP II]
 - **Contrato de alto valor**: HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E - $ 1.150.889.534 - PLANEAMOS SAS [SECOP II]
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.125.264.000 - NOVATECH INGENIERIA Y CONSTRUCCION SAS [SECOP II]
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 12.221.820.000 - SKYLINE [SECOP II]
