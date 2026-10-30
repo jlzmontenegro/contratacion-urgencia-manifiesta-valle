@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-29 19:47  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-30 09:04  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -10,8 +10,8 @@
 | Valor de esos contratos | $ 138.199.344.868 |
 | Procesos relacionados (alta + media) | 1012 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 441 |
-| Modificaciones detectadas | 328 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 63785 |
 
 ### Desglose por nivel de gobierno
@@ -106,97 +106,6 @@ _Se revisaron 344 registros de contratacion de estas dos entidades en la ventana
 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | 12 | $ 2.259.433.730 |
 | MUNICIPIO DE YUMBO VALLE | 11 | $ 2.013.036.283 |
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
-
-## Procesos nuevos (21 relacionados de 441 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | CONTRATAR EL SERVICIO ESPECIALIZADO DE ALQUILER Y OPERACIÓN DE MAQUINARIA PESADA, TRANSPORTE DE ESCOMBROS Y AP | $ 715.682.817 | Contratación directa | Alta |
-| 2026-10-27 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI | Contratar a la Red de Salud Pública San Miguel (ESE) para ejecutar las acciones del Plan de Intervenciones Col | $ 357.253.417 | Contratación Directa (con ofertas) | Media |
-| 2026-10-27 | INCIVA | Ejecutar Bajo la Modalidad de Precios Unitarios las ADECUACIONES CARPINTERÍA EN MADERA, CUBIERTA Y MUROS CENTR | $ 326.218.162 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-10-27 | ALCALDIA DE FILANDIA | SUMINISTRO DE MATERIALES DE FERRETERÍA Y CONSTRUCCIÓN PARA CONTRIBUIR A LA ATENCIÓ DE LA EMERGENCIA OCASIONADA | $ 230.000.000 | Contratación directa | Alta |
-| 2026-10-28 | MUNICIPIO DE BUGALAGRANDE | PODA DE ÁRBOLES PARA LA MITIGACIÓN DEL RIESGO EN EL MUNICIPIO DE BUGALAGRANDE, VALLE DEL CAUCA | $ 161.999.996 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-10-28 | MUNICIPIO DE MARSELLA | REALIZAR EL SUMINISTRO DE VÍVERES E IMPLEMENTOS DE ASEO PARA LA ASISTENCIA HUMANITARIA DE LA POBLACIÓN VULNERA | $ 150.000.000 | Contratación directa | Alta |
-| 2026-10-27 | ALCALDIA MUNICIPIO DE JAMUNDI | Prestar los servicios de mantenimiento preventivo y/o correctivo incluyendo mano de obra, repuestos de los veh | $ 149.999.500 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-10-27 | AREA METROPOLITANA CENTRO OCCIDENTE | Adquirir equipos tecnológicos para el Área Metropolitana Centro Occidente - AMCO, con el fin de recuperar y fo | $ 91.613.340 | Contratación directa | Alta |
-| 2026-10-27 | ALCALDIA MUNICIPIO DE RIOSUCIO CALDAS | EL CONTRATISTA SE OBLIGA PARA CON EL MUNICIPIO A REALIZAR LOS ESTUDIOS DE VULNERABILIDAD SÍSMICA A LA ESTRUCTU | $ 90.792.612 | Contratación directa | Alta |
-| 2026-10-28 | QUILISALUD ESE | SE COMPROMETE CON LA ENTIDAD CONTRATANTE QUILISALUD ESE A EJECUTAR ACTIVIDADES DE REPARACION, RESANE, REPOSICI | $ 47.329.979 | Contratación régimen especial | Alta |
-| 2026-10-27 | COMPRADOR - EMPRESA CARTAGUEÑA DE DESARROLLO - EMCADE | PRESTACION DE SERVICIOS PROFESIONALES COMO ARQUITECTA PARA LA EMPRESA CARTAGUEÑA DE DESARROLLO  EMCADE  PARA E | $ 27.600.000 | Contratación régimen especial | Media |
-| 2026-10-28 | SERVICIO GEOLOGICO COLOMBIANO** | Prestar servicios profesionales en sistemas electrónicos y telemetría para la operación, calibración metrológi | $ 23.850.000 | Contratación directa | Alta |
-| 2026-10-28 | ALCALDIA MUNICIPAL DE LA VICTORIA VALLE | PRESTACIÓN DE SERVICIOS PROFESIONALES PSICOLÓGICOS PARA BRINDAR ATENCIÓN, ORIENTACIÓN Y ACOMPAÑAMIENTO EN PRIM | $ 16.000.000 | Contratación directa | Alta |
-| 2026-10-27 | MUNICIPIO DE EL CERRITO. | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN COMO TÉCNICO DE OBRA CIVIL PARA EL DESARROLLO DE ACTIVIDADES TÉC | $ 10.980.000 | Contratación directa | Media |
-| 2026-10-27 | INSTITUCION EDUCATIVA SAN AGUSTIN | mantenimiento y reparación en la sede FRANCISCO JOSE DE CALDAS, DANIEL MARIA LOPEZ con el fin de reparar algun | $ 8.540.000 | Contratación régimen especial | Alta |
-| 2026-10-27 | COMPRADOR - EMPRESA CARTAGUEÑA DE DESARROLLO - EMCADE | PRESTACION DE SERVICIOS DE APOYO A LA GESTIÓN COMO AUXILIAR ADMINISTRATIVO PARA LA EMPRESA CARTAGUEÑA DE DESAR | $ 8.424.570 | Contratación régimen especial | Media |
-| 2026-10-27 | INSTITUCION EDUCATIVA CIUDAD FLORIDA | MANTENIMIENTO DE INFRAESTRUCTURA DE LA SEDE ANTONIO ISAZA POR DAÑOS EN EL EVENTO SÍSMICO DE AGOSTO DE 2026 | $ 6.846.000 | Contratación régimen especial | Alta |
-| 2026-10-27 | INSTITUCION EDUCATIVA TECNICA COMERCIAL TEOFILO ROBERTO POTES | Reparaciones y adecuaciones eléctricas por afectaciones durante el terremoto. | $ 3.255.000 | Contratación régimen especial | Alta |
-| 2026-10-27 | INSTITUCION EDUCATIVA TECNICA COMERCIAL TEOFILO ROBERTO POTES | Adquisición de 3 escritorios para oficina. | $ 2.980.000 | Contratación régimen especial | Media |
-| 2026-10-28 | HUV - HOSPITAL UNIVERSITARIO DEL VALLE EVARISTO GARCIA E.S.E. | ADQUISICION DE MONITOR PARA EQUIPO DE RAYOS X CIELITICO IDENTIFICADO CON ACTIVO FIJO EMCO 7008 UBICADO EN EL S | $ 1.934.226 | Contratación régimen especial | Alta |
-| 2026-10-28 | MINISTERIO DE EDUCACION NACIONAL (MEN) | SUMINISTRAR Y ENTREGAR MATERIAL PEDAGÓGICO EN LAS SEDES EDUCATIVAS FOCALIZADAS PARA LA ATENCIÓN DE PRIMERA INF | $ 0 | Solicitud de información a los Proveedores | Alta |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| procesos | CO1.REQ.11163701 | estado_del_procedimiento | Abierto | Cancelado |
-| procesos | CO1.REQ.11274636 | estado_del_procedimiento | Borrador | Publicado |
-| procesos | CO1.REQ.11274636 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11274636 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11022817 | valor_total_adjudicacion | 136222500 | 269880000 |
-| procesos | CO1.REQ.11022817 | fecha_adjudicacion | 2026-10-02T00:00:00.000 |  |
-| procesos | CO1.REQ.11022817 | estado_resumen | Adjudicado | Presentación de oferta |
-| procesos | CO1.REQ.11270697 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11274432 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11135917 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11247097 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11048498 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11274459 | estado_del_procedimiento | Aprobado | Publicado |
-| procesos | CO1.REQ.11274638 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11252886 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11240309 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11268438 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11267106 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11255732 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11167156 | valor_total_adjudicacion | 0 | 772514034 |
-| procesos | CO1.REQ.11167156 | adjudicado | No | Si |
-| procesos | CO1.REQ.11167156 | nombre_del_proveedor | No Definido | UT VEHÍCULOS ELÉCTRICOS CALI |
-| procesos | CO1.REQ.11274504 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11273818 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11130300 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11130300 | valor_total_adjudicacion | 0 | 1093758107 |
-| procesos | CO1.REQ.11130300 | adjudicado | No | Si |
-| procesos | CO1.REQ.11130300 | nombre_del_proveedor | No Definido | Fundación Soñarte |
-| procesos | CO1.REQ.11130300 | fecha_adjudicacion |  | 2026-10-28T00:00:00.000 |
-| procesos | CO1.REQ.11264727 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11264727 | fase |  | Presentación de oferta |
-| procesos | CO1.REQ.11264727 | estado_resumen | No Definido | Presentación de oferta |
-| procesos | CO1.REQ.11266551 | estado_del_procedimiento | Borrador | Publicado |
-| procesos | CO1.REQ.11266551 | fase |  | Presentación de observaciones |
-| procesos | CO1.REQ.11266551 | estado_resumen | No Definido | Presentación de observaciones |
-| procesos | CO1.REQ.11274485 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11273988 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11240958 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11272486 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11239970 | estado_del_procedimiento | Evaluación | Seleccionado |
-| procesos | CO1.REQ.11239970 | valor_total_adjudicacion | 0 | 1313956173 |
-| procesos | CO1.REQ.11239970 | adjudicado | No | Si |
-| procesos | CO1.REQ.11239970 | nombre_del_proveedor | No Definido | RED DE SALUD DE LADERA EMPRESA SOCIAL DE |
-| procesos | CO1.REQ.11239970 | fecha_adjudicacion |  | 2026-10-27T00:00:00.000 |
-| procesos | CO1.REQ.11239970 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11240832 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11273923 | estado_del_procedimiento | Borrador | Publicado |
-| procesos | CO1.REQ.11272993 | estado_del_procedimiento | En aprobación | Publicado |
-| procesos | CO1.REQ.11271200 | estado_del_procedimiento | Aprobado | Evaluación |
-| procesos | CO1.REQ.11271200 | valor_total_adjudicacion | 0 | 636000000 |
-| procesos | CO1.REQ.11271200 | adjudicado | No | Si |
-| procesos | CO1.REQ.11271200 | nombre_del_proveedor | No Definido | HOSPITAL PIO XII ARGELIA |
-| procesos | CO1.REQ.11269514 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11202263 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11271623 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11242922 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11268436 | estado_del_procedimiento | Aprobado | Publicado |
-| procesos | CO1.REQ.11245289 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11269256 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11262302 | estado_del_procedimiento | Publicado | Seleccionado |
 
 ## Alertas
 
