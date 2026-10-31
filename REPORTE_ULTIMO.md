@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-30 14:16  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-30 19:39  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -9,9 +9,9 @@
 | Contratos relacionados (alta + media) | 411 |
 | Valor de esos contratos | $ 139.460.099.127 |
 | Procesos relacionados (alta + media) | 1055 |
-| Contratos nuevos en esta ejecucion | 277 |
-| Procesos nuevos en esta ejecucion | 511 |
-| Modificaciones detectadas | 1263 |
+| Contratos nuevos en esta ejecucion | 0 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 64573 |
 
 ### Desglose por nivel de gobierno
@@ -106,138 +106,6 @@ _Se revisaron 344 registros de contratacion de estas dos entidades en la ventana
 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | 12 | $ 2.259.433.730 |
 | MUNICIPIO DE YUMBO VALLE | 13 | $ 2.157.112.572 |
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
-
-## Contratos nuevos (17 relacionados de 277 publicados)
-
-| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
-|---|---|---|---:|---|---|
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | CONTRATAR EL SERVICIO ESPECIALIZADO DE ALQUILER Y OPERACIÓN DE MAQUINARIA PESADA; TRANSPORTE DE ESCOMBROS Y AP | $ 715.682.818 | O2 ingenieros sas | Alta |
-| 2026-10-29 | INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ | Contratar el suministro de equipos de cómputo; componentes y accesorios tecnológicos; dispositivos de almacena | $ 248.923.153 | PYMES ON LINE | Alta |
-| 2026-10-29 | ALCALDIA DE FILANDIA | SUMINISTRO DE MATERIALES DE FERRETERÍA Y CONSTRUCCIÓN PARA CONTRIBUIR A LA ATENCIÓ DE LA EMERGENCIA OCASIONADA | $ 230.000.000 | FEDERACION NACIONAL DE CAFETEROS DE COLOMBIA | Alta |
-| 2026-10-28 | MUNICIPIO DE MARSELLA | REALIZAR EL SUMINISTRO DE VÍVERES E IMPLEMENTOS DE ASEO PARA LA ASISTENCIA HUMANITARIA DE LA POBLACIÓN VULNERA | $ 150.000.000 | FULLRECARGAS, CONSTRUCCIONES Y TECNOLOGIA SAS | Alta |
-| 2026-10-28 | MUNICIPIO DE YUMBO VALLE | MEJORAMIENTO DE OBRA DE MITIGACIÓN; PREVENCIÓN Y CONTROL DEL RIESGO DEL ALCANTARILLADO EN LA ZONA RURAL DE XIB | $ 131.549.973 | DCO INGENIERÍA S.A.S. | Media |
-| 2026-10-28 | SERVICIO GEOLOGICO COLOMBIANO** | Prestar servicios profesionales en sistemas electrónicos y telemetría para la operación; calibración metrológi | $ 23.850.000 | Jonathan Triviño Guerrero | Alta |
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 21.108.000 | VIVIANA ANDREA VASQUEZ GONZALEZ | Alta |
-| 2026-10-27 | MUNICIPIO DE EL CERRITO. | PRESTACIÓN DE SERVICIOS PROFESIONALES DE INGENIERÍA CIVIL ESPECIALIZADA EN ESTRUCTURAS PARA LA EVALUACIÓN; DIA | $ 18.000.000 | Mauricio Drada | Alta |
-| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Karen Quiñones | Alta |
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 16.989.000 | DIANA CAROLINA VALENCIA | Alta |
-| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 14.415.000 | LUZ MER PLAZA VELASQUEZ | Alta |
-| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 14.415.000 | LUPE | Alta |
-| 2026-10-28 | MUNICIPIO DE YUMBO VALLE | REALIZAR LA INTERVENTORÍA TÉCNICA; ADMINISTRATIVA; FINANCIERA; AMBIENTAL Y JURÍDICA AL CONTRATO SUSCRITO DEL M | $ 12.526.316 | SAFE SERVICIOS E INGENIERIA SAS | Media |
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión en las actividades requeridas por la Secretaría de Gestión de Ri | $ 10.653.000 | MARIA CAMILA GOMEZ MARTINEZ | Alta |
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión en las actividades requeridas por la Secretaría de Gestión de Ri | $ 10.653.000 | linda yurany valverde angulo | Alta |
-| 2026-10-29 | MUNICIPIO DE PRADERA | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN EN LA SECRETARÍA DE AMBIENTE; VIVIENDA Y DESARROLLO TERRITORIAL  | $ 5.000.000 | VICTOR EMILIO BOTERO AYALA | Media |
-| 2026-10-29 | SECRETARIA DISTRITAL DEL HABITAT- | Aunar esfuerzos técnicos; administrativos e institucionales entre la Secretaría Distrital del Hábitat de Bogot | $ 0 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE VIVIENDA SOCIAL Y HABITAT | Alta |
-
-## Procesos nuevos (47 relacionados de 511 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-10-28 | BANCO DE LA REPUBLICA | Ejecución de las intervenciones de demoliciones controladas, desmontaje de elementos no estructurales, estabil | $ 2.119.851.368 | Contratación régimen especial | Alta |
-| 2026-10-28 | BANCO DE LA REPUBLICA | Ejecución de las intervenciones de demoliciones controladas, desmontaje de elementos no estructurales, estabil | $ 1.471.098.370 | Contratación régimen especial | Alta |
-| 2026-10-28 | BANCO DE LA REPUBLICA | Ejecución de las intervenciones de demoliciones controladas, desmontaje de elementos no estructurales, estabil | $ 1.371.960.170 | Contratación régimen especial | Alta |
-| 2026-10-28 | ALCALDÍA MUNICIPIO DE PALMIRA | IMPLEMENTACIÓN DE ACCIONES DE MITIGACIÓN Y ADAPTACIÓN AL CAMBIO CLIMÁTICO EN EL MUNICIPIO DE PALMIRA | $ 395.000.000 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-10-28 | ALCALDIA MUNICIPIO DE JAMUNDI | MANTENIMIENTO CORRECTIVO Y PREVENTIVO FOCALIZADO EN LA ESTABILIZACIÓN DE ACCESO, MANEJO DE DRENAJE PLUVIAL Y M | $ 180.055.830 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-10-29 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | ALQUILER DE CARPAS PARA EL FUNCIONAMIENTO TEMPORAL DE AULAS EN LAS INSTITUCIONES EDUCATIVAS DE LA SECRETARÍA D | $ 148.000.000 | Contratación directa | Alta |
-| 2026-10-29 | MUNICIPIO DE OBANDO VALLE | Suministro de materiales de construcción, a precios unitarios y bajo la modalidad de monto agotable, destinado | $ 70.000.000 | Contratación directa | Alta |
-| 2026-10-29 | INSTITUCION EDUCATIVA BELISARIO PEÑA PIÑEIRO | La ejecución de las obras de construcción de un salón múltiple (14 m × 6 m) con andén, destinado a atender los | $ 22.150.000 | Contratación régimen especial | Alta |
-| 2026-10-29 | INSTITUCION EDUCATIVA BELISARIO PEÑA PIÑEIRO | La ejecución, a todo costo y a precio global fijo, de las adecuaciones locativas requeridas en la Institución  | $ 21.454.833 | Contratación régimen especial | Alta |
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 21.108.000 | Contratación directa | Alta |
-| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 21.108.000 | Contratación directa | Alta |
-| 2026-10-28 | ALCALDIA MUNICIPAL DE CHINCHINA | CONTRATAR EL SUMINISTRO DE LOS ELEMENTOS DE RED DE DATOS Y CABLEADO ESTRUCTURADO REQUERIDOS PARA EL ACONDICION | $ 19.981.409 | Contratación directa | Alta |
-| 2026-10-29 | INSTITUCION EDUCATIVA ALFONSO LOPEZ PUMAREJO.. | SERVICIO DE MANTENIMIENTO, REPARACIÓN Y ADECUACIÓN DE LA INFRAESTRUCTURA DE ALGUNAS SEDES DE LA INSTITUCIÓN ED | $ 17.771.438 | Contratación régimen especial | Alta |
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
-| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 14.415.000 | Contratación directa | Alta |
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 14.415.000 | Contratación directa | Alta |
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 14.415.000 | Contratación directa | Alta |
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 14.415.000 | Contratación directa | Alta |
-| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 14.157.500 | Contratación directa | Alta |
-| 2026-10-29 | MUNICIPIO DE CARTAGO | PRESTACION DE SERVICIOS PROFESIONALES A LA SECRETARIA DE SALUD PARA LA REALIZACION DE CAMPAÑAS CONTRA EL USO D | $ 13.827.186 | Contratación directa | Media |
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 11.841.000 | Contratación directa | Alta |
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 11.841.000 | Contratación directa | Alta |
-| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 11.841.000 | Contratación directa | Alta |
-| 2026-10-28 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión en las actividades requeridas por la Secretaría de Gestión de Ri | $ 10.653.000 | Contratación directa | Alta |
-| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión para brindar apoyo técnico en las actividades requeridas por la  | $ 10.653.000 | Contratación directa | Alta |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| contratos | CO1.PCCNTR.10104371 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10112410 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10103891 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10100787 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10113063 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10113142 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10116428 | nombre_supervisor | No definido | ANDREA MELISSA PORRAS BELTRAN |
-| contratos | CO1.PCCNTR.10036593 | estado_contrato | En ejecución | terminado |
-| contratos | CO1.PCCNTR.10101634 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10105708 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9933230 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.10109832 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10109121 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10100990 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10110119 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9831847 | valor_del_contrato | 7948500 | 10219500 |
-| contratos | CO1.PCCNTR.9831847 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9831847 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9831847 | dias_adicionados | 0 | 31 |
-| contratos | CO1.PCCNTR.9831847 | valor_pendiente_de_pago | 7948500 | 10219500 |
-| contratos | CO1.PCCNTR.10114822 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10057830 | estado_contrato | Aprobado | terminado |
-| contratos | CO1.PCCNTR.10115368 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10115368 | valor_pendiente_de_pago | 0 | 12012500 |
-| contratos | CO1.PCCNTR.10064054 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10110620 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10056081 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10056081 | valor_pendiente_de_pago | 0 | 5000000 |
-| contratos | CO1.PCCNTR.10089176 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10103311 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10101312 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10114803 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10115182 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10115182 | nombre_supervisor | No definido | LUIS HERNANDO JIMENEZ IBARRA |
-| contratos | CO1.PCCNTR.9826549 | valor_del_contrato | 13960000 | 16752000 |
-| contratos | CO1.PCCNTR.9826549 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9826549 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9826549 | dias_adicionados | 0 | 31 |
-| contratos | CO1.PCCNTR.9826549 | valor_pendiente_de_pago | 13960000 | 16752000 |
-| contratos | CO1.PCCNTR.10063244 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10089922 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10116921 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10112534 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10101931 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10095467 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10114518 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10105424 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10113429 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10110619 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9840649 | valor_del_contrato | 16275000 | 19530000 |
-| contratos | CO1.PCCNTR.9840649 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9840649 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9840649 | dias_adicionados | 0 | 31 |
-| contratos | CO1.PCCNTR.9840649 | valor_pendiente_de_pago | 16275000 | 19530000 |
-| contratos | CO1.PCCNTR.10113044 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10113044 | valor_pendiente_de_pago | 0 | 8715000 |
-| contratos | CO1.PCCNTR.10097265 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10110017 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10063254 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10091168 | estado_contrato | En ejecución | Modificado |
 
 ## Alertas
 
