@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-01 09:15  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-01 13:53  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -9,9 +9,9 @@
 | Contratos relacionados (alta + media) | 473 |
 | Valor de esos contratos | $ 147.728.435.361 |
 | Procesos relacionados (alta + media) | 1090 |
-| Contratos nuevos en esta ejecucion | 246 |
+| Contratos nuevos en esta ejecucion | 0 |
 | Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 597 |
+| Modificaciones detectadas | 5 |
 | Registros revisados en total | 65494 |
 
 ### Desglose por nivel de gobierno
@@ -107,99 +107,15 @@ _Se revisaron 345 registros de contratacion de estas dos entidades en la ventana
 | MUNICIPIO DE YUMBO VALLE | 13 | $ 2.167.612.572 |
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 
-## Contratos nuevos (24 relacionados de 246 publicados)
-
-| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
-|---|---|---|---:|---|---|
-| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO | Contrato interadministrativo para implementar una estrategia de recuperación y activación productiva post sism | $ 3.808.283.049 | Corporación para el Desarrollo Social y Cultural del Valle del Cauca - Corpovalle | Alta |
-| 2026-10-30 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | AUNAR ESFUERZOS TÉCNICOS; ECONÓMICOS Y LOGÍSTICOS PARA LA IMPLEMENTACIÓN DE ACCIONES DE MITIGACIÓN Y CONTROL O | $ 1.359.327.825 | FUNDACION SAN CIPRIANO | Media |
-| 2026-10-30 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | REALIZAR LA DEMOLICIÓN CONTROLADA DE INMUEBLES INHABITABLES Y EN RIESGO INMINENTE DE COLAPSO AFECTADOS POR EL  | $ 1.315.317.499 | QUANTUM E&D S.A.S. | Alta |
-| 2026-10-30 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | OBRAS CIVILES DE ATENCIÓN Y MITIGACIÓN DE RIESGOS CON OCASIÓN DEL SISMO DE GRAN MAGNITUD PARA LA PROTECCIÓN DE | $ 825.561.012 | INDUSTRIAS DEL PACIFICO SAS | Alta |
-| 2026-10-30 | Rama Judicial  Dirección Seccional de Administración Judicial de Cali | CONTRATAR EL ARRENDAMIENTO DEL INMUEBLE UBICADO EN LA CARRERA 7 NO. 7-01 ESQUINA BARRIO: BELALCÁZAR DEL MUNICI | $ 484.107.080 | JANNER MONSALVE MONTENEGRO | Media |
-| 2026-10-30 | DISPENSARIO MEDICO DE CALI | EL MANTENIMIENTO POSTERIOR AL EVENTO SÍSMICO DE 10 DE AGOSTO DEL 2026; CON EL FIN DE DAR CUMPLIMIENTO A LA NOR | $ 146.849.446 | VALSAN CONSTRUCCIONES | Alta |
-| 2026-10-30 | RED DE SALUD DEL ORIENTE ESE | PRESTACIÓN DEL SERVICIO DE DESMONTE; RETIRO Y TRANSPORTE DE ELEMENTOS ORNAMENTALES; ELECTRÓNICOS Y DE TELECOMU | $ 43.040.813 | Henet S.A.S | Alta |
-| 2026-10-30 | MUNICIPIO DE DAGUA | ADQUISICION DE TRES GENERADORES ELÉCTRICOS A GASOLINA; ORIENTADOS A FORTALECER EL GRADO DE RESPUESTA A EMERGEN | $ 36.000.000 | DUMONT | Media |
-| 2026-10-30 | Rama Judicial  Dirección Seccional de Administración Judicial de Cali | ARRENDAMIENTO DE UN INMUEBLE (164 M2) UBICADO EN LA CARRERA 6 No. 6-43 BARRIO LA PISTA DEL MUNICIPIO DE VERSAL | $ 24.545.472 | LILIANA DEL SOCORRO ALVAREZ CORREA | Media |
-| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 21.108.000 | OMAR ANDRES ROSADA GONZÁLEZ | Alta |
-| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 21.108.000 | JENNY ALEXANDRA CLAROS RODRÍGUEZ | Alta |
-| 2026-10-30 | ALCALDIA MUNICIPAL DE CHINCHINA | CONTRATAR EL SUMINISTRO DE LOS ELEMENTOS DE RED DE DATOS Y CABLEADO ESTRUCTURADO REQUERIDOS PARA EL ACONDICION | $ 19.981.409 | Kavantic SAS | Alta |
-| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 16.989.000 | LINDA FERNANDA CASTIBLANCO LOZADA | Alta |
-| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión en las actividades requeridas por la Secretaría de Gestión de Ri | $ 14.415.000 | MARIA CAMILA ROMERO PATINO | Alta |
-| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 14.415.000 | Cesar David Perez Lopez | Alta |
-| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 14.415.000 | JOSE DAVID RENDON VELASQUEZ | Alta |
-| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 14.157.500 | LORENA VIVIANA SALAZAR ARANZAZU | Alta |
-| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 14.157.500 | Yenny Tatiana Villegas Londoño | Alta |
-| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión en las actividades requeridas por la Secretaría de Gestión de Ri | $ 10.653.000 | Alejandro Buitrago | Alta |
-| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión en las actividades requeridas por la Secretaría de Gestión de Ri | $ 10.653.000 | LESLIE GINETH HIGUERA LOPEZ | Alta |
-| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión en las actividades requeridas por la Secretaría de Gestión de Ri | $ 10.653.000 | JUAN PABLO APARICIO ARIAS | Alta |
-| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión en las actividades requeridas por la Secretaría de Gestión de Ri | $ 8.376.000 | JESSICA RAMOS RAMOS CEBALLOS | Alta |
-| 2026-10-31 | MUNICIPIO DE SEVILLA | ALQUILER DE UN BIEN INMUEBLE PARA LA CONTINUIDAD DE LA OPERACIÓN DEL CONCEJO MUNICIPAL DE SEVILLA Y DIFERENTES | $ 6.000.000 | No Definido | Alta |
-| 2026-10-30 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS DE APOYO EN LA SUBSECRETARIA DE PLANEACIÓN Y CALIDAD EDUCATIVA PARA REALIZAR LA VALORACION Y | $ 4.700.000 | Monica Yuliana Hoyos Loaiza | Alta |
-
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| contratos | CO1.PCCNTR.10048907 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10049054 | estado_contrato | En ejecución | terminado |
-| contratos | CO1.PCCNTR.10095449 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10104706 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10113286 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10113286 | valor_pendiente_de_pago | 0 | 16989000 |
-| contratos | CO1.PCCNTR.10109096 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10109516 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10106571 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10125219 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10121624 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10097023 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10019833 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.10110609 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10109709 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10113866 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10119895 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9898925 | valor_del_contrato | 8376000 | 11168000 |
-| contratos | CO1.PCCNTR.9898925 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9898925 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9898925 | dias_adicionados | 0 | 31 |
-| contratos | CO1.PCCNTR.9898925 | valor_pendiente_de_pago | 8376000 | 11168000 |
-| contratos | CO1.PCCNTR.10115367 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10112807 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10107338 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10119861 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10109824 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10109890 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10109890 | nombre_supervisor | No definido | María Fernanda Arteaga Melo |
-| contratos | CO1.PCCNTR.10103634 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10109704 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10109707 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10106867 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10108795 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10111888 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10116205 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10109989 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10108679 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9960947 | valor_del_contrato | 6980000 | 9772000 |
-| contratos | CO1.PCCNTR.9960947 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9960947 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9960947 | dias_adicionados | 0 | 31 |
-| contratos | CO1.PCCNTR.9960947 | valor_pendiente_de_pago | 6980000 | 9772000 |
-| contratos | CO1.PCCNTR.10053140 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10115870 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10110118 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10108684 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10109061 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10104433 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10119967 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10115456 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10117711 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10109918 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10109918 | fecha_de_fin_del_contrato | 2026-10-23T12:00:00.000 | 2026-12-31T23:00:00.000 |
-| contratos | CO1.PCCNTR.10049218 | estado_contrato | En ejecución | terminado |
-| contratos | CO1.PCCNTR.10103906 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10076495 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10110605 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10109541 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10109706 | estado_contrato | Aprobado | En ejecución |
+| secop1 | 26-13-14821808 | estado_del_proceso | Convocado | Terminado Anormalmente después de Convoc |
+| secop1 | 26-12-14790405-13715209 | valor_total_de_adiciones | 0 | 19462000 |
+| secop1 | 26-12-14790405-13715209 | valor_contrato_con_adiciones | 38924000 | 58386000 |
+| secop1 | 26-12-14790405-13715209 | fecha_fin_ejec_contrato | 2026-11-01T00:00:00.000 | 2026-12-01T00:00:00.000 |
+| secop1 | 26-12-14790405-13715209 | tiempo_adiciones_en_dias | 0 | 30 |
 
 ## Alertas
 
