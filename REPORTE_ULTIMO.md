@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-10-31 13:29  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-10-31 19:00  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -8,37 +8,37 @@
 |---|---|
 | Contratos relacionados (alta + media) | 451 |
 | Valor de esos contratos | $ 140.318.664.177 |
-| Procesos relacionados (alta + media) | 1055 |
+| Procesos relacionados (alta + media) | 1090 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 4 |
-| Registros revisados en total | 64835 |
+| Procesos nuevos en esta ejecucion | 413 |
+| Modificaciones detectadas | 337 |
+| Registros revisados en total | 65248 |
 
 ### Desglose por nivel de gobierno
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 139 | $ 45.034.388.759 | 333 |
+| Alcaldía de Cali | 139 | $ 45.034.388.759 | 358 |
 | Gobernación del Valle | 11 | $ 14.148.165.515 | 80 |
-| Otras entidades del Valle | 256 | $ 75.816.278.286 | 525 |
+| Otras entidades del Valle | 256 | $ 75.816.278.286 | 535 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 6932 | $ 349.782.913.494 | 6378 |
-| Gobernación del Valle | 6085 | $ 144.630.453.350 | 5688 |
-| Descentralizadas de Cali | 419 | $ 159.662.519.583 | 1930 |
-| Descentralizadas de la Gobernación | 3254 | $ 70.136.289.121 | 4644 |
-| UNGRD | 4 | $ 146.817.067 | 338 |
+| Alcaldía de Cali | 6932 | $ 349.782.913.494 | 6475 |
+| Gobernación del Valle | 6085 | $ 144.630.453.350 | 5690 |
+| Descentralizadas de Cali | 419 | $ 159.662.519.583 | 1941 |
+| Descentralizadas de la Gobernación | 3254 | $ 70.136.289.121 | 4680 |
+| UNGRD | 4 | $ 146.817.067 | 339 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 301 contratos ($ 100.707.965.661) y 399 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 256 contratos ($ 507.684.651.394) y 419 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 301 contratos ($ 100.707.965.661) y 402 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 256 contratos ($ 507.684.651.394) y 428 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
@@ -85,7 +85,7 @@ _No se listan 149 registros de SECOP I con urgencia manifiesta por otras causas 
 
 La UNGRD y el FNGRD no registran todavia contratacion relacionada con el sismo, ni en SECOP I ni en SECOP II.
 
-_Se revisaron 344 registros de contratacion de estas dos entidades en la ventana; los que no aluden al sismo no se listan. Quedan en los CSV._
+_Se revisaron 345 registros de contratacion de estas dos entidades en la ventana; los que no aluden al sismo no se listan. Quedan en los CSV._
 
 ## Contratos por entidad
 
@@ -107,14 +107,113 @@ _Se revisaron 344 registros de contratacion de estas dos entidades en la ventana
 | MUNICIPIO DE YUMBO VALLE | 13 | $ 2.157.112.572 |
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 
+## Procesos nuevos (38 relacionados de 413 publicados)
+
+| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
+|---|---|---|---:|---|---|
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO | Contrato interadministrativo para implementar una estrategia de recuperación y activación productiva post sism | $ 3.808.283.049 | Contratación directa | Alta |
+| 2026-10-30 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | REALIZAR LA DEMOLICIÓN CONTROLADA DE INMUEBLES INHABITABLES Y EN RIESGO INMINENTE DE COLAPSO AFECTADOS POR EL  | $ 1.320.435.421 | Contratación directa | Alta |
+| 2026-10-30 | ALCALDÍA MUNICIPIO DE PALMIRA | IMPLEMENTACIÓN DE ACCIONES DE MITIGACIÓN Y ADAPTACIÓN AL CAMBIO CLIMÁTICO EN EL MUNICIPIO DE PALMIRA | $ 395.000.000 | Selección Abreviada de Menor Cuantía | Media |
+| 2026-10-30 | ALCALDIA MUNICIPAL DE SAN PEDRO VALLE DEL CAUCA | MANTENIMIENTO PREVENTIVO Y CORRECTIVO CON SUMINISTRO DE REPUESTOS Y MANO DE OBRA, INSUMOS Y OTROS SERVICIOS PA | $ 356.036.029 | Selección Abreviada de Menor Cuantía | Media |
+| 2026-10-30 | MUNICIPIO DE ANSERMA CALDAS | Compra de materiales y equipos para adelantar las acciones de atención, mitigación y reconstrucción de las zon | $ 40.000.000 | Mínima cuantía | Alta |
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 21.108.000 | Contratación directa | Alta |
+| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 16.989.000 | Contratación directa | Alta |
+| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
+| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
+| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
+| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
+| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 16.989.000 | Contratación directa | Alta |
+| 2026-10-29 | INSTITUCION EDUCATIVA ROSA LIA MAFLA | CONTRATAR EL MANTENIMIENTO PREVENTIVO Y CORRECTIVO DE LA INFRAESTRUCTURA FISICA DE LAS DIFERENTES SEDES DE LA  | $ 16.675.254 | Contratación régimen especial | Alta |
+| 2026-10-29 | ALCALDIA MUNICIPAL DE YOTOCO | PRESTAR SERVICIOS PROFESIONALES ESPECIALIZADOS DE TOPOGRAFÍA, FOTOGRAMETRÍA, GEORREFERENCIACIÓN, PROCESAMIENTO | $ 15.000.000 | Contratación directa | Alta |
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 14.415.000 | Contratación directa | Alta |
+| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 14.415.000 | Contratación directa | Alta |
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 14.415.000 | Contratación directa | Alta |
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 14.157.500 | Contratación directa | Alta |
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 14.157.500 | Contratación directa | Alta |
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 14.157.500 | Contratación directa | Alta |
+| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 11.841.000 | Contratación directa | Alta |
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 11.326.000 | Contratación directa | Alta |
+| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión para brindar apoyo técnico en las actividades requeridas por la  | $ 10.653.000 | Contratación directa | Alta |
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión en las actividades requeridas por la Secretaría de Gestión de Ri | $ 10.653.000 | Contratación directa | Alta |
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión en las actividades requeridas por la Secretaría de Gestión de Ri | $ 10.653.000 | Contratación directa | Alta |
+| 2026-10-29 | INSTITUCION EDUCATIVA INSTITUTO CALARCA | reparaciones locativas y adecuación de la infraestructura física del restaurante escolar y áreas afectadas por | $ 10.000.000 | Contratación régimen especial | Alta |
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión en las actividades requeridas por la Secretaría de Gestión de Ri | $ 8.376.000 | Contratación directa | Alta |
+| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión para brindar apoyo técnico en las actividades requeridas por la  | $ 8.376.000 | Contratación directa | Alta |
+| 2026-10-29 | INSTITUCION EDUCATIVA LA PRESENTACION** | Suministrar materiales de construcción, ferretería, electricidad y accesorios hidráulicos y sanitarios para at | $ 7.915.599 | Contratación régimen especial | Alta |
+| 2026-10-29 | MUNICIPIO DE CALIMA EL DARIEN VALLE | PRESTACION DE SERVICIOS PROFESIONALES EN LA SECRETARIA DE GOBIERNO PARA APOYAR LAS ACTIVIDADES DE COORDINACIÒN | $ 7.497.000 | Contratación directa | Media |
+| 2026-10-29 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 5.663.000 | Contratación directa | Alta |
+| 2026-10-29 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN COMO PRESENTADOR DE EVENTOS PARA EL DESARROLLO, CONDUCCIÓN Y MOD | $ 5.600.000 | Contratación directa | Alta |
+| 2026-10-29 | INSTITUCION EDUCATIVA BELISARIO PEÑA PIÑEIRO | Prestación del servicio de sonido profesional, con suministro e instalación de micrófonos, consola análoga, mo | $ 4.900.000 | Contratación régimen especial | Media |
+| 2026-10-30 | INSTITUCION EDUCATIVA LICEO TECNICO COMERCIAL | PRESTAR SERVICIOS DE APOYO A LA GESTIÓN PARA REALIZAR EL LEVANTAMIENTO, IDENTIFICACIÓN, CONTEO FÍSICO, ORGANIZ | $ 4.500.000 | Contratación régimen especial | Media |
+| 2026-10-29 | INSTITUCION EDUCATIVA ABSALON TORRES CAMACHO | SERVICIO DE ADECUACIÓN TECHO EN LA SEDE PRINCIPAL DE LA INSTITUCIÓN EDUCATIVA ABSALÓN TORRES CAMACHO | $ 4.317.677 | Contratación régimen especial | Media |
+
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| secop1 | 26-13-14795927-13729137 | valor_total_de_adiciones | 0 | 24360000 |
-| secop1 | 26-13-14795927-13729137 | valor_contrato_con_adiciones | 48720000 | 73080000 |
-| secop1 | 26-13-14795927-13729137 | fecha_fin_ejec_contrato | 2026-10-12T00:00:00.000 | 2026-10-24T00:00:00.000 |
-| secop1 | 26-13-14795927-13729137 | tiempo_adiciones_en_dias | 0 | 12 |
+| procesos | CO1.REQ.11286451 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11286451 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11286451 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11286714 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11286714 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11286714 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11285705 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11285705 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11285705 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11285390 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11285390 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11288529 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11286385 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11286385 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11286385 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11289241 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11289241 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11286684 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11286684 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11286684 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11040123 | estado_resumen | Adjudicado | Presentación de oferta |
+| procesos | CO1.REQ.11288141 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11288141 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11288141 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11286566 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11286566 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11287793 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11287793 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11276809 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11287502 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11287502 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11287502 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11286564 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11286564 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11228313 | nombre_del_proveedor | LABORATORIO BIOMETRICAL SAS | Logistica ATL |
+| procesos | CO1.REQ.11286673 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11286673 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11207327 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.11207327 | valor_total_adjudicacion | 0 | 9276000 |
+| procesos | CO1.REQ.11207327 | adjudicado | No | Si |
+| procesos | CO1.REQ.11207327 | nombre_del_proveedor | No Definido | FERNANDO ALBERTO PADILLA |
+| procesos | CO1.REQ.11207327 | fecha_adjudicacion |  | 2026-10-29T00:00:00.000 |
+| procesos | CO1.REQ.11207327 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11202386 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11285260 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11285260 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11261184 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11286383 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11284629 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11284629 | valor_total_adjudicacion | 0 | 87739800 |
+| procesos | CO1.REQ.11284629 | adjudicado | No | Si |
+| procesos | CO1.REQ.11284629 | nombre_del_proveedor | No Definido | Corporación de Eventos, Ferias y Espectá |
+| procesos | CO1.REQ.11284629 | fecha_adjudicacion |  | 2026-10-29T00:00:00.000 |
+| procesos | CO1.REQ.11284629 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11286543 | estado_del_procedimiento | Borrador | Publicado |
+| procesos | CO1.REQ.11286543 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11286543 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11287967 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11287967 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11287967 | estado_resumen | No Definido | Presentación de oferta |
 
 ## Alertas
 
