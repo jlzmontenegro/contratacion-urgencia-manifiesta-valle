@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-01 13:53  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-01 19:31  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -11,7 +11,7 @@
 | Procesos relacionados (alta + media) | 1090 |
 | Contratos nuevos en esta ejecucion | 0 |
 | Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 5 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 65494 |
 
 ### Desglose por nivel de gobierno
@@ -106,16 +106,6 @@ _Se revisaron 345 registros de contratacion de estas dos entidades en la ventana
 | ALCALDIA MUNICIPAL DE YOTOCO | 7 | $ 2.335.627.623 |
 | MUNICIPIO DE YUMBO VALLE | 13 | $ 2.167.612.572 |
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| secop1 | 26-13-14821808 | estado_del_proceso | Convocado | Terminado Anormalmente después de Convoc |
-| secop1 | 26-12-14790405-13715209 | valor_total_de_adiciones | 0 | 19462000 |
-| secop1 | 26-12-14790405-13715209 | valor_contrato_con_adiciones | 38924000 | 58386000 |
-| secop1 | 26-12-14790405-13715209 | fecha_fin_ejec_contrato | 2026-11-01T00:00:00.000 | 2026-12-01T00:00:00.000 |
-| secop1 | 26-12-14790405-13715209 | tiempo_adiciones_en_dias | 0 | 30 |
 
 ## Alertas
 
