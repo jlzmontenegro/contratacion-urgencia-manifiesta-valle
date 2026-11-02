@@ -295851,3 +295851,262 @@
 2026-11-01 13:53:10,secop1,26-12-14790405-13715209,TOLIMA - ALCALDÍA MUNICIPIO DE ORTEGA,valor_contrato_con_adiciones,38924000,58386000,Contexto
 2026-11-01 13:53:10,secop1,26-12-14790405-13715209,TOLIMA - ALCALDÍA MUNICIPIO DE ORTEGA,fecha_fin_ejec_contrato,2026-11-01T00:00:00.000,2026-12-01T00:00:00.000,Contexto
 2026-11-01 13:53:10,secop1,26-12-14790405-13715209,TOLIMA - ALCALDÍA MUNICIPIO DE ORTEGA,tiempo_adiciones_en_dias,0,30,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11294424,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_del_procedimiento,Aprobado,Seleccionado,Alta
+2026-11-02 12:00:31,procesos,CO1.REQ.11294424,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,fase,,Presentación de oferta,Alta
+2026-11-02 12:00:31,procesos,CO1.REQ.11294424,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_resumen,No Definido,Presentación de oferta,Alta
+2026-11-02 12:00:31,procesos,CO1.REQ.11292208,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11283598,SECRETARIA DE EDUCACION DE CALI,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11283598,SECRETARIA DE EDUCACION DE CALI,fase,,Presentación de oferta,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11283598,SECRETARIA DE EDUCACION DE CALI,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11263220,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11294812,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO,estado_del_procedimiento,Borrador,Seleccionado,Alta
+2026-11-02 12:00:31,procesos,CO1.REQ.11294812,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO,fase,,Presentación de oferta,Alta
+2026-11-02 12:00:31,procesos,CO1.REQ.11294812,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO,estado_resumen,No Definido,Presentación de oferta,Alta
+2026-11-02 12:00:31,procesos,CO1.REQ.11294263,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_del_procedimiento,Aprobado,Seleccionado,Alta
+2026-11-02 12:00:31,procesos,CO1.REQ.11294263,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,fase,,Presentación de oferta,Alta
+2026-11-02 12:00:31,procesos,CO1.REQ.11294263,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_resumen,No Definido,Presentación de oferta,Alta
+2026-11-02 12:00:31,procesos,CO1.REQ.10993787,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE TECNOLOGIAS DE LA INFORMACION Y LAS COMUNICACIONES,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11022817,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA,valor_total_adjudicacion,269880000,136222500,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11022817,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA,fecha_adjudicacion,,2026-10-02T00:00:00.000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11022817,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11265733,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11297622,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11148280,SECRETARIA DE EDUCACION DE CALI,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11265374,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA,estado_del_procedimiento,Publicado,Abierto,Alta
+2026-11-02 12:00:31,procesos,CO1.REQ.10926785,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,estado_resumen,Fase de Selección (Presentación de ofertas),Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11262231,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11298232,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_del_procedimiento,En aprobación,Seleccionado,Alta
+2026-11-02 12:00:31,procesos,CO1.REQ.11298232,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,fase,,Presentación de oferta,Alta
+2026-11-02 12:00:31,procesos,CO1.REQ.11298232,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_resumen,No Definido,Presentación de oferta,Alta
+2026-11-02 12:00:31,procesos,CO1.REQ.11040123,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11293940,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11285750,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11210968,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE TECNOLOGIAS DE LA INFORMACION Y LAS COMUNICACIONES,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11267693,Rama Judicial  Dirección Seccional de Administración Judicial de Cali,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11235482,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11235482,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,valor_total_adjudicacion,0,39197360,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11235482,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,adjudicado,No,Si,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11235482,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,nombre_del_proveedor,No Definido,C&V DOTACIONES,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11235482,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,fecha_adjudicacion,,2026-10-30T00:00:00.000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11235482,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11268396,CVC,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11161032,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11161032,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,valor_total_adjudicacion,0,399701301,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11161032,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,adjudicado,No,Si,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11161032,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,nombre_del_proveedor,No Definido,CARLOS ANDRES GONZALEZ  ORDUZ,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11161032,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,fecha_adjudicacion,,2026-10-30T00:00:00.000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11285073,REGIONAL DE ASEGURAMIENTO EN SALUD No. 4,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11270560,INSTITUCION EDUCATIVA TITAN,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11278301,INDUSTRIA DE LICORES DEL VALLE,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11278301,INDUSTRIA DE LICORES DEL VALLE,nombre_del_proveedor,GRUPO ABC MEDIA SAS,No Definido,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11278301,INDUSTRIA DE LICORES DEL VALLE,fase,,Fase de ofertas,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11278301,INDUSTRIA DE LICORES DEL VALLE,estado_resumen,No Definido,Fase de ofertas,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11267070,UPRES VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11271771,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11273501,SENA REGIONAL VALLE Grupo Administrativo CTA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11247229,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11269770,ALCALDIA MUNICIPAL DE RESTREPO VALLE DEL CAUCA,estado_resumen,Fase de ofertas,Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11296292,Oficina Asesora Jurídica - Alcaldía de Tuluá,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11296292,Oficina Asesora Jurídica - Alcaldía de Tuluá,fase,,Presentación de oferta,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11296292,Oficina Asesora Jurídica - Alcaldía de Tuluá,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11287985,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11257997,UPRES VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11243604,CPMSBUG,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11243604,CPMSBUG,valor_total_adjudicacion,0,60672160,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11243604,CPMSBUG,adjudicado,No,Si,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11243604,CPMSBUG,nombre_del_proveedor,No Definido,FUNDACION PARA EL FOMENTO DEL DESARROLLO SOCIAL,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11243604,CPMSBUG,fecha_adjudicacion,,2026-10-30T00:00:00.000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11259679,MUNICIPIO DE FLORIDA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11269631,ALCALDIA MUNICIPAL DE GINEBRA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11269631,ALCALDIA MUNICIPAL DE GINEBRA,valor_total_adjudicacion,0,23107260,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11269631,ALCALDIA MUNICIPAL DE GINEBRA,adjudicado,No,Si,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11269631,ALCALDIA MUNICIPAL DE GINEBRA,nombre_del_proveedor,No Definido,TRANSPORTES ESPECIALES Y TURISTICOS DE COLOMBIA SAS,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11269631,ALCALDIA MUNICIPAL DE GINEBRA,fecha_adjudicacion,,2026-10-30T00:00:00.000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11269631,ALCALDIA MUNICIPAL DE GINEBRA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11242994,ARMADA NACIONAL BASE NAVAL ARC MALAGA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11242994,ARMADA NACIONAL BASE NAVAL ARC MALAGA,valor_total_adjudicacion,0,169670074,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11242994,ARMADA NACIONAL BASE NAVAL ARC MALAGA,adjudicado,No,Si,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11242994,ARMADA NACIONAL BASE NAVAL ARC MALAGA,nombre_del_proveedor,No Definido,GRUPO Y COMPAÑIA S.A.S.,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11242994,ARMADA NACIONAL BASE NAVAL ARC MALAGA,fecha_adjudicacion,,2026-10-30T00:00:00.000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11242994,ARMADA NACIONAL BASE NAVAL ARC MALAGA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11279302,UPRES VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11253256,DISPENSARIO MEDICO DE CALI,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11253256,DISPENSARIO MEDICO DE CALI,valor_total_adjudicacion,0,59029600,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11253256,DISPENSARIO MEDICO DE CALI,adjudicado,No,Si,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11253256,DISPENSARIO MEDICO DE CALI,nombre_del_proveedor,No Definido,ORTOPEDICA SAN CARLOS CALI S.A.S,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11253256,DISPENSARIO MEDICO DE CALI,fecha_adjudicacion,,2026-10-30T00:00:00.000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.10874526,CVC,valor_total_adjudicacion,127298822,74163656,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.10874526,CVC,nombre_del_proveedor,Scientific Products SAS,REDES AMBIENTALES LTDA.,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11269075,Concejo Municipal de Pradera Valle,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11274665,MUNICIPIO DE TORO,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11268099,UPRES VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11218033,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE YUMBO,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11218033,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE YUMBO,valor_total_adjudicacion,0,449999995,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11218033,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE YUMBO,adjudicado,No,Si,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11218033,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE YUMBO,nombre_del_proveedor,No Definido,JAIMEGO SAS,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11218033,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE YUMBO,fecha_adjudicacion,,2026-10-30T00:00:00.000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11218033,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION DE YUMBO,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11245200,MUNICIPIO DE LA UNION,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11231159,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11231159,ALCALDIA MUNICIPIO DE JAMUNDI,valor_total_adjudicacion,0,54000000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11231159,ALCALDIA MUNICIPIO DE JAMUNDI,adjudicado,No,Si,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11231159,ALCALDIA MUNICIPIO DE JAMUNDI,nombre_del_proveedor,No Definido,RIVERA BRAVA S.A.S.,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11231159,ALCALDIA MUNICIPIO DE JAMUNDI,fecha_adjudicacion,,2026-10-30T00:00:00.000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11274355,INSTITUTO MUNICIPAL DE CULTURA DE YUMBO,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11211851,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11172575,HOSPITAL GONZALO CONTRERAS E.S.E,precio_base,7758000,8531000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11249785,REGIONAL DE ASEGURAMIENTO EN SALUD No. 4,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11276529,ALCALDIA MUNICIPAL DE GINEBRA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11230277,SENA REGIONAL VALLE Grupo Administrativo CNPB,estado_del_procedimiento,Publicado,Abierto,Media
+2026-11-02 12:00:31,procesos,CO1.REQ.11279506,MUNICIPIO DE FLORIDA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11254535,EMPRESAS PÚBLICAS DE CAICEDONIA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11273860,MUNICIPIO DE BUGALAGRANDE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11268805,ALCALDIA MUNICIPAL DE YOTOCO,valor_total_adjudicacion,0,11305000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11268805,ALCALDIA MUNICIPAL DE YOTOCO,adjudicado,No,Si,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11268805,ALCALDIA MUNICIPAL DE YOTOCO,nombre_del_proveedor,No Definido,MC SERVISUMINISTROS,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11277318,MUNICIPIO DE PRADERA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11211453,UNIAJC,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11211453,UNIAJC,fecha_adjudicacion,,2026-10-30T00:00:00.000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11269636,ALCALDIA MUNICIPAL DE GINEBRA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11269636,ALCALDIA MUNICIPAL DE GINEBRA,valor_total_adjudicacion,0,27105320,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11269636,ALCALDIA MUNICIPAL DE GINEBRA,adjudicado,No,Si,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11269636,ALCALDIA MUNICIPAL DE GINEBRA,nombre_del_proveedor,No Definido,TRANSPORTES ESPECIALES Y TURISTICOS DE COLOMBIA SAS,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11269636,ALCALDIA MUNICIPAL DE GINEBRA,fecha_adjudicacion,,2026-10-30T00:00:00.000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11269636,ALCALDIA MUNICIPAL DE GINEBRA,estado_resumen,Fase de ofertas,Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11213501,ALCALDÍA MUNICIPAL DE ROLDANILLO,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11213501,ALCALDÍA MUNICIPAL DE ROLDANILLO,valor_total_adjudicacion,0,75506789,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11213501,ALCALDÍA MUNICIPAL DE ROLDANILLO,adjudicado,No,Si,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11213501,ALCALDÍA MUNICIPAL DE ROLDANILLO,nombre_del_proveedor,No Definido,INDUSCOMERCIALES DEL VALLE SAS,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11213501,ALCALDÍA MUNICIPAL DE ROLDANILLO,fecha_adjudicacion,,2026-10-30T00:00:00.000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11213501,ALCALDÍA MUNICIPAL DE ROLDANILLO,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11294107,HOSPITAL MUNICIPAL LUIS ABLANQUE DE LA PLATA EMPRESA SOCIAL DEL ESTADO,estado_del_procedimiento,En aprobación,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11294107,HOSPITAL MUNICIPAL LUIS ABLANQUE DE LA PLATA EMPRESA SOCIAL DEL ESTADO,fase,,Presentación de oferta,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11294107,HOSPITAL MUNICIPAL LUIS ABLANQUE DE LA PLATA EMPRESA SOCIAL DEL ESTADO,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11282469,HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11282905,ALCALDIA MUNICIPAL DE GINEBRA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11281657,MUNICIPIO DE ANSERMANUEVO,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11283884,ALCALDIA MUNICIPAL DE LA VICTORIA VALLE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11274747,INSTITUTO MUNICIPAL DE CULTURA DE YUMBO,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11168326,DIMAR - GRUPO INTENDENCIA REGIONAL PACIFICO,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11283335,ALCALDIA MUNICIPAL DE GINEBRA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11285667,LOCALIDAD ISLA DEL CASCAJAL,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11285667,LOCALIDAD ISLA DEL CASCAJAL,fase,,Presentación de observaciones,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11285667,LOCALIDAD ISLA DEL CASCAJAL,estado_resumen,No Definido,Presentación de observaciones,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11173692,ALCALDIA MUNICIPAL DE RESTREPO VALLE DEL CAUCA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11277361,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11219137,MUNICIPIO DE TORO,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11219137,MUNICIPIO DE TORO,fecha_adjudicacion,,2026-10-30T00:00:00.000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11219137,MUNICIPIO DE TORO,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11280245,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11279131,UPRES VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11274077,MUNICIPIO DE YUMBO VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11290249,ALCALDIA MUNICIPAL DE RESTREPO VALLE DEL CAUCA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11279649,MUNICIPIO DE DAGUA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11257302,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11279830,Rama Judicial  Dirección Seccional de Administración Judicial de Cali,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11247665,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11247665,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,valor_total_adjudicacion,0,312600000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11247665,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,adjudicado,No,Si,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11247665,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,nombre_del_proveedor,No Definido,FUNDACION MARIA AMPARO CASTAÑO AGUIRRE,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11247665,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,fecha_adjudicacion,,2026-10-30T00:00:00.000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11247665,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11253353,Sena - Centro Agropecuario de Buga,estado_del_procedimiento,Publicado,Abierto,Media
+2026-11-02 12:00:31,procesos,CO1.REQ.11273983,MUNICIPIO DE ZARZAL,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11247773,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11289609,ALCALDIA MUNICIPAL DE RESTREPO VALLE DEL CAUCA,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11289609,ALCALDIA MUNICIPAL DE RESTREPO VALLE DEL CAUCA,fase,,Presentación de oferta,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11289609,ALCALDIA MUNICIPAL DE RESTREPO VALLE DEL CAUCA,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11209019,UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11287563,REGIONAL DE ASEGURAMIENTO EN SALUD No. 4,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11266568,MUNICIPIO DE FLORIDA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11266568,MUNICIPIO DE FLORIDA,fecha_adjudicacion,,2026-10-30T00:00:00.000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11217703,UNIAJC,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11217703,UNIAJC,fecha_adjudicacion,,2026-10-30T00:00:00.000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11271948,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11275252,ALCALDIA MUNICIPAL DE GINEBRA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11258382,INSTITUCION EDUCATIVA CRISTOBAL COLON,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11258382,INSTITUCION EDUCATIVA CRISTOBAL COLON,fase,,Presentación de oferta,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11258382,INSTITUCION EDUCATIVA CRISTOBAL COLON,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11220111,MUNICIPIO DE TORO,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11220111,MUNICIPIO DE TORO,fecha_adjudicacion,,2026-10-30T00:00:00.000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11220111,MUNICIPIO DE TORO,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11285629,REGIONAL DE ASEGURAMIENTO EN SALUD No. 4,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11258317,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11275636,CONCEJO MUNICIPAL DE YUMBO,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11164157,CENTRO DE DIAGNOSTICO AUTOMOTOR DE TULUA LIMITADA,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11164157,CENTRO DE DIAGNOSTICO AUTOMOTOR DE TULUA LIMITADA,nombre_del_proveedor,HECTOR ARANDA,No Definido,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11282952,ALCALDIA MUNICIPAL DE GINEBRA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11250893,MUNICIPIO DE EL DOVIO,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11276740,EMAVI,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11247092,MUNICIPIO DE YUMBO VALLE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11177207,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_del_procedimiento,Abierto,Seleccionado,Media
+2026-11-02 12:00:31,procesos,CO1.REQ.11177207,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,valor_total_adjudicacion,0,2378325070,Media
+2026-11-02 12:00:31,procesos,CO1.REQ.11177207,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,adjudicado,No,Si,Media
+2026-11-02 12:00:31,procesos,CO1.REQ.11177207,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,nombre_del_proveedor,No Definido,FERROAGRO,Media
+2026-11-02 12:00:31,procesos,CO1.REQ.11177207,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,fecha_adjudicacion,,2026-10-30T00:00:00.000,Media
+2026-11-02 12:00:31,procesos,CO1.REQ.11177207,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_resumen,Presentación de oferta,Adjudicado,Media
+2026-11-02 12:00:31,procesos,CO1.REQ.11269716,ALCALDIA MUNICIPAL DE GINEBRA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11269716,ALCALDIA MUNICIPAL DE GINEBRA,valor_total_adjudicacion,0,22700480,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11269716,ALCALDIA MUNICIPAL DE GINEBRA,adjudicado,No,Si,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11269716,ALCALDIA MUNICIPAL DE GINEBRA,nombre_del_proveedor,No Definido,TRANSPORTES ESPECIALES Y TURISTICOS DE COLOMBIA SAS,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11269716,ALCALDIA MUNICIPAL DE GINEBRA,fecha_adjudicacion,,2026-10-30T00:00:00.000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11269716,ALCALDIA MUNICIPAL DE GINEBRA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11265356,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11265356,ALCALDIA DE CAICEDONIA,valor_total_adjudicacion,0,13950000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11265356,ALCALDIA DE CAICEDONIA,adjudicado,No,Si,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11265356,ALCALDIA DE CAICEDONIA,nombre_del_proveedor,No Definido,Asociación Manantial de Vida,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11265356,ALCALDIA DE CAICEDONIA,fecha_adjudicacion,,2026-10-30T00:00:00.000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11265356,ALCALDIA DE CAICEDONIA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11270008,ALCALDIA MUNICIPAL DE LA VICTORIA VALLE,estado_del_procedimiento,Evaluación,Cancelado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11265323,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11265323,ALCALDIA DE CAICEDONIA,valor_total_adjudicacion,0,27700000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11265323,ALCALDIA DE CAICEDONIA,adjudicado,No,Si,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11265323,ALCALDIA DE CAICEDONIA,nombre_del_proveedor,No Definido,JHON ESTEBAN PEREZ,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11265323,ALCALDIA DE CAICEDONIA,fecha_adjudicacion,,2026-10-30T00:00:00.000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11265323,ALCALDIA DE CAICEDONIA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11283194,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_del_procedimiento,Publicado,Cancelado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11273289,MUNICIPIO DE BUGALAGRANDE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11246304,MUNICIPIO DE FLORIDA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11246304,MUNICIPIO DE FLORIDA,valor_total_adjudicacion,0,8000000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11246304,MUNICIPIO DE FLORIDA,adjudicado,No,Si,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11246304,MUNICIPIO DE FLORIDA,nombre_del_proveedor,No Definido,GPS - Gestión en proyectos sociales S.A.S.,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11246304,MUNICIPIO DE FLORIDA,fecha_adjudicacion,,2026-10-30T00:00:00.000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11246304,MUNICIPIO DE FLORIDA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11279927,BIBLIOTECA DEPARTAMENTAL JORGE GARCES BORRERO,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11238176,DISPENSARIO MEDICO DE CALI,estado_del_procedimiento,Abierto,Seleccionado,Alta
+2026-11-02 12:00:31,procesos,CO1.REQ.11238176,DISPENSARIO MEDICO DE CALI,valor_total_adjudicacion,0,146849446,Alta
+2026-11-02 12:00:31,procesos,CO1.REQ.11238176,DISPENSARIO MEDICO DE CALI,adjudicado,No,Si,Alta
+2026-11-02 12:00:31,procesos,CO1.REQ.11238176,DISPENSARIO MEDICO DE CALI,nombre_del_proveedor,No Definido,VALSAN CONSTRUCCIONES,Alta
+2026-11-02 12:00:31,procesos,CO1.REQ.11238176,DISPENSARIO MEDICO DE CALI,fecha_adjudicacion,,2026-10-30T00:00:00.000,Alta
+2026-11-02 12:00:31,procesos,CO1.REQ.11238176,DISPENSARIO MEDICO DE CALI,estado_resumen,Presentación de oferta,Adjudicado,Alta
+2026-11-02 12:00:31,procesos,CO1.REQ.11268978,ALCALDIA MUNICIPAL DE GINEBRA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11268978,ALCALDIA MUNICIPAL DE GINEBRA,valor_total_adjudicacion,0,22298320,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11268978,ALCALDIA MUNICIPAL DE GINEBRA,adjudicado,No,Si,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11268978,ALCALDIA MUNICIPAL DE GINEBRA,nombre_del_proveedor,No Definido,TRANSPORTES ESPECIALES Y TURISTICOS DE COLOMBIA SAS,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11268978,ALCALDIA MUNICIPAL DE GINEBRA,fecha_adjudicacion,,2026-10-30T00:00:00.000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11268978,ALCALDIA MUNICIPAL DE GINEBRA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11296586,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11278545,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Publicado,Evaluación,Media
+2026-11-02 12:00:31,procesos,CO1.REQ.11285149,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11279934,MUNICIPIO DE FLORIDA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11249214,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11283287,ALCALDIA MUNICIPAL DE GINEBRA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11233393,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11000205,CVC,valor_total_adjudicacion,0,5726790900000000,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11000205,CVC,adjudicado,No,Si,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11000205,CVC,nombre_del_proveedor,No Definido,KOWONDEV,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11226708,UPRES VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11028728,VALLECAUCANA DE AGUAS S.A. E.S.P,estado_del_procedimiento,Abierto,Cancelado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11246146,MUNICIPIO DE TORO,valor_total_adjudicacion,0,99190110,Media
+2026-11-02 12:00:31,procesos,CO1.REQ.11246146,MUNICIPIO DE TORO,adjudicado,No,Si,Media
+2026-11-02 12:00:31,procesos,CO1.REQ.11246146,MUNICIPIO DE TORO,nombre_del_proveedor,No Definido,INGENIERIAS DEL NORTE S.A.S.,Media
+2026-11-02 12:00:31,procesos,CO1.REQ.11290820,MUNICIPIO DE ANSERMA CALDAS,estado_del_procedimiento,Borrador,Publicado,Alta
+2026-11-02 12:00:31,procesos,CO1.REQ.11288089,ALCALDIA MUNICIPIO DE DOSQUEBRADAS,estado_del_procedimiento,En aprobación,Seleccionado,Otra urgencia
+2026-11-02 12:00:31,procesos,CO1.REQ.11239502,ALCALDÍA EL PITAL,estado_del_procedimiento,Publicado,Cancelado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11297476,ARMADA NACIONAL BASE NAVAL No. 6 ARC BOGOTA,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11297476,ARMADA NACIONAL BASE NAVAL No. 6 ARC BOGOTA,fase,,Presentación de oferta,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11297476,ARMADA NACIONAL BASE NAVAL No. 6 ARC BOGOTA,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11267255,REGIONAL DE ASEGURAMIENTO EN SALUD No. 5,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11090640,FONDO NACIONAL DE GESTIÓN DEL RIESGO DE DESASTRES - FNGRD,valor_total_adjudicacion,0,47471361,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11090640,FONDO NACIONAL DE GESTIÓN DEL RIESGO DE DESASTRES - FNGRD,adjudicado,No,Si,Contexto
+2026-11-02 12:00:31,procesos,CO1.REQ.11090640,FONDO NACIONAL DE GESTIÓN DEL RIESGO DE DESASTRES - FNGRD,nombre_del_proveedor,No Definido,SOCIEDAD RUSSI SAS,Contexto

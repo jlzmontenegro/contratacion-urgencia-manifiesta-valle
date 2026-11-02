@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-01 19:31  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-02 12:00  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -8,37 +8,37 @@
 |---|---|
 | Contratos relacionados (alta + media) | 473 |
 | Valor de esos contratos | $ 147.728.435.361 |
-| Procesos relacionados (alta + media) | 1090 |
+| Procesos relacionados (alta + media) | 1116 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 0 |
-| Registros revisados en total | 65494 |
+| Procesos nuevos en esta ejecucion | 297 |
+| Modificaciones detectadas | 259 |
+| Registros revisados en total | 65791 |
 
 ### Desglose por nivel de gobierno
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 152 | $ 49.013.771.808 | 358 |
+| Alcaldía de Cali | 152 | $ 49.013.771.808 | 373 |
 | Gobernación del Valle | 11 | $ 14.148.165.515 | 80 |
-| Otras entidades del Valle | 263 | $ 79.198.925.607 | 535 |
+| Otras entidades del Valle | 263 | $ 79.198.925.607 | 543 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 7013 | $ 355.765.774.074 | 6475 |
-| Gobernación del Valle | 6087 | $ 145.363.444.348 | 5690 |
-| Descentralizadas de Cali | 420 | $ 161.206.661.730 | 1941 |
-| Descentralizadas de la Gobernación | 3255 | $ 70.150.129.121 | 4680 |
+| Alcaldía de Cali | 7013 | $ 355.765.774.074 | 6539 |
+| Gobernación del Valle | 6087 | $ 145.363.444.348 | 5695 |
+| Descentralizadas de Cali | 420 | $ 161.206.661.730 | 1946 |
+| Descentralizadas de la Gobernación | 3255 | $ 70.150.129.121 | 4695 |
 | UNGRD | 4 | $ 146.817.067 | 339 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 303 contratos ($ 101.553.508.082) y 402 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 261 contratos ($ 528.211.468.639) y 428 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 303 contratos ($ 101.553.508.082) y 406 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 261 contratos ($ 528.211.468.639) y 434 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
@@ -106,6 +106,106 @@ _Se revisaron 345 registros de contratacion de estas dos entidades en la ventana
 | ALCALDIA MUNICIPAL DE YOTOCO | 7 | $ 2.335.627.623 |
 | MUNICIPIO DE YUMBO VALLE | 13 | $ 2.167.612.572 |
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
+
+## Procesos nuevos (30 relacionados de 297 publicados)
+
+| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
+|---|---|---|---:|---|---|
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL | Aunar esfuerzos técnicos, humanos, administrativos y financieros para el mejoramiento de las condiciones de se | $ 18.006.539.579 | Contratación régimen especial (con ofertas) | Alta |
+| 2026-10-30 | EMPRESA DE DESARROLLO TERRITORIAL DE DON MATIAS | RECUPERACIÓN DE LA INFRAESTRUCTURA CULTURAL Y/O PATRIMONIAL AFECTADA POR EL SISMO DEL 10 DE AGOSTO DE 2026, EN | $ 3.222.663.801 | Contratación régimen especial | Alta |
+| 2026-10-30 | MUNICIPIO DE ARMENIA QUINDIO | AUNAR ESFUERZOS TÉCNICOS, ADMINISTRATIVOS Y FINANCIEROS PARA LA IMPLEMENTACIÓN DE UN FONDO DE APOYO ECONÓMICO  | $ 1.428.571.428 | Contratación régimen especial (con ofertas) | Alta |
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL | AUNAR ESFUERZOS TÉCNICOS ADMINISTRATIVOS Y FINANCIEROS PARA LA ASISTENCIA HUMANITARIA A LA POBLACIÓN VÍCTIMA D | $ 476.181.864 | Contratación directa | Media |
+| 2026-10-30 | MUNICIPIO DE BUGALAGRANDE | IMPLEMENTACIÓN DE SOLUCIONES DE SANEAMIENTO BÁSICO MEDIANTE EL SUMINISTRO E INSTALACIÓN DE SISTEMAS INDIVIDUAL | $ 431.293.820 | Selección Abreviada de Menor Cuantía | Media |
+| 2026-10-30 | ALCALDIA MUNICIPIO DE JAMUNDI | Prestar los servicios de mantenimiento preventivo y/o correctivo incluyendo mano de obra, repuestos de los veh | $ 149.999.500 | Selección Abreviada de Menor Cuantía | Media |
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | REALIZAR LA TOMA DE MUESTRAS Y ENSAYOS GEOTÉCNICOS PARA LA ZONIFICACIÓN DE AMENAZA A DETALLE POR MOVIMIENTOS E | $ 120.000.000 | Mínima cuantía | Media |
+| 2026-10-30 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | ALQUILER DE HERRAMIENTAS, MAQUINARIA Y EQUIPO MENOR PARA LA RECONSTRUCCIÓN, REHABILITACIÓN, MEJORAMIENTO Y MAN | $ 90.000.000 | Contratación directa | Alta |
+| 2026-10-30 | HUV - HOSPITAL UNIVERSITARIO DEL VALLE EVARISTO GARCIA E.S.E. | ADQUISICION DE INSUMOS DE MANTENIMIENTO Y ACCESORIOS PARA EL AREA DE REDES Y SOPORTE TECNICO DE SISTEMAS CON L | $ 52.066.427 | Contratación régimen especial | Alta |
+| 2026-10-30 | ALCALDIA MUNICIPAL DE RESTREPO VALLE DEL CAUCA | ADQUISICIÓN DE MATERIALES DE CUBIERTA Y ELEMENTOS DE FIJACIÓN DESTINADOS A LA ATENCIÓN DE LAS AFECTACIONES OCA | $ 49.020.000 | Mínima cuantía | Alta |
+| 2026-10-30 | SOCIEDAD TELEVISION DEL PACIFICO LTDA | CONTRATAR LA CONSULTORÍA PARA EL DIAGNÓSTICO ESTRUCTURAL POST SISMO DEL INMUEBLE IDENTIFICADO CON LA MATRÍCULA | $ 45.425.000 | Contratación régimen especial | Alta |
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS | Aunar esfuerzos para la transformación y el aprovechamiento de residuos de construcción y demolición - RCD, ge | $ 44.000.000 | Contratación régimen especial (con ofertas) | Alta |
+| 2026-10-30 | RED DE SALUD DEL ORIENTE ESE | PRESTACIÓN DEL SERVICIO DE DESMONTE, RETIRO Y TRANSPORTE DE ELEMENTOS ORNAMENTALES, ELECTRÓNICOS Y DE TELECOMU | $ 43.040.813 | Contratación régimen especial | Alta |
+| 2026-10-30 | ALCALDIA MUNICIPAL DE RESTREPO VALLE DEL CAUCA | SUMINISTRO DE COMBUSTIBLE PARA GARANTIZAR  LA MOVILIDAD DE LOS VEHICULOS INSTITUCIONALES DEL MUNICIPIO DE  RES | $ 26.155.534 | Mínima cuantía | Media |
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 21.108.000 | Contratación directa | Alta |
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 21.108.000 | Contratación directa | Alta |
+| 2026-10-30 | HUV - HOSPITAL UNIVERSITARIO DEL VALLE EVARISTO GARCIA E.S.E. | ADQUISICION DE INSUMOS DE MANTENIMIENTO Y ACCESORIOS PARA EL AREA DE REDES Y SOPORTE TECNICO DE SISTEMAS CON L | $ 20.044.836 | Contratación régimen especial | Alta |
+| 2026-10-30 | INSTITUCION EDUCATIVA ROSA LIA MAFLA | CONTRATAR EL MANTENIMIENTO PREVENTIVO Y CORRECTIVO DE LA INFRAESTRUCTURA FISICA DE LAS DIFERENTES SEDES DE LA  | $ 17.238.500 | Contratación régimen especial | Alta |
+| 2026-10-30 | DEPARTAMENTO ADMINISTRATIVO DE GESTION DEL MEDIO AMBIENTE DAGMA | Prestar los servicios profesionales con el fin de brindar soporte a las actividades adelantadas en el Departam | $ 16.989.000 | Contratación directa | Media |
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 16.989.000 | Contratación directa | Alta |
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico y profesional en las actividades requeridas p | $ 14.415.000 | Contratación directa | Alta |
+| 2026-10-30 | DEPARTAMENTO ADMINISTRATIVO DE GESTION DEL MEDIO AMBIENTE DAGMA | Prestar los servicios profesionales con el fin de brindar soporte a las actividades adelantadas en el Departam | $ 14.415.000 | Contratación directa | Media |
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión en las actividades requeridas por la Secretaría de Gestión de Ri | $ 14.415.000 | Contratación directa | Alta |
+| 2026-10-30 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios de apoyo a la gestión en las actividades requeridas por la Secretaría de Gestión de Ri | $ 10.653.000 | Contratación directa | Alta |
+| 2026-10-30 | DEPARTAMENTO ADMINISTRATIVO DE GESTION DEL MEDIO AMBIENTE DAGMA | Prestar los servicios Tecnicos con el fin de brindar soporte a las actividades adelantadas en el Departamento  | $ 10.653.000 | Contratación directa | Media |
+| 2026-10-30 | DEPARTAMENTO ADMINISTRATIVO DE GESTION DEL MEDIO AMBIENTE DAGMA | Prestar los servicios profesionales con el fin de brindar soporte a las actividades adelantadas en el Departam | $ 9.610.000 | Contratación directa | Media |
+| 2026-10-30 | MUNICIPIO DE CARTAGO | PRESTAR LOS SERVICIOS PROFESIONALES COMO ABOGADO A LA UNIDAD MUNICIPAL PARA LA GESTIÓN DEL RIESGO DE DESASTRES | $ 8.000.000 | Contratación directa | Media |
+| 2026-10-31 | MUNICIPIO DE SEVILLA | ALQUILER DE UN BIEN INMUEBLE PARA LA CONTINUIDAD DE LA OPERACIÓN DEL CONCEJO MUNICIPAL DE SEVILLA Y DIFERENTES | $ 6.000.000 | Contratación directa | Alta |
+| 2026-10-30 | DEPARTAMENTO ADMINISTRATIVO DE GESTION DEL MEDIO AMBIENTE DAGMA | Prestar los servicios profesionales con el fin de brindar soporte a las actividades adelantadas en el Departam | $ 4.805.000 | Contratación directa | Media |
+| 2026-10-30 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | AUNAR ESFUERZOS TÉCNICOS, ADMINISTRATIVOS Y DE INFORMACIÓN ENTRE INFIMANIZALES Y LA CÁMARA DE COMERCIO DE MANI | $ 0 | Contratación directa | Alta |
+
+## Modificaciones sobre registros ya conocidos
+
+| Fuente | Identificador | Campo | Antes | Ahora |
+|---|---|---|---|---|
+| procesos | CO1.REQ.11294424 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11294424 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11294424 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11292208 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11283598 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11283598 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11283598 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11263220 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11294812 | estado_del_procedimiento | Borrador | Seleccionado |
+| procesos | CO1.REQ.11294812 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11294812 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11294263 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11294263 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11294263 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.10993787 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11022817 | valor_total_adjudicacion | 269880000 | 136222500 |
+| procesos | CO1.REQ.11022817 | fecha_adjudicacion |  | 2026-10-02T00:00:00.000 |
+| procesos | CO1.REQ.11022817 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11265733 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11297622 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11148280 | estado_del_procedimiento | Evaluación | Abierto |
+| procesos | CO1.REQ.11265374 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.10926785 | estado_resumen | Fase de Selección (Presentación de ofert | Adjudicado |
+| procesos | CO1.REQ.11262231 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11298232 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11298232 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11298232 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11040123 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11293940 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11285750 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11210968 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11267693 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11235482 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.11235482 | valor_total_adjudicacion | 0 | 39197360 |
+| procesos | CO1.REQ.11235482 | adjudicado | No | Si |
+| procesos | CO1.REQ.11235482 | nombre_del_proveedor | No Definido | C&V DOTACIONES |
+| procesos | CO1.REQ.11235482 | fecha_adjudicacion |  | 2026-10-30T00:00:00.000 |
+| procesos | CO1.REQ.11235482 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11268396 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11161032 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.11161032 | valor_total_adjudicacion | 0 | 399701301 |
+| procesos | CO1.REQ.11161032 | adjudicado | No | Si |
+| procesos | CO1.REQ.11161032 | nombre_del_proveedor | No Definido | CARLOS ANDRES GONZALEZ  ORDUZ |
+| procesos | CO1.REQ.11161032 | fecha_adjudicacion |  | 2026-10-30T00:00:00.000 |
+| procesos | CO1.REQ.11285073 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11270560 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11278301 | estado_del_procedimiento | Borrador | Publicado |
+| procesos | CO1.REQ.11278301 | nombre_del_proveedor | GRUPO ABC MEDIA SAS | No Definido |
+| procesos | CO1.REQ.11278301 | fase |  | Fase de ofertas |
+| procesos | CO1.REQ.11278301 | estado_resumen | No Definido | Fase de ofertas |
+| procesos | CO1.REQ.11267070 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11271771 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11273501 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11247229 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11269770 | estado_resumen | Fase de ofertas | Adjudicado |
+| procesos | CO1.REQ.11296292 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11296292 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11296292 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11287985 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11257997 | estado_del_procedimiento | Publicado | Abierto |
 
 ## Alertas
 
