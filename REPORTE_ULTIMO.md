@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-02 17:45  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-02 21:51  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -9,9 +9,9 @@
 | Contratos relacionados (alta + media) | 475 |
 | Valor de esos contratos | $ 147.759.839.361 |
 | Procesos relacionados (alta + media) | 1120 |
-| Contratos nuevos en esta ejecucion | 17 |
-| Procesos nuevos en esta ejecucion | 64 |
-| Modificaciones detectadas | 75 |
+| Contratos nuevos en esta ejecucion | 0 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 65872 |
 
 ### Desglose por nivel de gobierno
@@ -106,87 +106,6 @@ _Se revisaron 345 registros de contratacion de estas dos entidades en la ventana
 | ALCALDIA MUNICIPAL DE YOTOCO | 7 | $ 2.335.627.623 |
 | MUNICIPIO DE YUMBO VALLE | 13 | $ 2.167.612.572 |
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
-
-## Contratos nuevos (2 relacionados de 17 publicados)
-
-| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
-|---|---|---|---:|---|---|
-| 2026-10-31 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 16.989.000 | Alexandra Álvarez Rivera | Alta |
-| 2026-10-31 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios Profesionales en las actividades requeridas por la Secretaría de Gestión de Riesgo de  | $ 14.415.000 | JENIFFER ZAPATA SANCHEZ | Alta |
-
-## Procesos nuevos (4 relacionados de 64 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-10-31 | DEPARTAMENTO ADMINISTRATIVO DE GESTION DEL MEDIO AMBIENTE DAGMA | Prestar los servicios profesionales con el fin de brindar soporte a las actividades adelantadas en el Departam | $ 14.415.000 | Contratación directa | Media |
-| 2026-10-31 | DEPARTAMENTO ADMINISTRATIVO DE GESTION DEL MEDIO AMBIENTE DAGMA | Prestar los servicios Tecnicos con el fin de brindar soporte a las actividades adelantadas en el Departamento  | $ 10.653.000 | Contratación directa | Media |
-| 2026-11-01 | DEPARTAMENTO ADMINISTRATIVO DE GESTION DEL MEDIO AMBIENTE DAGMA | Prestar los servicios profesionales especializados con el fin de brindar soporte a las actividades adelantadas | $ 7.036.000 | Contratación directa | Media |
-| 2026-10-31 | DEPARTAMENTO ADMINISTRATIVO DE GESTION DEL MEDIO AMBIENTE DAGMA | Prestar los servicios profesionales con el fin de brindar soporte a las actividades adelantadas en el Departam | $ 5.663.000 | Contratación directa | Media |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| contratos | CO1.PCCNTR.10108819 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10082721 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10121498 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10105928 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10104317 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10006640 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.10006640 | fecha_de_fin_del_contrato | 2026-10-31T23:59:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.10006640 | dias_adicionados | 0 | 61 |
-| contratos | CO1.PCCNTR.10006640 | nombre_supervisor | HECTOR PINZON SANCHEZ | MARIO ANDRÉS HINESTROZA CARABALÍ |
-| contratos | CO1.PCCNTR.10107042 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10107042 | valor_pendiente_de_pago | 0 | 12012500 |
-| contratos | CO1.PCCNTR.10093341 | valor_facturado | 0 | 7826000 |
-| contratos | CO1.PCCNTR.9903428 | valor_del_contrato | 31200000 | 39000000 |
-| contratos | CO1.PCCNTR.9903428 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9903428 | fecha_de_fin_del_contrato | 2026-10-31T23:00:00.000 | 2026-11-15T23:00:00.000 |
-| contratos | CO1.PCCNTR.9903428 | dias_adicionados | 0 | 15 |
-| contratos | CO1.PCCNTR.9903428 | valor_pendiente_de_pago | 31200000 | 39000000 |
-| contratos | CO1.PCCNTR.10111101 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10108853 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10108579 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10108806 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10094337 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10104641 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10110814 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10110717 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9822850 | estado_contrato | En ejecución | Cerrado |
-| contratos | CO1.PCCNTR.9903432 | valor_del_contrato | 24736000 | 30920000 |
-| contratos | CO1.PCCNTR.9903432 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9903432 | fecha_de_fin_del_contrato | 2026-10-31T12:00:00.000 | 2026-11-15T23:00:00.000 |
-| contratos | CO1.PCCNTR.9903432 | dias_adicionados | 0 | 15 |
-| contratos | CO1.PCCNTR.9903432 | valor_pendiente_de_pago | 24736000 | 30920000 |
-| contratos | CO1.PCCNTR.10105845 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10104477 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10111715 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10110813 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10032609 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.10104674 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10104476 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10119888 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10086679 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10102191 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10103687 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10104429 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10137219 | proveedor_adjudicado | No Definido | LINA PATRICIA MARULANDA BUENO |
-| contratos | CO1.PCCNTR.10043931 | valor_facturado | 0 | 5000000 |
-| contratos | CO1.PCCNTR.10104000 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10104619 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10104217 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9858134 | estado_contrato | En ejecución | terminado |
-| contratos | CO1.PCCNTR.9845132 | valor_del_contrato | 460632214.2 | 632147874.2 |
-| contratos | CO1.PCCNTR.9845132 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9845132 | fecha_de_fin_del_contrato | 2026-10-31T23:59:00.000 | 2026-12-18T23:59:00.000 |
-| contratos | CO1.PCCNTR.9845132 | dias_adicionados | 0 | 48 |
-| contratos | CO1.PCCNTR.9845132 | valor_pendiente_de_pago | 460632214.2 | 632147874.2 |
-| procesos | CO1.REQ.11280405 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11299868 | valor_total_adjudicacion | 0 | 712157000 |
-| procesos | CO1.REQ.11299868 | adjudicado | No | Si |
-| procesos | CO1.REQ.11299868 | nombre_del_proveedor | No Definido | HOSPITAL NUESTRA SEÑORA DE LOS SANTOS E. |
-| procesos | CO1.REQ.11299868 | fecha_adjudicacion |  | 2026-10-30T00:00:00.000 |
-| procesos | CO1.REQ.11299868 | estado_resumen | Presentación de oferta | Adjudicado |
 
 ## Alertas
 
