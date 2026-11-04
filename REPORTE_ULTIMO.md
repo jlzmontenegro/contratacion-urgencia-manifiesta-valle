@@ -1,18 +1,18 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-03 20:13  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-04 10:22  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
 | Indicador | Valor |
 |---|---|
-| Contratos relacionados (alta + media) | 475 |
-| Valor de esos contratos | $ 147.759.839.361 |
+| Contratos relacionados (alta + media) | 476 |
+| Valor de esos contratos | $ 150.138.164.431 |
 | Procesos relacionados (alta + media) | 1120 |
-| Contratos nuevos en esta ejecucion | 15 |
-| Procesos nuevos en esta ejecucion | 42 |
-| Modificaciones detectadas | 129 |
-| Registros revisados en total | 65929 |
+| Contratos nuevos en esta ejecucion | 166 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 289 |
+| Registros revisados en total | 66095 |
 
 ### Desglose por nivel de gobierno
 
@@ -20,14 +20,14 @@
 |---|---:|---:|---:|
 | Alcaldía de Cali | 154 | $ 49.045.175.808 | 377 |
 | Gobernación del Valle | 11 | $ 14.148.165.515 | 80 |
-| Otras entidades del Valle | 263 | $ 79.198.925.607 | 543 |
+| Otras entidades del Valle | 264 | $ 81.577.250.677 | 543 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 7028 | $ 356.130.535.947 | 6597 |
+| Alcaldía de Cali | 7116 | $ 357.579.401.447 | 6597 |
 | Gobernación del Valle | 6087 | $ 145.363.444.348 | 5695 |
 | Descentralizadas de Cali | 421 | $ 162.689.925.058 | 1946 |
 | Descentralizadas de la Gobernación | 3255 | $ 70.150.129.121 | 4701 |
@@ -44,7 +44,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 246** (134 que suman en los indicadores, por $ 21.815.147.364).
+- **Relacionados con el sismo: 252** (140 que suman en los indicadores, por $ 21.933.818.442).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -79,7 +79,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-09-30 | CHOCÓ - ALCALDÍA MUNICIPIO DE UNION PANAMERICANA | INTERVENTORIA TECNICA; ADMINISTRATIVA Y FINANCIERA PARA LAS OBRAS DE REHABILITACIoN DE LA INFRAESTRUCTURA DE L | $ 120.181.894 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-10-15 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE TRUJILLO | ALQUILER DE DOS (2) VOLQUETAS TIPO DOBLE TROQUE PARA APOYAR LAS ACTIVIDADES DE REMOCIoN; CARGUE; TRANSPORTE Y  | $ 114.907.435 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 
-_No se listan 149 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
+_No se listan 150 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
 
 ## UNGRD y FNGRD · NIT 900.478.966-6 y 900.978.341
 
@@ -102,79 +102,81 @@ _Se revisaron 345 registros de contratacion de estas dos entidades en la ventana
 | CVC | 12 | $ 4.205.773.952 |
 | MUNICIPIO DE CALIMA EL DARIEN VALLE | 6 | $ 3.008.053.619 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA | 2 | $ 2.849.451.216 |
+| ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | 2 | $ 2.679.870.403 |
 | GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL; AGRICULTURA Y PESCA | 1 | $ 2.568.577.795 |
 | ALCALDIA MUNICIPAL DE YOTOCO | 7 | $ 2.335.627.623 |
 | MUNICIPIO DE YUMBO VALLE | 13 | $ 2.167.612.572 |
-| GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
 
-## Contratos nuevos (0 relacionados de 15 publicados)
+## Contratos nuevos (1 relacionados de 166 publicados)
 
-## Procesos nuevos (0 relacionados de 42 publicados)
+| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
+|---|---|---|---:|---|---|
+| 2026-11-03 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | ADQUISICIÓN DE MAQUINARIA AMARILLA Y VEHÍCULOS; PARA EL MUNICIPIO DE CANDELARIA VALLE DEL CAUCA; EN EL MARCO D | $ 2.378.325.070 | FERROAGRO | Media |
 
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| contratos | CO1.PCCNTR.9971637 | valor_pagado | 0 | 6000000 |
-| contratos | CO1.PCCNTR.9971637 | valor_facturado | 0 | 6000000 |
-| contratos | CO1.PCCNTR.9971637 | valor_pendiente_de_pago | 6000000 | 0 |
-| contratos | CO1.PCCNTR.10067013 | valor_pagado | 0 | 5000000 |
-| contratos | CO1.PCCNTR.10067013 | valor_facturado | 0 | 5000000 |
-| contratos | CO1.PCCNTR.10067013 | valor_pendiente_de_pago | 5000000 | 0 |
-| contratos | CO1.PCCNTR.10066469 | valor_pagado | 0 | 2500000 |
-| contratos | CO1.PCCNTR.10066469 | valor_facturado | 0 | 2500000 |
-| contratos | CO1.PCCNTR.10066469 | valor_pendiente_de_pago | 2500000 | 0 |
-| contratos | CO1.PCCNTR.10124320 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9973948 | valor_pagado | 0 | 3000000 |
-| contratos | CO1.PCCNTR.9973948 | valor_facturado | 0 | 3000000 |
-| contratos | CO1.PCCNTR.9973948 | valor_pendiente_de_pago | 6000000 | 3000000 |
-| contratos | CO1.PCCNTR.9976626 | valor_pagado | 0 | 5000000 |
-| contratos | CO1.PCCNTR.9976626 | valor_facturado | 0 | 5000000 |
-| contratos | CO1.PCCNTR.9976626 | valor_pendiente_de_pago | 5000000 | 0 |
-| contratos | CO1.PCCNTR.10114955 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9974241 | valor_pagado | 0 | 6000000 |
-| contratos | CO1.PCCNTR.9974241 | valor_facturado | 0 | 6000000 |
-| contratos | CO1.PCCNTR.9974241 | valor_pendiente_de_pago | 12000000 | 6000000 |
-| contratos | CO1.PCCNTR.10122346 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10123641 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10125650 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10121669 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9973878 | valor_pagado | 0 | 12000000 |
-| contratos | CO1.PCCNTR.9973878 | valor_facturado | 0 | 12000000 |
-| contratos | CO1.PCCNTR.9973878 | valor_pendiente_de_pago | 12000000 | 0 |
-| contratos | CO1.PCCNTR.10124556 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9976027 | valor_pagado | 0 | 8000000 |
-| contratos | CO1.PCCNTR.9976027 | valor_facturado | 0 | 8000000 |
-| contratos | CO1.PCCNTR.9976027 | valor_pendiente_de_pago | 8000000 | 0 |
-| contratos | CO1.PCCNTR.10110303 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10126257 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9974738 | valor_pagado | 0 | 7000000 |
-| contratos | CO1.PCCNTR.9974738 | valor_facturado | 0 | 7000000 |
-| contratos | CO1.PCCNTR.9974738 | valor_pendiente_de_pago | 7000000 | 0 |
-| contratos | CO1.PCCNTR.9973163 | valor_pagado | 0 | 12000000 |
-| contratos | CO1.PCCNTR.9973163 | valor_facturado | 0 | 12000000 |
-| contratos | CO1.PCCNTR.9973163 | valor_pendiente_de_pago | 12000000 | 0 |
-| contratos | CO1.PCCNTR.10067653 | valor_pagado | 0 | 4000000 |
-| contratos | CO1.PCCNTR.10067653 | valor_facturado | 0 | 4000000 |
-| contratos | CO1.PCCNTR.10067653 | valor_pendiente_de_pago | 4000000 | 0 |
-| contratos | CO1.PCCNTR.10125444 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10116249 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10126306 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9976554 | valor_pagado | 0 | 6000000 |
-| contratos | CO1.PCCNTR.9976554 | valor_facturado | 0 | 6000000 |
-| contratos | CO1.PCCNTR.9976554 | valor_pendiente_de_pago | 6000000 | 0 |
-| contratos | CO1.PCCNTR.9975107 | valor_pagado | 0 | 6500000 |
-| contratos | CO1.PCCNTR.9975107 | valor_facturado | 0 | 6500000 |
-| contratos | CO1.PCCNTR.9975107 | valor_pendiente_de_pago | 13000000 | 6500000 |
-| contratos | CO1.PCCNTR.9984710 | valor_pagado | 0 | 5000000 |
-| contratos | CO1.PCCNTR.9984710 | valor_facturado | 0 | 5000000 |
-| contratos | CO1.PCCNTR.9984710 | valor_pendiente_de_pago | 5000000 | 0 |
-| contratos | CO1.PCCNTR.10124527 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10126350 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9973339 | valor_pagado | 0 | 7000000 |
-| contratos | CO1.PCCNTR.9973339 | valor_facturado | 0 | 7000000 |
-| contratos | CO1.PCCNTR.9973339 | valor_pendiente_de_pago | 7000000 | 0 |
-| contratos | CO1.PCCNTR.9975913 | valor_pagado | 0 | 10000000 |
+| contratos | CO1.PCCNTR.10123889 | nombre_supervisor | No definido | JOSE LUIS ORTIZ PATIÑO |
+| contratos | CO1.PCCNTR.10116028 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10116028 | valor_pendiente_de_pago | 0 | 8376000 |
+| contratos | CO1.PCCNTR.10109908 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10064073 | nombre_supervisor | Claudia Stephanie Osorio Hoyos | JUAN CARLOS MARTINEZ VALDEZ |
+| contratos | CO1.PCCNTR.10130167 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10115948 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10062325 | nombre_supervisor | Claudia Stephanie Osorio Hoyos | JUAN CARLOS MARTINEZ VALDEZ |
+| contratos | CO1.PCCNTR.10062153 | nombre_supervisor | Claudia Stephanie Osorio Hoyos | JUAN CARLOS MARTINEZ VALDEZ |
+| contratos | CO1.PCCNTR.9956659 | estado_contrato | En ejecución | Modificado |
+| contratos | CO1.PCCNTR.10124736 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10075608 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10075608 | valor_pendiente_de_pago | 0 | 6813000 |
+| contratos | CO1.PCCNTR.10112631 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10110705 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10062332 | nombre_supervisor | Claudia Stephanie Osorio Hoyos | JUAN CARLOS MARTINEZ VALDEZ |
+| contratos | CO1.PCCNTR.10129538 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10130289 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10062230 | nombre_supervisor | Claudia Stephanie Osorio Hoyos | JUAN CARLOS MARTINEZ VALDEZ |
+| contratos | CO1.PCCNTR.10064413 | nombre_supervisor | Claudia Stephanie Osorio Hoyos | JUAN CARLOS MARTINEZ VALDEZ |
+| contratos | CO1.PCCNTR.10127357 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10075700 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10075700 | valor_pendiente_de_pago | 0 | 6813000 |
+| contratos | CO1.PCCNTR.10129964 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10064033 | nombre_supervisor | Claudia Stephanie Osorio Hoyos | JUAN CARLOS MARTINEZ VALDEZ |
+| contratos | CO1.PCCNTR.10130176 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10129989 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10097478 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9988674 | valor_pagado | 0 | 5000000 |
+| contratos | CO1.PCCNTR.9988674 | valor_facturado | 0 | 5000000 |
+| contratos | CO1.PCCNTR.9988674 | valor_pendiente_de_pago | 5000000 | 0 |
+| contratos | CO1.PCCNTR.10130031 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10047594 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10119180 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10115902 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10115902 | valor_pendiente_de_pago | 0 | 16989000 |
+| contratos | CO1.PCCNTR.10116545 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10124735 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10130412 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10113871 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10093599 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9996422 | nombre_supervisor | Oscar Oswaldo Gomez Castro | JOSE ALEJANDRO FOSSI FALLA |
+| contratos | CO1.PCCNTR.10108650 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10062338 | nombre_supervisor | Claudia Stephanie Osorio Hoyos | JUAN CARLOS MARTINEZ VALDEZ |
+| contratos | CO1.PCCNTR.10062021 | nombre_supervisor | Claudia Stephanie Osorio Hoyos | JUAN CARLOS MARTINEZ VALDEZ |
+| contratos | CO1.PCCNTR.10130525 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10109959 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10104347 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10062233 | nombre_supervisor | Claudia Stephanie Osorio Hoyos | JUAN CARLOS MARTINEZ VALDEZ |
+| contratos | CO1.PCCNTR.10130531 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10128151 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10062327 | nombre_supervisor | Claudia Stephanie Osorio Hoyos | JUAN CARLOS MARTINEZ VALDEZ |
+| contratos | CO1.PCCNTR.10111904 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10121379 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10099523 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10096103 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10112641 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10115428 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10071029 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10071029 | valor_pendiente_de_pago | 0 | 10653000 |
 
 ## Alertas
 
@@ -190,21 +192,23 @@ _Se revisaron 345 registros de contratacion de estas dos entidades en la ventana
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA - $ 900.000.000 - UNION TEMPORAL LOGISTICA ALIMENTARIA INTEGRAL [SECOP II]
 - **Contrato de alto valor**: DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES - $ 649.987.520 - FANALCA S.A.S. [SECOP II]
 - **Contrato de alto valor**: GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL; AGRICULTURA Y PESCA - $ 2.568.577.795 - FUNDACIÓN AVE FÉNIX [SECOP II]
+- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO - $ 3.808.283.049 - Corporación para el Desarrollo Social y Cultural del Valle del Cauca - Corpovalle [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE - $ 515.216.559 - ROCALES Y CONCRETOS SAS [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD - $ 1.579.746.154 - GV INGENIERIA INTEGRAL SAS [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS - $ 5.169.150.000 - EMPRESA REGIONAL DE SERVICIO PUBLICO DE ASEO DE CANDELARIA [SECOP II]
 - **Contrato de alto valor**: GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE VIVIENDA Y HABITAT - $ 8.592.000.000 - COMERCIALIZADORA ORIKUA SAS [SECOP II]
-- **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO - $ 3.808.283.049 - Corporación para el Desarrollo Social y Cultural del Valle del Cauca - Corpovalle [SECOP II]
 - **Contrato de alto valor**: GOBERNACION DEL VALLE DEL CAUCA - DADI - $ 1.300.000.000 - Prensa y Entretenimiento Agencia de Comunicaciones S.A.S [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA - $ 1.361.024.561 - FENIX ASFALTOS Y CONCRETOS SAS [SECOP II]
 - **Contrato de alto valor**: CVC - $ 1.422.879.908 - CORPORACION AMANO NATIVA [SECOP II]
 - **Contrato de alto valor**: CVC - $ 996.015.936 - FUNDACION BALU [SECOP II]
 - **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 597.455.382 - GG CM [SECOP II]
 - **Contrato de alto valor**: ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE - $ 620.200.000 - FUNDACION RAFAEL FE Y ESPERANZA [SECOP II]
+- **Contrato de alto valor**: ALCALDÍA MUNICIPAL DE CANDELARIA VALLE - $ 2.378.325.070 - FERROAGRO [SECOP II]
 - **Contrato de alto valor**: ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE - $ 1.110.000.000 - FUNDETER [SECOP II]
 - **Contrato de alto valor**: CVC - $ 948.000.000 - Q C [SECOP II]
 - **Contrato de alto valor**: ARMADA NACIONAL BASE NAVAL ARC MALAGA - $ 761.600.000 - LONA GROUP SAS [SECOP II]
 - **Contrato de alto valor**: UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA - $ 1.321.917.014 - CONSORCIO UES VALLE 2026 [SECOP II]
+- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 5.227.550.751 - AMS INGENIEROS EU [SECOP II]
 - **Contrato de alto valor**: RED DE SALUD DEL ORIENTE ESE - $ 525.000.000 - ASOCIACION GREMIAL ESPECIALIZADA EN SALUD DEL OCCIDENTE [SECOP II]
 - **Contrato de alto valor**: ALCALDIA DE ALCALA - $ 528.784.465 - GRUPO EMPRESARIAL DEL SUR SIGLO XXI S.A.S. E.S.P [SECOP II]
 - **Contrato de alto valor**: MUNICIPIO DE YUMBO VALLE - $ 1.413.020.078 - JAVIER GORDILLO GRISALES [SECOP II]
@@ -216,8 +220,6 @@ _Se revisaron 345 registros de contratacion de estas dos entidades en la ventana
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.483.070.607 - Ingelmeth [SECOP II]
 - **Contrato de alto valor**: HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E - $ 1.150.889.534 - PLANEAMOS SAS [SECOP II]
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.125.264.000 - NOVATECH INGENIERIA Y CONSTRUCCION SAS [SECOP II]
-- **Contrato de alto valor**: MUNICIPIO DE SEVILLA - $ 599.904.848 - MARTHA LILIANA ALFARO GARCIA [SECOP II]
-- **Contrato de alto valor**: ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE - $ 1.315.317.499 - QUANTUM E&D S.A.S. [SECOP II]
 
 ---
 
