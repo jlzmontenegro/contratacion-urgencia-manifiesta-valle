@@ -4,7 +4,7 @@ Comprobaciones: 53 entidades x 3 fuentes = 159, cada una por tres caminos indepe
 
 Fuente     Entidad                NIT         API simple  API amplio    CSV   Veredicto
 ------------------------------------------------------------------------------------
-contratos  Alcaldia de Cali       890399011         7113        7171   7171   OK
+contratos  Alcaldia de Cali       890399011         7124        7182   7182   OK
 contratos  Gobernacion del Valle  890399029         3149        6098   6098   OK
 contratos  UNGRD / FNGRD          900478966            3           3      3   OK
 contratos  UNGRD / FNGRD          900978341            1           1      1   OK
@@ -57,7 +57,7 @@ contratos  Otras     IE Paulo VI - Palmira815004730            0           0    
 contratos  Otras     IE Ginebra La Salle891380108            0           0      0   OK
 contratos  Otras     IE Zaragoza - Cartago800034326            0           0      0   OK
 contratos  Otras     IE Camilo Torres - Dagua805015675            0           0      0   OK
-procesos   Alcaldia de Cali       890399011         6900        6954   6954   OK
+procesos   Alcaldia de Cali       890399011         6920        6974   6974   OK
 procesos   Gobernacion del Valle  890399029         2971        5775   5775   OK
 procesos   UNGRD / FNGRD          900478966            2           2      2   OK
 procesos   UNGRD / FNGRD          900978341          339         339    339   OK

@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-03 10:03  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-03 20:13  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -9,10 +9,10 @@
 | Contratos relacionados (alta + media) | 475 |
 | Valor de esos contratos | $ 147.759.839.361 |
 | Procesos relacionados (alta + media) | 1120 |
-| Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 0 |
-| Registros revisados en total | 65872 |
+| Contratos nuevos en esta ejecucion | 15 |
+| Procesos nuevos en esta ejecucion | 42 |
+| Modificaciones detectadas | 129 |
+| Registros revisados en total | 65929 |
 
 ### Desglose por nivel de gobierno
 
@@ -27,7 +27,7 @@
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 7017 | $ 356.014.810.447 | 6577 |
+| Alcaldía de Cali | 7028 | $ 356.130.535.947 | 6597 |
 | Gobernación del Valle | 6087 | $ 145.363.444.348 | 5695 |
 | Descentralizadas de Cali | 421 | $ 162.689.925.058 | 1946 |
 | Descentralizadas de la Gobernación | 3255 | $ 70.150.129.121 | 4701 |
@@ -106,6 +106,75 @@ _Se revisaron 345 registros de contratacion de estas dos entidades en la ventana
 | ALCALDIA MUNICIPAL DE YOTOCO | 7 | $ 2.335.627.623 |
 | MUNICIPIO DE YUMBO VALLE | 13 | $ 2.167.612.572 |
 | GOBERNACIÓN DE RISARALDA** | 1 | $ 2.000.000.000 |
+
+## Contratos nuevos (0 relacionados de 15 publicados)
+
+## Procesos nuevos (0 relacionados de 42 publicados)
+
+## Modificaciones sobre registros ya conocidos
+
+| Fuente | Identificador | Campo | Antes | Ahora |
+|---|---|---|---|---|
+| contratos | CO1.PCCNTR.9971637 | valor_pagado | 0 | 6000000 |
+| contratos | CO1.PCCNTR.9971637 | valor_facturado | 0 | 6000000 |
+| contratos | CO1.PCCNTR.9971637 | valor_pendiente_de_pago | 6000000 | 0 |
+| contratos | CO1.PCCNTR.10067013 | valor_pagado | 0 | 5000000 |
+| contratos | CO1.PCCNTR.10067013 | valor_facturado | 0 | 5000000 |
+| contratos | CO1.PCCNTR.10067013 | valor_pendiente_de_pago | 5000000 | 0 |
+| contratos | CO1.PCCNTR.10066469 | valor_pagado | 0 | 2500000 |
+| contratos | CO1.PCCNTR.10066469 | valor_facturado | 0 | 2500000 |
+| contratos | CO1.PCCNTR.10066469 | valor_pendiente_de_pago | 2500000 | 0 |
+| contratos | CO1.PCCNTR.10124320 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9973948 | valor_pagado | 0 | 3000000 |
+| contratos | CO1.PCCNTR.9973948 | valor_facturado | 0 | 3000000 |
+| contratos | CO1.PCCNTR.9973948 | valor_pendiente_de_pago | 6000000 | 3000000 |
+| contratos | CO1.PCCNTR.9976626 | valor_pagado | 0 | 5000000 |
+| contratos | CO1.PCCNTR.9976626 | valor_facturado | 0 | 5000000 |
+| contratos | CO1.PCCNTR.9976626 | valor_pendiente_de_pago | 5000000 | 0 |
+| contratos | CO1.PCCNTR.10114955 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9974241 | valor_pagado | 0 | 6000000 |
+| contratos | CO1.PCCNTR.9974241 | valor_facturado | 0 | 6000000 |
+| contratos | CO1.PCCNTR.9974241 | valor_pendiente_de_pago | 12000000 | 6000000 |
+| contratos | CO1.PCCNTR.10122346 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10123641 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10125650 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10121669 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9973878 | valor_pagado | 0 | 12000000 |
+| contratos | CO1.PCCNTR.9973878 | valor_facturado | 0 | 12000000 |
+| contratos | CO1.PCCNTR.9973878 | valor_pendiente_de_pago | 12000000 | 0 |
+| contratos | CO1.PCCNTR.10124556 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9976027 | valor_pagado | 0 | 8000000 |
+| contratos | CO1.PCCNTR.9976027 | valor_facturado | 0 | 8000000 |
+| contratos | CO1.PCCNTR.9976027 | valor_pendiente_de_pago | 8000000 | 0 |
+| contratos | CO1.PCCNTR.10110303 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10126257 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9974738 | valor_pagado | 0 | 7000000 |
+| contratos | CO1.PCCNTR.9974738 | valor_facturado | 0 | 7000000 |
+| contratos | CO1.PCCNTR.9974738 | valor_pendiente_de_pago | 7000000 | 0 |
+| contratos | CO1.PCCNTR.9973163 | valor_pagado | 0 | 12000000 |
+| contratos | CO1.PCCNTR.9973163 | valor_facturado | 0 | 12000000 |
+| contratos | CO1.PCCNTR.9973163 | valor_pendiente_de_pago | 12000000 | 0 |
+| contratos | CO1.PCCNTR.10067653 | valor_pagado | 0 | 4000000 |
+| contratos | CO1.PCCNTR.10067653 | valor_facturado | 0 | 4000000 |
+| contratos | CO1.PCCNTR.10067653 | valor_pendiente_de_pago | 4000000 | 0 |
+| contratos | CO1.PCCNTR.10125444 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10116249 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10126306 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9976554 | valor_pagado | 0 | 6000000 |
+| contratos | CO1.PCCNTR.9976554 | valor_facturado | 0 | 6000000 |
+| contratos | CO1.PCCNTR.9976554 | valor_pendiente_de_pago | 6000000 | 0 |
+| contratos | CO1.PCCNTR.9975107 | valor_pagado | 0 | 6500000 |
+| contratos | CO1.PCCNTR.9975107 | valor_facturado | 0 | 6500000 |
+| contratos | CO1.PCCNTR.9975107 | valor_pendiente_de_pago | 13000000 | 6500000 |
+| contratos | CO1.PCCNTR.9984710 | valor_pagado | 0 | 5000000 |
+| contratos | CO1.PCCNTR.9984710 | valor_facturado | 0 | 5000000 |
+| contratos | CO1.PCCNTR.9984710 | valor_pendiente_de_pago | 5000000 | 0 |
+| contratos | CO1.PCCNTR.10124527 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10126350 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9973339 | valor_pagado | 0 | 7000000 |
+| contratos | CO1.PCCNTR.9973339 | valor_facturado | 0 | 7000000 |
+| contratos | CO1.PCCNTR.9973339 | valor_pendiente_de_pago | 7000000 | 0 |
+| contratos | CO1.PCCNTR.9975913 | valor_pagado | 0 | 10000000 |
 
 ## Alertas
 
