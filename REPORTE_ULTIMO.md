@@ -1,18 +1,18 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-04 10:22  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-06 09:58  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
 | Indicador | Valor |
 |---|---|
 | Contratos relacionados (alta + media) | 476 |
-| Valor de esos contratos | $ 150.138.164.431 |
-| Procesos relacionados (alta + media) | 1120 |
-| Contratos nuevos en esta ejecucion | 166 |
-| Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 289 |
-| Registros revisados en total | 66095 |
+| Valor de esos contratos | $ 151.088.164.431 |
+| Procesos relacionados (alta + media) | 1139 |
+| Contratos nuevos en esta ejecucion | 199 |
+| Procesos nuevos en esta ejecucion | 568 |
+| Modificaciones detectadas | 1319 |
+| Registros revisados en total | 66860 |
 
 ### Desglose por nivel de gobierno
 
@@ -20,31 +20,31 @@
 |---|---:|---:|---:|
 | Alcaldía de Cali | 154 | $ 49.045.175.808 | 377 |
 | Gobernación del Valle | 11 | $ 14.148.165.515 | 80 |
-| Otras entidades del Valle | 264 | $ 81.577.250.677 | 543 |
+| Otras entidades del Valle | 264 | $ 82.527.250.677 | 559 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 7116 | $ 357.579.401.447 | 6597 |
-| Gobernación del Valle | 6087 | $ 145.363.444.348 | 5695 |
-| Descentralizadas de Cali | 421 | $ 162.689.925.058 | 1946 |
-| Descentralizadas de la Gobernación | 3255 | $ 70.150.129.121 | 4701 |
-| UNGRD | 4 | $ 146.817.067 | 339 |
+| Alcaldía de Cali | 7170 | $ 358.221.975.075 | 6730 |
+| Gobernación del Valle | 6092 | $ 146.682.234.364 | 5709 |
+| Descentralizadas de Cali | 422 | $ 162.719.925.058 | 2022 |
+| Descentralizadas de la Gobernación | 3260 | $ 70.616.294.121 | 4732 |
+| UNGRD | 4 | $ 133.017.067 | 339 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 303 contratos ($ 101.553.508.082) y 406 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 262 contratos ($ 528.432.751.799) y 435 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 304 contratos ($ 101.569.849.862) y 412 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 268 contratos ($ 529.310.828.681) y 451 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 252** (140 que suman en los indicadores, por $ 21.933.818.442).
+- **Relacionados con el sismo: 260** (146 que suman en los indicadores, por $ 21.970.299.187).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -63,6 +63,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-08-18 | RISARALDA - ALCALDÍA MUNICIPIO DE PUEBLO RICO | SUMINISTRO DE ELEMENTOS DE FERRETERiA DESTINADOS A LA ATENCIoN DE LA EMERGENCIA; REHABILITACIoN Y RECONSTRUCCI | $ 400.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-09-09 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE EL CAIRO | SUMINISTRO DE MATERIALES DE CONSTRUCCIoN DESTINADOS A LA EJECUCIoN DE LOS MEJORAMIENTOS Y ADECUACIONES DE LAS  | $ 380.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-28 | RISARALDA - ALCALDÍA MUNICIPIO DE MISTRATÓ | SUMINISTRO DE MATERIALES DE CONSTRUCCIoN PARA LA ATENCIoN DE LA EMERGENCIA Y APOYO A LAS FAMILIAS DAMNIFICADAS | $ 345.274.867 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
+| 2026-11-04 | CALDAS - ALCALDÍA MUNICIPIO DE ARANZAZU | ADQUISICIoN Y SUMINISTRO DE MATERIALES DE CONSTRUCCIoN PARA LA EJECUCIoN DE ACTIVIDADES DE REPARACIoN; REHABIL | $ 302.068.200 | Subasta · No Definido | Alta |
 | 2026-10-15 | RISARALDA - ALCALDÍA MUNICIPIO DE QUINCHIA | SUMINISTRAR AL MUNICIPIO DE QUINCHiA; MATERIALES DE CONSTRUCCIoN EN EL MARCO DE LA ATENCIoN A LOS DAMNIFICADOS | $ 290.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-10-09 | ANTIOQUIA - ALCALDÍA MUNICIPIO DE VIGÍA DEL FUERTE | SUMINISTRO DE MATERIALES DE CONSTRUCCIoN DESTINADOS AL APOYO Y ATENCIoN DE LAS VIVIENDAS QUE PRESENTARON PeRDI | $ 289.095.625 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-10-09 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE ARGELIA | SUMINISTRO DE MATERIALES DE CONSTRUCCIoN PARA APOYAR EL MEJORAMIENTO DE LAS VIVIENDAS URBANAS Y RURALES DEL MU | $ 270.600.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
@@ -77,9 +78,8 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-10-22 | CHOCÓ - ALCALDÍA MUNICIPIO DE SAN JOSÉ DEL PALMAR | EJECUCIoN DE OBRAS DE REPARACIoN Y REHABILITACIoN DE LOS ELEMENTOS FiSICOS AFECTADOS DEL CENTRO VIDA DEL MUNIC | $ 150.000.000 | Selección Abreviada de Menor Cuantía (Ley 1150 de 2007) · La contratación de menor cuantía (Literal B) | Alta |
 | 2026-09-10 | CALDAS - ALCALDÍA MUNICIPIO DE MARULANDA | EJECUCIoN; A TODO COSTO Y POR EL SISTEMA DE PRECIOS UNITARIOS FIJOS; DE LAS OBRAS NECESARIAS PARA LA REPARACIo | $ 132.052.041 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-09-30 | CHOCÓ - ALCALDÍA MUNICIPIO DE UNION PANAMERICANA | INTERVENTORIA TECNICA; ADMINISTRATIVA Y FINANCIERA PARA LAS OBRAS DE REHABILITACIoN DE LA INFRAESTRUCTURA DE L | $ 120.181.894 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
-| 2026-10-15 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE TRUJILLO | ALQUILER DE DOS (2) VOLQUETAS TIPO DOBLE TROQUE PARA APOYAR LAS ACTIVIDADES DE REMOCIoN; CARGUE; TRANSPORTE Y  | $ 114.907.435 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 
-_No se listan 150 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
+_No se listan 165 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
 
 ## UNGRD y FNGRD · NIT 900.478.966-6 y 900.978.341
 
@@ -104,79 +104,109 @@ _Se revisaron 345 registros de contratacion de estas dos entidades en la ventana
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA | 2 | $ 2.849.451.216 |
 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | 2 | $ 2.679.870.403 |
 | GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL; AGRICULTURA Y PESCA | 1 | $ 2.568.577.795 |
+| INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ | 3 | $ 2.388.923.153 |
 | ALCALDIA MUNICIPAL DE YOTOCO | 7 | $ 2.335.627.623 |
-| MUNICIPIO DE YUMBO VALLE | 13 | $ 2.167.612.572 |
 
-## Contratos nuevos (1 relacionados de 166 publicados)
+## Contratos nuevos (1 relacionados de 199 publicados)
 
 | Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
 |---|---|---|---:|---|---|
-| 2026-11-03 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | ADQUISICIÓN DE MAQUINARIA AMARILLA Y VEHÍCULOS; PARA EL MUNICIPIO DE CANDELARIA VALLE DEL CAUCA; EN EL MARCO D | $ 2.378.325.070 | FERROAGRO | Media |
+| 2026-11-03 | MUNICIPIO SANTA ROSA DE OSOS | PRESTACIÓN DE SERVICIOS PROFESIONALES DE APOYO A LA GESTIÓN EN ASISTENCIA TÉCNICA AMBIENTAL Y SANITARIA PARA L | $ 16.341.780 | CAROLINA VARGAS BETANCUR | Alta |
+
+## Procesos nuevos (25 relacionados de 568 publicados)
+
+| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
+|---|---|---|---:|---|---|
+| 2026-11-03 | FONDO ROTATORIO** | Aunar esfuerzos administrativos, técnicos, humanos y financieros para el desarrollo de proyectos productivos o | $ 3.228.571.429 | Contratación Directa (con ofertas) | Alta |
+| 2026-11-04 | MUNICIPIO DE SAN JUAN BAUTISTA DE GUACARI2 | CONSTRUCCIÓN DEL ALCANTARILLADO PARA EL CORREGIMIENTO DE CANANGUA, JURISDICCIÓN DEL MUNICIPIO DE GUACARÍ, VALL | $ 361.126.584 | Selección Abreviada de Menor Cuantía | Media |
+| 2026-11-03 | INCIVA | Ejecutar Bajo la Modalidad de Precios Unitarios las ADECUACIONES CARPINTERÍA EN MADERA, CUBIERTA Y MUROS CENTR | $ 326.218.162 | Selección Abreviada de Menor Cuantía | Media |
+| 2026-11-04 | MUNICIPIO DE BUGALAGRANDE | PODA DE ÁRBOLES PARA LA MITIGACIÓN DEL RIESGO EN EL MUNICIPIO DE BUGALAGRANDE, VALLE DEL CAUCA | $ 161.999.996 | Selección Abreviada de Menor Cuantía | Media |
+| 2026-11-03 | UNIVERSIDAD DE CALDAS. | ADQUISICIÓN DE EQUIPOS TECNOLÓGICOS, INCLUYENDO COMPUTADORES, IMPRESORAS, PANTALLAS, MONITORES Y DEMÁS ELEMENT | $ 117.573.149 | Contratación régimen especial | Alta |
+| 2026-11-03 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | ALQUILER DE HERRAMIENTAS, MAQUINARIA Y EQUIPO MENOR PARA LA RECONSTRUCCIÓN, REHABILITACIÓN, MEJORAMIENTO Y MAN | $ 90.000.000 | Contratación directa | Alta |
+| 2026-11-03 | STT | PRESTACION DE SERVICIO DE DISEÑO, IMPLEMENTACION, DOCUMENTACION Y SENSIBILIZACION DEL SISTEMA DE GESTION DEL R | $ 80.000.000 | Mínima cuantía | Media |
+| 2026-11-03 | CVC | Implementar la estrategia corporativa de educación ambiental en gestión del riesgo, en territorios de comunida | $ 50.000.000 | Contratación Directa (con ofertas) | Media |
+| 2026-11-03 | MUNICIPIO DE SAN JUAN BAUTISTA DE GUACARI2 | EJECUTAR OBRAS DE REPARACION Y ADECUACION EN LAS SEDES EDUCATIVAS AFECTADAS POR EL SISMO DEL 10 DE AGOSTO DE 2 | $ 48.726.644 | Contratación régimen especial | Alta |
+| 2026-11-04 | INSTITUCION EDUCATIVA ROSENDO MONDRAGON FEIJOO | ADQUISICIÓN, SUMINISTRO, INSTALACIÓN, RECARGA Y MANTENIMIENTO DE ELEMENTOS DE SEGURIDAD, PREVENCIÓN, SEÑALIZAC | $ 23.945.444 | Contratación régimen especial | Media |
+| 2026-11-03 | MUNICIPIO DE SAN JUAN BAUTISTA DE GUACARI2 | ELABORACIÓN DE ESTUDIOS, DIAGNÓSTICOS, DISEÑOS Y DOCUMENTACIÓN TÉCNICA PARA LA SOLICITUD DE LICENCIA DE CONSTR | $ 21.000.000 | Contratación régimen especial | Alta |
+| 2026-11-03 | MUNICIPIO SANTA ROSA DE OSOS | PRESTACIÓN DE SERVICIOS PROFESIONALES DE APOYO A LA GESTIÓN EN ASISTENCIA TÉCNICA AMBIENTAL Y SANITARIA PARA L | $ 16.341.780 | Contratación directa | Alta |
+| 2026-11-02 | IEACADEMICO | Contratar la ejecución de las obras de mitigación, reparaciones locativas y adecuaciones menores en la cubiert | $ 14.000.000 | Contratación régimen especial | Alta |
+| 2026-11-03 | INSTITUCION EDUCATIVA CARLOS HOLMES TRUJILLO | MANTENIMIENTO, REPACION Y ADECUACIONES LOCATIVAS DE LA INFRA ESTRUCTURA FISICA DE LA INSTITUCION CARLOS HOLMES | $ 12.150.000 | Contratación régimen especial | Alta |
+| 2026-11-03 | INSTITUCIÓN EDUCATIVA SANTA ROSALIA DE PALERMO | SUMINISTRO DE ELEMENTOS DE FERRETERÍA PARA REPARACIONES A LA INFRAESTRUCTURA DE ALGUNAS SEDES DE LA I. E SANTA | $ 10.676.735 | Contratación régimen especial | Alta |
+| 2026-11-04 | MUNICIPIO DE SEVILLA | PRESTAR SERVICIOS PROFESIONALES PARA REALIZAR LA EVALUACION DE EDIFICACIONES E INFRAESTRUCTURA AFECTADA POR EL | $ 10.000.000 | Contratación directa | Alta |
+| 2026-11-04 | MUNICIPIO DE SEVILLA | PRESTAR SERVICIOS PROFESIONALES PARA REALIZAR LA EVALUACION DE EDIFICACIONES E INFRAESTRUCTURA AFECTADA POR EL | $ 10.000.000 | Contratación directa | Alta |
+| 2026-11-04 | MUNICIPIO DE SEVILLA | PRESTAR SERVICIOS PROFESIONALES PARA REALIZAR LA EVALUACION DE EDIFICACIONES E INFRAESTRUCTURA AFECTADA POR EL | $ 10.000.000 | Contratación directa | Alta |
+| 2026-11-04 | MUNICIPIO DE SEVILLA | PRESTAR SERVICIOS PROFESIONALES PARA REALIZAR LA EVALUACION DE EDIFICACIONES E INFRAESTRUCTURA AFECTADA POR EL | $ 10.000.000 | Contratación directa | Alta |
+| 2026-11-03 | INSTITUCION EDUCATIVA NUESTRA SEÑORA DE LA CONSOLACION | ADQUISICION DE ELEMENTOS TECNOLOGICOS MATERIAL DE PAPELERIA MOBILIARIO Y ENSERES REQUERIDOS PARA EL FORTALECIM | $ 8.376.168 | Contratación régimen especial | Media |
+| 2026-11-04 | UNIQUINDIO | PRESTACIÓN DE SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA LA EJECUCIÓN TÉCNICA DEL CONTRATO INTERADMINIS | $ 8.000.000 | Contratación régimen especial | Alta |
+| 2026-11-04 | UNIQUINDIO | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERA CIVIL DE APOYO EN EL SEGUIMIENTO TÉCNICO Y ADMINISTRATIVO A LA  | $ 8.000.000 | Contratación régimen especial | Alta |
+| 2026-11-02 | MUNICIPIO DE DAGUA | PRESTACIÓN DE SERVICIOS PROFESIONALES A LA GESTIÓN DE LA SECRETARÍA DE PLANEACIÓN Y PROYECTOS, ORIENTADA AL FO | $ 6.400.000 | Contratación directa | Media |
+| 2026-11-04 | UNIQUINDIO | PRESTACIÓN DE SERVICIOS DE APOYO OPERATIVO COMO TECNÓLOGO EN OBRAS CIVILES PARA LA EJECUCIÓN DEL CONTRATO INTE | $ 5.000.000 | Contratación régimen especial | Alta |
+| 2026-11-04 | UNIQUINDIO | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN COMO AUXILIAR ADMINISTRATIVA EN EL DESARROLLO  DEL CONTRATO INTE | $ 5.000.000 | Contratación régimen especial | Alta |
 
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| contratos | CO1.PCCNTR.10123889 | nombre_supervisor | No definido | JOSE LUIS ORTIZ PATIÑO |
-| contratos | CO1.PCCNTR.10116028 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10116028 | valor_pendiente_de_pago | 0 | 8376000 |
-| contratos | CO1.PCCNTR.10109908 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10064073 | nombre_supervisor | Claudia Stephanie Osorio Hoyos | JUAN CARLOS MARTINEZ VALDEZ |
-| contratos | CO1.PCCNTR.10130167 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10115948 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10062325 | nombre_supervisor | Claudia Stephanie Osorio Hoyos | JUAN CARLOS MARTINEZ VALDEZ |
-| contratos | CO1.PCCNTR.10062153 | nombre_supervisor | Claudia Stephanie Osorio Hoyos | JUAN CARLOS MARTINEZ VALDEZ |
-| contratos | CO1.PCCNTR.9956659 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.10124736 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10075608 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10075608 | valor_pendiente_de_pago | 0 | 6813000 |
-| contratos | CO1.PCCNTR.10112631 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10110705 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10062332 | nombre_supervisor | Claudia Stephanie Osorio Hoyos | JUAN CARLOS MARTINEZ VALDEZ |
-| contratos | CO1.PCCNTR.10129538 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10130289 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10062230 | nombre_supervisor | Claudia Stephanie Osorio Hoyos | JUAN CARLOS MARTINEZ VALDEZ |
-| contratos | CO1.PCCNTR.10064413 | nombre_supervisor | Claudia Stephanie Osorio Hoyos | JUAN CARLOS MARTINEZ VALDEZ |
-| contratos | CO1.PCCNTR.10127357 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10075700 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10075700 | valor_pendiente_de_pago | 0 | 6813000 |
-| contratos | CO1.PCCNTR.10129964 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10064033 | nombre_supervisor | Claudia Stephanie Osorio Hoyos | JUAN CARLOS MARTINEZ VALDEZ |
-| contratos | CO1.PCCNTR.10130176 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10129989 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10097478 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9988674 | valor_pagado | 0 | 5000000 |
-| contratos | CO1.PCCNTR.9988674 | valor_facturado | 0 | 5000000 |
-| contratos | CO1.PCCNTR.9988674 | valor_pendiente_de_pago | 5000000 | 0 |
-| contratos | CO1.PCCNTR.10130031 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10047594 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10119180 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10115902 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10115902 | valor_pendiente_de_pago | 0 | 16989000 |
-| contratos | CO1.PCCNTR.10116545 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10124735 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10130412 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10113871 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10093599 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9996422 | nombre_supervisor | Oscar Oswaldo Gomez Castro | JOSE ALEJANDRO FOSSI FALLA |
-| contratos | CO1.PCCNTR.10108650 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10062338 | nombre_supervisor | Claudia Stephanie Osorio Hoyos | JUAN CARLOS MARTINEZ VALDEZ |
-| contratos | CO1.PCCNTR.10062021 | nombre_supervisor | Claudia Stephanie Osorio Hoyos | JUAN CARLOS MARTINEZ VALDEZ |
-| contratos | CO1.PCCNTR.10130525 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10109959 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10104347 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10062233 | nombre_supervisor | Claudia Stephanie Osorio Hoyos | JUAN CARLOS MARTINEZ VALDEZ |
-| contratos | CO1.PCCNTR.10130531 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10128151 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10062327 | nombre_supervisor | Claudia Stephanie Osorio Hoyos | JUAN CARLOS MARTINEZ VALDEZ |
-| contratos | CO1.PCCNTR.10111904 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10121379 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10099523 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10096103 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10112641 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10115428 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10071029 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10071029 | valor_pendiente_de_pago | 0 | 10653000 |
+| contratos | CO1.PCCNTR.10113714 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10116021 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10116021 | valor_pendiente_de_pago | 0 | 14157500 |
+| contratos | CO1.PCCNTR.10122220 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9826282 | nombre_supervisor | Olga Lucia Cuellar Mejia | José Julián Fichman Delgado |
+| contratos | CO1.PCCNTR.10110902 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9814431 | nombre_supervisor | Olga Lucia Cuellar Mejia | José Julián Fichman Delgado |
+| contratos | CO1.PCCNTR.10117499 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10105388 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10008803 | estado_contrato | En ejecución | Modificado |
+| contratos | CO1.PCCNTR.9826337 | nombre_supervisor | Olga Lucia Cuellar Mejia | José Julián Fichman Delgado |
+| contratos | CO1.PCCNTR.10122214 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10098078 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10119803 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10125751 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10107119 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10107119 | valor_pendiente_de_pago | 0 | 9867500 |
+| contratos | CO1.PCCNTR.9996351 | valor_pagado | 0 | 5000000 |
+| contratos | CO1.PCCNTR.9996351 | valor_facturado | 0 | 5000000 |
+| contratos | CO1.PCCNTR.9996351 | valor_pendiente_de_pago | 10000000 | 5000000 |
+| contratos | CO1.PCCNTR.10106970 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10106970 | valor_pendiente_de_pago | 0 | 12012500 |
+| contratos | CO1.PCCNTR.10022238 | nombre_supervisor | No definido | Jorge Alberto Buitrago Trujillo |
+| contratos | CO1.PCCNTR.10114932 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10115235 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10110105 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10022444 | nombre_supervisor | Olga Lucia Cuellar Mejia | José Julián Fichman Delgado |
+| contratos | CO1.PCCNTR.10109614 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10105394 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10061121 | estado_contrato | En ejecución | terminado |
+| contratos | CO1.PCCNTR.9970742 | valor_pagado | 0 | 5000000 |
+| contratos | CO1.PCCNTR.9970742 | valor_facturado | 0 | 5000000 |
+| contratos | CO1.PCCNTR.9970742 | valor_pendiente_de_pago | 10000000 | 5000000 |
+| contratos | CO1.PCCNTR.10111003 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10124373 | proveedor_adjudicado | Carlos Arlex Abrew Quimbaya | Carlos Arlex Abrew quimbaya |
+| contratos | CO1.PCCNTR.10131496 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9975006 | valor_pagado | 0 | 5000000 |
+| contratos | CO1.PCCNTR.9975006 | valor_facturado | 0 | 5000000 |
+| contratos | CO1.PCCNTR.9975006 | valor_pendiente_de_pago | 5000000 | 0 |
+| contratos | CO1.PCCNTR.9974812 | valor_pagado | 0 | 7000000 |
+| contratos | CO1.PCCNTR.9974812 | valor_facturado | 0 | 7000000 |
+| contratos | CO1.PCCNTR.9974812 | valor_pendiente_de_pago | 7000000 | 0 |
+| contratos | CO1.PCCNTR.10106960 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9971789 | valor_pagado | 0 | 14000000 |
+| contratos | CO1.PCCNTR.9971789 | valor_facturado | 0 | 14000000 |
+| contratos | CO1.PCCNTR.9971789 | valor_pendiente_de_pago | 14000000 | 0 |
+| contratos | CO1.PCCNTR.10034475 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10131556 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10094667 | estado_contrato | En ejecución | Modificado |
+| contratos | CO1.PCCNTR.10116005 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10120114 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9813997 | nombre_supervisor | Olga Lucia Cuellar Mejia | José Julián Fichman Delgado |
+| contratos | CO1.PCCNTR.10113711 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10133635 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10098284 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9974991 | valor_pagado | 0 | 8000000 |
+| contratos | CO1.PCCNTR.9974991 | valor_facturado | 0 | 8000000 |
+| contratos | CO1.PCCNTR.9974991 | valor_pendiente_de_pago | 8000000 | 0 |
+| contratos | CO1.PCCNTR.9975118 | valor_pagado | 0 | 10000000 |
+| contratos | CO1.PCCNTR.9975118 | valor_facturado | 0 | 10000000 |
 
 ## Alertas
 
@@ -208,18 +238,18 @@ _Se revisaron 345 registros de contratacion de estas dos entidades en la ventana
 - **Contrato de alto valor**: CVC - $ 948.000.000 - Q C [SECOP II]
 - **Contrato de alto valor**: ARMADA NACIONAL BASE NAVAL ARC MALAGA - $ 761.600.000 - LONA GROUP SAS [SECOP II]
 - **Contrato de alto valor**: UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA - $ 1.321.917.014 - CONSORCIO UES VALLE 2026 [SECOP II]
+- **Contrato de alto valor**: INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ - $ 2.100.000.000 - CORPORACION ECOPROJECTS [SECOP II]
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 5.227.550.751 - AMS INGENIEROS EU [SECOP II]
 - **Contrato de alto valor**: RED DE SALUD DEL ORIENTE ESE - $ 525.000.000 - ASOCIACION GREMIAL ESPECIALIZADA EN SALUD DEL OCCIDENTE [SECOP II]
 - **Contrato de alto valor**: ALCALDIA DE ALCALA - $ 528.784.465 - GRUPO EMPRESARIAL DEL SUR SIGLO XXI S.A.S. E.S.P [SECOP II]
-- **Contrato de alto valor**: MUNICIPIO DE YUMBO VALLE - $ 1.413.020.078 - JAVIER GORDILLO GRISALES [SECOP II]
 - **Contrato de alto valor**: ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE - $ 1.359.327.825 - FUNDACION SAN CIPRIANO [SECOP II]
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 6.976.838.150 - TECH TRANSIT S.A.S. [SECOP II]
+- **Contrato de alto valor**: Departamento Administrativo de Planeación - Alcaldía de Tuluá - $ 650.000.000 - PATOLOGIAS-ESTRUCTURAS-CONSTRUCCION-CONSULTORIA INGENIERIA SAS [SECOP II]
 - **Contrato de alto valor**: Secretaría de Educación - Alcaldía de Tuluá - $ 1.583.549.971 - ARQHOSP SAS [SECOP II]
 - **Contrato de alto valor**: Secretaría de Hábitat e Infraestructura - Alcaldía de Tuluá - $ 5.199.818.848 - EMPRESAS MUNICIPALES DE TULUA E.S.P. [SECOP II]
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.500.811.562 - ICSIN LTDA [SECOP II]
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.483.070.607 - Ingelmeth [SECOP II]
-- **Contrato de alto valor**: HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E - $ 1.150.889.534 - PLANEAMOS SAS [SECOP II]
-- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.125.264.000 - NOVATECH INGENIERIA Y CONSTRUCCION SAS [SECOP II]
+- **Contrato de alto valor**: MUNICIPIO DE YUMBO VALLE - $ 1.413.020.078 - JAVIER GORDILLO GRISALES [SECOP II]
 
 ---
 
