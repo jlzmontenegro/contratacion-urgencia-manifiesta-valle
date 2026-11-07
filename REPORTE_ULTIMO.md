@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-07 08:56  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-07 13:42  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -11,7 +11,7 @@
 | Procesos relacionados (alta + media) | 1179 |
 | Contratos nuevos en esta ejecucion | 0 |
 | Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 0 |
+| Modificaciones detectadas | 9 |
 | Registros revisados en total | 67676 |
 
 ### Desglose por nivel de gobierno
@@ -44,7 +44,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 260** (146 que suman en los indicadores, por $ 21.970.299.187).
+- **Relacionados con el sismo: 266** (152 que suman en los indicadores, por $ 22.213.627.187).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -70,6 +70,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-10-27 | NARIÑO - ALCALDÍA MUNICIPIO DE OLAYA HERRERA | CONSTRUCCION DE TRES AULAS EN LA INSTITUCION EDUCATIVA CALABAZAL;  PARA SUSTITUIR LAS AULAS AFECTADAS POR EL T | $ 269.983.604 | Selección Abreviada de Menor Cuantía (Ley 1150 de 2007) · La contratación de menor cuantía (Literal B) | Alta |
 | 2026-08-11 | CHOCÓ - ALCALDÍA MUNICIPIO DE UNION PANAMERICANA | SUMINISTRO DE MERCADOS; KITS DE ASEO; COLCHONES; COLCHONETAS; ZINC Y OTROS MATERIALES Y ELEMENTOS; NECESARIOS  | $ 261.697.250 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-20 | TOLIMA - ALCALDÍA MUNICIPIO DE ROVIRA | CONTRATAR EL SUMINISTRO A MONTO AGOTABLE DE MATERIALES DE CONSTRUCCIoN PARA LA REHABILITACIoN; REPARACIoN Y RE | $ 250.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
+| 2026-11-05 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE ARGELIA | ADQUISICIoN; A TiTULO DE COMPRAVENTA; DEL BIEN INMUEBLE UBICADO EN LA CALLE 2 # 8  58; aREA URBANA DEL MUNICIP | $ 227.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-09-08 | RISARALDA - ALCALDÍA MUNICIPIO DE MISTRATÓ | SUMINISTRO DE MATERIALES DE CONSTRUCCIoN PARA LA ATENCIoN DE LA EMERGENCIA Y APOYO A LAS FAMILIAS DAMNIFICADAS | $ 193.765.800 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-13 | CHOCÓ - ALCALDÍA MUNICIPIO DE ATRATO | ATENCION PSICOSOCIAL PARA LA RECUPERACION EMOCIONAL; EL FORTALECIMIENTO COMUNITARIO Y LA PROMOCION DE LA RESIL | $ 181.676.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 | 2026-08-21 | RISARALDA - CÁMARA DE COMERCIO DE PEREIRA | SOLICITUD DE SERVICIO DE TECHOS Y PANELERIAS PARA DIVISIONES UTILIZADOS PARA ADECUAR LOS ESPACIOS Y PODER GUAR | $ 163.506.000 | Régimen Especial · No Definido | Alta |
@@ -77,9 +78,8 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-10-15 | UNIDAD TÉCNICA PARA EL DESARROLLO PROFESIONAL - UTEDÉ | REALIZAR ARREGLOS Y REPARACIONES DE LOS DAÑOS OCASIONADOS EN LA INFRAESTRUCTURA INSTITUCIONAL POR EL SISMO OCU | $ 150.659.181 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 | 2026-10-22 | CHOCÓ - ALCALDÍA MUNICIPIO DE SAN JOSÉ DEL PALMAR | EJECUCIoN DE OBRAS DE REPARACIoN Y REHABILITACIoN DE LOS ELEMENTOS FiSICOS AFECTADOS DEL CENTRO VIDA DEL MUNIC | $ 150.000.000 | Selección Abreviada de Menor Cuantía (Ley 1150 de 2007) · La contratación de menor cuantía (Literal B) | Alta |
 | 2026-09-10 | CALDAS - ALCALDÍA MUNICIPIO DE MARULANDA | EJECUCIoN; A TODO COSTO Y POR EL SISTEMA DE PRECIOS UNITARIOS FIJOS; DE LAS OBRAS NECESARIAS PARA LA REPARACIo | $ 132.052.041 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
-| 2026-09-30 | CHOCÓ - ALCALDÍA MUNICIPIO DE UNION PANAMERICANA | INTERVENTORIA TECNICA; ADMINISTRATIVA Y FINANCIERA PARA LAS OBRAS DE REHABILITACIoN DE LA INFRAESTRUCTURA DE L | $ 120.181.894 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 
-_No se listan 165 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
+_No se listan 168 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
 
 ## UNGRD y FNGRD · NIT 900.478.966-6 y 900.978.341
 
@@ -106,6 +106,20 @@ _Se revisaron 349 registros de contratacion de estas dos entidades en la ventana
 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | 2 | $ 2.679.870.403 |
 | GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL; AGRICULTURA Y PESCA | 1 | $ 2.568.577.795 |
 | INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ | 3 | $ 2.388.923.153 |
+
+## Modificaciones sobre registros ya conocidos
+
+| Fuente | Identificador | Campo | Antes | Ahora |
+|---|---|---|---|---|
+| secop1 | 26-11-14824418 | estado_del_proceso | Borrador | Convocado |
+| secop1 | 26-12-14770553-13695373 | valor_total_de_adiciones | 0 | 4500000 |
+| secop1 | 26-12-14770553-13695373 | valor_contrato_con_adiciones | 9000000 | 13500000 |
+| secop1 | 26-12-14770553-13695373 | fecha_fin_ejec_contrato | 2026-11-06T00:00:00.000 | 2026-12-18T00:00:00.000 |
+| secop1 | 26-12-14770553-13695373 | tiempo_adiciones_en_dias | 0 | 42 |
+| secop1 | 26-12-14770364-13695363 | valor_total_de_adiciones | 0 | 3645000 |
+| secop1 | 26-12-14770364-13695363 | valor_contrato_con_adiciones | 7290000 | 10935000 |
+| secop1 | 26-12-14770364-13695363 | fecha_fin_ejec_contrato | 2026-11-06T00:00:00.000 | 2026-12-18T00:00:00.000 |
+| secop1 | 26-12-14770364-13695363 | tiempo_adiciones_en_dias | 0 | 42 |
 
 ## Alertas
 
