@@ -1,44 +1,44 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-06 09:58  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-06 19:50  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
 | Indicador | Valor |
 |---|---|
-| Contratos relacionados (alta + media) | 476 |
-| Valor de esos contratos | $ 151.088.164.431 |
-| Procesos relacionados (alta + media) | 1139 |
-| Contratos nuevos en esta ejecucion | 199 |
-| Procesos nuevos en esta ejecucion | 568 |
-| Modificaciones detectadas | 1319 |
-| Registros revisados en total | 66860 |
+| Contratos relacionados (alta + media) | 495 |
+| Valor de esos contratos | $ 155.764.302.049 |
+| Procesos relacionados (alta + media) | 1179 |
+| Contratos nuevos en esta ejecucion | 280 |
+| Procesos nuevos en esta ejecucion | 536 |
+| Modificaciones detectadas | 2441 |
+| Registros revisados en total | 67676 |
 
 ### Desglose por nivel de gobierno
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 154 | $ 49.045.175.808 | 377 |
+| Alcaldía de Cali | 165 | $ 49.213.115.808 | 400 |
 | Gobernación del Valle | 11 | $ 14.148.165.515 | 80 |
-| Otras entidades del Valle | 264 | $ 82.527.250.677 | 559 |
+| Otras entidades del Valle | 271 | $ 83.806.876.866 | 575 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 7170 | $ 358.221.975.075 | 6730 |
-| Gobernación del Valle | 6092 | $ 146.682.234.364 | 5709 |
-| Descentralizadas de Cali | 422 | $ 162.719.925.058 | 2022 |
-| Descentralizadas de la Gobernación | 3260 | $ 70.616.294.121 | 4732 |
-| UNGRD | 4 | $ 133.017.067 | 339 |
+| Alcaldía de Cali | 7275 | $ 368.759.930.714 | 6907 |
+| Gobernación del Valle | 6096 | $ 147.217.634.364 | 5726 |
+| Descentralizadas de Cali | 423 | $ 162.768.468.133 | 2072 |
+| Descentralizadas de la Gobernación | 3269 | $ 70.775.764.881 | 4749 |
+| UNGRD | 6 | $ 157.517.066 | 341 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 304 contratos ($ 101.569.849.862) y 412 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 268 contratos ($ 529.310.828.681) y 451 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 309 contratos ($ 103.640.984.962) y 415 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 273 contratos ($ 530.441.070.420) y 458 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
@@ -85,7 +85,7 @@ _No se listan 165 registros de SECOP I con urgencia manifiesta por otras causas 
 
 La UNGRD y el FNGRD no registran todavia contratacion relacionada con el sismo, ni en SECOP I ni en SECOP II.
 
-_Se revisaron 345 registros de contratacion de estas dos entidades en la ventana; los que no aluden al sismo no se listan. Quedan en los CSV._
+_Se revisaron 349 registros de contratacion de estas dos entidades en la ventana; los que no aluden al sismo no se listan. Quedan en los CSV._
 
 ## Contratos por entidad
 
@@ -96,117 +96,155 @@ _Se revisaron 345 registros de contratacion de estas dos entidades en la ventana
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO | 2 | $ 12.986.853.502 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | 141 | $ 10.886.326.176 |
 | GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE VIVIENDA Y HABITAT | 1 | $ 8.592.000.000 |
+| ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | 15 | $ 6.040.955.599 |
 | Secretaría de Hábitat e Infraestructura - Alcaldía de Tuluá | 2 | $ 5.299.818.848 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO | 1 | $ 5.000.000.000 |
-| ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | 14 | $ 4.934.079.054 |
 | CVC | 12 | $ 4.205.773.952 |
-| MUNICIPIO DE CALIMA EL DARIEN VALLE | 6 | $ 3.008.053.619 |
+| FONDO ROTATORIO** | 1 | $ 3.228.571.429 |
+| MUNICIPIO DE CALIMA EL DARIEN VALLE | 10 | $ 3.039.994.891 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA | 2 | $ 2.849.451.216 |
 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | 2 | $ 2.679.870.403 |
 | GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL; AGRICULTURA Y PESCA | 1 | $ 2.568.577.795 |
 | INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ | 3 | $ 2.388.923.153 |
-| ALCALDIA MUNICIPAL DE YOTOCO | 7 | $ 2.335.627.623 |
 
-## Contratos nuevos (1 relacionados de 199 publicados)
+## Contratos nuevos (24 relacionados de 280 publicados)
 
 | Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
 |---|---|---|---:|---|---|
-| 2026-11-03 | MUNICIPIO SANTA ROSA DE OSOS | PRESTACIÓN DE SERVICIOS PROFESIONALES DE APOYO A LA GESTIÓN EN ASISTENCIA TÉCNICA AMBIENTAL Y SANITARIA PARA L | $ 16.341.780 | CAROLINA VARGAS BETANCUR | Alta |
+| 2026-11-04 | FONDO ROTATORIO** | Aunar esfuerzos administrativos; técnicos; humanos y financieros para el desarrollo de proyectos productivos o | $ 3.228.571.429 | FUNDACION SOLIDARIDAD POR COLOMBIA | Alta |
+| 2026-11-04 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | ADQUISICIÓN DE DOS (2) AMBULANCIAS DE TRANSPORTE ASISTENCIAL MEDICALIZADO (TAM) Y UNA (1) CAMIONETA PICK UP DO | $ 1.106.876.545 | HOLDING EMPRESARIAL DEL SINU S.A.S | Alta |
+| 2026-11-05 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | SUMINISTRO; CONSTRUCCIÓN E INSTALACIÓN DE AULAS MODULARES PREFABRICADAS EN INSTITUCIONES EDUCATIVAS EN ATENCIÓ | $ 1.001.530.269 | OCTAVIO AUGUSTO MORALES AYALA | Alta |
+| 2026-11-05 | Municipio de Montenegro-- | DEMOLICIÓN; TRANSPORTE Y SITIO DE DISPOSICIÓN FINAL DE ESCOMBROS PRODUCIDOS POR EL DERRUMBAMIENTO DE BIENES IN | $ 800.000.000 | GRUPO EMPRESARIAL DEL SUR SIGLO XXI S.A.S. E.S.P | Alta |
+| 2026-11-05 | ALCALDIA MUNICIPIO DE RIOSUCIO CALDAS | EL CONTRATISTA DE OBLIGA PARA CON EL MUNICIPIO A REALIZAR   ACCIONES DE PRIMEROS AUXILIOS PARA EL MEJORAMIENTO | $ 175.683.164 | JEDOALVAREZ | Alta |
+| 2026-11-05 | MUNICIPIO DE DAGUA | REALIZAR LAS OBRAS DE INTERVENCIÓN ESTRUCTURAL Y ADECUACIÓN DEL PUENTE VEHICULAR DEL BARRIO LA GRAN COLOMBIA D | $ 60.152.722 | ORION SAS | Media |
+| 2026-11-05 | MUNICIPIO DE DAGUA | SUMINISTRO DE INSUMOS Y ELEMENTOS DE APOYO A LA GESTION DE LA SECRETARIA DE PLANEACION; PARA LA OPERATIVIDAD Y | $ 40.790.650 | MEJÍAS GROUP S.A.S. | Media |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales especializados a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento | $ 27.391.000 | KATTY  LORENA ANGULO CAICEDO | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales especializados a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento | $ 21.864.500 | MONICA GORDILLO DIAZ | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Plan de Ac | $ 19.820.500 | gustavo adolfo muñoz burbano | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Plan de Ac | $ 19.820.500 | Brian Zamora Garcés | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Plan de Ac | $ 16.989.000 | jennifer arrechea lopez | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Plan de Ac | $ 16.817.500 | Leycer Benitez Hinestroza | Alta |
+| 2026-11-04 | ALCALDÍA MUNICIPIO DE BALBOA RISARALDA | Prestar los servicios profesionales especializados para brindar asistencia; tributaria y financiera a la Secre | $ 13.955.000 | JPD ASOCIADOS SAS BIC | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Pl | $ 12.428.500 | KENYI JHOMARA DAVILA PAREJA | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana; een cumplimiento del P | $ 11.392.500 | ELEONORA CABAL SANCHEZ | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana; een cumplimiento del P | $ 9.772.000 | JUAN PABLO MEDINA PIEDRAHITA | Alta |
+| 2026-11-04 | MUNICIPIO DE CALIMA EL DARIEN VALLE | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA APOYAR A LA SECRETARÍA DE OBRAS PÚBLICAS DEL MUNICIPIO DE CALIMA EL | $ 7.985.318 | BRAYAN MANUEL JIMENEZ HERNANDEZ | Alta |
+| 2026-11-05 | MUNICIPIO DE CALIMA EL DARIEN VALLE | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA APOYAR A LA SECRETARÍA DE OBRAS PÚBLICAS DEL MUNICIPIO DE CALIMA EL | $ 7.985.318 | KHAREN GISSELL JIMENEZ HERNANDEZ | Alta |
+| 2026-11-04 | MUNICIPIO DE CALIMA EL DARIEN VALLE | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA APOYAR A LA SECRETARÍA DE OBRAS PÚBLICAS DEL MUNICIPIO DE CALIMA EL | $ 7.985.318 | LAURA MELISSA GUEVARA GOMEZ | Alta |
+| 2026-11-05 | MUNICIPIO DE CALIMA EL DARIEN VALLE | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA APOYAR A LA SECRETARÍA DE OBRAS PÚBLICAS DEL MUNICIPIO DE CALIMA EL | $ 7.985.318 | JULIAN ARBELAEZ CASAS | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Pl | $ 7.102.000 | JHOAN RICARDO ZAPATA GONZALEZ | Alta |
+| 2026-11-05 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN COMO PRESENTADOR DE EVENTOS PARA EL DESARROLLO; CONDUCCIÓN Y MOD | $ 5.600.000 | ELIANA RAMIREZ ESTUPIÑAN | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana; een cumplimiento del P | $ 4.542.000 | Maria del pilar Escobar Perez | Alta |
 
-## Procesos nuevos (25 relacionados de 568 publicados)
+## Procesos nuevos (43 relacionados de 536 publicados)
 
 | Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
 |---|---|---|---:|---|---|
-| 2026-11-03 | FONDO ROTATORIO** | Aunar esfuerzos administrativos, técnicos, humanos y financieros para el desarrollo de proyectos productivos o | $ 3.228.571.429 | Contratación Directa (con ofertas) | Alta |
+| 2026-11-04 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | ADQUISICIÓN DE DOS (2) AMBULANCIAS DE TRANSPORTE ASISTENCIAL MEDICALIZADO (TAM) Y UNA (1) CAMIONETA PICK UP DO | $ 1.106.876.545 | Contratación directa | Alta |
+| 2026-11-04 | INSTITUTO DE FINANCIAMIENTO, PROMOCIÓN Y DESARROLLO DE TULUÁ | CONTRATO DE OBRA PARA LA EJECUCIÓN INTEGRAL DE LAS ACTIVIDADES PREVIAS, CONSTRUCTIVAS, DE INSTALACIONES, CONEX | $ 722.000.000 | Contratación régimen especial | Media |
+| 2026-11-05 | GOBERNACION DEL HUILA* | AUNAR ESFUERZOS ENTRE EL FONDO NACIONAL DE GESTIÓN DEL RIESGO DE DESASTRES FNGRD, QUIEN ACTÚA A TRAVES DE FIDU | $ 500.000.000 | Contratación directa | Alta |
 | 2026-11-04 | MUNICIPIO DE SAN JUAN BAUTISTA DE GUACARI2 | CONSTRUCCIÓN DEL ALCANTARILLADO PARA EL CORREGIMIENTO DE CANANGUA, JURISDICCIÓN DEL MUNICIPIO DE GUACARÍ, VALL | $ 361.126.584 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-11-03 | INCIVA | Ejecutar Bajo la Modalidad de Precios Unitarios las ADECUACIONES CARPINTERÍA EN MADERA, CUBIERTA Y MUROS CENTR | $ 326.218.162 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-11-04 | MUNICIPIO DE BUGALAGRANDE | PODA DE ÁRBOLES PARA LA MITIGACIÓN DEL RIESGO EN EL MUNICIPIO DE BUGALAGRANDE, VALLE DEL CAUCA | $ 161.999.996 | Selección Abreviada de Menor Cuantía | Media |
-| 2026-11-03 | UNIVERSIDAD DE CALDAS. | ADQUISICIÓN DE EQUIPOS TECNOLÓGICOS, INCLUYENDO COMPUTADORES, IMPRESORAS, PANTALLAS, MONITORES Y DEMÁS ELEMENT | $ 117.573.149 | Contratación régimen especial | Alta |
-| 2026-11-03 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | ALQUILER DE HERRAMIENTAS, MAQUINARIA Y EQUIPO MENOR PARA LA RECONSTRUCCIÓN, REHABILITACIÓN, MEJORAMIENTO Y MAN | $ 90.000.000 | Contratación directa | Alta |
-| 2026-11-03 | STT | PRESTACION DE SERVICIO DE DISEÑO, IMPLEMENTACION, DOCUMENTACION Y SENSIBILIZACION DEL SISTEMA DE GESTION DEL R | $ 80.000.000 | Mínima cuantía | Media |
-| 2026-11-03 | CVC | Implementar la estrategia corporativa de educación ambiental en gestión del riesgo, en territorios de comunida | $ 50.000.000 | Contratación Directa (con ofertas) | Media |
-| 2026-11-03 | MUNICIPIO DE SAN JUAN BAUTISTA DE GUACARI2 | EJECUTAR OBRAS DE REPARACION Y ADECUACION EN LAS SEDES EDUCATIVAS AFECTADAS POR EL SISMO DEL 10 DE AGOSTO DE 2 | $ 48.726.644 | Contratación régimen especial | Alta |
-| 2026-11-04 | INSTITUCION EDUCATIVA ROSENDO MONDRAGON FEIJOO | ADQUISICIÓN, SUMINISTRO, INSTALACIÓN, RECARGA Y MANTENIMIENTO DE ELEMENTOS DE SEGURIDAD, PREVENCIÓN, SEÑALIZAC | $ 23.945.444 | Contratación régimen especial | Media |
-| 2026-11-03 | MUNICIPIO DE SAN JUAN BAUTISTA DE GUACARI2 | ELABORACIÓN DE ESTUDIOS, DIAGNÓSTICOS, DISEÑOS Y DOCUMENTACIÓN TÉCNICA PARA LA SOLICITUD DE LICENCIA DE CONSTR | $ 21.000.000 | Contratación régimen especial | Alta |
-| 2026-11-03 | MUNICIPIO SANTA ROSA DE OSOS | PRESTACIÓN DE SERVICIOS PROFESIONALES DE APOYO A LA GESTIÓN EN ASISTENCIA TÉCNICA AMBIENTAL Y SANITARIA PARA L | $ 16.341.780 | Contratación directa | Alta |
-| 2026-11-02 | IEACADEMICO | Contratar la ejecución de las obras de mitigación, reparaciones locativas y adecuaciones menores en la cubiert | $ 14.000.000 | Contratación régimen especial | Alta |
-| 2026-11-03 | INSTITUCION EDUCATIVA CARLOS HOLMES TRUJILLO | MANTENIMIENTO, REPACION Y ADECUACIONES LOCATIVAS DE LA INFRA ESTRUCTURA FISICA DE LA INSTITUCION CARLOS HOLMES | $ 12.150.000 | Contratación régimen especial | Alta |
-| 2026-11-03 | INSTITUCIÓN EDUCATIVA SANTA ROSALIA DE PALERMO | SUMINISTRO DE ELEMENTOS DE FERRETERÍA PARA REPARACIONES A LA INFRAESTRUCTURA DE ALGUNAS SEDES DE LA I. E SANTA | $ 10.676.735 | Contratación régimen especial | Alta |
-| 2026-11-04 | MUNICIPIO DE SEVILLA | PRESTAR SERVICIOS PROFESIONALES PARA REALIZAR LA EVALUACION DE EDIFICACIONES E INFRAESTRUCTURA AFECTADA POR EL | $ 10.000.000 | Contratación directa | Alta |
-| 2026-11-04 | MUNICIPIO DE SEVILLA | PRESTAR SERVICIOS PROFESIONALES PARA REALIZAR LA EVALUACION DE EDIFICACIONES E INFRAESTRUCTURA AFECTADA POR EL | $ 10.000.000 | Contratación directa | Alta |
-| 2026-11-04 | MUNICIPIO DE SEVILLA | PRESTAR SERVICIOS PROFESIONALES PARA REALIZAR LA EVALUACION DE EDIFICACIONES E INFRAESTRUCTURA AFECTADA POR EL | $ 10.000.000 | Contratación directa | Alta |
-| 2026-11-04 | MUNICIPIO DE SEVILLA | PRESTAR SERVICIOS PROFESIONALES PARA REALIZAR LA EVALUACION DE EDIFICACIONES E INFRAESTRUCTURA AFECTADA POR EL | $ 10.000.000 | Contratación directa | Alta |
-| 2026-11-03 | INSTITUCION EDUCATIVA NUESTRA SEÑORA DE LA CONSOLACION | ADQUISICION DE ELEMENTOS TECNOLOGICOS MATERIAL DE PAPELERIA MOBILIARIO Y ENSERES REQUERIDOS PARA EL FORTALECIM | $ 8.376.168 | Contratación régimen especial | Media |
-| 2026-11-04 | UNIQUINDIO | PRESTACIÓN DE SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA LA EJECUCIÓN TÉCNICA DEL CONTRATO INTERADMINIS | $ 8.000.000 | Contratación régimen especial | Alta |
-| 2026-11-04 | UNIQUINDIO | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERA CIVIL DE APOYO EN EL SEGUIMIENTO TÉCNICO Y ADMINISTRATIVO A LA  | $ 8.000.000 | Contratación régimen especial | Alta |
-| 2026-11-02 | MUNICIPIO DE DAGUA | PRESTACIÓN DE SERVICIOS PROFESIONALES A LA GESTIÓN DE LA SECRETARÍA DE PLANEACIÓN Y PROYECTOS, ORIENTADA AL FO | $ 6.400.000 | Contratación directa | Media |
-| 2026-11-04 | UNIQUINDIO | PRESTACIÓN DE SERVICIOS DE APOYO OPERATIVO COMO TECNÓLOGO EN OBRAS CIVILES PARA LA EJECUCIÓN DEL CONTRATO INTE | $ 5.000.000 | Contratación régimen especial | Alta |
-| 2026-11-04 | UNIQUINDIO | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN COMO AUXILIAR ADMINISTRATIVA EN EL DESARROLLO  DEL CONTRATO INTE | $ 5.000.000 | Contratación régimen especial | Alta |
+| 2026-11-05 | ALCALDIA MUNICIPIO DE RIOSUCIO CALDAS | EL CONTRATISTA DE OBLIGA PARA CON EL MUNICIPIO A REALIZAR   ACCIONES DE PRIMEROS AUXILIOS PARA EL MEJORAMIENTO | $ 175.683.164 | Contratación directa | Alta |
+| 2026-11-05 | MUNICIPIO DE APIA | SUMINISTRO A MONTO AGOTABLE DE MATERIALES DE CONSTRUCCIÓN Y FERRETERÍA REQUERIDOS PARA LA ATENCIÓN, MITIGACIÓN | $ 80.000.000 | Contratación directa | Alta |
+| 2026-11-04 | ALCALDIA MUNICIPAL DE GINEBRA | ADQUISICIÓN DE EQUIPOS TECNOLÓGICOS, MUEBLES Y ENSERES EN EL MUNICIPIO DE GINEBRA | $ 49.025.000 | Mínima cuantía | Media |
+| 2026-11-04 | ALCALDIA MUNICIPAL DE YOTOCO | REALIZAR EL MANTENIMIENTO PREVENTIVO Y CORRECTIVO, INCLUYENDO EL SUMINISTRO DE REPUESTOS Y MANO DE OBRA ESPECI | $ 49.025.000 | Mínima cuantía | Media |
+| 2026-11-04 | ALCALDÍA MUNICIPAL DE ROLDANILLO | CONSTRUCCIÓN DE CIMENTACIONES Y PLACAS DE CONTRAPISO EN CONCRETO PARA LA INSTALACIÓN DE SOLUCIONES DE VIVIENDA | $ 28.800.000 | Mínima cuantía | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales especializados a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento | $ 27.391.000 | Contratación directa | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales especializados a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento | $ 21.864.500 | Contratación directa | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 19.820.500 | Contratación directa | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 19.820.500 | Contratación directa | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 19.820.500 | Contratación directa | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 16.989.000 | Contratación directa | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 16.817.500 | Contratación directa | Alta |
+| 2026-11-04 | INSTITUCION EDUCATIVA TECNICO INDUSTRIAL DIEZ DE MAYO | COMPRA DE MATERIALES FERRETERIA, HERRAMIENTAS Y ELEMENTOS PARA EJECUTAR EN LA SEDE PRINCIPAL LAS REPARACIONES  | $ 15.615.100 | Contratación régimen especial | Alta |
+| 2026-11-04 | ALCALDÍA MUNICIPIO DE BALBOA RISARALDA | Prestar los servicios profesionales especializados para brindar asistencia, tributaria y financiera a la Secre | $ 13.955.000 | Contratación directa | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Pl | $ 12.428.500 | Contratación directa | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Pl | $ 12.428.500 | Contratación directa | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Pl | $ 12.428.500 | Contratación directa | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, een cumplimiento del P | $ 11.392.500 | Contratación directa | Alta |
+| 2026-11-05 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 11.326.000 | Contratación directa | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 11.326.000 | Contratación directa | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 11.326.000 | Contratación directa | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, een cumplimiento del P | $ 10.653.000 | Contratación directa | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, een cumplimiento del P | $ 9.772.000 | Contratación directa | Alta |
+| 2026-11-04 | SENA REGIONAL VALLE Grupo Administrativo CTA | 76_9543_33 PRESTAR SERVICIOS PROFESIONALES PARA APOYAR EN EL DESARROLLO DE LAS ACTIVIDADES DE EVALUACIÓN DE CO | $ 8.800.000 | Contratación directa | Media |
+| 2026-11-04 | MUNICIPIO DE CALIMA EL DARIEN VALLE | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA APOYAR A LA SECRETARÍA DE OBRAS PÚBLICAS DEL MUNICIPIO DE CALIMA EL | $ 7.985.318 | Contratación directa | Alta |
+| 2026-11-04 | MUNICIPIO DE CALIMA EL DARIEN VALLE | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA APOYAR A LA SECRETARÍA DE OBRAS PÚBLICAS DEL MUNICIPIO DE CALIMA EL | $ 7.985.318 | Contratación directa | Alta |
+| 2026-11-04 | MUNICIPIO DE CALIMA EL DARIEN VALLE | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA APOYAR A LA SECRETARÍA DE OBRAS PÚBLICAS DEL MUNICIPIO DE CALIMA EL | $ 7.985.318 | Contratación directa | Alta |
+| 2026-11-04 | MUNICIPIO DE CALIMA EL DARIEN VALLE | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA APOYAR A LA SECRETARÍA DE OBRAS PÚBLICAS DEL MUNICIPIO DE CALIMA EL | $ 7.985.318 | Contratación directa | Alta |
+| 2026-11-05 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, een cumplimiento del P | $ 7.102.000 | Contratación directa | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Pl | $ 7.102.000 | Contratación directa | Alta |
+| 2026-11-05 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Pl | $ 7.102.000 | Contratación directa | Alta |
+| 2026-11-05 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Pl | $ 7.102.000 | Contratación directa | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Pl | $ 6.980.000 | Contratación directa | Alta |
+| 2026-11-04 | INSTITUCION EDUCATIVA ALVARO ECHEVERRY PEREA | compra de materiales de ferretería requeridos para ejecutar las reparaciones locativas y adecuaciones necesari | $ 6.660.438 | Contratación régimen especial | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Pl | $ 5.584.000 | Contratación directa | Alta |
+| 2026-11-04 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, een cumplimiento del P | $ 4.542.000 | Contratación directa | Alta |
 
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| contratos | CO1.PCCNTR.10113714 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10116021 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10116021 | valor_pendiente_de_pago | 0 | 14157500 |
-| contratos | CO1.PCCNTR.10122220 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9826282 | nombre_supervisor | Olga Lucia Cuellar Mejia | José Julián Fichman Delgado |
-| contratos | CO1.PCCNTR.10110902 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9814431 | nombre_supervisor | Olga Lucia Cuellar Mejia | José Julián Fichman Delgado |
-| contratos | CO1.PCCNTR.10117499 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10105388 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10008803 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9826337 | nombre_supervisor | Olga Lucia Cuellar Mejia | José Julián Fichman Delgado |
-| contratos | CO1.PCCNTR.10122214 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10098078 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10119803 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10125751 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10107119 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10107119 | valor_pendiente_de_pago | 0 | 9867500 |
-| contratos | CO1.PCCNTR.9996351 | valor_pagado | 0 | 5000000 |
-| contratos | CO1.PCCNTR.9996351 | valor_facturado | 0 | 5000000 |
-| contratos | CO1.PCCNTR.9996351 | valor_pendiente_de_pago | 10000000 | 5000000 |
-| contratos | CO1.PCCNTR.10106970 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10106970 | valor_pendiente_de_pago | 0 | 12012500 |
-| contratos | CO1.PCCNTR.10022238 | nombre_supervisor | No definido | Jorge Alberto Buitrago Trujillo |
-| contratos | CO1.PCCNTR.10114932 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10115235 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10110105 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10022444 | nombre_supervisor | Olga Lucia Cuellar Mejia | José Julián Fichman Delgado |
-| contratos | CO1.PCCNTR.10109614 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10105394 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10061121 | estado_contrato | En ejecución | terminado |
-| contratos | CO1.PCCNTR.9970742 | valor_pagado | 0 | 5000000 |
-| contratos | CO1.PCCNTR.9970742 | valor_facturado | 0 | 5000000 |
-| contratos | CO1.PCCNTR.9970742 | valor_pendiente_de_pago | 10000000 | 5000000 |
-| contratos | CO1.PCCNTR.10111003 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10124373 | proveedor_adjudicado | Carlos Arlex Abrew Quimbaya | Carlos Arlex Abrew quimbaya |
-| contratos | CO1.PCCNTR.10131496 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9975006 | valor_pagado | 0 | 5000000 |
-| contratos | CO1.PCCNTR.9975006 | valor_facturado | 0 | 5000000 |
-| contratos | CO1.PCCNTR.9975006 | valor_pendiente_de_pago | 5000000 | 0 |
-| contratos | CO1.PCCNTR.9974812 | valor_pagado | 0 | 7000000 |
-| contratos | CO1.PCCNTR.9974812 | valor_facturado | 0 | 7000000 |
-| contratos | CO1.PCCNTR.9974812 | valor_pendiente_de_pago | 7000000 | 0 |
-| contratos | CO1.PCCNTR.10106960 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9971789 | valor_pagado | 0 | 14000000 |
-| contratos | CO1.PCCNTR.9971789 | valor_facturado | 0 | 14000000 |
-| contratos | CO1.PCCNTR.9971789 | valor_pendiente_de_pago | 14000000 | 0 |
-| contratos | CO1.PCCNTR.10034475 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10131556 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10094667 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.10116005 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10120114 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9813997 | nombre_supervisor | Olga Lucia Cuellar Mejia | José Julián Fichman Delgado |
-| contratos | CO1.PCCNTR.10113711 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10133635 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10098284 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9974991 | valor_pagado | 0 | 8000000 |
-| contratos | CO1.PCCNTR.9974991 | valor_facturado | 0 | 8000000 |
-| contratos | CO1.PCCNTR.9974991 | valor_pendiente_de_pago | 8000000 | 0 |
-| contratos | CO1.PCCNTR.9975118 | valor_pagado | 0 | 10000000 |
-| contratos | CO1.PCCNTR.9975118 | valor_facturado | 0 | 10000000 |
+| contratos | CO1.PCCNTR.10000718 | valor_facturado | 4000000 | 8000000 |
+| contratos | CO1.PCCNTR.9972256 | valor_pagado | 0 | 3000000 |
+| contratos | CO1.PCCNTR.9972256 | valor_facturado | 0 | 3000000 |
+| contratos | CO1.PCCNTR.9972256 | valor_pendiente_de_pago | 6000000 | 3000000 |
+| contratos | CO1.PCCNTR.9828587 | valor_pagado | 0 | 4000000 |
+| contratos | CO1.PCCNTR.9828587 | valor_facturado | 0 | 4000000 |
+| contratos | CO1.PCCNTR.9828587 | valor_pendiente_de_pago | 4000000 | 0 |
+| contratos | CO1.PCCNTR.10132729 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9819630 | valor_facturado | 0 | 15400000 |
+| contratos | CO1.PCCNTR.10142870 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9828236 | valor_pagado | 0 | 6000000 |
+| contratos | CO1.PCCNTR.9828236 | valor_facturado | 0 | 6000000 |
+| contratos | CO1.PCCNTR.9828236 | valor_pendiente_de_pago | 6000000 | 0 |
+| contratos | CO1.PCCNTR.10111871 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9973378 | valor_pagado | 0 | 4000000 |
+| contratos | CO1.PCCNTR.9973378 | valor_facturado | 0 | 4000000 |
+| contratos | CO1.PCCNTR.9973378 | valor_pendiente_de_pago | 8000000 | 4000000 |
+| contratos | CO1.PCCNTR.10051100 | valor_pendiente_de_pago | 0 | 10000000 |
+| contratos | CO1.PCCNTR.10075972 | valor_facturado | 0 | 4000000 |
+| contratos | CO1.PCCNTR.10003432 | valor_pagado | 0 | 7000000 |
+| contratos | CO1.PCCNTR.10003432 | valor_facturado | 0 | 7000000 |
+| contratos | CO1.PCCNTR.10003432 | valor_pendiente_de_pago | 7000000 | 0 |
+| contratos | CO1.PCCNTR.10096828 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9972920 | valor_pagado | 0 | 3000000 |
+| contratos | CO1.PCCNTR.9972920 | valor_facturado | 0 | 3000000 |
+| contratos | CO1.PCCNTR.9972920 | valor_pendiente_de_pago | 6000000 | 3000000 |
+| contratos | CO1.PCCNTR.10146221 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10041182 | valor_pendiente_de_pago | 0 | 21000000 |
+| contratos | CO1.PCCNTR.9978321 | valor_pagado | 0 | 8000000 |
+| contratos | CO1.PCCNTR.9978321 | valor_facturado | 0 | 8000000 |
+| contratos | CO1.PCCNTR.9978321 | valor_pendiente_de_pago | 8000000 | 0 |
+| contratos | CO1.PCCNTR.9971494 | valor_pagado | 0 | 3000000 |
+| contratos | CO1.PCCNTR.9971494 | valor_facturado | 0 | 3000000 |
+| contratos | CO1.PCCNTR.9971494 | valor_pendiente_de_pago | 6000000 | 3000000 |
+| contratos | CO1.PCCNTR.10096061 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10112494 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9971901 | valor_pagado | 0 | 3000000 |
+| contratos | CO1.PCCNTR.9971901 | valor_facturado | 0 | 3000000 |
+| contratos | CO1.PCCNTR.9971901 | valor_pendiente_de_pago | 6000000 | 3000000 |
+| contratos | CO1.PCCNTR.10000070 | valor_facturado | 0 | 7700000 |
+| contratos | CO1.PCCNTR.9971209 | valor_pagado | 0 | 7700000 |
+| contratos | CO1.PCCNTR.9971209 | valor_facturado | 0 | 7700000 |
+| contratos | CO1.PCCNTR.9971209 | valor_pendiente_de_pago | 15400000 | 7700000 |
+| contratos | CO1.PCCNTR.10099935 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10096292 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10001171 | valor_facturado | 3000000 | 6000000 |
+| contratos | CO1.PCCNTR.9806747 | valor_facturado | 0 | 2500000 |
+| contratos | CO1.PCCNTR.10076918 | valor_facturado | 0 | 4000000 |
+| contratos | CO1.PCCNTR.9999812 | valor_facturado | 0 | 4000000 |
+| contratos | CO1.PCCNTR.9819316 | valor_pagado | 0 | 8000000 |
+| contratos | CO1.PCCNTR.9819316 | valor_facturado | 0 | 8000000 |
+| contratos | CO1.PCCNTR.9819316 | valor_pendiente_de_pago | 8000000 | 0 |
+| contratos | CO1.PCCNTR.10081258 | valor_facturado | 0 | 3000000 |
+| contratos | CO1.PCCNTR.9818111 | valor_pagado | 0 | 10000000 |
+| contratos | CO1.PCCNTR.9818111 | valor_facturado | 0 | 10000000 |
+| contratos | CO1.PCCNTR.9818111 | valor_pendiente_de_pago | 10000000 | 0 |
+| contratos | CO1.PCCNTR.10073722 | valor_facturado | 0 | 4000000 |
+| contratos | CO1.PCCNTR.10142756 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9973142 | valor_pagado | 0 | 6000000 |
+| contratos | CO1.PCCNTR.9973142 | valor_facturado | 0 | 6000000 |
 
 ## Alertas
 
@@ -232,24 +270,24 @@ _Se revisaron 345 registros de contratacion de estas dos entidades en la ventana
 - **Contrato de alto valor**: CVC - $ 1.422.879.908 - CORPORACION AMANO NATIVA [SECOP II]
 - **Contrato de alto valor**: CVC - $ 996.015.936 - FUNDACION BALU [SECOP II]
 - **Contrato de alto valor**: MUNICIPIO DE CALIMA EL DARIEN VALLE - $ 597.455.382 - GG CM [SECOP II]
-- **Contrato de alto valor**: ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE - $ 620.200.000 - FUNDACION RAFAEL FE Y ESPERANZA [SECOP II]
 - **Contrato de alto valor**: ALCALDÍA MUNICIPAL DE CANDELARIA VALLE - $ 2.378.325.070 - FERROAGRO [SECOP II]
-- **Contrato de alto valor**: ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE - $ 1.110.000.000 - FUNDETER [SECOP II]
 - **Contrato de alto valor**: CVC - $ 948.000.000 - Q C [SECOP II]
 - **Contrato de alto valor**: ARMADA NACIONAL BASE NAVAL ARC MALAGA - $ 761.600.000 - LONA GROUP SAS [SECOP II]
+- **Contrato de alto valor**: Departamento Administrativo de Planeación - Alcaldía de Tuluá - $ 650.000.000 - PATOLOGIAS-ESTRUCTURAS-CONSTRUCCION-CONSULTORIA INGENIERIA SAS [SECOP II]
 - **Contrato de alto valor**: UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA - $ 1.321.917.014 - CONSORCIO UES VALLE 2026 [SECOP II]
 - **Contrato de alto valor**: INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ - $ 2.100.000.000 - CORPORACION ECOPROJECTS [SECOP II]
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 5.227.550.751 - AMS INGENIEROS EU [SECOP II]
 - **Contrato de alto valor**: RED DE SALUD DEL ORIENTE ESE - $ 525.000.000 - ASOCIACION GREMIAL ESPECIALIZADA EN SALUD DEL OCCIDENTE [SECOP II]
-- **Contrato de alto valor**: ALCALDIA DE ALCALA - $ 528.784.465 - GRUPO EMPRESARIAL DEL SUR SIGLO XXI S.A.S. E.S.P [SECOP II]
 - **Contrato de alto valor**: ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE - $ 1.359.327.825 - FUNDACION SAN CIPRIANO [SECOP II]
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 6.976.838.150 - TECH TRANSIT S.A.S. [SECOP II]
-- **Contrato de alto valor**: Departamento Administrativo de Planeación - Alcaldía de Tuluá - $ 650.000.000 - PATOLOGIAS-ESTRUCTURAS-CONSTRUCCION-CONSULTORIA INGENIERIA SAS [SECOP II]
 - **Contrato de alto valor**: Secretaría de Educación - Alcaldía de Tuluá - $ 1.583.549.971 - ARQHOSP SAS [SECOP II]
 - **Contrato de alto valor**: Secretaría de Hábitat e Infraestructura - Alcaldía de Tuluá - $ 5.199.818.848 - EMPRESAS MUNICIPALES DE TULUA E.S.P. [SECOP II]
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.500.811.562 - ICSIN LTDA [SECOP II]
+- **Contrato de alto valor**: ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE - $ 1.106.876.545 - HOLDING EMPRESARIAL DEL SINU S.A.S [SECOP II]
 - **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.483.070.607 - Ingelmeth [SECOP II]
 - **Contrato de alto valor**: MUNICIPIO DE YUMBO VALLE - $ 1.413.020.078 - JAVIER GORDILLO GRISALES [SECOP II]
+- **Contrato de alto valor**: HOSPITAL DEPARTAMENTAL PSIQUIATRICO UNIVERSITARIO DEL VALLE E.S.E - $ 1.150.889.534 - PLANEAMOS SAS [SECOP II]
+- **Contrato de alto valor**: Institución Universitaria Antonio José Camacho (UNIAJC) - $ 1.125.264.000 - NOVATECH INGENIERIA Y CONSTRUCCION SAS [SECOP II]
 
 ---
 
