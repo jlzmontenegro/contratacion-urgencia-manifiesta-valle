@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-08 13:48  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-08 19:43  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -8,17 +8,17 @@
 |---|---|
 | Contratos relacionados (alta + media) | 495 |
 | Valor de esos contratos | $ 155.764.302.049 |
-| Procesos relacionados (alta + media) | 1205 |
+| Procesos relacionados (alta + media) | 1208 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 0 |
-| Registros revisados en total | 68438 |
+| Procesos nuevos en esta ejecucion | 68 |
+| Modificaciones detectadas | 187 |
+| Registros revisados en total | 68506 |
 
 ### Desglose por nivel de gobierno
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 165 | $ 49.213.115.808 | 421 |
+| Alcaldía de Cali | 165 | $ 49.213.115.808 | 424 |
 | Gobernación del Valle | 11 | $ 14.148.165.515 | 80 |
 | Otras entidades del Valle | 271 | $ 83.806.876.866 | 580 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
@@ -27,24 +27,24 @@
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 7275 | $ 368.759.930.714 | 7192 |
+| Alcaldía de Cali | 7275 | $ 368.759.930.714 | 7203 |
 | Gobernación del Valle | 6096 | $ 147.217.634.364 | 5809 |
-| Descentralizadas de Cali | 423 | $ 162.768.468.133 | 2116 |
-| Descentralizadas de la Gobernación | 3269 | $ 70.775.764.881 | 4779 |
+| Descentralizadas de Cali | 423 | $ 162.768.468.133 | 2118 |
+| Descentralizadas de la Gobernación | 3269 | $ 70.775.764.881 | 4787 |
 | UNGRD | 6 | $ 157.517.066 | 343 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 309 contratos ($ 103.640.984.962) y 427 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 273 contratos ($ 530.441.070.420) y 467 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 309 contratos ($ 103.640.984.962) y 428 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 273 contratos ($ 530.441.070.420) y 468 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 266** (152 que suman en los indicadores, por $ 22.213.627.187).
+- **Relacionados con el sismo: 266** (152 que suman en los indicadores, por $ 22.225.627.187).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -106,6 +106,80 @@ _Se revisaron 351 registros de contratacion de estas dos entidades en la ventana
 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | 2 | $ 2.679.870.403 |
 | GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL; AGRICULTURA Y PESCA | 1 | $ 2.568.577.795 |
 | INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ | 3 | $ 2.388.923.153 |
+
+## Procesos nuevos (4 relacionados de 68 publicados)
+
+| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
+|---|---|---|---:|---|---|
+| 2026-11-06 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 13.814.500 | Contratación directa | Alta |
+| 2026-11-06 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Pl | $ 7.102.000 | Contratación directa | Alta |
+| 2026-11-06 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Pl | $ 5.584.000 | Contratación directa | Alta |
+| 2026-11-06 | INSTITUTO NACIONAL DE MEDICINA LEGAL Y CIENCIAS FORENSES | COTIZACIÓN PARA LA ADECUACION E INSTALACION DE UNA SALA DE NECROPSIAS MODULAR PARA LA ATENCION DE LA EMERGENCI | $ 0 | Solicitud de información a los Proveedores | Alta |
+
+## Modificaciones sobre registros ya conocidos
+
+| Fuente | Identificador | Campo | Antes | Ahora |
+|---|---|---|---|---|
+| procesos | CO1.REQ.11332815 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11330882 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11332200 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11334264 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11324870 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11334121 | estado_del_procedimiento | Borrador | Seleccionado |
+| procesos | CO1.REQ.11333128 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11332309 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11332218 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11331609 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11333639 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11333500 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11332183 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11252886 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.11252886 | fecha_adjudicacion |  | 2026-11-06T00:00:00.000 |
+| procesos | CO1.REQ.11333199 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11333875 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11332781 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11300826 | estado_del_procedimiento | Evaluación | Abierto |
+| procesos | CO1.REQ.11332317 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11293132 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11332124 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11332298 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11334048 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11259630 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11334560 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11333864 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11334528 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11333450 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11332119 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11333477 | estado_del_procedimiento | Borrador | Seleccionado |
+| procesos | CO1.REQ.11327192 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11333930 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11332123 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11332587 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11333431 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11333881 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11332202 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11331275 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11334440 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11334543 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11332757 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11333279 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11300679 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11328286 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11328286 | valor_total_adjudicacion | 0 | 52310020 |
+| procesos | CO1.REQ.11328286 | adjudicado | No | Si |
+| procesos | CO1.REQ.11327263 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11334030 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11333023 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11334544 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11334515 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11280823 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11295977 | valor_total_adjudicacion | 0 | 18006539579 |
+| procesos | CO1.REQ.11295977 | adjudicado | No | Si |
+| procesos | CO1.REQ.11285750 | valor_total_adjudicacion | 0 | 7191694742 |
+| procesos | CO1.REQ.11285750 | adjudicado | No | Si |
+| procesos | CO1.REQ.11332848 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11332503 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11332207 | estado_del_procedimiento | Publicado | Seleccionado |
 
 ## Alertas
 
