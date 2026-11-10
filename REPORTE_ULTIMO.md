@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-08 19:43  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-09 22:24  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -8,37 +8,37 @@
 |---|---|
 | Contratos relacionados (alta + media) | 495 |
 | Valor de esos contratos | $ 155.764.302.049 |
-| Procesos relacionados (alta + media) | 1208 |
+| Procesos relacionados (alta + media) | 1217 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 68 |
-| Modificaciones detectadas | 187 |
-| Registros revisados en total | 68506 |
+| Procesos nuevos en esta ejecucion | 443 |
+| Modificaciones detectadas | 47 |
+| Registros revisados en total | 68949 |
 
 ### Desglose por nivel de gobierno
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 165 | $ 49.213.115.808 | 424 |
+| Alcaldía de Cali | 165 | $ 49.213.115.808 | 429 |
 | Gobernación del Valle | 11 | $ 14.148.165.515 | 80 |
-| Otras entidades del Valle | 271 | $ 83.806.876.866 | 580 |
+| Otras entidades del Valle | 271 | $ 83.806.876.866 | 584 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 7275 | $ 368.759.930.714 | 7203 |
-| Gobernación del Valle | 6096 | $ 147.217.634.364 | 5809 |
-| Descentralizadas de Cali | 423 | $ 162.768.468.133 | 2118 |
-| Descentralizadas de la Gobernación | 3269 | $ 70.775.764.881 | 4787 |
+| Alcaldía de Cali | 7275 | $ 368.759.930.714 | 7409 |
+| Gobernación del Valle | 6096 | $ 147.217.634.364 | 5833 |
+| Descentralizadas de Cali | 423 | $ 162.768.468.133 | 2133 |
+| Descentralizadas de la Gobernación | 3269 | $ 70.775.764.881 | 4810 |
 | UNGRD | 6 | $ 157.517.066 | 343 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 309 contratos ($ 103.640.984.962) y 428 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 273 contratos ($ 530.441.070.420) y 468 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 309 contratos ($ 103.640.984.962) y 432 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 273 contratos ($ 530.441.070.420) y 476 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
@@ -107,79 +107,75 @@ _Se revisaron 351 registros de contratacion de estas dos entidades en la ventana
 | GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL; AGRICULTURA Y PESCA | 1 | $ 2.568.577.795 |
 | INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ | 3 | $ 2.388.923.153 |
 
-## Procesos nuevos (4 relacionados de 68 publicados)
+## Procesos nuevos (13 relacionados de 443 publicados)
 
 | Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
 |---|---|---|---:|---|---|
-| 2026-11-06 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 13.814.500 | Contratación directa | Alta |
-| 2026-11-06 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Pl | $ 7.102.000 | Contratación directa | Alta |
-| 2026-11-06 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Pl | $ 5.584.000 | Contratación directa | Alta |
-| 2026-11-06 | INSTITUTO NACIONAL DE MEDICINA LEGAL Y CIENCIAS FORENSES | COTIZACIÓN PARA LA ADECUACION E INSTALACION DE UNA SALA DE NECROPSIAS MODULAR PARA LA ATENCION DE LA EMERGENCI | $ 0 | Solicitud de información a los Proveedores | Alta |
+| 2026-11-06 | EDUNA (COMPRADOR) | MEJORAMIENTO, ADECUACIÓN, MANTENIMIENTO, REHABILITACIÓN Y/O RECUPERACIÓN DE EQUIPAMIENTOS PÚBLICOS, ESCENARIOS | $ 92.805.532 | Contratación régimen especial | Alta |
+| 2026-11-06 | Rama Judicial  Dirección Seccional de Administración Judicial de Cali | Contratar el arrendamiento de un (1) inmueble ubicado en la calle 25 # 23-35 del Municipio de Tuluá - Valle de | $ 65.450.000 | Contratación directa | Media |
+| 2026-11-06 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Pl | $ 14.204.000 | Contratación directa | Alta |
+| 2026-11-06 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios profesionales en el proceso de agua para consumo humano y saneamiento básico en la sede prin | $ 11.400.000 | Contratación directa | Media |
+| 2026-11-06 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 11.326.000 | Contratación directa | Alta |
+| 2026-11-06 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 10.000.000 | Contratación directa | Alta |
+| 2026-11-06 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 10.000.000 | Contratación directa | Alta |
+| 2026-11-06 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 10.000.000 | Contratación directa | Alta |
+| 2026-11-06 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 9.610.000 | Contratación directa | Alta |
+| 2026-11-06 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, een cumplimiento del P | $ 8.376.000 | Contratación directa | Alta |
+| 2026-11-06 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Pl | $ 6.813.000 | Contratación directa | Alta |
+| 2026-11-06 | MUNICIPIO DE ZARZAL | PRESTACIÓN DE SERVICIOS PROFESIONALES EN DERECHO PARA APOYAR A LA SECRETARÍA DE INFRAESTRUCTURA Y MANTENIMIENT | $ 5.000.000 | Contratación directa | Alta |
+| 2026-11-06 | INSTITUCION EDUCATIVA SANTA TERESITA | ADQUISICIÓN DE REPUESTOS, ACCESORIOS Y MATERIALES PARA EL MANTENIMIENTO, CONSERVACIÓN, REPARACIÓN, MEJORAMIENT | $ 2.000.000 | Contratación régimen especial | Alta |
 
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| procesos | CO1.REQ.11332815 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11330882 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11332200 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11334264 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11324870 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11334121 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11333128 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11332309 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11332218 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11331609 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11333639 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11333500 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11332183 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11252886 | estado_del_procedimiento | Abierto | Seleccionado |
-| procesos | CO1.REQ.11252886 | fecha_adjudicacion |  | 2026-11-06T00:00:00.000 |
-| procesos | CO1.REQ.11333199 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11333875 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11332781 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11300826 | estado_del_procedimiento | Evaluación | Abierto |
-| procesos | CO1.REQ.11332317 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11293132 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11332124 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11332298 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11334048 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11259630 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11334560 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11333864 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11334528 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11333450 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11332119 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11333477 | estado_del_procedimiento | Borrador | Seleccionado |
-| procesos | CO1.REQ.11327192 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11333930 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11332123 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11332587 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11333431 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11333881 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11332202 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11331275 | estado_del_procedimiento | En aprobación | Seleccionado |
-| procesos | CO1.REQ.11334440 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11334543 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11332757 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11333279 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11300679 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11328286 | estado_del_procedimiento | Publicado | Evaluación |
-| procesos | CO1.REQ.11328286 | valor_total_adjudicacion | 0 | 52310020 |
-| procesos | CO1.REQ.11328286 | adjudicado | No | Si |
-| procesos | CO1.REQ.11327263 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11334030 | estado_del_procedimiento | Aprobado | Seleccionado |
-| procesos | CO1.REQ.11333023 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11334544 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11334515 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11280823 | estado_del_procedimiento | Publicado | Abierto |
-| procesos | CO1.REQ.11295977 | valor_total_adjudicacion | 0 | 18006539579 |
-| procesos | CO1.REQ.11295977 | adjudicado | No | Si |
-| procesos | CO1.REQ.11285750 | valor_total_adjudicacion | 0 | 7191694742 |
-| procesos | CO1.REQ.11285750 | adjudicado | No | Si |
-| procesos | CO1.REQ.11332848 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11332503 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11332207 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11328286 | nombre_del_proveedor | No Definido | SUMINISTROS CLINICOS ISLA SAS |
+| procesos | CO1.REQ.11295977 | nombre_del_proveedor | No Definido | UNION TEMPORAL COMISIÓN ARQUIDIOCESANA V |
+| procesos | CO1.REQ.11285750 | nombre_del_proveedor | No Definido | FUNDACIÓN PRO SOCIAL Y DEL MEDIO AMBIENT |
+| procesos | CO1.REQ.11275472 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11252886 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11242632 | nombre_del_proveedor | JULIANA PEREA SALAZAR | No Definido |
+| procesos | CO1.REQ.11244330 | nombre_del_proveedor | JHONNY ALEXIS GARCIA HOLGUIN | No Definido |
+| procesos | CO1.REQ.11180911 | nombre_del_proveedor | No Definido | SIAV GESTION SAS |
+| procesos | CO1.REQ.11180911 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11257639 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11332417 | nombre_del_proveedor | No Definido | EMDUOCCIDENTE |
+| procesos | CO1.REQ.11332417 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.10874526 | valor_total_adjudicacion | 88976300 | 74163656 |
+| procesos | CO1.REQ.10874526 | nombre_del_proveedor | Scientific Products SAS | REDES AMBIENTALES LTDA. |
+| procesos | CO1.REQ.11335188 | nombre_del_proveedor | ASOCIACIÓN DE CRIADORES DE CABALLOS DE P | No Definido |
+| procesos | CO1.REQ.11248761 | nombre_del_proveedor | No Definido | C&P LICITACIONES Y CONSULTORIAS SAS |
+| procesos | CO1.REQ.11257997 | nombre_del_proveedor | No Definido | ANNAR DIAGNOSTICA IMPORT S.A.S. |
+| procesos | CO1.REQ.11232604 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11211851 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11140861 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11262331 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11189987 | nombre_del_proveedor | No Definido | JOHAN MAURICIO RANGEL GRISALES |
+| procesos | CO1.REQ.11189987 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11173290 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11328823 | nombre_del_proveedor | SERVICIOS DE ALIMENTACION ESPECIALIZADA  | No Definido |
+| procesos | CO1.REQ.11140819 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11242589 | nombre_del_proveedor | HARRINSON LONDOÑO TREJOS | No Definido |
+| procesos | CO1.REQ.11334328 | nombre_del_proveedor | No Definido | FONPACIFICO |
+| procesos | CO1.REQ.11334328 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11335432 | nombre_del_proveedor | DIGITAL ADVERTISEMENT GROUP S.A.S. | No Definido |
+| procesos | CO1.REQ.11258317 | nombre_del_proveedor | No Definido | J & E CONSULTORIAS Y SERVICIOS S.A.S. |
+| procesos | CO1.REQ.11332203 | nombre_del_proveedor | ENERGIA Y POTENCIA S.A.S. | No Definido |
+| procesos | CO1.REQ.11204065 | nombre_del_proveedor | No Definido | MICRONET SAS |
+| procesos | CO1.REQ.11335439 | nombre_del_proveedor | CLUB PROFESIONAL DEPORTIVO CALI S.A. | No Definido |
+| procesos | CO1.REQ.11196076 | nombre_del_proveedor | No Definido | Aseguradora Solidaria de Colombia Entida |
+| procesos | CO1.REQ.11332594 | nombre_del_proveedor | NELSON DAVID CORREA QUINTERO | No Definido |
+| procesos | CO1.REQ.11221132 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11332467 | nombre_del_proveedor | ARECOL SAS | No Definido |
+| procesos | CO1.REQ.11335277 | nombre_del_proveedor | FUNDACION PRINTCO COLOMBIA | No Definido |
+| procesos | CO1.REQ.11335256 | nombre_del_proveedor | RIUM SAS | No Definido |
+| procesos | CO1.REQ.11332546 | nombre_del_proveedor | INSTITUTO COLOMBIANO DE NORMAS TÉCNICAS  | No Definido |
+| procesos | CO1.REQ.11333724 | nombre_del_proveedor | SOL POZ S.A.S | No Definido |
+| procesos | CO1.REQ.11275090 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11333708 | nombre_del_proveedor | No Definido | FONPACIFICO |
+| procesos | CO1.REQ.11333708 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11256364 | nombre_del_proveedor | LUIS CARLOS FERNANDEZ CASTAÑEDA DISTRIBU | No Definido |
+| procesos | CO1.REQ.11332982 | nombre_del_proveedor | Jairo Jair Gomez Quiñones | No Definido |
 
 ## Alertas
 
