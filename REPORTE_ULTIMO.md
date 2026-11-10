@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-09 22:24  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-09 23:31  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -10,8 +10,8 @@
 | Valor de esos contratos | $ 155.764.302.049 |
 | Procesos relacionados (alta + media) | 1217 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 443 |
-| Modificaciones detectadas | 47 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 68949 |
 
 ### Desglose por nivel de gobierno
@@ -106,76 +106,6 @@ _Se revisaron 351 registros de contratacion de estas dos entidades en la ventana
 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | 2 | $ 2.679.870.403 |
 | GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL; AGRICULTURA Y PESCA | 1 | $ 2.568.577.795 |
 | INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ | 3 | $ 2.388.923.153 |
-
-## Procesos nuevos (13 relacionados de 443 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-11-06 | EDUNA (COMPRADOR) | MEJORAMIENTO, ADECUACIÓN, MANTENIMIENTO, REHABILITACIÓN Y/O RECUPERACIÓN DE EQUIPAMIENTOS PÚBLICOS, ESCENARIOS | $ 92.805.532 | Contratación régimen especial | Alta |
-| 2026-11-06 | Rama Judicial  Dirección Seccional de Administración Judicial de Cali | Contratar el arrendamiento de un (1) inmueble ubicado en la calle 25 # 23-35 del Municipio de Tuluá - Valle de | $ 65.450.000 | Contratación directa | Media |
-| 2026-11-06 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Pl | $ 14.204.000 | Contratación directa | Alta |
-| 2026-11-06 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios profesionales en el proceso de agua para consumo humano y saneamiento básico en la sede prin | $ 11.400.000 | Contratación directa | Media |
-| 2026-11-06 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 11.326.000 | Contratación directa | Alta |
-| 2026-11-06 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 10.000.000 | Contratación directa | Alta |
-| 2026-11-06 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 10.000.000 | Contratación directa | Alta |
-| 2026-11-06 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 10.000.000 | Contratación directa | Alta |
-| 2026-11-06 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 9.610.000 | Contratación directa | Alta |
-| 2026-11-06 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, een cumplimiento del P | $ 8.376.000 | Contratación directa | Alta |
-| 2026-11-06 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Pl | $ 6.813.000 | Contratación directa | Alta |
-| 2026-11-06 | MUNICIPIO DE ZARZAL | PRESTACIÓN DE SERVICIOS PROFESIONALES EN DERECHO PARA APOYAR A LA SECRETARÍA DE INFRAESTRUCTURA Y MANTENIMIENT | $ 5.000.000 | Contratación directa | Alta |
-| 2026-11-06 | INSTITUCION EDUCATIVA SANTA TERESITA | ADQUISICIÓN DE REPUESTOS, ACCESORIOS Y MATERIALES PARA EL MANTENIMIENTO, CONSERVACIÓN, REPARACIÓN, MEJORAMIENT | $ 2.000.000 | Contratación régimen especial | Alta |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| procesos | CO1.REQ.11328286 | nombre_del_proveedor | No Definido | SUMINISTROS CLINICOS ISLA SAS |
-| procesos | CO1.REQ.11295977 | nombre_del_proveedor | No Definido | UNION TEMPORAL COMISIÓN ARQUIDIOCESANA V |
-| procesos | CO1.REQ.11285750 | nombre_del_proveedor | No Definido | FUNDACIÓN PRO SOCIAL Y DEL MEDIO AMBIENT |
-| procesos | CO1.REQ.11275472 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11252886 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11242632 | nombre_del_proveedor | JULIANA PEREA SALAZAR | No Definido |
-| procesos | CO1.REQ.11244330 | nombre_del_proveedor | JHONNY ALEXIS GARCIA HOLGUIN | No Definido |
-| procesos | CO1.REQ.11180911 | nombre_del_proveedor | No Definido | SIAV GESTION SAS |
-| procesos | CO1.REQ.11180911 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11257639 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11332417 | nombre_del_proveedor | No Definido | EMDUOCCIDENTE |
-| procesos | CO1.REQ.11332417 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.10874526 | valor_total_adjudicacion | 88976300 | 74163656 |
-| procesos | CO1.REQ.10874526 | nombre_del_proveedor | Scientific Products SAS | REDES AMBIENTALES LTDA. |
-| procesos | CO1.REQ.11335188 | nombre_del_proveedor | ASOCIACIÓN DE CRIADORES DE CABALLOS DE P | No Definido |
-| procesos | CO1.REQ.11248761 | nombre_del_proveedor | No Definido | C&P LICITACIONES Y CONSULTORIAS SAS |
-| procesos | CO1.REQ.11257997 | nombre_del_proveedor | No Definido | ANNAR DIAGNOSTICA IMPORT S.A.S. |
-| procesos | CO1.REQ.11232604 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11211851 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11140861 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11262331 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11189987 | nombre_del_proveedor | No Definido | JOHAN MAURICIO RANGEL GRISALES |
-| procesos | CO1.REQ.11189987 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11173290 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11328823 | nombre_del_proveedor | SERVICIOS DE ALIMENTACION ESPECIALIZADA  | No Definido |
-| procesos | CO1.REQ.11140819 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11242589 | nombre_del_proveedor | HARRINSON LONDOÑO TREJOS | No Definido |
-| procesos | CO1.REQ.11334328 | nombre_del_proveedor | No Definido | FONPACIFICO |
-| procesos | CO1.REQ.11334328 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11335432 | nombre_del_proveedor | DIGITAL ADVERTISEMENT GROUP S.A.S. | No Definido |
-| procesos | CO1.REQ.11258317 | nombre_del_proveedor | No Definido | J & E CONSULTORIAS Y SERVICIOS S.A.S. |
-| procesos | CO1.REQ.11332203 | nombre_del_proveedor | ENERGIA Y POTENCIA S.A.S. | No Definido |
-| procesos | CO1.REQ.11204065 | nombre_del_proveedor | No Definido | MICRONET SAS |
-| procesos | CO1.REQ.11335439 | nombre_del_proveedor | CLUB PROFESIONAL DEPORTIVO CALI S.A. | No Definido |
-| procesos | CO1.REQ.11196076 | nombre_del_proveedor | No Definido | Aseguradora Solidaria de Colombia Entida |
-| procesos | CO1.REQ.11332594 | nombre_del_proveedor | NELSON DAVID CORREA QUINTERO | No Definido |
-| procesos | CO1.REQ.11221132 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11332467 | nombre_del_proveedor | ARECOL SAS | No Definido |
-| procesos | CO1.REQ.11335277 | nombre_del_proveedor | FUNDACION PRINTCO COLOMBIA | No Definido |
-| procesos | CO1.REQ.11335256 | nombre_del_proveedor | RIUM SAS | No Definido |
-| procesos | CO1.REQ.11332546 | nombre_del_proveedor | INSTITUTO COLOMBIANO DE NORMAS TÉCNICAS  | No Definido |
-| procesos | CO1.REQ.11333724 | nombre_del_proveedor | SOL POZ S.A.S | No Definido |
-| procesos | CO1.REQ.11275090 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11333708 | nombre_del_proveedor | No Definido | FONPACIFICO |
-| procesos | CO1.REQ.11333708 | estado_resumen | Presentación de oferta | Adjudicado |
-| procesos | CO1.REQ.11256364 | nombre_del_proveedor | LUIS CARLOS FERNANDEZ CASTAÑEDA DISTRIBU | No Definido |
-| procesos | CO1.REQ.11332982 | nombre_del_proveedor | Jairo Jair Gomez Quiñones | No Definido |
 
 ## Alertas
 
