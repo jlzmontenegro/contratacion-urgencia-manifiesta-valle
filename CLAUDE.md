@@ -1797,6 +1797,17 @@ publicar usa `rebase -X theirs` con tres reintentos.
 Gracias a `PYTHONUNBUFFERED` el registro ahora dice en qué barrido se quedó. **Si una
 corrida se atasca, reintentar antes de tocar nada.**
 
+**Pero una cancelación RECURRENTE no es la API: es el tope** (9-nov-2026). El flujo tenía
+`timeout-minutes: 25` y su comentario decía que una corrida sana tardaba 3 minutos. Ya no:
+en noviembre las buenas tardan **19 a 22 minutos** —el `tablero.json` pasó de 25 MB a 68 MB
+y se sumaron las páginas por dependencia, la última la del HUV— y las que se pasaban un poco
+se cancelaban. **Cinco seguidas entre el 4 y el 6 de noviembre**, casi un día y medio sin
+publicar, todas muertas en el mismo sitio: generando las páginas por dependencia, que es lo
+último que hace el colector. **Se distingue de un atasco de la API por eso: siempre en el
+mismo punto y siempre a los 25-26 minutos.** Se subió a **40**, a petición del usuario. Si
+vuelve a quedarse corto, el arreglo de fondo no es subirlo otra vez sino que las páginas
+por dependencia no se regeneren en las tres corridas del día.
+
 **La especificidad de CSS muerde en silencio.** Tres veces el 20-ago: una regla escrita al
 final no se aplicaba porque otra anterior era más específica (`.portada .cifras` contra
 `.cifras`, `.portada .cifra .n` contra `.cifra .n`, `.refs .ref` contra `.ref`). No hay

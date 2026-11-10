@@ -71,10 +71,25 @@ jobs:
       # tiempo: el 19-ago-2026 una corrida se atasco 25 minutos y no dejo ni una
       # linea con que saber en que fuente se quedo.
       PYTHONUNBUFFERED: "1"
-    # Una corrida sana tarda 3 minutos. Si datos.gov.co limita las peticiones,
-    # el colector se queda reintentando; sin este tope la corrida podria seguir
-    # hasta el limite de GitHub, que son 6 horas.
-    timeout-minutes: 25
+    # Si datos.gov.co limita las peticiones, el colector se queda reintentando;
+    # sin este tope la corrida podria seguir hasta el limite de GitHub, que son 6
+    # horas.
+    #
+    # Era 25 y se subio a 40 el 9-nov-2026. Una corrida sana ya NO tarda 3
+    # minutos, como decia aqui: medido sobre las corridas buenas de noviembre,
+    # tarda entre 19 y 22. Crecieron los datos -tablero.json paso de 25 MB en
+    # septiembre a 68 MB- y se sumaron las paginas por dependencia, la ultima la
+    # del HUV con sus 2.247 procesos. Con 25 minutos de tope se cancelaban las
+    # que se pasaban un poco: CINCO seguidas entre el 4 y el 6 de noviembre, casi
+    # un dia y medio sin publicar, y todas murieron en el mismo sitio, generando
+    # las paginas por dependencia, que es lo ultimo que hace el colector. Una
+    # corrida cancelada no publica, no audita y no avisa por correo.
+    #
+    # 40 deja casi el doble de margen sobre lo que tarda hoy. Si algun dia vuelve
+    # a quedarse corto, el arreglo de fondo no es subirlo otra vez: es que las
+    # paginas por dependencia no se regeneren en las tres corridas del dia,
+    # porque su contenido cambia poco de una a otra.
+    timeout-minutes: 40
     steps:
       - name: Descargar el repositorio
         uses: actions/checkout@v4
