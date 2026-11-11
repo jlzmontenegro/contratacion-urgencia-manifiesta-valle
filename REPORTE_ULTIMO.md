@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-10 20:12  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-11 16:20  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -8,43 +8,43 @@
 |---|---|
 | Contratos relacionados (alta + media) | 495 |
 | Valor de esos contratos | $ 155.764.302.049 |
-| Procesos relacionados (alta + media) | 1217 |
+| Procesos relacionados (alta + media) | 1259 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 0 |
-| Registros revisados en total | 68949 |
+| Procesos nuevos en esta ejecucion | 726 |
+| Modificaciones detectadas | 139 |
+| Registros revisados en total | 69675 |
 
 ### Desglose por nivel de gobierno
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 165 | $ 49.213.115.808 | 429 |
+| Alcaldía de Cali | 165 | $ 49.213.115.808 | 463 |
 | Gobernación del Valle | 11 | $ 14.148.165.515 | 80 |
-| Otras entidades del Valle | 271 | $ 83.806.876.866 | 584 |
+| Otras entidades del Valle | 271 | $ 83.806.876.866 | 586 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 7275 | $ 368.759.930.714 | 7409 |
-| Gobernación del Valle | 6096 | $ 147.217.634.364 | 5833 |
-| Descentralizadas de Cali | 423 | $ 162.768.468.133 | 2133 |
-| Descentralizadas de la Gobernación | 3269 | $ 70.775.764.881 | 4810 |
+| Alcaldía de Cali | 7275 | $ 368.759.930.714 | 7916 |
+| Gobernación del Valle | 6096 | $ 147.217.634.364 | 5873 |
+| Descentralizadas de Cali | 423 | $ 162.768.468.133 | 2154 |
+| Descentralizadas de la Gobernación | 3269 | $ 70.775.764.881 | 4822 |
 | UNGRD | 6 | $ 157.517.066 | 343 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 309 contratos ($ 103.640.984.962) y 432 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 273 contratos ($ 530.441.070.420) y 476 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 309 contratos ($ 103.640.984.962) y 438 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 273 contratos ($ 530.441.070.420) y 483 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 266** (152 que suman en los indicadores, por $ 22.225.627.187).
+- **Relacionados con el sismo: 268** (153 que suman en los indicadores, por $ 22.228.427.187).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -79,7 +79,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-10-22 | CHOCÓ - ALCALDÍA MUNICIPIO DE SAN JOSÉ DEL PALMAR | EJECUCIoN DE OBRAS DE REPARACIoN Y REHABILITACIoN DE LOS ELEMENTOS FiSICOS AFECTADOS DEL CENTRO VIDA DEL MUNIC | $ 150.000.000 | Selección Abreviada de Menor Cuantía (Ley 1150 de 2007) · La contratación de menor cuantía (Literal B) | Alta |
 | 2026-09-10 | CALDAS - ALCALDÍA MUNICIPIO DE MARULANDA | EJECUCIoN; A TODO COSTO Y POR EL SISTEMA DE PRECIOS UNITARIOS FIJOS; DE LAS OBRAS NECESARIAS PARA LA REPARACIo | $ 132.052.041 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 
-_No se listan 168 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
+_No se listan 174 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
 
 ## UNGRD y FNGRD · NIT 900.478.966-6 y 900.978.341
 
@@ -106,6 +106,116 @@ _Se revisaron 351 registros de contratacion de estas dos entidades en la ventana
 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | 2 | $ 2.679.870.403 |
 | GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL; AGRICULTURA Y PESCA | 1 | $ 2.568.577.795 |
 | INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ | 3 | $ 2.388.923.153 |
+
+## Procesos nuevos (48 relacionados de 726 publicados)
+
+| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
+|---|---|---|---:|---|---|
+| 2026-11-07 | AREA METROPOLITANA CENTRO OCCIDENTE | EJECUTAR LAS OBRAS E INTERVENCIONES DE REPARACIÓN Y RECUPERACIÓN DE LA INFRAESTRUCTURA FÍSICA EN LAS SEDES DON | $ 384.365.168 | Contratación directa | Alta |
+| 2026-11-09 | INSTITUTO DE FINANCIAMIENTO, PROMOCION Y DESARROLLO DE CALDAS | AUNAR ESFUERZOS PARA LA EJECUCIÓN DEL PROYECTO DENOMINADO CONSTRUCCIÓN DE UNA VIVIENDA DE DOS HABITACIONES PAR | $ 63.000.000 | Contratación Directa (con ofertas) | Alta |
+| 2026-11-09 | INSTITUTO DE FINANCIAMIENTO, PROMOCION Y DESARROLLO DE CALDAS | AUNAR ESFUERZOS TÉCNICOS, ADMINISTRATIVOS Y FINANCIEROS PARA LA EJECUCIÓN DEL PROYECTO DENOMINADO REALIZAR LAS | $ 49.473.755 | Contratación Directa (con ofertas) | Alta |
+| 2026-11-09 | EMPRESA DE ACUEDUCTO Y ALCANTARILLADO DE PEREIRA S.A.S. E.S.P. | PRESTAR SERVICIOS PROFESIONALES DE ASESORÍA JURÍDICA ESPECIALIZADA A LA SECRETARÍA GENERAL Y A LA ALTA GERENCI | $ 34.000.000 | Contratación régimen especial | Alta |
+| 2026-11-09 | RED DE SALUD DE LADERA EMPRESA SOCIAL DEL ESTADO | ADQUISICIÓN DE MUEBLES Y ENSERES REQUERIDOS PARA FORTALECER LA DOTACIÓN, FUNCIONALIDAD Y ADECUACIÓN DE LOS DIF | $ 30.876.974 | Contratación régimen especial | Media |
+| 2026-11-07 | MUNICIPIO DE SEVILLA | PRESTAR EL SERVICIO DE ALQUILER DE VOLQUETA CON CONDUCTOR PARA EL TRANSPORTE Y DESCARGUE DE ESCOMBROS Y MATERI | $ 30.000.000 | Contratación directa | Alta |
+| 2026-11-08 | INSTITUCION EDUCATIVA SAN CLEMENTE - GUÀTICA | Ejecutar obras de reparación, mejoramiento y adecuación de la infraestructura física de las sedes San Clemente | $ 29.723.560 | Contratación régimen especial | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 19.820.500 | Contratación directa | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 16.817.500 | Contratación directa | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 15.652.000 | Contratación directa | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 15.652.000 | Contratación directa | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 15.652.000 | Contratación directa | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 14.072.000 | Contratación directa | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 14.072.000 | Contratación directa | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 14.072.000 | Contratación directa | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | restar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastres | $ 12.494.000 | Contratación directa | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 12.494.000 | Contratación directa | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, een cumplimiento del P | $ 12.428.500 | Contratación directa | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Contratación directa | Alta |
+| 2026-11-07 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 11.326.000 | Contratación directa | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Contratación directa | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Contratación directa | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Contratación directa | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Contratación directa | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 11.326.000 | Contratación directa | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Contratación directa | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Contratación directa | Alta |
+| 2026-11-07 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 9.867.500 | Contratación directa | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 9.610.000 | Contratación directa | Alta |
+| 2026-11-09 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA ATENDER SITUACIONES TÉCNICAS EN EL CAMPO DE LA INGENIERÍA CIVIL, RE | $ 8.500.000 | Contratación directa | Alta |
+| 2026-11-09 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTAR SERVICIOS PROFESIONALES ESPECIALIZADOS EN LA SUBSECRETARÍA DE PLANEACIÓN Y CALIDAD, COORDINANDO ACTIVI | $ 8.333.333 | Contratación directa | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 7.894.000 | Contratación directa | Alta |
+| 2026-11-09 | UNIVERSIDAD DEL VALLE | Prestar servicios profesionales de apoyo a la gestión en psicología para desarrollar acciones de prevención, c | $ 7.600.000 | Contratación régimen especial | Alta |
+| 2026-11-09 | UNIVERSIDAD DEL VALLE | Prestar servicios profesionales de apoyo a la gestión en psicología para desarrollar acciones de prevención, c | $ 7.600.000 | Contratación régimen especial | Alta |
+| 2026-11-09 | UNIVERSIDAD DEL VALLE | Prestar servicios profesionales de apoyo a la gestión en psicología para desarrollar acciones de prevención, c | $ 7.600.000 | Contratación régimen especial | Alta |
+| 2026-11-09 | UNIVERSIDAD DEL VALLE | Prestar servicios profesionales de apoyo a la gestión en psicología para desarrollar acciones de prevención, c | $ 7.600.000 | Contratación régimen especial | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios de apoyo a la gestión a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del D | $ 7.102.000 | Contratación directa | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para brindar apoyo técnico en las actividades requeridas por la Secretar | $ 7.102.000 | Contratación directa | Alta |
+| 2026-11-09 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios de apoyo a la gestión a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del D | $ 7.102.000 | Contratación directa | Alta |
+| 2026-11-07 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, een cumplimiento del P | $ 7.102.000 | Contratación directa | Alta |
+
+## Modificaciones sobre registros ya conocidos
+
+| Fuente | Identificador | Campo | Antes | Ahora |
+|---|---|---|---|---|
+| contratos | CO1.PCCNTR.9971912 | valor_pagado | 2500000 | 5000000 |
+| contratos | CO1.PCCNTR.9971912 | valor_pendiente_de_pago | 2500000 | 0 |
+| contratos | CO1.PCCNTR.9971636 | valor_pagado | 2500000 | 5000000 |
+| contratos | CO1.PCCNTR.9971636 | valor_pendiente_de_pago | 2500000 | 0 |
+| contratos | CO1.PCCNTR.9971908 | valor_pagado | 5000000 | 10000000 |
+| contratos | CO1.PCCNTR.9971908 | valor_pendiente_de_pago | 5000000 | 0 |
+| contratos | CO1.PCCNTR.9971143 | valor_pagado | 7000000 | 14000000 |
+| contratos | CO1.PCCNTR.9971143 | valor_pendiente_de_pago | 7000000 | 0 |
+| contratos | CO1.PCCNTR.9974260 | valor_pagado | 2500000 | 5000000 |
+| contratos | CO1.PCCNTR.9974260 | valor_pendiente_de_pago | 2500000 | 0 |
+| contratos | CO1.PCCNTR.9827930 | proveedor_adjudicado | LADY FIORELLA ISSA ABADIA | LADY FIORELA ISSA ABADIA |
+| contratos | CO1.PCCNTR.9862342 | proveedor_adjudicado | ISLA SAS | SUMINISTROS CLINICOS ISLA SAS |
+| contratos | CO1.PCCNTR.9972564 | valor_pagado | 7000000 | 14000000 |
+| contratos | CO1.PCCNTR.9972564 | valor_pendiente_de_pago | 7000000 | 0 |
+| contratos | CO1.PCCNTR.9972133 | valor_pagado | 6000000 | 12000000 |
+| contratos | CO1.PCCNTR.9972133 | valor_pendiente_de_pago | 6000000 | 0 |
+| contratos | CO1.PCCNTR.9831174 | proveedor_adjudicado | Juan David Echeverry Gonzalez | Juan David |
+| contratos | CO1.PCCNTR.9860937 | proveedor_adjudicado | SANDRA MIREYA OCAMPO VIDAL | SANDRA OCAMPO |
+| contratos | CO1.PCCNTR.9973319 | valor_pagado | 4000000 | 8000000 |
+| contratos | CO1.PCCNTR.9973319 | valor_pendiente_de_pago | 4000000 | 0 |
+| contratos | CO1.PCCNTR.9970879 | valor_pagado | 5000000 | 10000000 |
+| contratos | CO1.PCCNTR.9970879 | valor_pendiente_de_pago | 5000000 | 0 |
+| contratos | CO1.PCCNTR.9972375 | valor_pagado | 5000000 | 10000000 |
+| contratos | CO1.PCCNTR.9972375 | valor_pendiente_de_pago | 5000000 | 0 |
+| contratos | CO1.PCCNTR.9976335 | valor_pagado | 2500000 | 5000000 |
+| contratos | CO1.PCCNTR.9976335 | valor_pendiente_de_pago | 2500000 | 0 |
+| contratos | CO1.PCCNTR.9973151 | valor_pagado | 6000000 | 12000000 |
+| contratos | CO1.PCCNTR.9973151 | valor_pendiente_de_pago | 6000000 | 0 |
+| contratos | CO1.PCCNTR.9879950 | nombre_supervisor | RUBY PORTILLO BERROCAL | Maria Cristina Murillo Gómez |
+| contratos | CO1.PCCNTR.9936300 | nombre_supervisor | JENIFFER ELVIRA CASTRO | paola andrea bejarano ortiz |
+| contratos | CO1.PCCNTR.9843887 | valor_pagado | 5842913 | 10580410 |
+| contratos | CO1.PCCNTR.9843887 | valor_pendiente_de_pago | 9474994 | 4737497 |
+| contratos | CO1.PCCNTR.9905492 | valor_pagado | 0 | 3789997 |
+| contratos | CO1.PCCNTR.9905492 | valor_pendiente_de_pago | 15791656 | 12001659 |
+| contratos | CO1.PCCNTR.9884842 | valor_facturado | 4293000 | 7155000 |
+| contratos | CO1.PCCNTR.9955008 | valor_facturado | 3100000 | 6200000 |
+| contratos | CO1.PCCNTR.9899798 | proveedor_adjudicado | ACIVA R.P | ASOCIACION DE CABILDOS INDIGENAS DEL VAL |
+| contratos | CO1.PCCNTR.9919091 | proveedor_adjudicado | CREAR IMAGEN IT  -  licitaciones@crearim | CREAR IMAGEN IT |
+| contratos | CO1.PCCNTR.9905907 | valor_pagado | 0 | 3789997 |
+| contratos | CO1.PCCNTR.9905907 | valor_pendiente_de_pago | 15791656 | 12001659 |
+| contratos | CO1.PCCNTR.9842772 | valor_pagado | 5842913 | 10580410 |
+| contratos | CO1.PCCNTR.9842772 | valor_pendiente_de_pago | 11212076 | 6474579 |
+| contratos | CO1.PCCNTR.9842696 | valor_pagado | 5842913 | 10580410 |
+| contratos | CO1.PCCNTR.9842696 | valor_pendiente_de_pago | 11212076 | 6474579 |
+| contratos | CO1.PCCNTR.9911968 | valor_pagado | 0 | 3632081 |
+| contratos | CO1.PCCNTR.9911968 | valor_pendiente_de_pago | 15633740 | 12001659 |
+| contratos | CO1.PCCNTR.9843655 | valor_pagado | 5842913 | 10580410 |
+| contratos | CO1.PCCNTR.9843655 | valor_pendiente_de_pago | 9474994 | 4737497 |
+| contratos | CO1.PCCNTR.9843641 | valor_pagado | 5842913 | 10580410 |
+| contratos | CO1.PCCNTR.9843641 | valor_pendiente_de_pago | 9474994 | 4737497 |
+| contratos | CO1.PCCNTR.9798063 | valor_facturado | 4600000 | 6900000 |
+| contratos | CO1.PCCNTR.9843692 | valor_pagado | 5842913 | 10580410 |
+| contratos | CO1.PCCNTR.9843692 | valor_pendiente_de_pago | 9474994 | 4737497 |
+| contratos | CO1.PCCNTR.9844424 | valor_pagado | 5842913 | 10580410 |
+| contratos | CO1.PCCNTR.9844424 | valor_pendiente_de_pago | 9474994 | 4737497 |
+| contratos | CO1.PCCNTR.9844553 | valor_pagado | 5842913 | 10580410 |
+| contratos | CO1.PCCNTR.9844553 | valor_pendiente_de_pago | 9474994 | 4737497 |
+| contratos | CO1.PCCNTR.9844162 | valor_pagado | 5842913 | 10580410 |
+| contratos | CO1.PCCNTR.9844162 | valor_pendiente_de_pago | 9474994 | 4737497 |
+| contratos | CO1.PCCNTR.9815222 | valor_facturado | 5200000 | 7800000 |
 
 ## Alertas
 
