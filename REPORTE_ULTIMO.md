@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-12 16:27  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-12 20:45  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -8,43 +8,43 @@
 |---|---|
 | Contratos relacionados (alta + media) | 588 |
 | Valor de esos contratos | $ 158.160.788.988 |
-| Procesos relacionados (alta + media) | 1311 |
+| Procesos relacionados (alta + media) | 1402 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 0 |
-| Registros revisados en total | 73230 |
+| Procesos nuevos en esta ejecucion | 656 |
+| Modificaciones detectadas | 340 |
+| Registros revisados en total | 73885 |
 
 ### Desglose por nivel de gobierno
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 241 | $ 50.847.970.589 | 474 |
+| Alcaldía de Cali | 241 | $ 50.847.970.589 | 557 |
 | Gobernación del Valle | 11 | $ 14.148.165.515 | 88 |
-| Otras entidades del Valle | 287 | $ 84.560.175.691 | 607 |
+| Otras entidades del Valle | 287 | $ 84.560.175.691 | 615 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 8528 | $ 405.533.327.616 | 8274 |
-| Gobernación del Valle | 6166 | $ 150.266.157.071 | 6236 |
-| Descentralizadas de Cali | 426 | $ 162.823.127.693 | 2253 |
-| Descentralizadas de la Gobernación | 3319 | $ 74.337.651.053 | 4889 |
+| Alcaldía de Cali | 8528 | $ 405.533.327.616 | 8487 |
+| Gobernación del Valle | 6166 | $ 150.266.157.071 | 6268 |
+| Descentralizadas de Cali | 426 | $ 162.823.127.693 | 2271 |
+| Descentralizadas de la Gobernación | 3319 | $ 74.337.651.053 | 4908 |
 | UNGRD | 8 | $ 198.717.066 | 353 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 322 contratos ($ 106.438.927.485) y 456 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 295 contratos ($ 537.770.859.920) y 528 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 322 contratos ($ 106.438.927.485) y 464 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 295 contratos ($ 537.770.859.920) y 535 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 268** (153 que suman en los indicadores, por $ 22.228.427.187).
+- **Relacionados con el sismo: 276** (157 que suman en los indicadores, por $ 22.247.867.187).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -79,7 +79,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-10-22 | CHOCÓ - ALCALDÍA MUNICIPIO DE SAN JOSÉ DEL PALMAR | EJECUCIoN DE OBRAS DE REPARACIoN Y REHABILITACIoN DE LOS ELEMENTOS FiSICOS AFECTADOS DEL CENTRO VIDA DEL MUNIC | $ 150.000.000 | Selección Abreviada de Menor Cuantía (Ley 1150 de 2007) · La contratación de menor cuantía (Literal B) | Alta |
 | 2026-09-10 | CALDAS - ALCALDÍA MUNICIPIO DE MARULANDA | EJECUCIoN; A TODO COSTO Y POR EL SISTEMA DE PRECIOS UNITARIOS FIJOS; DE LAS OBRAS NECESARIAS PARA LA REPARACIo | $ 132.052.041 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 
-_No se listan 174 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
+_No se listan 184 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
 
 ## UNGRD y FNGRD · NIT 900.478.966-6 y 900.978.341
 
@@ -106,6 +106,116 @@ _Se revisaron 363 registros de contratacion de estas dos entidades en la ventana
 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | 2 | $ 2.679.870.403 |
 | GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL; AGRICULTURA Y PESCA | 1 | $ 2.568.577.795 |
 | INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ | 3 | $ 2.388.923.153 |
+
+## Procesos nuevos (99 relacionados de 656 publicados)
+
+| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
+|---|---|---|---:|---|---|
+| 2026-11-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL | Prestar, de manera temporal y extraordinaria, servicios integrales de atención diurna y protección social a pe | $ 2.081.023.690 | Contratación directa | Alta |
+| 2026-11-10 | MUNICIPIO DE BUGALAGRANDE | IMPLEMENTACIÓN DE SOLUCIONES DE SANEAMIENTO BÁSICO MEDIANTE EL SUMINISTRO E INSTALACIÓN DE SISTEMAS INDIVIDUAL | $ 431.293.820 | Selección Abreviada de Menor Cuantía | Media |
+| 2026-11-10 | ALCALDIA MUNICIPAL DE SAN PEDRO VALLE DEL CAUCA | MANTENIMIENTO PREVENTIVO Y CORRECTIVO CON SUMINISTRO DE REPUESTOS Y MANO DE OBRA, INSUMOS Y OTROS SERVICIOS PA | $ 356.036.029 | Selección Abreviada de Menor Cuantía | Media |
+| 2026-11-10 | MUNICIPIO DE LA UNION | SUMINISTRO DE MATERIALES DE CONSTRUCCIÓN DESTINADOS A LA REHABILITACIÓN, REPARACIÓN Y MEJORAMIENTO DE LAS VIVI | $ 292.924.500 | Selección abreviada subasta inversa | Alta |
+| 2026-11-10 | MUNICIPIO DE TAMESIS | CONTRATO INTERADMINSITRATIVO DE MANDATO SIN REPRESENTACIÓN PARA LA ELABORACIÓN DE ESTUDIOS Y DISEÑOS PARA LA R | $ 197.089.172 | Contratación directa | Alta |
+| 2026-11-11 | CVC | Realizar la implementación de acciones de conservación en el Consejo Comunitario de la comunidad negra del cor | $ 129.482.072 | Contratación Directa (con ofertas) | Media |
+| 2026-11-10 | ALCALDIA MUNICIPAL DE BUGA | AUNAR ESFUERZOS TECNICOS, ADMINISTRATIVOS Y ECONOMICOS EN LA IMPLEMENTACION Y/O EJECUCION DE LOS DIFERENTES PL | $ 85.714.285 | Contratación régimen especial | Media |
+| 2026-11-10 | DIRECCIÓN TERRITORIAL DE SALUD DE CALDAS | REALIZAR LAS OBRAS DE ADECUACIÓN LOCATIVA DEL INMUEBLE ARRENDADO POR LA DTSC EN EL BARRIO BELÉN DE MANIZALES,  | $ 37.086.400 | Contratación directa | Alta |
+| 2026-11-11 | ALCALDIA MUNICIPAL DE GINEBRA | SUMINISTRO DE MATERIALES DE FERRETERÍA PARA ATENDER A POBLACIÓN AFECTADA POR EL EVENTO SÍSMICO DEL 10 DE AGOST | $ 29.999.997 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales especializados a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento | $ 27.391.000 | Contratación directa | Alta |
+| 2026-11-10 | INSTITUCION EDUCATIVA NORMAL SUPERIOR NUESTRA SEÑORA DE LAS MERCEDES | Prestación del servicio de mantenimiento, reparación y limpieza de barrido de techos y mantenimiento de las re | $ 22.880.331 | Contratación régimen especial | Media |
+| 2026-11-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 19.820.500 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 16.817.500 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 16.817.500 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 16.756.000 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 16.756.000 | Contratación directa | Alta |
+| 2026-11-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 16.756.000 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 15.652.000 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 15.652.000 | Contratación directa | Alta |
+| 2026-11-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 14.072.000 | Contratación directa | Alta |
+| 2026-11-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 14.072.000 | Contratación directa | Alta |
+| 2026-11-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 14.072.000 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 14.072.000 | Contratación directa | Alta |
+| 2026-11-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 14.072.000 | Contratación directa | Alta |
+| 2026-11-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 12.494.000 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 12.494.000 | Contratación directa | Alta |
+| 2026-11-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 12.494.000 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 12.494.000 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 12.494.000 | Contratación directa | Alta |
+| 2026-11-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 12.494.000 | Contratación directa | Alta |
+| 2026-11-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 12.494.000 | Contratación directa | Alta |
+| 2026-11-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 12.494.000 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Contratación directa | Alta |
+| 2026-11-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Contratación directa | Alta |
+| 2026-11-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Contratación directa | Alta |
+| 2026-11-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Contratación directa | Alta |
+
+## Modificaciones sobre registros ya conocidos
+
+| Fuente | Identificador | Campo | Antes | Ahora |
+|---|---|---|---|---|
+| procesos | CO1.REQ.11348715 | estado_del_procedimiento | Borrador | Seleccionado |
+| procesos | CO1.REQ.11348715 | precio_base | 14072000 | 15652000 |
+| procesos | CO1.REQ.11348715 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11348715 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11348437 | estado_del_procedimiento | Borrador | Seleccionado |
+| procesos | CO1.REQ.11348437 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11348437 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11346469 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11350171 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11303222 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11303222 | precio_base | 1565029840 | 1565000000 |
+| procesos | CO1.REQ.11266551 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11022817 | valor_total_adjudicacion | 136222500 | 269880000 |
+| procesos | CO1.REQ.11022817 | fecha_adjudicacion | 2026-10-02T00:00:00.000 |  |
+| procesos | CO1.REQ.11022817 | estado_resumen | Adjudicado | Presentación de oferta |
+| procesos | CO1.REQ.11350421 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11350421 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11350421 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11337930 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11318198 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11260007 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11348847 | estado_del_procedimiento | En aprobación | Publicado |
+| procesos | CO1.REQ.11348847 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11348847 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11318780 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11322167 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11347996 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11263220 | estado_del_procedimiento | Evaluación | Abierto |
+| procesos | CO1.REQ.11349909 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11319915 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11342190 | estado_del_procedimiento | Evaluación | Seleccionado |
+| procesos | CO1.REQ.11348540 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.10955673 | valor_total_adjudicacion | 0 | 145900000 |
+| procesos | CO1.REQ.10955673 | adjudicado | No | Si |
+| procesos | CO1.REQ.10955673 | nombre_del_proveedor | No Definido | Electronic Supply |
+| procesos | CO1.REQ.11350221 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11350471 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11344760 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11319302 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11251171 | valor_total_adjudicacion | 0 | 249999960 |
+| procesos | CO1.REQ.11251171 | adjudicado | No | Si |
+| procesos | CO1.REQ.11251171 | nombre_del_proveedor | No Definido | ENIGMA DEVELOPERS S.A.S |
+| procesos | CO1.REQ.11206623 | estado_del_procedimiento | Evaluación | Abierto |
+| procesos | CO1.REQ.11341678 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11347282 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11295977 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11302554 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.11302554 | valor_total_adjudicacion | 0 | 1001000000 |
+| procesos | CO1.REQ.11302554 | adjudicado | No | Si |
+| procesos | CO1.REQ.11302554 | nombre_del_proveedor | No Definido | Corporación Nuestra Génesis |
+| procesos | CO1.REQ.11302554 | fecha_adjudicacion |  | 2026-11-11T00:00:00.000 |
+| procesos | CO1.REQ.11302554 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11350309 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11343561 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11349170 | estado_del_procedimiento | En aprobación | Publicado |
+| procesos | CO1.REQ.11349170 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11349170 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11148280 | valor_total_adjudicacion | 0 | 1489785484 |
+| procesos | CO1.REQ.11148280 | adjudicado | No | Si |
+| procesos | CO1.REQ.11148280 | nombre_del_proveedor | No Definido | Deicy Bravo Jojoa |
 
 ## Alertas
 
