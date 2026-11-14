@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-13 20:24  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-14 09:05  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -8,37 +8,37 @@
 |---|---|
 | Contratos relacionados (alta + media) | 715 |
 | Valor de esos contratos | $ 187.619.895.200 |
-| Procesos relacionados (alta + media) | 1402 |
-| Contratos nuevos en esta ejecucion | 2052 |
-| Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 2652 |
-| Registros revisados en total | 75937 |
+| Procesos relacionados (alta + media) | 1431 |
+| Contratos nuevos en esta ejecucion | 0 |
+| Procesos nuevos en esta ejecucion | 573 |
+| Modificaciones detectadas | 311 |
+| Registros revisados en total | 76510 |
 
 ### Desglose por nivel de gobierno
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 343 | $ 77.434.557.268 | 557 |
-| Gobernación del Valle | 11 | $ 14.200.666.042 | 88 |
-| Otras entidades del Valle | 303 | $ 86.732.552.817 | 615 |
+| Alcaldía de Cali | 343 | $ 77.434.557.268 | 569 |
+| Gobernación del Valle | 11 | $ 14.200.666.042 | 89 |
+| Otras entidades del Valle | 303 | $ 86.732.552.817 | 631 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 9198 | $ 420.686.324.091 | 8487 |
-| Gobernación del Valle | 6670 | $ 179.634.911.624 | 6268 |
-| Descentralizadas de Cali | 433 | $ 162.884.329.693 | 2271 |
-| Descentralizadas de la Gobernación | 3353 | $ 75.116.383.461 | 4908 |
-| UNGRD | 8 | $ 198.717.066 | 353 |
+| Alcaldía de Cali | 9198 | $ 420.686.324.091 | 8682 |
+| Gobernación del Valle | 6670 | $ 179.634.911.624 | 6286 |
+| Descentralizadas de Cali | 433 | $ 162.884.329.693 | 2280 |
+| Descentralizadas de la Gobernación | 3353 | $ 75.116.383.461 | 4923 |
+| UNGRD | 8 | $ 198.717.066 | 354 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 357 contratos ($ 107.910.189.818) y 464 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 326 contratos ($ 810.093.487.903) y 535 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 357 contratos ($ 107.910.189.818) y 476 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 326 contratos ($ 810.093.487.903) y 540 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
@@ -85,7 +85,7 @@ _No se listan 188 registros de SECOP I con urgencia manifiesta por otras causas 
 
 La UNGRD y el FNGRD no registran todavia contratacion relacionada con el sismo, ni en SECOP I ni en SECOP II.
 
-_Se revisaron 363 registros de contratacion de estas dos entidades en la ventana; los que no aluden al sismo no se listan. Quedan en los CSV._
+_Se revisaron 364 registros de contratacion de estas dos entidades en la ventana; los que no aluden al sismo no se listan. Quedan en los CSV._
 
 ## Contratos por entidad
 
@@ -107,115 +107,115 @@ _Se revisaron 363 registros de contratacion de estas dos entidades en la ventana
 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | 2 | $ 2.679.870.403 |
 | GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARÍA DE DESARROLLO RURAL; AGRICULTURA Y PESCA | 1 | $ 2.568.577.795 |
 
-## Contratos nuevos (162 relacionados de 2052 publicados)
+## Procesos nuevos (41 relacionados de 573 publicados)
 
-| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
+| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
 |---|---|---|---:|---|---|
-| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL | Aunar esfuerzos técnicos; humanos; administrativos y financieros para el mejoramiento de las condiciones de se | $ 18.006.539.579 | UNION TEMPORAL COMISIÓN ARQUIDIOCESANA VIDA, JUSTICIA Y PAZ 2026-1 | Alta |
-| 2026-09-25 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | REALIZAR ACTIVIDADES DE INTEGRACIÓN COMO OPERADOR LOGÍSTICO PARA EL FORTALECIMIENTO DE LA CAPACIDAD DE RESPUES | $ 2.400.000.000 | TODO FACIL SAS | Alta |
-| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL | PRESTAR; DE MANERA TEMPORAL Y EXTRAORDINARIA; SERVICIOS INTEGRALES DE ATENCIÓN DIURNA Y PROTECCIÓN SOCIAL A PE | $ 2.081.023.690 | Fundación Cumpliendo | Alta |
-| 2026-09-16 | SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS | Prestar los servicios de apoyo a la gestión operativa para el fortalecimiento de la estrategia Promotores Resi | $ 2.020.480.410 | GESTION Y SERVICIOS CORPORATIVOS E.S.T. SAS | Media |
-| 2026-11-11 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | REALIZAR OBRAS DE MEJORAMIENTO ORIENTADAS A FORTALECER LA CAPACIDAD DE RECEPCIÓN DE RESIDUOS SÓLIDOS DEL VASO  | $ 1.404.187.423 | CORYSAN | Media |
-| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS | AUNAR ESFUERZOS PARA LA TRANSFORMACIÓN Y EL APROVECHAMIENTO DE RESIDUOS DE CONSTRUCCIÓN Y DEMOLICIÓN - RCD; GE | $ 1.001.000.000 | Corporación Nuestra Génesis | Alta |
-| 2026-11-11 | METRO CALI S.A ACUERDO DE REESTRUCTURACION | REALIZAR LAS OBRAS DE MANTENIMIENTO; ADECUACIÓN; REPARACIÓN Y MEJORAMIENTO DE LA INFRAESTRUCTURA FÍSICA DE LA  | $ 545.641.880 | CONSORCIO METROCALI 2026 | Media |
-| 2026-11-11 | MUNICIPIO DE DAGUA | CONVENIO INTERADMINISTRATIVO ESPECÍFICO DERIVADO DEL CONVENIO MARCO DE ASOCIACIÓN INTERINSTITUCIONAL NO. 20253 | $ 482.995.467 | FONPACIFICO | Media |
-| 2026-09-25 | EDUNA (COMPRADOR) | MEJORAMIENTO; ADECUACIÓN Y/O RECUPERACIÓN DE LAS CONDICIONES DE HABITABILIDAD DE LAS VIVIENDAS AFECTADAS POR S | $ 345.984.946 | LOPEZ CONSTRUYE SAS | Alta |
-| 2026-09-15 | MUNICIPIO DE MANIZALES | ADQUISICIÓN DE VALLAS PARA GARANTIZAR LAS CONDICIONES DE SEGURIDAD MEDIANTE EL AISLAMIENTO DE ZONAS OBJETIVO D | $ 220.000.060 | KURVASS DEMARCACIÓN Y SEÑALIZACIÓN VIAL S.A.S | Alta |
-| 2026-09-22 | MUNICIPIO DE SANTA ROSA DE CABAL | SUMINISTRO DE AYUDAS HUMANITARIAS ALIMENTARIAS Y NO ALIMENTARIAS DESTINADAS A LA ATENCIÓN INMEDIATA DE LAS FAM | $ 220.000.000 | FUNDACION KAYROS | Alta |
-| 2026-11-10 | MUNICIPIO DE TAMESIS | CONTRATO INTERADMINSITRATIVO DE MANDATO SIN REPRESENTACIÓN PARA LA ELABORACIÓN DE ESTUDIOS Y DISEÑOS PARA LA R | $ 197.089.172 | EMPRESA DE DESARROLLO URBANO Y RURAL TAMESIS | Alta |
-| 2026-11-10 | ALCALDIA MUNICIPAL DE BUGA | AUNAR ESFUERZOS TECNICOS; ADMINISTRATIVOS Y ECONOMICOS EN LA IMPLEMENTACION Y/O EJECUCION DE LOS DIFERENTES PL | $ 85.714.286 | JUNTA DEFENSA CIVIL BUGA | Media |
-| 2026-11-10 | INSTITUTO DE FINANCIAMIENTO; PROMOCION Y DESARROLLO DE CALDAS | AUNAR ESFUERZOS PARA LA EJECUCIÓN DEL PROYECTO DENOMINADO CONSTRUCCIÓN DE UNA VIVIENDA DE DOS HABITACIONES PAR | $ 63.000.000 | MUNICIPIO DE ANSERMA CALDAS | Alta |
-| 2026-11-10 | INSTITUTO DE FINANCIAMIENTO; PROMOCION Y DESARROLLO DE CALDAS | AUNAR ESFUERZOS TÉCNICOS; ADMINISTRATIVOS Y FINANCIEROS PARA LA EJECUCIÓN DEL PROYECTO DENOMINADO REALIZAR LAS | $ 49.473.755 | MUNICIPIO DE BELALCAZAR | Alta |
-| 2026-11-10 | ALCALDIA MUNICIPAL DE GINEBRA | ADQUISICIÓN DE EQUIPOS TECNOLÓGICOS; MUEBLES Y ENSERES EN EL MUNICIPIO DE GINEBRA | $ 48.900.763 | IMPORSYSTEM SAS | Media |
-| 2026-11-11 | MUNICIPIO DE ANSERMA CALDAS | Compra de herramientas y equipos para adelantar las acciones de atención; mitigación y reconstrucción de las z | $ 39.348.000 | EDUARDO OSPINA OLAYA | Alta |
-| 2026-11-10 | DIRECCIÓN TERRITORIAL DE SALUD DE CALDAS | REALIZAR LAS OBRAS DE ADECUACIÓN LOCATIVA DEL INMUEBLE ARRENDADO POR LA DTSC EN EL BARRIO BELÉN DE MANIZALES;  | $ 37.086.400 | ORIUM SAS | Alta |
-| 2026-11-11 | MUNICIPIO DE SEVILLA | PRESTAR EL SERVICIO DE ALQUILER DE VOLQUETA CON CONDUCTOR PARA EL TRANSPORTE Y DESCARGUE DE ESCOMBROS Y MATERI | $ 30.000.000 | HAROLD JOSUE TAMAYO ORTIZ | Alta |
-| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales especializados a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento | $ 27.391.000 | JAVIER ALONSO RODRIGUEZ | Alta |
-| 2026-11-11 | ALCALDIA MUNICIPAL DE RESTREPO VALLE DEL CAUCA | SUMINISTRO DE COMBUSTIBLE PARA GARANTIZAR LA MOVILIDAD DE LOS VEHICULOS INSTITUCIONALES DEL MUNICIPIO DE RESTR | $ 26.155.030 | Estacion de Servicio Restrepo | Media |
-| 2026-11-10 | SERVICIO GEOLOGICO COLOMBIANO** | Prestar servicios profesionales de apoyo técnico para la estructuración de insumos de los estudios indicativos | $ 24.000.000 | FERNANDO DIAZ | Alta |
-| 2026-11-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales especializados a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento | $ 23.478.000 | CARLOS ARIEL SOTO RANGEL | Alta |
-| 2026-09-25 | MUNICIPIO DE CALIMA EL DARIEN VALLE | ARRENDAMIENTO DE BIEN INMUEBLE PARA EL TRASLADO Y FUNCIONAMIENTO TEMPORAL DE LAS SECRETARIAS; DEPENDENCIAS Y Á | $ 22.166.667 | BIENESTAR LTDA | Alta |
-| 2026-09-15 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICA Y ADMINISTRATIVAMENTE EN LAS INSPECCI | $ 21.000.000 | Faber Alberto Rozo Amaya | Alta |
-| 2026-11-12 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Plan de Ac | $ 19.820.500 | GUSTAVO ADOLFO BALANTA RAMIREZ | Alta |
-| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Plan de Ac | $ 19.820.500 | Julián Andrés Daza Quiguanas | Alta |
-| 2026-09-15 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 19.800.000 | Luisa Fernanda Beltran Lopez | Alta |
-| 2026-09-18 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 19.800.000 | DIEGO FERNANDO RAMIREZ NAVARRO | Alta |
-| 2026-09-15 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS PROFESIONALES COMO INGENIERO CIVIL PARA APOYAR TECNICAMENTE EN LAS INSPECCIONES Y EVALUACION | $ 19.800.000 | FABIAN ANDRES PERALTA PEREZ | Alta |
-| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales especializados a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento | $ 19.565.000 | PAOLA | Alta |
-| 2026-11-10 | MINISTERIO DE COMERCIO INDUSTRIA Y TURISMO - MINCIT | Prestar servicios profesionales para apoyar la articulación y el desarrollo de acciones orientadas al fortalec | $ 17.000.000 | LUIS ENRIQUE CASTAÑO ALVAREZ | Alta |
-| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Plan de Ac | $ 16.817.500 | LUZ ANGELA PEINADO MARTINEZ | Alta |
-| 2026-11-12 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Plan de Ac | $ 16.817.500 | SANDRA PAOLA MARMOLEJO LAMBERTINO | Alta |
-| 2026-11-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Plan de Ac | $ 16.817.500 | SEELER SANDOVAL BALANTA | Alta |
-| 2026-11-12 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Plan de Ac | $ 16.817.500 | Maria Critina Galarza | Alta |
-| 2026-11-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Plan de Ac | $ 16.817.500 | RUBY  SINISTERRA MONTAÑO | Alta |
-| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 16.756.000 | ESTEBAN NAVARRO LEAL | Alta |
-| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 16.756.000 | Cristian Camilo Giraldo Rodríguez | Alta |
-| 2026-11-10 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 16.756.000 | CRISTIAN ALONSO CAMPO LEZAMA | Alta |
+| 2026-11-12 | Departamento Administrativo de Planeación - Alcaldía de Tuluá | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA LA PLANEACIÓN, ORGANIZACIÓN, COORDINACIÓN Y DESARROLLO DE C | $ 127.292.296 | Contratación directa | Alta |
+| 2026-11-12 | ALCALDIA MUNICIPAL DE CHINCHINA | CONTRATAR LAS OBRAS DE MITIGACIÓN DE RIESGO ESTRUCTURAL, ADECUACIÓN PREVENTIVA, ACONDICIONAMIENTO ESPACIAL E I | $ 93.764.682 | Contratación directa | Alta |
+| 2026-11-12 | HOSPITAL SANTANDER ESE | ADECUACIÓNES DEL ÁREA DE PROCEDIMIENTOS DE LA ESE HOSPITAL SANTANDER DE CAICEDONIA - VALLE COMO PARTE DE LA MI | $ 40.047.734 | Contratación régimen especial | Alta |
+| 2026-11-12 | EMPRESAS MUNICIPALES DE CARTAGO E.S.P. | COMPRA DE ELASTÓMEROS PARA EL ACOPLAMIENTO DE LAS BOMBAS HORIZONTALES DEL SISTEMA DE BOMBEO Y COMPRA DE JUEGO  | $ 32.945.700 | Contratación régimen especial | Media |
+| 2026-11-11 | IE. GILBERTO ALZATE AVENDAÑO | REPARACIÓN DE CENTROS DE INTERÉS, REPARACIONES POST TERREMOTO, REPARACIONES EN GENERAL DE INFRAESTRUCTURA, COM | $ 23.389.136 | Contratación régimen especial | Alta |
+| 2026-11-11 | INSTITUCION EDUCATIVA PEDRO VICENTE ABADIA | SERVICIO DE MANTENIMIENTOS LOCATIVOS DE CIELO RAZOS Y PISO EN LAS SEDES (AUGUSTO DOMINGUEZ-FRANCISCO JOSE CALD | $ 22.550.000 | Contratación régimen especial | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 19.820.500 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 19.820.500 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales especializados a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento | $ 19.565.000 | Contratación directa | Alta |
+| 2026-11-11 | SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto | CONTRATAR EL SUMINISTRO DE COMBUSTIBLE Y LUBRICANTES PARA EL PARQUE AUTOMOTOR Y LA MAQUINARIA AMARILLA DEL CEN | $ 18.456.460 | Mínima cuantía | Media |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Plan de Ac | $ 16.817.500 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, een cumplimiento del P | $ 12.428.500 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, een cumplimiento del P | $ 12.428.500 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, een cumplimiento del P | $ 12.428.500 | Contratación directa | Alta |
+| 2026-11-12 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, een cumplimiento del P | $ 12.428.500 | Contratación directa | Alta |
+| 2026-11-11 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA ATENDER SITUACIONES TÉCNICAS EN EL CAMPO DE LA INGENIERÍA CIVIL, RE | $ 8.500.000 | Contratación directa | Alta |
+| 2026-11-11 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA ATENDER SITUACIONES TÉCNICAS EN EL CAMPO DE LA ARQUITECTURA, RELACI | $ 8.000.000 | Contratación directa | Alta |
+| 2026-11-11 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA ATENDER SITUACIONES TÉCNICAS EN EL CAMPO DE LA ARQUITECTURA, RELACI | $ 8.000.000 | Contratación directa | Alta |
+| 2026-11-11 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA ATENDER SITUACIONES TÉCNICAS EN EL CAMPO DE LA ARQUITECTURA, RELACI | $ 8.000.000 | Contratación directa | Alta |
+| 2026-11-11 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA ATENDER SITUACIONES TÉCNICAS EN EL CAMPO DE LA ARQUITECTURA, RELACI | $ 8.000.000 | Contratación directa | Alta |
+| 2026-11-11 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA ATENDER SITUACIONES TÉCNICAS EN EL CAMPO DE LA INGENIERÍA CIVIL, RE | $ 8.000.000 | Contratación directa | Alta |
+| 2026-11-12 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Pl | $ 7.102.000 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Pl | $ 7.102.000 | Contratación directa | Alta |
+| 2026-11-11 | DIRECCIÓN TERRITORIAL DE SALUD DE CALDAS | PRESTAR LOS SERVICIOS PROFESIONALES PARA APOYAR LOS PROGRAMAS DE SALUD MENTAL Y EL SEGUIMIENTO A ENFERMEDADES  | $ 7.001.600 | Contratación directa | Alta |
+| 2026-11-11 | MUNICIPIO DE CALIMA EL DARIEN VALLE | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA APOYAR A LA SECRETARÍA DE OBRAS PÚBLICAS DEL MUNICIPIO DE CALIMA EL | $ 6.779.990 | Contratación directa | Alta |
+| 2026-11-11 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS PROFESIONALES COMO GERONTÓLOGA PARA LA ATENCIÓN DE ADULTOS MAYORES AFECTADOS POR EL SI | $ 6.000.000 | Contratación directa | Alta |
+| 2026-11-12 | INSTITUCION EDUCATIVA JOSE FELIX RESTREPO | SUMINISTRO DE COLCHONETAS Y MATERIAL DIDÁCTICO PRIMERA INFANCIA GRADO JARDÍN DE LA INSTITUCIÓN EDUCATIVA JOSÉ  | $ 6.000.000 | Contratación régimen especial | Media |
+| 2026-11-12 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, een cumplimiento del P | $ 5.584.000 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Pl | $ 5.584.000 | Contratación directa | Alta |
+| 2026-11-11 | DEPARTAMENTO DEL VALLE DEL CAUCA - OFICINA PARA LA TRANSPARENCIA DE LA GESTIÓN PÚBLICA | PRESTACION DE SERVICIOS PROFESIONAL EN MERCADO CON ESPECIALIZACION EN COMUNICACION ESTRATEGICA DE MARCA EN ENT | $ 5.000.000 | Contratación directa | Media |
+| 2026-11-11 | MUNICIPIO DE ZARZAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA APOYAR EL MUNICIPIO DE ZARZAL, VALLE DEL CAUCA EN LA IMPLEMENTACIÓN | $ 5.000.000 | Contratación directa | Alta |
+| 2026-11-11 | MUNICIPIO DE ZARZAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA APOYAR EL MUNICIPIO DE ZARZAL, VALLE DEL CAUCA EN LA IMPLEMENTACIÓN | $ 5.000.000 | Contratación directa | Alta |
+| 2026-11-11 | MUNICIPIO DE ZARZAL | PRESTACION DE SERVICIOS DE APOYO OPERATIVO A LA DIRECCION JURIDICA, ORIENTADOS A LA GESTION DOCUMENTAL DE LOS  | $ 5.000.000 | Contratación directa | Alta |
+| 2026-11-11 | MUNICIPIO DE TORO | SUMINISTRO DE COMBUSTIBLES Y LUBRICANTES PARA GARANTIZAR LA OPERACIÓN Y MOVILIZACIÓN DE VEHÍCULOS, MAQUINARIA  | $ 5.000.000 | Mínima cuantía | Alta |
+| 2026-11-11 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA LA AUDITORÍA, VERIFICACIÓN Y DEPURACIÓN DE LA INFORMACIÓN T | $ 4.500.000 | Contratación directa | Alta |
+| 2026-11-11 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA LA AUDITORÍA, VERIFICACIÓN Y DEPURACIÓN DE LA INFORMACIÓN T | $ 3.900.000 | Contratación directa | Alta |
+| 2026-11-12 | INSTITUCION EDUCATIVA JOSE FELIX RESTREPO | SUMINISTRO DE GUÍAS PEDAGÓGICAS IMPRESAS PARA LOS ESTUDIANTES DE LA INSTITUCIÓN EDUCATIVA JOSÉ FÉLIX RESTREPO, | $ 3.609.984 | Contratación régimen especial | Alta |
+| 2026-11-12 | INSTITUCION EDUCATIVA  DISTRITAL ISAAC NEWTON | SERVICIOS DE ASESORÍA EN SEGURIDAD Y SALUD EN EL TRABAJO (SST), QUE COMPRENDE EL DISEÑO DEL PLAN INTEGRAL PARA | $ 3.055.000 | Contratación régimen especial | Alta |
+| 2026-11-11 | MUNICIPIO DE TORO | PRESTACIÓN DEL SERVICIO DE HOSPEDAJE PARA EL PERSONAL PROFESIONAL Y ASISTENCIAL VINCULADO A ASOCAÑA, QUE SE DE | $ 2.000.000 | Mínima cuantía | Alta |
+| 2026-11-11 | IE GILBERTO ALZATE AVENDAÑO | prestar los servicios personales de recarga de veinte (20) extintores de 10 libras Tipo ABC, y cambio válvula  | $ 1.200.000 | Contratación régimen especial | Media |
 
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| contratos | CO1.PCCNTR.10161590 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10158740 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10153571 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10050240 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10160798 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10160798 | nombre_supervisor | No definido | AMPARO MILENA RUBIO BUENO |
-| contratos | CO1.PCCNTR.10150703 | nombre_supervisor | No definido | JORGE ALEXANDER MORENO BORRERP |
-| contratos | CO1.PCCNTR.10164656 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10165105 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10165105 | nombre_supervisor | No definido | LUIS EDUARDO VARELA GUTIERREZ |
-| contratos | CO1.PCCNTR.10164559 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10162554 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10164304 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10158759 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10158759 | valor_pendiente_de_pago | 0 | 6510000 |
-| contratos | CO1.PCCNTR.10131726 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10160550 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10160550 | nombre_supervisor | No definido | AMPARO MILENA RUBIO BUENO |
-| contratos | CO1.PCCNTR.10163572 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10163572 | valor_pendiente_de_pago | 0 | 12494000 |
-| contratos | CO1.PCCNTR.10163826 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10149075 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10165702 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10166764 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10162935 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9798059 | nombre_supervisor | JOSE LUBIARDO VALENCIA ECHEVERRI | JOSE LUIS ORTIZ PATIÑO |
-| contratos | CO1.PCCNTR.10156923 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10159176 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10159176 | fecha_de_fin_del_contrato | 2026-12-31T12:00:00.000 | 2026-12-31T23:00:00.000 |
-| contratos | CO1.PCCNTR.10147024 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10164452 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10165878 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10165306 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10133122 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9817977 | estado_contrato | En ejecución | Cerrado |
-| contratos | CO1.PCCNTR.10163681 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10149025 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10150562 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10164303 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10159223 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10057139 | valor_del_contrato | 7894000 | 11841000 |
-| contratos | CO1.PCCNTR.10057139 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.10057139 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T11:59:00.000 |
-| contratos | CO1.PCCNTR.10057139 | dias_adicionados | 0 | 30 |
-| contratos | CO1.PCCNTR.10057139 | valor_pendiente_de_pago | 7894000 | 11841000 |
-| contratos | CO1.PCCNTR.10157886 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10164449 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10160404 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10160404 | fecha_de_fin_del_contrato | 2026-12-31T12:00:00.000 | 2026-12-31T23:00:00.000 |
-| contratos | CO1.PCCNTR.10160404 | nombre_supervisor | No definido | AMPARO MILENA RUBIO BUENO |
-| contratos | CO1.PCCNTR.10147030 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10150539 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10161430 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10161430 | fecha_de_fin_del_contrato | 2026-12-31T12:00:00.000 | 2026-12-31T23:00:00.000 |
-| contratos | CO1.PCCNTR.10161430 | nombre_supervisor | No definido | María Isabel Ortega Solano |
-| contratos | CO1.PCCNTR.10166697 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10159578 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10159578 | fecha_de_fin_del_contrato | 2026-12-31T12:00:00.000 | 2026-12-31T23:00:00.000 |
-| contratos | CO1.PCCNTR.10051020 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10166846 | estado_contrato | Aprobado | En ejecución |
+| procesos | CO1.REQ.11350242 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11346970 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11300826 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.11300826 | valor_total_adjudicacion | 0 | 107510550 |
+| procesos | CO1.REQ.11300826 | adjudicado | No | Si |
+| procesos | CO1.REQ.11300826 | nombre_del_proveedor | No Definido | GEOZAM LABORATORIO INGENIEROS CONSULTORE |
+| procesos | CO1.REQ.11300826 | fecha_adjudicacion |  | 2026-11-11T00:00:00.000 |
+| procesos | CO1.REQ.11300826 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11358624 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11251171 | valor_total_adjudicacion | 249999960 | 0 |
+| procesos | CO1.REQ.11251171 | adjudicado | Si | No |
+| procesos | CO1.REQ.11251171 | nombre_del_proveedor | ENIGMA DEVELOPERS S.A.S | No Definido |
+| procesos | CO1.REQ.11358746 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11357410 | estado_del_procedimiento | Evaluación | Seleccionado |
+| procesos | CO1.REQ.11358336 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11346076 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11347240 | estado_del_procedimiento | Publicado | Cancelado |
+| procesos | CO1.REQ.11035961 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.11035961 | fecha_adjudicacion |  | 2026-11-12T00:00:00.000 |
+| procesos | CO1.REQ.11358697 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11359217 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11263220 | valor_total_adjudicacion | 0 | 3500000000 |
+| procesos | CO1.REQ.11263220 | adjudicado | No | Si |
+| procesos | CO1.REQ.11263220 | nombre_del_proveedor | No Definido | MILITARY INDUSTRIES SAS |
+| procesos | CO1.REQ.11358400 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11356458 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11359784 | estado_del_procedimiento | En aprobación | Seleccionado |
+| procesos | CO1.REQ.11359417 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11351796 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11358275 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11300230 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11022817 | valor_total_adjudicacion | 269880000 | 136222500 |
+| procesos | CO1.REQ.11022817 | fecha_adjudicacion |  | 2026-10-02T00:00:00.000 |
+| procesos | CO1.REQ.11022817 | estado_resumen | Presentación de oferta | Adjudicado |
+| procesos | CO1.REQ.11357909 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11358818 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11319936 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11357805 | estado_del_procedimiento | Aprobado | Seleccionado |
+| procesos | CO1.REQ.11350178 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11358547 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11334402 | estado_del_procedimiento | Publicado | Evaluación |
+| procesos | CO1.REQ.11274636 | estado_del_procedimiento | Evaluación | Abierto |
+| procesos | CO1.REQ.11359473 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11357986 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11358476 | estado_del_procedimiento | Borrador | Publicado |
+| procesos | CO1.REQ.11358476 | fase |  | Presentación de oferta |
+| procesos | CO1.REQ.11358476 | estado_resumen | No Definido | Presentación de oferta |
+| procesos | CO1.REQ.11358742 | estado_del_procedimiento | Publicado | Seleccionado |
+| procesos | CO1.REQ.11356492 | estado_del_procedimiento | Publicado | Abierto |
+| procesos | CO1.REQ.11261184 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.11261184 | valor_total_adjudicacion | 0 | 6660208685 |
+| procesos | CO1.REQ.11261184 | adjudicado | No | Si |
+| procesos | CO1.REQ.11261184 | nombre_del_proveedor | No Definido | UNION TEMPORAL CERTILED |
+| procesos | CO1.REQ.11261184 | fecha_adjudicacion |  | 2026-11-11T00:00:00.000 |
+| procesos | CO1.REQ.11246703 | valor_total_adjudicacion | 0 | 396327277 |
+| procesos | CO1.REQ.11246703 | adjudicado | No | Si |
+| procesos | CO1.REQ.11246703 | nombre_del_proveedor | No Definido | GPM |
+| procesos | CO1.REQ.10955673 | estado_del_procedimiento | Abierto | Seleccionado |
+| procesos | CO1.REQ.10955673 | fecha_adjudicacion |  | 2026-11-11T00:00:00.000 |
+| procesos | CO1.REQ.10955673 | estado_resumen | Presentación de oferta | Adjudicado |
 
 ## Alertas
 

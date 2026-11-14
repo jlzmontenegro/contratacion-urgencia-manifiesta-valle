@@ -306602,3 +306602,314 @@
 2026-11-13 20:24:11,secop1,26-4-14835790-13761433,RISARALDA - CÁMARA DE COMERCIO DE PEREIRA,estado_del_proceso,Celebrado,Terminado sin Liquidar,Otra urgencia
 2026-11-13 20:24:11,secop1,26-13-14820787-13751127,VAUPÉS - ALCALDÍA MUNICIPIO DE CARURU,estado_del_proceso,Celebrado,Liquidado,Contexto
 2026-11-13 20:24:11,secop1,26-13-14820787-13751127,VAUPÉS - ALCALDÍA MUNICIPIO DE CARURU,fecha_liquidacion,,2026-11-11T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11350242,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11346970,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11300826,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_del_procedimiento,Abierto,Seleccionado,Media
+2026-11-14 09:05:54,procesos,CO1.REQ.11300826,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,valor_total_adjudicacion,0,107510550,Media
+2026-11-14 09:05:54,procesos,CO1.REQ.11300826,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,adjudicado,No,Si,Media
+2026-11-14 09:05:54,procesos,CO1.REQ.11300826,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,nombre_del_proveedor,No Definido,GEOZAM LABORATORIO INGENIEROS CONSULTORES S.A.S.,Media
+2026-11-14 09:05:54,procesos,CO1.REQ.11300826,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,fecha_adjudicacion,,2026-11-11T00:00:00.000,Media
+2026-11-14 09:05:54,procesos,CO1.REQ.11300826,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_resumen,Presentación de oferta,Adjudicado,Media
+2026-11-14 09:05:54,procesos,CO1.REQ.11358624,DEPARTAMENTO DEL VALLE DEL CAUCA - OFICINA PARA LA TRANSPARENCIA DE LA GESTIÓN PÚBLICA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11251171,GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARIA DE LAS TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES,valor_total_adjudicacion,249999960,0,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11251171,GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARIA DE LAS TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES,adjudicado,Si,No,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11251171,GOBERNACIÓN DEL VALLE DEL CAUCA - SECRETARIA DE LAS TECNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES,nombre_del_proveedor,ENIGMA DEVELOPERS S.A.S,No Definido,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11358746,DEPARTAMENTO DEL VALLE DEL CAUCA - OFICINA PARA LA TRANSPARENCIA DE LA GESTIÓN PÚBLICA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11357410,SANTIAGO DE CALI  DISTRITO ESPECIAL - SECRETARIA DE CULTURA,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11358336,DEPARTAMENTO DEL VALLE DEL CAUCA - OFICINA PARA LA TRANSPARENCIA DE LA GESTIÓN PÚBLICA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11346076,GOBERNACION DEL VALLE DEL CAUCA - DADI,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11347240,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Cancelado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11035961,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11035961,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,fecha_adjudicacion,,2026-11-12T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11358697,DEPARTAMENTO DEL VALLE DEL CAUCA - OFICINA PARA LA TRANSPARENCIA DE LA GESTIÓN PÚBLICA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11359217,DEPARTAMENTO DEL VALLE DEL CAUCA - OFICINA PARA LA TRANSPARENCIA DE LA GESTIÓN PÚBLICA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11263220,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,valor_total_adjudicacion,0,3500000000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11263220,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11263220,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,nombre_del_proveedor,No Definido,MILITARY INDUSTRIES SAS,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11358400,DEPARTAMENTO DEL VALLE DEL CAUCA - OFICINA PARA LA TRANSPARENCIA DE LA GESTIÓN PÚBLICA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11356458,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11359784,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11359417,DEPARTAMENTO DEL VALLE DEL CAUCA - OFICINA PARA LA TRANSPARENCIA DE LA GESTIÓN PÚBLICA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11351796,SANTIAGO DE CALI DISTRITO ESPECIAL -DEPARTAMENTO ADMINISTRATIVO DE DESARROLLO E INNOVACION INSTITUCIONAL,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11358275,DEPARTAMENTO DEL VALLE DEL CAUCA - OFICINA PARA LA TRANSPARENCIA DE LA GESTIÓN PÚBLICA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11300230,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE VIVIENDA SOCIAL Y HABITAT,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11022817,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA,valor_total_adjudicacion,269880000,136222500,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11022817,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA,fecha_adjudicacion,,2026-10-02T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11022817,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE HACIENDA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11357909,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA,estado_del_procedimiento,Aprobado,Seleccionado,Alta
+2026-11-14 09:05:54,procesos,CO1.REQ.11358818,DEPARTAMENTO DEL VALLE DEL CAUCA - OFICINA PARA LA TRANSPARENCIA DE LA GESTIÓN PÚBLICA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11319936,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11357805,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA,estado_del_procedimiento,Aprobado,Seleccionado,Alta
+2026-11-14 09:05:54,procesos,CO1.REQ.11350178,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11358547,DEPARTAMENTO DEL VALLE DEL CAUCA - OFICINA PARA LA TRANSPARENCIA DE LA GESTIÓN PÚBLICA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11334402,SECRETARIA DE EDUCACION DE CALI,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11274636,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE TECNOLOGIAS DE LA INFORMACION Y LAS COMUNICACIONES,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11359473,DEPARTAMENTO DEL VALLE DEL CAUCA - OFICINA PARA LA TRANSPARENCIA DE LA GESTIÓN PÚBLICA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11357986,DEPARTAMENTO DEL VALLE DEL CAUCA - OFICINA PARA LA TRANSPARENCIA DE LA GESTIÓN PÚBLICA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11358476,GOBERNACION DEL VALLE - SECRETARIA DE CONVIVENCIA Y SEGURIDAD CIUDADANA,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11358476,GOBERNACION DEL VALLE - SECRETARIA DE CONVIVENCIA Y SEGURIDAD CIUDADANA,fase,,Presentación de oferta,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11358476,GOBERNACION DEL VALLE - SECRETARIA DE CONVIVENCIA Y SEGURIDAD CIUDADANA,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11358742,DEPARTAMENTO DEL VALLE DEL CAUCA - OFICINA PARA LA TRANSPARENCIA DE LA GESTIÓN PÚBLICA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11356492,PLANEACIÓN MUNICIPAL CALI**,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11261184,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11261184,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,valor_total_adjudicacion,0,6660208685,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11261184,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11261184,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,nombre_del_proveedor,No Definido,UNION TEMPORAL CERTILED,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11261184,SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS,fecha_adjudicacion,,2026-11-11T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11246703,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,valor_total_adjudicacion,0,396327277,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11246703,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11246703,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,nombre_del_proveedor,No Definido,GPM,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.10955673,SECRETARIA DE MOVILIDAD Y TRANSPORTE,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.10955673,SECRETARIA DE MOVILIDAD Y TRANSPORTE,fecha_adjudicacion,,2026-11-11T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.10955673,SECRETARIA DE MOVILIDAD Y TRANSPORTE,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11358298,DEPARTAMENTO DEL VALLE DEL CAUCA - OFICINA PARA LA TRANSPARENCIA DE LA GESTIÓN PÚBLICA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11352033,SANTIAGO DE CALI DISTRITO ESPECIAL -DEPARTAMENTO ADMINISTRATIVO DE DESARROLLO E INNOVACION INSTITUCIONAL,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11355585,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA,estado_del_procedimiento,Aprobado,Seleccionado,Alta
+2026-11-14 09:05:54,procesos,CO1.REQ.11290733,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11319830,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11352938,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_del_procedimiento,Aprobado,Seleccionado,Alta
+2026-11-14 09:05:54,procesos,CO1.REQ.11356710,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE,estado_del_procedimiento,Aprobado,Seleccionado,Alta
+2026-11-14 09:05:54,procesos,CO1.REQ.11358858,DEPARTAMENTO DEL VALLE DEL CAUCA - OFICINA PARA LA TRANSPARENCIA DE LA GESTIÓN PÚBLICA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11351778,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11148280,SECRETARIA DE EDUCACION DE CALI,nombre_del_proveedor,Deicy Bravo Jojoa,No Definido,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11347826,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11321962,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DEL DEPORTE Y LA RECREACIÓN,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11349170,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11184025,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11184025,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,valor_total_adjudicacion,0,12536283436,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11184025,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11184025,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,nombre_del_proveedor,No Definido,UNIÓN TEMPORAL ALMACENAMIENTO SEG CALI 2026,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11184025,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE SEGURIDAD Y JUSTICIA,fecha_adjudicacion,,2026-11-12T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11358516,DEPARTAMENTO DEL VALLE DEL CAUCA - OFICINA PARA LA TRANSPARENCIA DE LA GESTIÓN PÚBLICA,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11319639,SANTIAGO DE CALI DISTRITO ESPECIAL - DEPARTAMENTO ADMINISTRATIVO DE TECNOLOGIAS DE LA INFORMACION Y LAS COMUNICACIONES,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11348847,SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE MOVILIDAD,estado_del_procedimiento,Publicado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.10829456,ESAP TERRITORIAL VALLE DEL CAUCA,estado_del_procedimiento,Abierto,Cancelado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11257302,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_resumen,Adjudicado,Presentación de oferta,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11302123,MUNICIPIO DE YUMBO VALLE,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11333005,REGIONAL DE ASEGURAMIENTO EN SALUD No. 4,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11346831,ALCALDIA MUNICIPIO DE VIJES,valor_total_adjudicacion,0,48828833,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11346831,ALCALDIA MUNICIPIO DE VIJES,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11346831,ALCALDIA MUNICIPIO DE VIJES,nombre_del_proveedor,No Definido,FERROAGRO,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11354505,MUNICIPIO DE SEVILLA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11351062,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11346737,MUNICIPIO DE ZARZAL,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11254877,MUNICIPIO DE YUMBO VALLE,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11254877,MUNICIPIO DE YUMBO VALLE,valor_total_adjudicacion,0,76193460,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11254877,MUNICIPIO DE YUMBO VALLE,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11254877,MUNICIPIO DE YUMBO VALLE,nombre_del_proveedor,No Definido,Lan Security Networks S.A.S,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11254877,MUNICIPIO DE YUMBO VALLE,fecha_adjudicacion,,2026-11-11T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11254877,MUNICIPIO DE YUMBO VALLE,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11359513,SENA REGIONAL VALLE Grupo de Apoyo Administrativo Mixto,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11345310,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11334364,MUNICIPIO DE BUGALAGRANDE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11338427,MUNICIPIO DE FLORIDA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11236410,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11348414,MUNICIPIO DE LA UNION,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11183708,CVC,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11268490,ALCALDIA MUNICIPAL DE BUGA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11357431,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11314558,ALCALDÍA MUNICIPAL DE ROLDANILLO,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11314558,ALCALDÍA MUNICIPAL DE ROLDANILLO,valor_total_adjudicacion,0,2700000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11314558,ALCALDÍA MUNICIPAL DE ROLDANILLO,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11314558,ALCALDÍA MUNICIPAL DE ROLDANILLO,nombre_del_proveedor,No Definido,FUNDACION MOM-PAZ,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11314558,ALCALDÍA MUNICIPAL DE ROLDANILLO,fecha_adjudicacion,,2026-11-12T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11314558,ALCALDÍA MUNICIPAL DE ROLDANILLO,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11359087,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,En aprobación,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11270066,MUNICIPIO DE ZARZAL,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11270066,MUNICIPIO DE ZARZAL,fecha_adjudicacion,,2026-11-11T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11270066,MUNICIPIO DE ZARZAL,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11247624,POLICIA METROPOLITANA SANTIAGO DE CALI,valor_total_adjudicacion,0,983630700,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11247624,POLICIA METROPOLITANA SANTIAGO DE CALI,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11247624,POLICIA METROPOLITANA SANTIAGO DE CALI,nombre_del_proveedor,No Definido,LA PREVISORA S.A. COMPAÑÍA DE SEGUROS,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11347257,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_del_procedimiento,Aprobado,Publicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11353313,MUNICIPIO DE ZARZAL,estado_del_procedimiento,Aprobado,Publicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11328523,MUNICIPIO DE YUMBO VALLE,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11328523,MUNICIPIO DE YUMBO VALLE,fecha_adjudicacion,,2026-11-12T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11337340,REGIONAL DE ASEGURAMIENTO EN SALUD No. 4,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11221229,VALLECAUCANA DE AGUAS S.A. E.S.P,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11221229,VALLECAUCANA DE AGUAS S.A. E.S.P,fecha_adjudicacion,,2026-11-11T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11345724,SENA REGIONAL VALLE Grupo Administrativo CTA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11196076,INSTITUTO MUNICIPAL DEL DEPORTE Y LA RECREACION ZARZALEÑA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11140861,CVC,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11345897,HOSPITAL KENNEDY ESE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11332314,INSTITUCION EDUCATIVA TITAN,estado_del_procedimiento,Evaluación,Cancelado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11329645,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11318375,UPRES VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11344961,MUNICIPIO DE TORO,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11176411,CVC,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11332179,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11315565,CVC,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11267693,Rama Judicial  Dirección Seccional de Administración Judicial de Cali,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11267693,Rama Judicial  Dirección Seccional de Administración Judicial de Cali,valor_total_adjudicacion,0,8484000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11267693,Rama Judicial  Dirección Seccional de Administración Judicial de Cali,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11267693,Rama Judicial  Dirección Seccional de Administración Judicial de Cali,nombre_del_proveedor,No Definido,IMPACTO LOGISTICO,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11267693,Rama Judicial  Dirección Seccional de Administración Judicial de Cali,fecha_adjudicacion,,2026-11-11T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11273690,RED DE SALUD DE LADERA EMPRESA SOCIAL DEL ESTADO,nombre_del_proveedor,STEPHANIA GODOY MONTOYA,No Definido,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11320077,CONCEJO MUNICIPAL RESTREPO VALLE,valor_total_adjudicacion,0,1738933,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11320077,CONCEJO MUNICIPAL RESTREPO VALLE,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11320077,CONCEJO MUNICIPAL RESTREPO VALLE,nombre_del_proveedor,No Definido,DEPOSITO Y ABARROTES MINEVA SAS,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11259679,MUNICIPIO DE FLORIDA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11259679,MUNICIPIO DE FLORIDA,valor_total_adjudicacion,0,197000000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11259679,MUNICIPIO DE FLORIDA,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11259679,MUNICIPIO DE FLORIDA,nombre_del_proveedor,No Definido,GRUPO EMPRESARIAL FALCON ZOMAC S.A.S,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11259679,MUNICIPIO DE FLORIDA,fecha_adjudicacion,,2026-11-11T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11259679,MUNICIPIO DE FLORIDA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11346227,INSTITUCION EDUCATIVA TECNICO COMERCIAL HERNANDO NAVIA VARON,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11248761,"Secretaría de Gobierno, Convivencia y Seguridad - Alcaldía de Tuluá",estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11248761,"Secretaría de Gobierno, Convivencia y Seguridad - Alcaldía de Tuluá",fecha_adjudicacion,,2026-11-11T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11248761,"Secretaría de Gobierno, Convivencia y Seguridad - Alcaldía de Tuluá",estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11312689,Rama Judicial  Dirección Seccional de Administración Judicial de Cali,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11281426,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11281426,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,valor_total_adjudicacion,0,61158204,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11281426,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11281426,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,nombre_del_proveedor,No Definido,SERPROVALLE S.A.S,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11281426,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,fecha_adjudicacion,,2026-11-11T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11281426,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11262752,ALCALDIA MUNICIPAL DE RESTREPO VALLE DEL CAUCA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11262752,ALCALDIA MUNICIPAL DE RESTREPO VALLE DEL CAUCA,fecha_adjudicacion,,2026-11-11T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11270259,Institución Universitaria de Roldanillo,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11294022,INSTITUTO NACIONAL PENITENCIARIO Y CARCELARIO INPEC DIRECCION REGIONAL OCCIDENTE,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11266601,UPRES VALLE,valor_total_adjudicacion,0,170464646,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11266601,UPRES VALLE,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11266601,UPRES VALLE,nombre_del_proveedor,No Definido,GRUPO MEDICO ESPECIALIZADO AIREC LTDA,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11134533,Contraloría Jamundi,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11325736,DISPENSARIO MEDICO DE CALI,estado_del_procedimiento,Evaluación,Seleccionado,Alta
+2026-11-14 09:05:54,procesos,CO1.REQ.11325736,DISPENSARIO MEDICO DE CALI,valor_total_adjudicacion,0,21253400,Alta
+2026-11-14 09:05:54,procesos,CO1.REQ.11325736,DISPENSARIO MEDICO DE CALI,adjudicado,No,Si,Alta
+2026-11-14 09:05:54,procesos,CO1.REQ.11325736,DISPENSARIO MEDICO DE CALI,nombre_del_proveedor,No Definido,SCALA ASCENSORES SAS,Alta
+2026-11-14 09:05:54,procesos,CO1.REQ.11325736,DISPENSARIO MEDICO DE CALI,fecha_adjudicacion,,2026-11-12T00:00:00.000,Alta
+2026-11-14 09:05:54,procesos,CO1.REQ.11323186,Secretaría de Educación - Alcaldía de Tuluá,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11296505,MUNICIPIO DE CARTAGO,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11296505,MUNICIPIO DE CARTAGO,valor_total_adjudicacion,0,30000000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11296505,MUNICIPIO DE CARTAGO,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11296505,MUNICIPIO DE CARTAGO,nombre_del_proveedor,No Definido,SuForma sas,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11296505,MUNICIPIO DE CARTAGO,fecha_adjudicacion,,2026-11-12T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11296505,MUNICIPIO DE CARTAGO,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11310579,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11310579,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,valor_total_adjudicacion,0,4912000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11310579,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11310579,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,nombre_del_proveedor,No Definido,SISA Soluciones Integrales en Salud S.A.S.,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11310579,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,fecha_adjudicacion,,2026-11-11T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11310579,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11326803,CVC,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11312611,ALCALDIA MUNICIPAL DE BUGA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11312611,ALCALDIA MUNICIPAL DE BUGA,fecha_adjudicacion,,2026-11-11T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11312611,ALCALDIA MUNICIPAL DE BUGA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11234475,ALCALDÍA MUNICIPIO DE PALMIRA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11226708,UPRES VALLE,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11226708,UPRES VALLE,fecha_adjudicacion,,2026-11-11T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11226708,UPRES VALLE,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11312050,Departamento Administrativo de Arte y Cultura - Alcaldía de Tuluá,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11253353,Sena - Centro Agropecuario de Buga,estado_del_procedimiento,Abierto,Seleccionado,Media
+2026-11-14 09:05:54,procesos,CO1.REQ.11253353,Sena - Centro Agropecuario de Buga,valor_total_adjudicacion,0,70732396,Media
+2026-11-14 09:05:54,procesos,CO1.REQ.11253353,Sena - Centro Agropecuario de Buga,adjudicado,No,Si,Media
+2026-11-14 09:05:54,procesos,CO1.REQ.11253353,Sena - Centro Agropecuario de Buga,nombre_del_proveedor,No Definido,EDWIN RICARDO HURTADO LOZANO,Media
+2026-11-14 09:05:54,procesos,CO1.REQ.11253353,Sena - Centro Agropecuario de Buga,fecha_adjudicacion,,2026-11-12T00:00:00.000,Media
+2026-11-14 09:05:54,procesos,CO1.REQ.11328914,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_del_procedimiento,Evaluación,Cancelado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11247229,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Evaluación,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11247229,ALCALDIA MUNICIPIO DE JAMUNDI,valor_total_adjudicacion,0,496206477,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11247229,ALCALDIA MUNICIPIO DE JAMUNDI,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11247229,ALCALDIA MUNICIPIO DE JAMUNDI,nombre_del_proveedor,No Definido,SI WORKER SAS,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11347182,ALCALDIA MUNICIPIO DE VIJES,valor_total_adjudicacion,0,7277418,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11347182,ALCALDIA MUNICIPIO DE VIJES,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11347182,ALCALDIA MUNICIPIO DE VIJES,nombre_del_proveedor,No Definido,HECTOR LIDER APOLINDAR BECERRA,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11034752,ALCALDIA DE CAICEDONIA,nombre_del_proveedor,MULTIREPUESTOS JD,JORGE IVAN CARDENAS VALENCIA,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11345820,ALCALDIA MUNICIPAL DE BUGA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11267070,UPRES VALLE,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11267070,UPRES VALLE,fecha_adjudicacion,,2026-11-11T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11267070,UPRES VALLE,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11347234,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_del_procedimiento,Aprobado,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11273983,MUNICIPIO DE ZARZAL,valor_total_adjudicacion,1192800,0,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11273983,MUNICIPIO DE ZARZAL,adjudicado,Si,No,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11273983,MUNICIPIO DE ZARZAL,nombre_del_proveedor,SINDTEC S.A.S.,No Definido,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11359663,FISCALÍA GENERAL DE LA NACIÓN REGIONAL PACÍFICO,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11319020,ALCALDIA MUNICIPAL DE ANDALUCIA VALLE DEL CAUCA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11051090,VALLECAUCANA DE AGUAS S.A. E.S.P,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11313928,MUNICIPIO DE CALIMA EL DARIEN VALLE,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11313928,MUNICIPIO DE CALIMA EL DARIEN VALLE,valor_total_adjudicacion,0,27300000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11313928,MUNICIPIO DE CALIMA EL DARIEN VALLE,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11313928,MUNICIPIO DE CALIMA EL DARIEN VALLE,nombre_del_proveedor,No Definido,JESUS LEONARDO PALOMA ROJAS,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11313928,MUNICIPIO DE CALIMA EL DARIEN VALLE,fecha_adjudicacion,,2026-11-12T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11313928,MUNICIPIO DE CALIMA EL DARIEN VALLE,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11299311,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11299311,ALCALDIA MUNICIPIO DE JAMUNDI,valor_total_adjudicacion,0,29285900,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11299311,ALCALDIA MUNICIPIO DE JAMUNDI,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11299311,ALCALDIA MUNICIPIO DE JAMUNDI,nombre_del_proveedor,No Definido,RAMIREZ MONCADA E HIJOS SAS,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11299311,ALCALDIA MUNICIPIO DE JAMUNDI,fecha_adjudicacion,,2026-11-11T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11299311,ALCALDIA MUNICIPIO DE JAMUNDI,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11346816,ALCALDIA MUNICIPAL DE GINEBRA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11008004,VALLECAUCANA DE AGUAS S.A. E.S.P,estado_resumen,Fase de Selección (Presentación de ofertas),Adjudicado,Otra urgencia
+2026-11-14 09:05:54,procesos,CO1.REQ.11236015,ALCALDÍA MUNICIPIO DE PALMIRA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11236015,ALCALDÍA MUNICIPIO DE PALMIRA,valor_total_adjudicacion,0,1163991360,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11236015,ALCALDÍA MUNICIPIO DE PALMIRA,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11236015,ALCALDÍA MUNICIPIO DE PALMIRA,nombre_del_proveedor,No Definido,CONSORCIO INTER CS ROZO 26,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11236015,ALCALDÍA MUNICIPIO DE PALMIRA,fecha_adjudicacion,,2026-11-12T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11311266,ALCALDÍA MUNICIPAL DE CANDELARIA VALLE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11218176,ARMADA NACIONAL BASE NAVAL ARC MALAGA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11218176,ARMADA NACIONAL BASE NAVAL ARC MALAGA,valor_total_adjudicacion,0,34949100,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11218176,ARMADA NACIONAL BASE NAVAL ARC MALAGA,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11218176,ARMADA NACIONAL BASE NAVAL ARC MALAGA,nombre_del_proveedor,No Definido,Ingeprak GZ S.A.S.,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11218176,ARMADA NACIONAL BASE NAVAL ARC MALAGA,fecha_adjudicacion,,2026-11-11T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11293222,FISCALÍA GENERAL DE LA NACIÓN REGIONAL PACÍFICO,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11348124,MUNICIPIO DE OBANDO VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11285101,MUNICIPIO DE TORO,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11285101,MUNICIPIO DE TORO,fecha_adjudicacion,,2026-11-11T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11285101,MUNICIPIO DE TORO,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11141940,ARMADA NACIONAL BASE NAVAL ARC MALAGA,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11141940,ARMADA NACIONAL BASE NAVAL ARC MALAGA,valor_total_adjudicacion,0,437533788,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11141940,ARMADA NACIONAL BASE NAVAL ARC MALAGA,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11141940,ARMADA NACIONAL BASE NAVAL ARC MALAGA,nombre_del_proveedor,No Definido,REVOLUCIÓN MOTORS SAS,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11141940,ARMADA NACIONAL BASE NAVAL ARC MALAGA,fecha_adjudicacion,,2026-11-11T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11141940,ARMADA NACIONAL BASE NAVAL ARC MALAGA,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11345171,ALCALDÍA MUNICIPAL DE ROLDANILLO,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11289155,SENA REGIONAL VALLE Grupo Administrativo CNPB,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11349972,ALCALDIA MUNICIPIO DE JAMUNDI,estado_del_procedimiento,Publicado,Evaluación,Media
+2026-11-14 09:05:54,procesos,CO1.REQ.11316280,MUNICIPIO DE YUMBO VALLE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11347503,MUNICIPIO DE CALIMA EL DARIEN VALLE,estado_del_procedimiento,Publicado,Cancelado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11328912,Secretaría de Educación - Alcaldía de Tuluá,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11301785,MUNICIPIO DE TORO,valor_total_adjudicacion,0,193403266,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11301785,MUNICIPIO DE TORO,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11301785,MUNICIPIO DE TORO,nombre_del_proveedor,No Definido,INGENIERIAS DEL NORTE S.A.S.,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11298386,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11344970,ALCALDIA DE CAICEDONIA,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11314815,ALCALDÍA MUNICIPAL DE ROLDANILLO,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11314815,ALCALDÍA MUNICIPAL DE ROLDANILLO,valor_total_adjudicacion,0,48900000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11314815,ALCALDÍA MUNICIPAL DE ROLDANILLO,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11314815,ALCALDÍA MUNICIPAL DE ROLDANILLO,nombre_del_proveedor,No Definido,INVERSIONES LITRUPE SAS,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11314815,ALCALDÍA MUNICIPAL DE ROLDANILLO,fecha_adjudicacion,,2026-11-12T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11314815,ALCALDÍA MUNICIPAL DE ROLDANILLO,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11346922,ALCALDIA MUNICIPIO DE VIJES,valor_total_adjudicacion,0,48961074,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11346922,ALCALDIA MUNICIPIO DE VIJES,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11346922,ALCALDIA MUNICIPIO DE VIJES,nombre_del_proveedor,No Definido,FERROAGRO,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11330907,ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11279752,Secretaria Municipal del Deporte y Recreación - Alcaldia de Tuluá,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11336177,MUNICIPIO DE ANSERMANUEVO,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11358600,INSTITUTO MUNICIPAL DE CULTURA DE YUMBO,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11345520,MUNICIPIO DE YUMBO VALLE,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11358383,MUNICIPIO DE CALIMA EL DARIEN VALLE,estado_del_procedimiento,Borrador,Publicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11358383,MUNICIPIO DE CALIMA EL DARIEN VALLE,fase,,Presentación de oferta,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11358383,MUNICIPIO DE CALIMA EL DARIEN VALLE,estado_resumen,No Definido,Presentación de oferta,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11297447,METRO CALI S.A ACUERDO DE REESTRUCTURACION,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11299808,INSTITUCION EDUCATIVA ANTONIA SANTOS,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11299808,INSTITUCION EDUCATIVA ANTONIA SANTOS,valor_total_adjudicacion,0,24647447,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11299808,INSTITUCION EDUCATIVA ANTONIA SANTOS,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11299808,INSTITUCION EDUCATIVA ANTONIA SANTOS,nombre_del_proveedor,No Definido,PRACTILAB SAS,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11299808,INSTITUCION EDUCATIVA ANTONIA SANTOS,fecha_adjudicacion,,2026-11-11T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11299808,INSTITUCION EDUCATIVA ANTONIA SANTOS,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11299926,INSTITUCION EDUCATIVA ANTONIA SANTOS,estado_del_procedimiento,Abierto,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11299926,INSTITUCION EDUCATIVA ANTONIA SANTOS,valor_total_adjudicacion,0,5000000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11299926,INSTITUCION EDUCATIVA ANTONIA SANTOS,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11299926,INSTITUCION EDUCATIVA ANTONIA SANTOS,nombre_del_proveedor,No Definido,TECSIND COLOMBIA SAS,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11299926,INSTITUCION EDUCATIVA ANTONIA SANTOS,fecha_adjudicacion,,2026-11-11T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11299926,INSTITUCION EDUCATIVA ANTONIA SANTOS,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11342320,MUNICIPIO DE EL CERRITO.,estado_del_procedimiento,Publicado,Abierto,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11250200,CVC,estado_del_procedimiento,Evaluación,Seleccionado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11250200,CVC,valor_total_adjudicacion,0,565897410,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11250200,CVC,adjudicado,No,Si,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11250200,CVC,nombre_del_proveedor,No Definido,CONSEJO DE GOBIERNO PROPIO DE LA ORGANIZACION REGIONAL INDIGENA VALLE DEL CAUCA,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11250200,CVC,fecha_adjudicacion,,2026-11-11T00:00:00.000,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11335472,INSTITUTO NACIONAL DE MEDICINA LEGAL Y CIENCIAS FORENSES,estado_del_procedimiento,Publicado,Evaluación,Alta
+2026-11-14 09:05:54,procesos,CO1.REQ.10844751,MUNICIPIO DE PAMPLONA,precio_base,70000000,104978531,Otra urgencia
+2026-11-14 09:05:54,procesos,CO1.REQ.11224858,ALCALDIA MUNICIPAL PIVIJAY MAGDALENA,estado_del_procedimiento,Publicado,Evaluación,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11194946,DIRECCION DE IMPUESTOS Y ADUANAS NACIONALES*,estado_resumen,Presentación de oferta,Adjudicado,Contexto
+2026-11-14 09:05:54,procesos,CO1.REQ.11185263,DIRECCION DE IMPUESTOS Y ADUANAS NACIONALES*,estado_del_procedimiento,Evaluación,Cancelado,Contexto
