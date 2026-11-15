@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-14 14:06  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-14 19:57  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -9,9 +9,9 @@
 | Contratos relacionados (alta + media) | 749 |
 | Valor de esos contratos | $ 194.677.742.857 |
 | Procesos relacionados (alta + media) | 1431 |
-| Contratos nuevos en esta ejecucion | 750 |
+| Contratos nuevos en esta ejecucion | 0 |
 | Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 1319 |
+| Modificaciones detectadas | 2 |
 | Registros revisados en total | 77259 |
 
 ### Desglose por nivel de gobierno
@@ -44,7 +44,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 278** (158 que suman en los indicadores, por $ 22.331.867.187).
+- **Relacionados con el sismo: 281** (160 que suman en los indicadores, por $ 22.472.300.261).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -107,112 +107,12 @@ _Se revisaron 364 registros de contratacion de estas dos entidades en la ventana
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA | 2 | $ 2.849.451.216 |
 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | 2 | $ 2.679.870.403 |
 
-## Contratos nuevos (37 relacionados de 750 publicados)
-
-| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
-|---|---|---|---:|---|---|
-| 2026-11-13 | Departamento Administrativo de Planeación - Alcaldía de Tuluá | ADQUIRIR MATERIALES DE CONSTRUCCION DEL KIT DE CEMENTOS Y ACERO PARA LA REPARACION Y EL MEJORAMIENTO DE VIVIEN | $ 2.075.917.500 | ALEJANDRO GUERRERO DIAZ | Alta |
-| 2026-11-13 | MUNICIPIO DE FLORIDA | CONTRATAR LA ADMINISTRACIÓN DELEGADA DE RECURSOS; BAJO LA MODALIDAD DE MANDATO SIN REPRESENTACIÓN; PARA LA GER | $ 1.791.996.212 | FONDO MIXTO CARTAGO | Media |
-| 2026-11-13 | Departamento Administrativo de Planeación - Alcaldía de Tuluá | ADQUIRIR MATERIALES DE CONSTRUCCION DEL KIT DE CUBIERTA PARA LA REPARACION Y EL MEJORAMIENTO DE VIVIENDAS AFEC | $ 1.053.130.843 | L&M TRADERS SAS | Alta |
-| 2026-11-13 | Departamento Administrativo de Planeación - Alcaldía de Tuluá | ADQUIRIR MATERIALES DE CONSTRUCCION DEL KIT DE MATERIALES VARIOS DE FERRETERIA PARA LA REPARACION Y EL MEJORAM | $ 800.000.000 | FERRIOBRAS S.A. | Alta |
-| 2026-11-13 | Departamento Administrativo de Planeación - Alcaldía de Tuluá | ADQUIRIR MATERIALES DE CONSTRUCCION DEL KIT DE MAMPOSTERIA PARA LA REPARACION Y EL MEJORAMIENTO DE VIVIENDAS A | $ 608.334.560 | Proveedor | Alta |
-| 2026-11-12 | Departamento Administrativo de Planeación - Alcaldía de Tuluá | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA LA PLANEACIÓN; ORGANIZACIÓN; COORDINACIÓN Y DESARROLLO DE C | $ 127.292.296 | L.U.G INGENIERIA Y CONSTRUCCIONES S.A.S | Alta |
-| 2026-11-12 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | REALIZAR LA TOMA DE MUESTRAS Y ENSAYOS GEOTÉCNICOS PARA LA ZONIFICACIÓN DE AMENAZA A DETALLE POR MOVIMIENTOS E | $ 107.510.550 | GEOZAM LABORATORIO INGENIEROS CONSULTORES S.A.S. | Media |
-| 2026-11-13 | Sena - Centro Agropecuario de Buga | Contratar el mantenimiento preventivo y correctivo de las torres de alturas del Centro Agropecuario de Buga (C | $ 70.732.396 | EDWIN RICARDO HURTADO LOZANO | Media |
-| 2026-11-10 | ALCALDIA MUNICIPAL DE GINEBRA | ADECUACIÓN DE LA INFRAESTRUCTURA FÍSICA DE LAS SEDES EDUCATIVAS OFICIALES DEL MUNICIPIO DE GINEBRA (VALLE DEL  | $ 67.394.266 | FUNDACION CDI - FUNDACIÓN PARA EL CRECIMIENTO Y DESARROLLO INTEGRAL | Alta |
-| 2026-11-12 | Institución Universitaria de Roldanillo | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA EJERCER LA SUPERVISIÓN TÉCNICO INDEPENDIENTE AL CONTRATO DE OBRA No | $ 64.637.737 | CRISTIAN MAURICIO TRUJILLO MORA | Alta |
-| 2026-11-12 | ALCALDIA MUNICIPAL DE GINEBRA | SUMINISTRO DE MATERIALES DE FERRETERÍA PARA ATENDER A POBLACIÓN AFECTADA POR EL EVENTO SÍSMICO DEL 10 DE AGOST | $ 29.999.997 | Javier Alexander Marin Gacia | Alta |
-| 2026-11-12 | DISPENSARIO MEDICO DE CALI | LA REPARACIÓN Y MANTENIMIENTO CORRECTIVO A TODO COSTO; CON SUMINISTRO E INSTALACIÓN DE REPUESTOS ORIGINALES; P | $ 21.253.400 | SCALA ASCENSORES SAS | Alta |
-| 2026-11-13 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales especializados a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento | $ 21.108.000 | Iris Angelica Micolta Mina | Alta |
-| 2026-11-13 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Plan de Ac | $ 19.820.500 | DAVID JAIME PULGARÍN | Alta |
-| 2026-11-13 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Plan de Ac | $ 19.820.500 | JESUS MANUEL ALEXANDER LOAIZA | Alta |
-| 2026-11-13 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Plan de Ac | $ 16.989.000 | ALFONSO LENIS LIBREROS | Alta |
-| 2026-11-12 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana; een cumplimiento del P | $ 12.428.500 | FRANCISCO JAVIER ECHEVERRY VIERA | Alta |
-| 2026-11-13 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Plan de Ac | $ 11.841.000 | Karen Solvey Rivera Gaviria | Alta |
-| 2026-11-13 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Plan de Ac | $ 11.326.000 | LUZ STELLA MONTENEGRO VALENCIA | Alta |
-| 2026-11-13 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Plan de Ac | $ 11.326.000 | margarita maria cardona santamaria | Alta |
-| 2026-11-13 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Pl | $ 9.772.000 | CARLOS VICENTE DIAZ CAÑADAS | Alta |
-| 2026-11-13 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Pl | $ 9.772.000 | Nubia Esperanza Espinoza Espitia | Alta |
-| 2026-11-13 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Plan de Ac | $ 9.610.000 | Yakelin Del Carmen Torrente Herrera | Alta |
-| 2026-11-12 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA ATENDER SITUACIONES TÉCNICAS EN EL CAMPO DE LA ARQUITECTURA; RELACI | $ 8.000.000 | ANGIE JUANITA VASQUEZ ORTIZ | Alta |
-| 2026-11-13 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Plan de Ac | $ 7.894.000 | RODRIGO ALBERTO MENA CASTELLANOS | Alta |
-| 2026-11-13 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Pl | $ 7.102.000 | Diany Marcela Murillo Marin | Alta |
-| 2026-11-13 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana; een cumplimiento del P | $ 7.102.000 | WILMER RENE ESPITIA CASTILLO | Alta |
-| 2026-11-13 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana; een cumplimiento del P | $ 7.102.000 | VIVIANA ANDREA BETANCOURT | Alta |
-| 2026-11-12 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Pl | $ 7.102.000 | JIDIVER LENIN TORRES ORTIZ | Alta |
-| 2026-11-13 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Pl | $ 7.102.000 | Esteban Lucas Miguel Jose Copete Alvarez | Alta |
-| 2026-11-13 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana; een cumplimiento del P | $ 7.102.000 | DERLY ALEJANDRA VILLA | Alta |
-| 2026-11-12 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana; een cumplimiento del P | $ 7.102.000 | LEYDI VANESSA CASTAÑO TRIVIÑO | Alta |
-| 2026-11-12 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana; een cumplimiento del P | $ 5.584.000 | alcaldia | Alta |
-| 2026-11-13 | MUNICIPIO DE ZARZAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA APOYAR EL MUNICIPIO DE ZARZAL; VALLE DEL CAUCA EN LA IMPLEMENTACIÓN | $ 5.000.000 | KARLA YURANY ROJAS SANCHEZ | Alta |
-| 2026-11-13 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Pl | $ 4.542.000 | Danna Marcela Valencia Gutierrez | Alta |
-| 2026-11-12 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA LA AUDITORÍA; VERIFICACIÓN Y DEPURACIÓN DE LA INFORMACIÓN T | $ 4.500.000 | Nohra Carolina Gama Garcia | Alta |
-| 2026-11-12 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS DE APOYO A LA GESTIÓN PARA LA AUDITORÍA; VERIFICACIÓN Y DEPURACIÓN DE LA INFORMACIÓN T | $ 3.900.000 | DANIEL ARCILA RESTREPO | Alta |
-
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| contratos | CO1.PCCNTR.10172508 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10166892 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10165484 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10165208 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10165101 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10164615 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10164482 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10167035 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10167159 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10167159 | valor_pendiente_de_pago | 0 | 4218000 |
-| contratos | CO1.PCCNTR.10097503 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10147038 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10164347 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10163756 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10174660 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10164323 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10072982 | valor_pendiente_de_pago | 6000000 | 9000000 |
-| contratos | CO1.PCCNTR.10171897 | valor_pendiente_de_pago | 0 | 7102000 |
-| contratos | CO1.PCCNTR.10147017 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10140005 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10125131 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10147619 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10164027 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10139640 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10139640 | nombre_supervisor | No definido | JUAN SEBASTIAN MARQUEZ DIAZ |
-| contratos | CO1.PCCNTR.10125731 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10125731 | valor_pendiente_de_pago | 0 | 6813000 |
-| contratos | CO1.PCCNTR.10146679 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10165716 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10163812 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10164502 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10166731 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10129183 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10129183 | fecha_de_fin_del_contrato | 2026-10-28T23:59:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.10175601 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10165112 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9924533 | valor_del_contrato | 8376000 | 11168000 |
-| contratos | CO1.PCCNTR.9924533 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9924533 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T11:59:00.000 |
-| contratos | CO1.PCCNTR.9924533 | dias_adicionados | 0 | 30 |
-| contratos | CO1.PCCNTR.9924533 | valor_pendiente_de_pago | 8376000 | 11168000 |
-| contratos | CO1.PCCNTR.10176762 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10173342 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10166787 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10164650 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10164650 | valor_pendiente_de_pago | 0 | 7102000 |
-| contratos | CO1.PCCNTR.10164663 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10167133 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10164654 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10164654 | valor_pendiente_de_pago | 0 | 4542000 |
-| contratos | CO1.PCCNTR.10164368 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10166416 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10176521 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10164164 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10163855 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10167082 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10013194 | valor_facturado | 6246375.3 | 12492750.6 |
-| contratos | CO1.PCCNTR.10173444 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10057807 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.10110810 | estado_contrato | Aprobado | En ejecución |
+| secop1 | 26-4-14836763-13762476 | estado_del_proceso | Celebrado | Terminado sin Liquidar |
+| secop1 | 26-4-14838863-13764013 | estado_del_proceso | Celebrado | Terminado sin Liquidar |
 
 ## Alertas
 
