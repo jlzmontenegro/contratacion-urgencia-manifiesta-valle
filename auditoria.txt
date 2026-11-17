@@ -57,11 +57,11 @@ contratos  Otras     IE Paulo VI - Palmira815004730            0           0    
 contratos  Otras     IE Ginebra La Salle891380108            0           0      0   OK
 contratos  Otras     IE Zaragoza - Cartago800034326            0           0      0   OK
 contratos  Otras     IE Camilo Torres - Dagua805015675            0           0      0   OK
-procesos   Alcaldia de Cali       890399011         9729        9802   9802   OK
-procesos   Gobernacion del Valle  890399029         3466        6505   6505   OK
+procesos   Alcaldia de Cali       890399011         9838        9911   9911   OK
+procesos   Gobernacion del Valle  890399029         3466        6504   6504   OK
 procesos   UNGRD / FNGRD          900478966            6           6      6   OK
 procesos   UNGRD / FNGRD          900978341          350         350    350   OK
-procesos   Desc.Cali EMCALI - Empresas Munici890399003          851         851    851   OK
+procesos   Desc.Cali EMCALI - Empresas Munici890399003          850         850    850   OK
 procesos   Desc.Cali Metro Cali S.A.805013171          220         220    220   OK
 procesos   Desc.Cali Red de Salud de Ladera E805027289          829         829    829   OK
 procesos   Desc.Cali Red de Salud del Norte E805027287          100         100    100   OK
@@ -76,7 +76,7 @@ procesos   Desc.Cali Camara de Comercio de Ca890399001            0           0 
 procesos   Desc.Gob  INDERVALLE - Instituto d805012896         2898        2898   2898   OK
 procesos   Desc.Gob  INFIVALLE - Instituto Fi890308051           56          56     56   OK
 procesos   Desc.Gob  INCIVA       800086201          178         178    178   OK
-procesos   Desc.Gob  Universidad del Valle890399010          696         696    696   OK
+procesos   Desc.Gob  Universidad del Valle890399010          705         705    705   OK
 procesos   Desc.Gob  Instituto Departamental 890325989           53          53     53   OK
 procesos   Desc.Gob  Biblioteca Departamental890399039           20          20     20   OK
 procesos   Desc.Gob  Vallecaucana de Aguas S.900333452           90          90     90   OK
@@ -91,7 +91,7 @@ procesos   Desc.Gob  Hospital Departamental S891900343           12          12 
 procesos   Desc.Gob  Hospital Departamental S891900441          147         147    147   OK
 procesos   Desc.Gob  Hospital Departamental C821003143          111         111    111   OK
 procesos   Desc.Gob  Contraloria Departamenta800090735            4           4      4   OK
-procesos   Otras     Hospital del Rosario de 891380070           20          20     20   OK
+procesos   Otras     Hospital del Rosario de 891380070           27          27     27   OK
 procesos   Otras     ESE Hospital San Jorge d890312380          164         164    164   OK
 procesos   Otras     Hospital Santa Lucia ESE891901296            8           8      8   OK
 procesos   Otras     Hospital Local Yotoco890309115            6           6      6   OK
