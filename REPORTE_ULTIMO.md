@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-16 22:40  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-17 21:50  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -10,8 +10,8 @@
 | Valor de esos contratos | $ 195.070.601.857 |
 | Procesos relacionados (alta + media) | 1512 |
 | Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 152 |
-| Modificaciones detectadas | 11 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 79581 |
 
 ### Desglose por nivel de gobierno
@@ -106,38 +106,6 @@ _Se revisaron 364 registros de contratacion de estas dos entidades en la ventana
 | MUNICIPIO DE CALIMA EL DARIEN VALLE | 12 | $ 3.068.941.547 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA | 2 | $ 2.849.451.216 |
 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | 2 | $ 2.679.870.403 |
-
-## Procesos nuevos (11 relacionados de 152 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-11-15 | INSTITUCION EDUCATIVA CIUDAD FLORIDA | REPARACIÓN DE 4 SALONES EN LA SEDE PRINCIPAL DE LA INSTITUCIÓN EDUCATIVA CIUDAD FLORIDA AFECTADA POR EL TERREM | $ 24.244.356 | Contratación régimen especial | Alta |
-| 2026-11-15 | INSTITUCION EDUCATIVA CIUDAD FLORIDA | Trabajos de Adecuación de Mesón, Cocina, Cielo Raso En PVC, Pintura Sobre Muros Reparcheo de Pisos y Cambio de | $ 17.700.000 | Contratación régimen especial | Alta |
-| 2026-11-15 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO | Prestar servicios profesionales en la comunicación institucional y administrativa en la Secretaría de Gobierno | $ 14.072.000 | Contratación directa | Alta |
-| 2026-11-15 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO | Prestar servicios profesionales en la implementación estrategias digitales en la Secretaría de Gobierno. | $ 14.072.000 | Contratación directa | Alta |
-| 2026-11-15 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO | Prestar servicios profesionales de análisis de datos en la Secretaría de Gobierno. | $ 11.326.000 | Contratación directa | Alta |
-| 2026-11-15 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO | Prestar servicios profesionales en las actividades que sean asignadas por la Secretaría de Gobierno. | $ 11.326.000 | Contratación directa | Alta |
-| 2026-11-15 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO | Prestar servicios profesionales de seguimiento a la Secretaría de Gobierno. | $ 11.326.000 | Contratación directa | Alta |
-| 2026-11-15 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO | Prestar servicios profesionales en la difusión del lenguaje claro a la comunidad a través de diferentes canale | $ 9.610.000 | Contratación directa | Alta |
-| 2026-11-15 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO | Prestar servicios profesionales en la gestión jurídica de la Secretaría de Gobierno. | $ 7.894.000 | Contratación directa | Alta |
-| 2026-11-15 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO | Prestar servicios profesionales financieros para la Secretaría de Gobierno. | $ 7.894.000 | Contratación directa | Alta |
-| 2026-11-15 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO | Prestar servicios de apoyo a la gestión y seguimiento en las actividades administrativas requeridas en la Secr | $ 7.102.000 | Contratación directa | Alta |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| procesos | CO1.REQ.11377418 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11378131 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11376231 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11373286 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11377822 | estado_del_procedimiento | Publicado | Seleccionado |
-| procesos | CO1.REQ.11120195 | valor_total_adjudicacion | 0 | 139549835 |
-| procesos | CO1.REQ.11120195 | adjudicado | No | Si |
-| procesos | CO1.REQ.11120195 | nombre_del_proveedor | No Definido | JAVIER GORDILLO GRISALES |
-| procesos | CO1.REQ.11031246 | fase | Presentación de oferta | Fase de ofertas |
-| procesos | CO1.REQ.11031246 | estado_resumen | Presentación de oferta | Fase de ofertas |
-| procesos | CO1.REQ.11378506 | nombre_del_proveedor | No Definido | ANDREA PEÑA  GUTIERREZ |
 
 ## Alertas
 
