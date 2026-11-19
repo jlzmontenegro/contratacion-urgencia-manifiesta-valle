@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-17 21:50  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-18 21:28  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -8,17 +8,17 @@
 |---|---|
 | Contratos relacionados (alta + media) | 778 |
 | Valor de esos contratos | $ 195.070.601.857 |
-| Procesos relacionados (alta + media) | 1512 |
-| Contratos nuevos en esta ejecucion | 0 |
-| Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 0 |
-| Registros revisados en total | 79581 |
+| Procesos relacionados (alta + media) | 1513 |
+| Contratos nuevos en esta ejecucion | 99 |
+| Procesos nuevos en esta ejecucion | 18 |
+| Modificaciones detectadas | 175 |
+| Registros revisados en total | 79691 |
 
 ### Desglose por nivel de gobierno
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 392 | $ 78.042.274.318 | 626 |
+| Alcaldía de Cali | 392 | $ 78.042.274.318 | 627 |
 | Gobernación del Valle | 11 | $ 14.200.666.042 | 89 |
 | Otras entidades del Valle | 317 | $ 93.562.442.024 | 653 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
@@ -27,11 +27,11 @@
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 9984 | $ 433.497.978.188 | 9285 |
+| Alcaldía de Cali | 10081 | $ 434.332.663.188 | 9293 |
 | Gobernación del Valle | 6794 | $ 182.047.536.624 | 6415 |
-| Descentralizadas de Cali | 449 | $ 163.021.989.097 | 2340 |
+| Descentralizadas de Cali | 449 | $ 163.021.989.097 | 2341 |
 | Descentralizadas de la Gobernación | 3366 | $ 76.298.180.105 | 4964 |
-| UNGRD | 8 | $ 198.717.066 | 354 |
+| UNGRD | 8 | $ 198.717.066 | 353 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
@@ -85,7 +85,7 @@ _No se listan 188 registros de SECOP I con urgencia manifiesta por otras causas 
 
 La UNGRD y el FNGRD no registran todavia contratacion relacionada con el sismo, ni en SECOP I ni en SECOP II.
 
-_Se revisaron 364 registros de contratacion de estas dos entidades en la ventana; los que no aluden al sismo no se listan. Quedan en los CSV._
+_Se revisaron 363 registros de contratacion de estas dos entidades en la ventana; los que no aluden al sismo no se listan. Quedan en los CSV._
 
 ## Contratos por entidad
 
@@ -106,6 +106,80 @@ _Se revisaron 364 registros de contratacion de estas dos entidades en la ventana
 | MUNICIPIO DE CALIMA EL DARIEN VALLE | 12 | $ 3.068.941.547 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA | 2 | $ 2.849.451.216 |
 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | 2 | $ 2.679.870.403 |
+
+## Contratos nuevos (0 relacionados de 99 publicados)
+
+## Procesos nuevos (2 relacionados de 18 publicados)
+
+| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
+|---|---|---|---:|---|---|
+| 2026-11-11 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA ATENDER SITUACIONES TÉCNICAS EN EL CAMPO DE LA INGENIERÍA CIVIL, RE | $ 8.000.000 | Contratación directa | Alta |
+| 2026-11-11 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana, en cumplimiento del Pl | $ 7.102.000 | Contratación directa | Alta |
+
+## Modificaciones sobre registros ya conocidos
+
+| Fuente | Identificador | Campo | Antes | Ahora |
+|---|---|---|---|---|
+| contratos | CO1.PCCNTR.10158366 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10158366 | valor_pendiente_de_pago | 0 | 5000000 |
+| contratos | CO1.PCCNTR.10155276 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10159532 | valor_pendiente_de_pago | 0 | 15400000 |
+| contratos | CO1.PCCNTR.10179707 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10166956 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10164021 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10189444 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10164019 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10179829 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10188694 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10179972 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10175162 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10183666 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10032424 | valor_del_contrato | 11841000 | 15788000 |
+| contratos | CO1.PCCNTR.10032424 | estado_contrato | En ejecución | Modificado |
+| contratos | CO1.PCCNTR.10032424 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.10032424 | dias_adicionados | 0 | 31 |
+| contratos | CO1.PCCNTR.10032424 | valor_pendiente_de_pago | 11841000 | 15788000 |
+| contratos | CO1.PCCNTR.10168090 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10172631 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10179716 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10178853 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10155198 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10155198 | fecha_de_fin_del_contrato | 2026-12-05T23:59:00.000 | 2026-12-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.10154369 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10179445 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10169042 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10164705 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10155747 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10179189 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10178866 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10155722 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10178862 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10155460 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10156904 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10034297 | valor_del_contrato | 10653000 | 14204000 |
+| contratos | CO1.PCCNTR.10034297 | estado_contrato | En ejecución | Modificado |
+| contratos | CO1.PCCNTR.10034297 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.10034297 | dias_adicionados | 0 | 31 |
+| contratos | CO1.PCCNTR.10034297 | valor_pendiente_de_pago | 10653000 | 14204000 |
+| contratos | CO1.PCCNTR.10155189 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10168739 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10156930 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10189232 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10164701 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10158198 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10158198 | valor_pendiente_de_pago | 0 | 12000000 |
+| contratos | CO1.PCCNTR.10157691 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10180118 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10178873 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10157926 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10156891 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10164505 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10158379 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10158379 | valor_pendiente_de_pago | 0 | 12000000 |
+| contratos | CO1.PCCNTR.10164149 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10155441 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10179720 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10156103 | estado_contrato | Aprobado | En ejecución |
 
 ## Alertas
 

@@ -1,10 +1,10 @@
-Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-11-19T00:00:00
+Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-11-20T00:00:00
 Entidades auditadas: 53  (2 centrales + 2 UNGRD/FNGRD + 12 descentralizadas de Cali + 18 de la Gobernacion + 19 otras del Valle)
 Comprobaciones: 53 entidades x 3 fuentes = 159, cada una por tres caminos independientes
 
 Fuente     Entidad                NIT         API simple  API amplio    CSV   Veredicto
 ------------------------------------------------------------------------------------
-contratos  Alcaldia de Cali       890399011        10304       10376  10376   OK
+contratos  Alcaldia de Cali       890399011        10401       10473  10473   OK
 contratos  Gobernacion del Valle  890399029         3626        6805   6805   OK
 contratos  UNGRD / FNGRD          900478966            7           7      7   OK
 contratos  UNGRD / FNGRD          900978341            1           1      1   OK
@@ -57,11 +57,11 @@ contratos  Otras     IE Paulo VI - Palmira815004730            0           0    
 contratos  Otras     IE Ginebra La Salle891380108            0           0      0   OK
 contratos  Otras     IE Zaragoza - Cartago800034326            0           0      0   OK
 contratos  Otras     IE Camilo Torres - Dagua805015675            0           0      0   OK
-procesos   Alcaldia de Cali       890399011         9838        9911   9911   OK
+procesos   Alcaldia de Cali       890399011         9847        9920   9920   OK
 procesos   Gobernacion del Valle  890399029         3466        6504   6504   OK
 procesos   UNGRD / FNGRD          900478966            6           6      6   OK
-procesos   UNGRD / FNGRD          900978341          350         350    350   OK
-procesos   Desc.Cali EMCALI - Empresas Munici890399003          850         850    850   OK
+procesos   UNGRD / FNGRD          900978341          349         349    349   OK
+procesos   Desc.Cali EMCALI - Empresas Munici890399003          851         851    851   OK
 procesos   Desc.Cali Metro Cali S.A.805013171          220         220    220   OK
 procesos   Desc.Cali Red de Salud de Ladera E805027289          829         829    829   OK
 procesos   Desc.Cali Red de Salud del Norte E805027287          100         100    100   OK
@@ -104,7 +104,7 @@ procesos   Otras     Personeria Municipal de 891900493          229         232 
 procesos   Otras     Personeria Municipal de 901159063            1           1      1   OK
 procesos   Otras     Personeria Municipal de 900085817            2           2      2   OK
 procesos   Otras     Personeria Municipal de 800100524           87          87     87   OK
-procesos   Otras     Concejo Municipal de Jam890399046          963         965    965   OK
+procesos   Otras     Concejo Municipal de Jam890399046          964         966    966   OK
 procesos   Otras     IE Alfonso Lopez Pumarej805000057            8           8      8   OK
 procesos   Otras     IE Paulo VI - Palmira815004730            6           6      6   OK
 procesos   Otras     IE Ginebra La Salle891380108            4           4      4   OK
