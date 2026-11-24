@@ -1,10 +1,10 @@
-Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-11-24T00:00:00
+Ventana verificada: 2026-08-10T00:00:00 <= fecha < 2026-11-26T00:00:00
 Entidades auditadas: 53  (2 centrales + 2 UNGRD/FNGRD + 12 descentralizadas de Cali + 18 de la Gobernacion + 19 otras del Valle)
 Comprobaciones: 53 entidades x 3 fuentes = 159, cada una por tres caminos independientes
 
 Fuente     Entidad                NIT         API simple  API amplio    CSV   Veredicto
 ------------------------------------------------------------------------------------
-contratos  Alcaldia de Cali       890399011        11298       11374  11374   OK
+contratos  Alcaldia de Cali       890399011        11407       11483  11483   OK
 contratos  Gobernacion del Valle  890399029         3784        7234   7234   OK
 contratos  UNGRD / FNGRD          900478966            7           7      7   OK
 contratos  UNGRD / FNGRD          900978341            1           1      1   OK
@@ -57,8 +57,8 @@ contratos  Otras     IE Paulo VI - Palmira815004730            0           0    
 contratos  Otras     IE Ginebra La Salle891380108            0           0      0   OK
 contratos  Otras     IE Zaragoza - Cartago800034326            0           0      0   OK
 contratos  Otras     IE Camilo Torres - Dagua805015675            0           0      0   OK
-procesos   Alcaldia de Cali       890399011        10605       10678  10678   OK
-procesos   Gobernacion del Valle  890399029         3616        6929   6929   OK
+procesos   Alcaldia de Cali       890399011        10722       10795  10795   OK
+procesos   Gobernacion del Valle  890399029         3623        6936   6936   OK
 procesos   UNGRD / FNGRD          900478966            6           6      6   OK
 procesos   UNGRD / FNGRD          900978341          351         351    351   OK
 procesos   Desc.Cali EMCALI - Empresas Munici890399003          871         871    871   OK
@@ -73,7 +73,7 @@ procesos   Desc.Cali Personeria Distrital de 805003895          123         123 
 procesos   Desc.Cali Contraloria de Santiago 800217831           48          48     48   OK
 procesos   Desc.Cali IE Normal Superior Santi800243065           18          18     18   OK
 procesos   Desc.Cali Camara de Comercio de Ca890399001            0           0      0   OK
-procesos   Desc.Gob  INDERVALLE - Instituto d805012896         3027        3027   3027   OK
+procesos   Desc.Gob  INDERVALLE - Instituto d805012896         3071        3071   3071   OK
 procesos   Desc.Gob  INFIVALLE - Instituto Fi890308051           70          70     70   OK
 procesos   Desc.Gob  INCIVA       800086201          180         180    180   OK
 procesos   Desc.Gob  Universidad del Valle890399010          731         731    731   OK
@@ -107,7 +107,7 @@ procesos   Otras     Personeria Municipal de 800100524           93          93 
 procesos   Otras     Concejo Municipal de Jam890399046          972         974    974   OK
 procesos   Otras     IE Alfonso Lopez Pumarej805000057            9           9      9   OK
 procesos   Otras     IE Paulo VI - Palmira815004730            8           8      8   OK
-procesos   Otras     IE Ginebra La Salle891380108            6           6      6   OK
+procesos   Otras     IE Ginebra La Salle891380108            7           7      7   OK
 procesos   Otras     IE Zaragoza - Cartago800034326            4           4      4   OK
 procesos   Otras     IE Camilo Torres - Dagua805015675            5           5      5   OK
 secop1     Alcaldia de Cali       890399011            0           0      0   OK
@@ -153,7 +153,7 @@ secop1     Otras     Empresa de Servicio Publ900401903            0           0 
 secop1     Otras     Empresas Publicas Munici891900474            0           0      0   OK
 secop1     Otras     Instituto Municipal del 891900528            0           0      0   OK
 secop1     Otras     Instituto Distrital del 890399992           72          72     72   OK
-secop1     Otras     Personeria Municipal de 891900493            0          67     67   OK
+secop1     Otras     Personeria Municipal de 891900493            0          70     70   OK
 secop1     Otras     Personeria Municipal de 901159063            0           0      0   OK
 secop1     Otras     Personeria Municipal de 900085817            0           0      0   OK
 secop1     Otras     Personeria Municipal de 800100524            0           0      0   OK
