@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-24 00:14  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-24 18:27  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -9,9 +9,9 @@
 | Contratos relacionados (alta + media) | 910 |
 | Valor de esos contratos | $ 205.664.166.210 |
 | Procesos relacionados (alta + media) | 1702 |
-| Contratos nuevos en esta ejecucion | 142 |
-| Procesos nuevos en esta ejecucion | 204 |
-| Modificaciones detectadas | 394 |
+| Contratos nuevos en esta ejecucion | 0 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 84830 |
 
 ### Desglose por nivel de gobierno
@@ -106,101 +106,6 @@ _Se revisaron 365 registros de contratacion de estas dos entidades en la ventana
 | MUNICIPIO DE CALIMA EL DARIEN VALLE | 12 | $ 3.068.941.547 |
 | INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ | 3 | $ 2.988.923.153 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA | 2 | $ 2.849.451.216 |
-
-## Contratos nuevos (7 relacionados de 142 publicados)
-
-| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
-|---|---|---|---:|---|---|
-| 2026-11-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO | Prestar servicios profesionales en la gestión jurídica de la Secretaría de Gobierno. | $ 20.748.000 | Jenny Viviana Montaño Hernández | Alta |
-| 2026-11-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | CARLOS ANDRES PAREDES CORREA | Alta |
-| 2026-11-21 | ALCALDÍA MUNICIPIO DE BALBOA RISARALDA | Prestar los servicios profesionales como ingeniero civil para realizar visitas técnicas de inspección; evaluac | $ 10.000.000 | Victor Yesith Sanchez Lozano | Alta |
-| 2026-11-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios de apoyo a la gestión a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del D | $ 7.102.000 | Lina Marcela Davalos | Alta |
-| 2026-11-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios de apoyo a la gestión a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del D | $ 7.102.000 | Sofia Morales Marin | Alta |
-| 2026-11-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 5.920.500 | Brigitte Valeria Corral Grillo | Alta |
-| 2026-11-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios de apoyo a la gestión a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del D | $ 5.326.500 | FRANCISCO JAVIER LERMA ROSERO | Alta |
-
-## Procesos nuevos (13 relacionados de 204 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-11-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO | Prestar servicios profesionales en la gestión jurídica de la Secretaría de Gobierno. | $ 20.748.000 | Contratación directa | Alta |
-| 2026-11-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 18.741.000 | Contratación directa | Alta |
-| 2026-11-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestación de servicios profesionales para el desarrollo de actividades técnicas, administrativas y operativas | $ 11.326.000 | Contratación directa | Alta |
-| 2026-11-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Contratación directa | Alta |
-| 2026-11-21 | ALCALDÍA MUNICIPIO DE BALBOA RISARALDA | Prestar los servicios profesionales como ingeniero civil para realizar visitas técnicas de inspección, evaluac | $ 10.000.000 | Contratación directa | Alta |
-| 2026-11-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios de apoyo a la gestión a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del D | $ 7.102.000 | Contratación directa | Alta |
-| 2026-11-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios de apoyo a la gestión a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del D | $ 7.102.000 | Contratación directa | Alta |
-| 2026-11-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios de apoyo a la gestión a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del D | $ 7.102.000 | Contratación directa | Alta |
-| 2026-11-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios de apoyo a la gestión a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del D | $ 5.584.000 | Contratación directa | Alta |
-| 2026-11-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 5.584.000 | Contratación directa | Alta |
-| 2026-11-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios de apoyo a la gestión a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del D | $ 5.584.000 | Contratación directa | Alta |
-| 2026-11-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios de apoyo a la gestión a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del D | $ 5.326.500 | Contratación directa | Alta |
-| 2026-11-21 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Se fundamenta la omisión de inclusión del proceso en el PAA, en la necesidad de solventar la contingencia deri | $ 3.163.500 | Contratación directa | Alta |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| contratos | CO1.PCCNTR.10072378 | valor_del_contrato | 12494000 | 18741000 |
-| contratos | CO1.PCCNTR.10072378 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.10072378 | dias_adicionados | 0 | 31 |
-| contratos | CO1.PCCNTR.10072378 | valor_pendiente_de_pago | 12494000 | 18741000 |
-| contratos | CO1.PCCNTR.10190404 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10189300 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10179991 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10202428 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10179253 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10163174 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10189354 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10194265 | valor_pendiente_de_pago | 0 | 12000000 |
-| contratos | CO1.PCCNTR.10189608 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10199866 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10199866 | valor_pendiente_de_pago | 0 | 6000000 |
-| contratos | CO1.PCCNTR.10184476 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10199856 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10191411 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10176216 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.10201391 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10163654 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10163654 | valor_pendiente_de_pago | 0 | 11326000 |
-| contratos | CO1.PCCNTR.10189933 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10189006 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10200204 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10200945 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10191413 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10161006 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10191207 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10189482 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10191602 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10124373 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10178849 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10199581 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10189453 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10189158 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10191608 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10163557 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10163557 | valor_pendiente_de_pago | 0 | 11326000 |
-| contratos | CO1.PCCNTR.10201026 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10189399 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10177040 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10189616 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10179006 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10199807 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10199807 | valor_pendiente_de_pago | 0 | 12000000 |
-| contratos | CO1.PCCNTR.10201717 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10200938 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10193168 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10189433 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10185117 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10191416 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10202881 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10198982 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10198982 | valor_pendiente_de_pago | 0 | 14000000 |
-| contratos | CO1.PCCNTR.10200108 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10200108 | valor_pendiente_de_pago | 0 | 10000000 |
-| contratos | CO1.PCCNTR.10202474 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10200187 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10191407 | estado_contrato | Aprobado | En ejecución |
 
 ## Alertas
 
