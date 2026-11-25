@@ -1,50 +1,50 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-24 23:04  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-25 18:03  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
 | Indicador | Valor |
 |---|---|
-| Contratos relacionados (alta + media) | 976 |
-| Valor de esos contratos | $ 206.138.335.264 |
+| Contratos relacionados (alta + media) | 1083 |
+| Valor de esos contratos | $ 206.825.334.597 |
 | Procesos relacionados (alta + media) | 1778 |
-| Contratos nuevos en esta ejecucion | 379 |
-| Procesos nuevos en esta ejecucion | 282 |
-| Modificaciones detectadas | 1086 |
-| Registros revisados en total | 85491 |
+| Contratos nuevos en esta ejecucion | 697 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 2710 |
+| Registros revisados en total | 86188 |
 
 ### Desglose por nivel de gobierno
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 527 | $ 82.505.339.818 | 758 |
+| Alcaldía de Cali | 542 | $ 82.659.555.818 | 758 |
 | Gobernación del Valle | 11 | $ 14.200.666.042 | 99 |
-| Otras entidades del Valle | 378 | $ 98.879.444.230 | 771 |
+| Otras entidades del Valle | 470 | $ 99.412.227.563 | 771 |
 | UNGRD y FNGRD | 0 | $ 0 | 0 |
 
 ### Contratación ordinaria de la Alcaldía y la Gobernación
 
 | Grupo | Contratos | Valor | Procesos |
 |---|---:|---:|---:|
-| Alcaldía de Cali | 11074 | $ 482.263.901.126 | 10100 |
-| Gobernación del Valle | 7239 | $ 190.129.003.285 | 6845 |
+| Alcaldía de Cali | 11199 | $ 504.987.425.208 | 10100 |
+| Gobernación del Valle | 7311 | $ 191.976.944.329 | 6845 |
 | Descentralizadas de Cali | 454 | $ 289.873.545.938 | 2383 |
-| Descentralizadas de la Gobernación | 3420 | $ 81.167.827.880 | 5209 |
+| Descentralizadas de la Gobernación | 3588 | $ 82.227.112.964 | 5209 |
 | UNGRD | 8 | $ 198.717.066 | 355 |
 
 No tiene relación con el sismo y no suma en los indicadores de arriba. Se incluye porque son las dos entidades que expidieron los decretos.
 
 ### Referencia: fuera del Valle del Cauca
 
-- **Relacionados con el sismo:** 390 contratos ($ 152.526.213.613) y 523 procesos de otras regiones del país.
-- **Urgencia manifiesta por otras causas:** 356 contratos ($ 843.239.289.793) y 595 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
+- **Relacionados con el sismo:** 399 contratos ($ 153.984.127.965) y 523 procesos de otras regiones del país.
+- **Urgencia manifiesta por otras causas:** 357 contratos ($ 855.941.550.212) y 595 procesos. No tienen relación con el sismo; sirven para dimensionar cuánta urgencia manifiesta se declara en el país por motivos distintos.
 
 Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 303** (172 que suman en los indicadores, por $ 23.486.185.928).
+- **Relacionados con el sismo: 304** (172 que suman en los indicadores, por $ 23.486.185.928).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -79,7 +79,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-08-13 | CHOCÓ - ALCALDÍA MUNICIPIO DE ATRATO | ATENCION PSICOSOCIAL PARA LA RECUPERACION EMOCIONAL; EL FORTALECIMIENTO COMUNITARIO Y LA PROMOCION DE LA RESIL | $ 181.676.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 | 2026-08-21 | RISARALDA - CÁMARA DE COMERCIO DE PEREIRA | SOLICITUD DE SERVICIO DE TECHOS Y PANELERIAS PARA DIVISIONES UTILIZADOS PARA ADECUAR LOS ESPACIOS Y PODER GUAR | $ 163.506.000 | Régimen Especial · No Definido | Alta |
 
-_No se listan 201 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
+_No se listan 208 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
 
 ## UNGRD y FNGRD · NIT 900.478.966-6 y 900.978.341
 
@@ -94,7 +94,7 @@ _Se revisaron 365 registros de contratacion de estas dos entidades en la ventana
 | UNIAJC | 11 | $ 38.925.526.098 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE BIENESTAR SOCIAL | 3 | $ 20.563.745.133 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS | 4 | $ 17.165.580.410 |
-| SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | 330 | $ 16.505.573.226 |
+| SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | 342 | $ 16.626.497.226 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO | 2 | $ 12.986.853.502 |
 | GOBERNACION DEL VALLE DEL CAUCA - SECRETARIA DE VIVIENDA Y HABITAT | 1 | $ 8.592.000.000 |
 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | 16 | $ 7.445.143.022 |
@@ -107,160 +107,115 @@ _Se revisaron 365 registros de contratacion de estas dos entidades en la ventana
 | INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ | 3 | $ 2.988.923.153 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA | 2 | $ 2.849.451.216 |
 
-## Contratos nuevos (68 relacionados de 379 publicados)
+## Contratos nuevos (116 relacionados de 697 publicados)
 
 | Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
 |---|---|---|---:|---|---|
+| 2026-11-23 | MUNICIPIO DE LA PLATA | AUNAR ESFUERZOS ADMINISTRATIVOS; FINANCIEROS; TÉCNICOS Y COMUNITARIOS ENTRE EL MUNICIPIO DE LA PLATA - HUILA Y | $ 490.000.000 | ASOJUNTAS | Alta |
+| 2026-11-23 | Municipio de Montenegro-- | CONTRATO DE SUMINISTRO DE MATERIALES Y ELEMENTOS DE FERRETERIA NECESARIOS PARA EL MEJORAMIENTO; LA ADECUACIÓN  | $ 336.000.000 | CONSTRUTECQ SAS | Alta |
+| 2026-11-24 | DEPARTAMENTO DE ANTIOQUIA// | CONVENIO INTERADMINISTRATIVO PARA AUNAR ESFUERZOS ENTRE EL DEPARTAMENTO DE ANTIOQUIA Y EL MUNICIPIO DE TÁMESIS | $ 211.391.749 | MUNICIPIO DE TAMESIS | Alta |
+| 2026-11-24 | DEPARTAMENTO DE ANTIOQUIA// | CONVENIO INTERADMINISTRATIVO PARA AUNAR ESFUERZOS ENTRE EL DEPARTAMENTO DE ANTIOQUIA Y EL MUNICIPIO DE CAÑASGO | $ 207.377.940 | MUNICIPIO DE CAÑASGORDAS | Alta |
+| 2026-11-24 | DEPARTAMENTO DE ANTIOQUIA// | CONVENIO INTERADMINISTRATIVO PARA AUNAR ESFUERZOS ENTRE EL DEPARTAMENTO DE ANTIOQUIA Y EL MUNICIPIO DE CAMPAME | $ 195.606.664 | MUNICIPIO DE CAMPAMENTO | Alta |
 | 2026-11-23 | MUNICIPIO DE YUMBO VALLE | PRESTAR EL SERVICIO LOGÍSTICO EN EL MARCO DE LA DECLARATORIA DE CALAMIDAD PÚBLICA DECRETO 0144 DEL 10 DE AGOST | $ 180.000.000 | JMJ INNOVA S.A.S | Alta |
-| 2026-11-23 | ALCALDIA MUNICIPIO DE DOSQUEBRADAS | ALQUILER DE HERRAMIENTAS; MAQUINARIA Y EQUIPO MENOR PARA LA RECONSTRUCCIÓN; REHABILITACIÓN; MEJORAMIENTO Y MAN | $ 90.000.000 | H.D GROUP SAS | Alta |
-| 2026-11-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 18.741.000 | Juan David Sánchez Montoya | Alta |
-| 2026-11-23 | ALCALDIA DE CAICEDONIA | Realizar apoyo al establecimiento de Mercados Campesinos Rurales del Municipio de Caicedonia mediante el sumin | $ 13.000.000 | JORGE IVAN CARDENAS VALENCIA | Media |
-| 2026-11-23 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | ALFARO ROGER GARCIA MARIN | Alta |
-| 2026-11-23 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Daniela Vicuña Barrera | Alta |
-| 2026-11-23 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | DIEGO FERNANDO MANRIQUE CAICEDO | Alta |
-| 2026-11-23 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | ADRIANA PATRICIA ROJAS BONILLA | Alta |
-| 2026-11-23 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | VICTOR RUANO | Alta |
-| 2026-11-23 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Plan de Ac | $ 7.894.000 | senided sierra rodas | Alta |
-| 2026-11-23 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios de apoyo a la gestión a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Pl | $ 7.102.000 | MARIO EMILIANO MURILLO MORENO | Alta |
-| 2026-11-23 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios de apoyo a la gestión a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del D | $ 7.102.000 | KEVIN ADRIAN SANCHEZ SEPULVEDA | Alta |
-| 2026-11-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios de apoyo a la gestión a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del D | $ 5.584.000 | JAVIER GARCIA GIRONZA | Alta |
-| 2026-11-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios de apoyo a la gestión a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del D | $ 5.584.000 | Luz Amparo Ortiz Ramirez | Alta |
-| 2026-11-23 | MUNICIPIO DE ZARZAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA APOYAR EL MUNICIPIO DE ZARZAL; VALLE DEL CAUCA EN LA IMPLEMENTACIÓN | $ 5.000.000 | fabiana parra vargas | Alta |
-| 2026-11-23 | MUNICIPIO DE ZARZAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA APOYAR EL MUNICIPIO DE ZARZAL; VALLE DEL CAUCA EN LA IMPLEMENTACIÓN | $ 5.000.000 | Merly Johana Velasquez Corrales | Alta |
-| 2026-11-23 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios de apoyo a la gestión a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del D | $ 4.218.000 | ISABELLA AVENDAÑO LONDOÑO | Alta |
-| 2026-11-23 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACION DE SERVICIOS DE APOYO A LA GESTIÓN PARA BRINDAR ACOMPAÑAMIENTO OPERATIVO A LA SUPERVISIÓN DEL CONTR | $ 3.453.333 | juan camilo duran suarez | Alta |
-| 2026-11-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios de apoyo a la gestión a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del D | $ 3.163.500 | Diana Marcela Salazar Silva | Alta |
-| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | KAREN TATIANA AGUILERA SALCEDO | Alta |
-| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | DIANA   YULIETH  AGUDELO   ORDOÑEZ | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | JEISON ANDRES CALERO DIAZ | Alta |
-| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando a cabo actividades de la caracterización de las condiciones s | $ 3.000.000 | Daniela acosta guzman | Alta |
-| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando a cabo actividades de la caracterización de las condiciones s | $ 3.000.000 | FARU MAGLIONE LEUDO MERA | Alta |
-| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | PIEDAD CARDENAS VILLANUEVA | Alta |
-| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | LUISA FERNANDA GOMEZ RUIZ | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | DANEICY RAMIREZ MARIN | Alta |
-| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | AURA MARIA BARRAGAN QUINTERO | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | OSCAR ESCOBAR POTES | Alta |
-| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | CARLOS HERNAN DAVALOS  DORADO | Alta |
-| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | ANGELICA MARIA HERNANDEZ MATERON | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando a cabo actividades de la caracterización de las condiciones s | $ 3.000.000 | ADRIANA ROCIO MARMOLEJO | Alta |
-| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando a cabo actividades de la caracterización de las condiciones s | $ 3.000.000 | ANDRES BADILLO CORTES | Alta |
-| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | KATERIHNE GARZON SANCHEZ | Alta |
-| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando a cabo actividades de la caracterización de las condiciones s | $ 3.000.000 | Luis Arturo Tabroda Taborda | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | DIANA MARCELA MENDEZ VIERA | Alta |
-| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | DIRLADIZ YINED HERRERA BUSTAMANRW | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | Paula Andrea Narvaez Zuleta | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | MARIA YOLANDA RIVAS LOPEZ | Alta |
-| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | Juan Daniel Amariles Álvarez | Alta |
-
-## Procesos nuevos (76 relacionados de 282 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-11-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Contratación directa | Alta |
-| 2026-11-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Contratación directa | Alta |
-| 2026-11-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Contratación directa | Alta |
-| 2026-11-22 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | PRESTACIÓN DE SERVICIOS PROFESIONALES EN EL MARCO DEL PROYECTO   SERVICIO DE ATENCIÓN, DIVULGACIÓN, ASISTENCIA | $ 10.000.000 | Contratación directa | Media |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios profesionales para apoyar la realización de visitas de diagnóstico e inspección sanitaria en | $ 8.550.000 | Contratación directa | Media |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios profesionales para apoyar la realización de visitas de diagnóstico e inspección sanitaria en | $ 8.550.000 | Contratación directa | Media |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios profesionales para apoyar la realización de visitas de diagnóstico e inspección sanitaria en | $ 8.550.000 | Contratación directa | Media |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios profesionales para apoyar la realización de visitas de diagnóstico e inspección sanitaria en | $ 8.550.000 | Contratación directa | Media |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios profesionales para apoyar la realización de visitas de diagnóstico e inspección sanitaria en | $ 8.550.000 | Contratación directa | Media |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión en el proceso de agua para consumo humano y saneamiento básico en la s | $ 6.600.000 | Contratación directa | Media |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios profesionales al proceso de agua para consumo humano y saneamiento básico, con énfasis en vi | $ 6.000.000 | Contratación directa | Media |
-| 2026-11-22 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios de apoyo a la gestión a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del D | $ 4.218.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección, diagnóstico sanitario e i | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección, diagnóstico sanitario e i | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección, diagnóstico sanitario e i | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección, diagnóstico sanitario e i | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección, diagnóstico sanitario e i | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección, diagnóstico sanitario e i | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección, diagnóstico sanitario e i | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando a cabo actividades de la caracterización de las condiciones s | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección, diagnóstico sanitario e i | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección, diagnóstico sanitario e i | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando a cabo actividades de la caracterización de las condiciones s | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección, diagnóstico sanitario e i | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando a cabo actividades de la caracterización de las condiciones s | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando a cabo actividades de la caracterización de las condiciones s | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección, diagnóstico sanitario e i | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección, diagnóstico sanitario e i | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando a cabo actividades de la caracterización de las condiciones s | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección, diagnóstico sanitario e i | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección, diagnóstico sanitario e i | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección, diagnóstico sanitario e i | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección, diagnóstico sanitario e i | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección, diagnóstico sanitario e i | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección, diagnóstico sanitario e i | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando a cabo actividades de la caracterización de las condiciones s | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección, diagnóstico sanitario e i | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando a cabo actividades de la caracterización de las condiciones s | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando a cabo actividades de la caracterización de las condiciones s | $ 3.000.000 | Contratación directa | Alta |
-| 2026-11-22 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección, diagnóstico sanitario e i | $ 3.000.000 | Contratación directa | Alta |
+| 2026-11-23 | ALCALDIA MUNICIPAL DE GINEBRA | PRESTAR EL SERVICIO DE APOYO TÉCNICO Y ADMINISTRATIVO PARA EL FOMENTO; FORTALECIMIENTO Y COMERCIALIZACIÓN DE L | $ 49.000.000 | FUNDACION PRINTCO COLOMBIA | Media |
+| 2026-11-23 | Rama Judicial  Dirección Seccional de Administración Judicial de Cali | CONTRATAR EN NOMBRE DE LA NACIÓN - CONSEJO SUPERIOR DE LA JUDICATURA - DIRECCIÓN SECCIONAL DE ADMINISTRACIÓN J | $ 16.783.333 | Inversiones Andrade Muñoz | Alta |
+| 2026-11-23 | ALCALDIA MUNICIPAL DE YOTOCO | PRESTAR SERVICIOS PROFESIONALES ESPECIALIZADOS DE TOPOGRAFÍA; FOTOGRAMETRÍA; GEORREFERENCIACIÓN; PROCESAMIENTO | $ 15.000.000 | PJM | Alta |
+| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 14.072.000 | CAROLINA DUQUE GIRALDO | Alta |
+| 2026-11-24 | SECRETARIA DE EDUCACION DE CALI | Prestación de servicios como profesional especializado para la Secretaría de Educación del Distrito Especial d | $ 14.072.000 | LINA BOTERO | Alta |
+| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 14.072.000 | JOSE EDILBERTO CIFUENTES RAMIREZ | Alta |
+| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 12.494.000 | JAIRO ALBERTO RODRIGUEZ RIOS | Alta |
+| 2026-11-23 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Plan de Ac | $ 11.326.000 | FRANQUE ELISA MURILLO ALOMIA | Alta |
+| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | ANDRES FERNANDO ARCOS LOPEZ | Alta |
+| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Jhonalberth Palacios Sánchez | Alta |
+| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | DANNA VALENTINA DELGADO SANCHEZ | Alta |
+| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | EDILBERTO ESPINOSA SARMIENTO | Alta |
+| 2026-11-23 | ALCALDÍA MUNICIPAL DE CANDELARIA VALLE | PRESTACIÓN DE SERVICIOS PROFESIONALES EN EL MARCO DEL PROYECTO  SERVICIO DE ATENCIÓN; DIVULGACIÓN; ASISTENCIA  | $ 10.000.000 | Yesid Leandro | Media |
+| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 9.610.000 | STEVEN SALOMON GIL | Alta |
+| 2026-11-23 | CAMARA DE REPRESENTANTES | BRINDAR APOYO Y SEGUIMIENTO LEGISLATIVO; A LAS COMISIONES ACCIDENTALES Y EL PLAN DE DESARROLLO EN MATERIA DE S | $ 8.000.000 | ana isabel preciado  alvarez | Alta |
+| 2026-11-23 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE PAZ Y CULTURA CIUDADANA | Prestar los servicios profesionales a la Secretaría de Paz y Cultura Ciudadana; en cumplimiento del Plan de Ac | $ 7.894.000 | Karol Andrea Hormaza Cantoñi | Alta |
+| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios de apoyo a la gestión a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del D | $ 7.102.000 | Deiner Julián Motta Almario | Alta |
+| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios de apoyo a la gestión a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del D | $ 7.102.000 | DIANA YANETH LONDOÑO | Alta |
+| 2026-11-23 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA ATENDER SITUACIONES TÉCNICAS EN EL CAMPO DE LA INGENIERÍA CIVIL; RE | $ 6.333.333 | Daniel Rubio | Alta |
+| 2026-11-23 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios de apoyo a la gestión a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del D | $ 5.584.000 | EDINSON HERRERA VARGAS | Alta |
+| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios de apoyo a la gestión a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del D | $ 5.584.000 | JUAN CARLOS CALAMBAS ESCOBAR | Alta |
+| 2026-11-24 | MUNICIPIO DE YUMBO VALLE | PRESTAR POR SUS PROPIOS MEDIOS Y AUTONOMÍA ADMINISTRATIVA LOS SERVICIOS PERSONALES DENTRO DEL PROYECTO DENOMIN | $ 4.000.000 | ISABEL CRISTINA MEJOY | Media |
+| 2026-11-23 | ALCALDIA MUNICIPIO DE BETANIA | Prestación de servicios de apoyo a la gestión documental y organización del archivo municipal de Betania; medi | $ 3.204.666 | Juliana Andrea Posada Rios | Alta |
+| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | VALERIA GUERRERO MUÑOZ | Alta |
+| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | Gabriela Lopez Restrepo | Alta |
+| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando a cabo actividades de la caracterización de las condiciones s | $ 3.000.000 | Ana Maria Loaiza Fernandez | Alta |
+| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | PAOLA ANDREA RUIZ GARCIA | Alta |
+| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | marisol ortiz | Alta |
+| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando a cabo actividades de la caracterización de las condiciones s | $ 3.000.000 | Enrry Augusto Ortiz Cuero | Alta |
+| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando a cabo actividades de la caracterización de las condiciones s | $ 3.000.000 | DEISY LORENA SERRANO LONDOÑO | Alta |
+| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | JOHN EDISON PERALTA MUÑOZ | Alta |
+| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | Paola Andrea Ramirez Pimiento | Alta |
+| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando a cabo actividades de la caracterización de las condiciones s | $ 3.000.000 | SEBASTIAN GIRALDO MEJIA | Alta |
+| 2026-11-23 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | CRISTIAN ALBEIRO OSPINA RIVERA | Alta |
 
 ## Modificaciones sobre registros ya conocidos
 
 | Fuente | Identificador | Campo | Antes | Ahora |
 |---|---|---|---|---|
-| contratos | CO1.PCCNTR.10193935 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10175906 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10175906 | valor_pendiente_de_pago | 0 | 7894000 |
-| contratos | CO1.PCCNTR.10200288 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10085884 | valor_del_contrato | 12000000 | 18000000 |
-| contratos | CO1.PCCNTR.10085884 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.10085884 | fecha_de_fin_del_contrato | 2026-11-16T12:59:00.000 | 2026-12-31T12:59:00.000 |
-| contratos | CO1.PCCNTR.10085884 | dias_adicionados | 0 | 45 |
-| contratos | CO1.PCCNTR.10085884 | valor_pendiente_de_pago | 12000000 | 18000000 |
-| contratos | CO1.PCCNTR.9968529 | estado_contrato | En ejecución | Cerrado |
-| contratos | CO1.PCCNTR.10193176 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10201336 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10193450 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10203048 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9820109 | estado_contrato | En ejecución | Cerrado |
-| contratos | CO1.PCCNTR.10203681 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10203562 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10198340 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10198340 | valor_pendiente_de_pago | 0 | 12494000 |
-| contratos | CO1.PCCNTR.10198439 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10198439 | valor_pendiente_de_pago | 0 | 5584000 |
-| contratos | CO1.PCCNTR.10191620 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10198197 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10198197 | valor_pendiente_de_pago | 0 | 6510000 |
-| contratos | CO1.PCCNTR.10189665 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10189973 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10189973 | nombre_supervisor | LEDYS YOHANNA CASTAÑEDA MOSQUERA | Álvaro José Zuluaga Cardona |
-| contratos | CO1.PCCNTR.9984327 | valor_pagado | 0 | 6000000 |
-| contratos | CO1.PCCNTR.9984327 | valor_facturado | 0 | 6000000 |
-| contratos | CO1.PCCNTR.9984327 | valor_pendiente_de_pago | 6000000 | 0 |
-| contratos | CO1.PCCNTR.10161596 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10204955 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10203142 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10171171 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9807808 | valor_pagado | 0 | 7000000 |
-| contratos | CO1.PCCNTR.9807808 | valor_facturado | 0 | 7000000 |
-| contratos | CO1.PCCNTR.9807808 | valor_pendiente_de_pago | 7000000 | 0 |
-| contratos | CO1.PCCNTR.9973335 | valor_pagado | 6500000 | 13000000 |
-| contratos | CO1.PCCNTR.9973335 | valor_facturado | 6500000 | 13000000 |
-| contratos | CO1.PCCNTR.9973335 | valor_pendiente_de_pago | 6500000 | 0 |
-| contratos | CO1.PCCNTR.10202759 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10139204 | valor_del_contrato | 7894000 | 11841000 |
-| contratos | CO1.PCCNTR.10139204 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.10139204 | valor_pendiente_de_pago | 7894000 | 11841000 |
-| contratos | CO1.PCCNTR.9973310 | valor_pagado | 0 | 12000000 |
-| contratos | CO1.PCCNTR.9973310 | valor_facturado | 0 | 12000000 |
-| contratos | CO1.PCCNTR.9973310 | valor_pendiente_de_pago | 12000000 | 0 |
-| contratos | CO1.PCCNTR.10083038 | valor_del_contrato | 10000000 | 15000000 |
-| contratos | CO1.PCCNTR.10083038 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.10083038 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.10083038 | dias_adicionados | 0 | 31 |
-| contratos | CO1.PCCNTR.10083038 | valor_pendiente_de_pago | 10000000 | 15000000 |
-| contratos | CO1.PCCNTR.9972651 | valor_pagado | 0 | 4000000 |
-| contratos | CO1.PCCNTR.9972651 | valor_facturado | 0 | 4000000 |
-| contratos | CO1.PCCNTR.9972651 | valor_pendiente_de_pago | 8000000 | 4000000 |
-| contratos | CO1.PCCNTR.10189940 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10179708 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9820569 | valor_pendiente_de_pago | 10000000 | 12500000 |
-| contratos | CO1.PCCNTR.10080928 | valor_del_contrato | 7000000 | 10500000 |
-| contratos | CO1.PCCNTR.10080928 | estado_contrato | En ejecución | Modificado |
+| contratos | CO1.PCCNTR.10185238 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10196282 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10202573 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10202573 | nombre_supervisor | No definido | Natalia Zuluaga Londoño |
+| contratos | CO1.PCCNTR.10169029 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10189696 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9819223 | valor_pendiente_de_pago | 30800000 | 38500000 |
+| contratos | CO1.PCCNTR.10195134 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9999850 | valor_pagado | 0 | 10000000 |
+| contratos | CO1.PCCNTR.9999850 | valor_pendiente_de_pago | 10000000 | 0 |
+| contratos | CO1.PCCNTR.9819263 | valor_del_contrato | 40000000 | 50000000 |
+| contratos | CO1.PCCNTR.9819263 | estado_contrato | En ejecución | Modificado |
+| contratos | CO1.PCCNTR.9819263 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.9819263 | dias_adicionados | 0 | 31 |
+| contratos | CO1.PCCNTR.9819263 | valor_pendiente_de_pago | 40000000 | 50000000 |
+| contratos | CO1.PCCNTR.10203462 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.9820230 | valor_del_contrato | 14000000 | 17500000 |
+| contratos | CO1.PCCNTR.9820230 | estado_contrato | En ejecución | Modificado |
+| contratos | CO1.PCCNTR.9820230 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.9820230 | dias_adicionados | 0 | 31 |
+| contratos | CO1.PCCNTR.9820230 | valor_pendiente_de_pago | 14000000 | 17500000 |
+| contratos | CO1.PCCNTR.10066624 | valor_del_contrato | 15400000 | 23100000 |
+| contratos | CO1.PCCNTR.10066624 | estado_contrato | En ejecución | Modificado |
+| contratos | CO1.PCCNTR.10066624 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.10066624 | dias_adicionados | 0 | 31 |
+| contratos | CO1.PCCNTR.10066624 | valor_pendiente_de_pago | 15400000 | 23100000 |
+| contratos | CO1.PCCNTR.9999853 | valor_pagado | 0 | 8000000 |
+| contratos | CO1.PCCNTR.9999853 | valor_pendiente_de_pago | 8000000 | 0 |
+| contratos | CO1.PCCNTR.9820351 | valor_del_contrato | 12000000 | 15000000 |
+| contratos | CO1.PCCNTR.9820351 | estado_contrato | En ejecución | Modificado |
+| contratos | CO1.PCCNTR.9820351 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.9820351 | dias_adicionados | 0 | 31 |
+| contratos | CO1.PCCNTR.9820351 | valor_pendiente_de_pago | 12000000 | 15000000 |
+| contratos | CO1.PCCNTR.9995834 | valor_del_contrato | 15000000 | 20000000 |
+| contratos | CO1.PCCNTR.9995834 | estado_contrato | En ejecución | Modificado |
+| contratos | CO1.PCCNTR.9995834 | fecha_de_fin_del_contrato | 2026-11-30T00:00:00.000 | 2026-12-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.9995834 | dias_adicionados | 0 | 31 |
+| contratos | CO1.PCCNTR.9995834 | valor_pendiente_de_pago | 15000000 | 20000000 |
+| contratos | CO1.PCCNTR.9819330 | valor_del_contrato | 16000000 | 20000000 |
+| contratos | CO1.PCCNTR.9819330 | estado_contrato | En ejecución | Modificado |
+| contratos | CO1.PCCNTR.9819330 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
+| contratos | CO1.PCCNTR.9819330 | dias_adicionados | 0 | 31 |
+| contratos | CO1.PCCNTR.9819330 | valor_pendiente_de_pago | 16000000 | 20000000 |
+| contratos | CO1.PCCNTR.10182310 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10182310 | nombre_supervisor | No definido | NEY HERNANDO MUÑOZ SANCHEZ |
+| contratos | CO1.PCCNTR.10202589 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10000932 | valor_pagado | 0 | 12000000 |
+| contratos | CO1.PCCNTR.10000932 | valor_pendiente_de_pago | 12000000 | 0 |
+| contratos | CO1.PCCNTR.10000718 | valor_pagado | 0 | 8000000 |
+| contratos | CO1.PCCNTR.10000718 | valor_pendiente_de_pago | 8000000 | 0 |
+| contratos | CO1.PCCNTR.10200775 | estado_contrato | Aprobado | En ejecución |
+| contratos | CO1.PCCNTR.10042334 | valor_del_contrato | 7000000 | 10500000 |
+| contratos | CO1.PCCNTR.10042334 | estado_contrato | En ejecución | Modificado |
+| contratos | CO1.PCCNTR.10042334 | fecha_de_fin_del_contrato | 2026-11-30T23:55:00.000 | 2026-12-31T11:55:00.000 |
+| contratos | CO1.PCCNTR.10042334 | dias_adicionados | 0 | 30 |
+| contratos | CO1.PCCNTR.10042334 | valor_pendiente_de_pago | 7000000 | 10500000 |
+| contratos | CO1.PCCNTR.9821202 | valor_del_contrato | 28000000 | 35000000 |
+| contratos | CO1.PCCNTR.9821202 | estado_contrato | En ejecución | Modificado |
+| contratos | CO1.PCCNTR.9821202 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-30T23:59:00.000 |
+| contratos | CO1.PCCNTR.9821202 | dias_adicionados | 0 | 30 |
 
 ## Alertas
 
@@ -291,7 +246,6 @@ _Se revisaron 365 registros de contratacion de estas dos entidades en la ventana
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - UNIDAD ADMINISTRATIVA ESPECIAL DE SERVICIOS PUBLICOS - $ 2.995.480.410 - GESTION Y SERVICIOS CORPORATIVOS E.S.T. SAS [SECOP II]
 - **Contrato de alto valor**: SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE DESARROLLO ECONOMICO - $ 9.178.570.453 - FUNDACION WWB COLOMBIA [SECOP II]
 - **Contrato de alto valor**: CVC - $ 996.015.936 - FUNDACION BALU [SECOP II]
-- **Contrato de alto valor**: METRO CALI S.A ACUERDO DE REESTRUCTURACION - $ 545.641.880 - CONSORCIO METROCALI 2026 [SECOP II]
 - **Contrato de alto valor**: CVC - $ 1.422.879.908 - CORPORACION AMANO NATIVA [SECOP II]
 - **Contrato de alto valor**: Departamento Administrativo de Planeación - Alcaldía de Tuluá - $ 1.053.130.843 - L&M TRADERS SAS [SECOP II]
 - **Contrato de alto valor**: EMAVI - $ 1.300.000.000 - CONSORCIO JP BRICEÑO [SECOP II]
@@ -304,6 +258,7 @@ _Se revisaron 365 registros de contratacion de estas dos entidades en la ventana
 - **Contrato de alto valor**: ARMADA NACIONAL BASE NAVAL ARC MALAGA - $ 761.600.000 - LONA GROUP SAS [SECOP II]
 - **Contrato de alto valor**: ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE - $ 1.315.317.499 - QUANTUM E&D S.A.S. [SECOP II]
 - **Contrato de alto valor**: Secretaría de Hábitat e Infraestructura - Alcaldía de Tuluá - $ 5.199.818.848 - EMPRESAS MUNICIPALES DE TULUA E.S.P. [SECOP II]
+- **Contrato de alto valor**: Departamento Administrativo de Planeación - Alcaldía de Tuluá - $ 650.000.000 - PATOLOGIAS-ESTRUCTURAS-CONSTRUCCION-CONSULTORIA INGENIERIA SAS [SECOP II]
 
 ---
 
