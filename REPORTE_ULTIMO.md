@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-26 12:41  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-26 17:57  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -9,9 +9,9 @@
 | Contratos relacionados (alta + media) | 1110 |
 | Valor de esos contratos | $ 214.279.211.369 |
 | Procesos relacionados (alta + media) | 1984 |
-| Contratos nuevos en esta ejecucion | 490 |
-| Procesos nuevos en esta ejecucion | 1265 |
-| Modificaciones detectadas | 1839 |
+| Contratos nuevos en esta ejecucion | 0 |
+| Procesos nuevos en esta ejecucion | 0 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 88261 |
 
 ### Desglose por nivel de gobierno
@@ -106,151 +106,6 @@ _Se revisaron 365 registros de contratacion de estas dos entidades en la ventana
 | MUNICIPIO DE CALIMA EL DARIEN VALLE | 12 | $ 3.068.941.547 |
 | INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ | 3 | $ 2.988.923.153 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA | 2 | $ 2.849.451.216 |
-
-## Contratos nuevos (30 relacionados de 490 publicados)
-
-| Fecha de firma | Entidad | Objeto | Valor | Proveedor | Relacion |
-|---|---|---|---:|---|---|
-| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Aunar esfuerzos técnicos; administrativos y financieros para fortalecer la seguridad alimentaria de familias e | $ 7.269.963.272 | PMA | Alta |
-| 2026-11-24 | ALCALDÍA MUNICIPAL DE ROLDANILLO | CONVENIO INTERADMINISTRATIVO ESPECÍFICO DERIVADO DEL CONVENIO MARCO DE ASOCIACIÓN INTERINSTITUCIONAL No. CMAI- | $ 50.470.000 | FONDO MIXTO | Media |
-| 2026-11-24 | MUNICIPIO DE EL CERRITO. | SUMINISTRO; INSTALACIÓN Y MANTENIMIENTO DE ELEMENTOS PARA LA PREVENCIÓN Y ATENCIÓN DE EMERGENCIAS DE LA ADMINI | $ 30.391.500 | PROVEEDOR DE PRODUCTOS Y SERVICIOS PROFESIONALES S.A.S. | Media |
-| 2026-11-24 | MUNICIPIO DE AGUADAS | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA LA EVALUACIÓN Y EL DIAGNÓSTICO DEL ESTADO DE LAS EDIFICACIONES DEL  | $ 12.864.000 | EDWIN GIOVANNI ROJAS LEON | Alta |
-| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO | Prestar sus servicios profesionales en el desarrollo de espacios territoriales de articulación interinstitucio | $ 11.326.000 | Gladys Marleni Riascos Calvache | Alta |
-| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO | Prestar servicios profesionales en las actividades requeridas por la Secretaría de Gobierno | $ 11.326.000 | Laura Arango | Alta |
-| 2026-11-24 | MUNICIPIO DE PEREIRA- OFICIAL | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA ATENDER SITUACIONES TÉCNICAS EN EL CAMPO DE LA INGENIERÍA CIVIL; RE | $ 6.333.333 | ALVARO MORALES CALLE | Alta |
-| 2026-11-24 | INSTITUTO DE FINANCIAMIENTO PROMOCIÓN Y DESARROLLO DE MANIZALES - INFI-MANIZALES | PRESTAR SERVICIOS DE APOYO A LA GESTIÓN A INFIMANIZALES COMO ASESOR TÉCNICO DEL EQUIPO DE APOYO DEL PLAN DE RE | $ 4.200.000 | Valentina Quintero Hernandez | Alta |
-| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | MARTHA LUCIA ARBOLEDA GONZALEZ | Alta |
-| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | LADY MARCELA OSSA BARONA | Alta |
-| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando a cabo actividades de la caracterización de las condiciones s | $ 3.000.000 | CARLOS ALBERTO THOMAS MURIEL | Alta |
-| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | YURI PAULIN CERON | Alta |
-| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | MARIO FERNANDO CASTAÑO RENDON | Alta |
-| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | sandra milena ramirez torres | Alta |
-| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | fabian alejandro benitez gomez | Alta |
-| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando a cabo actividades de la caracterización de las condiciones s | $ 3.000.000 | Leidy LORENA GARCÍA Lopez | Alta |
-| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | VALERIA PERALTA MARMOLEJO | Alta |
-| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | Martha Cecilia Padilla Tascon | Alta |
-| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | NELSON ARTURO PARRA ZAPATA | Alta |
-| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | SILVIA VALENCIA MONTOYA | Alta |
-| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | LINA MARIA MONDRAGON GOMEZ | Alta |
-| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | María Fernanda Posso García | Alta |
-| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | OLGA PATRICIA RENGIFO HOYOS | Alta |
-| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | YENY VANESA MONTOYA ARBOLEDA | Alta |
-| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | JUAN JOSE RIOS ALDANA | Alta |
-| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | Nury Viviana Torres Saavedra | Alta |
-| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar Servicios De Apoyo A La Gestión Llevando A Cabo Actividades De La Caracterización De Las Condiciones S | $ 3.000.000 | CARMEN LORENA MINA ALZATE | Alta |
-| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | JENNIFFER AVILA HENAO | Alta |
-| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando a cabo actividades de la caracterización de las condiciones s | $ 3.000.000 | ANDREA  MORALES LOPEZ | Alta |
-| 2026-11-24 | UNIDAD EJECUTORA DE SANEAMIENTO DEL VALLE DEL CAUCA | Prestar servicios de apoyo a la gestión llevando cabo las actividades de inspección; diagnóstico sanitario e i | $ 3.000.000 | LEIDY JOHANNA CAICEDO HOYOS | Alta |
-
-## Procesos nuevos (168 relacionados de 1265 publicados)
-
-| Fecha de publicacion | Entidad | Objeto | Precio base | Modalidad | Relacion |
-|---|---|---|---:|---|---|
-| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Aunar esfuerzos técnicos, administrativos y financieros para fortalecer la seguridad alimentaria de familias e | $ 7.269.963.272 | Contratación directa | Alta |
-| 2026-11-23 | INSTITUTO DEL DEPORTE, LA EDUCACIÓN FÍSICA Y LA RECREACIÒN DEL VALLE DEL CAUCA (INDERVALLE) | CONTRATAR UNA SOCIEDAD COMISIONISTA MIEMBRO DE LA BOLSA MERCANTIL DE COLOMBIA S.A., PARA QUE ACTÚE POR CUENTA  | $ 2.999.722.306 | Contratación régimen especial | Media |
-| 2026-11-23 | Municipio de Montenegro-- | CONTRATO DE SUMINISTRO DE MATERIALES Y ELEMENTOS DE FERRETERIA NECESARIOS PARA EL MEJORAMIENTO, LA ADECUACIÓN  | $ 336.000.000 | Contratación directa | Alta |
-| 2026-11-23 | MUNICIPIO DE PACORA | CONTRATAR LA EJECUCION DE OBRAS DE REPACION, ADECUACION Y MEJORAMIENTO DE VIVIENDAS AFECTADAS POR EL SISMO OCU | $ 281.245.944 | Contratación directa | Alta |
-| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DISTRITAL DE SALUD DE CALI | Contratar a la Red de Salud de Sur Oriente (ESE) para que ejecute de manera integral las acciones del Plan de  | $ 271.007.749 | Contratación Directa (con ofertas) | Media |
-| 2026-11-23 | SENA REGIONAL RISARALDA Grupo de Apoyo Administrativo Mixto// | COMPRA DE ELEMENTOS DE PROTECCIÓN, PARA ATENDER LAS NECESIDADES DERIVADAS DE LA EMERGENCIA OCASIONADA POR EL T | $ 237.670.792 | Selección abreviada subasta inversa | Alta |
-| 2026-11-23 | DEPARTAMENTO DE ANTIOQUIA// | CONVENIO INTERADMINISTRATIVO PARA AUNAR ESFUERZOS ENTRE EL DEPARTAMENTO DE ANTIOQUIA Y EL MUNICIPIO DE TÁMESIS | $ 211.391.749 | Contratación régimen especial | Alta |
-| 2026-11-23 | DEPARTAMENTO DE ANTIOQUIA// | CONVENIO INTERADMINISTRATIVO PARA AUNAR ESFUERZOS ENTRE EL  DEPARTAMENTO DE ANTIOQUIA Y EL MUNICIPIO DE CAÑASG | $ 207.377.940 | Contratación régimen especial | Alta |
-| 2026-11-23 | DEPARTAMENTO DE ANTIOQUIA// | CONVENIO INTERADMINISTRATIVO PARA AUNAR ESFUERZOS ENTRE EL DEPARTAMENTO DE ANTIOQUIA Y EL MUNICIPIO DE CAMPAME | $ 195.606.664 | Contratación régimen especial | Alta |
-| 2026-11-24 | MUNICIPIO DE EL DOVIO | PRESTACIÓN DE SERVICIOS DE APOYO LOGÍSTICO, TÉCNICO Y OPERATIVO PARA LA ORGANIZACIÓN, COORDINACIÓN Y EJECUCIÓN | $ 165.124.000 | Contratación directa | Media |
-| 2026-11-23 | DEPARTAMENTO DE ANTIOQUIA// | CONVENIO INTERADMINISTRATIVO PARA AUNAR ESFUERZOS ENTRE EL DEPARTAMENTO DE ANTIOQUIA Y EL MUNICIPIO DE CIUDAD  | $ 115.748.667 | Contratación régimen especial | Alta |
-| 2026-11-23 | ALCALDIA DISTRITAL DE BUENAVENTURA-VALLE | PRESTACIÓN DE SERVICIOS DE APOYO LOGÍSTICO PARA LA PROMOCIÓN DE UNIDADES PRODUCTIVAS A BENEFICIARIAS DEL PROGR | $ 113.808.825 | Mínima cuantía | Media |
-| 2026-11-24 | DEPARTAMENTO DE ANTIOQUIA// | CONVENIO INTERADMINISTRATIVO PARA AUNAR ESFUERZOS ENTRE EL DEPARTAMENTO DE ANTIOQUIA Y EL MUNICIPIO DE ANGOSTU | $ 93.218.741 | Contratación régimen especial | Alta |
-| 2026-11-24 | DEPARTAMENTO DE ANTIOQUIA// | CONVENIO INTERADMINISTRATIVO PARA AUNAR ESFUERZOS ENTRE EL DEPARTAMENTO DE ANTIOQUIA Y EL MUNICIPIO DE BETANIA | $ 75.214.303 | Contratación régimen especial | Alta |
-| 2026-11-24 | MUNICIPIO DE CARTAGO | CONSTRUCCION DE OBRAS PARA EL MANEJO DE AGUAS SUPERFICIALES, CONTROL DE EROSION Y ESTABILIZACION DEL TALUD UBI | $ 73.479.754 | Mínima cuantía | Media |
-| 2026-11-23 | ALCALDÍA MUNICIPAL DE ROLDANILLO | CONVENIO INTERADMINISTRATIVO ESPECÍFICO DERIVADO DEL CONVENIO MARCO DE ASOCIACIÓN INTERINSTITUCIONAL No. CMAI- | $ 50.470.000 | Contratación directa | Media |
-| 2026-11-23 | DEPARTAMENTO DE ANTIOQUIA// | CONVENIO INTERADMINISTRATIVO PARA AUNAR ESFUERZOS ENTRE EL DEPARTAMENTO DE ANTIOQUIA Y EL MUNICIPIO DE VALDIVI | $ 47.356.240 | Contratación régimen especial | Alta |
-| 2026-11-23 | DEPARTAMENTO DE ANTIOQUIA// | CONVENIO INTERADMINISTRATIVO PARA AUNAR ESFUERZOS ENTRE EL  DEPARTAMENTO DE ANTIOQUIA Y EL MUNICIPIO DE ABEJOR | $ 43.504.071 | Contratación régimen especial | Alta |
-| 2026-11-24 | INSTITUCION EDUCATIVA TULIO ENRIQUE TASCON | OBRA MENOR PARA LA REPARACIÓN LOCATIVA Y MITIGACIÓN DE RIESGOS EN LA INFRAESTRUCTURA DE LAS SEDES CENTRAL TULI | $ 35.000.000 | Contratación régimen especial | Media |
-| 2026-11-24 | INSTITUCION EDUCATIVA ANTONIO NARIÑO BUGALAGRANDE | Mantenimiento, conservación, reparación, mejoramiento y adecuación, a todo costo (materiales y mano de obra),  | $ 34.392.000 | Contratación régimen especial | Alta |
-| 2026-11-24 | DEPARTAMENTO DE ANTIOQUIA// | CONVENIO INTERADMINISTRATIVO PARA AUNAR ESFUERZOS ENTRE EL DEPARTAMENTO DE ANTIOQUIA Y EL MUNICIPIO DE ANGELÓP | $ 32.781.924 | Contratación régimen especial | Alta |
-| 2026-11-24 | EMPRESA DE VIVIENDA DE ANTIOQUIA-VIVA | AUNAR ESFUERZOS TÉCNICOS, ADMINISTRATIVOS, FINANCIEROS Y SOCIALES ENTRE LA EMPRESA DE VIVIENDA DE ANTIOQUIA -  | $ 26.795.864 | Contratación régimen especial | Alta |
-| 2026-11-24 | INSTITUCION EDUCATIVA SANTA INES | COMPRA DE MOBILIARIO: PUPITRES, MESAS TRAPEZOIDALES, ENSERES, ARTÍCULOS DE DEPORTE Y MATERIAL DIDÁCTICO DE FOR | $ 24.124.828 | Contratación régimen especial | Media |
-| 2026-11-24 | INSTITUCION EDUCATIVA VILLACOLOMBIA | SERVICIO DE REPARACION DE AFECTACIONES RELACIONADAS CON EL SISMO DE LA SEDE SANTISIMA TRINIDAD A TODO COSTO. | $ 17.900.000 | Contratación régimen especial | Alta |
-| 2026-11-25 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 15.652.000 | Contratación directa | Media |
-| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 15.652.000 | Contratación directa | Media |
-| 2026-11-23 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 14.072.000 | Contratación directa | Alta |
-| 2026-11-23 | SECRETARIA DE EDUCACION DE CALI | Prestación de servicios como profesional especializado para la Secretaría de Educación del Distrito Especial d | $ 14.072.000 | Contratación directa | Alta |
-| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 14.072.000 | Contratación directa | Alta |
-| 2026-11-23 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 14.072.000 | Contratación directa | Alta |
-| 2026-11-24 | MUNICIPIO DE AGUADAS | PRESTACIÓN DE SERVICIOS PROFESIONALES PARA LA EVALUACIÓN Y EL DIAGNÓSTICO DEL ESTADO DE LAS EDIFICACIONES DEL  | $ 12.864.000 | Contratación directa | Alta |
-| 2026-11-23 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 12.494.000 | Contratación directa | Alta |
-| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 12.494.000 | Contratación directa | Alta |
-| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales especializados a la Secretaría de Gestión del Riesgo de Emergencias y Desastre | $ 12.494.000 | Contratación directa | Media |
-| 2026-11-23 | DEPARTAMENTO DEL VALLE DEL CAUCA-SECRETARIA DE GESTION DEL RIESGO DE DESASTRES | PRESTAR LOS SERVICIOS PROFESIONALES COMO INGENIERO CIVIL ESPECIALISTA EN ANÁLISIS Y DISEÑO DE ESTRUCTURAS EN L | $ 12.000.000 | Contratación directa | Media |
-| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO | Prestar servicios profesionales en las actividades requeridas por la Secretaría de Gobierno | $ 11.326.000 | Contratación directa | Alta |
-| 2026-11-23 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Contratación directa | Alta |
-| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Contratación directa | Alta |
-| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARÍA DE GESTIÓN DEL RIESGO DE EMERGENCIAS Y DESASTRE | Prestar servicios profesionales a la Secretaría de Gestión del Riesgo de Emergencias y Desastres del Distrito  | $ 11.326.000 | Contratación directa | Media |
-| 2026-11-24 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE GOBIERNO | Prestar sus servicios profesionales en el desarrollo de espacios territoriales de articulación interinstitucio | $ 11.326.000 | Contratación directa | Alta |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| contratos | CO1.PCCNTR.10072704 | valor_del_contrato | 8000000 | 12000000 |
-| contratos | CO1.PCCNTR.10072704 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.10072704 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.10072704 | dias_adicionados | 0 | 31 |
-| contratos | CO1.PCCNTR.10213671 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9820402 | valor_del_contrato | 16000000 | 20000000 |
-| contratos | CO1.PCCNTR.9820402 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9820402 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9820402 | dias_adicionados | 0 | 31 |
-| contratos | CO1.PCCNTR.10201462 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10205167 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9995929 | valor_del_contrato | 10500000 | 14000000 |
-| contratos | CO1.PCCNTR.9995929 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9995929 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9995929 | dias_adicionados | 0 | 31 |
-| contratos | CO1.PCCNTR.9865426 | valor_facturado | 7894000 | 11841000 |
-| contratos | CO1.PCCNTR.9996108 | valor_del_contrato | 21000000 | 28000000 |
-| contratos | CO1.PCCNTR.9996108 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9996108 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9996108 | dias_adicionados | 0 | 31 |
-| contratos | CO1.PCCNTR.9996108 | valor_pendiente_de_pago | 21000000 | 28000000 |
-| contratos | CO1.PCCNTR.10185615 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10204303 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10192875 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9996329 | valor_del_contrato | 9000000 | 12000000 |
-| contratos | CO1.PCCNTR.9996329 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9996329 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9996329 | dias_adicionados | 0 | 31 |
-| contratos | CO1.PCCNTR.9996329 | valor_pendiente_de_pago | 9000000 | 12000000 |
-| contratos | CO1.PCCNTR.10197847 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10208535 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9842832 | valor_pagado | 0 | 7000000 |
-| contratos | CO1.PCCNTR.9842832 | valor_facturado | 0 | 7000000 |
-| contratos | CO1.PCCNTR.9842832 | valor_pendiente_de_pago | 7000000 | 0 |
-| contratos | CO1.PCCNTR.10029973 | valor_del_contrato | 5000000 | 7500000 |
-| contratos | CO1.PCCNTR.10029973 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.10029973 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.10029973 | dias_adicionados | 0 | 31 |
-| contratos | CO1.PCCNTR.10029973 | valor_pendiente_de_pago | 5000000 | 7500000 |
-| contratos | CO1.PCCNTR.10193817 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9996109 | valor_del_contrato | 12000000 | 16000000 |
-| contratos | CO1.PCCNTR.9996109 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9996109 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9996109 | dias_adicionados | 0 | 31 |
-| contratos | CO1.PCCNTR.10206503 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10072477 | valor_del_contrato | 8000000 | 12000000 |
-| contratos | CO1.PCCNTR.10072477 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.10072477 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.10072477 | dias_adicionados | 0 | 31 |
-| contratos | CO1.PCCNTR.10213652 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10206570 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10195849 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.9995927 | valor_del_contrato | 18000000 | 24000000 |
-| contratos | CO1.PCCNTR.9995927 | estado_contrato | En ejecución | Modificado |
-| contratos | CO1.PCCNTR.9995927 | fecha_de_fin_del_contrato | 2026-11-30T23:59:00.000 | 2026-12-31T23:59:00.000 |
-| contratos | CO1.PCCNTR.9995927 | dias_adicionados | 0 | 31 |
-| contratos | CO1.PCCNTR.9995927 | valor_pendiente_de_pago | 18000000 | 24000000 |
-| contratos | CO1.PCCNTR.10205455 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10209192 | estado_contrato | Aprobado | En ejecución |
-| contratos | CO1.PCCNTR.10203004 | estado_contrato | Aprobado | En ejecución |
 
 ## Alertas
 
