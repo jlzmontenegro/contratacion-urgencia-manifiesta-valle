@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-26 17:57  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-26 22:36  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -11,7 +11,7 @@
 | Procesos relacionados (alta + media) | 1984 |
 | Contratos nuevos en esta ejecucion | 0 |
 | Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 0 |
+| Modificaciones detectadas | 16 |
 | Registros revisados en total | 88261 |
 
 ### Desglose por nivel de gobierno
@@ -44,7 +44,7 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 
 ## SECOP I
 
-- **Relacionados con el sismo: 306** (174 que suman en los indicadores, por $ 23.576.317.928).
+- **Relacionados con el sismo: 311** (175 que suman en los indicadores, por $ 23.576.317.928).
 
 | Fecha | Entidad | Objeto | Valor | Modalidad / causal | Relacion |
 |---|---|---|---:|---|---|
@@ -74,12 +74,12 @@ Nada de lo anterior cuenta en los indicadores de Cali y el Valle.
 | 2026-08-20 | TOLIMA - ALCALDÍA MUNICIPIO DE ROVIRA | CONTRATAR EL SUMINISTRO A MONTO AGOTABLE DE MATERIALES DE CONSTRUCCIoN PARA LA REHABILITACIoN; REPARACIoN Y RE | $ 250.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-11-19 | RISARALDA - CÁMARA DE COMERCIO DE PEREIRA | AUNAR ESFUERZOS TeCNICOS; ADMINISTRATIVOS; LOGiSTICOS Y FINANCIEROS ENTRE LA CaMARA DE COMERCIO DE PEREIRA Y L | $ 240.000.000 | Régimen Especial · No Definido | Alta |
 | 2026-11-05 | VALLE DEL CAUCA - ALCALDÍA MUNICIPIO DE ARGELIA | ADQUISICIoN; A TiTULO DE COMPRAVENTA; DEL BIEN INMUEBLE UBICADO EN LA CALLE 2 # 8  58; aREA URBANA DEL MUNICIP | $ 227.000.000 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
-| 2026-11-17 | CHOCÓ - ALCALDÍA MUNICIPIO DE MEDIO ATRATO | SUMINISTRO; TRANSPORTE Y ENTREGA DE MATERIALES DE FERRETERiA PARA EL MEJORAMIENTO DE LAS VIVIENDAS AFECTADAS E | $ 199.275.189 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
+| 2026-10-16 | CHOCÓ - ALCALDÍA MUNICIPIO DE MEDIO ATRATO | SUMINISTRO; TRANSPORTE Y ENTREGA DE MATERIALES DE FERRETERiA PARA EL MEJORAMIENTO DE LAS VIVIENDAS AFECTADAS E | $ 199.275.189 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-09-08 | RISARALDA - ALCALDÍA MUNICIPIO DE MISTRATÓ | SUMINISTRO DE MATERIALES DE CONSTRUCCIoN PARA LA ATENCIoN DE LA EMERGENCIA Y APOYO A LAS FAMILIAS DAMNIFICADAS | $ 193.765.800 | Contratación Directa (Ley 1150 de 2007) · Urgencia Manifiesta (Literal A) | Alta |
 | 2026-08-13 | CHOCÓ - ALCALDÍA MUNICIPIO DE ATRATO | ATENCION PSICOSOCIAL PARA LA RECUPERACION EMOCIONAL; EL FORTALECIMIENTO COMUNITARIO Y LA PROMOCION DE LA RESIL | $ 181.676.000 | Contratación Directa (Ley 1150 de 2007) · Prestación de Servicios Profesionales y de Apoyo a la Gestión (Literal H) | Alta |
 | 2026-08-21 | RISARALDA - CÁMARA DE COMERCIO DE PEREIRA | SOLICITUD DE SERVICIO DE TECHOS Y PANELERIAS PARA DIVISIONES UTILIZADOS PARA ADECUAR LOS ESPACIOS Y PODER GUAR | $ 163.506.000 | Régimen Especial · No Definido | Alta |
 
-_No se listan 210 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
+_No se listan 215 registros de SECOP I con urgencia manifiesta por otras causas o por calamidades anteriores al sismo. Quedan en `datos/secop1.csv`._
 
 ## UNGRD y FNGRD · NIT 900.478.966-6 y 900.978.341
 
@@ -106,6 +106,27 @@ _Se revisaron 365 registros de contratacion de estas dos entidades en la ventana
 | MUNICIPIO DE CALIMA EL DARIEN VALLE | 12 | $ 3.068.941.547 |
 | INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ | 3 | $ 2.988.923.153 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA | 2 | $ 2.849.451.216 |
+
+## Modificaciones sobre registros ya conocidos
+
+| Fuente | Identificador | Campo | Antes | Ahora |
+|---|---|---|---|---|
+| secop1 | 26-12-14834302-13760140 | estado_del_proceso | Celebrado | Liquidado |
+| secop1 | 26-12-14834302-13760140 | fecha_liquidacion |  | 2026-11-19T00:00:00.000 |
+| secop1 | 26-12-14786197-13711548 | valor_total_de_adiciones | 0 | 43088937 |
+| secop1 | 26-12-14786197-13711548 | valor_contrato_con_adiciones | 550000000 | 593088937 |
+| secop1 | 26-12-14786197-13711548 | fecha_fin_ejec_contrato | 2026-12-03T00:00:00.000 | 2027-01-03T00:00:00.000 |
+| secop1 | 26-12-14786197-13711548 | tiempo_adiciones_en_meses | 0 | 1 |
+| secop1 | 26-12-14820863-13744691 | valor_total_de_adiciones | 0 | 4760938 |
+| secop1 | 26-12-14820863-13744691 | valor_contrato_con_adiciones | 27156080 | 31917018 |
+| secop1 | 26-12-14820863-13744691 | fecha_fin_ejec_contrato | 2026-11-02T00:00:00.000 | 2026-11-07T00:00:00.000 |
+| secop1 | 26-12-14820863-13744691 | tiempo_adiciones_en_dias | 0 | 5 |
+| secop1 | 26-9-512379 | estado_del_proceso | Borrador | Convocado |
+| secop1 | 26-12-14785837-13711183 | fecha_fin_ejec_contrato | 2026-11-26T00:00:00.000 | 2026-12-26T00:00:00.000 |
+| secop1 | 26-12-14785837-13711183 | tiempo_adiciones_en_meses | 0 | 1 |
+| secop1 | 26-9-512392 | estado_del_proceso | Borrador | Convocado |
+| secop1 | 26-9-510649-13699218 | fecha_fin_ejec_contrato | 2026-11-20T00:00:00.000 | 2026-12-20T00:00:00.000 |
+| secop1 | 26-9-510649-13699218 | tiempo_adiciones_en_dias | 0 | 30 |
 
 ## Alertas
 
