@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-26 22:36  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-27 12:25  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
@@ -11,7 +11,7 @@
 | Procesos relacionados (alta + media) | 1984 |
 | Contratos nuevos en esta ejecucion | 0 |
 | Procesos nuevos en esta ejecucion | 0 |
-| Modificaciones detectadas | 16 |
+| Modificaciones detectadas | 0 |
 | Registros revisados en total | 88261 |
 
 ### Desglose por nivel de gobierno
@@ -106,27 +106,6 @@ _Se revisaron 365 registros de contratacion de estas dos entidades en la ventana
 | MUNICIPIO DE CALIMA EL DARIEN VALLE | 12 | $ 3.068.941.547 |
 | INSTITUTO TECNICO NACIONAL DE COMERCIO SIMON RODRIGUEZ | 3 | $ 2.988.923.153 |
 | SANTIAGO DE CALI DISTRITO ESPECIAL - SECRETARIA DE INFRAESTRUCTURA | 2 | $ 2.849.451.216 |
-
-## Modificaciones sobre registros ya conocidos
-
-| Fuente | Identificador | Campo | Antes | Ahora |
-|---|---|---|---|---|
-| secop1 | 26-12-14834302-13760140 | estado_del_proceso | Celebrado | Liquidado |
-| secop1 | 26-12-14834302-13760140 | fecha_liquidacion |  | 2026-11-19T00:00:00.000 |
-| secop1 | 26-12-14786197-13711548 | valor_total_de_adiciones | 0 | 43088937 |
-| secop1 | 26-12-14786197-13711548 | valor_contrato_con_adiciones | 550000000 | 593088937 |
-| secop1 | 26-12-14786197-13711548 | fecha_fin_ejec_contrato | 2026-12-03T00:00:00.000 | 2027-01-03T00:00:00.000 |
-| secop1 | 26-12-14786197-13711548 | tiempo_adiciones_en_meses | 0 | 1 |
-| secop1 | 26-12-14820863-13744691 | valor_total_de_adiciones | 0 | 4760938 |
-| secop1 | 26-12-14820863-13744691 | valor_contrato_con_adiciones | 27156080 | 31917018 |
-| secop1 | 26-12-14820863-13744691 | fecha_fin_ejec_contrato | 2026-11-02T00:00:00.000 | 2026-11-07T00:00:00.000 |
-| secop1 | 26-12-14820863-13744691 | tiempo_adiciones_en_dias | 0 | 5 |
-| secop1 | 26-9-512379 | estado_del_proceso | Borrador | Convocado |
-| secop1 | 26-12-14785837-13711183 | fecha_fin_ejec_contrato | 2026-11-26T00:00:00.000 | 2026-12-26T00:00:00.000 |
-| secop1 | 26-12-14785837-13711183 | tiempo_adiciones_en_meses | 0 | 1 |
-| secop1 | 26-9-512392 | estado_del_proceso | Borrador | Convocado |
-| secop1 | 26-9-510649-13699218 | fecha_fin_ejec_contrato | 2026-11-20T00:00:00.000 | 2026-12-20T00:00:00.000 |
-| secop1 | 26-9-510649-13699218 | tiempo_adiciones_en_dias | 0 | 30 |
 
 ## Alertas
 
