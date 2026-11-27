@@ -1,6 +1,6 @@
 # Reporte de contratacion - urgencia manifiesta sismo 10 ago 2026
 
-**Corte:** 2026-11-27 12:25  |  **Ventana:** 2026-08-10 en adelante
+**Corte:** 2026-11-27 17:39  |  **Ventana:** 2026-08-10 en adelante
 
 ## Resumen · Cali, Valle del Cauca y UNGRD
 
